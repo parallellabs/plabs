@@ -1,9 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Signika:400,600,700,300);
+
+// html,
+// body {
+//     font-size: 62.5%;
+//     @media (max-width: 767px) {
+//         $base-font-size: 50%;
+//     }
+// }
 // Typography
-$base-font-family: $helvetica;
+$base-font-family: "Signika", sans-serif;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
 $base-font-size: 1em;
+
 
 // Line height
 $base-line-height: 1.5;
@@ -16,10 +26,11 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #477dca;
-$dark-gray: #333;
-$medium-gray: #999;
+$blue: #16c6c2;
+$dark-gray: #243f53;
+$medium-gray: #5c5c5c;
 $light-gray: #ddd;
+$orange: #f44336;
 
 // Font Colors
 $base-font-color: $dark-gray;
@@ -34,8 +45,8 @@ $base-background-color: #fff;
 $secondary-background-color: tint($base-border-color, 75%);
 
 // Forms
-$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+$form-box-shadow: inset 0 1px 3px rgba(#000, .06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -.3);
 
 // Animations
 $base-duration: 150ms;

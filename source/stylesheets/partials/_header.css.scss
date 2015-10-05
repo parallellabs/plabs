@@ -1,0 +1,70 @@
+// Header style
+.top-navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+
+    padding: 15px;
+
+    @extend .container;
+    .logo {
+        float: left;
+        max-width: 80px;
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+    }
+    .nav-right {
+        float: right;
+        li {
+            float: left;
+            margin-right: 10px;
+            &:nth-child(1) {
+                margin-right: 50px;
+            }
+            a {
+                padding-bottom: 3px;
+
+                font-family: $base-font-family;
+                font-size: $base-font-size;
+                font-size: rem(16);
+                font-weight: 400;
+
+                color: #fff;
+            }
+        }
+    }
+    &.new-nav {
+        position: relative;
+
+        margin-bottom: 30px;
+
+        border-bottom: $base-border;
+        .nav-right {
+            li {
+                a {
+                    color: rgba(36,63,83,.5);
+                    &:active,
+                    &:focus,
+                    &:visited {
+                        color: $dark-gray;
+                        border-bottom: 1px solid $dark-gray;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+    &.hj-web {
+        .nav-right {
+            li {
+                a {
+                    color: $medium-gray;
+                }
+            }
+        }
+    }
+}

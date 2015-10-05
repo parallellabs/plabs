@@ -1,0 +1,488 @@
+h1 {
+    font-size: rem(64);
+
+    @media (max-width:1200px) {
+        font-size: rem(48);
+    }
+    @media (max-width:768px) {
+        font-size: rem(32);
+    }
+}
+h2 {
+    font-size: rem(36);
+
+    @media (max-width:768px) {
+        font-size: rem(28);
+    }
+}
+
+// Classes to reuse (HELPER CLASSES)
+.clr-orange-fade {
+    color: rgba(244,77,54,.1) !important;
+}
+.clr-gray-fade {
+    color: rgba(64,65,69,.1) !important;
+}
+.MB10-imp {
+    margin-bottom: 10px !important;
+}
+.MB60-imp {
+    margin-bottom: 60px !important;
+}
+
+
+.overflow-H {
+    overflow: hidden;
+}
+
+// position
+.pos-rel {
+    position: relative;
+}
+
+.icon {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+
+    fill: currentColor;
+}
+
+.section {
+    margin-bottom: 60px;
+
+    @include outer-container(100%);
+}
+
+.square {
+    display: block;
+    //width within the parent
+    // width: 100%;
+
+    background-color: #ddd;
+    &:before {
+        float: left;
+        //essentially the aspect ratio. 100% means the
+        //div will remain 100% as tall as it is wide, or
+        //square in other words.
+        padding-bottom: 100%;
+
+        content: "";
+    }
+    //this is a clearfix. you can use whatever
+    //clearfix you usually use, add
+    //overflow:hidden to the parent element,
+    //or simply float the parent container.
+    &:after {
+        display: table;
+        clear: both;
+
+        content: "";
+    }
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    // width: 80%;
+
+    @include outer-container(80%);
+    @include media($mobile-devices) {
+        padding: 0 15px;
+        // width: 100%;
+
+        @include outer-container(100%);
+    }
+    &:before,
+    &:after {
+        display: table;
+
+        content: " ";
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// mac-bar
+.mac-bar {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 30px;
+
+    background-color: #ccc;
+    span {
+        float: left;
+        width: 10px;
+        height: 10px;
+        margin: 10px 0;
+        margin-right: 5px;
+
+        color: $blue;
+        border-radius: 50%;
+        background-color: #fff;
+        &:nth-of-type(1) {
+            margin-left: 20px;
+
+            background-color: #de4245;
+        }
+        &:nth-of-type(3) {
+            background-color: #40d47e;
+        }
+    }
+}
+
+// gradient
+
+.gradient {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&amp;0+0,1+100 */
+    background:    -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background:      -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+    background:     -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+    background:         linear-gradient(to bottom,  rgba(255,255,255,.5) 0%,rgba(255,255,255,1) 100%); /* W3C */
+
+    filter: progid:dximagetransform.Microsoft.gradient( startColorstr="#00ffffff", endColorstr="#ffffff",GradientType=0 ); /* IE6-9 */
+    @include position(absolute, 0 0 0 0);
+}
+
+// border gradient
+.border-gradient {
+    height: 1px;
+
+    border: 0;
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #fff), color-stop(50%, $blue), color-stop(100%, #fff));
+    background-image:    -moz-linear-gradient(left, #fff 10%, $blue 50%, #fff 90%);
+    background-image: -webkit-linear-gradient(left, #fff 10%, $blue 50%, #fff 90%);
+    background-image:         linear-gradient(to right, #fff 10%, $blue 50%, #fff 90%);
+    // background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjNGY0ZjRmIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+    background-size: 100%;
+
+    *zoom: 1;
+    filter: progid:dximagetransform.Microsoft.gradient(gradientType=1, startColorstr="#FFFFFFFF", endColorstr="#FFFFFFFF");
+}
+
+.overlay {
+    background-color: rgba(0,0,0,.6);
+
+    @include position(absolute, 0 0 0 0);
+}
+
+// Default buttons
+.span-skew {
+    position: absolute;
+    top: 0;
+    right: -10px;
+
+    width: 35%;
+    height: 100%;
+
+    -webkit-transform: skew(-20deg);
+       -moz-transform: skew(-20deg);
+         -o-transform: skew(-20deg);
+    text-align: center;
+
+    color: $blue;
+    background-color: #fff;
+}
+
+.btn {
+    position: relative;
+
+    display: block;
+    height: 48px;
+    max-width: 250px;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    font-family: $base-font-family;
+    font-weight: 400;
+    line-height: 28px;
+
+    color: $medium-gray;
+    color: rgba(255,255,255,.8);
+    border: 1px solid #fff;
+    border-radius: 7px;
+    background-color: $blue;
+    &:hover {
+        color: rgba(255,255,255,1);
+    }
+    span.tri-box {
+        line-height: 48px;
+
+        @extend .span-skew;
+    }
+}
+
+// Input style
+// -------------------------
+.group {
+    position: relative;
+
+    width: 100%;
+    padding-top: 20px;
+    /*max-width: 300px;*/
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+input[type="text"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px 10px 10px 5px;
+    margin: 0;
+
+    font-size: 14px;
+
+    border: none;
+    border-bottom: 1px solid #757575;
+    border-radius: 0;
+    box-shadow: none;
+}
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* LABEL 
+======================================= */
+.group label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+
+    font-size: 14px;
+    font-weight: normal;
+
+    -webkit-transition: .2s ease all;
+       -moz-transition: .2s ease all;
+            transition: .2s ease all;
+    pointer-events: none;
+
+    color: #999;
+}
+
+/* ACTIVE STATE */
+input[type="text"]:focus ~ label,
+input[type="text"]:valid ~ label,
+textarea:focus ~ label {
+    top: 10px;
+
+    font-size: 12px;
+
+    color: #16c6c2;
+}
+input[type="text"]:focus ~ label.active-input,
+textarea:focus ~ label.active-input,
+input[type="text"]:valid ~ label.active-input,
+textarea:valid ~ label.active-input {
+    font-size: 18px;
+}
+.group .active-input {
+    top: 10px;
+
+    color: #ffc107;
+}
+/* BOTTOM BARS 
+================================= */
+.bar {
+    position: relative;
+
+    display: block;
+    width: 100%;
+}
+.bar:before,
+.bar:after {
+    position: absolute;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    content: "";
+    -webkit-transition: .2s ease all;
+       -moz-transition: .2s ease all;
+            transition: .2s ease all;
+
+    background: #16c6c2;
+}
+.bar:before {
+    left: 50%;
+}
+.bar:after {
+    right: 50%;
+}
+
+
+/* ERROR MESSAGE 
+================================= */
+.group .message {
+    margin-top: 10px;
+
+    text-align: left;
+
+    opacity: 0;
+}
+.group #counter {
+    float: right;
+}
+
+/* ACTIVE STATE 
+--------------------------------------*/
+input[type="text"]:focus ~ .bar:before,
+textarea:focus ~ .bar:before,
+input[type="text"]:focus ~ .bar:after,
+textarea:focus ~ .bar:after {
+    width: 50%;
+}
+
+input[type="text"]:disabled,
+textarea:disabled {
+    border-bottom-style: dotted;
+    background: transparent;
+}
+/* HIGHLIGHTER 
+================================== */
+.highlight {
+    position: absolute;
+    top: 25%;
+    left: 0;
+
+    width: 100px;
+    height: 60%;
+
+    pointer-events: none;
+
+    opacity: .5;
+}
+
+/* ACTIVE STATE 
+---------------------------------------*/
+input[type="text"]:focus ~ .highlight,
+textarea:focus ~ .highlight {
+    -webkit-animation: inputHighlighter .3s ease;
+       -moz-animation: inputHighlighter .3s ease;
+            animation: inputHighlighter .3s ease;
+}
+
+/* ANIMATIONS 
+================================== */
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #5264ae;
+    }
+    to {
+        width: 0;
+
+        background: transparent;
+    }
+}
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #5264ae;
+    }
+    to {
+        width: 0;
+
+        background: transparent;
+    }
+}
+@keyframes inputHighlighter {
+    from {
+        background: #5264ae;
+    }
+    to {
+        width: 0;
+
+        background: transparent;
+    }
+}
+
+// end
+
+
+/*
+==============================================
+stretch
+==============================================
+*/
+
+.stretch {
+    display: table !important;
+
+    @include transform(skew(-25deg));
+    @include animation-name(stretch);
+    @include animation-duration(.3s);
+    @include animation-timing-function(ease-out);
+    @include transform-origin(50%);
+}
+
+@include keyframes(stretch) {
+    0% {
+        @include transform(skew(-25deg) scaleX(.3));
+    }
+    100% {
+        @include transform(skew(-25deg) scaleX(1));
+    }
+}
+
+.stretchBack {
+    display: table !important;
+
+    @include transform(skew(-25deg));
+    @include animation-name(stretchBack);
+    @include animation-duration(.3s);
+    @include animation-timing-function(ease-in);
+    @include transform-origin(50%);
+}
+
+@include keyframes(stretchBack) {
+    0% {
+        @include transform(skew(-25deg) scaleX(1));
+    }
+    100% {
+        @include transform(skew(-25deg) scaleX(.3));
+    }
+}
+// end
+
+
+
+
+.strechLeft {
+    @include transform-origin(100% 0%);
+    @include animation-name(strechLeft);
+    @include animation-timing-function(ease-out);
+    @include animation-duration(1.5s);
+}
+
+@include keyframes(strechLeft) {
+    0% {
+        @include transform(scaleX(.1));
+    }
+    100% {
+        @include transform(scaleX(1));
+    }
+}
+
+.strechRight {
+    @include transform-origin(0% 0%);
+    @include animation-name(strechLeft);
+    @include animation-timing-function(ease-out);
+    @include animation-duration(1.5s);
+}
+
+@include keyframes(strechLeft) {
+    0% {
+        @include transform(scaleX(.1));
+    }
+    100% {
+        @include transform(scaleX(1));
+    }
+}

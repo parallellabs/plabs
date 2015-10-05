@@ -1,79 +1,25 @@
 @charset "utf-8";
 
+// Foundation(structure) style
+@import "normalize";
 @import "bourbon";
 @import "base/base";
 @import "neat";
 
-body {
-    font-family: sans-serif;
+// Vendors style
+@import "vendors/jqcloud.css.scss";
+@import "vendors/ionRangeSlider";
+@import "vendors/ionSkinHTML5";
 
-    text-align: center;
+// custom style
+@import "partials/units";
+@import "partials/header";
+@import "partials/modal";
 
-    background: #d4d4d4 url("../images/background.png");
-}
+@import "partials/home";
+@import "partials/about";
+@import "partials/case_study";
+@import "partials/form";
+// @import "partials/rangeslider";
 
-h1 {
-    padding: 350px 0 10px;
-    margin: 0;
-
-    font-size: 32px;
-    font-weight: bold;
-
-    letter-spacing: -1px;
-    text-transform: uppercase;
-
-    color: rgba(0, 0, 0, .3);
-    background: url("../images/middleman.png") no-repeat center 100px;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-}
-
-.doc {
-    margin: 0;
-
-    font-size: 14px;
-}
-.doc:before,
-.doc:after {
-    position: relative;
-
-    padding: 6px;
-
-    font-style: normal;
-
-    content: "•";
-
-    opacity: .2;
-}
-.doc a {
-    color: rgba(0, 0, 0, .3);
-}
-.doc a:hover {
-    color: #666;
-}
-
-.welcome {
-    -webkit-animation-name: welcome;
-    -webkit-animation-duration: .9s;
-}
-
-@-webkit-keyframes welcome {
-    from {
-        -webkit-transform: scale(0);
-
-        opacity: 0;
-    }
-    50% {
-        -webkit-transform: scale(0);
-
-        opacity: 0;
-    }
-    82.5% {
-        -webkit-transform: scale(1.03);
-        -webkit-animation-timing-function: ease-out;
-
-        opacity: 1;
-    }
-    to {
-        -webkit-transform: scale(1);
-    }
-}
+@import "partials/footer";

@@ -1,0 +1,34 @@
+doctype 5
+html
+  head
+    meta charset="utf-8" 
+    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+    title Parallellabs
+    link rel="stylesheet" href="/stylesheets/normalize.css"/
+    link rel="stylesheet" href="/stylesheets/all.css"/
+    
+  body
+    = partial "layouts/about_header.slim"
+
+    == yield
+
+    = partial "layouts/footer.slim"
+
+  / jQuery
+  script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"
+  script type="text/javascript" src="../javascripts/jqcloud.js"
+  script type="text/javascript"
+    | var words = [{text: "Art of Livingß", weight: 5},
+        {text: "Nexus", weight: 8},
+        {text: "Art of Living", weight: 8},
+        {text: "Vespa", weight: 6},
+        {text: "Honda Brio", weight: 8},
+        {text: "Art of Living", weight: 6.2},
+        {text: "Coldplay", weight: 5},
+        {text: "Nachos", weight: 9},
+        {text: "Honda Brio", weight: 7},
+        {text: "Art of Living", weight: 5},
+        {text: "User Experience", weight: 4},];
+        $('.cloud_1').jQCloud(words,{height:200,autoResize: true,removeOverflowing: true,shape: 'rectangular'});
+        $('.cloud_2').jQCloud(words,{height:200,autoResize: true,removeOverflowing: true,shape: 'rectangular'});
+  

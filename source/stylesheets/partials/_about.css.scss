@@ -1,0 +1,168 @@
+
+.about-us {
+    margin-bottom: 40px;
+
+    @extend .container;
+    @include media($mobile-devices) {
+        text-align: center;
+    }
+    h2 {
+        font-weight: 300;
+
+        color: #4c4c4c;
+    }
+    p {
+        font-size: rem(20);
+        font-weight: 300;
+
+        color: $medium-gray;
+    }
+}
+
+.team {
+    margin-bottom: 40px;
+
+    @extend .container;
+    h2 {
+        font-size: rem(32);
+        font-weight: 300;
+
+        color: $medium-gray;
+
+        @include media($mobile-devices) {
+            text-align: center;
+        }
+    }
+    .wrap {
+        margin-bottom: 30px;
+
+        @include outer-container(100%);
+        .divider {
+            @extend .border-gradient;
+        }
+        .img-box {
+            font-family: $bebasN_R;
+            font-size: rem(100);
+            line-height: normal;
+            line-height: 5rem;
+
+            text-transform: uppercase;
+
+            color: rgba(22,198,194,.1);
+
+            @include span-columns(7);
+            @include media($mobile-devices) {
+                margin-bottom: 30px;
+
+                text-align: center;
+
+                @include span-columns(12 of 12);
+            }
+            p {
+                margin: 0;
+            }
+            & {
+                display: inline-block;
+                float: none;
+
+                vertical-align: middle;
+            }
+        }
+        .info-box {
+            @include span-columns(5);
+            & {
+                display: inline-block;
+                float: none;
+
+                vertical-align: middle;
+
+                @include media($mobile-devices) {
+                    margin-bottom: 30px;
+
+                    @include span-columns(12 of 12);
+                }
+                @include omega();
+            }
+            h4 {
+                margin-bottom: 10px;
+
+                font-size: rem(32);
+                font-weight: 300;
+
+                text-align: right;
+
+                color: $dark-gray;
+
+                @include media($mobile-devices) {
+                    text-align: center;
+                }
+                span {
+                    display: block;
+
+                    font-size: rem(12);
+
+                    color: rgba(36,63,83,.5);
+                }
+            }
+            p {
+                font-size: rem(16);
+                font-weight: 300;
+
+                text-align: right;
+
+                color: rgba(36,63,83,.8);
+
+                @include media($mobile-devices) {
+                    text-align: center;
+                }
+            }
+        }
+        &.left-aligned {
+            .img-box {
+                text-align: right;
+
+                @include media($mobile-devices) {
+                    text-align: center;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+            .info-box {
+                h4 {
+                    text-align: left;
+
+                    @include media($mobile-devices) {
+                        text-align: center;
+                    }
+                }
+                p {
+                    text-align: left;
+
+                    @include media($mobile-devices) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.lab-gallery {
+    @extend .container;
+    h2 {
+        font-size: rem(32);
+        font-weight: 300;
+
+        color: $medium-gray;
+    }
+    // .feed-box {
+    //     @include span-columns(4);
+    //     &:nth-of-type(1) {
+    //         @include span-columns(8);
+    //     }
+    //     &:nth-of-type(2) {
+    //         @include omega();
+    //     }
+    // }
+}

@@ -1,0 +1,218 @@
+
+/*==================================== 
+  Our Modal Window styles
+=====================================*/
+.modal {
+    z-index: -100;
+    // display: none;
+
+    height: 100%;
+
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+
+    @include position(fixed, 0 0 0 0);
+    @include transform( scale(.5));
+    @include transition(all .75s cubic-bezier(.68, -.55, .265, 1.55));
+    // z-index: -100;
+    // padding: 1em;
+    // opacity: 0;
+
+    .top-banner {
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 999;
+
+        width: calc(100% - 12px);
+        height: 40px;
+        padding: 0 20px;
+
+        background-color: #fff;
+
+        @include position(absolute);
+        .profile {
+            position: static;
+
+            float: left;
+            width: 120px;
+            height: auto;
+            // img {
+            //     float: left;
+            //     margin-right: 10px;
+            // }
+            h2 {
+                font-size: rem(18);
+                font-weight: 300;
+                line-height: 40px;
+            }
+
+            // span {
+            //     float: left;
+
+            //     text-align: left;
+            // }
+        }
+        .close-btn {
+            float: right;
+            padding: 0 20px;
+
+            font-size: rem(18);
+            line-height: 40px;
+
+            color: $medium-gray;
+            background-color: transparent;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .controls {
+        display: block;
+        .arrow {
+            position: absolute;
+            top: 50%;
+            z-index: 999;
+
+            font-size: rem(52);
+            font-weight: 600;
+
+            cursor: pointer;
+
+            opacity: .9;
+            color: $medium-gray;
+
+            &:hover {
+                opacity: 1;
+            }
+            &#previous {
+                left: 20px;
+            }
+            &#next {
+                right: 40px;
+            }
+        }
+    }
+    .modal__overlay {
+        z-index: 600;
+        z-index: -100;
+
+        text-align: center;
+
+        opacity: 0;
+        background: #000;
+        text-shadow: none;
+
+        @include transform( scale(.5));
+        @include transition(all .75s cubic-bezier(.68, -.55, .265, 1.55));
+        // position: fixed;
+        // top: 0;
+        // right: 0;
+        // bottom: 0;
+        // left: 0;
+        @include position(absolute, 0 0 0 0);
+    }
+    // .modal__overlay {
+    //     z-index: -100;
+
+    //     opacity: 0;
+
+    //     @include transform( scale(.5));
+    //     @include transition(all .75s cubic-bezier(.68, -.55, .265, 1.55));
+    // }
+
+    .modal__wrap .close-btn {
+        position: absolute;
+        top: .5em;
+        right: .5em;
+
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+
+        line-height: 1.5;
+
+        cursor: pointer;
+
+        color: #000;
+        border-radius: 50%;
+        background: #ffd300;
+    }
+    &.open {
+        z-index: 800;
+
+        opacity: 1;
+
+        @include transform(scale(1));
+        @include position(fixed, 0 0 0 0);
+        .modal__wrap {
+            position: absolute;
+            // right: 0;
+            left: 0;
+            // float: left;
+
+            width: 100%;
+            // max-width: 500px;
+            // padding: 1em 0;
+            margin: 0 auto;
+
+            opacity: 1;
+
+            @include transition(left .5s ease-out,  opacity .75s linear);
+            &:nth-child(2) {
+                left: 100%;
+            }
+        }
+        .move-left {
+            left: -110%;
+
+            opacity: 0 ;
+        }
+        .move-right {
+            left: 110%;
+            // right: 0;
+
+            opacity: 0 ;
+        }
+        .modal__wrap h2 {
+            margin-bottom: 1em;
+
+            text-transform: uppercase;
+
+            color: #ffd300;
+        }
+        .modal__wrap p {
+            text-align: justify;
+
+            color: #ffd300;
+        }
+        .modal__wrap .close-btn {
+            transform: scale(.97);
+        }
+
+        input {
+            position: absolute;
+            top: -1000px;
+        }
+
+
+        .modal__overlay {
+            z-index: 800;
+
+            overflow-y: scroll;
+
+            opacity: 1;
+
+            @include transform(scale(1));
+        }
+    }
+}
+// ----------------------------------------
+
+
+.open {
+    z-index: 800;
+
+    opacity: 1;
+}

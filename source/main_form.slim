@@ -1,0 +1,71 @@
+---
+layout: form_layout
+---
+form.section.main-form action="" method="post"
+	.inner-box
+		.wrap#firstForm
+			h4
+				| Hi, What’s your name ?
+			p 
+				| We love humans too, lets get to know you better.
+			.group
+		        input#clientName.textField type="text"
+		        span.highlight
+		        span.bar
+		        label Floating Label
+		    .action
+		    	button.btn.next href="#" type="button" 
+					| Next <i> &gt; </i> 
+		.wrap#secondForm
+			h4
+				| Hi <span class="client">Robin</span>, What is your Email?
+			.group
+		        input#email.textField type="email"
+		        span.highlight
+		        span.bar
+		        label Floating Label
+		    .action
+		    	button.btn.back href="#" type="button" 
+					| <i> &lt; </i> Back
+		    	button.btn.next href="#" type="button" 
+					| Next <i> &gt; </i> 
+		.wrap#thirdForm
+			h4
+				| Tell us briefly about your project.
+			p 
+				| Don’t worry, we are discreet about our conversations and will keep it confidential.
+			.group
+		        input#projectBrief.textField type="text"
+		        span.highlight
+		        span.bar
+		        label Floating Label
+		    .action
+		    	button.btn.back href="#" type="button" 
+					| <i> &lt; </i> Back
+		    	button.btn.next href="#" type="button" 
+					| Next <i> &gt; </i> 
+		.wrap#fourthForm
+			h4
+				| Is there anything else that we should know?
+			p 
+				| We do our homework before we get talking.
+			.attachments
+				input#files type="file" name="file[]" multiple="multiple" /
+				a href="#" Other Link
+			.group
+		        input#link.textField type="text"
+		        span.highlight
+		        span.bar
+		        label Floating Label
+		    .action
+		    	button.btn.back href="#" type="button" 
+					| <i> &lt; </i> Back
+		    	button.btn.next href="#" type="button" 
+					| Next <i> &gt; </i> 
+		.wrap#fifthForm
+			h4
+				| That’s It. <br> Just hit send and we will get back to you shortly.
+		    .action
+		    	button.btn.skip href="#" type="button" 
+					| Send <i> &gt; </i> 
+

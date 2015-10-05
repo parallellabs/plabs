@@ -1,0 +1,31 @@
+// footer style
+.footer {
+    max-height: 200px;
+    padding: 40px 15px;
+
+    text-align: center;
+
+    background-color: rgba(216,216,216,.15);
+
+    @include outer-container(100%);
+    p {
+        margin-bottom: 40px;
+
+        font-family: $base-font-family;
+        font-size: rem(18);
+        font-weight: 300;
+
+        color: rgba(85,85,85,.7);
+    }
+    .socials {
+        a {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+
+            // color: #fff;
+            // background-color: $blue;
+        }
+    }
+}

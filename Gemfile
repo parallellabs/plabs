@@ -17,6 +17,8 @@ gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 
 gem 'middleman-deploy', '~> 1.0'
 
+gem "slim"
+
 # Adding bourbon, neat and bitters
 gem 'bourbon'
 gem 'neat'
