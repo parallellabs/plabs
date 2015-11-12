@@ -1,12 +1,14 @@
 ---
 layout: parallex_layout
 ---
+- @title = "Housejoy - Web App Design Case Study | Parallel Labs"
+
 = partial "layouts/header_black.slim"
 /Hero banner style
 .master-banner.hj-banner.web
 	.gradient
 	.banner-content.web-content
-		.content
+		.content.hj-web
 			h1 Housejoy Web App
 			p 
 				| Creating a responsive web experience that’s rich yet simple.
@@ -17,20 +19,20 @@ layout: parallex_layout
 / content section
 .section.hj-content.web
 	.project-img
-		img src="../images/hj_tab.png" alt=""/
+		img src="images/hj_tab.png" alt=""/
 	.description
-		h4 Responsive
+		/ h4 Responsive
 		p
-			| One of the key branding goals was to position Housejoy as a professional and high quality service and not another marketplace for home services.
+			| Housejoy approached to design the experience for their web app which is primarily targeted at first time users, with a strategy of getting user to download native apps for subscriptions, easier tracking and other incentives.
 / End
 
 / content section
 .section.hj-content
 	.content-section.align-left
 		p 
-			|	Housejoy approached to design the experience for their web app which is primarily targeted at first time users. Instead of going app only, a seamless booking experience on desktop and mobile web was equally important since home services is a new segment in the indian market and the website experience needed to communicate the value proposition, pricing and let users make their first booking easily without having to download the app. 
+			|Instead of going app only, a seamless booking experience on desktop and mobile web was equally important since home services is a new segment in the indian market and the website experience needed to communicate the value proposition, pricing and lets users make their first booking easily without having to download the app. 
 		p
-			| The key challenges included creating design patterns that allow different workflows for each service type while still making the overall experience seamless and automatic workflow for subjective tasks where the cost differs from case to case.
+			| The key challenges included creating design patterns that allow different workflows for each service type while still making the overall experience seamless, and automating workflow for subjective tasks where the cost differs from case to case which would have otherwise resulted in manual intervention by customer care.
 / End
 
 / content section
@@ -68,12 +70,15 @@ layout: parallex_layout
 		h2 	
 			| Typography
 		.color-panel
-			.color-pelate.font
-				| Blogger Sans
-			.color-pelate.font-weight
-				| Light <br> Regular <br> Medium <br> Bold
 			.color-pelate
-				| Aa
+				img src="images/aa.png" alt="fonts images"/
+			.color-pelate
+				img src="images/blogger-sans.png" alt="fonts images"/
+			.color-pelate
+				img src="images/light.png" alt="fonts images"/
+				img src="images/regular.png" alt="fonts images"/
+				img src="images/medium.png" alt="fonts images"/
+				img src="images/bold.png" alt="fonts images"/
 / End	
     
 / content section
@@ -81,8 +86,8 @@ layout: parallex_layout
 	.content-section.align-left
 		h2 	
 			| Iconography
-		.icons
-			img src="../images/housejoy-icons-empty-states.png" alt="icongraphy"/
+	.icons
+		img src="images/housejoy-icons-empty-states.png" alt="icongraphy"/
 
 / End
 
@@ -92,16 +97,19 @@ layout: parallex_layout
 		h2 	
 			| Navigation to switch between services
 		p 
-			|	Full view of services available allowing users to easily switch.
+			|	Full view of services available allowing users to easily switch across services easily.
+	img src="images/services.png" alt="Services image"/
 / End
 
 / content section
 .section.hj-content
-	.content-section.align-left
-		h2 	
-			| Express multiselect experience instead of shopping Cart
-		p 
-			|	We wanted to let the users select multiple services, see details about each, select quantities etc. without complicating it and making it a shopping cart. Here is what we did.
+	.content-section.align-left.aside-section
+		.wrap
+			h2 	
+				| Express multiselect experience instead of shopping Cart
+			p 
+				|	We wanted to let the users select multiple services, see details about each, select quantities etc. without complicating it and making it a shopping cart. Here is what we did.
+		img src="images/beauty-inside.png" alt="Summary image"/
 / End
 
 / content section
@@ -109,15 +117,47 @@ layout: parallex_layout
 	.content-section.align-left
 		h2 	
 			| Detailed Screens with Workflow
-.sky-carousel
+.sky-carousel#sky-carousel
 	.sky-carousel-wrapper
 		ul.sky-carousel-container
 			li
-				img alt="" src="../images/screencapture-cpll-co-housejoy-website-categories-fitness_inside-html-1443697130331.png" /
+				img alt="housejoy screen" src="images/screencapture-cpll-co-housejoy-website-categories-fitness_inside-html-1443697130331.png" /
 			li
-				img alt="" src="../images/screencapture-cpll-co-housejoy-website-categories-beauty_home-html-1443697097993.png" /
+				img alt="housejoy screen" src="images/screencapture-cpll-co-housejoy-website-categories-beauty_home-html-1443697097993.png" /
 			li
-				img alt="" src="../images/screencapture-cpll-co-housejoy-website-categories-fitness_inside-html-1443697130331.png" /
-
-
+				img alt="housejoy screen" src="images/HJ_03-Laundry.jpg" /
+			li
+				img alt="housejoy screen" src="images/Housejoy_Home.png" /
+			li
+				img alt="housejoy screen" src="images/My_Orders-Details.jpg" /
+			li
+				img alt="housejoy screen" src="images/Payment_Confirmation.jpg" /
 / End
+
+/ Floating button
+#wrapper 
+	.button.button-sub  
+		a href="index.html" Home
+	.button.button-sub  
+		a href="about.html" About Us
+	.button.button-sub 
+		a href="blog.html" Blog	
+	.button.button-sub 
+		a.open-form href="#" Start A Project
+	.water-drop
+	.button.button-floating
+  		svg.plus 
+			use xlink:href="images/svgs/iconset.svg#icon-Logo_Color"
+		svg.edit
+			use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
+	.button-floating-shadow
+.btn-overlay
+
+/ New project section
+.start-project
+	p 
+		| We would love to hear about your next project.
+	a href="javascript:void(0);" class="btn open-form" Start a Project
+	
+= partial "layouts/footer.slim"
+= partial "layouts/main_form.slim"

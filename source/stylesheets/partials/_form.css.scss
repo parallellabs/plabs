@@ -1,19 +1,25 @@
 .main-form {
     display: none;
     // &.back {
-//     .inner-box {
-//         display: block;
-//         width: 0;
-//         height: 100%;
+    //     .inner-box {
+    //         display: block;
+    //         width: 0;
+    //         height: 100%;
+    //         @extend .stretchBack;
+    //         @include transform(skew(-25deg));
+    //         @include transition-duration(.5s);
+    //     }
+    // }
 
-//         @extend .stretchBack;
-//         @include transform(skew(-25deg));
-//         @include transition-duration(.5s);
-//     }
-// }
-
+    // @include media($mobile-devices) {
+    //     background-color: #fff;
+    //     .inner-box {
+    //         @include pad(0);
+    //         @include transform(skew(0deg));
+    //     }
+    // }
     &.openForm-model {
-        z-index: 20;
+        z-index: 99999;
 
         display: block;
         height: 100vh;
@@ -35,9 +41,12 @@
             right: 20px;
             z-index: 9;
 
-            font-size: rem(18);
+            width: 20px;
+            height: 20px;
 
             cursor: pointer;
+
+            color: #777;
 
             @include transform(skew(0));
         }
@@ -51,7 +60,7 @@
             padding: 20px;
             margin-right: auto !important;
             margin-left: auto;
-            overflow: hidden;
+            // overflow: hidden;
 
             background-color: #fff;
 
@@ -59,7 +68,7 @@
             @include transform(skew(-25deg));
             @include transition-duration(.5s);
             @include media($mobile-devices) {
-                @include transform(skew(0));
+                @include transform(skew(0deg));
                 @include pad(0);
             }
             .expand {
@@ -89,7 +98,9 @@
                 @include media($mobile-devices) {
                     left: 0;
 
-                    @include transform(skew(0));
+                    width: 80%;
+
+                    @include transform(skew(0) translateY(-50%));
                 }
                 @include transition(left .5s ease-out,  opacity .75s linear);
                 @include transform(skew(25deg) translateY(-50%));
@@ -102,7 +113,7 @@
                     font-size: rem(26);
                     font-weight: 400;
 
-                    color: rgba(22,198,194,.5);
+                    color: rgb(22, 198, 194);
                 }
                 p {
                     font-size: rem(15);
@@ -136,9 +147,21 @@
                         width: 120px;
                         height: 38px;
 
+                        font-size: rem(15);
                         line-height: 18px;
-                        &:focus {
+                        svg {
+                            width: 15px;
+                            height: 10px;
+                            margin-left: 10px;
+
+                            color: rgba(255,255,255,.8);
+                        }
+                        &:focus,
+                        &:hover {
                             outline: none;
+                            svg {
+                                color: #fff;
+                            }
                         }
                         &.back {
                             float: left;
@@ -147,6 +170,12 @@
                             border: 1px solid $blue;
                             border-radius: 5px;
                             background-color: #fff;
+                            svg {
+                                margin-right: 10px;
+                                margin-left: 0;
+
+                                color: $blue;
+                            }
                         }
                         &.next,
                         &.skip {

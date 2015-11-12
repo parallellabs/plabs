@@ -11,6 +11,20 @@
     url("fonts/bebasneue_regular-webfont.svg#bebas_neue_regularregular") format("svg");
 }
 
+@font-face {
+    font-family: "bebas_neuebold";
+    font-style: normal;
+    font-weight: normal;
+
+    src: url("fonts/bebasneue_bold-webfont.eot");
+    src: url("fonts/bebasneue_bold-webfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/bebasneue_bold-webfont.woff2") format("woff2"),
+    url("fonts/bebasneue_bold-webfont.woff") format("woff"),
+    url("fonts/bebasneue_bold-webfont.ttf") format("truetype"),
+    url("fonts/bebasneue_bold-webfont.svg#bebas_neuebold") format("svg");
+}
+
+$bebasN_B: "bebas_neuebold";
 $bebasN_R: "bebas_neue_regularregular";
 
 body {
@@ -41,6 +55,8 @@ p {
 }
 
 a {
+    display: inline-block;
+
     transition: color $base-duration $base-timing;
     text-decoration: none;
 

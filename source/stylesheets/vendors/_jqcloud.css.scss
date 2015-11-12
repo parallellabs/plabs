@@ -10,7 +10,7 @@
 div.jqcloud {
     position: relative;
 
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 div.jqcloud span {
@@ -30,35 +30,70 @@ div.jqcloud a {
     text-decoration: none;
 }
 
-div.jqcloud span.w10 {
-    font-size: 550%;
-}
-div.jqcloud span.w9 {
-    font-size: 500%;
-}
-div.jqcloud span.w8 {
-    font-size: 450%;
-}
-div.jqcloud span.w7 {
-    font-size: 400%;
-}
-div.jqcloud span.w6 {
-    font-size: 350%;
-}
-div.jqcloud span.w5 {
-    font-size: 300%;
-}
-div.jqcloud span.w4 {
-    font-size: 250%;
-}
-div.jqcloud span.w3 {
-    font-size: 200%;
-}
-div.jqcloud span.w2 {
-    font-size: 150%;
+// div.jqcloud span.w10 {
+//     // font-size: 550%;
+//     font-size: 28;
+// }
+// div.jqcloud span.w9 {
+//     // font-size: 500%;
+//     font-size: 26px;
+// }
+// div.jqcloud span.w8 {
+//     // font-size: 450%;
+//     font-size: 24px;
+// }
+// div.jqcloud span.w7 {
+//     // font-size: 400%;
+//     font-size: 22px;
+// }
+// div.jqcloud span.w6 {
+//     // font-size: 350%;
+//     font-size: 20px;
+// }
+// div.jqcloud span.w5 {
+//     // font-size: 300%;
+//     font-size: 18px;
+// }
+// div.jqcloud span.w4 {
+//     // font-size: 250%;
+//     font-size: 22px;
+// }
+// div.jqcloud span.w3 {
+//     // font-size: 120%;
+//     font-size: 20px;
+// }
+// div.jqcloud span.w2 {
+//     // font-size: 80%;
+//     font-size: 18px;
+// }
+// div.jqcloud span.w1 {
+//     // font-size: 40%;
+//     font-size: 16px;
+// }
+div.jqcloud {
+    $class-slug: w !default;
+    @for $i from 1 through 10 {
+        span.w#{$i} {
+
+            font-size: 16px + 1 * $i;
+        }
+    }
 }
 div.jqcloud span.w1 {
-    font-size: 100%;
+    // font-size: 40%;
+    font-size: 12px;
+}
+div.jqcloud span.w3 {
+    // font-size: 40%;
+    font-size: 14px;
+}
+div.jqcloud span.w6 {
+    // font-size: 40%;
+    font-size: 16px;
+}
+div.jqcloud span.w10 {
+    // font-size: 40%;
+    font-size: 24px;
 }
 
 /* colors */
@@ -74,33 +109,34 @@ div.jqcloud a:hover {
 div.jqcloud a:hover {
     color: #0cf;
 }
-div.jqcloud span.w10 {
-    color: rgba(22,198,194,.5);
-}
-div.jqcloud span.w9 {
-    color: rgba(22,198,194,.5);
-}
-div.jqcloud span.w8 {
-    color: rgba(22,198,194,.5);
-}
-div.jqcloud span.w7 {
-    color: rgba(22,198,194,.5);
-}
-div.jqcloud span.w6 {
-    color: rgba(22,198,194,.5);
-}
-div.jqcloud span.w5 {
-    color: rgba(22,198,194,.5);
-}
-div.jqcloud span.w4 {
-    color: rgba(22,198,194,.5);
-}
-div.jqcloud span.w3 {
-    color: rgba(22,198,194,.5);
-}
-div.jqcloud span.w2 {
-    color: rgba(22,198,194,.5);
-}
-div.jqcloud span.w1 {
-    color: rgba(22,198,194,.5);
+div.jqcloud {
+    &.cloud_1,
+    &.cloud_5 {
+        $class-slug: w !default;
+        @for $i from 1 through 10 {
+            span.w#{$i} {
+
+                color: rgba(22, 198, 194, .5);
+            }
+        }
+    }
+    &.cloud_3 {
+        $class-slug: w !default;
+        @for $i from 1 through 10 {
+            span.w#{$i} {
+
+                color: rgba(64, 65, 69, .5);
+            }
+        }
+    }
+    &.cloud_2,
+    &.cloud_4 {
+        $class-slug: w !default;
+        @for $i from 1 through 10 {
+            span.w#{$i} {
+
+                color: rgba(244, 77, 54, .5);
+            }
+        }
+    }
 }

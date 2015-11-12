@@ -1,0 +1,329 @@
+/* IMAGE LIGHTBOX SELECTOR */
+
+#imagelightbox {
+    position: fixed;
+    z-index: 10000;
+
+    cursor: pointer;
+
+    -webkit-box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 ); /* 50 */
+            box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 ); /* 50 */
+
+    -ms-touch-action: none;
+        touch-action: none;
+}
+
+
+/* ACTIVITY INDICATION */
+
+#imagelightbox-loading,
+#imagelightbox-loading div {
+    border-radius: 50%;
+}
+#imagelightbox-loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10003;
+
+    width: 2.5em; /* 40 */
+    height: 2.5em; /* 40 */
+    padding: .625em; /* 10 */
+    margin: -1.25em 0 0 -1.25em; /* 20 */
+
+    background-color: #444;
+    background-color: rgba( 0, 0, 0, .5 );
+    -webkit-box-shadow: 0 0 2.5em rgba( 0, 0, 0, .75 ); /* 40 */
+            box-shadow: 0 0 2.5em rgba( 0, 0, 0, .75 ); /* 40 */
+}
+#imagelightbox-loading div {
+    width: 1.25em; /* 20 */
+    height: 1.25em; /* 20 */
+
+    -webkit-animation: imagelightbox-loading .5s ease infinite;
+            animation: imagelightbox-loading .5s ease infinite;
+
+    background-color: #fff;
+}
+
+@-webkit-keyframes imagelightbox-loading {
+    from {
+        -webkit-transform: scale( .75 );
+
+        opacity: .5;
+    }
+    50% {
+        -webkit-transform: scale( 1 );
+
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale( .75 );
+
+        opacity: .5;
+    }
+}
+@keyframes imagelightbox-loading {
+    from {
+        transform: scale( .75 );
+
+        opacity: .5;
+    }
+    50% {
+        transform: scale( 1 );
+
+        opacity: 1;
+    }
+    to {
+        transform: scale( .75 );
+
+        opacity: .5;
+    }
+}
+
+
+/* OVERLAY */
+
+#imagelightbox-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9998;
+
+    background-color: #fff;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+
+/* "CLOSE" BUTTON */
+
+#imagelightbox-close {
+    position: fixed;
+    top: 0; /* 40 */
+    right: 2.5em; /* 40 */
+    z-index: 10002;
+
+    width: 2.5em; /* 40 */
+    height: 2.5em; /* 40 */
+
+    -webkit-transition: color .3s ease;
+            transition: color .3s ease;
+    text-align: left;
+
+    border-radius: 50%;
+    background-color: transparent;
+}
+#imagelightbox-close:hover,
+#imagelightbox-close:focus {
+    // background-color: #111;
+}
+#imagelightbox-close:before,
+#imagelightbox-close:after {
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    left: 50%;
+
+    width: 2px;
+    margin-left: -1px;
+
+    content: "";
+
+    background-color: $medium-gray;
+}
+#imagelightbox-close:before {
+    -webkit-transform: rotate( 45deg );
+        -ms-transform: rotate( 45deg );
+            transform: rotate( 45deg );
+}
+#imagelightbox-close:after {
+    -webkit-transform: rotate( -45deg );
+        -ms-transform: rotate( -45deg );
+            transform: rotate( -45deg );
+}
+
+
+/* CAPTION */
+
+#imagelightbox-caption {
+    position: fixed;
+    // bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10001;
+
+    padding: .625em; /* 10 */
+
+    text-align: left;
+
+    color: $medium-gray;
+    background-color: #fff;
+    -webkit-box-shadow: -2px 9px 12px -6px #858585;
+       -moz-box-shadow: -2px 9px 12px -6px #858585;
+            box-shadow: -2px 9px 12px -6px #858585;;
+}
+
+
+/* NAVIGATION */
+
+#imagelightbox-nav {
+    position: fixed;
+    bottom: 3.75em; /* 60 */
+    left: 50%;
+    z-index: 10001;
+
+    padding: .313em; /* 5 */
+
+    -webkit-transform: translateX( -50% );
+        -ms-transform: translateX( -50% );
+            transform: translateX( -50% );
+
+    border-radius: 20px;
+    background-color: #444;
+    background-color: rgba( 0, 0, 0, .5 );
+}
+#imagelightbox-nav button {
+    display: inline-block;
+    width: 1em; /* 20 */
+    height: 1em; /* 20 */
+    margin: 0 .313em; /* 5 */
+
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: transparent;
+}
+#imagelightbox-nav button.active {
+    background-color: #fff;
+}
+
+
+/* ARROWS */
+
+.imagelightbox-arrow {
+    position: fixed;
+    top: 50%;
+    z-index: 10001;
+
+    display: none;
+    width: 3.75em; /* 60 */
+    height: 7.5em; /* 120 */
+    margin-top: -3.75em; /* 60 */
+
+    vertical-align: middle;
+
+    background-color: #444;
+    background-color: transparent;
+
+    @include transition(all .3s);
+    // @include media($mobile-devices) {
+    //     visibility: hidden;
+    // }
+}
+.imagelightbox-arrow:hover,
+.imagelightbox-arrow:focus {
+    outline: none;
+    background-color: #666;
+    background-color: transparent;
+}
+.imagelightbox-arrow:active {
+    background-color: #111;
+}
+.imagelightbox-arrow-left {
+    left: 2.5em; /* 40 */
+
+    background: url(../images/svgs/previous_white.svg) no-repeat center center;
+}
+.imagelightbox-arrow-right {
+    right: 2.5em; /* 40 */
+
+    background: url(../images/svgs/next_white.svg) no-repeat center center;
+}
+.imagelightbox-arrow:before {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-bottom: -.125em; /* 2 */
+
+    content: "";
+
+    border: 1em solid transparent;
+}
+.imagelightbox-arrow-left:before {
+    display: none;
+    margin-left: -.313em; /* 5 */
+
+    border-right-color: #fff;
+    border-left: none;
+}
+.imagelightbox-arrow-right:before {
+    display: none;
+    margin-right: -.313em; /* 5 */
+
+    border-right: none;
+    border-left-color: #fff;
+}
+
+#imagelightbox-loading,
+#imagelightbox-overlay,
+#imagelightbox-close,
+#imagelightbox-caption,
+#imagelightbox-nav,
+.imagelightbox-arrow {
+    -webkit-animation: fade-in .25s linear;
+            animation: fade-in .25s linear;
+}
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 41.250em) /* 660 */ {
+
+    #container {
+        width: 100%;
+    }
+    #imagelightbox-close {
+        top: 0; /* 20 */
+        right: 1.25em; /* 20 */
+    }
+    #imagelightbox-nav {
+        bottom: 1.25em; /* 20 */
+    }
+
+    .imagelightbox-arrow {
+        width: 2.5em; /* 40 */
+        height: 3.75em; /* 60 */
+        margin-top: -2.75em; /* 30 */
+    }
+    .imagelightbox-arrow-left {
+        left: 1.25em; /* 20 */
+    }
+    .imagelightbox-arrow-right {
+        right: 1.25em; /* 20 */
+    }
+}
+
+@media only screen and (max-width: 20em) /* 320 */ {
+
+    .imagelightbox-arrow-left {
+        left: 0;
+    }
+    .imagelightbox-arrow-right {
+        right: 0;
+    }
+}

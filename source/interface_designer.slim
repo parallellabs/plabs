@@ -1,0 +1,98 @@
+---
+layout: new_layout
+---
+- @title = "Interface Designer | UI/UX Design Jobs at Parallel Labs"
+/ content
+.section
+	.container.careers-title
+		h1 
+			span Interface Designer 	
+			a.btn href="#apply_Form" type="button" 
+					| Apply <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg> 
+		p
+			| Looking for a interface designer who is passionate about creating experiences for mobile and has an eye for design detail.
+		h2
+			| What are we looking for:
+		ul.list
+			li 
+				| Understanding of the digital media nuances like Responsive Design, grids, Android/iOS conventions, material design guidelines etc. 
+			li
+				| Good aesthetic sense and understanding of design fundamentals (Doesn’t matter if you went to a design school or not)
+			li
+				| Experience/Keen interest in practising User Experience Design and obsession with design detail.
+			li
+				|  Have an Attitude of continuous improvement. You should never hesitate to junk what you have done and redo for better.
+			li
+				| Experience/Interest in fundamentals of Web technologies like HTML/CSS3 (Don’t worry, we don’t expect you to be a unicorn and program complex stuff and you will be designing apps/websites but its important to know the medium well)
+			li
+				| Hands on experience with design and mockup tools like Photoshop/Sketch. Experience with animation tools like AfterEffects, Quartz, Composer and Framer will be a bonus.
+
+		h2
+			| What will you get:
+		ul.list
+			li 
+				| Get to work with a team with diversified skills on Visual Design, Product Design and Front-end Development. 
+			li
+				| A office that provides space to think, do and unwind.
+			li
+				| Freedom to experiment and innovate and have your say.
+			li
+				|  Always stay updated with latest design trends
+		form.apply-form#apply_Form action="#" method="post"
+			.group
+		        input.textField#name type="text"
+		        span.highlight
+		        span.bar
+		        label Name
+		        p.message.msg1 Required
+		        svg.cross-icon.crossOne
+  					use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
+			.group
+		        input.textField#email type="text"
+		        span.highlight
+		        span.bar
+		        label Email Address
+		        p.message.msg2 Required
+		        svg.cross-icon.crossTwo
+  					use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
+			.group
+		        input.textField#behance type="text"
+		        span.highlight
+		        span.bar
+		        label Behance/Website Link
+		        p.message.msg4 Required
+		        svg.cross-icon.crossFour
+  					use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
+			.group
+		        textarea.textField#additionalInfo type="text" 
+		        span.highlight
+		        span.bar
+		        label for="attachment" 
+		    		| Cover letter
+		    .group.last
+	    		input#attachment.multiple-files type="file" multiple="mutiple"/
+		    	label.fileupload for="attachment" 
+		    		| Attach CV
+		        p.message.attach-msg1 Required.
+		        p.message.attach-msg Please enter valid file(.docx, .doc, .pdf) < 1 MB.
+		    	.filename No files selected
+			button.btn#submit href="#" type="submit" 
+					| Apply <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg> 
+/ Floating button
+#wrapper 
+	.button.button-sub  
+		a href="index.html" Home
+	.button.button-sub  
+		a href="about.html" About Us
+	.button.button-sub 
+		a href="blog.html" Blog	
+	.button.button-sub 
+		a.open-form href="#" Start A Project
+	.water-drop
+	.button.button-floating
+  		svg.plus 
+			use xlink:href="images/svgs/iconset.svg#icon-Logo_Color"
+		svg.edit
+			use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
+	.button-floating-shadow
+.btn-overlay

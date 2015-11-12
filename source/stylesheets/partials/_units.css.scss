@@ -1,3 +1,24 @@
+//  html,
+// body {
+//     height: 100%;
+// }
+
+html {
+    // overflow: hidden;
+    margin: 0;
+}
+
+// body {
+//     overflow: scroll;
+
+//     -webkit-overflow-scrolling: touch;
+// }
+
+
+.wrapper {
+    position: relative;
+}
+
 h1 {
     font-size: rem(64);
 
@@ -16,6 +37,26 @@ h2 {
     }
 }
 
+
+p {
+    font-size: rem(20);
+    font-weight: 300;
+
+    color: $medium-gray;
+
+    @include media($mobile-devices) {
+        font-size: rem(18);
+    }
+}
+a:focus,
+a:hover {
+    outline: none;
+}
+
+svg {
+    fill: currentColor;
+}
+
 // Classes to reuse (HELPER CLASSES)
 .clr-orange-fade {
     color: rgba(244,77,54,.1) !important;
@@ -23,16 +64,44 @@ h2 {
 .clr-gray-fade {
     color: rgba(64,65,69,.1) !important;
 }
+.explara-red {
+    color: #db4344;
+}
+.hj-green {
+    color: #009688;
+}
+.M0 {
+    margin: 0;
+}
 .MB10-imp {
     margin-bottom: 10px !important;
+}
+.MB40-imp {
+    margin-bottom: 40px !important;
+}
+.MB50 {
+    margin-bottom: 50px;
+}
+.MB60 {
+    margin-bottom: 60px;
 }
 .MB60-imp {
     margin-bottom: 60px !important;
 }
+.PB60 {
+    padding-bottom: 60px;
+}
 
+.box-shadow-none {
+    box-shadow: none !important;
+}
 
 .overflow-H {
+    position: relative;
+
     overflow: hidden;
+
+    -webkit-overflow-scrolling: touch;
 }
 
 // position
@@ -52,6 +121,13 @@ h2 {
     margin-bottom: 60px;
 
     @include outer-container(100%);
+    &.home-content {
+        margin-bottom: 100px;
+
+        @include media($mobile-devices) {
+            margin-bottom: 40px;
+        }
+    }
 }
 
 .square {
@@ -84,14 +160,18 @@ h2 {
 .container {
     margin-right: auto;
     margin-left: auto;
-    // width: 80%;
 
-    @include outer-container(80%);
+    @include outer-container(620px);
+    @include media($large-devices) {
+        @include outer-container(920px);
+    }
     @include media($mobile-devices) {
         padding: 0 15px;
-        // width: 100%;
 
         @include outer-container(100%);
+    }
+    @media (min-width: 1400px) {
+        @include outer-container(960px);
     }
     &:before,
     &:after {
@@ -107,11 +187,14 @@ h2 {
 // mac-bar
 .mac-bar {
     position: absolute;
-    top: 0;
+    // top: -2px;
+    z-index: 6;
 
     width: 100%;
     height: 30px;
 
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
     background-color: #ccc;
     span {
         float: left;
@@ -134,6 +217,87 @@ h2 {
     }
 }
 
+// Curvy arrow
+.direction-box {
+    position: absolute;
+    right: 10%;
+    bottom: 80px;
+
+    @include media($mobile-devices) {
+        display: none;
+    }
+    img {
+        margin-top: 8px;
+        margin-right: 10px;
+
+        vertical-align: top;
+
+        box-shadow: none !important;
+        &.up-arrow {
+            @include transform(rotate(180deg));
+        }
+        &.down-arrow {
+            @include transform(rotateY(180deg));
+        }
+    }
+    p {
+        display: inline;
+
+        font-size: rem(14);
+        font-weight: 400;
+
+        vertical-align: top;
+
+        color: rgba(242,242,242,.7);
+    }
+    &.hj {
+        bottom: 40px;
+        left: -130px;
+
+        max-width: 150px;
+        img {
+            display: block;
+            margin: 0 auto;
+
+            // color: #f2f2f2;
+        }
+        p {
+            display: block;
+
+            font-size: rem(14) !important;
+
+            color: rgba(242,242,242,.5) !important;
+        }
+    }
+}
+
+.square {
+    display: block;
+    //width within the parent
+    // width: 100%;
+
+    background-color: #ddd;
+    &:before {
+        float: left;
+        //essentially the aspect ratio. 100% means the
+        //div will remain 100% as tall as it is wide, or
+        //square in other words.
+        padding-bottom: 100%;
+
+        content: "";
+    }
+    //this is a clearfix. you can use whatever
+    //clearfix you usually use, add
+    //overflow:hidden to the parent element,
+    //or simply float the parent container.
+    &:after {
+        display: table;
+        clear: both;
+
+        content: "";
+    }
+}
+
 // gradient
 
 .gradient {
@@ -150,8 +314,9 @@ h2 {
 }
 
 // border gradient
-.border-gradient {
+.divider {
     height: 1px;
+    // margin-bottom: 30px;
 
     border: 0;
     background-color: #fff;
@@ -164,6 +329,11 @@ h2 {
 
     *zoom: 1;
     filter: progid:dximagetransform.Microsoft.gradient(gradientType=1, startColorstr="#FFFFFFFF", endColorstr="#FFFFFFFF");
+    @include media($mobile-devices) {
+        margin-bottom: 30px;
+
+        @include span-columns(12 of 12);
+    }
 }
 
 .overlay {
@@ -196,26 +366,61 @@ h2 {
     display: block;
     height: 48px;
     max-width: 250px;
-    padding: 10px;
+    padding: 0 10px;
     margin-bottom: 20px;
     overflow: hidden;
 
     font-family: $base-font-family;
+    font-size: rem(18);
     font-weight: 400;
-    line-height: 28px;
+    line-height: 44px;
 
     color: $medium-gray;
     color: rgba(255,255,255,.8);
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     border-radius: 7px;
     background-color: $blue;
-    &:hover {
+    &:hover,
+    &:focus {
         color: rgba(255,255,255,1);
+        outline: none;
     }
     span.tri-box {
         line-height: 48px;
 
         @extend .span-skew;
+        svg {
+            width: 20px;
+            height: 12px;
+
+            color: $blue;
+        }
+    }
+
+    img {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+
+        vertical-align: middle;
+    }
+    span {
+        display: inline-block;
+
+        vertical-align: middle;
+        i {
+            display: block;
+
+            font-size: rem(10);
+            font-style: normal;
+            line-height: normal;
+
+            color: #fff;
+            &:nth-child(2) {
+                font-size: rem(16);
+            }
+        }
     }
 }
 
@@ -237,8 +442,9 @@ textarea {
     padding: 10px 10px 10px 5px;
     margin: 0;
 
-    font-size: 14px;
+    font-size: 15px;
 
+    color: #5c5c5c;
     border: none;
     border-bottom: 1px solid #757575;
     border-radius: 0;
@@ -331,6 +537,19 @@ textarea:valid ~ label.active-input {
 }
 .group #counter {
     float: right;
+
+    color: #777;
+}
+.group .cross-icon {
+    position: absolute;
+    top: 36px;
+    right: 0;
+
+    display: none;
+    width: 15px;
+    height: 15px;
+
+    color: #db4344;
 }
 
 /* ACTIVE STATE 
@@ -416,11 +635,13 @@ stretch
 .stretch {
     display: table !important;
 
-    @include transform(skew(-25deg));
-    @include animation-name(stretch);
-    @include animation-duration(.3s);
-    @include animation-timing-function(ease-out);
+    @include media(min-width 768px) {
+        @include animation-name(stretch);
+    }
     @include transform-origin(50%);
+    @include animation-timing-function(ease-out);
+    @include animation-duration(.3s);
+    @include transform(skew(-25deg));
 }
 
 @include keyframes(stretch) {
@@ -434,12 +655,15 @@ stretch
 
 .stretchBack {
     display: table !important;
+    // @include media($mobile-devices) {
+    //     @include transform(skew(0deg));
+    // }
 
-    @include transform(skew(-25deg));
-    @include animation-name(stretchBack);
-    @include animation-duration(.3s);
-    @include animation-timing-function(ease-in);
     @include transform-origin(50%);
+    @include animation-timing-function(ease-in);
+    @include animation-duration(.3s);
+    @include animation-name(stretchBack);
+    @include transform(skew(-25deg));
 }
 
 @include keyframes(stretchBack) {
@@ -456,10 +680,10 @@ stretch
 
 
 .strechLeft {
-    @include transform-origin(100% 0%);
-    @include animation-name(strechLeft);
-    @include animation-timing-function(ease-out);
     @include animation-duration(1.5s);
+    @include animation-timing-function(ease-out);
+    @include animation-name(strechLeft);
+    @include transform-origin(100% 0%);
 }
 
 @include keyframes(strechLeft) {
@@ -472,10 +696,10 @@ stretch
 }
 
 .strechRight {
-    @include transform-origin(0% 0%);
-    @include animation-name(strechLeft);
-    @include animation-timing-function(ease-out);
     @include animation-duration(1.5s);
+    @include animation-timing-function(ease-out);
+    @include animation-name(strechLeft);
+    @include transform-origin(0% 0%);
 }
 
 @include keyframes(strechLeft) {
@@ -485,4 +709,327 @@ stretch
     100% {
         @include transform(scaleX(1));
     }
+}
+
+// FLoating button
+
+.btn-overlay {
+    z-index: 10;
+    // @include transform(scale(0));
+    // opacity: 0;
+
+    display: none;
+
+    background-color: rgba(0,0,0,.6);
+
+    @include transition(all .3s);
+    @include position(fixed, 0 0 0 0);
+}
+
+// Floating button with css and jQuery
+#wrapper {
+    position: fixed;
+    right: 20px;
+    bottom: 16px;
+    z-index: 10;
+
+    visibility: hidden;
+    width: auto;
+    height: auto;
+    // width: 200px;
+    // height: 380px;
+    padding: 24px;
+    // overflow: hidden;
+    // -webkit-transform: translate(-50%, -50%);
+    //         transform: translate(-50%, -50%);
+
+    border-radius: 1.5px;
+    // background-color: #fff;
+    // box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+    &.home {
+        height: 300px;
+    }
+    &.available {
+        visibility: visible;
+        &.button-floating-clicked {
+            z-index: 9999;
+
+            padding-bottom: 65px;
+        }
+    }
+}
+
+.water-drop {
+    position: absolute;
+    z-index: 30;
+
+    display: none;
+    visibility: hidden;
+    width: 42px;
+    height: 58px;
+    margin-left: 6px;
+
+    // background: url(../images/waterdrop.svg) 0 0 no-repeat;
+    // background-size: 42px 58px;
+}
+.available.button-floating-clicked ~ .btn-overlay {
+    display: block;
+}
+.button-floating-clicked .water-drop {
+    -webkit-animation: waterDrop .8s cubic-bezier(1, 0, .5, 0);
+            animation: waterDrop .8s cubic-bezier(1, 0, .5, 0);
+}
+@-webkit-keyframes waterDrop {
+    0% {
+        visibility: visible;
+    }
+    75% {
+        opacity: .6;
+    }
+    87.5% {
+        opacity: .4;
+    }
+    100% {
+        -webkit-transform: translateY(294px);
+
+        opacity: 0;
+    }
+}
+@keyframes waterDrop {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        transform: translateY(294px);
+
+        opacity: 0;
+    }
+}
+
+.button {
+    position: relative;
+
+    margin-bottom: 18px;
+
+    border-radius: 50%;
+}
+.button:last-child {
+    margin-bottom: 0;
+}
+.button-floating .plus {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 55px;
+    height: 55px;
+    padding: 8px;
+    margin: 0 ;
+
+    line-height: 55px;
+
+    text-align: center;
+
+    color: white;
+}
+.button-floating .edit {
+    width: 24px;
+    height: 24px;
+    margin-bottom: -2px;
+
+    opacity: 0;
+}
+.button-floating,
+.button-floating-shadow {
+    width: 54px;
+    height: 54px;
+}
+.button-floating {
+    position: absolute;
+    right: 25px;
+    bottom: 4px;
+    // left: 0;
+    z-index: 40;
+    // margin: 0 auto;
+
+    font-size: 30px;
+    line-height: 54px;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: #fff;
+    background-color: #16c6c2;
+
+    @include transition-duration(.3s);
+    @include media($mobile-devices) {
+        right: 2px;
+        bottom: 0;
+
+        margin-bottom: 10px;
+    }
+
+    // @include transform(translateX(-50%));
+}
+.button-floating-clicked .button-floating {
+    @include transform(rotate(180deg));
+    .plus {
+        opacity: 0;
+    }
+    .edit {
+        opacity: 1;
+    }
+}
+
+.button-sub,
+.button-floating-shadow {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+
+    @include transition-duration(.3s);
+}
+.button-floating-shadow {
+    position: absolute;
+    right: 25px;
+    bottom: 23px;
+    // left: 0;
+    z-index: 20;
+    // margin: 0 auto;
+
+    border-radius: 50%;
+
+    @include media($mobile-devices) {
+        right: 2px;
+        bottom: 0;
+
+        margin-bottom: 10px;
+    }
+}
+.button-sub:hover,
+.button-floating:hover + .button-floating-shadow,
+.button-floating-clicked .button-floating-shadow {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
+}
+
+.button-sub {
+    left: 0;
+    z-index: 20;
+
+    display: none;
+    float: right;
+    height: 52px;
+    clear: both;
+
+    opacity: 0;
+    color: #888;
+    border-radius: 5px;
+    background-color: #fff;
+
+    @include animation-duration(.3s);
+    @include animation-fill-mode(backwards);
+    @include media($mobile-devices) {
+        margin-right: -20px;
+    }
+
+    a {
+        font-size: rem(18);
+        font-weight: 400;
+        line-height: rem(38);
+
+        text-align: center;
+
+        color: #888;
+    }
+}
+.button-floating-clicked-out .button-sub {
+    @include animation-name(fadeOut);
+}
+.button-floating-clicked .button-sub {
+    display: block;
+    padding: 8px 10px;
+
+    cursor: pointer;
+    text-align: center;
+
+    opacity: 1;
+
+    @include animation-name(bounceIn);
+    &:nth-of-type(3) {
+        @include animation-delay(.08s);
+    }
+    &:nth-of-type(2) {
+        @include animation-delay(.14s);
+    }
+    &:nth-of-type(1) {
+        @include animation-delay(.20s);
+    }
+}
+@include keyframes(bounceIn) {
+    0% {
+        opacity: 0;
+
+        @include transform(scale(.3));
+    }
+    100% {
+        @include transform(scale(1));
+    }
+}
+@include keyframes (fadeOut ){
+    0% {
+        opacity: 1;
+
+        @include transform(scale(1));
+    }
+    100% {
+        @include transform(scale(0));
+    }
+}
+
+.button-sub[data-color=purple] {
+    background-color: #9c27b0;
+
+    @include animation-delay(.2s);
+}
+.button-floating-clicked .button-sub[data-color=purple] {
+    @include animation-delay(.6s);
+}
+
+.button-sub[data-color=green] {
+    background-color: #8bc34a;
+
+    @include animation-delay(.15s);
+}
+.button-floating-clicked .button-sub[data-color=green] {
+    @include animation-delay(.65s);
+}
+
+.button-sub[data-color=pink] {
+    background-color: #e91e63;
+
+    @include animation-delay(.1s);
+}
+.button-floating-clicked .button-sub[data-color=pink] {
+    @include animation-delay(.7s);
+}
+
+.button-sub[data-color=indigo] {
+    background-color: #3f51b5;
+
+    @include animation-delay(.0.5s);
+}
+.button-floating-clicked .button-sub[data-color=indigo] {
+    @include animation-delay(.75s);
+}
+.button-floating-clicked.button-sub-purple-clicked .button-sub[data-color=purple],
+.button-floating-clicked.button-sub-green-clicked .button-sub[data-color=green],
+.button-floating-clicked.button-sub-pink-clicked .button-sub[data-color=pink],
+.button-floating-clicked.button-sub-indigo-clicked .button-sub[data-color=indigo] {
+    z-index: 0;
+
+    cursor: default;
+
+    @include transform(scale(30));
+    @include transition(all .4s ease-in);
 }

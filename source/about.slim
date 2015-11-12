@@ -1,19 +1,20 @@
 ---
 layout: new_layout
 ---
+- @title = "About Parallel Labs"
+
 /! About us contents
 .section
 	/! Introduction section
 	.about-us
-		h2 
-			| We are a product design lab with a lean and jargon-free approach to designing great products.
-		p.para
-			| Parallel Labs was found on the belief that creating successful products needs something beyond a client-agency model. It needs a engagement where we work in parallel with the client team as a partner who understands their business, customers and will walk along on the product journey.
-		p
-			| Our team is intentionally small and we work on limited assignments at a time. Clients are part of our design process where we share ideas, brainstorm, debate and critique to constantly improve and iterate our craft.
-		img src="" alt=""
-		p
-			|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, reiciendis et. Laudantium omnis modi corporis, architecto eius sit aperiam dolorem, possimus dolor nulla quas ducimus aut odit officia voluptatum alias?
+		.abt-wrap
+			h2 
+				| We are a product design lab with a lean and jargon-free approach to designing great products.
+			p.para
+				| Parallel Labs was found on the belief that creating successful products needs something beyond a client-agency model. It needs a engagement where we work in parallel with the client team as a partner who understands their business, customers and will walk along on the product journey.
+			p
+				| Our team is intentionally small and we work on limited assignments at a time. Clients are part of our design process where we share ideas, brainstorm, debate and critique to constantly improve and iterate our craft.
+			img src="" alt=""
 	/! end
 
 	/! Team members group
@@ -24,75 +25,128 @@ layout: new_layout
 		.wrap
 			.img-box 
 				| <p>Robin</p>  <p>Dhanwani</p> 
-				img src="" alt=""
+				img src="images/Robin.png" alt="Founder's image"
 			.info-box
 				h4 
 					| Robin Dhanwani
-					span Founder / UX Designer
+					span Founder / Product Designer
 				p
-					| Robin brings in 5 years experience of working in the digital space having worked on varied roles with a technology MNC(he hated it).
+					| Robin brings in about 7 years of experience in digital space and has consulted over 50 companies on digital product design &amp; branding.
 				.cloud_1
-			.divider
+		.divider
 		/! end
 		/! Member
 		.wrap.left-aligned
 			.info-box
 				h4
 					| Chaitanya Alluru
-					span Visual Designer
+					span Interface Designer
 				p
 					| Chaitanya is the Design hacker on our team who follows conventions and standards like a ritual. He feels that he has so many things to learn, but so little time.
-				.cloud_2
+				.cloud_4
 			.img-box.clr-orange-fade
-				| <p>Chaitanya</p> <p> Alluru</p> 
-				img src="" alt=""
-			.divider
+				| <p class="clr-orange-fade">Chaitanya</p> <p class="clr-orange-fade"> Alluru</p> 
+				img src="images/Chaitanya.png" alt="Designer's image"
+		.divider
 		/! end
 		/! Member 
 		.wrap
-			.img-box.clr-gray-fade 
-				| <p>Rakesh</p>  <p>Sharma</p> 
-				img src="" alt=""
+			.img-box 
+				| <p class="clr-gray-fade">Anup</p>  <p class="clr-gray-fade">Ambulkar</p> 
+				img src="images/Anup.png" alt="Developer's image"
+			.info-box
+				h4 
+					| Anup Ambulkar
+					span Front-end Developer
+				p
+					| Anup is a developer with a great eye for design detail and user experience which helps him create precise interfaces and interactions.
+				.cloud_3
+		.divider
+		/! end
+		/! Member 
+		.wrap.left-aligned
 			.info-box
 				h4 
 					| Rakesh Sharma
 					span Front-End Developer
 				p
 					| Rakesh is a big fan of modern interactive web and loves creating websites with parallax and transitions. In free time, he plays Cricket and Volley Ball.
-				.tag-cloud
-			.divider
+				.cloud_5
+			.img-box.clr-gray-fade 
+				| <p>Rakesh</p>  <p>Sharma</p> 
+				img src="images/Rakesh.png" alt="Developer's image"
+		.divider
+		/! end
+		/! Member
+		.wrap
+			.img-box.clr-orange-fade
+				| <p class="clr-orange-fade">Sreenath</p> <p class="clr-orange-fade"> Kotteri</p> 
+				img src="images/Sreenath.png" alt="Designer's image"
+			.info-box
+				h4
+					| Sreenath Kotteri
+					span Interface Designer
+				p
+					| Sreenath is a Visual Communication graduate whose love for gadgets, games and apps made him want to design interfaces.
+				.cloud_2
+		.divider
 		/! end
 		/! Member
 		.wrap.left-aligned
 			.info-box
 				h4 
-					| Why Parallel Labs?
+					| Join our Team
 				p
 					| Joining Parallel Labs means working with a talented team on incredible projects, enjoying flexible work hours and competitive benefits. Our base at HSR Layout, Bangalore is easy to commute and has some of the best eateries, coffee shops and also the latest Xbox-One to unwind !!
+				.jobs
+					a href="project_manager.html" Project Manager
+					a href="interface_designer.html" Interface Designer
+					a href="graphic_designer.html" Graphic Designer/Illustrator
 				.tag-cloud
 			.img-box 
-				| <p>Join Our </p><p> Team </p>
-				img src="" alt=""
-			.divider
+				| <p class="clr-gray-fade">Join Our </p><p class="clr-gray-fade"> Team </p>
+				img src="images/shadow_man.png" alt="shadow profile"
+		.divider
 		/! end
 	/! end
 	/! Our Lab Gallery
-	.feeds.lab-gallery
+	.feeds.lab-gallery.abt.fancy
 		h2
 			| Our Lab
-		.feed-box
-			img src="../images/project.png" alt=""
-		.feed-box
-			img src="../images/project.png" alt=""
-		.feed-box
-			img src="../images/project.png" alt=""
-		.feed-box
-			img src="../images/project.png" alt=""
-		.feed-box
-			img src="../images/project.png" alt=""
+		a.feed-box.main-box.lightbox href="images/lunch_time.jpg" data-imagelightbox="f"
+			img src="images/abt_small1.jpg" alt="Posters"
+		a.feed-box.lightbox href="images/ill_explain.jpg" data-imagelightbox="f"
+			img src="images/abt_small2.jpg" alt="White Board"
+		a.feed-box.lightbox href="images/lets_discuss.jpg" data-imagelightbox="f"
+			img src="images/abt_small3.jpg" alt="Pantry"/
+		a.feed-box.lightbox href="images/relax.jpg" data-imagelightbox="f"
+			img src="images/abt_small4.jpg" alt="Sofa"/
+		a.feed-box.lightbox href="images/office_trip.jpg" data-imagelightbox="f"
+			img src="images/abt_small5.jpg" alt="Team Outing"/
 / New project section
 .start-project
 	p 
 		| We would love to hear about your next project.
-	a href="" class="btn" Start a Project
+	a href="javascript:void(0);" class="btn open-form" Start a Project
 
+= partial "layouts/main_form.slim"
+
+
+/ Floating button
+#wrapper 
+	.button.button-sub  
+		a href="index.html" Home
+	.button.button-sub  
+		a href="about.html" About Us
+	.button.button-sub 
+		a href="blog.html" Blog	
+	.button.button-sub 
+		a.open-form href="#" Start A Project
+	.water-drop
+	.button.button-floating
+  		svg.plus 
+			use xlink:href="images/svgs/iconset.svg#icon-Logo_Color"
+		svg.edit
+			use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
+	.button-floating-shadow
+.btn-overlay

@@ -47,8 +47,10 @@ var Workspace = Backbone.Router.extend({
   fnFourth: function() {
       enquiries.set('currentPage', 4);
       $('#fourthForm').removeClass('move-right');
+      $('#fourthForm').removeClass('move-left');
       form.setElement('#fourthForm');   
       $('#thirdForm').addClass('move-left');
+      $('#fifthForm').addClass('move-right');
   },
   fnFifth: function() {
       enquiries.set('currentPage', 5);
@@ -107,7 +109,7 @@ var FormView = Backbone.View.extend({
     var currentPage = this.model.get('currentPage');
     console.log(currentPage - 1);
     workspace.navigate('' + (currentPage - 1), {trigger : true});
-    $('.group .message').hide('slow');
+    $('.group .message').animate({"opacity": "+0"});
   },
 
   nextPage: function() {
@@ -125,43 +127,62 @@ var FormView = Backbone.View.extend({
   shouldProceed: function() {
       var  validateModel = {
       1: function() {
-        // return !!enquiries.get('clientName');
         if(!!enquiries.get('clientName')){
           $('.client').text(enquiries.get('clientName'));
           $('.group .message').animate({"opacity": "+0"});
+          $('#clientName').css('border-color', '#757575');
+          $('.group .cross-icon').hide();
           return !!enquiries.get('clientName');
         }else{
           $('.group .message').animate({"opacity": "+1"});
+          $('#clientName').css('border-color', '#db4344');
+          $('.group .cross-icon').show();
         }
       },
       2: function() {
-        if(!!enquiries.get('email')){
-          $('.group .message').animate({"opacity": "+0"});
-          return !!enquiries.get('email');
-        }else{
-          $('.group .message').animate({"opacity":"+1"});
-        }
+           var emailReg = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;  
+           console.log(enquiries.get('email'));
+           var mail = enquiries.get('email');
+           if(!!emailReg.test(mail)) {  
+                $('.group .message').animate({"opacity": "+0"});
+                $('#email').css('border-color', '#757575');
+                $('.group .cross-icon').hide();
+                return !!enquiries.get('email');
+           }else{
+              $('.group .message').animate({"opacity":"+1"});
+                $('.group .cross-icon').show();
+                $('#email').css('border-color', '#db4344');
+           }       
+
       },
       3: function() {
-        // return !!enquiries.get('projectBrief');
-        if(!!enquiries.get('projectBrief')){
+        var inputLength =  enquiries.get('projectBrief').length;
+        console.log(inputLength);
+        if(!!enquiries.get('projectBrief') && inputLength > 140){
           $('.group .message').animate({"opacity":"+0"});
+          $('#projectBrief').css('border-color', '#757575');
+          $('.group .cross-icon').hide();
           return !!enquiries.get('projectBrief');
         }else{
           $('.group .message').animate({"opacity":"+1"});
+          $('#projectBrief').css('border-color', '#db4344');
+          $('.group .cross-icon').show();
         }
       },
       4: function() {
-        // return !!enquiries.get('projectBrief');
         if(!!enquiries.get('budget')){
           $('.group .message').animate({"opacity":"+0"});
+          $('#budget').css('border-color', '#757575');
+          $('.group .cross-icon').hide();
           return !!enquiries.get('budget');
         }else{
           $('.group .message').animate({"opacity":"+1"});
+          $('#budget').css('border-color', '#db4344');
+          $('.group .cross-icon').show();
         }
       },
       5: function() {
-        return !!(!!enquiries.get('attachments').length || !!enquiries.get('link'));
+        return true;
       }
     };
     var flag = validateModel[enquiries.get('currentPage').toString()]();
@@ -174,7 +195,7 @@ var FormView = Backbone.View.extend({
     this.modelUpdate();
     console.log(enquiries.attributes);
 
-    $.post( "http://localhost:8080/sendmail", enquiries.attributes )
+    $.post( "http://205.186.143.136:5000/sendmail", enquiries.attributes )
       .done(function( data ) {
         console.log('Response: ', data );
         alert( "Message sent succesfully:" + data );

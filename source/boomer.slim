@@ -1,0 +1,140 @@
+---
+layout: parallex_layout
+---
+- @title = "Boomer Marketing - Android App Case Study | Parallel Labs"
+
+= partial "layouts/e_android_header.slim"
+/! Hero banner style
+.master-banner.explara-banner.boomer-banner.height-fix
+	.overlay
+	.banner-content.e-content
+		img src="images/boomer_logo.png" alt="Boomer logo"/
+		h2
+			| Boomer Marketing	
+		p
+			| Helping small businesses market like a pro.
+		a.btn target="_blank" href="https://play.google.com/store/apps/details?id=co.boomer.marketing&hl=en" type="button" 
+				img.icon src="images/android_icon_white.png" alt="Android icon"/
+				span.text 
+					| <i>Get it on</i> <i>Google Play</i>
+/! End
+
+/! content
+.section.explara-content.boomer-content
+	.content-section
+		p.MB60
+			| Boomer has been the most challenging project we have worked on at Parallel Labs. It’s a super powerful app which helps Small Businesses manage their complete marketing from a mobile app.
+		ul.check-list
+			li 
+				img src="images/checkmark.png" alt="check icon"/
+				| Build and manage a responsive website.
+			li 
+				img src="images/checkmark.png" alt="check icon"/
+				| Chat live with users and recieve IP based calls.
+			li 
+				img src="images/checkmark.png" alt="check icon"/
+				| Manage and push updates to all social channels in one tap.
+			li 
+				img src="images/checkmark.png" alt="check icon"/
+				| Launch promotions like offers and events from the app.
+/! end
+
+/! content
+.section.explara-content.boomer-content
+	.content-section
+		h2.MB60-imp
+			| Onboarding a new Business
+	.walkthrough.fancy
+		a.lightbox href="images/business-01@2x.png" data-imagelightbox="f"
+			img src="images/business-01.png" alt="Onboarding - Store Type"/
+		a.lightbox href="images/business-02-b@2x.png" data-imagelightbox="f"
+			img src="images/business-02-b.png" alt="Onboarding - Find on Google"/
+		a.lightbox href="images/business-03-c@2x.png" data-imagelightbox="f"
+			img src="images/business-03-c.png" alt="Onboarding - Create Business Listing"/
+		a.lightbox href="images/onboarding-home@2x.png" data-imagelightbox="f"
+			img src="images/onboarding-home.png" alt="Onboarding - Post SignUp Upgrade Cards"/
+/! end
+
+/! content
+.section.explara-content.boomer-content
+	.content-section
+		h2
+			| Compose Screens
+		p.MB60
+			| Compose screens for creating different types of content which can be pushed to website as well in one click. Since small businesses generally don’t have resources to create good content, we came up with a idea to integrate google and Flickr images in compose screens allowing users to fetch royalty free images instantly from these platforms and make content engaging and presentable.
+	.walkthrough.fancy.compose-screen
+		a.lightbox href="images/photos-03@2x.png" data-imagelightbox="h"
+			img src="images/photos-03.png" alt="Photo Gallery"/
+		a.lightbox href="images/offers-02.jpg" data-imagelightbox="h"
+			img src="images/offers-02.jpg" alt="Offers Listing"/
+		a.lightbox href="images/Coupons_02.jpg" data-imagelightbox="h"
+			img src="images/Coupons_02.jpg" alt="Coupons"/
+/! end
+
+/! content
+.section.explara-content.boomer-content
+	.content-section
+		h2
+			| Switching Business &amp; Manager
+		p
+			| We considered a completely different approach to navigation to facilitate two key requirements allowing a user to switch between different businesses he owns and also switch the active manager in one click who will receive all calls and get notifications for enquiries currently.
+	.walkthrough.fancy.switching
+			a.lightbox href="images/HomeCoachmark.jpg" data-imagelightbox="g"
+				img src="images/HomeCoachmark.jpg" alt="Onboarding - Store Type"/
+			a.lightbox href="images/HomeChangeBusiness_01.jpg" data-imagelightbox="g"
+				img src="images/HomeChangeBusiness_01.jpg" alt="Onboarding - Find on Google"/
+			a.lightbox href="images/HomeChangeManager.jpg" data-imagelightbox="g"
+				img src="images/HomeChangeManager.jpg" alt="Onboarding - Create Business Listing"/
+/! end
+
+/! content
+.section.explara-content.boomer-content
+	.content-section
+		h2
+			| Empty Screens and Guided Onboarding
+		p
+			| On a app with such extensive list of features, users need to be budged event post signup on empty screens and home screen to make complete use of the application. These empty screens and cards nudging to build website, connect accounts were meant to make on-boarding seamless.
+.sky-carousel#sky-carousel-2
+	.sky-carousel-wrapper
+		ul.sky-carousel-container
+			li
+				img alt="walkthrough Image" src="images/walkthrough-screen-1.jpg" /
+			li
+				img alt="walkthrough Image" src="images/walkthrough-screen-2.jpg" /
+			li
+				img alt="walkthrough Image" src="images/walkthrough-screen-3.jpg" /
+			li
+				img alt="walkthrough Image" src="images/walkthrough-screen-4.jpg" /
+			li
+				img alt="walkthrough Image" src="images/walkthrough-screen-5.jpg" /
+			li
+				img alt="walkthrough Image" src="images/walkthrough-screen-6.jpg" /
+			li
+				img alt="walkthrough Image" src="images/walkthrough-screen-7.jpg" /
+/ New project section
+.start-project
+	p 
+		| We would love to hear about your next project.
+	a href="javascript:void(0);" class="btn open-form" Start a Project
+	
+= partial "layouts/footer.slim"
+= partial "layouts/main_form.slim"
+
+/ Floating button
+#wrapper 
+	.button.button-sub  
+		a href="index.html" Home
+	.button.button-sub  
+		a href="about.html" About Us
+	.button.button-sub 
+		a href="blog.html" Blog	
+	.button.button-sub 
+		a.open-form href="#" Start A Project
+	.water-drop
+	.button.button-floating
+  		svg.plus 
+			use xlink:href="images/svgs/iconset.svg#icon-Logo_Color"
+		svg.edit
+			use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
+	.button-floating-shadow
+.btn-overlay

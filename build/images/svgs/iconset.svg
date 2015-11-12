@@ -1,0 +1,30 @@
+<svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-Left_Arrow" viewBox="0 0 1461 1024">
+	<title>Left_Arrow</title>
+	<path class="path1" d="M0 416.812l737.328-392.033v198.837l-565.889 298.558z"></path>
+	<path class="path2" d="M823.954 853.971l-86.626 163.784-737.328-388.407v-212.536z"></path>
+	<path class="path3" d="M928.107 1019.568h-187.555l533.052-1013.524h187.354l-532.851 1013.524z"></path>
+</symbol>
+<symbol id="icon-Logo_Color" viewBox="0 0 2688 1024">
+	<title>Logo_Color</title>
+	<path class="path1 fill-color2" d="M0 416.812l737.328-392.033v198.837l-565.889 298.558z"></path>
+	<path class="path2 fill-color1" d="M823.954 853.971l-86.626 163.784-737.328-388.407v-212.536z"></path>
+	<path class="path3 fill-color2" d="M2516.586 513.914l-642.040-344.892 76.15-152.301 737.328 391.832z"></path>
+	<path class="path4 fill-color1" d="M2688.025 408.552v212.737l-737.328 388.407v-213.745z"></path>
+	<path class="path5 fill-color2" d="M928.107 1019.568h-187.555l533.052-1013.524h187.354l-532.851 1013.524z"></path>
+	<path class="path6 fill-color1" d="M1421.271 1024h-187.354l526.404-1009.294h187.354l-526.404 1009.294z"></path>
+</symbol>
+<symbol id="icon-Right_Arrow" viewBox="0 0 1454 1024">
+	<title>Right_Arrow</title>
+	<path class="path1" d="M1282.871 513.914l-642.040-344.892 76.15-152.301 737.328 391.832z"></path>
+	<path class="path2" d="M1454.31 408.552v212.737l-737.328 388.407v-213.745z"></path>
+	<path class="path3" d="M187.354 1024h-187.354l526.404-1009.294h187.354l-526.404 1009.294z"></path>
+</symbol>
+<symbol id="icon-delete_sign" viewBox="0 0 1024 1024">
+	<title>delete_sign</title>
+	<path class="path1" d="M843.874 240.474l-603.392 603.392-60.339-60.339 603.392-603.392 60.339 60.339z"></path>
+	<path class="path2" d="M783.526 843.874l-603.392-603.392 60.339-60.339 603.392 603.392-60.339 60.339z"></path>
+</symbol>
+</defs>
+</svg>

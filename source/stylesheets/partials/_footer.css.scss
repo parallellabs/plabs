@@ -1,13 +1,13 @@
 // footer style
 .footer {
     max-height: 200px;
-    padding: 40px 15px;
+    padding: 35px 15px;
 
     text-align: center;
 
-    background-color: rgba(216,216,216,.15);
+    background-color: rgba(216,216,216,.1);
 
-    @include outer-container(100%);
+    @include outer-container(100%);;
     p {
         margin-bottom: 40px;
 
@@ -16,6 +16,10 @@
         font-weight: 300;
 
         color: rgba(85,85,85,.7);
+
+        @include media($mobile-devices) {
+            font-size: rem(16);
+        }
     }
     .socials {
         a {

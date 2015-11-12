@@ -1,0 +1,45 @@
+---
+layout: new_layout
+---
+- @title = "Parallel Labs Blog"
+
+/ content
+.section
+	.container
+		.blog-container
+			h2 
+				| Front-end Development — The missing ingredient in User Experience Design
+			img src="images/blog1.jpeg" alt="Blog banner"/
+			p
+				| User Experience of Web Applications has evolved a lot over the last decade with the evolution of touch devices, gestures, retina displays and powerful browsers, but an often ignored aspect while planning User Experience for Apps is Front-end Development and a world of new possibilities it has opened up.
+			.action-box
+				.date
+					| 10th Sep, 2014
+				a href="https://medium.com/parallel-labs/front-end-development-the-missing-ingredient-in-user-experience-design-909ac26e7d48#.44mqaieu7" type="button" class="btn" Read More
+		.blog-container
+			h2 
+				| The blurring lines — Web Design vs Development
+			p
+				| Over the last year with the evolution of responsive web design and modern Web Design tools like Adobe Reflow and Webflow, the buzz in town is that lines have blurred and we don’t need two people doing design and development.
+			.action-box
+				.date
+					| 13th Feb, 2014
+				a href="https://medium.com/parallel-labs/the-blurring-lines-web-design-vs-development-b163f3ee2223?source=latest---" type="button" class="btn" Read More
+/ Floating button
+#wrapper 
+	.button.button-sub  
+		a href="index.html" Home
+	.button.button-sub  
+		a href="about.html" About Us
+	.button.button-sub 
+		a href="blog.html" Blog	
+	.button.button-sub 
+		a.open-form href="#" Start A Project
+	.water-drop
+	.button.button-floating
+  		svg.plus 
+			use xlink:href="images/svgs/iconset.svg#icon-Logo_Color"
+		svg.edit
+			use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
+	.button-floating-shadow
+.btn-overlay

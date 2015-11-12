@@ -35,6 +35,8 @@ page "/about.html", :layout => :new_layout
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 
+activate :imageoptim
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
@@ -68,11 +70,32 @@ configure :build do
   # Enable cache buster
   # activate :asset_hash
 
+  # activate :gzip
+  
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
-  # set :http_prefix, "/Content/images/"
+  # set :http_prefix, "/git/plabs/images/"
 end
+
+
+# Deployment configuration
+# activate :deploy do |deploy|
+#   deploy.method   = :ftp
+#   deploy.host            = 'ftp.cpll.co'
+#   deploy.port            = 21
+#   deploy.path            = 'plabs'
+#   deploy.user            = 'middleman@cpll.co'
+#   deploy.password        = 'plabs234#'
+# end
+activate :deploy do |deploy|
+  deploy.method   = :ftp
+  deploy.host            = 'ftp.parallellabs.io'
+  deploy.port            = 21
+  deploy.path            = ''
+  deploy.user            = 'PLlive@parallellabs.io'
+  deploy.password        = 'Zentigrity26#'
+  end
 
 

@@ -1,21 +1,24 @@
 ---
 layout: parallex_layout
 ---
+- @title = "Housejoy - iOS App Design Case Study | Parallel Labs"
+
 = partial "layouts/header.slim"
 /Hero banner style
-.master-banner.hj-banner
+.master-banner.hj-banner.height-fix
 	.banner-content
 		.content
 			h1 Housejoy iOS App
-			p 
+			p.ios 
 				| Being a on-demand app for home services, a seamless mobile experience is the heart of the product strategy.
-			a.btn.next href="#" type="button" 
-				img.icon src="../images/svgs/icons/apple.svg" alt="Mac icon"/
-				span.text 
-					| <i>Available on the</i> <i>App Store</i>
-		.img-container
-			a href="#"
-				img src="../images/iphone-6-plus-flat-2-rectangle-89-play.png" alt="iphone picture"/
+			div.btn.coming-soon
+				| Coming Soon
+		.img-container.pos-rel
+			a target="_blank" href="https://marvelapp.com/535eg6"
+				img src="images/iphone-6-plus-flat-2-rectangle-89-play.png" alt="iphone picture"/
+			.direction-box.hj
+				img src="images/curvy-up-arrow.png" alt="direction arrow"/
+				p Click for Live demo
 
 / End
 
@@ -24,7 +27,7 @@ layout: parallex_layout
 	.content-section
 		h2 	
 			| Branding
-		p 
+		p.ios 
 			|	One of the key branding goals was to position Housejoy as a professional and high quality service and not another marketplace for home services. Hence, we decided to give it a little sophisticated look and feel.
 / End
 
@@ -54,12 +57,15 @@ layout: parallex_layout
 		h2 	
 			| Typography
 		.color-panel
-			.color-pelate.font
-				| Blogger Sans
-			.color-pelate.font-weight
-				| Light <br> Regular <br> Medium <br> Bold
 			.color-pelate
-				| Aa
+				img src="images/blogger-sans.png" alt="fonts images"/
+			.color-pelate
+				img src="images/light.png" alt="fonts images"/
+				img src="images/regular.png" alt="fonts images"/
+				img src="images/medium.png" alt="fonts images"/
+				img src="images/bold.png" alt="fonts images"/
+			.color-pelate
+				img src="images/aa.png" alt="fonts images"/
 / End	
     
 / content section
@@ -69,29 +75,29 @@ layout: parallex_layout
 			| Iconography
 		.icons
 			.icon-box
-				img src="../images/svgs/icons/plumbing_black.svg" alt="Appliances icon"/ 
+				img src="images/svgs/icons/plumbing_black.svg" alt="Appliances icon"/ 
 			.icon-box
-				img src="../images/svgs/icons/pest_control_black.svg" alt="Appliances icon"/ 
+				img src="images/svgs/icons/pest_control_black.svg" alt="Appliances icon"/ 
 			.icon-box
-				img src="../images/svgs/icons/painting_black.svg" alt="Appliances icon"/ 
+				img src="images/svgs/icons/painting_black.svg" alt="Appliances icon"/ 
 			.icon-box
-				img src="../images/svgs/icons/appliances_black.svg" alt="Appliances icon"/ 
+				img src="images/svgs/icons/appliances_black.svg" alt="Appliances icon"/ 
 			.icon-box
-				img src="../images/svgs/icons/mobile_black.svg" alt="Appliances icon"/ 
+				img src="images/svgs/icons/mobile_black.svg" alt="Appliances icon"/ 
 			.icon-box
-				img src="../images/svgs/icons/fitness_black.svg" alt="Appliances icon"/ 
+				img src="images/svgs/icons/fitness_black.svg" alt="Appliances icon"/ 
 			.icon-box
-				img src="../images/svgs/icons/electrical_black.svg" alt="Appliances icon"/ 
+				img src="images/svgs/icons/electrical_black.svg" alt="Appliances icon"/ 
 			.icon-box
-				img src="../images/svgs/icons/carpentry_black.svg" alt="Appliances icon"/ 
+				img src="images/svgs/icons/carpentry_black.svg" alt="Appliances icon"/ 
 			.icon-box
-				img src="../images/svgs/icons/beauty_black.svg" alt="Appliances icon"/ 
+				img src="images/svgs/icons/beauty_black.svg" alt="Appliances icon"/ 
 			.icon-box
-				img src="../images/svgs/icons/laundry_black.svg" alt="Appliances icon"/ 
+				img src="images/svgs/icons/laundry_black.svg" alt="Appliances icon"/ 
 			.icon-box
-				img src="../images/svgs/icons/laptop_black.svg" alt="Appliances icon"/ 
+				img src="images/svgs/icons/laptop_black.svg" alt="Appliances icon"/ 
 			.icon-box
-				img src="../images/svgs/icons/broom_black.svg" alt="Appliances icon"/ 
+				img src="images/svgs/icons/broom_black.svg" alt="Appliances icon"/ 
 
 / End
 
@@ -100,11 +106,11 @@ layout: parallex_layout
 	.content-section
 		h2 	
 			| Express multi-select experience instead of shopping Cart
-		p 
+		p.ios 
 			|	We wanted to let the users select multiple services, see details about each, select quantities etc. without complicating it and making it a shopping cart.
-		p	
+		p.ios	
 			| After multiple iterations and explorations, we came to this accordion based multi-select interaction which is fast and fun to use.
-		img src="../images/iphone_6-template-white-ramotion.gif" alt="iPhone animated image"/
+		img src="images/iphone_6-template-white-ramotion.gif" alt="iPhone animated image"/
 / End
 
 / content section
@@ -112,9 +118,9 @@ layout: parallex_layout
 	.content-section
 		h2 	
 			| Alternative Booking Flow for Simple Tasks
-		p 
+		p.ios 
 			|	A quick &amp; simple approach to share details about the job and encourage optional details like photographs to help the visiting staff be better prepared for the task with essential tools and spares.
-		img src="../images/iphone-6-plus-flat-2.png" alt="iPhone image"/
+		img src="images/iphone-6-plus-flat-2.png" alt="iPhone image"/
 / End
 
 / content section
@@ -122,9 +128,9 @@ layout: parallex_layout
 	.content-section
 		h2 	
 			| Appointments
-		p 
-			|	With multiple home services across 15+ categories and recurring tasks like Laundry, Fitness classes etc. app intends to become your goto place for all your home service needs and hence we conceptualized a appointments section which lists all your appointments in chronological order and is easily accessible from the home screen.
-		img src="../images/iphone6-plus-flat2.png" alt="iPhone image"/
+		p.ios 
+			|	With multiple home services across 15+ categories and recurring tasks like Laundry, Fitness classes etc, the app intends to become your goto place for all your home service needs and hence we conceptualized a appointments section which lists all your appointments in chronological order and is easily accessible from the home screen.
+		img src="images/iphone6-plus-flat2.png" alt="iPhone image"/
 / End
 
 / content section
@@ -132,10 +138,10 @@ layout: parallex_layout
 	.content-section
 		h2 	
 			| Empty States 
-		p
+		p.ios
 			| Empty screens with custom illustrations to bring a smile to users’ face every time they hit one.
 		
-		img src="../images/housejoy-icons-empty-states_ios.png" alt="iPhone image"/
+		img src="images/housejoy-icons-empty-states_ios.png" alt="iPhone image"/
 / End
 
 / content section
@@ -143,15 +149,37 @@ layout: parallex_layout
 	.content-section
 		h2 	
 			| Collecting Feedback
-		p
+		p.ios
 			| For a highly people dependent service like Home Services, maintaining quality and customer experience consistently is one of the biggest challenges and hence we needed to design a experience for collecting regular feedback without making it boring rating based system. 
-		p
+		p.ios
 			| Hence, we instead chose to collect feedback using 3 simple question cards which are visually fun to use and don’t seem like too much work. Questions being very specific are directly plugged as triggers to customer care team which takes up issues like provider being late as high priority tasks.
+		img src="images/iphone6-plus-flat3.png" alt="iPhone image"/
 / End
+
+/ Floating button
+#wrapper 
+	.button.button-sub  
+		a href="index.html" Home
+	.button.button-sub  
+		a href="about.html" About Us
+	.button.button-sub 
+		a href="blog.html" Blog	
+	.button.button-sub 
+		a.open-form href="#" Start A Project
+	.water-drop
+	.button.button-floating
+  		svg.plus 
+			use xlink:href="images/svgs/iconset.svg#icon-Logo_Color"
+		svg.edit
+			use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
+	.button-floating-shadow
+.btn-overlay
 
 / New project section
 .start-project
 	p 
 		| We would love to hear about your next project.
-	a href="" class="btn" Start a Project
+	a href="javascript:void(0);" class="btn open-form" Start a Project
+	
 = partial "layouts/footer.slim"
+= partial "layouts/main_form.slim"
