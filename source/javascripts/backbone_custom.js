@@ -158,16 +158,17 @@ var FormView = Backbone.View.extend({
       3: function() {
         var inputLength =  enquiries.get('projectBrief').length;
         console.log(inputLength);
-        if(!!enquiries.get('projectBrief') && inputLength > 140){
-          $('.group .message').animate({"opacity":"+0"});
-          $('#projectBrief').css('border-color', '#757575');
-          $('.group .cross-icon').hide();
-          return !!enquiries.get('projectBrief');
-        }else{
-          $('.group .message').animate({"opacity":"+1"});
-          $('#projectBrief').css('border-color', '#db4344');
-          $('.group .cross-icon').show();
-        }
+        // if(!!enquiries.get('projectBrief') && inputLength > 140){
+        //   $('.group .message').animate({"opacity":"+0"});
+        //   $('#projectBrief').css('border-color', '#757575');
+        //   $('.group .cross-icon').hide();
+        //   return !!enquiries.get('projectBrief');
+        // }else{
+        //   $('.group .message').animate({"opacity":"+1"});
+        //   $('#projectBrief').css('border-color', '#db4344');
+        //   $('.group .cross-icon').show();
+        // }
+        return true;
       },
       4: function() {
         if(!!enquiries.get('budget')){

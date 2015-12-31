@@ -67,8 +67,11 @@ $(document).ready(function(){
 		$('.apply-form .group .crossFour').css('display', 'none');
 	}
 
+	
 
 	if (field1.val() && mail && field3.val()) {
+		$('#apply_Form').find('#submit').html('Sent').attr('disabled', 'disabled');
+
 		jobFormData = { name: field1.val(), email: field2.val(), linkedIn: field3.val(), additionalInfo: field4.val(), attachments: files, jobForm: true };
 		// jquery ajax call here
 		$.ajax({
@@ -77,9 +80,11 @@ $(document).ready(function(){
 		  data: jobFormData
 		})
 		  .done(function( msg ) {
+		  	$('#apply_Form').find('#submit').after('<span>Succesfully Sent</span>');
 		    alert( "Message sent succesfully: " + msg );
 		  });
 	}else if (field1.val() && mail && field6.val()) {
+		$('#apply_Form').find('#submit').html('Sent').attr('disabled', 'disabled');
 		jobFormData1 = { name: field1.val(), email: field2.val(), behance: field6.val(), additionalInfo: field4.val(), attachments: files, jobForm1: true };
 		// jquery ajax call here
 		$.ajax({

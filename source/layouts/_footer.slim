@@ -1,12 +1,37 @@
-/ footer
-footer.footer
-	p
-		| Want to work with us, catch up for a coffee or talk about anything write to us at  
-		a href="mailto:hello@parallellabs.io" hello@parallellabs.io
-	.socials
-		a href="https://www.facebook.com/parallellabs" 
-			img src="images/svgs/facebook.svg" alt="Facebook icon"/
-		a href="https://twitter.com/parallel_labs" 
-			img src="images/svgs/twitter.svg" alt="Twitter icon"/ 
-		a href="https://instagram.com/parallellabs/" 
-			img src="images/svgs/instagram.svg" alt="instagram icon"/
+/ Footer
+/ footer.footer
+/ 	p
+/ 		| Want to work with us, catch up for a coffee or talk about anything write to us at  
+/ 		a href="mailto:hello@parallellabs.io" hello@parallellabs.io
+/ 	.socials
+/ 		a href="https://www.facebook.com/parallellabs" 
+/ 			img src="images/svgs/facebook.svg" alt="Facebook icon"/
+/ 		a href="https://twitter.com/parallel_labs" 
+/ 			img src="images/svgs/twitter.svg" alt="Twitter icon"/ 
+/ 		a href="https://instagram.com/parallellabs/" 
+/ 			img src="images/svgs/instagram.svg" alt="instagram icon"/
+
+/ new footer
+footer.footer.new
+	.container
+		.col
+	  		svg
+				use xlink:href="images/svgs/iconset.svg#icon-Logo_Color"
+			.title
+				| Call to us
+			a.link href="tel: +91 97-66-041909" +91 97-66-041909 
+		.col
+	  		svg.plus 
+				use xlink:href="images/svgs/iconset.svg#icon-Logo_Color"
+			.title
+				| Write to us
+			a.link href="mailto:hello@parallellabs.io" hello@parallellabs.io
+		.col
+	  		svg.plus 
+				use xlink:href="images/svgs/iconset.svg#icon-Logo_Color"
+			.title
+				| We Base at
+			p.link 
+				| HSR Layout, Bangalore.
+		p.bottom-most
+			| All Rights Reserved. © 2016, Parallel Labs.

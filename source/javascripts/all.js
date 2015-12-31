@@ -28,19 +28,17 @@ $(document).ready(function(){
 	$("#counter").html("");
 	$("#counter").html(inputLength);
 
-	// if ( inputLength >= maxVal ) {
-	//   label.css("background-color", "#F3493D");
-	//   label.css("color", "#F3493D");
-	// } else {
-	//   label.css("background-color", "#2A9AF2");
-	//   label.css("color", "#999");
-	// }
+    	// if ( inputLength >= maxVal ) {
+    	//   label.css("background-color", "#F3493D");
+    	//   label.css("color", "#F3493D");
+    	// } else {
+    	//   label.css("background-color", "#2A9AF2");
+    	//   label.css("color", "#999");
+    	// }
 	});
 
     // Keep floating labels active when form inputs and textareas are not empty
-    $('#apply_Form .group input, #apply_Form .group textarea').change(function() {
-        
-  
+    $('#apply_Form .group input, #apply_Form .group textarea').on('change', function() {
         if( $(this).val().length != '' && !$(this).hasClass('not-empty')) {
             $(this).addClass('not-empty');
             
@@ -87,10 +85,10 @@ $(document).ready(function(){
     
     // Input range slider
     $('#budget').ionRangeSlider({
-        min: 3000,
-        max: 20000,
-        from: 6000,
-        step: 3000,
+        min: 5000,
+        max: 50000,
+        from: 8000,
+        step: 5000,
         grid: false,
         keyboard: true,
         grid_snap: false,

@@ -24,3 +24,15 @@ $mobile-devices: new-breakpoint(max-width 768px);
 $small-devices: new-breakpoint(max-width 991px);
 $medium-devices: new-breakpoint(max-width 1199px);
 $large-devices: new-breakpoint(min-width 1200px);
+
+// omega reset mixin
+@mixin omega-reset($nth) {
+    &:nth-child(#{$nth}) {
+
+        margin-right: flex-gutter();
+    }
+    &:nth-child(#{$nth}+1) {
+
+        clear: none;
+    }
+}

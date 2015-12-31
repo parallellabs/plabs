@@ -37,6 +37,9 @@ select[multiple=multiple] {
   font-size: $base-font-size;
   margin-bottom: $small-spacing;
   padding: $base-spacing / 3;
+  -webkit-transition: border-color $base-duration $base-timing;
+  -moz-transition: border-color $base-duration $base-timing;
+  -ms-transition: border-color $base-duration $base-timing;
   transition: border-color $base-duration $base-timing;
   width: 100%;
 

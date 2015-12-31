@@ -13,6 +13,15 @@
         @include media($mobile-devices) {
             font-size: rem(32);
         }
+        .helper {
+            display: block;
+            margin-top: 10px;
+
+            font-size: rem(13);
+            font-weight: 300;
+
+            color: #999;
+        }
     }
     .btn {
         display: inline;

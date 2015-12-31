@@ -161,15 +161,15 @@ svg {
     margin-right: auto;
     margin-left: auto;
 
-    @include outer-container(620px);
-    @include media($large-devices) {
-        @include outer-container(920px);
-    }
     @include media($mobile-devices) {
         padding: 0 15px;
 
         @include outer-container(100%);
     }
+    @include media($large-devices) {
+        @include outer-container(920px);
+    }
+    @include outer-container(620px);
     @media (min-width: 1400px) {
         @include outer-container(960px);
     }
@@ -536,6 +536,7 @@ textarea:valid ~ label.active-input {
     opacity: 0;
 }
 .group #counter {
+    display: none;
     float: right;
 
     color: #777;
@@ -635,13 +636,13 @@ stretch
 .stretch {
     display: table !important;
 
+    @include transform(skew(-25deg));
+    @include animation-duration(.3s);
+    @include animation-timing-function(ease-out);
+    @include transform-origin(50%);
     @include media(min-width 768px) {
         @include animation-name(stretch);
     }
-    @include transform-origin(50%);
-    @include animation-timing-function(ease-out);
-    @include animation-duration(.3s);
-    @include transform(skew(-25deg));
 }
 
 @include keyframes(stretch) {
@@ -655,15 +656,15 @@ stretch
 
 .stretchBack {
     display: table !important;
+
+    @include transform(skew(-25deg));
+    @include animation-name(stretchBack);
+    @include animation-duration(.3s);
+    @include animation-timing-function(ease-in);
     // @include media($mobile-devices) {
     //     @include transform(skew(0deg));
     // }
-
     @include transform-origin(50%);
-    @include animation-timing-function(ease-in);
-    @include animation-duration(.3s);
-    @include animation-name(stretchBack);
-    @include transform(skew(-25deg));
 }
 
 @include keyframes(stretchBack) {
@@ -680,10 +681,10 @@ stretch
 
 
 .strechLeft {
-    @include animation-duration(1.5s);
-    @include animation-timing-function(ease-out);
-    @include animation-name(strechLeft);
     @include transform-origin(100% 0%);
+    @include animation-name(strechLeft);
+    @include animation-timing-function(ease-out);
+    @include animation-duration(1.5s);
 }
 
 @include keyframes(strechLeft) {
@@ -696,10 +697,10 @@ stretch
 }
 
 .strechRight {
-    @include animation-duration(1.5s);
-    @include animation-timing-function(ease-out);
-    @include animation-name(strechLeft);
     @include transform-origin(0% 0%);
+    @include animation-name(strechLeft);
+    @include animation-timing-function(ease-out);
+    @include animation-duration(1.5s);
 }
 
 @include keyframes(strechLeft) {
@@ -722,8 +723,8 @@ stretch
 
     background-color: rgba(0,0,0,.6);
 
-    @include transition(all .3s);
     @include position(fixed, 0 0 0 0);
+    @include transition(all .3s);
 }
 
 // Floating button with css and jQuery
@@ -864,13 +865,13 @@ stretch
     color: #fff;
     background-color: #16c6c2;
 
-    @include transition-duration(.3s);
     @include media($mobile-devices) {
         right: 2px;
         bottom: 0;
 
         margin-bottom: 10px;
     }
+    @include transition-duration(.3s);
 
     // @include transform(translateX(-50%));
 }
@@ -927,11 +928,11 @@ stretch
     border-radius: 5px;
     background-color: #fff;
 
-    @include animation-duration(.3s);
-    @include animation-fill-mode(backwards);
     @include media($mobile-devices) {
         margin-right: -20px;
     }
+    @include animation-fill-mode(backwards);
+    @include animation-duration(.3s);
 
     a {
         font-size: rem(18);
@@ -1030,6 +1031,6 @@ stretch
 
     cursor: default;
 
-    @include transform(scale(30));
     @include transition(all .4s ease-in);
+    @include transform(scale(30));
 }
