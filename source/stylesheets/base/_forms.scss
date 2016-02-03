@@ -64,7 +64,10 @@ select[multiple=multiple] {
 }
 
 textarea {
-  resize: vertical;
+  // resize: vertical;
+  height: 60px !important;
+
+  resize: none;
 }
 
 input[type="search"] {

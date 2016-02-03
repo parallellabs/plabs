@@ -36,15 +36,15 @@
         max-height: none;
         padding-bottom: 20px;
 
-        background-color: #d8d8d8;
+        background-color: #fafafa;
         .col {
             margin-bottom: 60px;
 
+            @include span-columns(4);
+            @include omega(3);
             @include media($mobile-devices) {
                 @include span-columns(12);
             }
-            @include omega(3);
-            @include span-columns(4);
             svg {
                 display: block;
                 width: 40px;

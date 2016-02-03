@@ -157,18 +157,19 @@ var FormView = Backbone.View.extend({
       },
       3: function() {
         var inputLength =  enquiries.get('projectBrief').length;
+        // var inputLength =  enquiries.get('projectBrief');
         console.log(inputLength);
-        // if(!!enquiries.get('projectBrief') && inputLength > 140){
-        //   $('.group .message').animate({"opacity":"+0"});
-        //   $('#projectBrief').css('border-color', '#757575');
-        //   $('.group .cross-icon').hide();
-        //   return !!enquiries.get('projectBrief');
-        // }else{
-        //   $('.group .message').animate({"opacity":"+1"});
-        //   $('#projectBrief').css('border-color', '#db4344');
-        //   $('.group .cross-icon').show();
-        // }
-        return true;
+        if(!!enquiries.get('projectBrief') && inputLength > 140){
+          $('.group .message').animate({"opacity":"+0"});
+          $('#projectBrief').css('border-color', '#757575');
+          $('.group .cross-icon').hide();
+          return !!enquiries.get('projectBrief');
+        }else{
+          $('.group .message').animate({"opacity":"+1"});
+          $('#projectBrief').css('border-color', '#db4344');
+          $('.group .cross-icon').show();
+        }
+        // return true;
       },
       4: function() {
         if(!!enquiries.get('budget')){
@@ -196,7 +197,8 @@ var FormView = Backbone.View.extend({
     this.modelUpdate();
     console.log(enquiries.attributes);
 
-    $.post( "http://205.186.143.136:5000/sendmail", enquiries.attributes )
+    // $.post( "http://205.186.143.136:5000/sendmail", enquiries.attributes )
+    $.post( "http://localhost:5100/sendmail", enquiries.attributes )
       .done(function( data ) {
         console.log('Response: ', data );
         alert( "Message sent succesfully:" + data );
@@ -205,6 +207,7 @@ var FormView = Backbone.View.extend({
 
   modelUpdate: function() {
     enquiries.set(this.$el.find('.group input').attr('id'), this.$el.find('.group input').val());
+    enquiries.set(this.$el.find('.group textarea').attr('id'), this.$el.find('.group textarea').val());
   },
 
   fileUpload: function(event) {
@@ -227,6 +230,7 @@ var FormView = Backbone.View.extend({
 
 
 var form = new FormView();
+// Backbone.history.start({pushState: false});
 
 window.workspace = new Workspace();
 Backbone.history.start();

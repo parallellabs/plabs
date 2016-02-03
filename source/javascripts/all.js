@@ -118,6 +118,35 @@ $(document).ready(function(){
       originY: 0.2
     });
 
+    // File input text append to button
+    $( '.inputfile' ).each( function(){
+        
+        var $input   = $( this ),
+            $label   = $input.next( 'label' ),
+            labelVal = $label.html();
+
+        $input.on( 'change', function( e )
+        {
+            var fileName = '';
+
+            if( this.files && this.files.length > 1 )
+                fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+            else if( e.target.value )
+                fileName = e.target.value.split( '\\' ).pop();
+
+            if( fileName )
+                $label.find( 'span' ).html( fileName );
+            else
+                $label.html( labelVal );
+        });
+
+        // Firefox bug fix
+        $input
+        .on( 'focus', function(){ $input.addClass( 'has-focus' ); })
+        .on( 'blur', function(){ $input.removeClass( 'has-focus' ); });
+    });
+
+
 }); // End ready
 
 
@@ -207,7 +236,6 @@ $(window).scroll(function() {
     $('.cloud_3').jQCloud(anup,{height:200,autoResize: true,removeOverflowing: false,shape: 'rectangular'});
     $('.cloud_4').jQCloud(Chaitanya,{height:200,autoResize: true,removeOverflowing: false,shape: 'rectangular'});
     $('.cloud_5').jQCloud(Rakesh,{height:200,autoResize: true,removeOverflowing: false,shape: 'rectangular'});
-
 
 
 

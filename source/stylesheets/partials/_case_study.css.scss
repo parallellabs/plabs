@@ -7,6 +7,10 @@
            -moz-background-size: cover;
              -o-background-size: cover;
                 background-size: cover;
+
+        @include media(min-width 1440px) {
+            max-height: 550px;
+        }
         .banner-content {
             top: 50%;
             left: 50%;
@@ -14,10 +18,10 @@
             width: 100%;
             max-width: 620px;
 
-            @include transform(translate(-50%, -50%));
             @include media($large-devices) {
                 max-width: 920px;
             }
+            @include transform(translate(-50%, -50%));
             h1 {
                 // margin: 0;
                 font-size: rem(32);
@@ -47,6 +51,10 @@
     }
     &.hj-banner {
         background-color: #009688;
+
+        @include media (min-width 1440px) {
+            height: 800px;
+        }
         .banner-content {
             bottom: 0;
 
@@ -66,9 +74,9 @@
                     @include media ($mobile-devices) {
                         text-align: center;
 
-                        @include span-columns(12 of 12);
-                        @include pad(0);
                         @include omega();
+                        @include pad(0);
+                        @include span-columns(12 of 12);
                         & {
                             float: none;
                             max-width: 80%;
@@ -134,20 +142,20 @@
 
                         text-align: center;
 
-                        @include span-columns(12 of 12);
-                        @include pad(0);
                         @include omega();
+                        @include pad(0);
+                        @include span-columns(12 of 12);
                     }
                 }
                 img {
                     vertical-align: bottom;
 
-                    @include media($sm-mobile-devices) {
-                        max-height: 400px;
-                    }
                     @include media ($mobile-devices) {
                         // max-width: 35%;
                         max-width: 50%;
+                    }
+                    @include media($sm-mobile-devices) {
+                        max-height: 400px;
                     }
                 }
             }
@@ -177,13 +185,13 @@
 
                     text-align: center;
 
+                    @include transform(translateY(-50%));
                     @include media($mobile-devices) {
                         width: 100%;
                         max-width: none;
                     }
-                    @include transform(translateY(-50%));
                     &.hj-web {
-                        max-width: 381px;
+                        max-width: 420px;
                     }
                     h1 {
                         font-size: rem(48);
@@ -303,11 +311,11 @@
     max-height: 500px;
     margin-bottom: 0 !important;
 
-    @include media($mobile-devices) {
-        display: none;
-    }
     @include media($large-devices) {
         max-width: 920px;
+    }
+    @include media($mobile-devices) {
+        display: none;
     }
     .outer-box {
         position: relative;
@@ -391,10 +399,10 @@
 
         color: $medium-gray;
 
-        @include outer-container(620px);
         @include media($large-devices) {
             @include outer-container(920px);
         }
+        @include outer-container(620px);
     }
     p {
         margin: 0 auto;
@@ -420,10 +428,10 @@
         clear: right;
 
         @extend .container;
-        @include outer-container(620px);
         @include media($large-devices) {
             @include outer-container(920px);
         }
+        @include outer-container(620px);
     }
     img {
         display: block;
@@ -436,11 +444,11 @@
            -moz-box-shadow: 1px 1px 12px 1px rgba(133,133,133,1);
                 box-shadow: 1px 1px 12px 1px rgba(133,133,133,1);
 
-        @include media($large-devices) {
-            @include outer-container(920px);
-        }
         @include media($mobile-devices) {
             @include outer-container(100%);
+        }
+        @include media($large-devices) {
+            @include outer-container(920px);
         }
         @media screen and (min-width: 621px) and (max-width: 768px) {
             max-width: 620px;
@@ -463,11 +471,11 @@
         clear: left;
 
         @extend .container;
-        // @include span-columns(6);
-        @include outer-container(620px);
         @include media($large-devices) {
             @include outer-container(920px);
         }
+        // @include span-columns(6);
+        @include outer-container(620px);
         @media ($mobile-devices) {
             @include span-columns(12);
         }
@@ -498,18 +506,18 @@
     .content-section {
         text-align: center;
 
-        @include outer-container(620px);
+        @include media($mobile-devices) {
+            padding: 0 15px;
+
+            @include outer-container(100%);
+        }
         // @include media($large-devices) {
         //     @include outer-container(960px);
         // }
         @include media(min-width 1440px) {
             @include outer-container(960px);
         }
-        @include media($mobile-devices) {
-            padding: 0 15px;
-
-            @include outer-container(100%);
-        }
+        @include outer-container(620px);
         h2 {
             margin-bottom: 30px;
 
@@ -528,11 +536,11 @@
 
             color: rgba(92,92,92,.8);
 
-            @include media(min-width 1440px) {
-                max-width: 620px;
-            }
             @include media($mobile-devices) {
                 font-size: rem(18);
+            }
+            @include media(min-width 1440px) {
+                max-width: 620px;
             }
             &.ios {
                 margin: 0 auto;
@@ -590,8 +598,8 @@
                 background-color: transparent;
 
                 @extend .square;
-                @include omega(4n);
                 @include span-columns(3);
+                @include omega(4n);
                 img {
                     position: absolute;
                     top: 50%;
@@ -604,6 +612,10 @@
 
                     opacity: .8;
 
+                    @include media(min-width 1440px) {
+                        width: 60px;
+                        height: 60px;
+                    }
                     @include transform(translateY(-50%));
                 }
             }
@@ -613,10 +625,10 @@
 
             text-align: left;
 
-            @include media($mobile-devices) {
+            @include media(min-width 1440px) {
                 margin-left: auto;
             }
-            @include media(min-width 1440px) {
+            @include media($mobile-devices) {
                 margin-left: auto;
             }
             .color-panel {
@@ -643,27 +655,26 @@
                 & {
                     margin-left: 10%;
 
-                    @include media(min-width 1440px) {
-                        max-width: 960px;
-                        margin-left: auto;
-                    }
                     @include media($mobile-devices) {
                         padding: 0 15px;
                         margin-left: 0;
+                    }
+                    @include media(min-width 1440px) {
+                        max-width: 960px;
+                        margin-left: auto;
                     }
                 }
                 .wrap {
                     max-width: 620px;
 
-                    @include span-columns(8);
                     @include media($mobile-devices) {
                         @include span-columns(12 of 12);
                     }
+                    @include span-columns(8);
                 }
                 img {
                     max-width: 320px;
 
-                    @include span-columns(4);
                     @include media($mobile-devices) {
                         @include span-columns(12 of 12);
                         & {
@@ -671,6 +682,7 @@
                             margin: 0 auto !important;
                         }
                     }
+                    @include span-columns(4);
                 }
             }
         }
@@ -682,25 +694,26 @@
         margin-bottom: 30px;
         margin-left: 10%;
 
-        @include media($mobile-devices) {
-            padding: 0 15px;
-            margin-left: 0;
-        }
         @include media(min-width 1440px) {
             max-width: 960px;
             margin-left: auto;
         }
+        @include media($mobile-devices) {
+            padding: 0 15px;
+            margin-left: 0;
+        }
     }
     &.web {
+        text-align: center;
         .project-img {
-            @include media(min-width 1440px) {
-                @include span-columns(6 of 12);
-            }
-            @include span-columns(8);
             @include media($mobile-devices) {
                 margin-bottom: 30px;
 
                 @include span-columns(8 of 12);
+            }
+            @include span-columns(8);
+            @include media(min-width 1440px) {
+                @include span-columns(6 of 12);
             }
             & {
                 display: inline-block;
@@ -710,18 +723,19 @@
             }
         }
         .description {
-            @include media(min-width 1440px) {
-                @include span-columns(3 of 12);
+            @include media($mobile-devices) {
+                @include span-columns(12 of 12);
+                @include pad(0px 15px);
             }
             @include span-columns(4);
-            @include media($mobile-devices) {
-                @include pad(0px 15px);
-                @include span-columns(12 of 12);
+            @include media(min-width 1440px) {
+                @include span-columns(3 of 12);
             }
             & {
                 display: inline-block;
                 float: none;
 
+                text-align: left;
                 vertical-align: middle;
             }
             h4 {
@@ -776,10 +790,10 @@
         .color-wrap {
             margin-bottom: 60px;
 
+            @include span-columns(6);
             @include media($mobile-devices) {
                 @include span-columns(12 of 12);
             }
-            @include span-columns(6);
             h4 {
                 font-size: rem(16);
                 font-weight: 400;
@@ -913,13 +927,13 @@
                     & {
                         width: 16.6%;
 
-                        @include omega();
                         @include media($mobile-devices) {
                             @include span-columns(4 of 12);
                             & {
                                 @include omega();
                             }
                         }
+                        @include omega();
                     }
                     &:nth-of-type(1) {
                         border-top-left-radius: 5px;
@@ -1082,10 +1096,10 @@
     overflow-y: hidden;
 
     @extend .container;
+    @include outer-container(620px);
     @include media($large-devices) {
         @include outer-container(920px);
     }
-    @include outer-container(620px);
     &:after {
         position: absolute;
         right: 0;
@@ -1111,8 +1125,8 @@
            -moz-filter: blur(1px);
             -ms-filter: blur(1px);
              -o-filter: blur(1px);
-                filter: progid:dximagetransform.Microsoft.gradient(gradientType=1, startColorstr="#FFFFFFFF", endColorstr="#FFFFFFFF");
                 filter: blur(1px);
+                filter: progid:dximagetransform.Microsoft.gradient(gradientType=1, startColorstr="#FFFFFFFF", endColorstr="#FFFFFFFF");
     }
     .tile {
         position: relative;
@@ -1156,11 +1170,11 @@
                -moz-box-shadow: -6px -6px 6px -6px rgba(51,51,51,.61);
                     box-shadow: -6px -6px 6px -6px rgba(51,51,51,.61);
 
+            @include transition(ease .3s);
+            @include clearfix;
             @include media($sm-mobile-devices) {
                 max-width: 195px;
             }
-            @include clearfix;
-            @include transition(ease .3s);
             @media (min-width:480px) and (max-width:768px) {
                 max-width: 350px;
                 max-height: 390px;
@@ -1245,15 +1259,15 @@
         padding: 0 15px;
         margin: 40px auto;
 
-        @include media($large-devices) {
-            max-width: 920px;
-        }
+        @include transform(translateY(-50%));
         @include media($mobile-devices) {
             max-width: 620px;
 
             @include pad(0 15px);
         }
-        @include transform(translateY(-50%));
+        @include media($large-devices) {
+            max-width: 920px;
+        }
         // @include transform(translateY(-50%));
         h2.design-goals {
             display: none;
@@ -1265,13 +1279,13 @@
         .conversetion {
             // height: 55px;
             margin-bottom: 30px;
-
-            @include transition(all 4s);
             // @include media($large-devices) {
             //     margin-bottom: 30px;
             // }
             // opacity: 0;
+
             @include outer-container;
+            @include transition(all 4s);
             .user {
                 display: inline-block;
                 visibility: hidden;
@@ -1281,19 +1295,19 @@
 
                 vertical-align: middle;
 
-                @include transition(all 3s ease);
                 @include media(max-width 479px) {
                     margin-right: 10px;
                 }
+                @include transition(all 3s ease);
                 & {
                     border: 2px solid $blue;
 
-                    @include transform( scale(.5));
-                    @include border-top-radius(50%);
-                    @include border-right-radius(50%);
-                    @include border-bottom-radius(50%);
-                    @include border-left-radius(50%);
                     @include transition(all .75s cubic-bezier(.68, -.55, .265, 1.55));
+                    @include border-left-radius(50%);
+                    @include border-bottom-radius(50%);
+                    @include border-right-radius(50%);
+                    @include border-top-radius(50%);
+                    @include transform( scale(.5));
                 }
             }
 
@@ -1313,15 +1327,15 @@
                 color: #fff;
                 background-color: #16c6c2;
 
-                @include transition(all 5s);
-                @include border-top-radius(10px);
-                @include border-right-radius(10px);
-                @include border-bottom-radius(10px);
-                @include border-left-radius(10px);
                 @include media(max-width 479px) {
                     max-width: 185px;
                     padding: 6px 10px;
                 }
+                @include border-left-radius(10px);
+                @include border-bottom-radius(10px);
+                @include border-right-radius(10px);
+                @include border-top-radius(10px);
+                @include transition(all 5s);
                 p {
                     margin: 0;
                     margin-top: 3px;

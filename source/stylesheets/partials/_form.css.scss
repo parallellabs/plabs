@@ -29,11 +29,11 @@
 
         background: rgba(0,0,0,.2);
 
+        @include position(fixed, 0 0 0 0 );
+        @include outer-container(100%);
         @include media($mobile-devices) {
             @include pad(0);
         }
-        @include outer-container(100%);
-        @include position(fixed, 0 0 0 0 );
 
         .close-form {
             position: absolute;
@@ -65,12 +65,12 @@
             background-color: #fff;
 
             @extend .stretch;
-            @include transform(skew(-25deg));
-            @include transition-duration(.5s);
             @include media($mobile-devices) {
-                @include transform(skew(0deg));
                 @include pad(0);
+                @include transform(skew(0deg));
             }
+            @include transition-duration(.5s);
+            @include transform(skew(-25deg));
             .expand {
                 width: 100%;
 
@@ -84,17 +84,19 @@
 
                 display: inline-block;
                 width: 100%;
-                max-width: 560px;
+                max-width: 565px;
                 margin: 0 auto;
 
                 text-align: center;
                 vertical-align: middle;
 
                 opacity: 0;
+
+                @include transform(skew(25deg) translateY(-50%));
+                @include transition(left .5s ease-out,  opacity .75s linear);
                 // &:nth-of-type(1) {
                 //     opacity: 1;
                 // }
-
                 @include media($mobile-devices) {
                     left: 0;
 
@@ -102,8 +104,6 @@
 
                     @include transform(skew(0) translateY(-50%));
                 }
-                @include transition(left .5s ease-out,  opacity .75s linear);
-                @include transform(skew(25deg) translateY(-50%));
                 .client {
                     text-transform: capitalize;
                 }
@@ -180,6 +180,11 @@
                         &.next,
                         &.skip {
                             float: right;
+                        }
+                        &.close-form {
+                            position: static;
+
+                            color: #fff;
                         }
                     }
                 }

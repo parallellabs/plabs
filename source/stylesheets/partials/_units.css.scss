@@ -5,14 +5,20 @@
 
 html {
     // overflow: hidden;
+    height: 100%;
+    padding: 0;
     margin: 0;
+
+    border: none;
 }
 
-// body {
-//     overflow: scroll;
+body {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
 
-//     -webkit-overflow-scrolling: touch;
-// }
+    //     -webkit-overflow-scrolling: touch;
+}
 
 
 .wrapper {
@@ -161,15 +167,15 @@ svg {
     margin-right: auto;
     margin-left: auto;
 
+    @include outer-container(620px);
+    @include media($large-devices) {
+        @include outer-container(920px);
+    }
     @include media($mobile-devices) {
         padding: 0 15px;
 
         @include outer-container(100%);
     }
-    @include media($large-devices) {
-        @include outer-container(920px);
-    }
-    @include outer-container(620px);
     @media (min-width: 1400px) {
         @include outer-container(960px);
     }
@@ -536,7 +542,7 @@ textarea:valid ~ label.active-input {
     opacity: 0;
 }
 .group #counter {
-    display: none;
+    // display: none;
     float: right;
 
     color: #777;
@@ -574,6 +580,7 @@ textarea:disabled {
     top: 25%;
     left: 0;
 
+    display: none;
     width: 100px;
     height: 60%;
 
@@ -636,13 +643,13 @@ stretch
 .stretch {
     display: table !important;
 
-    @include transform(skew(-25deg));
-    @include animation-duration(.3s);
-    @include animation-timing-function(ease-out);
-    @include transform-origin(50%);
     @include media(min-width 768px) {
         @include animation-name(stretch);
     }
+    @include transform-origin(50%);
+    @include animation-timing-function(ease-out);
+    @include animation-duration(.3s);
+    @include transform(skew(-25deg));
 }
 
 @include keyframes(stretch) {
@@ -656,15 +663,15 @@ stretch
 
 .stretchBack {
     display: table !important;
-
-    @include transform(skew(-25deg));
-    @include animation-name(stretchBack);
-    @include animation-duration(.3s);
-    @include animation-timing-function(ease-in);
     // @include media($mobile-devices) {
     //     @include transform(skew(0deg));
     // }
+
     @include transform-origin(50%);
+    @include animation-timing-function(ease-in);
+    @include animation-duration(.3s);
+    @include animation-name(stretchBack);
+    @include transform(skew(-25deg));
 }
 
 @include keyframes(stretchBack) {
@@ -681,10 +688,10 @@ stretch
 
 
 .strechLeft {
-    @include transform-origin(100% 0%);
-    @include animation-name(strechLeft);
-    @include animation-timing-function(ease-out);
     @include animation-duration(1.5s);
+    @include animation-timing-function(ease-out);
+    @include animation-name(strechLeft);
+    @include transform-origin(100% 0%);
 }
 
 @include keyframes(strechLeft) {
@@ -697,10 +704,10 @@ stretch
 }
 
 .strechRight {
-    @include transform-origin(0% 0%);
-    @include animation-name(strechLeft);
-    @include animation-timing-function(ease-out);
     @include animation-duration(1.5s);
+    @include animation-timing-function(ease-out);
+    @include animation-name(strechLeft);
+    @include transform-origin(0% 0%);
 }
 
 @include keyframes(strechLeft) {
@@ -723,8 +730,8 @@ stretch
 
     background-color: rgba(0,0,0,.6);
 
-    @include position(fixed, 0 0 0 0);
     @include transition(all .3s);
+    @include position(fixed, 0 0 0 0);
 }
 
 // Floating button with css and jQuery
@@ -865,13 +872,13 @@ stretch
     color: #fff;
     background-color: #16c6c2;
 
+    @include transition-duration(.3s);
     @include media($mobile-devices) {
         right: 2px;
         bottom: 0;
 
         margin-bottom: 10px;
     }
-    @include transition-duration(.3s);
 
     // @include transform(translateX(-50%));
 }
@@ -928,11 +935,11 @@ stretch
     border-radius: 5px;
     background-color: #fff;
 
+    @include animation-duration(.3s);
+    @include animation-fill-mode(backwards);
     @include media($mobile-devices) {
         margin-right: -20px;
     }
-    @include animation-fill-mode(backwards);
-    @include animation-duration(.3s);
 
     a {
         font-size: rem(18);
@@ -1031,6 +1038,237 @@ stretch
 
     cursor: default;
 
-    @include transition(all .4s ease-in);
     @include transform(scale(30));
+    @include transition(all .4s ease-in);
+}
+
+
+.testimonials {
+    position: relative;
+    // padding: .5em 30px .5em 30px;
+
+    font-size: 3.4em;
+    line-height: normal;
+    // font-style: italic;
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        // font-family: Arial;
+        // font-size: 4em;
+
+        width: 50px;
+        height: 40px;
+
+        content: " ";
+
+        background-image: url(../images/svgs/quote.svg);
+        // color: #eee;
+        background-repeat: no-repeat;
+
+        @include media($mobile-devices) {
+            left: 0;
+
+            width: 40px;
+            height: 30px;
+        }
+        @include transform(rotate(180deg));
+    }
+    &::after {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        // font-family: Arial;
+        // font-size: 4em;
+        // content: "\201D";
+        // color: #eee;
+
+        width: 50px;
+        height: 40px;
+
+        content: " ";
+
+        color: #eee;
+        background-image: url(../images/svgs/quote.svg);
+        background-repeat: no-repeat;
+
+        @include media($mobile-devices) {
+            right: 0;
+
+            width: 40px;
+            height: 30px;
+        }
+    }
+    p {
+        float: none !important;
+        margin: 0 auto;
+        margin-right: auto !important;
+        margin-bottom: 30px;
+
+        font-size: rem(24);
+        font-weight: 300;
+
+        color: #4c4c4c;
+
+        @include span-columns(8);
+        @include media($mobile-devices) {
+            font-size: rem(16);
+        }
+    }
+    .author {
+        .img {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+            overflow: hidden;
+
+            vertical-align: middle;
+            img {
+                width: 60px;
+                height: 60px;
+
+                @include border-left-radius(50%);
+                @include border-bottom-radius(50%);
+                @include border-right-radius(50%);
+                @include border-top-radius(50%);
+            }
+        }
+        .name {
+            display: inline-block;
+
+            font-size: rem(20);
+            font-weight: 300;
+
+            text-align: left;
+            vertical-align: middle;
+
+            color: #787878;
+
+            @include media($mobile-devices) {
+                font-size: rem(16);
+                .helper-text {
+                    font-size: rem(14);
+                }
+            }
+            .helper-text {
+                display: block;
+
+                font-size: rem(16);
+
+                @include media($mobile-devices) {
+                    font-size: rem(12);
+                }
+            }
+        }
+    }
+    .direction-box {
+        top: -35px;
+        right: 11%;
+        bottom: 35px;
+    }
+    &.insider {
+        max-width: none;
+
+        text-align: center;
+        p {
+            margin-bottom: 30px !important;
+
+            font-size: rem(20);
+            font-weight: 300;
+
+            color: #5c5c5c;
+        }
+        & .author {
+            .img {
+                display: block;
+                margin: 0 auto;
+                img {
+                    box-shadow: none;
+                }
+            }
+            .name {
+                text-align: center;
+            }
+        }
+        &.hj {
+            max-width: 920px !important;
+            p {
+                line-height: 30px;
+
+                color: rgba(92,92,92,.8);
+            }
+        }
+        &.explara {
+            max-width: 620px;
+        }
+        &.ex-web {
+            max-width: 920px;
+            p {
+                line-height: 30px;
+
+                color: rgba(92,92,92,.8);
+            }
+        }
+    }
+}
+
+// Custom file input
+.js .inputfile {
+    position: absolute;
+    z-index: -1;
+
+    width: .1px;
+    height: .1px;
+    overflow: hidden;
+
+    opacity: 0;
+}
+
+.inputfile + label {
+    display: inline-block;
+    max-width: 80%;
+    padding: .300rem 1.25rem;
+    overflow: hidden;
+
+    font-size: 1rem;
+    /* 20px */
+    font-weight: 400;
+
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* 10px 20px */
+
+    color: #16c6c2;
+    border: 1px solid #16c6c2;
+    border-radius: 4px;
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    margin-top: -.25em;
+    /* 4px */
+    margin-right: .25em;
+
+    vertical-align: middle;
+
+    fill: currentColor;
+    /* 4px */
 }
