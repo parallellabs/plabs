@@ -68,7 +68,7 @@ layout: new_layout
 		        textarea.textField#additionalInfo type="text" 
 		        span.highlight
 		        span.bar
-		        label for="attachment" 
+		        label for="" 
 		    		| Cover letter
 		    .group.last
 	    		input#attachment.multiple-files type="file" multiple="mutiple"/
@@ -76,7 +76,7 @@ layout: new_layout
 		    		| Attach CV
 		        p.message.attach-msg1 Required.
 		        p.message.attach-msg Please enter valid file(.docx, .doc, .pdf) < 1 MB.
-		    	.filename No files selected
+		    	#filename.filename No files selected
 			button.btn#submit href="#" type="submit" 
 					| Apply <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg> 
 / Floating button
@@ -87,8 +87,8 @@ layout: new_layout
 		a href="about.html" About Us
 	.button.button-sub 
 		a href="blog.html" Blog	
-	.button.button-sub 
-		a.open-form href="#" Get in Touch
+	/ .button.button-sub 
+	/ 	a.open-form href="#" Get in Touch
 	.water-drop
 	.button.button-floating
   		svg.plus 

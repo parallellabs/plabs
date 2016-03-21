@@ -191,17 +191,15 @@ $(window).scroll(function() {
         {text: "Cricket", weight: 3}
     ];
 
-  	var anup = [{text: "meditate", weight: 3},
-        {text: "Filter Coffee", weight: 5},
-        {text: "food", weight: 9},
-        {text: "Politics", weight: 1},
-        {text: "music", weight: 5},
-        {text: "Person of Interest", weight: 3},
-        {text: "Long Drives", weight: 5},
-        {text: "movies", weight: 9},
-        {text: "Lord of the rings", weight: 1},
-        {text: "trekking", weight: 3},
-        {text: "swimming", weight: 9}
+  	var Bhaghya = [{text: "reeses", weight: 5},
+        {text: "cartooning", weight: 9},
+        {text: "books", weight: 1},
+        {text: "chumma", weight: 5},
+        {text: "edm", weight: 3},
+        {text: "stationery", weight: 5},
+        {text: "cheesecake", weight: 9},
+        {text: "vlogs", weight: 1},
+        {text: "animals before humans", weight: 3}
     ];
 
     var Chaitanya = [{text: "UI Designing", weight: 3},
@@ -231,11 +229,60 @@ $(window).scroll(function() {
         {text: "Namste london", weight: 5}
     ];
 
+    var Vish = [{text: "Minimalist", weight: 3},
+        {text: "swimmer", weight: 5},
+        {text: "Netflix", weight: 9},
+        {text: "iOS", weight: 1},
+        {text: "Gajar ka halwa", weight: 5},
+        {text: "Alternate rock", weight: 3},
+        {text: "Traveller", weight: 9},
+        {text: "Books", weight: 3},
+        {text: "startups", weight: 1}
+    ];
+
+    var Devshree = [{text: "Party enthusiast", weight: 3},
+        {text: "wanderlust", weight: 9},
+        {text: "dancer", weight: 9},
+        {text: "paani puri", weight: 1},
+        {text: "extrovert", weight: 5},
+        {text: "hyper", weight: 1},
+        {text: "doodling", weight: 5},
+        {text: "half Sandwich", weight: 9},
+        {text: "passionate", weight: 5},
+        {text: "above and beyond", weight: 3}
+    ];
+
+    var Allan = [{text: "Music", weight: 5},
+        {text: "Coffee", weight: 3},
+        {text: "Football", weight: 5},
+        {text: "Travelling", weight: 9},
+        {text: "Goan Fish Curry", weight: 5},
+        {text: "HTML", weight: 1},
+        {text: "CSS3", weight: 5},
+        {text: "Nexus", weight: 9}
+    ];
+
+    var Ameya = [{text: "Sketching", weight: 5},
+        {text: "GYM", weight: 9},
+        {text: "trekking", weight: 1},
+        {text: "Pets", weight: 5},
+        {text: "Tea addict", weight: 3},
+        {text: "Chatterbox", weight: 5},
+        {text: "Dhol Tasha", weight: 9},
+        {text: "UX Design", weight: 1},
+        {text: "Gadget Freak", weight: 3},
+        {text: "Hardcore gamer", weight: 5}
+    ];
+
     $('.cloud_1').jQCloud(robin,{height:200,autoResize: true,removeOverflowing: true,shape: 'rectangular'});
-    $('.cloud_2').jQCloud(sreenath,{height:200,autoResize: true,removeOverflowing: false,shape: 'rectangular'});
-    $('.cloud_3').jQCloud(anup,{height:200,autoResize: true,removeOverflowing: false,shape: 'rectangular'});
+    $('.cloud_2').jQCloud(sreenath,{height:200,autoResize: true,removeOverflowing: true,shape: 'rectangular'});
+    $('.cloud_3').jQCloud(Bhaghya,{height:200,autoResize: true,removeOverflowing: false,shape: 'rectangular'});
     $('.cloud_4').jQCloud(Chaitanya,{height:200,autoResize: true,removeOverflowing: false,shape: 'rectangular'});
     $('.cloud_5').jQCloud(Rakesh,{height:200,autoResize: true,removeOverflowing: false,shape: 'rectangular'});
+    $('.cloud_6').jQCloud(Vish,{height:200,autoResize: true,removeOverflowing: false,shape: 'rectangular'});
+    $('.cloud_7').jQCloud(Devshree,{height:200,autoResize: true,removeOverflowing: true,shape: 'rectangular'});
+    $('.cloud_8').jQCloud(Allan,{height:200,autoResize: true,removeOverflowing: false,shape: 'rectangular'});
+    $('.cloud_9').jQCloud(Ameya,{height:200,autoResize: true,removeOverflowing: true,shape: 'rectangular'});
 
 
 

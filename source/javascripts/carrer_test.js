@@ -151,7 +151,8 @@ $(document).ready(function(){
 			// jquery ajax call here
 			$.ajax({
 			  method: "POST",
-			  url: "http://205.186.143.136:5000/sendmail",
+			  // url: "http://205.186.143.136:5000/sendmail",
+		      url: "http://localhost:5100/sendmail",
 			  data: jobFormData
 			})
 			  .done(function( msg ) {
@@ -162,7 +163,8 @@ $(document).ready(function(){
 			// jquery ajax call here
 			$.ajax({
 			  method: "POST",
-			  url: "http://205.186.143.136:5000/sendmail",
+			  // url: "http://205.186.143.136:5000/sendmail",
+	  		  url: "http://localhost:5100/sendmail",
 			  data: jobFormData1
 			})
 			  .done(function( msg ) {

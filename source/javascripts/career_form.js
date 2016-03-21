@@ -49,11 +49,11 @@ $(document).ready(function(){
 	if (!field5.val()) {
 		$('.apply-form .group .attach-msg1').animate({"opacity": "+1"});
 		$('#behance').css('border-color', '#db4344');
-		$('.apply-form .group .crossOne').css('display', 'inline');
+		// $('.apply-form .group .crossOne').css('display', 'inline');
 	}else{
 		$('.apply-form .group .attach-msg1').animate({"opacity": "+0"});
 		$('#behance').css('border-color', '#757575');
-		$('.apply-form .group .crossOne').css('display', 'none');
+		// $('.apply-form .group .crossOne').css('display', 'none');
 		checkfile(document.querySelector('#attachment'));
 	}
 
@@ -76,47 +76,48 @@ $(document).ready(function(){
 		// jquery ajax call here
 		$.ajax({
 		  method: "POST",
-		  // url: "http://205.186.143.136:5000/sendmail",
-		  url: "http://localhost:5100/sendmail",
+		  // url: "http://localhost:5100/sendmail",
+		  url: "http://205.186.143.136:5000/sendmail",
 		  data: jobFormData
 		})
 		  .done(function( msg ) {
 		  	$('#apply_Form').find('#submit').after('<span>Succesfully Sent</span>');
-		    alert( "Message sent succesfully: " + msg );
+		    // alert( "Message sent succesfully: " + msg );
 		  });
-	}else if (field1.val() && mail && field6.val()) {
+	}else if (field1.val() && mail && field5.val() && field6.val()) {
 		$('#apply_Form').find('#submit').html('Sent').attr('disabled', 'disabled');
 		jobFormData1 = { name: field1.val(), email: field2.val(), behance: field6.val(), additionalInfo: field4.val(), attachments: files, jobForm1: true };
 		// jquery ajax call here
 		$.ajax({
 		  method: "POST",
-		  // url: "http://205.186.143.136:5000/sendmail",
-		  url: "http://localhost:5100/sendmail",
+		  // url: "http://localhost:5100/sendmail",
+		  url: "http://205.186.143.136:5000/sendmail",
 		  data: jobFormData1
 		})
 		  .done(function( msg ) {
-		    alert( "Message sent succesfully: " + msg );
+		    // alert( "Message sent succesfully: " + msg );
+		    $('#apply_Form').find('#submit').after('<span style="color: #28b473;">Awesome!! We have got your application and you will hear from us shortly if you are shortlisted for this role.</span>');
 		  });
 	}
 
 	});
 	
-	// $('#attachment').on('change', function(event) {
-	// 	// console.log('checking valid file:', );
-	//     if (checkfile(document.querySelector('#attachment')) ) {
-	// 	    $.each(event.target.files, function(index, file) {
-	// 	        var reader = new FileReader();
-	// 	        reader.onload = function(event) {  
-	// 	          object = {};
+	$('#attachment').on('change', function(event) {
+		// console.log('checking valid file:', );
+	    if (checkfile(document.querySelector('#attachment')) ) {
+		    $.each(event.target.files, function(index, file) {
+		        var reader = new FileReader();
+		        reader.onload = function(event) {  
+		          object = {};
 
-	// 	          object.path = event.target.result;
-	// 	          console.log(object);
-	// 	          files.push(object);
-	// 	        };  
-	// 	        reader.readAsDataURL(file);
-	// 	    });
-	// 	}
- //    });
+		          object.path = event.target.result;
+		          console.log(object);
+		          files.push(object);
+		        };  
+		        reader.readAsDataURL(file);
+		    });
+		}
+    });
 
 	function checkfile(sender) {
 		var validExts = new Array(".docx", ".doc", ".pdf");
@@ -124,18 +125,20 @@ $(document).ready(function(){
 		fileExt = fileExt.substring(fileExt.lastIndexOf('.'));
 		var singleFile = sender.files[0];
 		console.log(singleFile.size);
-		if (validExts.indexOf(fileExt) < 0 && singleFile.size > 1*1024*1024) {
+		if (validExts.indexOf(fileExt) < 0 && singleFile.size < 1*1024*1024) {
 			alert("Invalid file selected, valid files are of " +
 	       	validExts.toString() + " types.");
-			// $('.apply-form .group .attach-msg').animate({"opacity": "+1"});
+			$('.apply-form .group .attach-msg').animate({"opacity": "+1"});
 			// $('#behance').css('border-color', '#db4344');
-			// $('.apply-form .group .attach-msg1').animate({"opacity": "+0"});
+			$('.apply-form .group .attach-msg1').animate({"opacity": "+0"});
 			// $('.apply-form .group .cross-icon').show();
 			return false;
 		}else {
-			$('#attachment').on('change', function(event) {
-				$.each(event.target.files, function(index, file)  {
-					console.log(file);
+			// $('#attachment').on('change', function(event) {
+				// $.each(event.target.files, function(index, file)  {
+				// $.each(sender.target.files, function(index, file)  {
+					// console.log(file);
+					if(singleFile.size < 1*1024*1024){
 			        var reader = new FileReader();
 			        reader.onload = function(event) {  
 			          object = {};
@@ -144,13 +147,16 @@ $(document).ready(function(){
 			          console.log(object);
 			          files.push(object);
 			        };  
-			        reader.readAsDataURL(file);
-			    });
+			        reader.readAsDataURL(singleFile);
+			    // });
+			    console.log(this);
 				$('.filename').html(sender.value.split( '\\' ).pop());
-				// $('.apply-form .group .attach-msg').animate({"opacity": "+0"});
-				// $('#behance').css('border-color', '#757575');
+				$('.apply-form .group .attach-msg').animate({"opacity": "+0"});
+				$('#behance').css('border-color', '#757575');
 				// $('.apply-form .group .cross-icon').hide();
-			});
+			}
+				
+			// });
 		}
 	}
 });
