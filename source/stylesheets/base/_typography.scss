@@ -3,12 +3,12 @@
     font-style: normal;
     font-weight: normal;
 
-    src: url("fonts/bebasneue_regular-webfont.eot");
     src: url("fonts/bebasneue_regular-webfont.eot?#iefix") format("embedded-opentype"),
     url("fonts/bebasneue_regular-webfont.woff2") format("woff2"),
     url("fonts/bebasneue_regular-webfont.woff") format("woff"),
     url("fonts/bebasneue_regular-webfont.ttf") format("truetype"),
     url("fonts/bebasneue_regular-webfont.svg#bebas_neue_regularregular") format("svg");
+    src: url("fonts/bebasneue_regular-webfont.eot");
 }
 
 @font-face {
@@ -16,17 +16,18 @@
     font-style: normal;
     font-weight: normal;
 
-    src: url("fonts/bebasneue_bold-webfont.eot");
     src: url("fonts/bebasneue_bold-webfont.eot?#iefix") format("embedded-opentype"),
     url("fonts/bebasneue_bold-webfont.woff2") format("woff2"),
     url("fonts/bebasneue_bold-webfont.woff") format("woff"),
     url("fonts/bebasneue_bold-webfont.ttf") format("truetype"),
     url("fonts/bebasneue_bold-webfont.svg#bebas_neuebold") format("svg");
+    src: url("fonts/bebasneue_bold-webfont.eot");
 }
 
 $bebasN_B: "bebas_neuebold";
 $bebasN_R: "bebas_neue_regularregular";
 
+html,
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
@@ -47,6 +48,7 @@ h6 {
 
     font-family: $heading-font-family;
     font-size: $base-font-size;
+    font-weight: 800;
     line-height: $heading-line-height;
 }
 

@@ -10,11 +10,13 @@
 @import "vendors/jqcloud.css.scss";
 @import "vendors/ionRangeSlider";
 @import "vendors/ionSkinHTML5";
+@import "vendors/animate";
 
 // custom style
 @import "partials/units";
 @import "partials/header";
 @import "partials/modal";
+@import "partials/tabs";
 
 @import "partials/home";
 @import "partials/about";
@@ -23,5 +25,8 @@
 @import "partials/imageLightbox";
 @import "partials/careers";
 // @import "partials/rangeslider";
+
+// New Design style
+@import "partials/new_home";
 
 @import "partials/footer";

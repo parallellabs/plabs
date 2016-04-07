@@ -55,137 +55,13 @@
         //     .layer:nth-of-type(#{$i}) {
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         //         position: static !important;
         //         // float: left;
         //         // top: 50%;
         //         // left: 0 + 100px * $i !important;
         //         left: 50%;
-
         //         display: inline-block !important;
         //         margin: 40px;
-
         //         color: rgba(255,255,255,.4);
         //     }
         // }
@@ -226,7 +102,6 @@
         }
     }
 }
-
 .introduction {
     @extend .container;
     p {
@@ -244,7 +119,6 @@
         }
     }
 }
-
 .our-clients {
     text-align: center;
 
@@ -263,7 +137,6 @@
         }
     }
 }
-
 .portfolio {
     @extend .container;
     .projects {
@@ -274,7 +147,6 @@
         @include media($mobile-devices) {
             margin-bottom: 70px;
         }
-
         .title {
             margin-bottom: 20px;
 
@@ -379,7 +251,6 @@
         }
     }
 }
-
 .feeds {
     @extend .container;
     .feed-box {
@@ -426,7 +297,6 @@
                 background-color: rgba(0, 0, 0, .5);
             }
         }
-
         &:nth-of-type(1) {
             background-color: rgba(0, 0, 0, .5);
 
@@ -449,7 +319,6 @@
         &:nth-of-type(2) {
             @include omega(2);
         }
-
         &:nth-of-type(3) {
             @include media($mobile-devices) {
                 @include omega();
@@ -459,7 +328,6 @@
             @extend .square;
             @include media($mobile-devices) {
                 @include span-columns(6 of 12);
-
                 &:nth-of-type(2) {
                     @include omega-reset(2n);
                 }
@@ -470,7 +338,6 @@
                 }
             }
         }
-
         h2 {
             position: absolute;
             // top: 20px;
@@ -481,7 +348,6 @@
             color: #fff;
 
             @include pad(15px);
-
             @media(min-width: 768px) and (max-width: 1200px) {
                 font-size: rem(36);
             }
@@ -525,7 +391,6 @@
                     color: #125688;
 
                     @include pad(6px);
-
                     // @media (min-width: 768px) and (max-width: 1200px) {
                     //     font-size: rem(12);
                     // }
@@ -557,7 +422,6 @@
                         font-size: rem(12);
                     }
                 }
-
                 a.btn {
                     float: right;
                     height: 30px;
@@ -578,7 +442,6 @@
                     background-color: transparent;
 
                     @include pad(0 6px);
-
                     @media (min-width: 768px) and (max-width: 1200px) {
                         height: 22px;
 
@@ -646,7 +509,6 @@
             @include media($mobile-devices) {
                 padding-top: 0;
             }
-
             .qoute {
                 display: block;
                 width: 20px;
@@ -665,7 +527,6 @@
                     background: url(../images/svgs/quote.svg) no-repeat;
 
                     @include transform(rotate(180deg));
-
                     @media (min-width:768px) and (max-width:1200px) {
                         width: 50px;
                         height: 40px;
@@ -829,7 +690,6 @@
         }
     }
 }
-
 .start-project {
     max-height: 200px;
     min-height: 120px;
@@ -886,9 +746,6 @@
         }
     }
 }
-
-
-
 // Blog page style
 .blog-container {
     @include outer-container(660px);

@@ -9,13 +9,13 @@
     padding: 16px 0;
 
     @extend .container;
+    @include media($mobile-devices) {
+        padding: 16px;
+    }
     @include media(min-width 1440px) {
         max-width: none;
         padding-right: 40px;
         padding-left: 40px;
-    }
-    @include media($mobile-devices) {
-        padding: 16px;
     }
     .logo {
         float: left;
@@ -124,7 +124,6 @@
             padding-right: 40px;
             padding-left: 40px;
         }
-        @include outer-container(100%);
         .wrap {
             @extend .container;
             @include media(min-width 1440px) {
@@ -138,4 +137,163 @@
             }
         }
     }
+    &.home-nav {
+        max-width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+        .logo {
+            a {
+                svg {
+                    width: 94px;
+                    height: 35px;
+                }
+            }
+        }
+        .nav-right {
+            @include media(max-width 768px){
+                display:none;
+            }
+            li {
+                overflow: hidden;
+                &:last-child {
+                    width: 180px;
+                }
+                a {
+                    // font-family: GothamNarrow-Medium;
+                    font-size: rem(16);
+
+                    color: #243f53;
+                    &:hover, {
+                        color: #16c6c2;
+                    }
+                    &.hiring {
+                        float: right;
+                        width: 180px;
+                        height: 38px;
+                        padding: 0;
+
+                        line-height: 38px;
+
+                        text-align: right;
+
+                        background-color: #fcc32c;
+                        margin:0;
+                        margin-right: -20px;
+                        @include transform(skewX(-30deg));
+                        span {
+                            display: inline-block;
+                            width: 100%;
+                            text-align: center;
+
+                            color: #fff;
+
+                            @include transform(skewX(30deg));
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
+
+// side panel
+.sliding-panel-content {  
+    $action-color: #477DCA !default;
+    $dark-gray: #333 !default;
+    $sliding-panel-border-color: $dark-gray;
+    $sliding-panel-background: lighten($sliding-panel-border-color, 5%);
+    $sliding-panel-color: #fff;
+    $sliding-panel-border: 1px solid $sliding-panel-border-color;
+    $sliding-panel-background-hover: $action-color;
+    $sliding-panel-color-hover: #fff;
+    $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
+
+    @include position(fixed, 0px 0px 0px auto);
+    @include size(220px 100%);
+    // @include transform(translateX(-220px));
+    @include transform(translateX(220px));
+    @include transition(all 0.25s linear);
+    background: $sliding-panel-background;
+    z-index: 999999;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+
+    li {
+        list-style: none;
+    }
+
+
+    li {
+        a {
+            display: block;
+            padding: 1em;
+
+            font-weight: bold;
+
+            text-decoration: none;
+
+            color: $sliding-panel-color;
+            border-bottom: $sliding-panel-border;
+
+            &:focus {
+                background-color: $sliding-panel-background-focus;
+            }
+
+            &:hover {
+                color: $sliding-panel-color-hover;
+                background-color: $sliding-panel-background-hover;
+            }
+        }
+    }
+    &.is-visible {
+        @include transform(translateX(0));
+     }
+}
+
+.sliding-panel-fade-screen {
+    z-index: 999998;
+
+    visibility: hidden;
+
+    opacity: 0;
+    background: black;
+
+    @include transition;
+    @include position(fixed, 0px 0px 0px 0px);
+
+    &.is-visible {
+        visibility: visible;
+
+        opacity: .4;
+    }
+}
+
+
+.sliding-panel-button {
+    position: relative;
+
+    display: none;
+    float: right;
+    // padding: 10px 16px;
+    width: 24px;
+    height: 24px;
+
+    cursor: pointer;
+
+    color: #243f53;
+    outline: none;
+    img {
+        height: 1.3em;
+    }
+    @include media(max-width 768px){
+        display: inline-block;
+    }
+}
+

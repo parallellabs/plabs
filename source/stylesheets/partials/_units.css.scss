@@ -23,8 +23,17 @@ body {
 
 .wrapper {
     position: relative;
+    &.new {
+        background-color: #fafafa;
+    }
+    &.home {
+        // padding-top: 100px;
+    }
 }
 
+.h100 {
+    height: 100vh;
+}
 h1 {
     font-size: rem(64);
 
@@ -70,12 +79,33 @@ svg {
 .clr-gray-fade {
     color: rgba(64,65,69,.1) !important;
 }
+.clr-yellow {
+    color: #fcc32c;
+}
 .explara-red {
     color: #db4344;
 }
 .hj-green {
     color: #009688;
 }
+.app-pink {
+    color: #ec2956;
+}
+.sm-orange {
+    color: #f37e5d;
+}
+// background
+.blue-bg {
+    background-color: #2e9df7;
+}
+.light_green-bg {
+    background-color: #3aab81;
+}
+.dark_green-bg {
+    background-color: #009688;
+}
+
+
 .M0 {
     margin: 0;
 }
@@ -97,6 +127,20 @@ svg {
 .PB60 {
     padding-bottom: 60px;
 }
+.PLR0-imp {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+.PB0-imp {
+    padding-bottom: 0 !important;
+}
+.PT-180 {
+    padding-top: 180px;
+
+    @include media(max-width 768px) {
+        padding-top: 120px;
+    }
+}
 
 .box-shadow-none {
     box-shadow: none !important;
@@ -109,7 +153,13 @@ svg {
 
     -webkit-overflow-scrolling: touch;
 }
+.overflow-XH {
+    overflow-x: hidden;
+}
 
+.owl-carousel {
+    display: block;
+}
 // position
 .pos-rel {
     position: relative;
@@ -370,6 +420,7 @@ svg {
     position: relative;
 
     display: block;
+    width: 300px;
     height: 48px;
     max-width: 250px;
     padding: 0 10px;
@@ -380,6 +431,8 @@ svg {
     font-size: rem(18);
     font-weight: 400;
     line-height: 44px;
+
+    cursor: pointer;
 
     color: $medium-gray;
     color: rgba(255,255,255,.8);
@@ -425,6 +478,65 @@ svg {
             color: #fff;
             &:nth-child(2) {
                 font-size: rem(16);
+            }
+        }
+    }
+    &.new {
+        text-indent: 20px;
+
+        border: none;
+        border-radius: 0;
+        background-color: transparent;
+
+        &:focus {
+            background-color: transparent;
+        }
+        .skewed {
+            width: 210px;
+            height: inherit;
+            margin-left: -30px;
+            overflow: hidden;
+
+            background-color: #243f53;
+
+            @include transform(skewX(-30deg));
+            span {
+                width: 160px;
+
+                font-size: rem(18);
+                font-weight: 400;
+                line-height: 48px;
+
+                text-align: center;
+
+                color: #fff;
+
+                @include transform(skewX(30deg));
+            }
+            &.yellow {
+                background-color: #fcc32c;
+                span {
+                    color: #243f53;
+                }
+            }
+            &.red {
+                background-color: #db4344;
+                span {
+                    color: #fff;
+                }
+            }
+            &.green {
+                background-color: #009688;
+                span {
+                    color: #fff;
+                }
+            }
+            &.border {
+                border: 1px solid #fff;
+                background-color: transparent;
+                span {
+                    color: #fff;
+                }
             }
         }
     }
@@ -1272,3 +1384,40 @@ stretch
     fill: currentColor;
     /* 4px */
 }
+
+// Parallax style
+$parallax-window-height: 30em;
+$parallax-background-height: $parallax-window-height * 2;
+
+.parallax-window {
+    position: relative;
+
+    width: 100%;
+    // max-height: $parallax-window-height;
+    overflow: hidden;
+
+    text-align: center;
+}
+
+.parallax-static-content {
+    position: relative;
+    z-index: 9;
+    // padding: 8em 0;
+
+    color: #9a9a8a;
+}
+
+.parallax-background {
+    position: absolute;
+    top: - $parallax-window-height / 3;
+    // left: 0;
+
+    width: 100%;
+    // background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
+    // background-position: top;
+    // background-size: cover;
+    // background-color: beige;
+    // height: $parallax-background-height;
+}
+
+// Based on http://codepen.io/skeurentjes/

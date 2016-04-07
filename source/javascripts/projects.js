@@ -115,7 +115,7 @@ $(document).ready(function(){
     });
     
     $('.btn-overlay').on('click', function(){
-        $('#wrapper').removeClass('available');
+        // $('#wrapper').removeClass('available');
         $('#wrapper').removeClass("button-floating-clicked");
     });
 
