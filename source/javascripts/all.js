@@ -184,14 +184,14 @@ $(document).ready(function(){
   // });
 
 // parallax
-  if ($("#js-parallax-window").length || $("#js-parallax-window1").length || $("#js-parallax-window2").length) {
+  if ($("#js-parallax-window").length || $("#js-parallax-window1").length || $("#js-parallax-window2").length || $("#js-parallax-window3").length || $("#js-parallax-window4").length || $("#js-parallax-window5").length) {
     parallax();
   }
 
 }); // End ready
 
 $(window).scroll(function(e) {
-  if ($("#js-parallax-window").length || $("#js-parallax-window1").length || $("#js-parallax-window2").length) {
+  if ($("#js-parallax-window").length || $("#js-parallax-window1").length || $("#js-parallax-window2").length || $("#js-parallax-window3").length || $("#js-parallax-window4").length || $("#js-parallax-window5").length) {
     parallax();
   }
 });
@@ -247,6 +247,54 @@ function parallax(){
     plxBackground.css('top', - (plxWindowTopToWindowTop * plxSpeed) + 'px');
   }
 
+  if( $("#js-parallax-window3").length > 0 ) {
+    var plxBackground = $("#js-parallax-background3");
+    var plxWindow = $("#js-parallax-window3");
+
+    var plxWindowTopToPageTop = $(plxWindow).offset().top;
+    var windowTopToPageTop = $(window).scrollTop();
+    var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
+
+    var plxBackgroundTopToPageTop = $(plxBackground).offset().top;
+    var windowInnerHeight = window.innerHeight;
+    var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
+    var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
+    var plxSpeed = 0.35;
+
+    plxBackground.css('top', - (plxWindowTopToWindowTop * plxSpeed) + 'px');
+  }
+  if( $("#js-parallax-window4").length > 0 ) {
+    var plxBackground = $("#js-parallax-background4");
+    var plxWindow = $("#js-parallax-window4");
+
+    var plxWindowTopToPageTop = $(plxWindow).offset().top;
+    var windowTopToPageTop = $(window).scrollTop();
+    var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
+
+    var plxBackgroundTopToPageTop = $(plxBackground).offset().top;
+    var windowInnerHeight = window.innerHeight;
+    var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
+    var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
+    var plxSpeed = 0.35;
+
+    plxBackground.css('top', - (plxWindowTopToWindowTop * plxSpeed) + 'px');
+  }
+  if( $("#js-parallax-window5").length > 0 ) {
+    var plxBackground = $("#js-parallax-background5");
+    var plxWindow = $("#js-parallax-window5");
+
+    var plxWindowTopToPageTop = $(plxWindow).offset().top;
+    var windowTopToPageTop = $(window).scrollTop();
+    var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
+
+    var plxBackgroundTopToPageTop = $(plxBackground).offset().top;
+    var windowInnerHeight = window.innerHeight;
+    var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
+    var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
+    var plxSpeed = 0.35;
+
+    plxBackground.css('top', - (plxWindowTopToWindowTop * plxSpeed) + 'px');
+  }
 }
 
 (function (jQuery) {
@@ -319,127 +367,6 @@ $(window).scroll(function(event) {
 });
 
 
-
-// cloud tag
-var robin = [{text: "Meditation", weight: 9},
-{text: "Pilates", weight: 3},
-{text: "Hiking", weight: 9},
-{text: "Strategy", weight: 5},
-{text: "UX Design", weight: 9},
-{text: "Devil's Advocate", weight: 5},
-{text: "GTD", weight: 3},
-{text: "Coldplay", weight: 5},
-{text: "Vespa", weight: 1},
-{text: "Minimalism", weight: 3},
-{text: "Slack", weight: 1}
-];
-
-var sreenath = [{text: "Silent Mode", weight: 3},
-{text: "Filter Coffee", weight: 9},
-{text: "Xbox", weight: 9},
-{text: "Instagram", weight: 1},
-{text: "Photoshop", weight: 5},
-{text: "Invision", weight: 1},
-{text: "Oneplus", weight: 5},
-{text: "AR Rahman", weight: 9},
-{text: "GSM Arena", weight: 5},
-{text: "Saving Private Ryan", weight: 3},
-{text: "Aloo Paratha", weight: 5},
-{text: "Cricket", weight: 3}
-];
-
-var Bhaghya = [{text: "reeses", weight: 5},
-{text: "cartooning", weight: 9},
-{text: "books", weight: 1},
-{text: "chumma", weight: 5},
-{text: "edm", weight: 3},
-{text: "stationery", weight: 5},
-{text: "cheesecake", weight: 9},
-{text: "vlogs", weight: 1},
-{text: "animals before humans", weight: 3}
-];
-
-var Chaitanya = [{text: "UI Designing", weight: 3},
-{text: "Sketching", weight: 3},
-{text: "Photography", weight: 5},
-{text: "Music", weight: 9},
-{text: "Motion Graphics", weight: 1},
-{text: "NFS", weight: 1},
-{text: "GTA 5", weight: 5},
-{text: "Code Geass", weight: 1},
-{text: "XBOX", weight: 9},
-{text: "KFC", weight: 3},
-{text: "Pulpy Orange", weight: 5},
-{text: "Introvert", weight: 1}
-];
-
-var Rakesh = [{text: "Cricket", weight: 3},
-{text: "Coke studio", weight: 5},
-{text: "Asphalt", weight: 9},
-{text: "Music", weight: 1},
-{text: "Html5", weight: 5},
-{text: "Relic run", weight: 3},
-{text: "css3", weight: 9},
-{text: "Gym", weight: 3},
-{text: "volley Ball", weight: 1},
-{text: "Traveling", weight: 9},
-{text: "Namaste london", weight: 5}
-];
-
-var Vish = [{text: "Minimalist", weight: 3},
-{text: "swimmer", weight: 5},
-{text: "Netflix", weight: 9},
-{text: "iOS", weight: 1},
-{text: "Gajar ka halwa", weight: 5},
-{text: "Alternate rock", weight: 3},
-{text: "Traveller", weight: 9},
-{text: "Books", weight: 3},
-{text: "startups", weight: 1}
-];
-
-var Devshree = [{text: "Party enthusiast", weight: 3},
-{text: "wanderlust", weight: 9},
-{text: "dancer", weight: 9},
-{text: "paani puri", weight: 1},
-{text: "extrovert", weight: 5},
-{text: "hyper", weight: 1},
-{text: "doodling", weight: 5},
-{text: "half Sandwich", weight: 9},
-{text: "passionate", weight: 5},
-{text: "above and beyond", weight: 3}
-];
-
-var Allan = [{text: "Music", weight: 5},
-{text: "Coffee", weight: 3},
-{text: "Football", weight: 5},
-{text: "Travelling", weight: 9},
-{text: "Goan Fish Curry", weight: 5},
-{text: "HTML", weight: 1},
-{text: "CSS3", weight: 5},
-{text: "Nexus", weight: 9}
-];
-
-var Ameya = [{text: "Sketching", weight: 5},
-{text: "GYM", weight: 9},
-{text: "trekking", weight: 1},
-{text: "Pets", weight: 5},
-{text: "Tea addict", weight: 3},
-{text: "Chatterbox", weight: 5},
-{text: "Dhol Tasha", weight: 9},
-{text: "UX Design", weight: 1},
-{text: "Gadget Freak", weight: 3},
-{text: "Hardcore gamer", weight: 5}
-];
-
-$('.cloud_1').jQCloud(robin,{height:200,autoResize: true,removeOverflowing: true,shape: 'rectangular'});
-$('.cloud_2').jQCloud(sreenath,{height:200,autoResize: true,removeOverflowing: true,shape: 'rectangular'});
-$('.cloud_3').jQCloud(Bhaghya,{height:200,autoResize: true,removeOverflowing: true,shape: 'rectangular'});
-$('.cloud_4').jQCloud(Chaitanya,{height:200,autoResize: true,removeOverflowing: false,shape: 'rectangular'});
-$('.cloud_5').jQCloud(Rakesh,{height:200,autoResize: true,removeOverflowing: false,shape: 'rectangular'});
-$('.cloud_6').jQCloud(Vish,{height:200,autoResize: true,removeOverflowing: false,shape: 'rectangular'});
-$('.cloud_7').jQCloud(Devshree,{height:200,autoResize: true,removeOverflowing: true,shape: 'rectangular'});
-$('.cloud_8').jQCloud(Allan,{height:200,autoResize: true,removeOverflowing: false,shape: 'rectangular'});
-$('.cloud_9').jQCloud(Ameya,{height:200,autoResize: true,removeOverflowing: true,shape: 'rectangular'});
 
 
 

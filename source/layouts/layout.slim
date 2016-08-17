@@ -46,10 +46,9 @@ html.no-js
       = partial "layouts/header.slim"
       == yield
 
-    = partial "layouts/footer.slim"
+    = partial "layouts/new_footer.slim"
   / jQuery
   script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"
-  / script type="text/javascript" src="javascripts/retina.min.js"
   script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
   script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"
   script type="text/javascript" src="javascripts/backbone_custom.js"
@@ -57,6 +56,7 @@ html.no-js
   script type="text/javascript" src="javascripts/ion.rangeSlider.min.js"
   script type="text/javascript" src="javascripts/jquery.parallax.min.js"
   script type="text/javascript" src="javascripts/all.js"
+  script type="text/javascript" src="javascripts/retina.min.js"
   javascript:
     // Instafeed call api to fetch latest image
     var userFeed = new Instafeed({

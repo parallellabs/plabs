@@ -39,7 +39,7 @@ layout: hiring_layout
 / End
 
 / Our section
-- projects = "images/art-of-living-logo.png", "images/pay-u-money.png", "images/chumbak.png", "images/boomer.png", "images/vserv.png", "images/housejoy.png", "images/explara.png", "images/Eatfresh_grayscale.png"
+- projects = "images/housejoy.png", "images/india-mart.png", "images/citrus.png", "images/pay-u-money.png", "images/chai_point.png", "images/Eatfresh.png", "images/chumbak.png", "images/art-of-living-logo.png", "images/vserv.png", "images/airwoot.png", "images/explara.png", "images/boomer.png"
 .section.home-content
 	.our-clients
 		- projects.each do | logo |
@@ -286,10 +286,17 @@ layout: hiring_layout
 
 
 / New project section
-.start-project
-	p 
-		| We would love to hear about your next project.
-	a href="javascript:void(0);" class="btn open-form" Get in Touch
+.section.new-home-content.tell-us
+			.content
+				h2
+					| We would love to hear about your project.
+				svg
+					use xlink:href="images/svgs/iconset.svg#icon-filled-like" 
+				p
+					| Answer few questions to help us get a better context of your project and meaningful conversation.
+				a.btn.new.open-form href="javascript:void(0);"
+					.skewed.topaz
+						span Get in touch
 
 = partial "layouts/main_form.slim"
 

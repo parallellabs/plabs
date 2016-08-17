@@ -195,10 +195,17 @@ layout: parallex_layout
 .btn-overlay
 
 / New project section
-.start-project
-	p 
-		| We would love to hear about your next project.
-	a href="javascript:void(0);" class="btn open-form" Get in Touch
+.section.new-home-content.tell-us
+			.content
+				h2
+					| We would love to hear about your project.
+				svg
+					use xlink:href="images/svgs/iconset.svg#icon-filled-like" 
+				p
+					| Answer few questions to help us get a better context of your project and meaningful conversation.
+				a.btn.new.open-form href="javascript:void(0);"
+					.skewed.topaz
+						span Get in touch
 	
 = partial "layouts/footer.slim"
 = partial "layouts/main_form.slim"
