@@ -104,7 +104,7 @@
                     }
                 }
                 .btn {
-                    max-width: 150px;
+                    max-width: 165px;
                     padding: 7px 15px;
 
                     background-color: transparent;
@@ -251,7 +251,7 @@
             color: $medium-gray;
         }
         .btn {
-            max-width: 150px;
+            max-width: 180px;
             // padding: 7px 15px;
             margin-right: auto;
             margin-left: auto;
@@ -1016,6 +1016,9 @@
                     padding: 0;
                 }
                 li {
+                    position: relative;
+
+                    padding-left: 30px;
                     margin-bottom: 38px;
 
                     font-size: 18px;
@@ -1029,6 +1032,10 @@
                         padding-left: 30px;
                     }
                     img {
+                        position: absolute;
+                        top: 7px;
+                        left: 0;
+
                         margin-right: 30px;
 
                         vertical-align: middle;

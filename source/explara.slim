@@ -1,7 +1,17 @@
 ---
 layout: parallex_layout
 ---
-- @title = "Explara - Web App Design Case Study | Parallel Labs"
+- @title = "Explara Web - Case Study | Parallel Labs"
+- @description = "How we transformed Explara to a experience discovery platform"
+- @keyword = "Explara User Experience Design Case Study, Parallel Labs Explara Web, Explara Android App , Explara iOS App, Local Discovery Design"
+- @og_title = "Parallel Labs Blog"
+- @og_description = "How we transformed Explara to a experience discovery platform"
+- @og_url = "http://parallellabs.io/explara.html"
+- @og_image = "http://parallellabs.io/images/workpage_images/Explara_web2.png"
+- @twitter_title = "Parallel Labs Blog"
+- @twitter_description = "Article and Insights from Parallel Labs team on everything design"
+- @twitter_url = "http://parallellabs.io/explara.html"
+- @twitter_image = "http://parallellabs.io/images/workpage_images/Explara_web2.png"
 
 .parallax
     = partial "layouts/header.slim"
@@ -129,13 +139,21 @@ layout: parallex_layout
 					img src="images/santosh.jpg" alt="Author's picture"
 				span.name 
 					| Santosh Panda <span class="helper-text"> Founder @ Explara. </span>
+		
 		/ New project section
-		.start-project
-			p 
-				| We would love to hear about your next project.
-			a href="javascript:void(0);" class="btn open-form" Get in Touch
-			
-		= partial "layouts/footer.slim"
+		.section.new-home-content.tell-us
+			.content
+				h2
+					| We would love to hear about your project.
+				svg
+					use xlink:href="images/svgs/iconset.svg#icon-filled-like" 
+				p
+					| Answer few questions to help us get a better context of your project and meaningful conversation.
+				a.btn.new.open-form href="javascript:void(0);"
+					.skewed.topaz
+						span Get in touch
+		
+		= partial "layouts/new_footer.slim"
 		= partial "layouts/main_form.slim"
 		
 	   

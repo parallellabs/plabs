@@ -74,6 +74,8 @@ var Enquiries = Backbone.Model.extend({
     "currentPage": 1,
     "clientName": "",
     "email": "",
+    "mobile": "",
+    "company": "",
     "projectBrief": "",
     "budget": "",
     "attachments": [],
@@ -125,7 +127,7 @@ var FormView = Backbone.View.extend({
 
   // Form validation 
   shouldProceed: function() {
-      var  validateModel = {
+    var  validateModel = {
       1: function() {
         if(!!enquiries.get('clientName')){
           $('.client').text(enquiries.get('clientName'));
@@ -140,26 +142,10 @@ var FormView = Backbone.View.extend({
         }
       },
       2: function() {
-           var emailReg = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;  
-           console.log(enquiries.get('email'));
-           var mail = enquiries.get('email');
-           if(!!emailReg.test(mail)) {  
-                $('.group .message').animate({"opacity": "+0"});
-                $('#email').css('border-color', '#757575');
-                $('.group .cross-icon').hide();
-                return !!enquiries.get('email');
-           }else{
-              $('.group .message').animate({"opacity":"+1"});
-                $('.group .cross-icon').show();
-                $('#email').css('border-color', '#db4344');
-           }       
-
-      },
-      3: function() {
         var inputLength =  enquiries.get('projectBrief').length;
         // var inputLength =  enquiries.get('projectBrief');
         console.log(inputLength);
-        if(!!enquiries.get('projectBrief') && inputLength > 140){
+        if(!!enquiries.get('projectBrief')){ // && inputLength > 140 //uncomment this want to validate charecter length
           $('.group .message').animate({"opacity":"+0"});
           $('#projectBrief').css('border-color', '#757575');
           $('.group .cross-icon').hide();
@@ -169,7 +155,53 @@ var FormView = Backbone.View.extend({
           $('#projectBrief').css('border-color', '#db4344');
           $('.group .cross-icon').show();
         }
-        // return true;
+        // return true;         
+      },
+      3: function() {
+        var emailReg = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;  
+        console.log(enquiries.get('email'));
+        var mail = enquiries.get('email');
+
+        // mobile validation
+        // var mobiReg = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
+        // var mobile = enquiries.get('mobile');
+        // console.log(enquiries.get('mobile'));
+
+        // // Check for mobile and email validation both should be true
+        // if(!!emailReg.test(mail) && !!mobiReg.test(mobile)) {$('.group .message').animate({"opacity":"+1"});
+        //   $('.group .cross-icon').hide();
+        //   $('#email').css('border-color', '#757575');
+        //   $('#mobile').css('border-color', '#757575');
+        //   return !!enquiries.get('email');
+        //   return !!enquiries.get('mobile');
+        // }else{
+        //   $('.group .message').animate({"opacity":"+1"});
+        //   $('.group .cross-icon').show();
+        //   $('#email').css('border-color', '#db4344');
+        //   $('#mobile').css('border-color', '#db4344');
+        // }
+        // Check for email validation
+        if(!!emailReg.test(mail)){
+          $('#email').parents('.group').find('.message').animate({"opacity": "+0"});
+          $('#email').css('border-color', '#757575');
+          $('#email').parents('.group').find('.cross-icon').hide();
+          return !!enquiries.get('email');
+        }else{
+          $('#email').parents('.group').find('.message').animate({"opacity":"+1"});
+          $('#email').parents('.group').find('.cross-icon').show();
+          $('#email').css('border-color', '#db4344');
+        }
+        // Check for mobile validation
+        // if(!!mobiReg.test(mobile)){
+        //   $('#mobile').parents('.group').find('.message').animate({"opacity": "+0"});
+        //   $('#mobile').css('border-color', '#757575');
+        //   $('#mobile').parents('.group').find('.cross-icon').hide();
+        //   // return !!enquiries.get('mobile');
+        // }else{
+        //   $('#mobile').parents('.group').find('.message').animate({"opacity":"+1"});
+        //   $('#mobile').parents('.group').find('.cross-icon').show();
+        //   $('#mobile').css('border-color', '#db4344');
+        // }
       },
       4: function() {
         if(!!enquiries.get('budget')){
@@ -205,8 +237,26 @@ var FormView = Backbone.View.extend({
       });
   },
 
+  // Updating the model
   modelUpdate: function() {
-    enquiries.set(this.$el.find('.group input').attr('id'), this.$el.find('.group input').val());
+    console.info('updating...'); 
+    var groups = this.$el.find('.group'), newGroups =[];
+    var i = 0;
+    while (groups[i]) {
+      newGroups[i] = groups[i++];
+    }
+    console.info('New Groups', newGroups);
+
+    newGroups.forEach(function(group) {
+      enquiries.set(
+        $(group).find('input').attr('id'),
+        $(group).find('input').val()  
+      );    
+    });
+    // enquiries.set(
+    //   this.$el.find('.group input').attr('id'),
+    //   this.$el.find('.group input').val()
+    // );
     enquiries.set(this.$el.find('.group textarea').attr('id'), this.$el.find('.group textarea').val());
   },
 
@@ -230,8 +280,7 @@ var FormView = Backbone.View.extend({
 
 
 var form = new FormView();
-// Backbone.history.start({pushState: false});
 
 window.workspace = new Workspace();
-Backbone.history.start();
+Backbone.history.start({pushState: false});
 workspace.navigate('1', {trigger: true});

@@ -1,7 +1,17 @@
 ---
 layout: parallex_layout
 ---
-- @title = "Explara - Android App Design Case Study | Parallel Labs"
+- @title = "Explara Mobile App - Case Study | Parallel Labs"
+- @description = "How we simplified discovering local experiences on the go"
+- @keyword = "Explara Mobile App, Parallel Labs Explara Mobile, Explara Design , Explara App Design , Explara Android App, Explara iOS App"
+- @og_title = "Explara Mobile App - Case Study | Parallel Labs"
+- @og_description = "How we simplified discovering local experiences on the go"
+- @og_url = "http://parallellabs.io/explara_android.html"
+- @og_image = "http://parallellabs.io/images/workpage_images/explara_home.png"
+- @twitter_title = "Explara Mobile App - Case Study | Parallel Labs"
+- @twitter_description = "How we simplified discovering local experiences on the go"
+- @twitter_url = "http://parallellabs.io/explara_android.html"
+- @twitter_image = "http://parallellabs.io/images/workpage_images/explara_home.png"
 
 = partial "layouts/e_android_header.slim"
 /! Hero banner style
@@ -10,7 +20,7 @@ layout: parallex_layout
 		img src="images/explara_logo.png" alt="Explara logo"/
 		p 
 			| Local experiences on the go.	
-		a.btn target="_blank" href="https://play.google.com/store/apps/details?id=com.explara.android&hl=en" type="button" 
+		a.btn target="_blank" href="https://play.google.com/store/apps/details?id=com.explara.android&hl=en" 
 				img.icon src="images/android-o-s-512.png" alt="Android icon"/
 				span.text 
 					| <i>Get it on</i> <i>Google Play</i>
@@ -202,17 +212,17 @@ layout: parallex_layout
 
 / New project section
 .section.new-home-content.tell-us
-			.content
-				h2
-					| We would love to hear about your project.
-				svg
-					use xlink:href="images/svgs/iconset.svg#icon-filled-like" 
-				p
-					| Answer few questions to help us get a better context of your project and meaningful conversation.
-				a.btn.new.open-form href="javascript:void(0);"
-					.skewed.topaz
-						span Get in touch
+	.content
+		h2
+			| We would love to hear about your project.
+		svg
+			use xlink:href="images/svgs/iconset.svg#icon-filled-like" 
+		p
+			| Answer few questions to help us get a better context of your project and meaningful conversation.
+		a.btn.new.open-form href="javascript:void(0);"
+			.skewed.topaz
+				span Get in touch
 	
-= partial "layouts/footer.slim"
+= partial "layouts/new_footer.slim"
 = partial "layouts/main_form.slim"
 

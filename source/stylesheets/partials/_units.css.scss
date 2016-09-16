@@ -17,7 +17,32 @@ body {
     margin: 0;
     box-sizing: border-box;
 
+    -webkit-overflow-scrolling: touch;
+
     //     -webkit-overflow-scrolling: touch;
+}
+
+// address bar jumps content so height fix for Mobile
+// @mixin vh-fix {
+//     @media (max-device-aspect-ratio: 3/4) {
+//         height: calc(100vw * 1.333 - 9%);
+//     }
+//     @media (max-device-aspect-ratio: 2/3) {
+//         height: calc(100vw * 1.5 - 9%);
+//     }
+//     @media (max-device-aspect-ratio: 10/16) {
+//         height: calc(100vw * 1.6 - 9%);
+//     }
+//     @media (max-device-aspect-ratio: 9/16) {
+//         height: calc(100vw * 1.778 - 9%);
+//     }
+// }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    margin: 0;
+
+    -webkit-appearance: none;
 }
 
 
@@ -94,6 +119,15 @@ svg {
 .sm-orange {
     color: #f37e5d;
 }
+.eat-green {
+    color: #009e5f;
+}
+.chai-green {
+    color: #0f6b38;
+}
+.treatr-red {
+    color: #ff4c4c;
+}
 // background
 .blue-bg {
     background-color: #2e9df7;
@@ -103,6 +137,12 @@ svg {
 }
 .dark_green-bg {
     background-color: #009688;
+}
+.red-bg {
+    background-color: #db4344;
+}
+.citrus-bg {
+    background-color: #019966;
 }
 
 
@@ -546,6 +586,9 @@ svg {
             }
         }
     }
+    &.coming-soon {
+        cursor: default;
+    }
 }
 
 // Input style
@@ -560,6 +603,7 @@ svg {
     margin-bottom: 0;
 }
 input[type="text"],
+input[type="number"],
 textarea {
     display: block;
     width: 100%;
@@ -575,6 +619,7 @@ textarea {
     box-shadow: none;
 }
 input[type="text"]:focus,
+input[type="number"]:focus,
 textarea:focus {
     outline: none;
     box-shadow: none;
@@ -600,7 +645,9 @@ textarea:focus {
 
 /* ACTIVE STATE */
 input[type="text"]:focus ~ label,
+input[type="number"]:focus ~ label,
 input[type="text"]:valid ~ label,
+input[type="number"]:valid ~ label,
 textarea:focus ~ label {
     top: 10px;
 
@@ -609,8 +656,10 @@ textarea:focus ~ label {
     color: #16c6c2;
 }
 input[type="text"]:focus ~ label.active-input,
+input[type="number"]:focus ~ label.active-input,
 textarea:focus ~ label.active-input,
 input[type="text"]:valid ~ label.active-input,
+input[type="number"]:valid ~ label.active-input,
 textarea:valid ~ label.active-input {
     font-size: 18px;
 }
@@ -680,13 +729,16 @@ textarea:valid ~ label.active-input {
 /* ACTIVE STATE 
 --------------------------------------*/
 input[type="text"]:focus ~ .bar:before,
+input[type="number"]:focus ~ .bar:before,
 textarea:focus ~ .bar:before,
 input[type="text"]:focus ~ .bar:after,
+input[type="number"]:focus ~ .bar:after,
 textarea:focus ~ .bar:after {
     width: 50%;
 }
 
 input[type="text"]:disabled,
+input[type="number"]:disabled,
 textarea:disabled {
     border-bottom-style: dotted;
     background: transparent;
@@ -710,6 +762,7 @@ textarea:disabled {
 /* ACTIVE STATE 
 ---------------------------------------*/
 input[type="text"]:focus ~ .highlight,
+input[type="number"]:focus ~ .highlight,
 textarea:focus ~ .highlight {
     -webkit-animation: inputHighlighter .3s ease;
        -moz-animation: inputHighlighter .3s ease;

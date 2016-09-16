@@ -1,11 +1,34 @@
 / Navigation header
-header.top-navbar
-	.logo
-		a.white href="index.html" 
-			svg
-  				use xlink:href="images/svgs/iconset.svg#icon-Logo_Color" 
-	ul.nav-right
-		li
-			a href="blog.html" Blog
-		li 
-			a href="about.html" About
+header.top-navbar.home-nav
+  .logo
+    a href="index.html" 
+      svg
+          use xlink:href="images/svgs/iconset.svg#icon-pllogo_white" 
+
+  ul.nav-right.scroll-on-page.white
+    li
+      a href="work.html" Work
+    li
+      a href="about.html" About
+    li 
+      a href="blog.html" Blog
+    li
+      a.hiring.scroll-on-page-link href="interface_designer.html" 
+        span We’re Hiring!
+
+  svg.js-menu-trigger.sliding-panel-button 
+    use xlink:href="images/svgs/iconset.svg#icon-menu1" 
+
+  nav.js-menu.sliding-panel-content
+    ul
+        li
+          a href="work.html"
+            | Work
+        li
+          a href="about.html"
+            | About
+        li 
+          a href="blog.html"
+            | Blog
+
+  .js-menu-screen.sliding-panel-fade-screen

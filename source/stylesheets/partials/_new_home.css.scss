@@ -74,9 +74,9 @@
 
                     font-family: $heading-font-family;
                     font-size: rem(60);
-
-                    background: linear-gradient(95deg, #16c6c2, #8ac37a);
-                    background-color: white;
+                    color:#16c6c2;
+                    background: -webkit-linear-gradient(35deg, #16c6c2, #8ac37a);
+                    background-color: transparent;
                     -webkit-background-clip: text;
 
                     -webkit-text-fill-color: transparent;
@@ -326,6 +326,17 @@
                         font-weight: 400px;
 
                         color: #243f53;
+                        a{
+                            margin-bottom: 10px;
+
+                            font-size: rem(26);
+                            font-weight: 400px;
+
+                            color: #243f53;
+                            @include media(max-width 768px){
+                                font-size: rem(20);
+                            }
+                        }
 
 		                @include media(max-width 768px){
 		                	font-size: rem(20);
@@ -762,6 +773,8 @@ $tabs-base-color: #fafafa;
     label {
         position: relative;
         top: 4px;
+        width: 80px;
+        height: 80px;
 
         display: block;
         padding: 0;
@@ -781,13 +794,15 @@ $tabs-base-color: #fafafa;
         @include media(max-width 768px){
         	margin-right:30px;
         }
+        @include media(max-width 420px){
+            margin-right:10px;
+        }
         &:last-child {
             margin: 0;
         }
         img {
-            width: 80px;
-            height: 80px;
-            max-width: none;
+            
+            // max-width: none;
 
             opacity: .5;
             border-radius: 50%;
@@ -937,6 +952,73 @@ $tabs-base-color: #fafafa;
                     		margin-left:auto;
                     		margin-right:auto;
                     	}
+                    }
+                    &.smartceo {
+                        border-color: #f37e5d;
+                        .skewed {
+                            border-color: #f37e5d;
+                            span {
+                                color: #f37e5d;
+                            }
+                        }
+                    }
+                    &.appjoy {
+                        border-color: #ec2956;
+                        .skewed {
+                            border-color: #ec2956;
+                            span {
+                                color: #ec2956;
+                            }
+                        }
+                    }
+                    &.housejoy {
+                        border-color: #009688;
+                        .skewed {
+                            border-color: #009688;
+                            span {
+                                color: #009688;
+                            }
+                        }
+                    }
+                    &.eatfresh {
+                        border-color: #009E5F;
+                        .skewed {
+                            border-color: #009E5F;
+                            span {
+                                color: #009E5F;
+                            }
+                        }
+                    }
+                    &.chaipoint {
+                        border-color: #0f6b38;
+                        .skewed {
+                            border-color: #0f6b38;
+                            span {
+                                color: #0f6b38;
+                            }
+                        }
+                    }
+                    &.treatr {
+                        border-color: #FF4C4C;
+                        .skewed {
+                            border-color: #FF4C4C;
+                            span {
+                                color: #FF4C4C;
+                            }
+                        }
+                    }
+                    &.coming-soon{
+                        background-color:transparent;
+                        cursor: default;
+                        &.gray{
+                            border-color:#777;
+                            .skewed{
+                                border-color:#777;
+                                span{
+                                    color:#777;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -1093,6 +1175,19 @@ $tabs-base-color: #fafafa;
                                     border-color: #ec2956;
                                     span {
                                         color: #ec2956;
+                                    }
+                                }
+                            }
+                            &.coming-soon{
+                                background-color:transparent;
+                                cursor: default;
+                                &.gray{
+                                    border-color:#777;
+                                    .skewed{
+                                        border-color:#777;
+                                        span{
+                                            color:#777;
+                                        }
                                     }
                                 }
                             }

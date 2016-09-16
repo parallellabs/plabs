@@ -1,14 +1,23 @@
 ---
 layout: home_layout
 ---
-- @title = "Parallel Labs | UI/UX Design Lab based in Bangalore,India.home"
-
+- @title = "Parallel Labs | User Experience (UX) and User Interface (UI) Design Agency in Bangalore"
+- @description = "Parallel Labs is a UX Design Studio based in Bangalore, India. We are a lean team of thinkers, designers and geeks who help companies design web and mobile apps"
+- @keyword = "Design Team, UI/UX Design , UX Design Studio, User Experience Design, UX Design Company Bangalore, UX Design Company India, Product Design & Strategy, Android Design, Mobile App Design Company, Best UI/UX Design Agency India, UI Design Agency India, GUI Design"
+- @og_title = "Parallel Labs is a User Experience Design Studio based in Bangalore, India. We solve problems through design."
+- @og_description = "Parallel Labs is a lean team of thinkers, designers and geeks who help companies design experiences for Web and Mobile"
+- @og_url = "http://parallellabs.io/"
+- @og_image = "http://parallellabs.io/images/svgs/logo.png"
+- @twitter_title = "Parallel Labs is a User Experience Design Studio based in Bangalore, India. We solve problems through design."
+- @twitter_description = "Parallel Labs is a lean team of thinkers, designers and geeks who help companies design experiences for Web and Mobile"
+- @twitter_url = "http://parallellabs.io/"
+- @twitter_image = "http://parallellabs.io/images/svgs/logo.png"
 #js-parallax-window.parallax-window
 	/ Background skewed 
 	.bg-skewed.parallax-background#js-parallax-background
 	/ page content
 	.parallax-static-content
-		.section.new-home-content.h100
+		.section.new-home-content.h100.height-fix
 			.block.left
 				h1
 					| WE SOLVE PROBLEMS THROUGH DESIGN.
@@ -95,23 +104,23 @@ layout: home_layout
 						| Complete product design and development for the official projects website
 
 		.section.new-home-content.media.video-content.opposite
-			h2
-				| Other Media <span class="border"></span>
+			/ h2
+			/ 	| Other Media <span class="border"></span>
 			.right
 				.video
 					img src="images/nexus-5-x-wireframe.svg" alt="mobile image"/
-					video controls="controls" height="410" preload="auto" width="230" src="images/Website_Builder_walkthrough.mov"
+					video controls="controls" height="410" preload="auto" width="230" poster="images/Home_Eatfresh_poster.png" src="images/Eatfresh_Home_Dish.mp4"
 			.left
 				.wrap
 					h2
-						| Desingning World’s simplest mobile based website builder.
-					.btn.new
-						.skewed.topaz
-							span View Project
+						| Fresh and Immersive food ordering experience for EATFRESH mobile apps
+					a.btn.new href="javascript:void(0);"
+						.skewed.topaz.coming-soon
+							span Coming Soon
 			.right.mobile
 				.video
 					img src="images/nexus-5-x-wireframe.svg" alt="mobile image"/
-					video controls="controls" height="410" preload="auto" width="230" src="images/Website_Builder_walkthrough.mp4"
+					video id="video" controls="controls" height="410" preload="auto" width="230" poster="images/Home_Eatfresh_poster.png" src="images/Eatfresh_Home_Dish.mp4"
 
 		.section.new-home-content.media
 			#instafeed.media-card.small.instagram
@@ -128,7 +137,7 @@ layout: home_layout
 			.media-card.small.dribbble
 				.right.mobile
 					.img-box
-					.shots#shots
+					.shots
 				.left
 					.logo-img
 						svg
@@ -140,7 +149,7 @@ layout: home_layout
 						| Follow us on Dribbble
 				.right
 					.img-box
-					.shots#shots
+					.shots
 				.discription
 					| Floating Action button is a powerful mechanism to engage users better and is generally used for the primary call to action on a app.
 
@@ -148,14 +157,14 @@ layout: home_layout
 			.left
 				.wrap
 					h2
-						| Creating the Housejoy app which crossed 400 thousand downloads.
-					.btn.new
+						| Creating the Housejoy iOS App for booking Home Services on demand
+					a.btn.new href="housejoy_ios.html"
 						.skewed.topaz
 							span View Project
 			.right
 				.video
 					img src="images/nexus-5-x-wireframe.svg" alt="mobile image"/
-					video controls="controls" height="410" preload="auto" width="230" src="images/main2.mp4"
+					video controls="controls" height="410" preload="auto" width="230" poster="images/housejoy_poster.png" src="images/main2.mp4"
 					/ video controls="" height="410" preload="auto" width="230" name="Housejoy" 
 					/ 	source src="images/main.mov" 
 
@@ -165,37 +174,38 @@ layout: home_layout
 			.media-card
 				.right.mobile
 					.img-box
-					a target="_blank" href="https://medium.com/parallel-labs/front-end-development-the-missing-ingredient-in-user-experience-design-909ac26e7d48#.5zs4k4s77"
-						img src="images/blog1.jpeg" alt="blog image"/
+					a target="_blank" href="https://medium.com/parallel-labs/illustrations-in-ux-design-its-more-than-what-meets-the-eye-867036df0b73#.dera9at1f"
+						img src="images/Eatfresh-checkout-2.gif" alt="blog image"/
 				.left
-					a.m-title target="_blank" href="https://medium.com/parallel-labs/front-end-development-the-missing-ingredient-in-user-experience-design-909ac26e7d48#.5zs4k4s77"
+					a.m-title target="_blank" href="https://medium.com/parallel-labs"
 						| Story on Medium
 					.content
 						h2
-							| Front-end Development : The missing ingredient in User Experience Design
+							a target="_blank" href="https://medium.com/parallel-labs/illustrations-in-ux-design-its-more-than-what-meets-the-eye-867036df0b73#.dera9at1f"
+								| Illustrations in UX Design — It’s more than what meets the eye
 						p
-							| Published on Oct 25, 2015
+							| Published on Aug 22, 2016
 				.right.m-right
 					.img-box
-					a target="_blank" href="https://medium.com/parallel-labs/front-end-development-the-missing-ingredient-in-user-experience-design-909ac26e7d48#.5zs4k4s77"
-						img src="images/blog1.jpeg" alt="blog image"/
+					a target="_blank" href="https://medium.com/parallel-labs/illustrations-in-ux-design-its-more-than-what-meets-the-eye-867036df0b73#.dera9at1f"
+						img src="images/Eatfresh-checkout-2.gif" alt="blog image"/
 
 		.section.new-home-content.video-content.opposite
 			.right
 				.video
 					img src="images/nexus-5-x-wireframe.svg" alt="mobile image"/
-					video controls="controls" height="410" preload="auto" width="230" src="images/Treatr_Animation.mov"
+					video controls="controls" height="410" preload="auto" width="230" poster="images/Home_Treatr_poster.png" src="images/Treatr_Animation.mp4"
 			.left
 				.wrap
 					h2
 						| Spreading Happiness made fun and simple with TREATR apps.
-					.btn.new
+					.btn.new.coming-soon
 						.skewed.topaz
-							span View Project
+							span Coming Soon
 			.right.mobile
 				.video
 					img src="images/nexus-5-x-wireframe.svg" alt="mobile image"/
-					video controls="controls" height="410" preload="auto" width="230" src="images/Treatr_Animation.mov"
+					video controls="controls" height="410" preload="auto" width="230" poster="images/Home_Treatr_poster.png" src="images/Treatr_Animation.mp4"
 
 		.section.new-home-content.clients.testimonial
 			h2
@@ -212,7 +222,7 @@ layout: home_layout
 			        	h4
 			        		| Santosh Panda, Explara
 			    li
-			        input#tab2 type="radio" name="tabs"
+			        input#tab2 type="radio" name="tabs" checked="checked"
 			        label for="tab2"
 			        	img src="images/nirmal.jpg" alt="Client image"/
 			        #tab-content2.tab-content.animated.fadeIn
@@ -221,7 +231,7 @@ layout: home_layout
 			        	h4
 			        		| Nirmal K, Housejoy
 			    li
-			        input#tab3 type="radio" name="tabs" checked="checked"
+			        input#tab3 type="radio" name="tabs"
 			        label for="tab3"
 			        	img src="images/arun.jpg" alt="Client image"/
 			        #tab-content3.tab-content.animated.fadeIn
@@ -229,24 +239,24 @@ layout: home_layout
 				          	| We seek their counsel on a regular basis, and I'm happy to recommend Parallel Labs to anyone looking for cutting edge product design and user experiences.
 			        	h4
 			        		| Arun, Boomer
-			    li
-			        input#tab4 type="radio" name="tabs"
-			        label for="tab4"
-			        	img src="images/binay-tiwari-appjoy.jpg" alt="Client image"/
-			        #tab-content3.tab-content.animated.fadeIn
-				        p
-				          	| I'm a big fan of Parallel Labs' design sprint approach! They takes a larger picture view of the problem being tackled, brainstorms to find all alternate paths, asks tough questions that force clarity, and gets the team focused on the right things. Parallel Labs acts more like an extended part of your team, than an agency.
-			        	h4
-			        		| Binay Tiwari, Appjoy
-			    li
-			        input#tab5 type="radio" name="tabs"
-			        label for="tab5"
-			        	img src="images/srinivas-mothey-treatr.jpg" alt="Client image"/
-			        #tab-content3.tab-content.animated.fadeIn
-				        p
-				          	| Parallel Labs brought a fresh approach to design, considered practical use cases and had a completely hands-on approach in coming up with a great customer friendly design for our product. Overall we loved working with the team and we strongly recommend them for UI/UX design.
-			        	h4
-			        		| Srinivas Mothey Treatr
+			    / li
+			    /     input#tab4 type="radio" name="tabs"
+			    /     label for="tab4"
+			    /     	img src="images/binay-tiwari-appjoy.jpg" alt="Client image"/
+			    /     #tab-content3.tab-content.animated.fadeIn
+				   /      p
+				   /        	| I'm a big fan of Parallel Labs' design sprint approach! They takes a larger picture view of the problem being tackled, brainstorms to find all alternate paths, asks tough questions that force clarity, and gets the team focused on the right things. Parallel Labs acts more like an extended part of your team, than an agency.
+			    /     	h4
+			    /     		| Binay Tiwari, Appjoy
+			    / li
+			    /     input#tab5 type="radio" name="tabs"
+			    /     label for="tab5"
+			    /     	img src="images/srinivas-mothey-treatr.jpg" alt="Client image"/
+			    /     #tab-content3.tab-content.animated.fadeIn
+				   /      p
+				   /        	| Parallel Labs brought a fresh approach to design, considered practical use cases and had a completely hands-on approach in coming up with a great customer friendly design for our product. Overall we loved working with the team and we strongly recommend them for UI/UX design.
+			    /     	h4
+			    /     		| Srinivas Mothey Treatr
 
 		.section.new-home-content.tell-us
 			.content

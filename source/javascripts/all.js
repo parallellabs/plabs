@@ -1,5 +1,11 @@
 
 $(document).ready(function(){
+  // sidebar slide
+  $('.sliding-panel-button,.sliding-panel-fade-screen,.sliding-panel-close').on('click touchstart',function (e) {
+    $('.sliding-panel-content,.sliding-panel-fade-screen').toggleClass('is-visible');
+    e.preventDefault();
+  });
+
 	// modal open
 	$('.open-form').on('click', function(){
 		// $('.main-form').removeClass('back');
@@ -21,40 +27,56 @@ $(document).ready(function(){
 	var maxVal = 120;
 
 	input.keyup(function() {
-     var inputLength = input.val().length;
-     var counter = $("#counter");
+    var inputLength = input.val().length;
+    var counter = $("#counter");
 
-     $("#counter").html("");
-     $("#counter").html(inputLength);
+    $("#counter").html("");
+    $("#counter").html(inputLength);
 
-    	// if ( inputLength >= maxVal ) {
-    	//   label.css("background-color", "#F3493D");
-    	//   label.css("color", "#F3493D");
-    	// } else {
-    	//   label.css("background-color", "#2A9AF2");
-    	//   label.css("color", "#999");
-    	// }
-    });
+  	// if ( inputLength >= maxVal ) {
+  	//   label.css("background-color", "#F3493D");
+  	//   label.css("color", "#F3493D");
+  	// } else {
+  	//   label.css("background-color", "#2A9AF2");
+  	//   label.css("color", "#999");
+  	// }
+  });
 
-    // Keep floating labels active when form inputs and textareas are not empty
-    $('#apply_Form .group input, #apply_Form .group textarea').on('change', function() {
-        if( $(this).val().length != '' && !$(this).hasClass('not-empty')) {
-            $(this).addClass('not-empty');
-            
-        } else{
-            $(this).removeClass('not-empty');
-        }
-    });
+  // Keep floating labels active when form inputs and textareas are not empty
+  $('#apply_Form .group input, #apply_Form .group textarea').on('change', function() {
+    if( $(this).val().length != '' ) { //&& !$(this).hasClass('not-empty')
+        $(this).addClass('not-empty');
+    } else{
+        $(this).removeClass('not-empty');
+    }
+  });
 	// resize banner for mobile
-	if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		var h = $('.height-fix').height();
-		$('.height-fix').height(h);
-	}
+	// if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	// 	var h = $('.height-fix').height();
+	// 	$('.height-fix').height(h);
+	// }
+
+  // background jump fix for mobile
+   var $w = $(window),
+    $background = $('.height-fix');
+
+  // Fix background image jump on mobile
+  if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+    $background.css({'top': 'auto', 'bottom': 0});
+
+    $w.resize(sizeBackground);
+    sizeBackground();
+  }
+
+  function sizeBackground() {
+     $background.height(screen.height);
+  }
+  // image jump fix end
 
     // Floating button
     $(".button-floating").click(function() {
         var $wrapper = $("#wrapper");
-
+ 
         // if($wrapper.hasClass('available')){
             if (!$wrapper.hasClass("button-floating-clicked"))
             {
@@ -83,23 +105,36 @@ $(document).ready(function(){
     });
     
     // Input range slider
-    $('#budget').ionRangeSlider({
-        min: 5000,
-        max: 50000,
-        from: 8000,
-        step: 5000,
-        grid: false,
-        keyboard: true,
-        grid_snap: false,
-        force_edges: true,
-        prefix: '$',
-        min_prefix: false,
-        max_postfix: false,
-        decorate_both: false,
-        prettify_enabled: true,
-        prettify_separator: ','
-    });
+    // $('#budget').ionRangeSlider({
+    //     min: 5000,
+    //     max: 50000,
+    //     from: 8000,
+    //     step: 5000,
+    //     grid: false,
+    //     keyboard: true,
+    //     grid_snap: false,
+    //     force_edges: true,
+    //     prefix: '$',
+    //     min_prefix: false,
+    //     max_postfix: false,
+    //     decorate_both: false,
+    //     prettify_enabled: true,
+    //     prettify_separator: ','
+    // });
 
+    $("#budget").ionRangeSlider({
+      type: "double",
+      grid: false,
+      min: 5000,
+      max: 50000,
+      from: 10000,
+      to: 15000,
+      grid: false,
+      prefix: "$",
+      step: 5000,
+      prettify_separator: ','
+      // values_separator: " to "
+  });
 
     // parallex background effect
     $('#scene').parallax({
@@ -170,12 +205,6 @@ $(document).ready(function(){
         $('.shots').html(html.join(''));
      }); // end
 
-// sidebar slide
- $('.sliding-panel-button,.sliding-panel-fade-screen,.sliding-panel-close').on('click touchstart',function (e) {
-    $('.sliding-panel-content,.sliding-panel-fade-screen').toggleClass('is-visible');
-    e.preventDefault();
-  });
-
  // ellipsis on trunkate line
   // $(".media-card.small .discription").dotdotdot({
   //   //  configuration goes here
@@ -184,14 +213,14 @@ $(document).ready(function(){
   // });
 
 // parallax
-  if ($("#js-parallax-window").length || $("#js-parallax-window1").length || $("#js-parallax-window2").length || $("#js-parallax-window3").length || $("#js-parallax-window4").length || $("#js-parallax-window5").length) {
+  if ($("#js-parallax-window").length || $("#js-parallax-window1").length || $("#js-parallax-window2").length || $("#js-parallax-window3").length || $("#js-parallax-window4").length || $("#js-parallax-window5").length || $("#js-parallax-window6").length) {
     parallax();
   }
 
 }); // End ready
 
 $(window).scroll(function(e) {
-  if ($("#js-parallax-window").length || $("#js-parallax-window1").length || $("#js-parallax-window2").length || $("#js-parallax-window3").length || $("#js-parallax-window4").length || $("#js-parallax-window5").length) {
+  if ($("#js-parallax-window").length || $("#js-parallax-window1").length || $("#js-parallax-window2").length || $("#js-parallax-window3").length || $("#js-parallax-window4").length || $("#js-parallax-window5").length || $("#js-parallax-window6").length) {
     parallax();
   }
 });
@@ -295,6 +324,22 @@ function parallax(){
 
     plxBackground.css('top', - (plxWindowTopToWindowTop * plxSpeed) + 'px');
   }
+  if( $("#js-parallax-window6").length > 0 ) {
+    var plxBackground = $("#js-parallax-background6");
+    var plxWindow = $("#js-parallax-window6");
+
+    var plxWindowTopToPageTop = $(plxWindow).offset().top;
+    var windowTopToPageTop = $(window).scrollTop();
+    var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
+
+    var plxBackgroundTopToPageTop = $(plxBackground).offset().top;
+    var windowInnerHeight = window.innerHeight;
+    var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
+    var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
+    var plxSpeed = 0.35;
+
+    plxBackground.css('top', - (plxWindowTopToWindowTop * plxSpeed) + 'px');
+  }
 }
 
 (function (jQuery) {
@@ -354,15 +399,29 @@ $(window).scroll(function() {
 
 (function(e){e.fn.visible=function(t,n,r){var i=e(this).eq(0),s=i.get(0),o=e(window),u=o.scrollTop(),a=u+o.height(),f=o.scrollLeft(),l=f+o.width(),c=i.offset().top,h=c+i.height(),p=i.offset().left,d=p+i.width(),v=t===true?h:c,m=t===true?c:h,g=t===true?d:p,y=t===true?p:d,b=n===true?s.offsetWidth*s.offsetHeight:true,r=r?r:"both";if(r==="both")return!!b&&m<=a&&v>=u&&y<=l&&g>=f;else if(r==="vertical")return!!b&&m<=a&&v>=u;else if(r==="horizontal")return!!b&&y<=l&&g>=f}})(jQuery)
 
-$(window).scroll(function(event) {
+$(window).on("scroll touchmove", function(event) {
+  
+  if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){
+      // nothing
+  }else{
+    $("video").each(function(i, el) {
+      // $(this)[0].load(); 
+      if ( $(this).visible(true) ) {
+        // $(this)[0].load().play();
+        $(this)[0].play();
+      } else {
+         $(this)[0].pause();
 
-  $("video").each(function(i, el) {
-    if ( $(this).visible(true) ) {
-      $(this)[0].play();
-  } else {
-     $(this)[0].pause();
- }
-});
+      }
+
+    });
+  }
+
+//  $("#video").on('ended', function(){
+//   this.webkitExitFullscreen();
+// });
+
+  // document.getElementById('video').addEventListener('ended',function(){document.getElementById('video').webkitExitFullScreen();},false);
 
 });
 
