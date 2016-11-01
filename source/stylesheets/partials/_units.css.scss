@@ -155,6 +155,10 @@ svg {
 .MB40-imp {
     margin-bottom: 40px !important;
 }
+
+.MB30 {
+    margin-bottom: 30px;
+}
 .MB50 {
     margin-bottom: 50px;
 }
@@ -211,6 +215,16 @@ svg {
     height: 2em;
 
     fill: currentColor;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.style-typ-none {
+    padding-left: 0 !important;
+
+    list-style-type: none !important;
 }
 
 .section {

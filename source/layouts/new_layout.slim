@@ -45,6 +45,8 @@ html.no-js lang="en"
     javascript:
       (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
     
+    
+    
   body
     = partial "layouts/about_header.slim"
 
@@ -57,13 +59,42 @@ html.no-js lang="en"
     script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
     script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"
     script type="text/javascript" src="/javascripts/backbone_custom.js"
+    script type="text/javascript" src="javascripts/instafeed.min.js"
     script type="text/javascript" src="javascripts/jqcloud.js"
     script type="text/javascript" src="javascripts/ion.rangeSlider.min.js"
     script type="text/javascript" src="javascripts/imagelightbox.min.js"
     script type="text/javascript" src="javascripts/imagelightbox_custom.js"
     script type="text/javascript" src="javascripts/career_form.js"
+    javascript:
+        $(document).ready(function(){
+            // Instafeed call api to fetch latest image
+            var userFeed = new Instafeed({
+                // target: 'instagram',
+                get: 'user',
+                userId: 2056875725,
+                accessToken: '2056875725.544c1eb.6de846b2f804457fb3ecaef7c1fb1fe7',
+                clientId: '544c1ebae831472097a2eb3f266e6155',
+                limit: 6,
+                link: false,
+                resolution: 'standard_resolution',
+                sortBy: 'most-recent',
+                template: '<div class="colm"><img src="{{image}}"/></div>'
+            });
+            userFeed.run();
+        });
+        $(window).load(function(){
+            var gridColmHeight = $('.grid .colm').height();
+            console.log(gridColmHeight);
+            $('.grid .colm:last-child').after('<div class="colm last"><div class="content"><span class="h2">Want to join our Team?</span><span></span></div></div>');
+            $('.grid .colm.last').css({'height' : gridColmHeight});
+        }).resize(function(){
+            var gridColmHeight = $('.grid .colm').height();
+            $('.grid .colm.last').css({'height' : gridColmHeight});
+        });
+        
     script type="text/javascript" src="javascripts/all.js"
     script type="text/javascript" src="javascripts/retina.min.js"
+
     javascript:
         
         // cloud tag

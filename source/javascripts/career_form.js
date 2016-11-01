@@ -1,6 +1,9 @@
 $(document).ready(function(){
 	var jobFormData = {}, files = [], filesValidated = 0;
 	var jobFormData1 = {}, files = [], filesValidated = 0;
+	var jobFormData2 = {}, files = [], filesValidated = 0;
+	var jobFormData3 = {}, files = [], filesValidated = 0;
+	var jobFormData4 = {}, files = [], filesValidated = 0;
 
 	// Write selectors here
 		var field1 = $('#name');
@@ -52,23 +55,23 @@ $(document).ready(function(){
 
 		if (!field5.val()) {
 			$('.apply-form .group .attach-msg1').animate({"opacity": "+1"});
-			$('#behance').css('border-color', '#db4344');
+			// $('#behance').css('border-color', '#db4344');
 			// $('.apply-form .group .crossOne').css('display', 'inline');
 		}else{
 			$('.apply-form .group .attach-msg1').animate({"opacity": "+0"});
-			$('#behance').css('border-color', '#757575');
+			// $('#behance').css('border-color', '#757575');
 			// $('.apply-form .group .crossOne').css('display', 'none');
 		}
 
-		if(!field6.val()){
-			$('.apply-form .group .msg4').animate({"opacity": "+1"});
-			$('#behance').css('border-color', '#db4344');
-			$('.apply-form .group .crossFour').css('display', 'inline');
-		}else{
-			$('.apply-form .group .msg4').animate({"opacity": "+0"});
-			$('#behance').css('border-color', '#757575');
-			$('.apply-form .group .crossFour').css('display', 'none');
-		}
+		// if(!field6.val()){
+		// 	$('.apply-form .group .msg4').animate({"opacity": "+1"});
+		// 	$('#behance').css('border-color', '#db4344');
+		// 	$('.apply-form .group .crossFour').css('display', 'inline');
+		// }else{
+		// 	$('.apply-form .group .msg4').animate({"opacity": "+0"});
+		// 	$('#behance').css('border-color', '#757575');
+		// 	$('.apply-form .group .crossFour').css('display', 'none');
+		// }
 
 	}
 
@@ -77,7 +80,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		jobFormValidation();
 
-		if (field1.val() && mail && field3.val()) {
+		if (field1.val() && mail && field3.val()) { // product manager
 			$('#apply_Form').find('#submit').html('Sent').attr('disabled', 'disabled');
 
 			jobFormData = { name: field1.val(), email: field2.val(), linkedIn: field3.val(), additionalInfo: field4.val(), attachments: files, jobForm: true };
@@ -92,7 +95,7 @@ $(document).ready(function(){
 			  	$('#apply_Form').find('#submit').after('<span>Succesfully Sent</span>');
 			    alert( "Message sent succesfully: " + msg );
 			  });
-		}else if (field1.val() && mail && field5.val() && field6.val()) {
+		} else if (field1.val() && mail && field5.val() && $('#apply_Form').hasClass('jobForm1')) { // Interface Designer
 			$('#apply_Form').find('#submit').html('Sent').attr('disabled', 'disabled');
 			jobFormData1 = { name: field1.val(), email: field2.val(), behance: field6.val(), additionalInfo: field4.val(), attachments: files, jobForm1: true };
 			// jquery ajax call here
@@ -102,11 +105,54 @@ $(document).ready(function(){
 			  url: "http://205.186.143.136:5000/sendmail",
 			  data: jobFormData1
 			})
-			  .done(function( msg ) {
+			  .done(function( msg1 ) {
+			    // alert( "Message sent succesfully: " + msg1 );
+			    $('#apply_Form').find('#submit').after('<span style="color: #28b473;">Awesome!! We have got your application and you will hear from us shortly if you are shortlisted for this role.</span>');
+			  });
+		} else if (field1.val() && mail && field5.val() && $('#apply_Form').hasClass('jobForm2')) { // Visual Designer
+			$('#apply_Form').find('#submit').html('Sent').attr('disabled', 'disabled');
+			jobFormData2 = { name: field1.val(), email: field2.val(), behance: field6.val(), additionalInfo: field4.val(), attachments: files, jobForm2: true };
+			// jquery ajax call here
+			$.ajax({
+			  method: "POST",
+			  // url: "http://localhost:5100/sendmail",
+			  url: "http://205.186.143.136:5000/sendmail",
+			  data: jobFormData2
+			})
+			  .done(function( msg2 ) {
+			    // alert( "Message sent succesfully: " + msg2 );
+			    $('#apply_Form').find('#submit').after('<span style="color: #28b473;">Awesome!! We have got your application and you will hear from us shortly if you are shortlisted for this role.</span>');
+			  });
+		} else if (field1.val() && mail && field5.val() && $('#apply_Form').hasClass('jobForm3')) { // UX Manager
+			$('#apply_Form').find('#submit').html('Sent').attr('disabled', 'disabled');
+			jobFormData3 = { name: field1.val(), email: field2.val(), behance: field6.val(), additionalInfo: field4.val(), attachments: files, jobForm3: true };
+			// jquery ajax call here
+			$.ajax({
+			  method: "POST",
+			  // url: "http://localhost:5100/sendmail",
+			  url: "http://205.186.143.136:5000/sendmail",
+			  data: jobFormData3
+			})
+			  .done(function( msg3 ) {
+			    // alert( "Message sent succesfully: " + msg );
+			    $('#apply_Form').find('#submit').after('<span style="color: #28b473;">Awesome!! We have got your application and you will hear from us shortly if you are shortlisted for this role.</span>');
+			  });
+		} else if (field1.val() && mail && field5.val() && $('#apply_Form').hasClass('jobForm4')) { // Executive Assistance
+			$('#apply_Form').find('#submit').html('Sent').attr('disabled', 'disabled');
+			jobFormData4 = { name: field1.val(), email: field2.val(), behance: field6.val(), additionalInfo: field4.val(), attachments: files, jobForm4: true };
+			// jquery ajax call here
+			$.ajax({
+			  method: "POST",
+			  // url: "http://localhost:5100/sendmail",
+			  url: "http://205.186.143.136:5000/sendmail",
+			  data: jobFormData4
+			})
+			  .done(function( msg4 ) {
 			    // alert( "Message sent succesfully: " + msg );
 			    $('#apply_Form').find('#submit').after('<span style="color: #28b473;">Awesome!! We have got your application and you will hear from us shortly if you are shortlisted for this role.</span>');
 			  });
 		}
+
 	});
 
 	$('.apply-form .group input').each(function() {

@@ -42,6 +42,9 @@ $(document).ready(function(){
   	// }
   });
 
+ 
+  
+
   // Keep floating labels active when form inputs and textareas are not empty
   $('#apply_Form .group input, #apply_Form .group textarea').on('change', function() {
     if( $(this).val().length != '' ) { //&& !$(this).hasClass('not-empty')
@@ -346,7 +349,7 @@ function parallax(){
   jQuery.mark = {
     jump: function (options) {
       var defaults = {
-        selector: 'a.scroll-on-page-link'
+        selector: '.scroll-on-page-link'
     };
     if (typeof options == 'string') {
         defaults.selector = options;
@@ -399,32 +402,66 @@ $(window).scroll(function() {
 
 (function(e){e.fn.visible=function(t,n,r){var i=e(this).eq(0),s=i.get(0),o=e(window),u=o.scrollTop(),a=u+o.height(),f=o.scrollLeft(),l=f+o.width(),c=i.offset().top,h=c+i.height(),p=i.offset().left,d=p+i.width(),v=t===true?h:c,m=t===true?c:h,g=t===true?d:p,y=t===true?p:d,b=n===true?s.offsetWidth*s.offsetHeight:true,r=r?r:"both";if(r==="both")return!!b&&m<=a&&v>=u&&y<=l&&g>=f;else if(r==="vertical")return!!b&&m<=a&&v>=u;else if(r==="horizontal")return!!b&&y<=l&&g>=f}})(jQuery)
 
-$(window).on("scroll touchmove", function(event) {
+// $(window).lazyLoadXT('oncomplete', function(event) {
   
-  if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){
-      // nothing
-  }else{
-    $("video").each(function(i, el) {
-      // $(this)[0].load(); 
-      if ( $(this).visible(true) ) {
-        // $(this)[0].load().play();
-        $(this)[0].play();
-      } else {
-         $(this)[0].pause();
+//   if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){
+//       // nothing
+//   }else{
+//     $("video").each(function(i, el) {
+//       // $(this)[0].load(); 
+//       if ( $(this).visible(true) ) {
+//         $(this)[0].play();
+//         // $(this).lazyLoadXT({show: true});
+//       } else {
+//          $(this)[0].pause();
 
-      }
-
-    });
-  }
-
-//  $("#video").on('ended', function(){
-//   this.webkitExitFullscreen();
+//       }
+//     });
+//   }
 // });
 
-  // document.getElementById('video').addEventListener('ended',function(){document.getElementById('video').webkitExitFullScreen();},false);
 
-});
+ var bLazy = new Blazy({
+  selector: 'video',
+  success: function(ele){
+      // Image has loaded
+      // Do your business here
+    $(window).on("scroll touchmove", function(event) {
+      if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){
+          // nothing
+      }else{
+        $("video").each(function(i, el) {
+          // $(this)[0].load(); 
+          if ( $(this).visible(true) ) {
+            $(this)[0].play();
+            // $(this).lazyLoadXT({show: true});
+          } else {
+             $(this)[0].pause();
 
+          }
+        });
+      }
+     });
+    }
+ });
+
+// $(window).on("scroll touchmove", function(event) {
+  
+//   if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){
+//       // nothing
+//   }else{
+//     $("video").each(function(i, el) {
+//       // $(this)[0].load(); 
+//       if ( $(this).visible(true) ) {
+//         $(this)[0].play();
+//         // $(this).lazyLoadXT({show: true});
+//       } else {
+//          $(this)[0].pause();
+
+//       }
+//     });
+//   }
+// });
 
 
 

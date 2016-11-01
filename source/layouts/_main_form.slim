@@ -46,6 +46,22 @@ form.section.main-form method="post"
 		    	button.btn.next type="button" 
 					| Next <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg>
 		.wrap#thirdForm
+			h4
+				| What do you expect to spend on a project like this ?
+			p 
+				| How exciting the project is matters more to us than your budget.
+			.group
+		        input#budget type="text"
+		        / p.message Please enter Amount (min 3000).
+		        svg.cross-icon
+  					use xlink:href="images/svgs/iconset.svg#icon-delete_sign"
+		    .action
+		    	button.btn.back type="button" 
+					| <svg><use xlink:href="images/svgs/iconset.svg#icon-Left_Arrow"></use></svg> Back
+		    	button.btn.next type="button" 
+					| Next <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg> 
+
+		.wrap#fourthForm
 			.input-group
 				h4
 					| Share your Co-ordinates.
@@ -72,29 +88,13 @@ form.section.main-form method="post"
 			        label Floating Label
 			        p.message Please enter a valid Mobile Number.
 			        svg.cross-icon
-	  					use xlink:href="images/svgs/iconset.svg#icon-delete_sign"
-		    .action
-		    	button.btn.back type="button" 
-					| <svg><use xlink:href="images/svgs/iconset.svg#icon-Left_Arrow"></use></svg> Back
-		    	button.btn.next type="button" 
-					| Next <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg> 
-
-		.wrap#fourthForm
-			h4
-				| What do you expect to spend on a project like this ?
-			p 
-				| How exciting the project is matters more to us than your budget.
-			.group
-		        input#budget type="text"
-		        / p.message Please enter Amount (min 3000).
-		        svg.cross-icon
-  					use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
+	  					use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
 		    .action
 		    	button.btn.back type="button" 
 					| <svg><use xlink:href="images/svgs/iconset.svg#icon-Left_Arrow"></use></svg> Back
 		   		/  	button.btn.next href="#" type="button" 
 					/ | Next <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg> 
-		    	button.btn.next.skip type="button" 
+		    	button.btn.next.send type="button" 
 					| Send <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg>  
 		/ .wrap#fifthForm
 		/ 	h4
@@ -116,7 +116,7 @@ form.section.main-form method="post"
 		/ 			| <svg><use xlink:href="images/svgs/iconset.svg#icon-Left_Arrow"></use></svg> Back
 		/    		button.btn.next href="#" type="button" 
 		/ 			| Next <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg> 
-		/     	button.btn.next.skip href="#" type="button" 
+		/     	button.btn.next.send href="#" type="button" 
 		/ 			| Send <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg> 
 		.wrap#fifthForm
 			h4
@@ -125,7 +125,7 @@ form.section.main-form method="post"
 			p
 				| Someone from the team will get in touch with you shortly.
 		    .action
-		   		/  	button.btn.skip href="#" type="button" 
+		   		/  	button.btn.send href="#" type="button" 
 					/ | Send <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg> 
 		    	button.btn.close-form type="button" 
 					| Close  

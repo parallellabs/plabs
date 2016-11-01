@@ -3,7 +3,7 @@ var Workspace = Backbone.Router.extend({
   routes: {
     "1":  "fnOne",
     "2":  "fnTwo",
-    "3": "fnThree",  
+    "3": "fnThree",
     "4":  "fnFourth",
     "5":  "fnFifth",
     "6":  "fnSixth"
@@ -34,13 +34,13 @@ var Workspace = Backbone.Router.extend({
       form.setElement('#secondForm');
       $('#firstForm').addClass('move-left');
       $('#thirdForm').addClass('move-right');
-  },    
+  },
   fnThree: function() {
       enquiries.set('currentPage', 3);
       $('#thirdForm').removeClass('move-right');
       $('#thirdForm').removeClass('move-left');
       // $('#secondForm').removeClass('move-left');
-      form.setElement('#thirdForm');   
+      form.setElement('#thirdForm');
       $('#secondForm').addClass('move-left');
       $('#fourthForm').addClass('move-right');
   },
@@ -48,23 +48,23 @@ var Workspace = Backbone.Router.extend({
       enquiries.set('currentPage', 4);
       $('#fourthForm').removeClass('move-right');
       $('#fourthForm').removeClass('move-left');
-      form.setElement('#fourthForm');   
+      form.setElement('#fourthForm');
       $('#thirdForm').addClass('move-left');
       $('#fifthForm').addClass('move-right');
   },
   fnFifth: function() {
       enquiries.set('currentPage', 5);
       $('#fifthForm').removeClass('move-right');
-      form.setElement('#fifthForm');   
+      form.setElement('#fifthForm');
       $('#fourthForm').addClass('move-left');
   },
   fnSixth: function() {
       enquiries.set('currentPage', 6);
       $('#sixthForm').removeClass('move-right');
-      form.setElement('#sixthForm');   
+      form.setElement('#sixthForm');
       $('#fifthForm').addClass('move-left');
 
-        // $('.btn.skip').attr('disabled="disabled"');
+        // $('.btn.send').attr('disabled="disabled"');
   }
 
 });
@@ -84,6 +84,7 @@ var Enquiries = Backbone.Model.extend({
 });
 
 var enquiries = new Enquiries();
+var validationFlag = false;
 window.enquiries = enquiries;
 
 var FormView = Backbone.View.extend({
@@ -92,7 +93,7 @@ var FormView = Backbone.View.extend({
   events: {
     "click .back" :  "prevPage",
     "click .next" :  "nextPage",
-    "click .skip" :  "sendPage",
+    "click .send" :  "sendPage",
     "change input#files" :  "fileUpload",
     "keyup .textField": "enterHandler"
   },
@@ -125,7 +126,7 @@ var FormView = Backbone.View.extend({
     }
   },
 
-  // Form validation 
+  // Form validation
   shouldProceed: function() {
     var  validateModel = {
       1: function() {
@@ -155,12 +156,26 @@ var FormView = Backbone.View.extend({
           $('#projectBrief').css('border-color', '#db4344');
           $('.group .cross-icon').show();
         }
-        // return true;         
+        // return true;
       },
       3: function() {
-        var emailReg = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;  
-        console.log(enquiries.get('email'));
+        if(!!enquiries.get('budget')){
+          $('.group .message').animate({"opacity":"+0"});
+          $('#budget').css('border-color', '#757575');
+          $('.group .cross-icon').hide();
+          return !!enquiries.get('budget');
+        }else{
+          $('.group .message').animate({"opacity":"+1"});
+          $('#budget').css('border-color', '#db4344');
+          $('.group .cross-icon').show();
+        }
+      },
+      4: function() {
+        var emailReg = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+        // console.log('email value is:'+ enquiries.get('email').value);
         var mail = enquiries.get('email');
+        // console.log('email is' + mail.value);
+
 
         // mobile validation
         // var mobiReg = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
@@ -181,15 +196,18 @@ var FormView = Backbone.View.extend({
         //   $('#mobile').css('border-color', '#db4344');
         // }
         // Check for email validation
-        if(!!emailReg.test(mail)){
+        if(!!emailReg.test(mail) ){
+          // console.log(mail.value);
           $('#email').parents('.group').find('.message').animate({"opacity": "+0"});
           $('#email').css('border-color', '#757575');
           $('#email').parents('.group').find('.cross-icon').hide();
+          validationFlag = true;
           return !!enquiries.get('email');
         }else{
           $('#email').parents('.group').find('.message').animate({"opacity":"+1"});
           $('#email').parents('.group').find('.cross-icon').show();
           $('#email').css('border-color', '#db4344');
+          // return false;
         }
         // Check for mobile validation
         // if(!!mobiReg.test(mobile)){
@@ -203,18 +221,6 @@ var FormView = Backbone.View.extend({
         //   $('#mobile').css('border-color', '#db4344');
         // }
       },
-      4: function() {
-        if(!!enquiries.get('budget')){
-          $('.group .message').animate({"opacity":"+0"});
-          $('#budget').css('border-color', '#757575');
-          $('.group .cross-icon').hide();
-          return !!enquiries.get('budget');
-        }else{
-          $('.group .message').animate({"opacity":"+1"});
-          $('#budget').css('border-color', '#db4344');
-          $('.group .cross-icon').show();
-        }
-      },
       5: function() {
         return true;
       }
@@ -226,20 +232,24 @@ var FormView = Backbone.View.extend({
   },
 
   sendPage: function() {
-    this.modelUpdate();
-    console.log(enquiries.attributes);
-
+    // console.log('returning-flag ', validationFlag);
+    if(validationFlag)
+    {
+      this.modelUpdate();
+      console.log(enquiries.attributes);
     $.post( "http://205.186.143.136:5000/sendmail", enquiries.attributes )
-    // $.post( "http://localhost:5100/sendmail", enquiries.attributes )
-      .done(function( data ) {
-        console.log('Response: ', data );
-        // alert( "Message sent succesfully:" + data );
-      });
+      // $.post( "http://localhost:5100/sendmail", enquiries.attributes )
+        .done(function( data ) {
+          console.log('Response: ', data );
+          // alert( "Message sent succesfully:" + data );
+        });      
+    }
+
   },
 
   // Updating the model
   modelUpdate: function() {
-    console.info('updating...'); 
+    console.info('updating...');
     var groups = this.$el.find('.group'), newGroups =[];
     var i = 0;
     while (groups[i]) {
@@ -250,8 +260,8 @@ var FormView = Backbone.View.extend({
     newGroups.forEach(function(group) {
       enquiries.set(
         $(group).find('input').attr('id'),
-        $(group).find('input').val()  
-      );    
+        $(group).find('input').val()
+      );
     });
     // enquiries.set(
     //   this.$el.find('.group input').attr('id'),
@@ -265,12 +275,12 @@ var FormView = Backbone.View.extend({
     var files = [];
     $.each(event.target.files, function(index, file) {
         var reader = new FileReader();
-        reader.onload = function(event) {  
+        reader.onload = function(event) {
           object = {};
           object.path = event.target.result;
           console.log(object);
           files.push(object);
-        };  
+        };
         reader.readAsDataURL(file);
     });
     setTimeout(1000,enquiries.set('attachments', files));
