@@ -26,6 +26,7 @@ html.no-js lang="en"
     link href="http://parallellabs.io/" rel="canonical" /
     link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" /
     link rel="stylesheet" href="stylesheets/normalize.css"/
+    link rel="stylesheet" href="stylesheets/vendors/owl.carousel.css"/
     link rel="stylesheet" href="stylesheets/all.css"/
     javascript:
       var _gaq = _gaq || [];
@@ -48,7 +49,8 @@ html.no-js lang="en"
     
     
   body
-    = partial "layouts/about_header.slim"
+  
+    / = partial "layouts/about_header.slim"
 
     == yield
 
@@ -61,6 +63,7 @@ html.no-js lang="en"
     script type="text/javascript" src="/javascripts/backbone_custom.js"
     script type="text/javascript" src="javascripts/instafeed.min.js"
     script type="text/javascript" src="javascripts/jqcloud.js"
+    script type="text/javascript" src="javascripts/owl.carousel.js"
     script type="text/javascript" src="javascripts/ion.rangeSlider.min.js"
     script type="text/javascript" src="javascripts/imagelightbox.min.js"
     script type="text/javascript" src="javascripts/imagelightbox_custom.js"
@@ -81,16 +84,31 @@ html.no-js lang="en"
                 template: '<div class="colm"><img src="{{image}}"/></div>'
             });
             userFeed.run();
+            
+            $("#owl-demo").owlCarousel({
+              navigation : true, // Show next and prev buttons
+              slideSpeed : 300,
+              paginationSpeed : 400,
+              singleItem:true
+              // "singleItem:true" is a shortcut for:
+              // items : 1, 
+              // itemsDesktop : false,
+              // itemsDesktopSmall : false,
+              // itemsTablet: false,
+              // itemsMobile : false
+            });
+            
         });
-        $(window).load(function(){
-            var gridColmHeight = $('.grid .colm').height();
-            console.log(gridColmHeight);
-            $('.grid .colm:last-child').after('<div class="colm last"><div class="content"><span class="h2">Want to join our Team?</span><span></span></div></div>');
-            $('.grid .colm.last').css({'height' : gridColmHeight});
-        }).resize(function(){
-            var gridColmHeight = $('.grid .colm').height();
-            $('.grid .colm.last').css({'height' : gridColmHeight});
-        });
+        // calculating colm height to make last colm height same
+        //$(window).load(function(){
+            //var gridColmHeight = $('.grid .colm').height();
+            //console.log(gridColmHeight);
+            //$('.grid .colm:last-child').after('<div class="colm last"><div class="content"><span class="h2">Want to join our Team?</span><span></span></div></div>');
+            //$('.grid .colm.last').css({'height' : gridColmHeight});
+        //}).resize(function(){
+            //var gridColmHeight = $('.grid .colm').height();
+            //$('.grid .colm.last').css({'height' : gridColmHeight});
+        //});
         
     script type="text/javascript" src="javascripts/all.js"
     script type="text/javascript" src="javascripts/retina.min.js"

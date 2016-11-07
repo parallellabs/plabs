@@ -13,9 +13,47 @@ layout: new_layout
 - @twitter_url = "http://parallellabs.io/careers.html"
 - @twitter_image = "http://parallellabs.io/images/svgs/logo.png"
 
+= partial "layouts/header.slim"
+
 / content
+.section.master-banner.with-img
+  .overlay
+  h2.title
+    | Bring questions, <span class="pl-blue">build</span> answers.
+  
 .section.new-home-content.career-content
+  h2
+    | You’ll love it here <span class="border ML0-imp"></span>
+  p
+    | At Parallel Labs, you will work with a small but diverse team of problem solvers. We are all very passionate about what we do and choose to show it in our own ways. We’ve built our team on empathy more than policy so you’ll have all the freedom to be yourself, to do what you do best with a dash of discipline.
+  p
+    | We are generally picky about our projects, but the ones we do choose to take up, light us up like neon signs. This allows us to truly give it our all. On the other side of our phones, our clients consist of people with interesting questions who recognize the value design (and you!) add to their business. We’ve worked hard at building the ideal workspace to bring out the best in everyone. We couldn’t care less about the tools and software you choose as long it helps you build some great stuff.
+  p
+    | If bad design keeps you up at night, if you dream in code, if you’re constantly on the lookout for the next big startup(?), we think you’re going to fit right in. 
+    
+.section.new-home-content.career-content
+  h1.fancy-title
+    | For those who are driven by passion and not perks.
+  p.note 
+    | ( But let’s face it, some kickass perks won’t hurt. )
+
+.section.new-home-content.career-content.PLR0-imp.fluid
   .grid#instafeed
+  
+.section.new-home-content.career-content.fluid
+  h2
+    | Here’s what your future team-mates have to say about us <span class="border ML0-imp"></span>
+  div#owl-demo.owl-carousel.owl-theme
+    div.item
+      img src="assets/fullimage1.jpg" alt="The Last of us"
+    div.item
+      img src="assets/fullimage1.jpg" alt="The Last of us"
+    div.item
+      img src="assets/fullimage1.jpg" alt="The Last of us"
+  
+.section.new-home-content.career-content
+  h2.text-center
+    | What do you like to do? <span class="border"></span>
   .job-openings
     .colm
       a.h2 href="visual-designer.html" 

@@ -42,8 +42,8 @@ $(document).ready(function(){
   	// }
   });
 
- 
-  
+
+
 
   // Keep floating labels active when form inputs and textareas are not empty
   $('#apply_Form .group input, #apply_Form .group textarea').on('change', function() {
@@ -79,7 +79,7 @@ $(document).ready(function(){
     // Floating button
     $(".button-floating").click(function() {
         var $wrapper = $("#wrapper");
- 
+
         // if($wrapper.hasClass('available')){
             if (!$wrapper.hasClass("button-floating-clicked"))
             {
@@ -92,7 +92,7 @@ $(document).ready(function(){
         $wrapper.toggleClass("button-floating-clicked ");
         // $('.btn-overlay').show();
 
-        
+
 
         // $(".button-sub").click(function() {
         //     var color = $(this).data("color");
@@ -101,12 +101,12 @@ $(document).ready(function(){
         //     $wrapper.addClass("button-sub-" + color + "-clicked");
         // });
     });
-    
+
     $('.btn-overlay').on('click', function(){
         $('#wrapper').removeClass('available');
         $('#wrapper').removeClass("button-floating-clicked");
     });
-    
+
     // Input range slider
     // $('#budget').ionRangeSlider({
     //     min: 5000,
@@ -219,6 +219,8 @@ $(document).ready(function(){
   if ($("#js-parallax-window").length || $("#js-parallax-window1").length || $("#js-parallax-window2").length || $("#js-parallax-window3").length || $("#js-parallax-window4").length || $("#js-parallax-window5").length || $("#js-parallax-window6").length) {
     parallax();
   }
+
+
 
 }); // End ready
 
@@ -371,7 +373,7 @@ function parallax(){
 })(jQuery);
 
 
-jQuery(function(){  
+jQuery(function(){
   jQuery.mark.jump();
 });
 
@@ -392,7 +394,7 @@ $(window).scroll(function() {
 	if ($(window).scrollTop() >= target2) {
 		$('#wrapper').addClass('available');
         // $('.btn-overlay').show();
-        
+
     }else{
       $('#wrapper').removeClass('available');
         // $('.btn-overlay').hide();
@@ -403,12 +405,12 @@ $(window).scroll(function() {
 (function(e){e.fn.visible=function(t,n,r){var i=e(this).eq(0),s=i.get(0),o=e(window),u=o.scrollTop(),a=u+o.height(),f=o.scrollLeft(),l=f+o.width(),c=i.offset().top,h=c+i.height(),p=i.offset().left,d=p+i.width(),v=t===true?h:c,m=t===true?c:h,g=t===true?d:p,y=t===true?p:d,b=n===true?s.offsetWidth*s.offsetHeight:true,r=r?r:"both";if(r==="both")return!!b&&m<=a&&v>=u&&y<=l&&g>=f;else if(r==="vertical")return!!b&&m<=a&&v>=u;else if(r==="horizontal")return!!b&&y<=l&&g>=f}})(jQuery)
 
 // $(window).lazyLoadXT('oncomplete', function(event) {
-  
+
 //   if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){
 //       // nothing
 //   }else{
 //     $("video").each(function(i, el) {
-//       // $(this)[0].load(); 
+//       // $(this)[0].load();
 //       if ( $(this).visible(true) ) {
 //         $(this)[0].play();
 //         // $(this).lazyLoadXT({show: true});
@@ -431,7 +433,7 @@ $(window).scroll(function() {
           // nothing
       }else{
         $("video").each(function(i, el) {
-          // $(this)[0].load(); 
+          // $(this)[0].load();
           if ( $(this).visible(true) ) {
             $(this)[0].play();
             // $(this).lazyLoadXT({show: true});
@@ -446,12 +448,12 @@ $(window).scroll(function() {
  });
 
 // $(window).on("scroll touchmove", function(event) {
-  
+
 //   if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){
 //       // nothing
 //   }else{
 //     $("video").each(function(i, el) {
-//       // $(this)[0].load(); 
+//       // $(this)[0].load();
 //       if ( $(this).visible(true) ) {
 //         $(this)[0].play();
 //         // $(this).lazyLoadXT({show: true});
@@ -462,11 +464,3 @@ $(window).scroll(function() {
 //     });
 //   }
 // });
-
-
-
-
-
-
-
-

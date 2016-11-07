@@ -4,20 +4,18 @@
 // }
 
 html {
+    margin: 0;
+    padding: 0;
     // overflow: hidden;
     height: 100%;
-    padding: 0;
-    margin: 0;
-
     border: none;
 }
 
 body {
-    height: 100%;
-    margin: 0;
-    box-sizing: border-box;
-
     -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
 
     //     -webkit-overflow-scrolling: touch;
 }
@@ -41,13 +39,13 @@ body {
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     margin: 0;
-
     -webkit-appearance: none;
 }
 
 
 .wrapper {
     position: relative;
+
     &.new {
         background-color: #fafafa;
     }
@@ -79,14 +77,13 @@ h2 {
 
 
 p {
-    font-size: rem(20);
-    font-weight: 300;
-
-    color: $medium-gray;
-
     @include media($mobile-devices) {
         font-size: rem(18);
     }
+
+    color: $medium-gray;
+    font-weight: 300;
+    font-size: rem(20)
 }
 a:focus,
 a:hover {
@@ -125,8 +122,14 @@ svg {
 .chai-green {
     color: #0f6b38;
 }
+.light_green {
+    color: #3aab81;
+}
 .treatr-red {
     color: #ff4c4c;
+}
+.pl-blue{
+  color:$blue;
 }
 // background
 .blue-bg {
@@ -168,6 +171,9 @@ svg {
 .MB60-imp {
     margin-bottom: 60px !important;
 }
+.ML0-imp{
+    margin-left:0 !important;
+}
 .PB60 {
     padding-bottom: 60px;
 }
@@ -179,11 +185,11 @@ svg {
     padding-bottom: 0 !important;
 }
 .PT-180 {
-    padding-top: 180px;
-
     @include media(max-width 768px) {
         padding-top: 120px;
     }
+
+    padding-top: 180px
 }
 
 .box-shadow-none {
@@ -192,13 +198,15 @@ svg {
 
 .overflow-H {
     position: relative;
-
     overflow: hidden;
-
     -webkit-overflow-scrolling: touch;
 }
 .overflow-XH {
     overflow-x: hidden;
+}
+
+.text-center{
+    text-align: center;
 }
 
 .owl-carousel {
@@ -213,7 +221,6 @@ svg {
     display: inline-block;
     width: 2em;
     height: 2em;
-
     fill: currentColor;
 }
 
@@ -223,20 +230,20 @@ svg {
 
 .style-typ-none {
     padding-left: 0 !important;
-
     list-style-type: none !important;
 }
 
 .section {
+    @include outer-container(100%);
+
     margin-bottom: 60px;
 
-    @include outer-container(100%);
     &.home-content {
-        margin-bottom: 100px;
-
         @include media($mobile-devices) {
             margin-bottom: 40px;
         }
+
+        margin-bottom: 100px
     }
 }
 
@@ -244,15 +251,14 @@ svg {
     display: block;
     //width within the parent
     // width: 100%;
-
     background-color: #ddd;
+
     &:before {
         float: left;
         //essentially the aspect ratio. 100% means the
         //div will remain 100% as tall as it is wide, or
         //square in other words.
         padding-bottom: 100%;
-
         content: "";
     }
     //this is a clearfix. you can use whatever
@@ -262,31 +268,31 @@ svg {
     &:after {
         display: table;
         clear: both;
-
         content: "";
     }
 }
 
 .container {
-    margin-right: auto;
-    margin-left: auto;
-
     @include outer-container(620px);
     @include media($large-devices) {
         @include outer-container(920px);
     }
     @include media($mobile-devices) {
-        padding: 0 15px;
-
         @include outer-container(100%);
+
+        padding: 0 15px;
     }
+
+    margin-right: auto;
+    margin-left: auto;
+
     @media (min-width: 1400px) {
         @include outer-container(960px);
     }
+
     &:before,
     &:after {
         display: table;
-
         content: " ";
     }
     &:after {
@@ -299,26 +305,24 @@ svg {
     position: absolute;
     // top: -2px;
     z-index: 6;
-
     width: 100%;
     height: 30px;
-
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     background-color: #ccc;
+
     span {
         float: left;
-        width: 10px;
-        height: 10px;
         margin: 10px 0;
         margin-right: 5px;
-
-        color: $blue;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
         background-color: #fff;
+        color: $blue;
+
         &:nth-of-type(1) {
             margin-left: 20px;
-
             background-color: #de4245;
         }
         &:nth-of-type(3) {
@@ -329,20 +333,20 @@ svg {
 
 // Curvy arrow
 .direction-box {
+    @include media($mobile-devices) {
+        display: none;
+    }
+
     position: absolute;
     right: 10%;
     bottom: 80px;
 
-    @include media($mobile-devices) {
-        display: none;
-    }
     img {
         margin-top: 8px;
         margin-right: 10px;
-
+        box-shadow: none !important;
         vertical-align: top;
 
-        box-shadow: none !important;
         &.up-arrow {
             @include transform(rotate(180deg));
         }
@@ -352,19 +356,16 @@ svg {
     }
     p {
         display: inline;
-
-        font-size: rem(14);
-        font-weight: 400;
-
-        vertical-align: top;
-
         color: rgba(242,242,242,.7);
+        vertical-align: top;
+        font-weight: 400;
+        font-size: rem(14);
     }
     &.hj {
         bottom: 40px;
         left: -130px;
-
         max-width: 150px;
+
         img {
             display: block;
             margin: 0 auto;
@@ -373,10 +374,8 @@ svg {
         }
         p {
             display: block;
-
-            font-size: rem(14) !important;
-
             color: rgba(242,242,242,.5) !important;
+            font-size: rem(14) !important;
         }
     }
 }
@@ -385,15 +384,14 @@ svg {
     display: block;
     //width within the parent
     // width: 100%;
-
     background-color: #ddd;
+
     &:before {
         float: left;
         //essentially the aspect ratio. 100% means the
         //div will remain 100% as tall as it is wide, or
         //square in other words.
         padding-bottom: 100%;
-
         content: "";
     }
     //this is a clearfix. you can use whatever
@@ -403,7 +401,6 @@ svg {
     &:after {
         display: table;
         clear: both;
-
         content: "";
     }
 }
@@ -411,6 +408,8 @@ svg {
 // gradient
 
 .gradient {
+    @include position(absolute, 0 0 0 0);
+
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&amp;0+0,1+100 */
     background:    -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
@@ -418,16 +417,19 @@ svg {
     background:      -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
     background:     -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
     background:         linear-gradient(to bottom,  rgba(255,255,255,.5) 0%,rgba(255,255,255,1) 100%); /* W3C */
-
     filter: progid:dximagetransform.Microsoft.gradient( startColorstr="#00ffffff", endColorstr="#ffffff",GradientType=0 ); /* IE6-9 */
-    @include position(absolute, 0 0 0 0);
 }
 
 // border gradient
 .divider {
+    @include media($mobile-devices) {
+        @include span-columns(12 of 12);
+
+        margin-bottom: 30px;
+    }
+
     height: 1px;
     // margin-bottom: 30px;
-
     border: 0;
     background-color: #fff;
     background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #fff), color-stop(50%, $blue), color-stop(100%, #fff));
@@ -436,20 +438,14 @@ svg {
     background-image:         linear-gradient(to right, #fff 10%, $blue 50%, #fff 90%);
     // background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjNGY0ZjRmIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
     background-size: 100%;
-
-    *zoom: 1;
     filter: progid:dximagetransform.Microsoft.gradient(gradientType=1, startColorstr="#FFFFFFFF", endColorstr="#FFFFFFFF");
-    @include media($mobile-devices) {
-        margin-bottom: 30px;
-
-        @include span-columns(12 of 12);
-    }
+    *zoom: 1
 }
 
 .overlay {
-    background-color: rgba(0,0,0,.6);
-
     @include position(absolute, 0 0 0 0);
+
+    background-color: rgba(0,0,0,.6);
 }
 
 // Default buttons
@@ -457,136 +453,127 @@ svg {
     position: absolute;
     top: 0;
     right: -10px;
-
     width: 35%;
     height: 100%;
-
+    background-color: #fff;
+    color: $blue;
+    text-align: center;
     -webkit-transform: skew(-20deg);
        -moz-transform: skew(-20deg);
          -o-transform: skew(-20deg);
-    text-align: center;
-
-    color: $blue;
-    background-color: #fff;
 }
 
 .btn {
     position: relative;
-
     display: block;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    max-width: 250px;
     width: 300px;
     height: 48px;
-    max-width: 250px;
-    padding: 0 10px;
-    margin-bottom: 20px;
-    overflow: hidden;
-
-    font-family: $base-font-family;
-    font-size: rem(18);
-    font-weight: 400;
-    line-height: 44px;
-
-    cursor: pointer;
-
-    color: $medium-gray;
-    color: rgba(255,255,255,.8);
     border: 2px solid #fff;
     border-radius: 7px;
     background-color: $blue;
+    color: $medium-gray;
+    color: rgba(255,255,255,.8);
+    font-weight: 400;
+    font-size: rem(18);
+    font-family: $base-font-family;
+    line-height: 44px;
+    cursor: pointer;
+
     &:hover,
     &:focus {
-        color: rgba(255,255,255,1);
         outline: none;
+        color: rgba(255,255,255,1);
     }
     span.tri-box {
+        @extend .span-skew;
+
         line-height: 48px;
 
-        @extend .span-skew;
         svg {
             width: 20px;
             height: 12px;
-
             color: $blue;
         }
     }
-
     img {
         display: inline-block;
+        margin-right: 10px;
         width: 24px;
         height: 24px;
-        margin-right: 10px;
-
         vertical-align: middle;
     }
     span {
         display: inline-block;
-
         vertical-align: middle;
+
         i {
             display: block;
-
-            font-size: rem(10);
+            color: #fff;
             font-style: normal;
+            font-size: rem(10);
             line-height: normal;
 
-            color: #fff;
             &:nth-child(2) {
                 font-size: rem(16);
             }
         }
     }
     &.new {
-        text-indent: 20px;
-
         border: none;
         border-radius: 0;
         background-color: transparent;
+        text-indent: 20px;
 
         &:focus {
             background-color: transparent;
         }
         .skewed {
+            @include transform(skewX(-30deg));
+
+            overflow: hidden;
+            margin-left: -30px;
             width: 210px;
             height: inherit;
-            margin-left: -30px;
-            overflow: hidden;
-
             background-color: #16c6c2;
 
-            @include transform(skewX(-30deg));
             span {
-                width: 160px;
-
-                font-size: rem(18);
-                font-weight: 400;
-                line-height: 48px;
-
-                text-align: center;
-
-                color: #fff;
-
                 @include transform(skewX(30deg));
+
+                width: 160px;
+                color: #fff;
+                text-align: center;
+                font-weight: 400;
+                font-size: rem(18);
+                line-height: 48px;
             }
             &.yellow {
                 background-color: #fcc32c;
+
                 span {
                     color: #243f53;
                 }
             }
             &.red {
                 background-color: #db4344;
+
                 span {
                     color: #fff;
                 }
             }
             &.green {
                 background-color: #009688;
+
                 span {
                     color: #fff;
                 }
             }
             &.topaz {
                 background-color: #16c6c2;
+
                 span {
                     color: #fff;
                 }
@@ -594,6 +581,7 @@ svg {
             &.border {
                 border: 1px solid #fff;
                 background-color: transparent;
+
                 span {
                     color: #fff;
                 }
@@ -609,28 +597,25 @@ svg {
 // -------------------------
 .group {
     position: relative;
-
-    width: 100%;
-    padding-top: 20px;
     /*max-width: 300px;*/
     margin: 0 auto;
     margin-bottom: 0;
+    padding-top: 20px;
+    width: 100%;
 }
 input[type="text"],
 input[type="number"],
 textarea {
     display: block;
-    width: 100%;
-    padding: 10px 10px 10px 5px;
     margin: 0;
-
-    font-size: 15px;
-
-    color: #5c5c5c;
+    padding: 10px 10px 10px 5px;
+    width: 100%;
     border: none;
     border-bottom: 1px solid #757575;
     border-radius: 0;
     box-shadow: none;
+    color: #5c5c5c;
+    font-size: 15px;
 }
 input[type="text"]:focus,
 input[type="number"]:focus,
@@ -639,22 +624,19 @@ textarea:focus {
     box-shadow: none;
 }
 
-/* LABEL 
+/* LABEL
 ======================================= */
 .group label {
     position: absolute;
     top: 10px;
     left: 5px;
-
-    font-size: 14px;
+    color: #999;
     font-weight: normal;
-
+    font-size: 14px;
     -webkit-transition: .2s ease all;
        -moz-transition: .2s ease all;
             transition: .2s ease all;
     pointer-events: none;
-
-    color: #999;
 }
 
 /* ACTIVE STATE */
@@ -664,10 +646,8 @@ input[type="text"]:valid ~ label,
 input[type="number"]:valid ~ label,
 textarea:focus ~ label {
     top: 10px;
-
-    font-size: 12px;
-
     color: #16c6c2;
+    font-size: 12px;
 }
 input[type="text"]:focus ~ label.active-input,
 input[type="number"]:focus ~ label.active-input,
@@ -679,14 +659,12 @@ textarea:valid ~ label.active-input {
 }
 .group .active-input {
     top: 10px;
-
     color: #ffc107;
 }
-/* BOTTOM BARS 
+/* BOTTOM BARS
 ================================= */
 .bar {
     position: relative;
-
     display: block;
     width: 100%;
 }
@@ -694,16 +672,13 @@ textarea:valid ~ label.active-input {
 .bar:after {
     position: absolute;
     bottom: 0;
-
     width: 0;
     height: 2px;
-
+    background: #16c6c2;
     content: "";
     -webkit-transition: .2s ease all;
        -moz-transition: .2s ease all;
             transition: .2s ease all;
-
-    background: #16c6c2;
 }
 .bar:before {
     left: 50%;
@@ -713,34 +688,29 @@ textarea:valid ~ label.active-input {
 }
 
 
-/* ERROR MESSAGE 
+/* ERROR MESSAGE
 ================================= */
 .group .message {
     margin-top: 10px;
-
     text-align: left;
-
     opacity: 0;
 }
 .group #counter {
     // display: none;
     float: right;
-
     color: #777;
 }
 .group .cross-icon {
     position: absolute;
     top: 36px;
     right: 0;
-
     display: none;
     width: 15px;
     height: 15px;
-
     color: #db4344;
 }
 
-/* ACTIVE STATE 
+/* ACTIVE STATE
 --------------------------------------*/
 input[type="text"]:focus ~ .bar:before,
 input[type="number"]:focus ~ .bar:before,
@@ -757,23 +727,20 @@ textarea:disabled {
     border-bottom-style: dotted;
     background: transparent;
 }
-/* HIGHLIGHTER 
+/* HIGHLIGHTER
 ================================== */
 .highlight {
     position: absolute;
     top: 25%;
     left: 0;
-
     display: none;
     width: 100px;
     height: 60%;
-
-    pointer-events: none;
-
     opacity: .5;
+    pointer-events: none;
 }
 
-/* ACTIVE STATE 
+/* ACTIVE STATE
 ---------------------------------------*/
 input[type="text"]:focus ~ .highlight,
 input[type="number"]:focus ~ .highlight,
@@ -783,7 +750,7 @@ textarea:focus ~ .highlight {
             animation: inputHighlighter .3s ease;
 }
 
-/* ANIMATIONS 
+/* ANIMATIONS
 ================================== */
 @-webkit-keyframes inputHighlighter {
     from {
@@ -791,7 +758,6 @@ textarea:focus ~ .highlight {
     }
     to {
         width: 0;
-
         background: transparent;
     }
 }
@@ -801,7 +767,6 @@ textarea:focus ~ .highlight {
     }
     to {
         width: 0;
-
         background: transparent;
     }
 }
@@ -811,7 +776,6 @@ textarea:focus ~ .highlight {
     }
     to {
         width: 0;
-
         background: transparent;
     }
 }
@@ -826,8 +790,6 @@ stretch
 */
 
 .stretch {
-    display: table !important;
-
     @include media(min-width 768px) {
         @include animation-name(stretch);
     }
@@ -835,6 +797,8 @@ stretch
     @include animation-timing-function(ease-out);
     @include animation-duration(.3s);
     @include transform(skew(-25deg));
+
+    display: table !important;
 }
 
 @include keyframes(stretch) {
@@ -847,16 +811,16 @@ stretch
 }
 
 .stretchBack {
-    display: table !important;
     // @include media($mobile-devices) {
     //     @include transform(skew(0deg));
     // }
-
     @include transform-origin(50%);
     @include animation-timing-function(ease-in);
     @include animation-duration(.3s);
     @include animation-name(stretchBack);
     @include transform(skew(-25deg));
+
+    display: table !important;
 }
 
 @include keyframes(stretchBack) {
@@ -907,16 +871,14 @@ stretch
 // FLoating button
 
 .btn-overlay {
+    @include transition(all .3s);
+    @include position(fixed, 0 0 0 0);
+
     z-index: 10;
     // @include transform(scale(0));
     // opacity: 0;
-
     display: none;
-
     background-color: rgba(0,0,0,.6);
-
-    @include transition(all .3s);
-    @include position(fixed, 0 0 0 0);
 }
 
 // Floating button with css and jQuery
@@ -925,18 +887,17 @@ stretch
     right: 20px;
     bottom: 16px;
     z-index: 10;
-
     visibility: hidden;
-    width: auto;
-    height: auto;
     // width: 200px;
     // height: 380px;
     padding: 24px;
+    width: auto;
+    height: auto;
     // overflow: hidden;
     // -webkit-transform: translate(-50%, -50%);
     //         transform: translate(-50%, -50%);
-
     border-radius: 1.5px;
+
     // background-color: #fff;
     // box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
     &.home {
@@ -944,9 +905,9 @@ stretch
     }
     &.available {
         visibility: visible;
+
         &.button-floating-clicked {
             z-index: 9999;
-
             padding-bottom: 65px;
         }
     }
@@ -955,12 +916,11 @@ stretch
 .water-drop {
     position: absolute;
     z-index: 30;
-
     display: none;
     visibility: hidden;
+    margin-left: 6px;
     width: 42px;
     height: 58px;
-    margin-left: 6px;
 
     // background: url(../images/waterdrop.svg) 0 0 no-repeat;
     // background-size: 42px 58px;
@@ -983,9 +943,8 @@ stretch
         opacity: .4;
     }
     100% {
-        -webkit-transform: translateY(294px);
-
         opacity: 0;
+        -webkit-transform: translateY(294px);
     }
 }
 @keyframes waterDrop {
@@ -993,17 +952,14 @@ stretch
         visibility: visible;
     }
     100% {
-        transform: translateY(294px);
-
         opacity: 0;
+        transform: translateY(294px);
     }
 }
 
 .button {
     position: relative;
-
     margin-bottom: 18px;
-
     border-radius: 50%;
 }
 .button:last-child {
@@ -1015,24 +971,19 @@ stretch
     right: 0;
     bottom: 0;
     left: 0;
-
     display: block;
+    margin: 0 ;
+    padding: 8px;
     width: 55px;
     height: 55px;
-    padding: 8px;
-    margin: 0 ;
-
-    line-height: 55px;
-
-    text-align: center;
-
     color: white;
+    text-align: center;
+    line-height: 55px;
 }
 .button-floating .edit {
+    margin-bottom: -2px;
     width: 24px;
     height: 24px;
-    margin-bottom: -2px;
-
     opacity: 0;
 }
 .button-floating,
@@ -1041,34 +992,31 @@ stretch
     height: 54px;
 }
 .button-floating {
+    @include transition-duration(.3s);
+    @include media($mobile-devices) {
+        right: 2px;
+        bottom: 0;
+        margin-bottom: 10px;
+    }
+
     position: absolute;
     right: 25px;
     bottom: 4px;
     // left: 0;
     z-index: 40;
+    background-color: #16c6c2;
+    color: #fff;
+    text-align: center;
     // margin: 0 auto;
-
     font-size: 30px;
     line-height: 54px;
-
-    cursor: pointer;
-    text-align: center;
-
-    color: #fff;
-    background-color: #16c6c2;
-
-    @include transition-duration(.3s);
-    @include media($mobile-devices) {
-        right: 2px;
-        bottom: 0;
-
-        margin-bottom: 10px;
-    }
+    cursor: pointer
 
     // @include transform(translateX(-50%));
 }
 .button-floating-clicked .button-floating {
     @include transform(rotate(180deg));
+
     .plus {
         opacity: 0;
     }
@@ -1079,26 +1027,24 @@ stretch
 
 .button-sub,
 .button-floating-shadow {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
-
     @include transition-duration(.3s);
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
 }
 .button-floating-shadow {
+    @include media($mobile-devices) {
+        right: 2px;
+        bottom: 0;
+        margin-bottom: 10px;
+    }
+
     position: absolute;
     right: 25px;
     bottom: 23px;
     // left: 0;
     z-index: 20;
     // margin: 0 auto;
-
-    border-radius: 50%;
-
-    @include media($mobile-devices) {
-        right: 2px;
-        bottom: 0;
-
-        margin-bottom: 10px;
-    }
+    border-radius: 50%
 }
 .button-sub:hover,
 .button-floating:hover + .button-floating-shadow,
@@ -1107,48 +1053,43 @@ stretch
 }
 
 .button-sub {
-    left: 0;
-    z-index: 20;
-
-    display: none;
-    float: right;
-    height: 52px;
-    clear: both;
-
-    opacity: 0;
-    color: #888;
-    border-radius: 5px;
-    background-color: #fff;
-
     @include animation-duration(.3s);
     @include animation-fill-mode(backwards);
     @include media($mobile-devices) {
         margin-right: -20px;
     }
 
+    left: 0;
+    z-index: 20;
+    display: none;
+    float: right;
+    clear: both;
+    height: 52px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #888;
+    opacity: 0;
+
     a {
-        font-size: rem(18);
-        font-weight: 400;
-        line-height: rem(38);
-
-        text-align: center;
-
         color: #888;
+        text-align: center;
+        font-weight: 400;
+        font-size: rem(18);
+        line-height: rem(38);
     }
 }
 .button-floating-clicked-out .button-sub {
     @include animation-name(fadeOut);
 }
 .button-floating-clicked .button-sub {
+    @include animation-name(bounceIn);
+
     display: block;
     padding: 8px 10px;
-
-    cursor: pointer;
     text-align: center;
-
     opacity: 1;
+    cursor: pointer;
 
-    @include animation-name(bounceIn);
     &:nth-of-type(3) {
         @include animation-delay(.08s);
     }
@@ -1161,9 +1102,9 @@ stretch
 }
 @include keyframes(bounceIn) {
     0% {
-        opacity: 0;
-
         @include transform(scale(.3));
+
+        opacity: 0;
     }
     100% {
         @include transform(scale(1));
@@ -1171,9 +1112,9 @@ stretch
 }
 @include keyframes (fadeOut ){
     0% {
-        opacity: 1;
-
         @include transform(scale(1));
+
+        opacity: 1;
     }
     100% {
         @include transform(scale(0));
@@ -1181,36 +1122,36 @@ stretch
 }
 
 .button-sub[data-color=purple] {
-    background-color: #9c27b0;
-
     @include animation-delay(.2s);
+
+    background-color: #9c27b0;
 }
 .button-floating-clicked .button-sub[data-color=purple] {
     @include animation-delay(.6s);
 }
 
 .button-sub[data-color=green] {
-    background-color: #8bc34a;
-
     @include animation-delay(.15s);
+
+    background-color: #8bc34a;
 }
 .button-floating-clicked .button-sub[data-color=green] {
     @include animation-delay(.65s);
 }
 
 .button-sub[data-color=pink] {
-    background-color: #e91e63;
-
     @include animation-delay(.1s);
+
+    background-color: #e91e63;
 }
 .button-floating-clicked .button-sub[data-color=pink] {
     @include animation-delay(.7s);
 }
 
 .button-sub[data-color=indigo] {
-    background-color: #3f51b5;
-
     @include animation-delay(.0.5s);
+
+    background-color: #3f51b5;
 }
 .button-floating-clicked .button-sub[data-color=indigo] {
     @include animation-delay(.75s);
@@ -1219,47 +1160,48 @@ stretch
 .button-floating-clicked.button-sub-green-clicked .button-sub[data-color=green],
 .button-floating-clicked.button-sub-pink-clicked .button-sub[data-color=pink],
 .button-floating-clicked.button-sub-indigo-clicked .button-sub[data-color=indigo] {
-    z-index: 0;
-
-    cursor: default;
-
     @include transform(scale(30));
     @include transition(all .4s ease-in);
+
+    z-index: 0;
+    cursor: default;
 }
 
 
 .testimonials {
     position: relative;
     // padding: .5em 30px .5em 30px;
-
     font-size: 3.4em;
     line-height: normal;
+
     // font-style: italic;
     &::before {
+        @include media($mobile-devices) {
+            left: 0;
+            width: 40px;
+            height: 30px;
+        }
+        @include transform(rotate(180deg));
+
         position: absolute;
         top: 0;
         left: 20px;
         // font-family: Arial;
         // font-size: 4em;
-
         width: 50px;
         height: 40px;
-
-        content: " ";
-
         background-image: url(../images/svgs/quote.svg);
         // color: #eee;
         background-repeat: no-repeat;
-
+        content: " ";
+    }
+    &::after {
         @include media($mobile-devices) {
-            left: 0;
-
+            right: 0;
             width: 40px;
             height: 30px;
         }
-        @include transform(rotate(180deg));
-    }
-    &::after {
+
         position: absolute;
         top: 0;
         right: 20px;
@@ -1267,83 +1209,69 @@ stretch
         // font-size: 4em;
         // content: "\201D";
         // color: #eee;
-
         width: 50px;
         height: 40px;
-
-        content: " ";
-
-        color: #eee;
         background-image: url(../images/svgs/quote.svg);
         background-repeat: no-repeat;
-
-        @include media($mobile-devices) {
-            right: 0;
-
-            width: 40px;
-            height: 30px;
-        }
+        color: #eee;
+        content: " "
     }
     p {
-        float: none !important;
-        margin: 0 auto;
-        margin-right: auto !important;
-        margin-bottom: 30px;
-
-        font-size: rem(24);
-        font-weight: 300;
-
-        color: #4c4c4c;
-
         @include span-columns(8);
         @include media($mobile-devices) {
             font-size: rem(16);
         }
+
+        float: none !important;
+        margin: 0 auto;
+        margin-right: auto !important;
+        margin-bottom: 30px;
+        color: #4c4c4c;
+        font-weight: 300;
+        font-size: rem(24)
     }
     .author {
         .img {
             display: inline-block;
+            overflow: hidden;
+            margin-right: 10px;
             width: 60px;
             height: 60px;
-            margin-right: 10px;
-            overflow: hidden;
-
             vertical-align: middle;
-            img {
-                width: 60px;
-                height: 60px;
 
+            img {
                 @include border-left-radius(50%);
                 @include border-bottom-radius(50%);
                 @include border-right-radius(50%);
                 @include border-top-radius(50%);
+
+                width: 60px;
+                height: 60px;
             }
         }
         .name {
-            display: inline-block;
-
-            font-size: rem(20);
-            font-weight: 300;
-
-            text-align: left;
-            vertical-align: middle;
-
-            color: #787878;
-
             @include media($mobile-devices) {
                 font-size: rem(16);
+
                 .helper-text {
                     font-size: rem(14);
                 }
             }
+
+            display: inline-block;
+            color: #787878;
+            vertical-align: middle;
+            text-align: left;
+            font-weight: 300;
+            font-size: rem(20);
+
             .helper-text {
-                display: block;
-
-                font-size: rem(16);
-
                 @include media($mobile-devices) {
                     font-size: rem(12);
                 }
+
+                display: block;
+                font-size: rem(16)
             }
         }
     }
@@ -1354,20 +1282,19 @@ stretch
     }
     &.insider {
         max-width: none;
-
         text-align: center;
+
         p {
             margin-bottom: 30px !important;
-
-            font-size: rem(20);
-            font-weight: 300;
-
             color: #5c5c5c;
+            font-weight: 300;
+            font-size: rem(20);
         }
         & .author {
             .img {
                 display: block;
                 margin: 0 auto;
+
                 img {
                     box-shadow: none;
                 }
@@ -1378,10 +1305,10 @@ stretch
         }
         &.hj {
             max-width: 920px !important;
-            p {
-                line-height: 30px;
 
+            p {
                 color: rgba(92,92,92,.8);
+                line-height: 30px;
             }
         }
         &.explara {
@@ -1389,10 +1316,10 @@ stretch
         }
         &.ex-web {
             max-width: 920px;
-            p {
-                line-height: 30px;
 
+            p {
                 color: rgba(92,92,92,.8);
+                line-height: 30px;
             }
         }
     }
@@ -1402,32 +1329,27 @@ stretch
 .js .inputfile {
     position: absolute;
     z-index: -1;
-
+    overflow: hidden;
     width: .1px;
     height: .1px;
-    overflow: hidden;
-
     opacity: 0;
 }
 
 .inputfile + label {
     display: inline-block;
-    max-width: 80%;
-    padding: .300rem 1.25rem;
     overflow: hidden;
-
-    font-size: 1rem;
-    /* 20px */
-    font-weight: 400;
-
-    cursor: pointer;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    /* 10px 20px */
-
-    color: #16c6c2;
+    padding: .300rem 1.25rem;
+    max-width: 80%;
     border: 1px solid #16c6c2;
     border-radius: 4px;
+    /* 10px 20px */
+    color: #16c6c2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* 20px */
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 .no-js .inputfile + label {
@@ -1446,15 +1368,14 @@ stretch
 }
 
 .inputfile + label svg {
-    width: 1em;
-    height: 1em;
     margin-top: -.25em;
     /* 4px */
     margin-right: .25em;
-
+    width: 1em;
+    height: 1em;
     vertical-align: middle;
-
     fill: currentColor;
+
     /* 4px */
 }
 
@@ -1464,11 +1385,9 @@ $parallax-background-height: $parallax-window-height * 2;
 
 .parallax-window {
     position: relative;
-
-    width: 100%;
     // max-height: $parallax-window-height;
     overflow: hidden;
-
+    width: 100%;
     text-align: center;
 }
 
@@ -1476,7 +1395,6 @@ $parallax-background-height: $parallax-window-height * 2;
     position: relative;
     z-index: 9;
     // padding: 8em 0;
-
     color: #9a9a8a;
 }
 
@@ -1484,8 +1402,8 @@ $parallax-background-height: $parallax-window-height * 2;
     position: absolute;
     top: - $parallax-window-height / 3;
     // left: 0;
-
     width: 100%;
+
     // background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
     // background-position: top;
     // background-size: cover;
