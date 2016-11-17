@@ -33,7 +33,7 @@
 
             position: absolute;
             top: 10px;
-            right: 0
+            right: 0;
         }
     }
     .btn {
@@ -189,27 +189,27 @@
         &.career-content {
             margin-bottom: 60px;
             padding-bottom: 0;
-            max-width:920px;
+            max-width: 920px;
 
-            &.fluid{
-                max-width:100%;
+            &.fluid {
+                max-width: 100%;
             }
-            .fancy-title{
+            .fancy-title {
                 margin-bottom: 20px;
-                color:$blue;
+                color: $blue;
                 text-align: center;
-                font-family:$beyond_m;
+                font-family: $beyond_m;
             }
-            p{
-                margin-bottom:20px;
-                color:#555;
+            p {
+                margin-bottom: 20px;
+                color: #555;
                 font-weight: normal;
                 font-size: rem(18);
 
-                &.note{
-                    color:#777;
-                    font-size: rem(16);
+                &.note {
+                    color: #777;
                     text-align: center;
+                    font-size: rem(16);
                 }
             }
             .grid {
@@ -223,19 +223,19 @@
                     @include calc(width, "100%/3");
 
                     position: relative;
-                    float:left;
+                    float: left;
                     overflow: hidden;
                     // margin-bottom: 20px;
                     // border-radius: 16px;
                     background-color: #d8d8d8;
                     box-shadow: 0 0 12px 0 rgba(0, 0, 0, .1);
 
-                    &:nth-child(4n){
-                        clear:left;
+                    &:nth-child(4n) {
+                        clear: left;
                     }
                     & {
                         @include media(max-width 768px) {
-                            @include span-columns(6);
+                             @include span-columns(6);
                             @include omega-reset(4n);
 
                             & {
@@ -297,13 +297,13 @@
                 height: 4px;
                 background-color: #fff;
                 background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #fff), color-stop(50%, rgba(0,0,0,.25)), color-stop(100%, #fff));
-                background-image:    -moz-linear-gradient(left, #fff 10%, rgba(0,0,0,.25) 50%, #fff 90%);
+                background-image: -moz-linear-gradient(left, #fff 10%, rgba(0,0,0,.25) 50%, #fff 90%);
                 background-image: -webkit-linear-gradient(left, #fff 10%, rgba(0,0,0,.25) 50%, #fff 90%);
-                background-image:         linear-gradient(to right, #fff 10%, rgba(0,0,0,.25) 50%, #fff 90%);
+                background-image: linear-gradient(to right, #fff 10%, rgba(0,0,0,.25) 50%, #fff 90%);
                 // background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjNGY0ZjRmIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
                 background-size: 100%;
-                filter: progid:dximagetransform.Microsoft.gradient(gradientType=1, startColorstr="#FFFFFFFF", endColorstr="#FFFFFFFF");
-                *zoom: 1
+                filter: progid:dximagetransform.Microsoft.gradient(gradientType=1, startColorstr=  "#FFFFFFFF", endColorstr="#FFFFFFFF");
+                *zoom: 1;
             }
             .job-openings {
                 @include clearfix;
@@ -312,7 +312,7 @@
                     @include span-columns(6);
                     @include omega(2);
                     @include media(max-width 768px) {
-                        @include span-columns(12);
+                         @include span-columns(12);
                         @include omega();
 
                         text-align: center;
@@ -341,8 +341,8 @@
 
                             color: #243f53;
 
-                            &:hover,
-                            &:focus {
+                            &:focus,
+                            &:hover {
                                 @include transition(500ms ease);
 
                                 color: #16c6c2;
@@ -361,6 +361,79 @@
                         font-weight: normal;
                         font-size: rem(18);
                         font-family: $base-font-family;
+                    }
+                }
+            }
+            .team-views {
+                @include clearfix;
+
+                .owl-wrapper {
+                    @include clearfix;
+
+                    padding: 20px 0px;
+
+                    .item {
+                        @include clearfix;
+
+                        height:500px;
+
+                        .card{
+                            // position: relative;
+                            float: left;
+                            margin-right: 0;
+                            max-width: 100%;
+                            width: auto;
+                            height: inherit;
+                        }
+                        &.left{
+                                @include clearfix;
+
+                                // padding-right: 230px;
+                                max-width: 90%;
+
+                                &:after {
+                                    @include transform(skew(-30deg));
+
+                                    position: absolute;
+                                    top: 0;
+                                    right: 15px;
+                                    bottom: 0;
+                                    display: block;
+                                    width: 250px;
+                                    background: #fcc32c;
+                                    content: '';
+                                }
+                                .card {
+                                    padding-right: 200px;
+                                    padding-left: 60px;
+
+                                }
+                        }
+                        &.right{
+                                float:right;
+                                // padding-left: 230px;
+                                max-width: 90%;
+
+                                &:before {
+                                    @include transform(skew(-30deg));
+
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 15px;
+                                    display: block;
+                                    width: 250px;
+                                    background: #fcc32c;
+                                    content: '';
+                                }
+                                .card {
+                                    padding-right: 60px;
+                                    padding-left: 200px;
+
+
+                                }
+                        }
+
                     }
                 }
             }
