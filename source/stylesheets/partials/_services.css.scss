@@ -1,0 +1,242 @@
+.parallax-window{
+  z-index: 1;
+}
+.what-we-do{
+
+  @include clearfix;
+  h2{
+    font-family: $heading-font-family;
+    font-size: 60px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    text-align: center;
+    color: #243f53;
+
+    .topaz{
+      color:$blue;
+    }
+
+    @include media(max-width 460px){
+      font-size: 50px;
+    }
+  }
+  .content{
+    .colm-6 {
+      @include span-columns(6);
+      @include omega(2);
+      @include media(max-width 768px) {
+        @include span-columns(12);
+        @include omega();
+        // text-align: center;
+        // padding: 60px;
+      }
+
+      h3{
+        font-family: $base-font-family;
+        font-size: 30px;
+        font-weight: lighter;
+        line-height: 1.33;
+        color: #243f53;
+        text-align: left;
+        z-index: 10;
+      }
+
+      p{
+        font-family: $base-font-family;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.56;
+        color: #555555;
+        text-align: left;
+        padding-top: 20px;
+        z-index:2;
+      }
+
+      .number{
+        position: absolute;
+        opacity: 0.5;
+        font-family: $heading-font-family;
+        font-size: 90px;
+        font-weight: 900;
+        color: #d8d8d8;
+        margin-top: -60px;
+        z-index: -1;
+      }
+
+      .line{
+        // position: absolute;
+        // margin-left: -260px;
+        // margin-top: -10px;
+        // width: 120px;
+        // height: 1px;
+        // background-color: #cccccc;
+
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      width: 120px;
+      height: 1px;
+      background-color: #ccc;
+
+      }
+
+    }
+  }
+}
+
+.small-steps{
+  p{
+    width:60%;
+    margin: 0 auto;
+    font-family: $base-font-family;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.56;
+    color: #555555;
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  h3{
+  font-family: $base-font-family;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.33;
+  text-align: center;
+  color: #243f53;
+  }
+
+  .line{
+  position: absolute;
+  width: 120px;
+  height: 1px;
+  background-color: #cccccc;
+  margin-left: -63px;
+  margin-top: -13px;
+  }
+
+  .container{
+    max-width: 100%;
+    margin-top: 60px;
+    margin-right:120px;
+    margin-left: 110px;
+    margin-bottom: 120px;
+
+      @include media(max-width 1400px) {
+        margin: 60px;
+      }
+
+      @include media(max-width 1310px){
+        margin: 20px;
+      }
+
+
+    .service-steps{
+      // @include span-columns(4);
+      display: block;
+      float: left;
+      width: 360px;
+       height:480px;
+      background-color: #ffffff;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+      text-align: left;
+      padding: 30px;
+      margin-left: 40px;
+
+      @include media(max-width 1200px) {
+        @include span-columns(12);
+        @include omega();
+        margin: 30px auto;
+        margin-bottom: 20px;
+        height:100%;
+
+      }
+
+
+      h3{
+      font-family: $base-font-family;
+      font-size: 30px;
+      line-height: 40px;
+      color: #243f53;
+      text-align: left;
+      font-weight: 300;
+      }
+
+      span{
+      font-family: $base-font-family;
+      font-size: 14px;
+      font-weight: 300;
+      color: #777777;
+      padding-top: -20px;
+      }
+
+      p{
+      font-family: $base-font-family;
+      width: 100%;
+      font-size: 18px;
+      line-height: 1.56;
+      color: #555555;
+      text-align: left;
+      margin: 0;
+      padding: 30px 0;
+      }
+
+      ul{
+        list-style-type: initial;
+        width: 100%;
+        padding-left: 15px;
+
+        li{
+
+          font-family: $base-font-family;
+          font-size: 16px;
+          font-weight: 300;
+          color: #777777;
+          padding-bottom: 20px;
+          line-height: 20px;
+
+        }
+      }
+
+    }
+  }
+}
+.PL-120{
+  padding-left: 120px;
+
+  @include media(max-width 900px){
+    padding-left: 60px;
+  }
+  @include media(max-width 768px){
+    padding-left: 30px;
+   }
+}
+
+.PR-120{
+  padding-right: 120px;
+  @include media(max-width 768px){
+    padding-right: 30px;
+   }
+   @include media(max-width 900px){
+     padding-right: 60px;
+   }
+}
+
+.PT-120{
+  padding-top: 120px;
+}
+
+.PL-60{
+  padding-left: 60px;
+  @include media(max-width 900px){
+    padding-left: 30px;
+   }
+}
+.PR-60{
+  padding-right: 60px;
+  @include media(max-width 900px){
+    padding-right: 30px;
+   }
+}

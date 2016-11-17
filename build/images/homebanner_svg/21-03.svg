@@ -1,1 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><g clip-rule="evenodd" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><path d="M29.6 23.4l-3.7 10.2M47 14.7V49c0 1.9-1.5 3.4-3.4 3.4H11.9c-1.9 0-3.4-1.5-3.4-3.4V6.9c0-1.9 1.5-3.4 3.4-3.4h24.5L47 14.7z"/><path d="M36 3.8v11.3h10.3M20.8 33.6L15 28.4l5.8-5M34.5 33.6l5.8-5.2-5.8-5"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="55px"
+	 height="55px" viewBox="0 0 55 55" enable-background="new 0 0 55 55" xml:space="preserve">
+<g id="Layer_1" display="none">
+	<rect x="-2.8" y="-4.2" display="inline" fill="#16C6C2" width="63.3" height="63.3"/>
+</g>
+<g id="Layer_2">
+</g>
+<g id="Layer_3">
+	
+		<line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="29.6" y1="23.4" x2="25.9" y2="33.6"/>
+	
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M47,14.7v34.3c0,1.9-1.5,3.4-3.4,3.4H11.9c-1.9,0-3.4-1.5-3.4-3.4V6.9c0-1.9,1.5-3.4,3.4-3.4h24.5L47,14.7z"/>
+	
+		<polyline fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		36,3.8 36,15.1 46.3,15.1 	"/>
+	
+		<polyline fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		20.8,33.6 15,28.4 20.8,23.4 	"/>
+	
+		<polyline fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		34.5,33.6 40.3,28.4 34.5,23.4 	"/>
+</g>
+</svg>
