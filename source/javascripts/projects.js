@@ -23,8 +23,8 @@ $(window).scroll(function() {
 			}, 300 * i );
 		});
 
-	} 
-	
+	}
+
 
 }); //end
 
@@ -77,7 +77,7 @@ $(document).ready(function(){
 		var h = $('.height-fix').height();
 		$('.height-fix').height(h);
 	}
-	
+
 	// Form modal open
 	$('.open-form').on('click', function(){
 		// $('.main-form').removeClass('back');
@@ -109,7 +109,7 @@ $(document).ready(function(){
         $wrapper.toggleClass("button-floating-clicked ");
         // $('.btn-overlay').show();
 
-        
+
 
         // $(".button-sub").click(function() {
         //     var color = $(this).data("color");
@@ -118,13 +118,13 @@ $(document).ready(function(){
         //     $wrapper.addClass("button-sub-" + color + "-clicked");
         // });
     });
-    
+
     $('.btn-overlay').on('click', function(){
         // $('#wrapper').removeClass('available');
         $('#wrapper').removeClass("button-floating-clicked");
     });
 
-		
+
 	// slider initialisetion
 	$('#sky-carousel').carousel({
 		itemWidth: 600,
@@ -139,7 +139,7 @@ $(document).ready(function(){
 		motionStartDistance: 170,
 		topMargin: 10,
 		gradientStartPoint: 0.35,
-		gradientOverlayColor: "#f5f5f5",
+		gradientOverlayColor: "#f1f5f9",
 		gradientOverlaySize: 190,
 		gradientOverlayVisible: false,
 		reflectionDistance: 1,
@@ -164,7 +164,7 @@ $(document).ready(function(){
 		motionStartDistance: 170,
 		topMargin: 0,
 		gradientStartPoint: 0.35,
-		gradientOverlayColor: "#ffffff",
+		gradientOverlayColor: "#f1f5f9",
 		gradientOverlaySize: 110,
 		reflectionDistance: 1,
 		reflectionAlpha: 0.35,
@@ -190,6 +190,5 @@ $(document).ready(function(){
         prettify_enabled: true,
         prettify_separator: ','
     });
-	
-})
 
+})

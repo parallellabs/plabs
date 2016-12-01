@@ -86,6 +86,20 @@
                     }
                 }
             }
+
+          span{
+            visibility: hidden;
+          }
+
+          &:hover,
+          &:active,
+          &:focus{
+            span{
+            visibility: visible;
+            }
+            color:#243f53;
+            font-weight: 500;
+          }
         }
     }
     &.new-nav {
@@ -195,8 +209,11 @@
                     font-size: rem(16);
 
                     color: #243f53;
-                    &:hover, {
-                        color: #16c6c2;
+                    &:hover,
+                    &:active,
+                    &:focus{
+                      color:#243f53;
+                      font-weight: 500;
                     }
                     &.hiring {
                         float: right;
@@ -230,8 +247,11 @@
                 li{
                     a{
                         color:#fff;
-                        &:hover{
-                            color:#16c6c2;
+                        &:hover,
+                        &:active,
+                        &:focus{
+                          color:#243f53;
+                          font-weight: 500;
                         }
                     }
                 }

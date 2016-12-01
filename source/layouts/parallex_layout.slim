@@ -46,9 +46,13 @@ html.no-js lang="en"
     javascript:
       (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
     
-  body
-    
-    == yield
+    body
+        .wrapper.new.overflow-XH.home 
+          = partial "layouts/homeHeader.slim"
+          == yield
+
+        = partial "layouts/new_footer.slim"
+  
     / jQuery
     script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"
     script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"

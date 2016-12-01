@@ -194,5 +194,34 @@
 			<path class="path3" fill="#797b79" d="M1.363 0.674c-0.75-0.375-1.004-0.097-0.564 0.616l11.506 18.698 12.305 6.152-12.225-19.866c-0.052-0.085-0.127-0.153-0.215-0.197l-10.806-5.403z"></path>
 			<path class="path4" fill="#515251" d="M12.305 31.15c0 0.629-0.46 0.913-1.022 0.632l-10.601-5.301c-0.375-0.187-0.682-0.684-0.682-1.103v-24.624c0-0.419 0.307-0.609 0.682-0.421l11.472 5.736c0.093 0.046 0.152 0.141 0.152 0.245v24.836z"></path>
 		</symbol>
+		<symbol id="icon-new-menu" viewBox="0 0 32 32">
+		<title>new-menu</title>
+		<path class="path1" fill="#009e5f" opacity="0.01" d="M0 0h32v32h-32v-32z"></path>
+		<path class="path2" fill="none" stroke="#fff" stroke-width="2.4" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M9.2 15.49h18.8"></path>
+		<path class="path3" fill="none" stroke="#fff" stroke-width="2.4" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M4 7.333h24"></path>
+		<path class="path4" fill="none" stroke="#fff" stroke-width="2.4" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M4 23.647h24"></path>
+		</symbol>
+		<symbol id="icon-quote" viewBox="0 0 43 32">
+	<title>quote</title>
+	<path class="path1" d="M0.066 25.512c5.944-0.647 8.828-3.413 8.651-8.298h-6.532v-17.214h17.214v14.036c0 3.237-0.412 5.973-1.236 8.21s-2.016 4.061-3.575 5.473c-1.56 1.412-3.443 2.457-5.65 3.134s-4.693 1.045-7.459 1.103l-1.412-6.444zM23.548 25.512c5.944-0.647 8.828-3.413 8.651-8.298h-6.621v-17.214h17.214v14.036c0 3.237-0.412 5.973-1.236 8.21s-2.016 4.061-3.575 5.473c-1.56 1.412-3.443 2.457-5.65 3.134s-4.664 1.045-7.371 1.103l-1.412-6.444z"></path>
+	</symbol>
+	<symbol id="icon-angle-left" viewBox="0 0 21 32">
+	<title>angle-left</title>
+	<path class="path1" fill="none" stroke="#777" stroke-width="3.4286" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M19.095 1.143l-14.667 14.667 14.667 14.667"></path>
+	</symbol>
+	<symbol id="icon-angle-right" viewBox="0 0 21 32">
+	<title>angle-right</title>
+	<path class="path1" fill="none" stroke="#777" stroke-width="3.4286" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M1.476 1.143l14.667 14.667-14.667 14.667"></path>
+	</symbol>
+	<symbol id="icon-left-arrow" viewBox="0 0 38 32">
+	<title>left-arrow</title>
+	<path class="path1" fill="none" stroke="#fff" stroke-width="3.2" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M3.2 16h35.2"></path>
+	<path class="path2" fill="none" stroke="#fff" stroke-width="3.2" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M16 29.6l-13.6-13.6 13.6-13.6"></path>
+	</symbol>
+	<symbol id="icon-right-arrow" viewBox="0 0 40 32">
+	<title>right-arrow</title>
+	<path class="path1" fill="none" stroke="#fff" stroke-width="3.2" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M36 16h-35.2"></path>
+	<path class="path2" fill="none" stroke="#fff" stroke-width="3.2" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M23.2 2.4l13.6 13.6-13.6 13.6"></path>
+	</symbol>
 	</defs>
 </svg>

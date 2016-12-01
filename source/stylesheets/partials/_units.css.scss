@@ -195,6 +195,55 @@ svg {
     padding-top: 180px
 }
 
+.PL-120{
+  padding-left: 120px;
+
+  @include media(max-width 900px){
+    padding-left: 60px;
+  }
+  @include media(max-width 768px){
+    padding-left: 30px;
+   }
+}
+
+.PR-120{
+  padding-right: 120px;
+  @include media(max-width 768px){
+    padding-right: 30px;
+   }
+   @include media(max-width 900px){
+     padding-right: 60px;
+   }
+}
+
+.PT-120{
+  padding-top: 120px;
+}
+
+.PT-60{
+  padding-top: 60px;
+}
+.PL-60{
+  padding-left: 60px;
+  @include media(max-width 900px){
+    padding-left: 30px;
+   }
+}
+.PR-60{
+  padding-right: 60px;
+  @include media(max-width 900px){
+    padding-right: 30px;
+   }
+}
+
+.FL-r{
+  float: right;
+}
+
+.FL-l{
+  float: left;
+}
+
 .box-shadow-none {
     box-shadow: none !important;
 }
