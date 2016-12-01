@@ -203,8 +203,9 @@
             p {
                 margin-bottom: 20px;
                 color: #555;
-                font-weight: normal;
+                font-weight: 300;
                 font-size: rem(18);
+                line-height: 1.56;
 
                 &.note {
                     color: #777;
@@ -372,69 +373,165 @@
 
                     padding: 20px 0px;
 
-                    .item {
-                        @include clearfix;
+                    .owl-item{
+                      .item {
+                          @include clearfix;
 
-                        height:500px;
+                          height:500px;
 
-                        .card{
-                            // position: relative;
-                            float: left;
-                            margin-right: 0;
-                            max-width: 100%;
+                          .card{
+                              // position: relative;
+                              float: left;
+                              margin-right: 0;
+                              margin-bottom: 0;
+                              max-width: 100%;
+                              width: auto;
+                              height: inherit;
+                          }
+                          .item-img{
+                            position: absolute;
+                            z-index: 2;
                             width: auto;
-                            height: inherit;
-                        }
-                        &.left{
-                                @include clearfix;
+                            height: 100%;
+                          }
+                          &.left{
+                                  @include clearfix;
 
-                                // padding-right: 230px;
-                                max-width: 90%;
+                                  // padding-right: 230px;
+                                  max-width: 90%;
 
-                                &:after {
-                                    @include transform(skew(-30deg));
+                                  &:after {
+                                      @include transform(skew(-30deg));
 
+                                      position: absolute;
+                                      top: 0;
+                                      right: 15px;
+                                      bottom: 0;
+                                      z-index: 2;
+                                      display: block;
+                                      width: 250px;
+                                      background: #fcc32c;
+                                      content: '';
+                                  }
+                                  &:before{
                                     position: absolute;
-                                    top: 0;
-                                    right: 15px;
-                                    bottom: 0;
-                                    display: block;
-                                    width: 250px;
-                                    background: #fcc32c;
+                                    right: -60px;
+                                    z-index: 1;
+                                    width: 342px;
+                                    height: 100%;
+                                    //background-image: url("../images/Sreenath1.png");
+                                    background-color: #fff;
                                     content: '';
-                                }
-                                .card {
-                                    padding-right: 200px;
-                                    padding-left: 60px;
+                                  }
+                                  .card {
+                                      padding-right: 200px;
+                                      padding-left: 60px;
 
-                                }
-                        }
-                        &.right{
-                                float:right;
-                                // padding-left: 230px;
-                                max-width: 90%;
+                                  }
+                                  .item-img{
+                                    right: 50px;
+                                    z-index: 3;
+                                  }
+                          }
+                          &.right{
+                                  float:right;
+                                  // padding-left: 230px;
+                                  max-width: 90%;
 
-                                &:before {
-                                    @include transform(skew(-30deg));
+                                  &:after {
+                                      @include transform(skew(-30deg));
 
+                                      position: absolute;
+                                      top: 0;
+                                      bottom: 0;
+                                      left: 15px;
+                                      z-index: 2;
+                                      display: block;
+                                      width: 250px;
+                                      background: #fcc32c;
+                                      content: '';
+                                  }
+                                  &:before{
                                     position: absolute;
-                                    top: 0;
-                                    bottom: 0;
-                                    left: 15px;
-                                    display: block;
-                                    width: 250px;
-                                    background: #fcc32c;
+                                    left: 0;
+                                    z-index: 1;
+                                    width: 342px;
+                                    height: 100%;
+                                    //background-image: url("../images/Sreenath1.png");
+                                    background-color: #fff;
                                     content: '';
-                                }
-                                .card {
-                                    padding-right: 60px;
-                                    padding-left: 200px;
+                                  }
+                                  .card {
+                                      padding-right: 60px;
+                                      padding-left: 200px;
 
 
-                                }
+                                  }
+                                  .item-img{
+                                    left: 40px;
+                                    z-index: 3;
+                                  }
+                          }
+
+                      }
+                      &.active{
+                        .item{
+                          &.left{
+                            &:after{
+                              right: 200px;
+                            }
+                            .item-img{
+                              right: 200px;
+                            }
+                          }
+                          &.right{
+                            &:after{
+                              left: 200px;
+                            }
+                            .item-img{
+                              left: 230px;
+                            }
+                          }
                         }
+                        & ~ .owl-item{
+                          .item{
+                            &.right{
+                              &:after{
+                                left: -85px;
+                              }
+                              .item-img{
+                                left: -60px;
+                              }
+                            }
+                            &.left{
+                              &:after{
+                                right: -85px;
+                              }
+                              .item-img{
+                                right: -60px;
+                              }
+                            }
+                          }
+                        }
+
+                      }
+                      &.na{
+                        .item{
+                          &.left{
+                            &:after{
+                              right: -85px;
+                              z-index: 3;
+                            }
+                            .item-img{
+                              right: -60px;
+                              z-index: 4;
+                            }
+                          }
+                        }
+                      }
 
                     }
+
                 }
             }
         }
