@@ -1,10 +1,10 @@
 doctype 5
 html.no-js lang="en"
   head
-    meta charset="utf-8" 
+    meta charset="utf-8"
     meta content="IE=edge" http-equiv="X-UA-Compatible"
     meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" /
-    title 
+    title
       = "#{@title}"
     meta content="#{@description}" name="description" /
     meta content="#{@keyword}" name="keywords" /
@@ -22,7 +22,7 @@ html.no-js lang="en"
     meta content="#{@twitter_title}" name="twitter:title" /
     meta content="#{@twitter_description}" name="twitter:description" /
     meta content="#{@twitter_image}" name="twitter:image" /
-    
+
     link href="http://parallellabs.io/" rel="canonical" /
     link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" /
     link rel="stylesheet" href="stylesheets/normalize.css"/
@@ -45,11 +45,11 @@ html.no-js lang="en"
 
     javascript:
       (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
-    
-    
-    
+
+
+
   body
-  
+
     / = partial "layouts/about_header.slim"
 
     == yield
@@ -84,20 +84,44 @@ html.no-js lang="en"
                 template: '<div class="colm"><img src="{{image}}"/></div>'
             });
             userFeed.run();
-            
-            $("#owl-demo").owlCarousel({
-              navigation : false, // Show next and prev buttons
-              slideSpeed : 300,
-              paginationSpeed : 400,
-              singleItem:true
-              // "singleItem:true" is a shortcut for:
-              // items : 1, 
-              // itemsDesktop : false,
-              // itemsDesktopSmall : false,
-              // itemsTablet: false,
-              // itemsMobile : false
-            });
-            
+
+            if($(window).width() > 767)
+            {
+
+
+                        $("#owl-demo").owlCarousel({
+                          navigation : false, // Show next and prev buttons
+                          slideSpeed : 300,
+                          paginationSpeed : 400,
+                          singleItem:true,
+                          afterAction: function(el){
+                            //remove class active
+                            this
+                            .$owlItems
+                            .removeClass('active na');
+
+                            //add class na
+                            this
+                            .$owlItems
+                            .addClass('na');
+                            //add class active
+                            this
+                            .$owlItems
+                            .eq(this.currentItem)
+                            .removeClass('na')
+                            .addClass('active');
+                           }
+                          // "singleItem:true" is a shortcut for:
+                          // items : 1,
+                          // itemsDesktop : false,
+                          // itemsDesktopSmall : false,
+                          // itemsTablet: false,
+                          // itemsMobile : false
+                        });
+
+            }
+
+
         });
         // calculating colm height to make last colm height same
         //$(window).load(function(){
@@ -109,12 +133,12 @@ html.no-js lang="en"
             //var gridColmHeight = $('.grid .colm').height();
             //$('.grid .colm.last').css({'height' : gridColmHeight});
         //});
-        
+
     script type="text/javascript" src="javascripts/all.js"
     script type="text/javascript" src="javascripts/retina.min.js"
 
     javascript:
-        
+
         // cloud tag
         var robin = [{text: "Meditation", weight: 9},
         {text: "Pilates", weight: 3},
@@ -235,5 +259,3 @@ html.no-js lang="en"
         $('.cloud_7').jQCloud(Devshree,{height:200,autoResize: true,removeOverflowing: true,shape: 'rectangular'});
         $('.cloud_8').jQCloud(Allan,{height:200,autoResize: true,removeOverflowing: false,shape: 'rectangular'});
         $('.cloud_9').jQCloud(Ameya,{height:200,autoResize: true,removeOverflowing: true,shape: 'rectangular'});
-
-          

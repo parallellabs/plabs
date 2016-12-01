@@ -1,0 +1,165 @@
+doctype 5
+html.no-js lang="en"
+  head
+    meta charset="utf-8"
+    meta content="IE=edge" http-equiv="X-UA-Compatible"
+    meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" /
+    title
+      = "#{@title}"
+    meta content="#{@description}" name="description" /
+    meta content="#{@keyword}" name="keywords" /
+    / Open graph protocol
+    meta content="en_US" property="og:locale" /
+    meta content=" website" property="og:type" /
+    meta content="#{@og_title}" property="og:title" /
+    meta content="#{@og_description}" property="og:description" /
+    meta content="#{@og_url}" property="og:url" /
+    meta content="Parallel Labs" property="og:site_name" /
+    meta content="#{@og_image}" property="og:image" /
+    / Twitter Card
+    meta content="summary" name="twitter:card" /
+    meta content="#{@twitter_url}" name="twitter:url" /
+    meta content="#{@twitter_title}" name="twitter:title" /
+    meta content="#{@twitter_description}" name="twitter:description" /
+    meta content="#{@twitter_image}" name="twitter:image" /
+    meta name="google-site-verification" content="ZOxMEOTYRfVmH_bAiRaHYb9tMth8zjJlXwtR537nkco" /
+
+    link href="http://parallellabs.io/" rel="canonical" /
+    link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" /
+    link rel="stylesheet" href="stylesheets/all.css"/
+    javascript:
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-47999745-2']);
+      _gaq.push(['_gat._forceSSL']);
+      _gaq.push(['_trackPageview']);
+
+      (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+
+    javascript:
+      (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
+
+  body
+    .team-overlay
+      .team-overlay-content
+        .team
+          .skewed-bg
+          .team-img-block
+           img src=""
+          .team-content
+             .name
+             .designation
+             .description
+    .wrapper.new.overflow-XH.team-wrapper
+      = partial "layouts/homeHeader.slim"
+      == yield
+
+    = partial "layouts/new_footer.slim"
+    / jQuery
+    script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"
+    script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
+    script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"
+    script type="text/javascript" src="javascripts/backbone_custom.js"
+    script type="text/javascript" src="javascripts/instafeed.min.js"
+    script type="text/javascript" src="javascripts/jribbble.min.js"
+    script type="text/javascript" src="javascripts/ion.rangeSlider.min.js"
+    script type="text/javascript" src="javascripts/jquery.parallax.min.js"
+    script type="text/javascript" src="javascripts/jquery.dotdotdot.min.js"
+    script type="text/javascript" src="javascripts/blazy.min.js"
+    / script type="text/javascript" src="javascripts/jquery.lazyloadxt.extra.min.js"
+    script type="text/javascript" src="javascripts/all.js"
+    script type="text/javascript" src="javascripts/retina.min.js"
+    javascript:
+      $(document).ready(function() {
+
+        $(document).on("click", ".team-member-block .team-member", function(e){
+          $('.team-overlay .team-img-block > img').width($(this).find('img').width());
+
+          $(".team-overlay .team-overlay-content .team-content .name").text($(this).find('.name').text());
+          $(".team-overlay .team-overlay-content .team-content .designation").text($(this).find('.designation').text());
+          $(".team-overlay .team-overlay-content .team-content .description").text($(this).find('.description').text());
+          calcTeamImageDimensions($(this));
+
+          $(this).find('img').addClass('hide');
+
+          $("body").addClass('disableScroll');
+          $(".team-wrapper").addClass('blur');
+          $(".team-overlay").addClass('show');
+          $('.team-overlay .skewed-bg').addClass('show');
+          $('.team-overlay .team-img-block').addClass('show');
+
+        });
+
+
+
+        $(".team-overlay").on("click", function(e){
+          $('.team-overlay .skewed-bg').removeClass('show');
+          $('.team-overlay .team-img-block').removeClass('show');
+          $('.team-member-block .team-member img').removeClass('hide');
+          $('.team-overlay .team-img-block > img').css({opacity:0});
+
+          setTimeout(function(){
+            $("body").removeClass('disableScroll');
+            $(".team-wrapper").removeClass('blur');
+            $('.team-overlay').toggleClass('show');
+            $('.team-overlay .team-img-block > img').attr('src','');
+            $('.team-overlay .team-img-block > img,.team-overlay .team-img-block,.team-overlay .skewed-bg').removeAttr('style');
+            $(".team-overlay .team-overlay-content .team-content .name,.team-overlay .team-overlay-content .team-content .description,.team-overlay .team-overlay-content .team-content .designation").empty();
+          }, 400);
+
+        });
+
+      });
+
+      $(window).resize(function(){
+
+      });
+
+      function calcTeamImageDimensions(imageSelector)
+      {
+        //$('.team-overlay .skewed-bg').css({'right':($(window).width()-$('.team-overlay .skewed-bg').width())/2+$('.team-overlay .skewed-bg').width()/4});
+
+        if($(window).width() < 480)
+        {
+          bottomValue = $('.team-overlay').height()/(100/50) ;
+        }
+        else
+        {
+          bottomValue = $('.team-overlay').height()/(100/15) ;
+        }
+        var memberPhoto = imageSelector.find('img').attr('src');
+        bottomPhotoValue = $(window).height() - (imageSelector.find('img').offset().top  - $(window).scrollTop()) - imageSelector.find('img').height();
+
+        $('.team-overlay .team-img-block > img').attr('src',memberPhoto);
+
+        console.log($(window).scrollTop() + "|" + imageSelector.find('img').offset().top + "|" + (imageSelector.find('img').offset().top  - $(window).scrollTop()));
+
+        $('.team-overlay .team-img-block').css({'bottom':bottomPhotoValue +"px",'left':imageSelector.find('img').offset().left +"px"}).animate({bottom : bottomValue,left: ($(window).width()-$('.team-overlay .skewed-bg').width())/2-$('.team-overlay .skewed-bg').width()/3}, 500 );
+
+        setTimeout(function(){
+          $('.team-overlay .team-img-block > img').css({opacity:0});
+        }, 400);
+        setTimeout(function(){
+          if($(window).width() < 480)
+          {
+            $('.team-overlay .team-img-block > img').css({width :"90%",opacity:1});
+          }
+          else
+          {
+            $('.team-overlay .team-img-block > img').css({width :"60%",opacity:1});
+          }
+        }, 1000);
+      }
+
+      function toggleclasses()
+      {
+        $(this).toggleClass('show');
+        $("body").removeClass('disableScroll');
+        $(".team-wrapper").removeClass('blur');
+      }

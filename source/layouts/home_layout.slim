@@ -1,10 +1,10 @@
 doctype 5
 html.no-js lang="en"
   head
-    meta charset="utf-8" 
+    meta charset="utf-8"
     meta content="IE=edge" http-equiv="X-UA-Compatible"
     meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" /
-    title 
+    title
       = "#{@title}"
     meta content="#{@description}" name="description" /
     meta content="#{@keyword}" name="keywords" /
@@ -23,7 +23,7 @@ html.no-js lang="en"
     meta content="#{@twitter_description}" name="twitter:description" /
     meta content="#{@twitter_image}" name="twitter:image" /
     meta name="google-site-verification" content="ZOxMEOTYRfVmH_bAiRaHYb9tMth8zjJlXwtR537nkco" /
-    
+
     link href="http://parallellabs.io/" rel="canonical" /
     link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" /
     link rel="stylesheet" href="stylesheets/vendors/owl.carousel.css"/
@@ -45,9 +45,9 @@ html.no-js lang="en"
 
     javascript:
       (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
-    
+
   body
-    .wrapper.new.overflow-XH.home 
+    .wrapper.new.overflow-XH.home
       = partial "layouts/homeHeader.slim"
       == yield
 
@@ -142,7 +142,7 @@ html.no-js lang="en"
           } else if(num === sync2visible[0]){
             sync2.trigger("owl.goTo", num-1)
           }
-          
+
         }
 
       });
@@ -161,7 +161,7 @@ html.no-js lang="en"
             resolution: 'standard_resolution',
             sortBy: 'most-recent',
             template: '<div class="right mobile"> <div class="img-box"></div><div id="instafeed"> <a target="_blank" href="{{link}}"><img src="{{image}}"/></a> </div></div><div class="left"><div class="logo-img"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svgs/iconset.svg#icon-Instagram_simple_icon"></use></svg></div> <div class="content"> <h2>{{caption}}</h2></div><a href="https://instagram.com/parallellabs/" target="_blank">Follow us on Instagram</a></div><div class="right"> <div class="img-box"></div><div id="instafeed"> <a target="_blank" href="{{link}}"><img src="{{image}}"/></a> </div></div>'
-           
+
         });
         userFeed.run();
 
@@ -176,7 +176,7 @@ html.no-js lang="en"
           var checkWidth = $(window).width();
           var demo = $("#client_carousel");
           if (checkWidth > 768) {
-            demo.data('owlCarousel').destroy(); 
+            demo.data('owlCarousel').destroy();
             demo.removeClass('owl-carousel');
           } else if (checkWidth < 769) {
             demo.owlCarousel({
@@ -201,17 +201,17 @@ html.no-js lang="en"
               });
             }
           }
-        
+
         $(document).ready(mobile);
         $(window).resize(mobile);
-        
-      
+
+
       });
-      
+
       $(window).load(function(){
         $('.section.new-home-content.media .media-card .right #instafeed a').find('img').each(function(n, img) {
           var imgUrl = $(this).attr('src');
-          
+
           $(this).parents('.right').find('.img-box').css({'background': 'url(' + imgUrl + ') center center no-repeat'})
         });
         // from dribble
