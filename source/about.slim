@@ -1,5 +1,5 @@
 ---
-layout: new_layout
+layout: parallex_layout
 ---
 - @title = "About the Team | Parallel Labs"
 - @description = "Parallel Labs is a User Experience Design Agency with a lean and jargon free approach to designing experiences for Web and Mobile Apps"
@@ -13,217 +13,80 @@ layout: new_layout
 - @twitter_url = "http://parallellabs.io/about.html"
 - @twitter_image = "http://parallellabs.io/images/svgs/logo.png"
 
-= partial "layouts/about_header.slim"
-/! About us contents
-.section
-	/! Introduction section
-	.about-us
-		.abt-wrap
-			h2 
-				| We are a product design lab with a lean and jargon-free approach to designing great products.
-			p.para
-				| Parallel Labs was found on the belief that creating successful products needs something beyond a client-agency model. It needs an engagement where we work in parallel with the client team as a partner who understands their business, customers and will walk along on the product journey.
+#js-parallax-window.parallax-window
+  	.section.what-we-do.PT-180
+      h2
+        |We work <span class="pl-blue">with </span> you,</br>not for you.
+		.section.about_us.PT-120
 			p
-				| Our team is intentionally small and we work on limited assignments at a time. Clients are part of our design process where we share ideas, brainstorm, debate and critique to constantly improve and iterate our craft.
-	/! end
+				|Parallel Labs started in 2014 with the goal of bridging the gap between design, technology and business. Designers and developers were working in silos, there was lack of collaboration and ultimately failing to meet business goals. 
+			p 
+				|The idea was to create an integrated approach to digital product design. We consciously created a diverse team with self taught designers, hustlers, startup enthusiasts and developers passionate about design which helps us connect with startups. 
+			p
+				|Clients approach us at different stages of their product and business journey. Sometimes they have an idea and help build a MLP, whereas sometimes they need a full revamp or partner with us to continuously drive their product from a design perspective.
 
-	/! Team members group
-	.team
+		.section.new-home-content
+			.about-parallax
+				.box.yellow
+					h1
+						|Business
+				.box.blue
+					h1
+						|Product Strategy
+				.box.yellow
+					h1
+						|Marketing
+				.box.blue
+					h1
+						|Interface Design
+				.box.yellow
+					h1
+						|Finance
+				.box.blue
+					h1
+						|Front-End Dev
+
+	
+      .content
+        .colm-6.PL-120.PR-60.PT-120
+          h3
+            |<span class="number">1</span> We are a Startup at Heart<span class="line ML0-imp"></span>
+          p
+						|You won’t have to explain to us what things like Bootstrapping and MVP mean. We love playing Devil’s advocate, challenging your assumptions just enough that you still like us. And don’t be surprised if we know more about your competitors than you do.        
+        .colm-6.PR-120.PL-60.PT-120
+          h3
+            |<span class="number">2</span> We are not an Agency<span class="line ML0-imp"></span>
+          p
+						|We neither pitch nor sell. We will work as your extended team and make sure we understand your business inside-out. All of our UX is done in-house because that’s what works. We partner with teams we believe in and they in us.          
+        .colm-6.PL-120.PT-120.PR-60
+          h3
+            |<span class="number">3</span> We are pragmatic, lean and fast<span class="line ML0-imp"></span>
+          p
+						|We know what it takes to build good product. Our processes are designed to allow clients to ship, launch, test and iterate. Our model relies on just enough research and plenty of business and market insights. All of this, fast.        
+        .colm-6.PR-120.PT-120.PL-60
+          h3
+            |<span class="number">4</span> We walk along till the Last Mile<span class="line ML0-imp"></span>
+          p
+						|Our job doesn’t end at providing wireframes or design files. Whether it’s sharing production ready Front-end code instead of PSDs or testing products while under development, we do everything it takes to have the experience be exactly as we envisioned it.    
+    
+								
+	.section.new-home-content
 		h2
-			| Meet our Team
-		/! Member 
-		.wrap
-			.img-box 
-				| <p>Robin</p>  <p>Dhanwani</p> 
-				img src="images/Robin.png" alt="Founder's image"
-			.info-box
-				h4 
-					| Robin Dhanwani
-					span Founder / Product Designer
-				p
-					| Robin brings in about 7 years of experience in the digital space and has consulted over 50 companies on digital product design &amp; branding.
-				.cloud_1
-		.divider
-		/! end
-		/! Member
-		.wrap.left-aligned
-			.info-box
-				h4
-					| Chaitanya Alluru
-					span Interface Designer
-				p
-					| Chaitanya is the Design hacker on our team who follows conventions and standards like a ritual. He feels that he has so many things to learn, but so little time.
-				.cloud_4
-			.img-box.clr-orange-fade
-				| <p class="clr-orange-fade">Chaitanya</p> <p class="clr-orange-fade"> Alluru</p> 
-				img src="images/Chaitanya.png" alt="Designer's image"
-		.divider
-		/! end
-		/! Member 
-		.wrap
-			.img-box 
-				| <p class="clr-gray-fade">Bhaghya</p>  <p class="clr-gray-fade">Mathew</p> 
-				img.new-images src="images/Bhaghya.png" alt="Illustrator's image"
-			.info-box
-				h4 
-					| Bhaghya Mathew
-					span Illustrator
-				p
-					| Bhaghya is an illustrator and comic artist who loves to travel and try new things. She  hopes to get an unlimited supply of reeses some day.
-
-				.cloud_3
-		.divider
-		/! end
-		/! Member 
-		.wrap.left-aligned
-			.info-box
-				h4 
-					| Rakesh Sharma
-					span Front-End Developer
-				p
-					| Rakesh is a big fan of modern interactive web and loves creating websites with parallax and transitions. In his free time, he plays Cricket and Volley Ball.
-				.cloud_5
-			.img-box.clr-gray-fade 
-				| <p>Rakesh</p>  <p>Sharma</p> 
-				img src="images/Rakesh.png" alt="Developer's image"
-		.divider
-		/! end
-		/! Member
-		.wrap
-			.img-box.clr-orange-fade
-				| <p class="clr-orange-fade">Sreenath</p> <p class="clr-orange-fade"> Kotteri</p> 
-				img src="images/Sreenath.png" alt="Designer's image"
-			.info-box
-				h4
-					| Sreenath Kotteri
-					span Interface Designer
-				p
-					| Sreenath is a Visual Communication graduate whose love for gadgets, games and apps made him want to design interfaces.
-				.cloud_2
-		.divider
-		/! end
-		/! Member 
-		.wrap.left-aligned
-			.info-box
-				h4 
-					| Vishwarath Reddy
-					span Project Manager
-				p
-					| Vishwarath is bit a of everything. He comes with 4 years of experience in building companies and mobile apps in various sectors.
-				.cloud_6
-			.img-box.clr-gray-fade 
-				| <p>Vishwarath</p>  <p>Reddy</p> 
-				img.new-images src="images/Vish.png" alt="Manager's image"
-		.divider
-		/! end
-		/! Member
-		.wrap
-			.img-box.clr-orange-fade
-				| <p class="clr-orange-fade">Devshree</p> <p class="clr-orange-fade"> Thaker</p> 
-				img.new-images src="images/Devshree.png" alt="Intern's image"
-			.info-box
-				h4
-					| Devshree Thaker
-					span Intern
-				p
-					| Devshree is our loquacious intern from MIT who constantly tries to bring the team out of the limbo of boredom. She’s keen on learning new things and likes going to places with funny names.
-				.cloud_7
-		.divider
-		/! end
-		/! Member 
-		.wrap.left-aligned
-			.info-box
-				h4 
-					| Allan Gomes
-					span Front-End Developer
-				p
-					| Allan is the goan boy in the team who decided to step out of the simple Susegad lifestyle to Bangalore’s madness to work with a Startup and do some great work.
-
-				.cloud_8
-			.img-box.clr-gray-fade 
-				| <p>Allan</p>  <p>Gomes</p> 
-				img.new-images src="images/Allan.png" alt="Developer's image"
-		.divider
-		/! end
-		/! Member
-		.wrap
-			.img-box.clr-orange-fade
-				| <p class="clr-orange-fade">Ameya</p> <p class="clr-orange-fade"> Kulkarni</p> 
-				img.new-images src="images/Ameya.png" alt="Intern's image"
-			.info-box
-				h4
-					| Ameya Kulkarni
-					span Intern
-				p
-					| Ameya is our bulky intern from Symbiosis whose crazy about Body Building. He is a true marathi manoos who swears by Chitale’s bhakarwadi and Goli Wada Pav.
-				.cloud_9
-		.divider
-		/! end
-		/! Member
-		.wrap.left-aligned
-			.info-box
-				h4 
-					| Join our Team
-				p
-					| Joining Parallel Labs means working with a talented team on incredible projects, enjoying flexible work hours and competitive benefits. Our base at HSR Layout, Bangalore is easy to commute and has some of the best eateries, coffee shops and also the latest Xbox-One to unwind !!
-				.jobs
-					/ a href="project_manager.html" Product Manager
-					a href="interface_designer.html" 
-						| Interface Designer <span class="location">(Bangalore)</span>
-					/ a href="graphic_designer.html"  
-					/ 	| Graphic Designer/Illustrator <span class="location">(Bangalore)</span>
-				.tag-cloud
-			.img-box 
-				| <p class="clr-gray-fade">Join Our </p><p class="clr-gray-fade"> Team </p>
-				img src="images/shadow_man.png" alt="shadow profile"
-		.divider
-		/! end
-	/! end
-	/! Our Lab Gallery
-	.feeds.lab-gallery.abt.fancy
-		h2
-			| Our Lab
-		a.feed-box.main-box.lightbox href="images/lunch_time.jpg" data-imagelightbox="f"
-			img src="images/abt_small1.jpg" alt="Posters"
-		a.feed-box.lightbox href="images/ill_explain.jpg" data-imagelightbox="f"
-			img src="images/abt_small2.jpg" alt="White Board"
-		a.feed-box.lightbox href="images/lets_discuss.jpg" data-imagelightbox="f"
-			img src="images/abt_small3.jpg" alt="Pantry"/
-		a.feed-box.lightbox href="images/relax.jpg" data-imagelightbox="f"
-			img src="images/abt_small4.jpg" alt="Sofa"/
-		a.feed-box.lightbox href="images/office_trip.jpg" data-imagelightbox="f"
-			img src="images/abt_small5.jpg" alt="Team Outing"/
-/ New project section
-.section.new-home-content.tell-us
-			.content
-				h2
-					| We would love to hear about your project.
-				svg
-					use xlink:href="images/svgs/iconset.svg#icon-filled-like" 
-				p
-					| Answer few questions to help us get a better context of your project and meaningful conversation.
-				a.btn.new.open-form href="javascript:void(0);"
-					.skewed.topaz
-						span Get in touch
+			|Have a look at our Studio<span class="border"></span>
+	.section.new-home-content.tell-us
+		.content
+			h2
+				| We would love to hear about your project.
+			svg
+				use xlink:href="images/svgs/iconset.svg#icon-filled-like" 
+			p
+				| Answer few questions to help us get a better context of your project and meaningful conversation.
+			a.btn.new.open-form href="javascript:void(0);"
+				.skewed.topaz
+					span Get in touch
 
 = partial "layouts/main_form.slim"
 
-
-/ Floating button
-#wrapper 
-	.button.button-sub  
-		a href="index.html" Home
-	.button.button-sub  
-		a href="about.html" About Us
-	.button.button-sub 
-		a href="blog.html" Blog	
-	.button.button-sub 
-		a.open-form href="#" Get in Touch
-	.water-drop
-	.button.button-floating
-  		svg.plus 
-			use xlink:href="images/svgs/iconset.svg#icon-Logo_Color"
-		svg.edit
-			use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
-	.button-floating-shadow
-.btn-overlay
+	
+	
+	

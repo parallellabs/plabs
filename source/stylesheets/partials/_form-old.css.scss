@@ -1,0 +1,215 @@
+.main-form {
+    display: none;
+    // &.back {
+    //     .inner-box {
+    //         display: block;
+    //         width: 0;
+    //         height: 100%;
+    //         @extend .stretchBack;
+    //         @include transform(skew(-25deg));
+    //         @include transition-duration(.5s);
+    //     }
+    // }
+
+    // @include media($mobile-devices) {
+    //     background-color: #fff;
+    //     .inner-box {
+    //         @include pad(0);
+    //         @include transform(skew(0deg));
+    //     }
+    // }
+        &.openForm-model {
+          background: linear-gradient(118deg, #4a738b, #16c6c2);
+        z-index: 99999;
+
+        display: block;
+        height: 100vh;
+        // max-height: 400px;
+        padding: 0 15px;
+        // margin-top: 70px;
+        @include position(fixed, 0 0 0 0 );
+        @include outer-container(100%);
+        @include media($mobile-devices) {
+            @include pad(0);
+        }
+
+        .close-form {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 9;
+
+            width: 20px;
+            height: 20px;
+
+            cursor: pointer;
+
+            color: #777;
+
+            // @include transform(skew(0));
+        }
+        .inner-box {
+            position: relative;
+
+            display: block;
+            // visibility: hidden;
+            width: 860px;
+            height: 670px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 20px;
+            // margin-right: auto !important;
+            // margin-left: auto;
+            // overflow: hidden;
+
+            background-color: #fff;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+            // @extend .stretch;
+            // @include media($mobile-devices) {
+            //     @include pad(0);
+            //     @include transform(skew(0deg));
+            // }
+            // @include transition-duration(.5s);
+            // @include transform(skew(-25deg));
+            .expand {
+                width: 100%;
+
+                @include transform(scale(1));
+            }
+            .wrap {
+                position: absolute;
+                top: 20%;
+                right: 0;
+                left: 110px;
+
+                display: inline-block;
+                width: 100%;
+                max-width: 565px;
+                margin: 0 auto;
+
+                text-align: center;
+                vertical-align: middle;
+
+                opacity: 0;
+
+                // @include transform(skew(25deg) translateY(-50%));
+                // @include transition(left .5s ease-out,  opacity .75s linear);
+                // &:nth-of-type(1) {
+                //     opacity: 1;
+                // }
+                @include media($mobile-devices) {
+                    left: 0;
+
+                    width: 80%;
+
+                    @include transform(skew(0) translateY(-50%));
+                }
+                .client {
+                    text-transform: capitalize;
+                }
+                h4 {
+                    margin-bottom: 10px;
+
+                    font-size: rem(26);
+                    font-weight: 400;
+
+                    color: rgb(22, 198, 194);
+                }
+                p {
+                    font-size: rem(15);
+                    font-weight: 300;
+
+                    color: $medium-gray;
+                }
+                .attachments {
+                    input {
+                        display: inline-block;
+                        width: auto;
+                    }
+                    a {
+                        margin-right: 10px;
+                    }
+                }
+                .group {
+                    // max-width: 60%;
+
+                    label {
+                        display: none;
+                    }
+                }
+                .action {
+                    width: 100%;
+                    // max-width: 60%;
+                    margin: 0 auto;
+
+                    @include clearfix;
+                    .btn {
+                        width: 120px;
+                        height: 38px;
+
+                        font-size: rem(15);
+                        line-height: 18px;
+                        svg {
+                            width: 15px;
+                            height: 10px;
+                            margin-left: 10px;
+
+                            color: rgba(255,255,255,.8);
+                        }
+                        &:focus,
+                        &:hover {
+                            outline: none;
+                            svg {
+                                color: #fff;
+                            }
+                        }
+                        &.back {
+                            float: left;
+
+                            color: $blue;
+                            border: 1px solid $blue;
+                            border-radius: 5px;
+                            background-color: #fff;
+                            svg {
+                                margin-right: 10px;
+                                margin-left: 0;
+
+                                color: $blue;
+                            }
+                        }
+                        &.next,
+                        &.skip {
+                            float: right;
+                        }
+                        &.close-form {
+                            position: static;
+
+                            color: #fff;
+                        }
+                    }
+                }
+                &:last-child {
+                    .action {
+                        .btn {
+                            float: none;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+            // MoveLeft .wrap
+            .move-left {
+                left: -200%;
+
+                opacity: 0 !important;
+            }
+            .move-right {
+                left: 200%;
+                // right: 0;
+
+                opacity: 0 !important;
+            }
+        }
+    }
+}

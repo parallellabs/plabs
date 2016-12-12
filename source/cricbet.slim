@@ -2,14 +2,14 @@
 layout: parallex_layout
 ---
 - @title = "Cricbet | Parallel Labs"
-- @description = "A fresh food ordering experience for cricbet"
-- @keyword = "cricbet User Experience Design Case Study, Parallel Labs cricbet"
+- @description = "Designing experience for cricket prediction game Cricbet"
+- @keyword = "Cricbet User Experience Design Case Study, Parallel Labs cricbet"
 - @og_title = "Parallel Labs Blog"
 - @og_description = "A fresh food ordering experience for cricbet"
 - @og_url = "http://parallellabs.io/cricbet.html"
 - @og_image = "http://parallellabs.io/images/svgs/logo.png"
 - @twitter_title = "Parallel Labs Blog"
-- @twitter_description = "A fresh food ordering experience for cricbet"
+- @twitter_description = "Designing experience for cricket prediction game Cricbet"
 - @twitter_url = "http://parallellabs.io/cricbet.html"
 - @twitter_image = "http://parallellabs.io/images/svgs/logo.png"
 
@@ -23,17 +23,17 @@ layout: parallex_layout
       | Designing the experience for a Cricket Prediction Game
   .members
     .member
-      |<img src="../images/robin.jpeg" alt="Robin" />
+      |<img src="../images/Robin.jpg" alt="Robin" />
       |<span class="member-name">Robin</span>
       |<span class="role">UX Design</span>
 
     .member
-      |<img src="../images/insta_logo.jpg" alt="Chaitanya" />
+      |<img src="../images/Sreenath.jpg" alt="Chaitanya" />
       |<span class="member-name">Sreenath</span>
       |<span class="role">UX Research</span>
 
     .member
-      |<img src="../images/insta_logo.jpg" alt="Rakesh" />
+      |<img src="../images/Chaitanya.jpg" alt="Rakesh" />
       |<span class="member-name">Chaitanya</span>
       |<span class="role">UX Research &amp; </br> UI Design</span>
   
@@ -66,7 +66,7 @@ layout: parallex_layout
     |It all started with an Audit of the current app to identity problems with experience<span class="border ML0-imp"></span>
   .img-flex
     img src="images/cricbet/old.jpg" alt="cricbet screen"
-    img src="" alt="cricbet screen"
+    img src="images/cricbet/old.jpg" alt="cricbet screen"
     
   
   h2.PT-120
@@ -111,17 +111,19 @@ layout: parallex_layout
     |Here are some directions we explored on the visual side. It needed to be fun, vibrant yet not draining as cricket fans use the game throughout the day during a match.
 
 .section.new-home-content.screens
-  .screen
-    |<img src="images/cricbet/002.jpg" alt="cricbet screen"/>
-  .screen
-    |<img src="images/cricbet/002-v-2.jpg" alt="cricbet screen"/>
-  .screen
-    |<img src="images/cricbet/002-v-5.jpg" alt="cricbet screen"/>
-    |<img src="images/ok.png" class="ok"/>
-  .screen
-    |<img src="images/cricbet/delta@2x.png" alt="cricbet screen"/>
-  .screen
-    |<img src="images/cricbet/charlie@2x.png" alt="cricbet screen"/>
+  div#screen-slider.owl-carousel
+    .screen
+      |<img src="images/cricbet/002.png" alt="cricbet screen"/>
+    .screen
+      |<img src="images/cricbet/002-v-2.png" alt="cricbet screen"/>
+    .screen
+      |<img src="images/cricbet/002-v-5.png" alt="cricbet screen"/>
+    .screen
+      |<img src="images/cricbet/002-v-6.png" alt="cricbet screen"/>
+    .screen
+      |<img src="images/cricbet/002-v-8.png" alt="cricbet screen"/>
+      |<img src="images/ok.png" class="ok"/>
+
     
 .section.new-home-content.palette
   .half2
@@ -164,13 +166,29 @@ layout: parallex_layout
   .half2
     h2
       |Typo<span class="border ML0-imp"></span>
+    .typo
+      span
+        |Ubuntu, Bold, 32px
+      p.main
+        |Misson Report, December 16, 1991.
+      p.second
+        |- Baron Zemo, Captian America : Civil War
+    .typo
+      span
+        |Ubuntu, Light, 20px
+      p.main-2
+        |You did not see that coming?
+      p.second
+        |- Quicksilver, Avengers - Age of Ultron
+        
+    
   
 .section.new-home-content.casestudy-content
   h2
     |Designing a interactive flow and not just screens<span class="border ML0-imp"></span>
   p
     |Designing a game is all about interactions and it needs a completely different approach. Instead of designing screens independently, we crafted interactions and screens that flow from one to the other with seamless transitions.
-  video class="b-lazy" loop="loop" controls="controls" autoplay="autoplay" height="800" width="600" src="images/cricbet/Comp.mov"
+  video loop="loop" autoplay="autoplay" poster="images/cricbet/poster1.png" height="500" width="600" src="images/cricbet/Comp.mov"
 
     
   h2.PT-120
@@ -185,7 +203,7 @@ layout: parallex_layout
     |Realtime experience to bet on every ball<span class="border ML0-imp"></span>
   p
     |Ball by ball gaming mode was the most interesting playing mode for the game where players can play with a group of 5-6 random players or with their own friends and bet on every ball. The idea was to bring the excitement people have while watching a live match on television to the playground and engage them to predict what happens on the next ball. Since it was a high engagement mode where players bet on every ball and we wanted to show what other 5 players are betting on, we chose a landscape view for this mode. Visually the idea was to replicate the metaphor of watching the match from a stadium.
-  video class="b-lazy" loop="loop" controls="controls" autoplay="autoplay" height="800" width="600" src="images/cricbet/ball-by-ball.mov"
+    video loop="loop" autoplay="autoplay" poster="images/cricbet/poster2.png" height="500" width="600" src="images/cricbet/ball-by-ball.mp4"
 
 .section.new-home-content.interfaces
   .content-section
@@ -196,86 +214,69 @@ layout: parallex_layout
       .sky-carousel-wrapper
         ul.sky-carousel-container
           li
-            img alt="Slider images" src="images/cricbet/Home-No Network.png" /
+            img alt="Slider images" src="images/cricbet/Leaderboards.png" /
             .sc-content
               p
-                |No newtwork
+                |leaderboards
           li
-            img alt="Slider images" src="images/cricbet/Feedback.png" /
+            img alt="Slider images" src="images/cricbet/Groups.png" /
             .sc-content
               p
-                |Feedback
+                |group
           li
-            img alt="Slider images" src="images/cricbet/Dish-Info.png" /
+            img alt="Slider images" src="images/cricbet/Friends_Decline.png" /
             .sc-content
               p
-                |Dish Info
+                |friends decline
           li
-            img alt="Slider images" src="images/cricbet/Dish-Reviews.png" /
+            img alt="Slider images" src="images/cricbet/Friends_Search.png" /
             .sc-content
               p
-                |dish reviews
+                |friends search
           li
-            img alt="Slider images" src="images/cricbet/Dish.png" /
+            img alt="Slider images" src="images/cricbet/Friends.png" /
             .sc-content
               p
-                |dish
-          li
-            img alt="Slider images" src="images/cricbet/Home-Discount Code.png" /
-            .sc-content
-              p
-                |discount code
-          li
-            img alt="Slider images" src="images/cricbet/Cart.png" /
-            .sc-content
-              p
-                |cart
-          li
-            img alt="Slider images" src="images/cricbet/Splash.png" /
-            .sc-content
-              p
-                |SPLASH SCREEN
+                |Friends
           li
             img alt="Slider images" src="images/cricbet/Home.png" /
             .sc-content
               p
-                |home
+                |Home
           li
-            img alt="Slider images" src="images/cricbet/Location.png" /
+            img alt="Slider images" src="images/cricbet/Activity-Feed.png" /
             .sc-content
               p
-                |location
+                |Activity Feed
           li
-            img alt="Slider images" src="images/cricbet/Navigation Drawer.png" /
+            img alt="Slider images" src="images/cricbet/Daily_Bonus_Collected.png" /
             .sc-content
               p
-                |navigation drawer      
+                |Daily Bonus
           li
-            img alt="Slider images" src="images/cricbet/Notifications-No Notifs.png" /
+            img alt="Slider images" src="images/cricbet/Match_Main.png" /
             .sc-content
               p
-                |No Notifications
+                |Main Match
           li
-            img.small alt="Slider images" src="images/cricbet/Order Confirmation-1.png" /
+            img alt="Slider images" src="images/cricbet/Match_Question_Batsman.png" /
             .sc-content
               p
-                |Order Confirmation
+                |Match Question  
           li
-            img.small alt="Slider images" src="images/cricbet/Order Confirmation-2.png" /
+            img alt="Slider images" src="images/cricbet/Match_Question_Boundry.png" /
             .sc-content
               p
-                |Order Confirmation
+                |Match Question
           li
-            img alt="Slider images" src="images/cricbet/Payment Method.png" /
+            img.small alt="Slider images" src="images/cricbet/Match_Questions_All.png" /
             .sc-content
               p
-                |Payment Mehtod
-          li
-            img alt="Slider images" src="images/cricbet/Address.png" /
-            .sc-content
-              p
-                |Address
-            
+                |Match Questions
+  
+              
+
+  
 
 .section.new-home-content.clients.testimonial
   .casestudy-testimonial
@@ -285,7 +286,7 @@ layout: parallex_layout
       | Testimonials <span class="border"></span>
     
     img src="images/santosh.jpg" alt="Client image"/
-    p
+    p.case
       |We loved working with Parallel Labs for the complex task of redesigning the app grounds up based on user-feedback. The team was attentive to our requirements, suitably adaptive and above all were very excited to work on the CricBet game. Highly recommended.
     h4
       |Pratik Shah, Founder, Cricbet

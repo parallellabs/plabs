@@ -2,23 +2,29 @@ form.section.main-form method="post"
     svg.close-form
 			use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
 	.inner-box
-		.wrap#firstForm
+		.wra#firstForm
 			h4
-				| Hi, What’s your name ?
-			p 
-				| We love humans too, lets get to know you better.
-			.group
-		        input#clientName.textField type="text"
-		        span.highlight
-		        span.bar
-		        label Floating Label
-		        p.message Please enter your real name. We don't talk to anonymous people :-)
-		        svg.cross-icon
-  					use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
+				| Tell us about your project
+        
+        .checkgroup
+          input type="checkbox"
+            label Product Strategy
+          input type="checkbox"
+            label Interface Design
+          input type="checkbox"
+            label Front - end Dev (Web Only)
+          
+        textarea type="text" placeholder="Objective, Target Audience, Competitors, Deadlines etc."
+        span.note Information about your project helps us have meaningful conversations
+            
+        input.input type="text" placeholder="Attach Google Drive / Dropbox Links"
 
-		    .action
-		    	button.btn.next type="button" 
-					| Next <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg>
+  		  .action
+  		  	/ button.btn.next type="button" 
+  				/ | Next <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg>
+          .btn.new.next.coming-soon type="button"
+            .skewed.topaz
+              span NEXT
 		.wrap#secondForm
 			h4
 				| Hi <span class="client">Robin</span>, Tell us briefly about your project.
@@ -129,9 +135,3 @@ form.section.main-form method="post"
 					/ | Send <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg> 
 		    	button.btn.close-form type="button" 
 					| Close  
-
-
-
-
-
-

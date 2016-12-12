@@ -247,10 +247,13 @@
                 li{
                     a{
                         color:#fff;
+                        transition: 0.2s all ease-in;
+
                         &:hover,
                         &:active,
                         &:focus{
-                          color:#243f53;
+                          transition: 0.2s all ease-in;
+                          color:#fff;
                           font-weight: 500;
                         }
                     }

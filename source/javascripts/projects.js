@@ -125,10 +125,19 @@ $(document).ready(function(){
     });
 
 
+
+
+		$("#screen-slider").owlCarousel({
+			navigation : false, // Show next and prev buttons
+			slideSpeed : 300,
+			paginationSpeed : 400,
+			singleItem:true,
+		});
+
 	// slider initialisetion
 	$('#sky-carousel').carousel({
-		itemWidth: 600,
-		itemHeight: 400,
+		itemWidth: 700,
+		itemHeight: 500,
 		distance: 5,
 		enableMouseWheel: false,
 		navigationButtonsVisible: false,
@@ -153,6 +162,30 @@ $(document).ready(function(){
 		itemWidth: 300,
 		itemHeight: 280,
 		distance: 30,
+		slideSpeed: 0.75,
+		loop: true,
+		enableMouseWheel: false,
+		navigationButtonsVisible: true,
+		selectedItemDistance: 50,
+		selectedItemZoomFactor: 1,
+		unselectedItemZoomFactor: 0.67,
+		unselectedItemAlpha: 0.6,
+		motionStartDistance: 170,
+		topMargin: 0,
+		gradientStartPoint: 0.35,
+		gradientOverlayColor: "#f1f5f9",
+		gradientOverlaySize: 110,
+		reflectionDistance: 1,
+		reflectionAlpha: 0.35,
+		reflectionVisible: false,
+		reflectionSize: 70,
+		selectByClick: true
+	});
+
+	$('#sky-carousel-3').carousel({
+		itemWidth: 600,
+		itemHeight: 550,
+		distance: 250,
 		slideSpeed: 0.75,
 		loop: true,
 		enableMouseWheel: false,

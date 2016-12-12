@@ -71,7 +71,7 @@ configure :build do
   # activate :asset_hash
 
   # activate :gzip
-  
+
   # Use relative URLs
   activate :relative_assets
 
@@ -97,5 +97,3 @@ activate :deploy do |deploy|
   deploy.user            = 'PLlive@parallellabs.io'
   deploy.password        = 'Zentigrity26#'
   end
-
-

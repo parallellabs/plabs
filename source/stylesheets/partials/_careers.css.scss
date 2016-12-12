@@ -387,6 +387,10 @@
                               max-width: 100%;
                               width: auto;
                               height: inherit;
+
+                              @media(max-width: 580px){
+                                max-width: 75%;
+                              }
                           }
                           .item-img{
                             position: absolute;
@@ -412,6 +416,12 @@
                                       width: 250px;
                                       background: #fcc32c;
                                       content: '';
+
+                                      @media(max-width: 580px){
+                                        right: 0 !important;
+                                        width: 200px;
+                                        height: 50%;
+                                      }
                                   }
                                   &:before{
                                     position: absolute;

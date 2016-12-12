@@ -13,166 +13,186 @@ layout: parallex_layout
 - @twitter_url = "http://parallellabs.io/explara.html"
 - @twitter_image = "http://parallellabs.io/images/workpage_images/Explara_web2.png"
 
-.parallax
-    = partial "layouts/header.slim"
-	.parallax__layer.parallax__layer--back
-		/Hero banner style
-		.master-banner.sub-banner
-			.banner-content.explara-web
-				h1 Turning Explara to a discovery Platform
-				a.btn target="_blank" href="https://www.explara.com/" Visit Website
-			.direction-box
-				img src="images/svgs/curvy-arrowDown.svg" alt="direction arrow"/
-				p Move Slider to see Difference
-		/ End
+= partial "layouts/header.slim"
 
-		/ Master slide image
-		.section.MB10-imp.slider-horizontal
-			.outer-box
-				.mac-bar
-				  span
-				  span
-				  span
-				.inner-box
-					img#changeMe draggable="false" src="images/oval-18-resize-horizontal.png" alt="resize icon"/
-				.tag-box NEW SITE
-				.tag-box.right OLD SITE
+/ content
 
-		/ Intro section
-		.section
-			.introduction.project-content
-				h2 	
-					| Lean UX in Practice
-				p 
-					|	When we decided start Parallel Labs with a vision to approach Digital Product Design using Lean UX philosophies and working in parallel with all product stakeholders, Explara was the first team which came across and said “Lets work together” and this was all while we were still building a team to make it happen. 
-				p
-					|	Practicing Lean methodologies and collaborating closely is the foundation of Parallel Labs. This collaboration became even easier as we were sharing a common space with team Explara during this project.
-		/ End
+.section.master-banner.casestudy.explar-banner
+  .overlay
+    h2.title
+      | Transforming Explara to an Experience Discovery Platform
+  .members
+    .member
+      |<img src="../images/Robin.jpg" alt="Robin" />
+      |<span class="member-name">Robin</span>
+      |<span class="role">UX Design</span>
+
+    .member
+      |<img src="../images/Chaitanya.jpg" alt="Chaitanya" />
+      |<span class="member-name">Chaitanya</span>
+      |<span class="role">UI Design</span>
+
+    .member
+      |<img src="../images/Rakesh.jpg" alt="Rakesh" />
+      |<span class="member-name">Rakesh</span>
+      |<span class="role">Frontend Dev</span>
+  
+  .stats
+    .stat
+      |<span class="numbers">03</span>
+      |<span class="stat-text">Members</span>
+    .slant
+      
+    .stat
+      |<span class="numbers">05</span>
+      |<span class="stat-text">Weeks</span>
+    .slant
+      
+    .stat
+      |<span class="numbers">04</span>
+      |<span class="stat-text">Brainstroming Sessions</span>
+    .slant
+      
+    .stat
+      |<span class="numbers">03</span>
+      |<span class="stat-text">Design Reviews</span>
+      
+.section.new-home-content.casestudy-content
+  p
+    |Explara is a very special client for us and we have been working with them as a design partner for over 3 years now. We have been there as a design partner right from the time when they were an early stage startup with a five people time that used to share office space with us to being a 50+ people team with global presence. Along the journey came many pivots to the business model from being a event ticketing platform to being a personalised experiences platform, and now again towards shifting focus towards being a suite of suite of apps for event organisers. But we worked together with Explara team as their extended design team. Here is a glimpse how Explara has evolved over the last few years:
+  h2.PT-60
+    |Showcasing Movies on the homepage<span class="border ML0-imp"></span>
+  p
+    |These were designed for the launch of movie ticketing on Explara and show a snap of latest movies in the city on home. Unfortunately, movie ticketing in India is a lobby and finally Explara failed to launch this module but it has been one of our favorite design works for them.
+  
+.section.movie
+  img src="images/explara/explara-movies.jpg" alt="expalara movies screen"
+
+.section.new-home-content.casestudy-content
+  h2.PT-120
+    |Common Search for experiences, communities and topics <span class="border ML0-imp"></span>
+  p
+    |New navigation was designed to ease discovery but by choosing the right colors, position and layout we managed to give search its due importance though occupying small space.
+  img src="images/explara/explara-search.jpg" alt="explara search screen"
+  
+  h2.PT-120
+    |Not in a mood for Trek? How about rafting or camping<span class="border ML0-imp"></span>
+  p
+    |While looking for interesting stuff to over a weekend, you are never too sure and are in a exploratory mood. You might be in a mood for a trek but if you don’t find something interesting, we wanted to make users think of other possibilities like Rafting, Camping and make sure they find something they like on the site easily. Hence, we used the top band with a visual representation of categories.
+  img src="images/explara/explara-nav.jpg" alt="explara nav screen"
+                        
+  h2.PT-120
+    |Allowing organisers to accept bookings on their site with Widgets<span class="border ML0-imp"></span>
+  p
+    |Nobody likes leaving a site to another to complete a booking. It reduces trust and authenticity of the third party site and hence we came up with an idea of an embeddable widget where users can complete entire booking on the organisers website with a one page checkout without even creating an account. It can also be customised with the organisers website with smart use of an accent color.
+  |<img src="images/explara/explara-widget.jpg" alt="explara widget screen"/>
+  
+  h2.PT-120
+    |Increasing signups by the yellow band for new users landing on topic pages<span class="border ML0-imp"></span>
+  p
+    |One of the key promises of the platform was to offer personalized experience and recommendations. Yellow bands recommending users to signup or login was a neat but powerful way of increasing signups without obstructing the flow.
+  |<img src="images/explara/explara-topic.jpg" alt="explara topic screen"/>
+  
+  h2.PT-120
+    |Capturing interests on signups for a personalized experience<span class="border ML0-imp"></span>
+  p
+    |Sign Up process encouraged Facebook signups and helped users indicate their interests and personalize app experience accordingly.
+    
+.section.movie
+  img src="images/explara/explara-personalise.jpg" alt="expalara personalise screen"
 
 
-		/ Image blure section
-		.section.blur-container
-			.img-src style="background-image:url('images/explara_scroll.png')"
-			.img-src.blurred-img style="background-image:url('images/ExplaraBlured.png')"
-			.content
-				h2.design-goals
-					| Design Goals
-				.conversetion
-					img class="user" src="images/santosh.jpg" alt="User image"
-					.message
-						| We want to make Explara a discovery platform for experiences 
-						p 
-							| Santosh Panda
-				.conversetion
-					.message
-						| Let’s engage users better and make them come again &amp; again 
-						p 
-							| Robin
-					img class="user" src="images/robin.jpeg" alt="User image"
-				.conversetion
-					img class="user" src="images/ashok.jpeg" alt="User image"
-					.message
-						| I am tired of customer phone calls. Let's make it really easy to use.
-						p
-							| Ashok
-				.conversetion
-					.message
-						| Let’s keep the design minimal and let experiences stand out.
-						p
-							| Chaitanya
-					img class="user" src="images/chaitanya.jpg" alt="User image"
-				.conversetion
-					img class="user" src="images/rakesh.jpg" alt="User image"
-					.message
-						| Let’s make best use of Front-end technologies. We can do masonry and uneven layouts.
-						p
-							| Rakesh
-	.parallax__layer.parallax__layer--base
-		.section.project-content.trigger
-			h2
-				| Navigation to facilitate both prominent search and deep navigation
-			p.MB60-imp.pos-rel 
-				| We had two kinds of users, one who exactly knew what they wanted and others who came to browse. We chose this approach to navigation in an attempt to create a experience that facilitates deep navigation and prominent search.
-				span.direction-box
-					img.down-arrow src="images/svgs/curvy-arrowDown.svg" alt="direction arrow"/
-			img.box-shadow-none class="fluid-width" src="images/Nav_Bar_search.png" alt="Explara header"
-			h2
-				| Embeddable Widgets
-			p
-				| Letting organizers facilitate bookings on their website without making users leave their site with a one screen checkout widget which could be customized to suit user website.
-			img.box-shadow-none class="container " src="images/02-open.png" alt="Checkout image"
 
-		.section.project-content
-			h2
-				| Call to Actions for users without a account
-			p
-				| One of the key promises of the platform was to offer personalized experience and recommendations. Yellow bands recommending users to signup or login was a neat but powerful way of increasing signups without obstructing the flow.
-			img.box-shadow-none class="banner-img" src="images/TopicPage.png" alt="Explara Banner"
+.section.new-home-content.interfaces
+  .content-section
+    h2
+      |Beautiful Interface<span class="border"></span>
+    img.laptop src="images/explara/mock.png"/
+    .sky-carousel#sky-carousel-3
+      .sky-carousel-wrapper
+        ul.sky-carousel-container
+          li
+            img alt="Slider images" src="images/explara/Topic.png" /
+            .sc-content
+              p
+                |topic
+          li
+            img alt="Slider images" src="images/explara/Home.png" /
+            .sc-content
+              p
+                |home
+          li
+            img alt="Slider images" src="images/explara/Category.png" /
+            .sc-content
+              p
+                |category
+          li
+            img alt="Slider images" src="images/explara/Search-Results.png" /
+            .sc-content
+              p
+                |search results
+          li
+            img alt="Slider images" src="images/explara/Search.png" /
+            .sc-content
+              p
+                |search
+          li
+            img alt="Slider images" src="images/explara/Segment.png" /
+            .sc-content
+              p
+                |segment
+          li
+            img alt="Slider images" src="images/explara/Select-City.png" /
+            .sc-content
+              p
+                |select city
 
-		.section.project-content
-			h2
-				| Personalized Onboarding
-			/ .wrap
-			p
-				| SignUp process encouraged Facebook signups and helped users indicate their interests and personalize app experience accordingly.
-			img class="fluid-width" src="images/Personalise.jpg" alt="Explara Banner"
 
-		.section
-			.tiles-box
-				.tile.fancy
-					a.page.m-trigger.lightbox href="images/Event01.jpg" data-imagelightbox="f"
-						img src="images/Event01.jpg" alt="Event Listing"/
-					a.page.m-trigger.lightbox href="images/Event02.jpg" data-imagelightbox="f"
-						img src="images/Event02.jpg" alt="User Profile"/
-					a.page.m-trigger.lightbox href="images/Event03.jpg" data-imagelightbox="f"
-						img src="images/Event03.jpg" alt="Checkout Flow"/
+.section.new-home-content.clients.testimonial
+  .casestudy-testimonial
+    svg
+      use xlink:href="/images/svgs/iconset.svg#icon-quote"
+    h2
+      | Testimonials <span class="border"></span>
+    
+    img src="images/santosh.jpg" alt="Client image"/
+    p.case
+      |We loved working with Parallel Labs for the complex task of redesigning the app grounds up based on user-feedback. The team was attentive to our requirements, suitably adaptive and above all were very excited to work on the CricBet game. Highly recommended.
+    h4
+      |Pratik Shah, Founder, Cricbet
+      
+.section.new-home-content.project-nav
+  a href="javascript:void(0);"
+    .prev.box-shape
+      .inside
+        |<span class="project-name">CHAI POINT</span>
+        |<span class="project-desc">INDIA RUNS ON CHAI</span>
+    .box2.FL-l
+      svg
+        use xlink:href="images/svgs/iconset.svg#icon-left-arrow"
+      
+  .fancy-line
+    |See more awesome stuff
+  
+  a href="javascript:void(0);"
+    .next.box-shape
+      .inside
+        |<span class="project-name">HOUSEJOY</span>
+        |<span class="project-desc">HOME SERVICES</span>
+    .box2.FL-r
+      svg
+        use xlink:href="images/svgs/iconset.svg#icon-right-arrow"
+      
+.section.new-home-content.tell-us
+	.content
+		h2
+			| We would love to hear about your project.
+		svg
+			use xlink:href="images/svgs/iconset.svg#icon-filled-like" 
+		p
+			| Answer few questions to help us get a better context of your project and meaningful conversation.
+		a.btn.new.open-form href="javascript:void(0);"
+			.skewed.topaz
+				span Get in touch
 
-		.section.project-content.testimonials.insider.ex-web
-			h2
-				| Testimonial
-			p
-				| Explara has been working with Parallel Labs for design solutions since the day they started! 
-			p
-				| We are really grateful for their services, they operated as our own extended UX team during product conceptualisation to ideation and to multiple development iterations as well. Apart from User Experience for all our products, Parallel Labs also took care of interface designs for our mobile apps and web solutions. We are great fan of their work and reliability!
-			.author
-				span.img
-					img src="images/santosh.jpg" alt="Author's picture"
-				span.name 
-					| Santosh Panda <span class="helper-text"> Founder @ Explara. </span>
-		
-		/ New project section
-		.section.new-home-content.tell-us
-			.content
-				h2
-					| We would love to hear about your project.
-				svg
-					use xlink:href="images/svgs/iconset.svg#icon-filled-like" 
-				p
-					| Answer few questions to help us get a better context of your project and meaningful conversation.
-				a.btn.new.open-form href="javascript:void(0);"
-					.skewed.topaz
-						span Get in touch
-		
-		= partial "layouts/new_footer.slim"
-		= partial "layouts/main_form.slim"
-		
-	   
-    / = partial "layouts/modal.slim"
-/ Floating button
-#wrapper 
-	.button.button-sub  
-		a href="index.html" Home
-	.button.button-sub  
-		a href="about.html" About Us
-	.button.button-sub 
-		a href="blog.html" Blog	
-	.button.button-sub 
-		a.open-form href="#" Get in Touch
-	.water-drop
-	.button.button-floating
-  		svg.plus 
-			use xlink:href="images/svgs/iconset.svg#icon-Logo_Color"
-		svg.edit
-			use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
-	.button-floating-shadow
-.btn-overlay
+= partial "layouts/main_form.slim"

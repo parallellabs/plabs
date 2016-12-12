@@ -57,7 +57,7 @@
 
             color: #243f53;
             font-weight: 300;
-            font-size: rem(24);
+            font-size: rem(30);
             font-family: $base-font-family;
 
             span{
@@ -77,9 +77,11 @@
             	font-size: rem(14);
             }
 
-            color: #777;
+            color: #555;
             font-weight: 300;
-            font-size: rem(16);
+            font-size: rem(18);
+            line-height: 28px;
+
             font-family: $base-font-family
         }
         .block {
