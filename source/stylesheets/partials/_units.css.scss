@@ -174,8 +174,25 @@ svg {
 .MB60-imp {
     margin-bottom: 60px !important;
 }
+
+.MB110{
+  margin-bottom: 110px;
+}
 .ML0-imp{
     margin-left:0 !important;
+}
+.ML-17{
+  margin-left: -17px;
+}
+.ML-30{
+  margin-left: -30px;
+}
+.ML-20{
+  margin-left: 20px;
+}
+
+.MT-120{
+  margin-top: 120px;
 }
 .PB60 {
     padding-bottom: 60px;
@@ -630,6 +647,14 @@ svg {
                     color: #fff;
                 }
             }
+
+            &.eat-green{
+              background-color: #009e5f;
+
+              span {
+                  color: #fff;
+              }
+            }
             &.border {
                 border: 1px solid #fff;
                 background-color: transparent;
@@ -639,6 +664,42 @@ svg {
                 }
             }
         }
+
+        .skewed-inverse {
+            @include transform(skewX(-25deg));
+            overflow: hidden;
+            margin-left: 24px;
+            width: 230px;
+            height: inherit;
+            background-color: #16c6c2;
+
+            span {
+                @include transform(skewX(25deg));
+                width: 85px;
+                color: #fff;
+                text-align: center;
+                font-weight: 300;
+                font-size: rem(18);
+                line-height: 48px;
+            }
+
+            &.topaz {
+                background-color: #16c6c2;
+
+                span {
+                    color: #fff;
+                }
+            }
+            &.border {
+                border: 1px solid #fff;
+                background-color: transparent;
+
+                span {
+                    color: #fff;
+                }
+            }
+        }
+
     }
     &.coming-soon {
         cursor: default;
@@ -665,11 +726,12 @@ textarea {
     width: 100%;
     border: none;
     background-color: #fbfbfb;
-    border: solid 1px #cccccc;
+    // border: solid 1px #cccccc;
     border-radius: 3px;
     box-shadow: none;
     color: #5c5c5c;
     font-size: 15px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
 }
 input[type="text"]:focus,
 input[type="number"]:focus,
@@ -748,6 +810,11 @@ textarea:valid ~ label.active-input {
     margin-top: 10px;
     text-align: left;
     opacity: 0;
+}
+.row .message{
+  margin-top: 10px;
+  text-align: left;
+  opacity: 0;
 }
 .group #counter {
     // display: none;
@@ -1466,3 +1533,13 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 // Based on http://codepen.io/skeurentjes/
+
+.media-card.small.instagram .left .content {
+    max-height: 211px;
+    overflow-y: hidden;
+}
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+.media-card.small.instagram .left .content {
+    max-height: 87px;
+}
+}

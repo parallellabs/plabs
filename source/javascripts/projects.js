@@ -124,9 +124,6 @@ $(document).ready(function(){
         $('#wrapper').removeClass("button-floating-clicked");
     });
 
-
-
-
 		$("#screen-slider").owlCarousel({
 			navigation : false, // Show next and prev buttons
 			slideSpeed : 300,
@@ -134,7 +131,7 @@ $(document).ready(function(){
 			singleItem:true,
 		});
 
-	// slider initialisetion
+	// slider initialisation
 	$('#sky-carousel').carousel({
 		itemWidth: 700,
 		itemHeight: 500,

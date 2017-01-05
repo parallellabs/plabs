@@ -21,6 +21,39 @@ $(document).ready(function(){
 		// $('.main-form').addClass('back');
 	});
 
+  if($(window).width() > 601){
+
+  $('.more-options').on('click', function(){
+
+    if($(this).is(":checked")){
+        $(".options").addClass("show").slideDown();
+          //$(".checkgroup").css('margin-bottom', '110px');
+          // heightBlock = $(this).parents('.checkgroup').outerHeight() + 95;
+          // console.log(heightBlock);
+          $(this).parents('.checkgroup').css('height',127);
+        }
+    else{
+        $(".options").slideUp();
+        //$(".checkgroup").css('margin-bottom', '0px');
+        // heightBlock = $(this).parents('.checkgroup').outerHeight();
+        // console.log(heightBlock);
+        $(this).parents('.checkgroup').css('height',50);
+
+    }
+	});
+}
+  if($(window).width() < 601){
+
+  $('.more-options').on('click', function(){
+
+    if($(this).is(":checked")){
+        $(".options").addClass("show2").slideDown();
+        }
+    else{
+        $(".options").slideUp();
+    }
+  });
+}
 	// input counter initialised
 	var input = $("#projectBrief");
 	// var label = $("#thirdForm .group span");

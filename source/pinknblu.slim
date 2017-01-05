@@ -1,0 +1,356 @@
+---
+layout: parallex_layout
+---
+- @title = "Pink N Blu | Parallel Labs"
+- @description = "A fresh food ordering experience for pink"
+- @keyword = "pinknblu User Experience Design Case Study, Parallel Labs pinknblu"
+- @og_title = "Parallel Labs Blog"
+- @og_description = "A fresh food ordering experience for pinknblu"
+- @og_url = "http://parallellabs.io/pinknblu.html"
+- @og_image = "http://parallellabs.io/images/svgs/logo.png"
+- @twitter_title = "Parallel Labs Blog"
+- @twitter_description = "A fresh food ordering experience for pinknblu"
+- @twitter_url = "http://parallellabs.io/pinknblu.html"
+- @twitter_image = "http://parallellabs.io/images/svgs/logo.png"
+
+= partial "layouts/header.slim"
+
+/ content
+
+.section.master-banner.casestudy.pinknblu-banner
+  .overlay
+    h2.title
+      | A fresh food ordering Experience for <span class="eatf-yellow">pinknblu</span>
+  .members
+    .member
+      |<img src="../images/Robin.jpg" alt="Robin" />
+      |<span class="member-name">Robin</span>
+      |<span class="role">UX Design</span>
+
+    .member
+      |<img src="../images/Chaitanya.jpg" alt="Chaitanya" />
+      |<span class="member-name">Chaitanya</span>
+      |<span class="role">UI Design</span>
+
+    .member
+      |<img src="../images/Rakesh.jpg" alt="Rakesh" />
+      |<span class="member-name">Rakesh</span>
+      |<span class="role">Front-end Dev</span>
+  
+  .stats
+    .stat
+      |<span class="numbers">03</span>
+      |<span class="stat-text">Members</span>
+    .slant
+      
+    .stat
+      |<span class="numbers">05</span>
+      |<span class="stat-text">Weeks</span>
+    .slant
+      
+    .stat
+      |<span class="numbers">04</span>
+      |<span class="stat-text">Brainstroming Sessions</span>
+    .slant
+      
+    .stat
+      |<span class="numbers">03</span>
+      |<span class="stat-text">Design Reviews</span>
+      
+.section.new-home-content.casestudy-content
+  p
+    |PinknBlu is a parenting companion for parents. It has three core objectives to help parents:
+  ul.pinknblu
+    li Discover - Helps parents find them everything from interesting events for kids in their neightbourhood to the best pediatrician in locality.
+    li Share - Record precious moments of your kid and share them selectively with family and friends. 
+    li Community - Connect with other parents in chat groups and by reading & sharing experiences.
+  |<img src="images/pink/pnb1.gif"/>
+  
+  h2.PT-120
+    |Research is the key when Bachelors design a parenting app<span class="border ML0-imp"></span>
+  p
+    |We generally believe in “Just Enough Research” as a philosophy and believe in a lean approach to design where we move fast and iterate continously, and what helps us do that us our extremely good understanding of consumer bahvior.
+  p 
+    |But what do you do when you a team of bachelors in their twenties gets on to design a parenting app. Hence, it was a project which needed research into parenting. It was great fun talking to parents understanding the issues they face in parenting, how do they share responsibilities and what can make their life simpler.
+    
+  h2.PT-120
+    |Family Owned Kids Profiles and On-boarding<span class="border ML0-imp"></span>
+  p 
+    |Pinknblu has a unique onboarding and account structure. Since most children will be minors across different age groups typically from 0-8 years, the profile a child has to be created by a parent. At the same time, we wanted parents to share reminders, moments and a lot of other information about their kid. Hence, we designed an account creation process where parents sign up for themselves and create profile of their kids and they can invite others to manage the kids’ profile like the spouse, siblings, nanny etc. and jointly share moments and responsibilities.
+  .img-flex
+    img src="images/pink/edit-childs-profile.jpg" /
+    img src="images/pink/invite.jpg" /
+    
+  h2.PT-120
+    |It has to be a tab bar when everything is important<span class="border ML0-imp"></span>
+  p 
+    |App had a combination of discovery elements and three key call to actions. The discovery elements were activity, resources, chat and experience. and actions were to create a Reminder, Experience or Moment. Hence after lot of exploration we came up with a hybrid tab bar which uses a combination of tab bar along with a floating action button as per Google’s Material design guidelines.
+  .img-flex
+    img src="images/pink/home.jpg" /
+    img src="images/pink/home-f-a-b.jpg" /
+  
+  h2.PT-120
+    |Facilitating discussions about information in chat<span class="border ML0-imp"></span>
+  p
+    |With the intent of making discussions in chats with friends and groups more meaningful and contextual, we added a discuss workflow which allows sharing a listing on chat and discuss around it.
+  img src="images/pink/pnb2.gif" /
+
+/ .section.new-home-content.interfaces
+/   .content-section
+/     h2
+/       |Beautiful Interface<span class="border"></span>
+/     img.phone src="images/phone.png"/
+/     .sky-carousel#sky-carousel-2
+/       .sky-carousel-wrapper
+/         ul.sky-carousel-container
+/           li
+/             img alt="Slider images" src="images/pink/Activity-Inside.jpg" /
+/             .sc-content
+/               p
+/                 |acivity inside
+/           li
+/             img alt="Slider images" src="images/pink/Chat-Inside.jpg" /
+/             .sc-content
+/               p
+/                 |Chat inside
+/           li
+/             img alt="Slider images" src="images/pink/Comments.jpg" /
+/             .sc-content
+/               p
+/                 |Comments
+/           li
+/             img alt="Slider images" src="images/pink/Create-Reminder.jpg" /
+/             .sc-content
+/               p
+/                 |create reminders
+/           li
+/             img alt="Slider images" src="images/pink/Home-FAB.jpg" /
+/             .sc-content
+/               p
+/                 |Home-FAB
+/           li
+/             img alt="Slider images" src="images/pink/Home-With-an-Article.jpg" /
+/             .sc-content
+/               p
+/                 |Article
+/           li
+/             img alt="Slider images" src="images/pink/Home.jpg" /
+/             .sc-content
+/               p
+/                 |Home
+/           li
+/             img alt="Slider images" src="images/pink/Moments.jpg" /
+/             .sc-content
+/               p
+/                 |Moments
+/           li
+/             img alt="Slider images" src="images/pink/Moments-Share.jpg" /
+/             .sc-content
+/               p
+/                 |Moments Share
+/           li
+/             img alt="Slider images" src="images/pink/Splash.jpg" /
+/             .sc-content
+/               p
+/                 |SPLASH SCREEN
+/           li
+/             img alt="Slider images" src="images/pink/Navigation-Drawer.jpg" /
+/             .sc-content
+/               p
+/                 |navigation drawer      
+/           li
+/             img alt="Slider images" src="images/pink/No-Favorites.jpg" /
+/             .sc-content
+/               p
+/                 |No favourites
+/           li
+/             img.small alt="Slider images" src="images/pink/Profile-Details.jpg" /
+/             .sc-content
+/               p
+/                 |Profile details
+/           li
+/             img.small alt="Slider images" src="images/pink/Reminders.jpg" /
+/             .sc-content
+/               p
+/                 |Reminders
+/           li
+/             img alt="Slider images" src="images/pink/Resources.jpg" /
+/             .sc-content
+/               p
+/                 |Resources
+/           li
+/             img alt="Slider images" src="images/pink/Schools.jpg" /
+/             .sc-content
+/               p
+/                 |Schools
+/           li 
+/             img alt="Slider Images" src="images/pink/Search-Results.jpg" /
+/             .sc-content
+/               p 
+/                 |Search Results
+/           li 
+/             img alt="Slider Images" src="images/pink/Walkthrough-1.jpg" /
+/             .sc-content
+/               p 
+/                 |Walkthrough 1
+/                 
+/           li 
+/             img alt="Slider Images" src="images/pink/Walkthrough-2.jpg" /
+/             .sc-content
+/               p 
+/                 |Walkthrough 2
+/                 
+/           li 
+/             img alt="Slider Images" src="images/pink/Walkthrough-3.jpg" /
+/             .sc-content
+/               p 
+/                 |Walkthrough 3
+
+.section.new-home-content.interfaces
+  .content-section
+    h2
+      |Beautiful Interface<span class="border"></span>
+    img.phone src="images/phone.png"/
+    .sky-carousel#sky-carousel-2
+      .sky-carousel-wrapper
+        ul.sky-carousel-container
+          li
+            img alt="Slider images" src="images/pink/Activity-Inside.jpg" /
+            .sc-content
+              p
+                |Acitivity 
+          li
+            img alt="Slider images" src="images/pink/Comments.jpg" /
+            .sc-content
+              p
+                |Comments
+          li
+            img alt="Slider images" src="images/pink/Chat-Inside.jpg" /
+            .sc-content
+              p
+                |Chat inside
+          li
+            img alt="Slider images" src="images/pink/Create-Reminder.jpg" /
+            .sc-content
+              p
+                |create reminder
+          li
+            img alt="Slider images" src="images/pink/Home-FAB.jpg" /
+            .sc-content
+              p
+                |home-FAB
+          li
+            img alt="Slider images" src="images/pink/Home-With-an-Article.jpg" /
+            .sc-content
+              p
+                |Article
+          li
+            img alt="Slider images" src="images/pink/home.jpg" /
+            .sc-content
+              p
+                |Home
+          li
+            img alt="Slider images" src="images/pink/Moments.jpg" /
+            .sc-content
+              p
+                |Moments
+          li
+            img alt="Slider images" src="images/pink/Splash.jpg" /
+            .sc-content
+              p
+                |SPLASH SCREEN
+          li
+            img alt="Slider images" src="images/pink/Moments-Share.jpg" /
+            .sc-content
+              p
+                |Moments Share
+
+          li
+            img.small alt="Slider images" src="images/pink/Reminders.jpg" /
+            .sc-content
+              p
+                |reminders
+          li
+            img alt="Slider images" src="images/pink/Resources.jpg" /
+            .sc-content
+              p
+                |resources
+          li
+            img alt="Slider images" src="images/pink/Schools.jpg" /
+            .sc-content
+              p
+                |schools
+          li 
+            img alt="Slider Images" src="images/pink/Search-Results.jpg" /
+            .sc-content
+              p 
+                |Search Results
+          li 
+            img alt="Slider Images" src="images/pink/Walkthrough-1.jpg" /
+            .sc-content
+              p 
+                |Walkthrough 1
+                
+          li 
+            img alt="Slider Images" src="images/pink/Walkthrough-2.jpg" /
+            .sc-content
+              p 
+                |Walkthrough 2
+                
+          li 
+            img alt="Slider Images" src="images/pink/Walkthrough-3.jpg" /
+            .sc-content
+              p 
+                |Walkthrough 3
+            
+
+.section.new-home-content.clients.testimonial
+  .casestudy-testimonial
+    svg
+      use xlink:href="/images/svgs/iconset.svg#icon-quote"
+    h2
+      | Testimonials <span class="border"></span>
+    
+    img src="images/santosh.jpg" alt="Client image"/
+    p.case
+      | Explara has been working with Parallel Labs for design solutions since the day they started! 
+    p.case
+      |We are really grateful for their services, they operated as our own extended UX team during product conceptualisation to ideation and to multiple development iterations as well. Apart from User Experience for all our products, Parallel Labs also took care of interface designs for our mobile apps and web solutions. We are great fan of their work and reliability!
+    h4
+      | Santosh Panda, Explara
+      
+.section.new-home-content.project-nav
+  a href="javascript:void(0);"
+    .prev.box-shape
+      .inside
+        |<span class="project-name">CHAI POINT</span>
+        |<span class="project-desc">INDIA RUNS ON CHAI</span>
+    .box2.FL-l
+      svg
+        use xlink:href="images/svgs/iconset.svg#icon-left-arrow"
+      
+  .fancy-line
+    |See more awesome stuff
+  
+  a href="javascript:void(0);"
+    .next.box-shape
+      .inside
+        |<span class="project-name">HOUSEJOY</span>
+        |<span class="project-desc">HOME SERVICES</span>
+    .box2.FL-r
+      svg
+        use xlink:href="images/svgs/iconset.svg#icon-right-arrow"
+      
+.section.new-home-content.tell-us
+	.content
+		h2
+			| We would love to hear about your project.
+		svg
+			use xlink:href="images/svgs/iconset.svg#icon-filled-like" 
+		p
+			| Answer few questions to help us get a better context of your project and meaningful conversation.
+		a.btn.new.open-form href="javascript:void(0);"
+			.skewed.topaz
+				span Get in touch
+
+= partial "layouts/main_form.slim"

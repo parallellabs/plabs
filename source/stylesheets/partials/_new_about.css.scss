@@ -2,6 +2,10 @@
   max-width: 60%;
   margin: 0 auto;
 
+  @include media(max-width 480px){
+    max-width: 80%;
+  }
+
   p{
     text-align: left;
     font-family: $base-font-family;
@@ -17,6 +21,7 @@
   margin-top: 120px;
   margin-bottom: 120px;
   position: relative;
+  height: 100%;
 
   .box{
     display: inline-block;
@@ -53,42 +58,42 @@
   }
 }
 
-// @keyframes slidedown {
-//     0% {
-//         transform: skew(-30deg) translate3d(-18px, -80px, 0px);
-//         animation-timing-function: ease-in;
-//     }
-//     50% {
-//         transform: skew(-30deg) translate3d(-18px, -40px, 0px);
-//         animation-timing-function: ease-out;
-//     }
-//     100% {
-//         transform: skew(-30deg) translate3d(-18px, -20px, 0px);
-//
-//     }
-// }
-//
-//
-// @keyframes slideup {
-//     0% {
-//         transform: skew(-30deg) translate3d(0px, 80px, 0px);
-//         animation-timing-function: ease-in;
-//     }
-//     50% {
-//         transform: skew(-30deg) translate3d(0px, 40px, 0px);
-//         animation-timing-function: ease-out;
-//     }
-//     100% {
-//         transform: skew(-30deg) translate3d(0px, 20px, 0px);
-//
-//     }
-// }
-//
-// .slideup{
-//   animation: slideup 5s;
-// }
-//
-// .slidedown{
-//   animation: slidedown 5s;
-//
-// }
+@keyframes slidedown {
+    0% {
+        transform: skew(-30deg) translate3d(-18px, -80px, 0px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: skew(-30deg) translate3d(-18px, -40px, 0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: skew(-30deg) translate3d(-18px, -20px, 0px);
+
+    }
+}
+
+
+@keyframes slideup {
+    0% {
+        transform: skew(-30deg) translate3d(0px, 80px, 0px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: skew(-30deg) translate3d(0px, 40px, 0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: skew(-30deg) translate3d(0px, 20px, 0px);
+
+    }
+}
+
+.slideup{
+  animation: slideup 5s;
+}
+
+.slidedown{
+  animation: slidedown 5s;
+
+}

@@ -172,7 +172,7 @@
                 	margin-left:0 !important;
                 	padding: 30px;
                 }
-                @include media(max-width 480px){
+                @include media(max-width 580px){
                 	width:100%;
                 }
 
@@ -209,6 +209,8 @@
                 font-weight: 300;
                 font-size: rem(16)
             }
+
+
         }
     }
     &.clients {

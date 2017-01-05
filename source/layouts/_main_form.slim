@@ -1,137 +1,134 @@
 form.section.main-form method="post"	
-    svg.close-form
-			use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
-	.inner-box
-		.wra#firstForm
-			h4
-				| Tell us about your project
+  svg.close-form
+    use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
+  .inner-box#firstForm
+    .wrap
+      h4
+        | Tell us about your project
+      .checkgroup
+        input type="checkbox" id="op1" value="product strategy"
+          label for="op1"
+            span class="box"
+              |<svg><use xlink:href="images/svgs/iconset.svg#icon-checkmark"></use></svg>
+            span class="name" 
+              |Product Strategy
+              
+        input type="checkbox" class="more-options" id="op2" value="interface design"
+          label for="op2" 
+            span class="box"
+              |<svg><use xlink:href="images/svgs/iconset.svg#icon-checkmark"></use></svg>
+            span class="name"
+              |Interface Design
+          .options
+            / ul
+            /   li
+            /     |<svg><use xlink:href="images/svgs/iconset.svg#icon-android"></use></svg>
+            /     span class="small-name ML-10" Android
+            /     
+            /   li 
+            /     |<svg><use xlink:href="images/svgs/iconset.svg#icon-ios-logo"></use></svg>
+            /     span class="small-name ML-20" iOS
+            /   li 
+            /     |<svg><use xlink:href="images/svgs/iconset.svg#icon-web"></use></svg>
+            /     span class="ML-20 small-name"Web
+            input type="checkbox" id="op21"
+              label for="op21"
+                span class="box2"
+                  |<svg><use xlink:href="images/svgs/iconset.svg#icon-android"></use></svg>
+                  |<svg class="icon icon-checkmark"><use xlink:href="images/svgs/iconset.svg#icon-checkmark"></use></svg>
+                  span class="small-name ML-30" 
+                    |Android
+            input type="checkbox" id="op22"
+              label for="op22"
+                span class="box2"
+                  |<svg><use xlink:href="images/svgs/iconset.svg#icon-ios-logo"></use></svg>
+                  |<svg class="icon icon-checkmark"><use xlink:href="images/svgs/iconset.svg#icon-checkmark"></use></svg>
+                  span class="small-name ML-17" 
+                    |iOS
+                  
+            input type="checkbox" id="op23"
+              label for="op23"
+                span class="box2"
+                  |<svg><use xlink:href="images/svgs/iconset.svg#icon-web"></use></svg>
+                  |<svg class="icon icon-checkmark"><use xlink:href="images/svgs/iconset.svg#icon-checkmark"></use></svg>
+                  span class="small-name ML-17" 
+                    |Web
+
+        input type="checkbox" id="op3" value="front end"
+          label for="op3" 
+            span class="box"
+              |<svg><use xlink:href="images/svgs/iconset.svg#icon-checkmark"></use></svg>
+            span class="name"
+              |Front-End Dev <span class="light">(Web Only)</span>
+      
+      .group
+        label Floating Label
+        p.message Required 
+        svg.cross-icon
+        use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
+        textarea#clientName type="text" placeholder="Objective, Target Audience, Competitors, Deadlines etc."
+        span.highlight
+        / span.bar
+      
+      span.note
+        |Information about your project helps us have meaningful conversations
         
-        .checkgroup
-          input type="checkbox"
-            label Product Strategy
-          input type="checkbox"
-            label Interface Design
-          input type="checkbox"
-            label Front - end Dev (Web Only)
-          
-        textarea type="text" placeholder="Objective, Target Audience, Competitors, Deadlines etc."
-        span.note Information about your project helps us have meaningful conversations
-            
+      .group
+        |<svg class="icon icon-add-link"><use xlink:href="images/svgs/iconset.svg#icon-add-link"></use></svg>
         input.input type="text" placeholder="Attach Google Drive / Dropbox Links"
 
-  		  .action
-  		  	/ button.btn.next type="button" 
-  				/ | Next <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg>
-          .btn.new.next.coming-soon type="button"
-            .skewed.topaz
-              span NEXT
-		.wrap#secondForm
-			h4
-				| Hi <span class="client">Robin</span>, Tell us briefly about your project.
-			p 
-				| Don’t worry, we are discreet about our conversations and will keep it confidential.
-			/ .attachments
-			/ 	input#files.inputfile type="file" name="file" data-multiple-caption="{count} files selected" multiple="multiple"
-			/ 	label for="files" 
-			/ 		span 
-			/ 			| Choose a file
+      .action
+        button.btn.next.new.FL-r type="button" 
+          .skewed-inverse
+            span Next
+            |<svg><use xlink:href="images/svgs/iconset.svg#icon-arrows-long-right"></use></svg>
+  .inner-box#secondForm
+    .wrap
+      h4
+        | Tell us about yourself
+      
+      .group
+        .row.MT-40
+          .input-group
+            p.message Required 
+            input#name type="text" placeholder="Name"
+            
+          .input-group 
+            p.message Required 
+            input#company type="text" placeholder="Company"
+      
+      .group    
+        .row
+          .input-group
+            p.message Required 
+            input#email type="text" placeholder="Email"
+          
+          .input-group
+            p.message Required 
+            input#mobile type="number" placeholder="Mobile"
 
-			.group
-		        textarea#projectBrief.textField 
-		        span.highlight
-		        span.bar
-		        span#counter 0
-		        label Floating Label
-		        / p.message We need some more info (at-least 140 chars) !! Helps us have a more meaningful discussion.
-		        p.message Required.
-		        svg.cross-icon
-  					use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
-		    .action
-		    	button.btn.back type="button" 
-					| <svg><use xlink:href="images/svgs/iconset.svg#icon-Left_Arrow"></use></svg> Back
-		    	button.btn.next type="button" 
-					| Next <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg>
-		.wrap#thirdForm
-			h4
-				| What do you expect to spend on a project like this ?
-			p 
-				| How exciting the project is matters more to us than your budget.
-			.group
-		        input#budget type="text"
-		        / p.message Please enter Amount (min 3000).
-		        svg.cross-icon
-  					use xlink:href="images/svgs/iconset.svg#icon-delete_sign"
-		    .action
-		    	button.btn.back type="button" 
-					| <svg><use xlink:href="images/svgs/iconset.svg#icon-Left_Arrow"></use></svg> Back
-		    	button.btn.next type="button" 
-					| Next <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg> 
 
-		.wrap#fourthForm
-			.input-group
-				h4
-					| Share your Co-ordinates.
-				.group
-			        input#email.textField type="text" placeholder="Enter your email..."
-			        span.highlight
-			        span.bar
-			        label Floating Label
-			        p.message Please enter a valid email.
-			        svg.cross-icon
-	  					use xlink:href="images/svgs/iconset.svg#icon-delete_sign"
-				.group
-			        input#mobile.textField type="number" placeholder="Enter your Mobile number..."
-			        span.highlight
-			        span.bar
-			        label Floating Label
-			        p.message Please enter a valid Mobile Number.
-			        svg.cross-icon
-	  					use xlink:href="images/svgs/iconset.svg#icon-delete_sign"
-				.group
-			        input#company.textField type="text" placeholder="Enter your Company name..."
-			        span.highlight
-			        span.bar
-			        label Floating Label
-			        p.message Please enter a valid Mobile Number.
-			        svg.cross-icon
-	  					use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
-		    .action
-		    	button.btn.back type="button" 
-					| <svg><use xlink:href="images/svgs/iconset.svg#icon-Left_Arrow"></use></svg> Back
-		   		/  	button.btn.next href="#" type="button" 
-					/ | Next <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg> 
-		    	button.btn.next.send type="button" 
-					| Send <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg>  
-		/ .wrap#fifthForm
-		/ 	h4
-		/ 		| Is there anything else that we should know? (Optional)
-		/ 	p 
-		/ 		| We do our homework before we get talking.
-		/ 	.attachments
-		/ 		input#files type="file" name="file[]" multiple="multiple" /
-		/ 	.group
-		/         input#link.textField type="text" placeholder="Tell us more (Optional)"
-		/         span.highlight
-		/         span.bar
-		/         label Floating Label
-		/         p.message Please add any image or link.
-		/         svg.cross-icon
-  		/ 			use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
-		/     .action
-		/     	button.btn.back href="#" type="button" 
-		/ 			| <svg><use xlink:href="images/svgs/iconset.svg#icon-Left_Arrow"></use></svg> Back
-		/    		button.btn.next href="#" type="button" 
-		/ 			| Next <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg> 
-		/     	button.btn.next.send href="#" type="button" 
-		/ 			| Send <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg> 
-		.wrap#fifthForm
-			h4
-				/ | That’s It. <br> Just hit send and we will get back to you shortly.
-				| Thanks for reaching out for your project.
-			p
-				| Someone from the team will get in touch with you shortly.
-		    .action
-		   		/  	button.btn.send href="#" type="button" 
-					/ | Send <svg><use xlink:href="images/svgs/iconset.svg#icon-Right_Arrow"></use></svg> 
-		    	button.btn.close-form type="button" 
-					| Close  
+      / .group
+      /   textarea#projectBrief.textField 
+      /   span.highlight
+      /   span.bar
+      /   label Floating Label
+      /   p.message Required.
+      /   svg.cross-icon
+      /   use xlink:href="images/svgs/iconset.svg#icon-delete_sign"
+          
+      .action.send
+        button.btn.next.new type="button"
+          .skewed
+            span Send 
+          
+  .inner-box#thirdForm
+    .wrap.thankyou
+      h4
+        | Thanks for reaching out for your project.
+      p
+        | Someone from the team will get in touch with you shortly.
+      .action.send
+        button.btn.new.close-form type="button"
+          .skewed
+            span Close 

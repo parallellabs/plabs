@@ -40,12 +40,16 @@
   .skewed-bg {
       @include transform(skew(-30deg));
       @include transition(all 0.6s ease-in-out);
-      @include media($sm-mobile-devices) {
+      @include media(max-width 768px) {
           position: relative;
       }
       @include media($mobile-devices) {
         right: 0!important;
         width: 200px;
+        // height: 50%;
+      }
+
+      @include media(max-width 580px){
         height: 50%;
       }
 
@@ -91,6 +95,9 @@
         float: none;
         text-align: center;
     }
+    @include media(max-width 768px){
+      float: none;
+    }
     @include media($sm-mobile-devices) {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -112,7 +119,9 @@
       color: $dark-gray;
       font-weight: 900;
       font-size: rem(60);
-      line-height: 1.17
+      line-height: 1.17;
+      text-transform: uppercase;
+
     }
     .designation{
       padding: 20px 0 25px;
@@ -133,6 +142,14 @@
 
     .team-block{
       padding: 0 107px;
+
+      @include media(max-width 768px){
+        padding: 0 60px;
+      }
+
+      @include media(max-width 480px){
+        padding: 20px;
+      }
 
       h2.title {
           @include media($mobile-devices) {
@@ -169,9 +186,14 @@
       .team-member{
         @include span-columns(4);
 
+        @include media(max-width 768px){
+          @include span-columns(8);
+          margin: 0 auto;
+        }
         position: relative;
 
         .name{
+          text-transform: uppercase;
           @include transform(rotate(90deg));
           @include transform-origin(bottom);
 
@@ -185,6 +207,26 @@
           font-size: 40px;
           line-height: 1;
           opacity: 0.1;
+
+          @include media(max-width 768px){
+          top: 366px;
+          margin-right: -300px;
+        }
+
+        @include media(max-width 608px){
+          margin-right: -210px;
+        }
+
+        @include media(max-width 540px){
+          font-size: 28px;
+          top: 300px;
+          margin-right: -202px;
+        }
+
+        @include media(max-width 420px){
+          top: 220px;
+          margin-right: -143px;
+        }
         }
         img{
           visibility: visible;

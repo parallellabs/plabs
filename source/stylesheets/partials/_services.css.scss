@@ -145,7 +145,7 @@
       padding: 30px;
       margin-left: 40px;
 
-      @include media(max-width 1200px) {
+      @include media(max-width 1260px) {
         @include span-columns(12);
         @include omega();
         margin: 30px auto;
