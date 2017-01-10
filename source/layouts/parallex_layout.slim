@@ -28,7 +28,8 @@ html.no-js lang="en"
     link rel="stylesheet" href="/stylesheets/normalize.css"/
     link rel="stylesheet" href="stylesheets/vendors/default_skin_variation.css"/
     link rel="stylesheet" href="stylesheets/vendors/owl.carousel.css"/
-    link rel="stylesheet" href="stylesheets/vendors/animate.css"/
+    / link rel="stylesheet" href="stylesheets/vendors/animate.css"/
+    link rel="stylesheet" href="stylesheets/vendors/aos.css"/
     link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"/
     link rel="stylesheet" href="stylesheets/all.css"/
     javascript:
@@ -69,18 +70,23 @@ html.no-js lang="en"
     / script type="text/javascript" src="javascripts/jquery.parallax.min.js"
     script type="text/javascript" src="javascripts/projects.js"
     script type="text/javascript" src="javascripts/retina.min.js"
+    script type="text/javascript" src="javascripts/aos.js"
 
     javascript:
       if($(window).width() > 767)
       {
-
-
-                  $("#screen-slider").owlCarousel({
-                    navigation : false, // Show next and prev buttons
-                    slideSpeed : 300,
-                    paginationSpeed : 400,
-                    autoPlay: 4000,                  
-                  });
-
+        $("#screen-slider").owlCarousel({
+          navigation : false, // Show next and prev buttons
+          slideSpeed : 300,
+          paginationSpeed : 400,
+          autoPlay: 4000,                  
+        });
       }
+      
+      AOS.init({
+        offset: 200,
+        duration: 600,
+        easing: 'ease-in-sine',
+        delay: 100,
+      });
       

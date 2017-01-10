@@ -1,5 +1,6 @@
 .main-form {
     display: none;
+
     // &.back {
     //     .inner-box {
     //         display: block;
@@ -10,7 +11,6 @@
     //         @include transition-duration(.5s);
     //     }
     // }
-
     // @include media($mobile-devices) {
     //     background-color: #fff;
     //     .inner-box {
@@ -19,70 +19,70 @@
     //     }
     // }
         &.openForm-model {
-          background: linear-gradient(118deg, #4a738b, #16c6c2);
-        z-index: 99999;
-
-        display: block;
-        height: 100vh;
-        // max-height: 400px;
-        padding: 0 15px;
         // margin-top: 70px;
         @include position(fixed, 0 0 0 0 );
         @include outer-container(100%);
         @include media($mobile-devices) {
             @include pad(0);
+
             overflow-y: scroll;
         }
+
+        z-index: 99999;
+        display: block;
+        // max-height: 400px;
+        padding: 0 15px;
+        height: 100vh;
+          background: linear-gradient(118deg, #4a738b, #16c6c2);
 
         .close-form {
             position: absolute;
             top: 12%;
             right: 21%;
-            transform: translate(-12%, -21%);
             z-index: 9;
             width: 20px;
             height: 20px;
-            cursor: pointer;
             color: #777;
+            cursor: pointer;
+            transform: translate(-12%, -21%);
         }
-
-
         .inner-box {
+            @include media(max-width 1024px){
+              top: 7%;
+              left: 12%;
+              width: 75%;
+              height: 650px;
+            }
+            @include media(max-width 830px){
+              left: 5%;
+              width: 90%;
+              height: 650px;
+            }
+            @include media(max-width 680px){
+              top: 0%;
+              left: 0%;
+              width: 100%;
+              height: 100%;
+            }
+
           position: absolute;
+            top: 10%;
+            // top: 50%;
+            // left: 50%;
+            left: 20%;
             display: block;
+            // transform: translate(-50%,-50%);
+            padding: 30px;
             // width: 860px;
             // height: 670px;
             width: 60%;
             height: 670px;
-            // top: 50%;
-            // left: 50%;
-            left: 20%;
-            top: 10%;
             background-color: #fff;
-            // transform: translate(-50%,-50%);
-            padding: 30px;
             box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 
-            @include media(max-width 1024px){
-              width: 75%;
-              height: 650px;
-              left: 12%;
-              top: 7%;
+            &:nth-of-type(1){
+              z-index: 2;
             }
-
-            @include media(max-width 830px){
-              width: 90%;
-              height: 650px;
-              left: 5%;
-            }
-
-            @include media(max-width 680px){
-              width: 100%;
-              height: 100%;
-              left: 0%;
-              top: 0%;
-            }
-
             .wrap {
                 // top: 20%;
                 // right: 0;
@@ -97,8 +97,6 @@
                 // vertical-align: middle;
                 //
                 // opacity: 0;
-
-
                   // @include media($mobile-devices) {
                   //     left: 0;
                   //
@@ -109,22 +107,17 @@
                   // .client {
                   //     text-transform: capitalize;
                   // }
-
-
-
                   h4 {
-                    font-family: $base-font-family;
-                    font-size: 30px;
-                    font-weight: normal;
-                    line-height: 1.33;
                     color: #243f53;
+                    font-weight: normal;
+                    font-size: 30px;
+                    font-family: $base-font-family;
+                    line-height: 1.33;
                   }
-
                   p {
-                      font-size: rem(15);
-                      font-weight: 300;
-
                       color: $medium-gray;
+                      font-weight: 300;
+                      font-size: rem(15);
                   }
                   .attachments {
                       input {
@@ -145,12 +138,11 @@
                           display: none;
                       }
                   }
-
                   .checkgroup {
-
-
                     label {
+                      margin-right: 60px;
                       cursor: pointer;
+
                       // @include media(max-width 601px){
                       //   display: flex;
                       //
@@ -159,8 +151,8 @@
                         display: inline-block;
                         width: 20px;
                         height: 20px;
-                        background-color: #fafafa;
                         border: solid 1px #979797;
+                        background-color: #fafafa;
                         text-align: center;
 
                         svg {
@@ -171,7 +163,6 @@
 
                         }
                       }
-                      margin-right: 60px;
                     }
                     input[type="checkbox"] {
                       display: none;
@@ -188,24 +179,15 @@
                       //
                       // }
                     }
-
                     .name{
-                      font-family: $base-font-family;
-                      font-size: 16px;
-                      font-weight: 300;
-                      color: #777777;
                       margin-left: 12px;
+                      color: #777777;
+                      font-weight: 300;
+                      font-size: 16px;
+                      font-family: $base-font-family;
                     }
                   }
-
                   .options{
-                    // visibility: hidden;
-                    display: none;
-                    position: absolute;
-                    // border-top: 1px solid #ccc;
-                    margin-top:10px;
-                    margin-left: 192px;
-
                     @include media(max-width 1024px){
                         margin-top: 7px;
                         margin-left: 248px;
@@ -214,6 +196,13 @@
                         position: relative;
                           margin-left: 32px;
                         }
+
+                    position: absolute;
+                    // visibility: hidden;
+                    display: none;
+                    // border-top: 1px solid #ccc;
+                    margin-top:10px;
+                    margin-left: 192px;
 
                     // ul{
                     //   li{
@@ -244,46 +233,45 @@
                        margin-right: 40px;
 
                       .box2{
-                        cursor: pointer;
                         float: left;
                         // display: table-cell;
                         width: 68px;
                          height: 82px;
                          background-color: #fafafa;
+                        cursor: pointer;
 
                          .icon-checkmark{
-                           visibility: hidden;
                           //  position: absolute;
                           position: relative;
                           top: -68px;
                           left: 41px;
+                           visibility: hidden;
                           width: 10px;
                           height: 10px;
                           background: #C0EAC9;
                          }
                          svg{
+                           margin: 12px 12px 0px 16px;
                            width: 33px;
                            height: 36px;
-                           margin: 12px 12px 0px 16px;
                          }
-
                          .small-name{
                            position: absolute;
                            top: 60px;
-                          font-family: $base-font-family;
-                          font-size: 12px;
-                          font-weight: 200;
                           color: #999999;
+                          font-weight: 200;
+                          font-size: 12px;
+                          font-family: $base-font-family;
                          }
                       }
                     }
-
                     input[type="checkbox"] {
                       display: none;
                     }
                     input[type="checkbox"]:checked + label {
                       .box2 {
                         border: solid 1px #3ba53a;
+
                         .icon-checkmark {
                           visibility: visible;
                         }
@@ -291,7 +279,6 @@
                     }
 
                 }
-
                   .group{
                     .icon-add-link{
                       position: absolute;
@@ -308,27 +295,27 @@
                     @include span-columns(12);
 
                     .input-group{
-                      input{
-                        min-height: 50px;
-                      }
                       @include span-columns(5.9);
-                      margin-right: 30px;
-                      text-indent: 10px;
-
                       @include media(max-width 1330px){
                         @include span-columns(6);
                       }
                       @include media(max-width 480px){
                         @include span-columns(12);
                       }
+
+                      margin-right: 30px;
+                      text-indent: 10px;
+
+                      input{
+                        min-height: 50px;
+                      }
                     }
                   }
-
                   .send{
-                    max-width: 33%;
-                    margin: 0 auto;
                     float: none;
+                    margin: 0 auto;
                     margin-top: 50%;
+                    max-width: 33%;
 
                     .skewed{
                       margin-left: 7px;
@@ -339,35 +326,33 @@
                       }
                     }
                   }
-
                   p.message{
-                    font-size: 11px;
                     color:#5c5c5c;
+                    font-size: 11px;
                   }
             }
-
             .checkgroup{
               margin-top: 45px;
             }
             .input{
-              min-height: 50px;
               margin-top: 30px;
+              min-height: 50px;
               text-indent: 38px;
             }
             .note{
-                font-size: 12px;
+                margin-bottom: 30px;
+                color: #999999;
                 font-weight: 300;
                 font-weight: normal;
-                color: #999999;
-                margin-bottom: 30px;
+                font-size: 12px;
             }
-
             .action {
+                @include clearfix;
+
                 // width: 100%;
                 // max-width: 60%;
                 float: right;
 
-                @include clearfix;
                 .btn {
                    margin-top: 20px;
                   width: 260px;
@@ -379,29 +364,29 @@
                 cursor: pointer;
 
                     svg {
+                      margin-left: 42px;
                       width: 43px;
                       height: 12px;
-                      margin-left: 42px;
                         color: rgba(255,255,255,.8);
                     }
                     &:focus,
                     &:hover {
                         outline: none;
+
                         svg {
                             color: #fff;
                         }
                     }
                     &.back {
                         float: left;
-
-                        color: $blue;
                         border: 1px solid $blue;
                         border-radius: 5px;
                         background-color: #fff;
+                        color: $blue;
+
                         svg {
                             margin-right: 10px;
                             margin-left: 0;
-
                             color: $blue;
                         }
                     }
@@ -411,7 +396,6 @@
                     }
                     &.close-form {
                         position: static;
-
                         color: #fff;
                     }
                 }
@@ -427,20 +411,17 @@
             // MoveLeft .wrap
             .move-left {
                 left: 200%;
-
                 opacity: 0 !important;
             }
             .move-right {
                 left: -200%;
                 // right: 0;
-
                 opacity: 0 !important;
             }
-
             .thankyou{
-              max-width: 85%;
               margin: 0 auto;
               margin-top: 220px;
+              max-width: 85%;
               text-align: center;
 
               .send{
@@ -457,41 +438,39 @@
 }
 
 #secondForm{
-  z-index: 2;
   @include calc(left, "20% + 12px");
   @include calc(top, "10% - 12px");
-
   @include media(max-width 1024px){
     @include calc(left, "12% + 12px");
     @include calc(top, "7% - 12px");
   }
-
   @include media(max-width 830px){
     @include calc(left, "5% + 12px");
   }
   @include media(max-width 680px){
-  left: 0%;
   top: 0%;
+  left: 0%;
 }
+
+  z-index: 2
 }
 
 #thirdForm{
-  z-index: 1;
   @include calc(left, "20% + 12px");
   @include calc(top, "10% - 12px");
-
   @include media(max-width 1024px){
     @include calc(left, "12% + 12px");
     @include calc(top, "7% - 12px");
   }
-
   @include media(max-width 830px){
     @include calc(left, "5% + 12px");
   }
   @include media(max-width 680px){
-  left: 0%;
   top: 0%;
+  left: 0%;
 }
+
+  z-index: 1
 }
 
 
@@ -504,45 +483,44 @@ display: block;
 }
 
 textarea{
-  text-indent: 7px;
   margin-bottom: 5px;
+  text-indent: 7px;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  opacity: 0.3;
-  font-size: 16px;
   color: #555555;
+  font-size: 16px;
+  opacity: 0.3;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  opacity: 0.3;
-  font-size: 16px;
   color: #555555;
+  font-size: 16px;
+  opacity: 0.3;
 }
 :-ms-input-placeholder { /* IE 10+ */
-  opacity: 0.3;
-  font-size: 16px;
   color: #555555;
+  font-size: 16px;
+  opacity: 0.3;
 }
 :-moz-placeholder { /* Firefox 18- */
-  opacity: 0.3;
-  font-size: 16px;
   color: #555555;
+  font-size: 16px;
+  opacity: 0.3;
 }
 
 .skewed-inverse{
   svg{
+    margin-left: 22px;
     width: 24px;
     height: 24px;
-    margin-left: 22px;
 vertical-align: middle;
 transform: skew(25deg);
   }
 }
 
 .light{
-
-  font-size: 12px;
-  font-weight: 200;
   color: #999999;
+  font-weight: 200;
+  font-size: 12px;
 
 }
 

@@ -4,15 +4,15 @@ var Workspace = Backbone.Router.extend({
     "1":  "fnOne",
     "2":  "fnTwo",
     "3": "fnThree",
-    "4":  "fnFourth"
-    // "5":  "fnFifth",
-    // "6":  "fnSixth"
+    "4":  "fnFourth",
+    "5":  "fnFifth",
+    "6":  "fnSixth"
 
   },
 
   fnOne: function() {
     enquiries.set('currentPage', 1);
-    $('.inner-box').css('opacity', '1');
+    $('.wrap').css('opacity', '1');
     $('#firstForm').removeClass('move-left');
     $('#secondForm').removeClass('move-left');
     $('#thirdForm').removeClass('move-left');
@@ -43,6 +43,28 @@ var Workspace = Backbone.Router.extend({
       form.setElement('#thirdForm');
       $('#secondForm').addClass('move-left');
       $('#fourthForm').addClass('move-right');
+  },
+  fnFourth: function() {
+      enquiries.set('currentPage', 4);
+      $('#fourthForm').removeClass('move-right');
+      $('#fourthForm').removeClass('move-left');
+      form.setElement('#fourthForm');
+      $('#thirdForm').addClass('move-left');
+      $('#fifthForm').addClass('move-right');
+  },
+  fnFifth: function() {
+      enquiries.set('currentPage', 5);
+      $('#fifthForm').removeClass('move-right');
+      form.setElement('#fifthForm');
+      $('#fourthForm').addClass('move-left');
+  },
+  fnSixth: function() {
+      enquiries.set('currentPage', 6);
+      $('#sixthForm').removeClass('move-right');
+      form.setElement('#sixthForm');
+      $('#fifthForm').addClass('move-left');
+
+        // $('.btn.send').attr('disabled="disabled"');
   }
 
 });
@@ -50,12 +72,14 @@ var Workspace = Backbone.Router.extend({
 var Enquiries = Backbone.Model.extend({
   defaults: {
     "currentPage": 1,
-    "objective": "",
-    "attachLink": "",
     "clientName": "",
-    "company": "",
     "email": "",
-    "mobileNumber": ""
+    "mobile": "",
+    "company": "",
+    "projectBrief": "",
+    "budget": "",
+    "attachments": [],
+    "link": "",
   }
 });
 
@@ -64,13 +88,12 @@ var validationFlag = false;
 window.enquiries = enquiries;
 
 var FormView = Backbone.View.extend({
-  el: $(".inner-box"),
+  el: $(".wrap"),
 
   events: {
     "click .back" :  "prevPage",
     "click .next" :  "nextPage",
     "click .send" :  "sendPage",
-    "click .checkgroup": "clicked",
     "change input#files" :  "fileUpload",
     "keyup .textField": "enterHandler"
   },
@@ -85,15 +108,6 @@ var FormView = Backbone.View.extend({
     }
   },
 
-  clicked: function (e) {
-       var $target = $(e.target)
-       if (!$target.is(':checkbox')) $target = $target.find('input:checkbox');
-       var selected = $target.is(':checked');
-      //  console.log('selected: ', selected, 'value: ', $target.val());
-       var check = $target.val();
-       return check;
-   },
-
   prevPage: function() {
     var currentPage = this.model.get('currentPage');
     console.log(currentPage - 1);
@@ -102,29 +116,13 @@ var FormView = Backbone.View.extend({
   },
 
   nextPage: function() {
-    console.log('test');
     this.modelUpdate();
 
     var currentPage = this.model.get('currentPage');
     console.log(currentPage + 1);
 
     if (this.shouldProceed()) {
-      currentPage = currentPage + 1;
-      workspace.navigate('' + (currentPage), {trigger : true});
-      if(currentPage == 2)
-      {
-        $('#secondForm').parent().css({'z-index':'3'});
-        // $('#firstForm').addClass('animated slideInDown');
-        $('#secondForm').addClass('animated fadeIn');
-
-      }
-      if(currentPage == 3)
-      {
-        $('#thirdForm').parent().css('z-index', '3');
-        // $('#secondForm').addClass('animated slideInDown');
-        $('#thirdForm').addClass('animated fadeIn');
-
-      }
+      workspace.navigate('' + (currentPage + 1), {trigger : true});
     }
   },
 
@@ -132,99 +130,101 @@ var FormView = Backbone.View.extend({
   shouldProceed: function() {
     var  validateModel = {
       1: function() {
-        if(!!enquiries.get('objective')){
+        if(!!enquiries.get('clientName')){
+          $('.client').text(enquiries.get('clientName'));
           $('.group .message').animate({"opacity": "+0"});
-          $('#objective').css('border', '1px solid #757575');
-          return !!enquiries.get('objective');
+          $('#clientName').css('border-color', '#757575');
+          $('.group .cross-icon').hide();
+          return !!enquiries.get('clientName');
         }else{
           $('.group .message').animate({"opacity": "+1"});
-          $('#objective').css('border', '1px solid #db4344');
+          $('#clientName').css('border-color', '#db4344');
+          $('.group .cross-icon').show();
         }
       },
       2: function() {
-
-        if(!!enquiries.get('clientName')){
-          console.log(enquiries.get('clientName'));
+        var inputLength =  enquiries.get('projectBrief').length;
+        // var inputLength =  enquiries.get('projectBrief');
+        console.log(inputLength);
+        if(!!enquiries.get('projectBrief')){ // && inputLength > 140 //uncomment this want to validate charecter length
           $('.group .message').animate({"opacity":"+0"});
-          $('#clientName').css('border', '1px solid #757575');
-          //return !!enquiries.get('name');
+          $('#projectBrief').css('border-color', '#757575');
+          $('.group .cross-icon').hide();
+          return !!enquiries.get('projectBrief');
         }else{
           $('.group .message').animate({"opacity":"+1"});
-          $('#clientName').css('border', '1px solid #db4344');
+          $('#projectBrief').css('border-color', '#db4344');
+          $('.group .cross-icon').show();
         }
-
-        if(!!enquiries.get('company')){
-          // console.log(enquiries.get('company'));
+        // return true;
+      },
+      3: function() {
+        if(!!enquiries.get('budget')){
           $('.group .message').animate({"opacity":"+0"});
-          $('#company').css('border', '1px solid #757575');
-          // return !!enquiries.get('company');
+          $('#budget').css('border-color', '#757575');
+          $('.group .cross-icon').hide();
+          return !!enquiries.get('budget');
         }else{
           $('.group .message').animate({"opacity":"+1"});
-          $('#company').css('border', '1px solid #db4344');
+          $('#budget').css('border-color', '#db4344');
+          $('.group .cross-icon').show();
         }
-
-        if(!!enquiries.get('mobileNumber')){
-          // console.log(enquiries.get('mobileNumber'));
-          $('.group .message').animate({"opacity":"+0"});
-          $('#mobileNumber').css('border', '1px solid #757575');
-          // return !!enquiries.get('mobile');
-        }else{
-          $('.group .message').animate({"opacity":"+1"});
-          $('#mobileNumber').css('border', '1px solid #db4344');
-        }
-
+      },
+      4: function() {
         var emailReg = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
         // console.log('email value is:'+ enquiries.get('email').value);
         var mail = enquiries.get('email');
         // console.log('email is' + mail.value);
 
 
-        //mobile validation
-        var mobiReg = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
-        var mobile = enquiries.get('mobileNumber');
+        // mobile validation
+        // var mobiReg = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
+        // var mobile = enquiries.get('mobile');
         // console.log(enquiries.get('mobile'));
 
-         // Check for mobile and email validation both should be true
-        // if(!!emailReg.test(mail) && !!mobiReg.test(mobile)) {
-        //   $('.group .message').animate({"opacity":"+1"});
-        //   $('#email').css('border', '1px solid #757575');
-        //   $('#mobileNumber').css('border', '1px solid #757575');
+        // // Check for mobile and email validation both should be true
+        // if(!!emailReg.test(mail) && !!mobiReg.test(mobile)) {$('.group .message').animate({"opacity":"+1"});
+        //   $('.group .cross-icon').hide();
+        //   $('#email').css('border-color', '#757575');
+        //   $('#mobile').css('border-color', '#757575');
         //   return !!enquiries.get('email');
         //   return !!enquiries.get('mobile');
         // }else{
         //   $('.group .message').animate({"opacity":"+1"});
-        //   $('#email').css('border', '1px solid #db4344');
-        //   $('#mobileNumber').css('border', '1px solid #db4344');
+        //   $('.group .cross-icon').show();
+        //   $('#email').css('border-color', '#db4344');
+        //   $('#mobile').css('border-color', '#db4344');
         // }
-
         // Check for email validation
         if(!!emailReg.test(mail) ){
           // console.log(mail.value);
           $('#email').parents('.group').find('.message').animate({"opacity": "+0"});
-          $('#email').css('border', '1px solid #757575');
+          $('#email').css('border-color', '#757575');
+          $('#email').parents('.group').find('.cross-icon').hide();
           validationFlag = true;
           return !!enquiries.get('email');
         }else{
           $('#email').parents('.group').find('.message').animate({"opacity":"+1"});
-          $('#email').css('border', '1px solid #db4344');
+          $('#email').parents('.group').find('.cross-icon').show();
+          $('#email').css('border-color', '#db4344');
           // return false;
         }
         // Check for mobile validation
-        if(!!mobiReg.test(mobile)){
-          $('#mobileNumber').parents('.group').find('.message').animate({"opacity": "+0"});
-          $('#mobileNumber').css('border', '1px solid #757575');
-          // return !!enquiries.get('mobile');
-        }else{
-          $('#mobileNumber').parents('.group').find('.message').animate({"opacity":"+1"});
-          $('#mobileNumber').css('border', '1px solid #db4344');
-        }
-
+        // if(!!mobiReg.test(mobile)){
+        //   $('#mobile').parents('.group').find('.message').animate({"opacity": "+0"});
+        //   $('#mobile').css('border-color', '#757575');
+        //   $('#mobile').parents('.group').find('.cross-icon').hide();
+        //   // return !!enquiries.get('mobile');
+        // }else{
+        //   $('#mobile').parents('.group').find('.message').animate({"opacity":"+1"});
+        //   $('#mobile').parents('.group').find('.cross-icon').show();
+        //   $('#mobile').css('border-color', '#db4344');
+        // }
       },
-      3: function() {
+      5: function() {
         return true;
       }
     };
-
     var flag = validateModel[enquiries.get('currentPage').toString()]();
     console.log('returning ', flag);
     return flag;
@@ -232,14 +232,13 @@ var FormView = Backbone.View.extend({
   },
 
   sendPage: function() {
-    console.log('returning-flag ', validationFlag);
-
+    // console.log('returning-flag ', validationFlag);
     if(validationFlag)
     {
       this.modelUpdate();
       console.log(enquiries.attributes);
-    // $.post( "http://205.186.143.136:5000/sendmail", enquiries.attributes )
-      $.post( "http://localhost:5100/sendmail", enquiries.attributes )
+    $.post( "http://205.186.143.136:5000/sendmail", enquiries.attributes )
+      // $.post( "http://localhost:5100/sendmail", enquiries.attributes )
         .done(function( data ) {
           console.log('Response: ', data );
           // alert( "Message sent succesfully:" + data );
