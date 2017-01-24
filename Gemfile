@@ -22,6 +22,6 @@ gem 'middleman-imageoptim'
 gem "slim"
 
 # Adding bourbon, neat and bitters
-gem 'bourbon'
-gem 'neat'
 gem 'bitters'
+gem 'bourbon', '~> 4.2', '>= 4.2.7'
+gem 'neat'

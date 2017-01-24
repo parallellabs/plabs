@@ -28,8 +28,8 @@ html.no-js lang="en"
     link rel="stylesheet" href="/stylesheets/normalize.css"/
     link rel="stylesheet" href="stylesheets/vendors/default_skin_variation.css"/
     link rel="stylesheet" href="stylesheets/vendors/owl.carousel.css"/
-    / link rel="stylesheet" href="stylesheets/vendors/animate.css"/
-    link rel="stylesheet" href="stylesheets/vendors/aos.css"/
+    link rel="stylesheet" href="stylesheets/vendors/animate.css"/
+    / link rel="stylesheet" href="stylesheets/vendors/aos.css"/
     link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"/
     link rel="stylesheet" href="stylesheets/all.css"/
     javascript:
@@ -67,8 +67,9 @@ html.no-js lang="en"
     script type="text/javascript" src="javascripts/imagelightbox.min.js"
     script type="text/javascript" src="javascripts/imagelightbox_custom.js"
     script type="text/javascript" src="javascripts/owl.carousel.js"
-    / script type="text/javascript" src="javascripts/jquery.parallax.min.js"
-    script type="text/javascript" src="javascripts/projects.js"
+    script type="text/javascript" src="javascripts/jquery.parallax.min.js"
+    / script type="text/javascript" src="javascripts/projects.js"
+    / script type="text/javascript" src="javascripts/all.js"
     script type="text/javascript" src="javascripts/retina.min.js"
     script type="text/javascript" src="javascripts/aos.js"
 
@@ -83,10 +84,63 @@ html.no-js lang="en"
         });
       }
       
+      // animation on scroll
       AOS.init({
-        offset: 200,
-        duration: 600,
+        // offset: 200,
+        duration: 2000,
         easing: 'ease-in-sine',
-        delay: 100,
+        // delay: 100,
       });
       
+      // init controller
+      // var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 100}});
+      // build scenes
+      // new ScrollMagic.Scene({triggerElement: "#trigger_two"})
+			// 	.setClassToggle("#box1", 'slideup') // add class toggle
+			// 	.addIndicators() // add indicators (requires plugin)
+			// 	.addTo(controller);
+      
+      $(window).scroll(function(e) {
+        if ($("#parallex_container").length) {
+          parallax();
+        }
+      });
+      
+      function parallax(){
+        
+        if( $("#parallex_container").length > 0 ) {
+          var plxBackground = $(".blue");
+          var plxWindow = $("#parallex_container");
+
+          var plxWindowTopToPageTop = $(plxWindow).offset().top;
+          var windowTopToPageTop = $(window).scrollTop();
+          var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
+
+          var plxBackgroundTopToPageTop = $(plxBackground).offset().top;
+          var windowInnerHeight = window.innerHeight;
+          var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
+          var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
+          var plxSpeed = 0.35;
+          var plxSpeedLeft = 0.20;
+
+          plxBackground.css({'top': + (plxWindowTopToWindowTop * plxSpeed) + 'px', 'left': - (plxWindowTopToWindowTop * plxSpeedLeft) + 'px'});
+        }
+        
+        if( $("#parallex_container").length > 0 ) {
+          var plxBackground = $(".yellow");
+          var plxWindow = $("#parallex_container");
+
+          var plxWindowTopToPageTop = $(plxWindow).offset().top;
+          var windowTopToPageTop = $(window).scrollTop();
+          var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
+
+          var plxBackgroundTopToPageTop = $(plxBackground).offset().top;
+          var windowInnerHeight = window.innerHeight;
+          var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
+          var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
+          var plxSpeed = 0.35;
+          var plxSpeedLeft = 0.20;
+
+          plxBackground.css({'top': - (plxWindowTopToWindowTop * plxSpeed) + 'px', 'left': + (plxWindowTopToWindowTop * plxSpeedLeft) + 'px'});
+        }
+      }  

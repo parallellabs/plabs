@@ -13,7 +13,7 @@ layout: parallex_layout
 - @twitter_url = "http://parallellabs.io/about.html"
 - @twitter_image = "http://parallellabs.io/images/svgs/logo.png"
 
-#js-parallax-window.parallax-window
+#js-parallax-window
   .section.what-we-do.PT-180
     h2
       |We work <span class="pl-blue">with </span> you,</br>not for you.
@@ -25,24 +25,45 @@ layout: parallex_layout
 		p
 			|Clients approach us at different stages of their product and business journey. Sometimes they have an idea and help build a MLP, whereas sometimes they need a full revamp or partner with us to continuously drive their product from a design perspective.
 
+	/ .section.new-home-content#trigger_one
+	/ 	.about-parallax
+	/ 		.box.yellow data-aos="slide-up" data-aos-anchor="#trigger_one" data-aos-anchor-placement="center-center"
+	/ 			h1
+	/ 			  |Business
+	/ 		.box.blue data-aos="slide-down" data-aos-anchor="#trigger_one" data-aos-anchor-placement="center-center"
+	/ 			h1
+	/ 				|Product Strategy
+	/ 		.box.yellow data-aos="slide-up" data-aos-anchor="#trigger_one" data-aos-anchor-placement="center-center"
+	/ 			h1
+	/ 				|Marketing
+	/ 		.box.blue data-aos="slide-down" data-aos-anchor="#trigger_one" data-aos-anchor-placement="center-center"
+	/ 			h1
+	/ 				|Interface Design
+	/ 		.box.yellow data-aos="slide-up" data-aos-anchor="#trigger_one" data-aos-anchor-placement="center-center"
+	/ 			h1
+	/ 				|Finance
+	/ 		.box.blue data-aos="slide-down" data-aos-anchor="#trigger_one" data-aos-anchor-placement="center-center"
+	/ 			h1
+	/ 				|Front-End Dev
+          
 	.section.new-home-content
-		.about-parallax
-			.box.yellow data-aos="slide-up"
+		.about-parallax.parallax-window#parallex_container
+			.box.yellow
 				h1
 				  |Business
-			.box.blue data-aos="slide-down"
+			.box.blue
 				h1
 					|Product Strategy
-			.box.yellow data-aos="slide-up"
+			.box.yellow
 				h1
 					|Marketing
-			.box.blue data-aos="slide-down"
+			.box.blue
 				h1
 					|Interface Design
-			.box.yellow data-aos="slide-up"
+			.box.yellow
 				h1
 					|Finance
-			.box.blue data-aos="slide-down"
+			.box.blue
 				h1
 					|Front-End Dev
 

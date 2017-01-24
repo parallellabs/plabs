@@ -1,60 +1,67 @@
 .about_us{
-  max-width: 60%;
-  margin: 0 auto;
-
   @include media(max-width 480px){
     max-width: 80%;
   }
 
+  margin: 0 auto;
+  max-width: 60%;
+
   p{
-    text-align: left;
-    font-family: $base-font-family;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 1.56;
-    color: #555555;
     margin-bottom: 40px;
+    color: #555555;
+    text-align: left;
+    font-weight: 200;
+    font-size: 18px;
+    font-family: $base-font-family;
+    line-height: 1.56;
   }
 }
 
 .about-parallax{
+  @include clearfix;
+
+  position: relative;
+  overflow:visible;
   margin-top: 120px;
   margin-bottom: 120px;
-  position: relative;
   height: 100%;
 
   .box{
+    @include calc(width, "(100% / 6) - 40px");
+
+    position:relative;
     display: inline-block;
-    width: 170px;
-    height: 340px;
+    float: left;
     margin-right: 20px;
     margin-left: 20px;
+    height: 340px;
     background-color: #fcc32c;
 
     h1{
-      font-family: $heading-font-family;
-      font-size: 26px;
-      font-weight: 900;
-      letter-spacing: 1.1px;
       color: #ffffff;
+      letter-spacing: 1.1px;
+      font-weight: 900;
+      font-size: 26px;
+      font-family: $heading-font-family;
     }
   }
-
   .yellow{
+    // top: 0;
     background-color: #fcc32c;
-    transform: skew(-30deg) translate3d(-18px, -120px, 0px);
+    transform: skewX(-30deg);
 
     h1{
-    transform: skew(30deg) translate(-168px,294px);    }
+        // transform: skew(30deg) translate(-168px,294px);
+      }
   }
-
   .blue{
+    // top: 0;
     background-color: #16c6c2;
-    transform: skew(-30deg) translate3d(0,120px,0px);
-
+    transform: skewX(-30deg);
 
     h1{
-    transform: skew(30deg) translate(-145px,261px);    }
+        transform: skew(30deg) translate(-145px,261px);
+      }
   }
 }
 
