@@ -43,7 +43,6 @@
 
 .section {
     &.new-home-content {
-        // height: 100vh;
         @include media(max-width 768px){
         	margin-bottom:40px;
         	padding: 20px;
@@ -83,9 +82,8 @@
             color: #555;
             font-weight: 300;
             font-size: rem(18);
-            line-height: 28px;
-
-            font-family: $base-font-family
+            font-family: $base-font-family;
+            line-height: 28px
         }
         .block {
             @include transform(translateY(-50%));
@@ -285,8 +283,9 @@
         }
     }
     &.testimonial{
-        margin-left: 0;
         margin-right: 0;
+        margin-left: 0;
+
 		h2{
 			margin-bottom:60px;
       text-align: center;

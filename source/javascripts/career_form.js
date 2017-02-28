@@ -14,11 +14,11 @@ $(document).ready(function(){
 		var field6 = $('#behance');
 
 
-		var emailReg = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;  
+		var emailReg = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
 		var mail = emailReg.test(field2.val());
 
 	function jobFormValidation(){
-		
+
 		if(!field1.val()){
 			$('.apply-form .group .msg1').animate({"opacity": "+1"});
 			$('#name').css('border-color', '#db4344');
@@ -33,7 +33,7 @@ $(document).ready(function(){
 
     mail = emailReg.test(field2.val());
 
-		if(mail) {  
+		if(mail) {
 		    $('.group .msg2').animate({"opacity": "+0"});
 		    $('#email').css('border-color', '#757575');
 		    $('.group .crossTwo').css('display', 'none');
@@ -41,7 +41,7 @@ $(document).ready(function(){
 		  $('.group .msg2').animate({"opacity":"+1"});
 		    $('.group .crossTwo').css('display', 'inline');
 		    $('#email').css('border-color', '#db4344');
-		} 
+		}
 
 		if(!field3.val()){
 			$('.apply-form .group .msg3').animate({"opacity": "+1"});
@@ -87,8 +87,8 @@ $(document).ready(function(){
 			// jquery ajax call here
 			$.ajax({
 			  method: "POST",
-			  // url: "http://localhost:5100/sendmail",
-			  url: "http://205.186.143.136:5000/sendmail",
+			  url: "http://localhost:5100/sendmail",
+			  // url: "http://205.186.143.136:5000/sendmail",
 			  data: jobFormData
 			})
 			  .done(function( msg ) {
@@ -101,8 +101,8 @@ $(document).ready(function(){
 			// jquery ajax call here
 			$.ajax({
 			  method: "POST",
-			  // url: "http://localhost:5100/sendmail",
-			  url: "http://205.186.143.136:5000/sendmail",
+			  url: "http://localhost:5100/sendmail",
+			  // url: "http://205.186.143.136:5000/sendmail",
 			  data: jobFormData1
 			})
 			  .done(function( msg1 ) {
@@ -115,8 +115,8 @@ $(document).ready(function(){
 			// jquery ajax call here
 			$.ajax({
 			  method: "POST",
-			  // url: "http://localhost:5100/sendmail",
-			  url: "http://205.186.143.136:5000/sendmail",
+			  url: "http://localhost:5100/sendmail",
+			  // url: "http://205.186.143.136:5000/sendmail",
 			  data: jobFormData2
 			})
 			  .done(function( msg2 ) {
@@ -129,8 +129,8 @@ $(document).ready(function(){
 			// jquery ajax call here
 			$.ajax({
 			  method: "POST",
-			  // url: "http://localhost:5100/sendmail",
-			  url: "http://205.186.143.136:5000/sendmail",
+			  url: "http://localhost:5100/sendmail",
+			  // url: "http://205.186.143.136:5000/sendmail",
 			  data: jobFormData3
 			})
 			  .done(function( msg3 ) {
@@ -143,8 +143,8 @@ $(document).ready(function(){
 			// jquery ajax call here
 			$.ajax({
 			  method: "POST",
-			  // url: "http://localhost:5100/sendmail",
-			  url: "http://205.186.143.136:5000/sendmail",
+			  url: "http://localhost:5100/sendmail",
+			  // url: "http://205.186.143.136:5000/sendmail",
 			  data: jobFormData4
 			})
 			  .done(function( msg4 ) {
@@ -162,7 +162,7 @@ $(document).ready(function(){
 		});
 	});
 
-	// check validatation of attachment  
+	// check validatation of attachment
   $('#attachment').on( 'change', function(event) {
    myfile= $( this ).val();
    var ext = myfile.split('.').pop();
@@ -172,15 +172,15 @@ $(document).ready(function(){
        // alert(ext);
        $.each(event.target.files, function(index, file) {
 	        var reader = new FileReader();
-	        reader.onload = function(event) {  
+	        reader.onload = function(event) {
 	          object = {};
 
 	          object.path = event.target.result;
 	          console.log(object);
 	          files.push(object);
-	        };  
+	        };
 	        reader.readAsDataURL(file);
-	    }); 
+	    });
 			$('.filename').html(myfile.split( '\\' ).pop());
 
 			$('.apply-form .group .attach-msg').animate({"opacity": "+0"});
@@ -193,4 +193,3 @@ $(document).ready(function(){
 	});
 
 });
-
