@@ -229,6 +229,7 @@
                 a {
                     img {
                         margin-top: 29px;
+                        width: 650px;
                     }
                 }
                 &.no-scroll {
@@ -778,5 +779,9 @@
             font-size: rem(16);
             line-height: 43px;
         }
+    }
+
+    &:first-child{
+      margin-top: 140px;
     }
 }

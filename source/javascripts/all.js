@@ -9,12 +9,14 @@ $(document).ready(function(){
 	// modal open
 	$('.open-form').on('click', function(){
 		// $('.main-form').removeClass('back');
+    $('.home').addClass('blur');
 		$('.main-form').addClass('openForm-model');
 		$(this).parents('html').addClass('overflow-H');
 		$(this).parents('body').addClass('overflow-H');
 	});
 	// modal close
 	$('.close-form').on('click', function(){
+    $('.home').removeClass('blur');
 		$('.main-form').removeClass('openForm-model');
 		$(this).parents('html').removeClass('overflow-H');
 		$(this).parents('body').removeClass('overflow-H');
@@ -248,7 +250,7 @@ $(document).ready(function(){
   //   wrap    : 'word'
   // });
 
-// parallax
+//parallax
   if ($("#js-parallax-window").length || $("#js-parallax-window1").length || $("#js-parallax-window2").length || $("#js-parallax-window3").length || $("#js-parallax-window4").length || $("#js-parallax-window5").length || $("#js-parallax-window6").length) {
     parallax();
   }

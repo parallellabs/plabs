@@ -138,6 +138,10 @@
 .team {
     @extend .container;
 
+    @include media(max-width 1024px){
+      max-width: 920px;
+    }
+
     margin-bottom: 40px;
 
     .team-block{
@@ -192,10 +196,13 @@
         }
         position: relative;
 
+
         .name{
           text-transform: uppercase;
           @include transform(rotate(90deg));
           @include transform-origin(bottom);
+          @include transition(all 0.3s ease-out);
+
 
           position: absolute;
           top: 80px;
@@ -227,21 +234,45 @@
           top: 220px;
           margin-right: -143px;
         }
+
         }
         img{
+          position: relative;
+          z-index: 2;
           visibility: visible;
           opacity: 1;
+          @include transition(all 0.3s ease-out);
+
 
           &.hide{
             visibility: hidden;
             opacity: 0;
           }
+
+          // &:hover{
+          //   @include transform(scale(1.1));
+          //   @include transition(all 0.3s ease-out);
+          // }
         }
         .description{
           display: none;
         }
         .designation{
           display: none;
+        }
+
+        &:hover{
+          cursor: pointer;
+
+          .name{
+            @include transform(rotate(90deg) translateX(50px));
+            @include transition(all 0.3s ease-out);
+          }
+
+          img{
+            @include transform(scale(1.1));
+            @include transition(all 0.3s ease-out);
+          }
         }
       }
     }

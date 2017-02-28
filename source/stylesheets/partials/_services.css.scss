@@ -52,6 +52,8 @@
         text-align: left;
         padding-top: 20px;
         z-index:2;
+
+
       }
 
       .number{
@@ -97,6 +99,11 @@
     color: #555555;
     text-align: left;
     margin-top: 30px;
+
+    @include media(max-width 768px){
+      width: 100%;
+      padding: 0 30px;
+    }
   }
 
   h3{
@@ -130,6 +137,15 @@
 
       @include media(max-width 1310px){
         margin: 20px;
+      }
+
+      @include media(max-width 1260px){
+        max-width: 60%;
+        margin: 0 auto;
+      }
+
+      @include media(max-width 630px){
+        max-width: 80%;
       }
 
 

@@ -114,6 +114,7 @@
     width: 100%;
 
     text-align: center;
+
 }
 
 .sky-carousel .sc-content-container {
@@ -159,9 +160,7 @@
     position: absolute;
     top: 0;
     z-index: 9;
-
     height: 100%;
-
     pointer-events: none;
 }
 
@@ -171,6 +170,7 @@
 
 .sky-carousel .sc-overlay-right {
     right: -.1px;
+
 }
 
 /**********************************************
@@ -206,7 +206,7 @@
 }
 
 .no-touch .sky-carousel .sc-nav-button:hover {
-    background-color: #ea4848;
+    /*background-color: #ea4848;*/
 }
 
 /**********************************************

@@ -13,8 +13,9 @@ layout: home_layout
 - @twitter_url = "http://parallellabs.io/"
 - @twitter_image = "http://parallellabs.io/images/svgs/logo.png"
 #js-parallax-window.parallax-window
-	/ Background skewed 
+	/ Background skewed
 	.bg-skewed.parallax-background#js-parallax-background
+		/ img src="images/new_images/Bitmap.png" alt="background image"/
 	/ page content
 	.parallax-static-content
 		.section.new-home-content.h100.height-fix
@@ -26,14 +27,14 @@ layout: home_layout
 				.btn.new.open-form
 					.skewed
 						span Get in touch
-			.block.right
-				a href="work.html"
-					h3
-						| See our Work
-					p 	
-						| Our Recent Favorites
-					svg
-						use xlink:href="images/svgs/iconset.svg#icon-arrows-long-right" 
+			/ .block.right
+			/ 	a href="work.html"
+			/ 		h3
+			/ 			| See our Work
+			/ 		p
+			/ 			| Our Recent Favorites
+			/ 		svg
+			/ 			use xlink:href="images/svgs/iconset.svg#icon-arrows-long-right"
 
 		/ .section.new-home-content
 		/ 	.card
@@ -53,10 +54,10 @@ layout: home_layout
 		/ 			| Aesthetically appealing visual designs and meaningful interactions give life to well thought prototypes. We not just create screens but design systems extending your brand.
 
 
-		.section.new-home-content.clients.PLR0-imp.PB0-imp
+		.section.new-home-content.clients.PB0-imp
 			h2
 				| We have worked with some amazing companies across different verticals <span class="border"></span>
-			.wrap.owl-carousel
+			.wrap.owl-carousel#client_carousel
 				.company-card
 					.img-box
 						img src="images/clients_logo/housejoy.png" alt="Company logo"/
@@ -91,7 +92,7 @@ layout: home_layout
 					.img-box
 						img src="images/clients_logo/indiamart.png" alt="Company logo"/
 					p
-						| Redesigns of classifieds experience for India's largest B2B Marketplace 
+						| Redesigns of classifieds experience for India's largest B2B Marketplace
 				.company-card
 					.img-box
 						img src="images/clients_logo/eatfresh.png" alt="Company logo"/
@@ -102,25 +103,18 @@ layout: home_layout
 						img src="images/clients_logo/art-of-living.png" alt="Company logo"/
 					p
 						| Complete product design and development for the official projects website
-
-		.section.new-home-content.media.video-content.opposite
-			/ h2
-			/ 	| Other Media <span class="border"></span>
-			.right
-				.video
-					img src="images/nexus-5-x-wireframe.svg" alt="mobile image"/
-					video class="b-lazy" controls="controls" height="410" width="230" data-poster="images/Home_Eatfresh_poster.png" poster="images/Home_Eatfresh_poster.png" data-src="images/Eatfresh_Home_Dish.mp4" src="images/Eatfresh_Home_Dish.mp4"
+						
+		.section.new-home-content.video-content.web
 			.left
 				.wrap
 					h2
-						| Fresh and Immersive food ordering experience for EATFRESH mobile apps
-					a.btn.new href="javascript:void(0);"
-						.skewed.topaz.coming-soon
+						| Complete UX revamp of <span class="chai-green">CHAI POINT</span> website for a richer and faster booking experience
+					a.btn.new.coming-soon href="javascript:void(0);"
+						.skewed.topaz
 							span Coming Soon
-			.right.mobile
-				.video
-					img src="images/nexus-5-x-wireframe.svg" alt="mobile image"/
-					video id="video" class="b-lazy" controls="controls" height="410" width="230" data-poster="images/Home_Eatfresh_poster.png" poster="images/Home_Eatfresh_poster.png" data-src="images/Eatfresh_Home_Dish.mp4" src="images/Eatfresh_Home_Dish.mp4"
+			.right
+				img src="images/chai_point_web.png" alt="mobile image"/
+
 
 		.section.new-home-content.media
 			#instafeed.media-card.small.instagram
@@ -141,7 +135,7 @@ layout: home_layout
 				.left
 					.logo-img
 						svg
-							use xlink:href="images/svgs/iconset.svg#icon-logo-dribbble" 
+							use xlink:href="images/svgs/iconset.svg#icon-logo-dribbble"
 					.content
 						h2
 							| FAB for User Engagement
@@ -157,7 +151,7 @@ layout: home_layout
 			.left
 				.wrap
 					h2
-						| Creating the Housejoy iOS App for booking Home Services on demand
+						| Creating the <span class="light_green">Housejoy</span> iOS App for booking Home Services on demand
 					a.btn.new href="housejoy_ios.html"
 						.skewed.topaz
 							span View Project
@@ -165,8 +159,8 @@ layout: home_layout
 				.video
 					img src="images/nexus-5-x-wireframe.svg" alt="mobile image"/
 					video class="b-lazy" controls="controls" height="410" width="230" data-poster="images/housejoy_poster.png" poster="images/housejoy_poster.png" data-src="images/main2.mp4" src="images/main2.mp4"
-					/ video controls="" height="410" preload="auto" width="230" name="Housejoy" 
-					/ 	source src="images/main.mov" 
+					/ video controls="" height="410" preload="auto" width="230" name="Housejoy"
+					/ 	source src="images/main.mov"
 
 		.section.new-home-content.media
 			/ h2
@@ -177,14 +171,16 @@ layout: home_layout
 					a target="_blank" href="https://medium.com/parallel-labs/illustrations-in-ux-design-its-more-than-what-meets-the-eye-867036df0b73#.dera9at1f"
 						img src="images/Eatfresh-checkout-2.gif" alt="blog image"/
 				.left
-					a.m-title target="_blank" href="https://medium.com/parallel-labs"
-						| Story on Medium
+					svg.m-icon
+						use xlink:href="images/svgs/iconset.svg#icon-medium_logo"
 					.content
 						h2
 							a target="_blank" href="https://medium.com/parallel-labs/illustrations-in-ux-design-its-more-than-what-meets-the-eye-867036df0b73#.dera9at1f"
 								| Illustrations in UX Design — It’s more than what meets the eye
 						p
 							| Published on Aug 22, 2016
+						a.m-title target="_blank" href="https://medium.com/parallel-labs"
+							| Follow us on Medium
 				.right.m-right
 					.img-box
 					a target="_blank" href="https://medium.com/parallel-labs/illustrations-in-ux-design-its-more-than-what-meets-the-eye-867036df0b73#.dera9at1f"
@@ -198,10 +194,10 @@ layout: home_layout
 			.left
 				.wrap
 					h2
-						| Spreading Happiness made fun and simple with TREATR apps.
-					.btn.new.coming-soon
+						| Spreading Happiness made fun and simple with <span class="treatr-red">TREATR</span>
+					a.btn.new href="treatr.html"
 						.skewed.topaz
-							span Coming Soon
+							span View Project
 			.right.mobile
 				.video
 					img src="images/nexus-5-x-wireframe.svg" alt="mobile image"/
@@ -211,63 +207,74 @@ layout: home_layout
 			h2
 				| Testimonials <span class="border"></span>
 			/ slider testimonials
-			ul.tabs
-			    li
-			        input#tab1 type="radio" name="tabs" 
+			ul.tabs.owl-carousel#sync2
+			    li.item
+			        input#tab1 type="radio" name="tabs"
 			        label for="tab1"
 			        	img src="images/santosh.jpg" alt="Client image"/
-			        #tab-content1.tab-content.animated.fadeIn
-			        	p
-			        		| The best part is they operated as our own extended team during product conceptualisation and ideation for development iterations.
-			        	h4
-			        		| Santosh Panda, Explara
-			    li
+			      
+			    li.item
 			        input#tab2 type="radio" name="tabs" checked="checked"
 			        label for="tab2"
 			        	img src="images/nirmal.jpg" alt="Client image"/
-			        #tab-content2.tab-content.animated.fadeIn
-				        p
-				          	| They're creative, timely and understanding! They just kept delighting us with some great concepts &amp; visual designs that made a difference to our overall product.
-			        	h4
-			        		| Nirmal K, Housejoy
-			    li
+			        
+			    li.item
 			        input#tab3 type="radio" name="tabs"
 			        label for="tab3"
 			        	img src="images/arun.jpg" alt="Client image"/
-			        #tab-content3.tab-content.animated.fadeIn
-				        p
-				          	| We seek their counsel on a regular basis, and I'm happy to recommend Parallel Labs to anyone looking for cutting edge product design and user experiences.
-			        	h4
-			        		| Arun, Boomer
-			    / li
-			    /     input#tab4 type="radio" name="tabs"
-			    /     label for="tab4"
-			    /     	img src="images/binay-tiwari-appjoy.jpg" alt="Client image"/
-			    /     #tab-content3.tab-content.animated.fadeIn
-				   /      p
-				   /        	| I'm a big fan of Parallel Labs' design sprint approach! They takes a larger picture view of the problem being tackled, brainstorms to find all alternate paths, asks tough questions that force clarity, and gets the team focused on the right things. Parallel Labs acts more like an extended part of your team, than an agency.
-			    /     	h4
-			    /     		| Binay Tiwari, Appjoy
-			    / li
-			    /     input#tab5 type="radio" name="tabs"
-			    /     label for="tab5"
-			    /     	img src="images/srinivas-mothey-treatr.jpg" alt="Client image"/
-			    /     #tab-content3.tab-content.animated.fadeIn
-				   /      p
-				   /        	| Parallel Labs brought a fresh approach to design, considered practical use cases and had a completely hands-on approach in coming up with a great customer friendly design for our product. Overall we loved working with the team and we strongly recommend them for UI/UX design.
-			    /     	h4
-			    /     		| Srinivas Mothey Treatr
-
+							
+			    li.item
+			        input#tab4 type="radio" name="tabs"
+			        label for="tab4"
+			        	img src="images/binay-tiwari-appjoy.jpg" alt="Client image"/
+								
+			    li.item
+			        input#tab5 type="radio" name="tabs"
+			        label for="tab5"
+			        	img src="images/srinivas-mothey-treatr.jpg" alt="Client image"/
+			        
+			    
+			ul.tabs.owl-carousel#sync1
+				li.item
+					#tab-content1.tab-content.animated.fadeIn
+						p
+							| The best part is they operated as our own extended team during product conceptualisation and ideation for development iterations.
+						h4
+							| Santosh Panda, Explara
+				li.item
+						#tab-content2.tab-content.animated.fadeIn
+							p
+								| They're creative, timely and understanding! They just kept delighting us with some great concepts &amp; visual designs that made a difference to our overall product.
+							h4
+								| Nirmal K, Housejoy
+				li.item
+						#tab-content3.tab-content.animated.fadeIn
+							p
+								| We seek their counsel on a regular basis, and I'm happy to recommend Parallel Labs to anyone looking for cutting edge product design and user experiences.
+							h4
+								| Arun, Boomer
+				li.item
+					#tab-content4.tab-content.animated.fadeIn
+				      p
+				      	| I'm a big fan of Parallel Labs' design sprint approach! They takes a larger picture view of the problem being tackled, brainstorms to find all alternate paths, asks tough questions that force clarity, and gets the team focused on the right things. Parallel Labs acts more like an extended part of your team, than an agency.
+				    	h4
+				    		| Binay Tiwari, Appjoy
+				li.item
+					#tab-content5.tab-content.animated.fadeIn
+				      p
+			        	| Parallel Labs brought a fresh approach to design, considered practical use cases and had a completely hands-on approach in coming up with a great customer friendly design for our product. Overall we loved working with the team and we strongly recommend them for UI/UX design.
+				    	h4
+			    			| Srinivas Mothey Treatr
+								
+			
 		.section.new-home-content.tell-us
 			.content
 				h2
 					| We would love to hear about your project.
 				svg
-					use xlink:href="images/svgs/iconset.svg#icon-filled-like" 
+					use xlink:href="images/svgs/iconset.svg#icon-filled-like"
 				p
 					| Answer few questions to help us get a better context of your project and meaningful conversation.
 				a.btn.new.open-form href="javascript:void(0);"
 					.skewed.topaz
 						span Get in touch
-
-= partial "layouts/main_form.slim"

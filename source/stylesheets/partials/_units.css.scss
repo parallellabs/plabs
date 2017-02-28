@@ -151,6 +151,9 @@ svg {
     background-color: #019966;
 }
 
+.indiam{
+  color: #785ea0;
+}
 
 .M0 {
     margin: 0;
@@ -253,6 +256,9 @@ svg {
    }
 }
 
+.PT-30{
+  padding-top: 30px;
+}
 .FL-r{
   float: right;
 }
@@ -650,6 +656,14 @@ svg {
 
             &.eat-green{
               background-color: #009e5f;
+
+              span {
+                  color: #fff;
+              }
+            }
+
+            &.appjoy-pink{
+              background-color: #ec2956;
 
               span {
                   color: #fff;
@@ -1542,4 +1556,16 @@ $parallax-background-height: $parallax-window-height * 2;
 .media-card.small.instagram .left .content {
     max-height: 87px;
 }
+}
+
+.wrap-flex{
+  display: inline-block;
+
+  a{
+    display: table-cell;
+  }
+}
+
+.blur{
+  @include filter(blur(8px));
 }

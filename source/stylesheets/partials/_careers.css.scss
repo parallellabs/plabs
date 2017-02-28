@@ -18,6 +18,7 @@
     font-weight: 600;
     font-size: rem(42);
     font-family: $heading-font-family;
+    margin-top: 140px;
 
     .helper {
       display: block;
@@ -112,6 +113,7 @@
           color: $medium-gray;
           font-weight: 300;
           font-size: rem(18);
+          text-indent: 5px;
         }
 
         padding-bottom: 5px;
@@ -120,6 +122,7 @@
         font-weight: 300;
         font-size: rem(18);
         line-height: 24px;
+        min-height: 50px;
 
         &:focus ~ label {
           top: 0;
@@ -960,4 +963,8 @@
 
 .icon-chevron-right{
   float: right;
+}
+
+textarea{
+  min-height: 200px !important;
 }

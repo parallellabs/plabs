@@ -14,11 +14,14 @@
     position: absolute;
     top: 0;
     right: -594px;
+    // right: -570px;
     overflow:hidden;
     min-width: 800px;
     max-width: 40vw;
     width: auto;
     height: 801vh;
+    // height: 197vh;
+    // height: 22.4%;
     background-color: #fcc32c;
 
     img{
@@ -34,7 +37,7 @@
      z-index: 999999;
      display: block;
       max-width: none;
-     transform: rotate(-30deg)
+     transform: rotate(-30deg);
     }
 }
 
@@ -1084,7 +1087,7 @@ $tabs-base-color: #fafafa;
                             border-color: #ec2956;
 
                             span {
-                                color: #ec2956;
+                                color: #fff;
                             }
                         }
                     }
@@ -1131,6 +1134,18 @@ $tabs-base-color: #fafafa;
                                 color: #FF4C4C;
                             }
                         }
+                    }
+
+                    &.indiamart{
+                      border-color: #785ea0;
+
+                      .skewed{
+                        border-color: #785ea0;
+
+                        span{
+                          color: #785ea0;
+                        }
+                      }
                     }
                     &.coming-soon{
                         background-color:transparent;
@@ -1316,7 +1331,7 @@ $tabs-base-color: #fafafa;
                                     border-color: #ec2956;
 
                                     span {
-                                        color: #ec2956;
+                                        color: #fff;
                                     }
                                 }
                             }
