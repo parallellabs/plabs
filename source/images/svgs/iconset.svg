@@ -274,14 +274,18 @@
 	<path class="path2" fill="none" stroke="#fff" stroke-width="3.2" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M23.2 2.4l13.6 13.6-13.6 13.6"></path>
 	</symbol>
 	<symbol id="icon-web" viewBox="0 0 32 32">
-<title>web</title>
-<path class="path1" fill="#90caf9" d="M30.571 16c0 8.048-6.524 14.571-14.571 14.571s-14.571-6.524-14.571-14.571c0-8.048 6.524-14.571 14.571-14.571s14.571 6.524 14.571 14.571z"></path>
-<path class="path2" fill="none" stroke="#1565c0" stroke-width="1.5238" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M30.571 16c0 8.048-6.524 14.571-14.571 14.571s-14.571-6.524-14.571-14.571c0-8.048 6.524-14.571 14.571-14.571s14.571 6.524 14.571 14.571z"></path>
-<path class="path3" fill="none" stroke="#1565c0" stroke-width="1.5238" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M23.285 16c0 8.048-3.262 14.571-7.285 14.571s-7.285-6.524-7.285-14.571c0-8.048 3.262-14.571 7.285-14.571s7.285 6.524 7.285 14.571z"></path>
-<path class="path4" fill="none" stroke="#1565c0" stroke-width="1.5238" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M28.143 8.716h-24.286"></path>
-<path class="path5" fill="none" stroke="#1565c0" stroke-width="1.5238" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M28.143 23.286h-24.286"></path>
-<path class="path6" fill="none" stroke="#1565c0" stroke-width="1.5238" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M1.429 16h29.143"></path>
-<path class="path7" fill="none" stroke="#1565c0" stroke-width="1.5238" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M16 1.429v29.143"></path>
-</symbol>
+	<title>web</title>
+	<path class="path1" fill="#90caf9" d="M30.571 16c0 8.048-6.524 14.571-14.571 14.571s-14.571-6.524-14.571-14.571c0-8.048 6.524-14.571 14.571-14.571s14.571 6.524 14.571 14.571z"></path>
+	<path class="path2" fill="none" stroke="#1565c0" stroke-width="1.5238" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M30.571 16c0 8.048-6.524 14.571-14.571 14.571s-14.571-6.524-14.571-14.571c0-8.048 6.524-14.571 14.571-14.571s14.571 6.524 14.571 14.571z"></path>
+	<path class="path3" fill="none" stroke="#1565c0" stroke-width="1.5238" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M23.285 16c0 8.048-3.262 14.571-7.285 14.571s-7.285-6.524-7.285-14.571c0-8.048 3.262-14.571 7.285-14.571s7.285 6.524 7.285 14.571z"></path>
+	<path class="path4" fill="none" stroke="#1565c0" stroke-width="1.5238" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M28.143 8.716h-24.286"></path>
+	<path class="path5" fill="none" stroke="#1565c0" stroke-width="1.5238" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M28.143 23.286h-24.286"></path>
+	<path class="path6" fill="none" stroke="#1565c0" stroke-width="1.5238" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M1.429 16h29.143"></path>
+	<path class="path7" fill="none" stroke="#1565c0" stroke-width="1.5238" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M16 1.429v29.143"></path>
+	</symbol>
+	<symbol id="icon-work" viewBox="0 0 43 32">
+	<title>work</title>
+	<path fill="#fff" style="fill: var(--color1, #fff)" d="M0 0v31.18h13.128v-31.18h-13.128zM14.77 0v3.283h24.614v18.050h-24.616v3.283h8.206v3.281h-6.565v3.283h16.41v-3.283h-6.564v-3.281h16.411v-24.616h-27.897zM3.282 3.283h6.565v24.614h-6.565v-24.614zM6.565 22.975c-0.013-0-0.029-0.001-0.044-0.001-0.907 0-1.641 0.735-1.641 1.641s0.735 1.641 1.641 1.641c0.016 0 0.031-0 0.046-0.001 0.904 0 1.639-0.735 1.639-1.641s-0.735-1.641-1.641-1.641z"></path>
+	</symbol>
 	</defs>
 </svg>

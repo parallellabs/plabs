@@ -216,24 +216,25 @@ svg {
 }
 
 .PL-120{
-  padding-left: 120px;
-
   @include media(max-width 900px){
     padding-left: 60px;
   }
   @include media(max-width 768px){
     padding-left: 30px;
    }
+
+  padding-left: 120px
 }
 
 .PR-120{
-  padding-right: 120px;
   @include media(max-width 768px){
     padding-right: 30px;
    }
    @include media(max-width 900px){
      padding-right: 60px;
    }
+
+  padding-right: 120px
 }
 
 .PT-120{
@@ -244,16 +245,18 @@ svg {
   padding-top: 60px;
 }
 .PL-60{
-  padding-left: 60px;
   @include media(max-width 900px){
     padding-left: 30px;
    }
+
+  padding-left: 60px
 }
 .PR-60{
-  padding-right: 60px;
   @include media(max-width 900px){
     padding-right: 30px;
    }
+
+  padding-right: 60px
 }
 
 .PT-30{
@@ -653,7 +656,6 @@ svg {
                     color: #fff;
                 }
             }
-
             &.eat-green{
               background-color: #009e5f;
 
@@ -661,7 +663,6 @@ svg {
                   color: #fff;
               }
             }
-
             &.appjoy-pink{
               background-color: #ec2956;
 
@@ -678,9 +679,9 @@ svg {
                 }
             }
         }
-
         .skewed-inverse {
             @include transform(skewX(-25deg));
+
             overflow: hidden;
             margin-left: 24px;
             width: 230px;
@@ -689,6 +690,7 @@ svg {
 
             span {
                 @include transform(skewX(25deg));
+
                 width: 85px;
                 color: #fff;
                 text-align: center;
@@ -696,7 +698,6 @@ svg {
                 font-size: rem(18);
                 line-height: 48px;
             }
-
             &.topaz {
                 background-color: #16c6c2;
 
@@ -735,17 +736,17 @@ input[type="number"],
 textarea {
     display: block;
     margin: 0;
-    min-height: 120px;
     padding: 10px 10px 10px 5px;
+    min-height: 120px;
     width: 100%;
     border: none;
-    background-color: #fbfbfb;
     // border: solid 1px #cccccc;
     border-radius: 3px;
+    background-color: #fbfbfb;
     box-shadow: none;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
     color: #5c5c5c;
     font-size: 15px;
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
 }
 input[type="text"]:focus,
 input[type="number"]:focus,
@@ -1534,23 +1535,27 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 .parallax-background {
-    position: absolute;
-    top: - $parallax-window-height / 3;
-    // left: 0;
-    width: 100%;
-
     // background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
     // background-position: top;
     // background-size: cover;
     // background-color: beige;
     // height: $parallax-background-height;
+    @include media(max-width 768px){
+        top:-22em;
+    }
+
+    position: absolute;
+    // top: - $parallax-window-height / 3;
+    top:4em;
+    // left: 0;
+    width: 100%
 }
 
 // Based on http://codepen.io/skeurentjes/
 
 .media-card.small.instagram .left .content {
-    max-height: 211px;
     overflow-y: hidden;
+    max-height: 211px;
 }
 @media screen and (max-width: 1200px) and (min-width: 769px) {
 .media-card.small.instagram .left .content {

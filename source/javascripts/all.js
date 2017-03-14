@@ -56,26 +56,26 @@ $(document).ready(function(){
     }
   });
 }
-	// input counter initialised
-	var input = $("#projectBrief");
-	// var label = $("#thirdForm .group span");
-	var maxVal = 120;
-
-	input.keyup(function() {
-    var inputLength = input.val().length;
-    var counter = $("#counter");
-
-    $("#counter").html("");
-    $("#counter").html(inputLength);
-
-  	// if ( inputLength >= maxVal ) {
-  	//   label.css("background-color", "#F3493D");
-  	//   label.css("color", "#F3493D");
-  	// } else {
-  	//   label.css("background-color", "#2A9AF2");
-  	//   label.css("color", "#999");
-  	// }
-  });
+	// // input counter initialised
+	// var input = $("#projectBrief");
+	// // var label = $("#thirdForm .group span");
+	// var maxVal = 120;
+  //
+	// input.keyup(function() {
+  //   var inputLength = input.val().length;
+  //   var counter = $("#counter");
+  //
+  //   $("#counter").html("");
+  //   $("#counter").html(inputLength);
+  //
+  // 	// if ( inputLength >= maxVal ) {
+  // 	//   label.css("background-color", "#F3493D");
+  // 	//   label.css("color", "#F3493D");
+  // 	// } else {
+  // 	//   label.css("background-color", "#2A9AF2");
+  // 	//   label.css("color", "#999");
+  // 	// }
+  // });
 
 
 
@@ -111,68 +111,37 @@ $(document).ready(function(){
   }
   // image jump fix end
 
-    // Floating button
-    $(".button-floating").click(function() {
-        var $wrapper = $("#wrapper");
-
-        // if($wrapper.hasClass('available')){
-            if (!$wrapper.hasClass("button-floating-clicked"))
-            {
-                $wrapper.attr("class", "center available");
-                // $('.btn-overlay').hide();
-                $wrapper.toggleClass("button-floating-clicked-out");
-            }
-        // }
-
-        $wrapper.toggleClass("button-floating-clicked ");
-        // $('.btn-overlay').show();
-
-
-
-        // $(".button-sub").click(function() {
-        //     var color = $(this).data("color");
-
-        //     $wrapper.attr("class", "center button-floating-clicked button-floating-clicked-out");
-        //     $wrapper.addClass("button-sub-" + color + "-clicked");
-        // });
-    });
-
-    $('.btn-overlay').on('click', function(){
-        $('#wrapper').removeClass('available');
-        $('#wrapper').removeClass("button-floating-clicked");
-    });
-
-    // Input range slider
-    // $('#budget').ionRangeSlider({
-    //     min: 5000,
-    //     max: 50000,
-    //     from: 8000,
-    //     step: 5000,
-    //     grid: false,
-    //     keyboard: true,
-    //     grid_snap: false,
-    //     force_edges: true,
-    //     prefix: '$',
-    //     min_prefix: false,
-    //     max_postfix: false,
-    //     decorate_both: false,
-    //     prettify_enabled: true,
-    //     prettify_separator: ','
+    // // Floating button
+    // $(".button-floating").click(function() {
+    //     var $wrapper = $("#wrapper");
+    //
+    //     // if($wrapper.hasClass('available')){
+    //         if (!$wrapper.hasClass("button-floating-clicked"))
+    //         {
+    //             $wrapper.attr("class", "center available");
+    //             // $('.btn-overlay').hide();
+    //             $wrapper.toggleClass("button-floating-clicked-out");
+    //         }
+    //     // }
+    //
+    //     $wrapper.toggleClass("button-floating-clicked ");
+    //     // $('.btn-overlay').show();
+    //
+    //
+    //
+    //     // $(".button-sub").click(function() {
+    //     //     var color = $(this).data("color");
+    //
+    //     //     $wrapper.attr("class", "center button-floating-clicked button-floating-clicked-out");
+    //     //     $wrapper.addClass("button-sub-" + color + "-clicked");
+    //     // });
+    // });
+    //
+    // $('.btn-overlay').on('click', function(){
+    //     $('#wrapper').removeClass('available');
+    //     $('#wrapper').removeClass("button-floating-clicked");
     // });
 
-    $("#budget").ionRangeSlider({
-      type: "double",
-      grid: false,
-      min: 5000,
-      max: 50000,
-      from: 10000,
-      to: 15000,
-      grid: false,
-      prefix: "$",
-      step: 5000,
-      prettify_separator: ','
-      // values_separator: " to "
-  });
 
     // parallex background effect
     $('#scene').parallax({
@@ -265,22 +234,22 @@ $(window).scroll(function(e) {
   }
 });
 function parallax(){
-  if( $("#js-parallax-window").length > 0 ) {
-    var plxBackground = $("#js-parallax-background");
-    var plxWindow = $("#js-parallax-window");
-
-    var plxWindowTopToPageTop = $(plxWindow).offset().top;
-    var windowTopToPageTop = $(window).scrollTop();
-    var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
-
-    var plxBackgroundTopToPageTop = $(plxBackground).offset().top;
-    var windowInnerHeight = window.innerHeight;
-    var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
-    var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
-    var plxSpeed = 0.35;
-
-    plxBackground.css('top', - (plxWindowTopToWindowTop * plxSpeed) + 'px');
-  }
+  // if( $("#js-parallax-window").length > 0 ) {
+  //   var plxBackground = $("#js-parallax-background");
+  //   var plxWindow = $("#js-parallax-window");
+  //
+  //   var plxWindowTopToPageTop = $(plxWindow).offset().top;
+  //   var windowTopToPageTop = $(window).scrollTop();
+  //   var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
+  //
+  //   var plxBackgroundTopToPageTop = $(plxBackground).offset().top;
+  //   var windowInnerHeight = window.innerHeight;
+  //   var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
+  //   var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
+  //   var plxSpeed = 0.35;
+  //
+  //   plxBackground.css('top', - (plxWindowTopToWindowTop * plxSpeed) + 'px');
+  // }
 
   if( $("#js-parallax-window1").length > 0 ) {
     var plxBackground = $("#js-parallax-background1");

@@ -1,7 +1,7 @@
-form.section.main-form method="post"	
-  svg.close-form
-    use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
+form.section.main-form method="post"	 
   .inner-box
+    svg.close-form
+      use xlink:href="images/svgs/iconset.svg#icon-delete_sign"
     .wrap#firstForm
       h4
         | Tell us about your project
@@ -74,38 +74,43 @@ form.section.main-form method="post"
         |Information about your project helps us have meaningful conversations
         
       .group
-        |<svg class="icon icon-add-link"><use xlink:href="images/svgs/iconset.svg#icon-add-link"></use></svg>
+        | <svg class="icon icon-add-link"><use xlink:href="images/svgs/iconset.svg#icon-add-link"></use></svg>
         input.input#attachLink type="text" placeholder="Attach Google Drive / Dropbox Links"
+        
+      span.note
+        | Project start at $10,000 onwards
 
-      .action
+      .action.FL-r
         button.btn.next.new.FL-r type="button" 
           .skewed-inverse
             span Next
             |<svg><use xlink:href="images/svgs/iconset.svg#icon-arrows-long-right"></use></svg>
   .inner-box
+    svg.close-form
+      use xlink:href="images/svgs/iconset.svg#icon-delete_sign"
     .wrap#secondForm
       h4
         | Tell us about yourself
       
-      .group
-        .row.MT-40
+      .group.second-form-grp
+        .row
           .input-group
             p.message Required 
             input#clientName type="text" placeholder="Name"
             
-      .group    
+      .group.second-form-grp    
         .row  
           .input-group 
             p.message Required 
             input#company type="text" placeholder="Company"
       
-      .group    
+      .group.second-form-grp    
         .row
           .input-group
             p.message Required 
             input#email type="text" placeholder="Email"
             
-      .group    
+      .group.second-form-grp    
         .row  
           .input-group
             p.message Required 
@@ -127,6 +132,8 @@ form.section.main-form method="post"
             span Send 
           
   .inner-box
+    svg.close-form
+      use xlink:href="images/svgs/iconset.svg#icon-delete_sign"
     .wrap.thankyou#thirdForm
       h4
         | Thanks for reaching out for your project.

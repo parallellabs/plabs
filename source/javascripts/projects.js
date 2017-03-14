@@ -1,32 +1,32 @@
-// On scroll Blur effect
-$(window).scroll(function() {
-	var target2 = $(".section").offset().top;
-
-	// Floating button script on scroll displays
-	if ($(window).scrollTop() >= target2){
-		$('#wrapper').addClass('available');
-	}else{
-		$('#wrapper').removeClass('available');
-	}
-
-	if ($(window).scrollTop() >= ($(".blur-container").offset().top - 10)) {
-		$('.blurred-img').css('opacity', '+=1');
-		$('.blur-container .content .conversetion').addClass('start');
-		$('.blur-container .content .design-goals').show('slow');
-		// $('body').addClass('overflow-H').delay(2000).removeClass('overflow-H');
-		$('.conversetion.start').each(function(i){
-			var that = $(this);
-			setTimeout(function () {
-				that.find('.user').addClass('animate');
-				that.find('.message').css('opacity', '+=1');
-				// that.find('.message').addClass('strech-msg');
-			}, 300 * i );
-		});
-
-	}
-
-
-}); //end
+// // On scroll Blur effect
+// $(window).scroll(function() {
+// 	var target2 = $(".section").offset().top;
+//
+// 	// Floating button script on scroll displays
+// 	if ($(window).scrollTop() >= target2){
+// 		$('#wrapper').addClass('available');
+// 	}else{
+// 		$('#wrapper').removeClass('available');
+// 	}
+//
+// 	if ($(window).scrollTop() >= ($(".blur-container").offset().top - 10)) {
+// 		$('.blurred-img').css('opacity', '+=1');
+// 		$('.blur-container .content .conversetion').addClass('start');
+// 		$('.blur-container .content .design-goals').show('slow');
+// 		// $('body').addClass('overflow-H').delay(2000).removeClass('overflow-H');
+// 		$('.conversetion.start').each(function(i){
+// 			var that = $(this);
+// 			setTimeout(function () {
+// 				that.find('.user').addClass('animate');
+// 				that.find('.message').css('opacity', '+=1');
+// 				// that.find('.message').addClass('strech-msg');
+// 			}, 300 * i );
+// 		});
+//
+// 	}
+//
+//
+// }); //end
 
 $(document).ready(function(){
   // sidebar slide
@@ -51,26 +51,26 @@ $(document).ready(function(){
         });
 	}); //end
 
-	// input counter initialised
-	var input = $("#projectBrief");
-	// var label = $("#thirdForm .group span");
-	var maxVal = 120;
-
-	input.keyup(function() {
-	var inputLength = input.val().length;
-	var counter = $("#counter");
-
-	$("#counter").html("");
-	$("#counter").html(inputLength);
-
-	// if ( inputLength >= maxVal ) {
-	//   label.css("background-color", "#F3493D");
-	//   label.css("color", "#F3493D");
-	// } else {
-	//   label.css("background-color", "#2A9AF2");
-	//   label.css("color", "#999");
-	// }
-	});
+	// // input counter initialised
+	// var input = $("#projectBrief");
+	// // var label = $("#thirdForm .group span");
+	// var maxVal = 120;
+	//
+	// input.keyup(function() {
+	// var inputLength = input.val().length;
+	// var counter = $("#counter");
+	//
+	// $("#counter").html("");
+	// $("#counter").html(inputLength);
+	//
+	// // if ( inputLength >= maxVal ) {
+	// //   label.css("background-color", "#F3493D");
+	// //   label.css("color", "#F3493D");
+	// // } else {
+	// //   label.css("background-color", "#2A9AF2");
+	// //   label.css("color", "#999");
+	// // }
+	// });
 
  	// resize banner for mobile
 	if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -93,36 +93,36 @@ $(document).ready(function(){
 		// $('.main-form').addClass('back');
 	});
 
-	 // Floating button
-    $(".button-floating").click(function() {
-        var $wrapper = $("#wrapper");
-
-        // if($wrapper.hasClass('available')){
-            if (!$wrapper.hasClass("button-floating-clicked"))
-            {
-                $wrapper.attr("class", "center available");
-                // $('.btn-overlay').hide();
-                $wrapper.toggleClass("button-floating-clicked-out");
-            }
-        // }
-
-        $wrapper.toggleClass("button-floating-clicked ");
-        // $('.btn-overlay').show();
-
-
-
-        // $(".button-sub").click(function() {
-        //     var color = $(this).data("color");
-
-        //     $wrapper.attr("class", "center button-floating-clicked button-floating-clicked-out");
-        //     $wrapper.addClass("button-sub-" + color + "-clicked");
-        // });
-    });
-
-    $('.btn-overlay').on('click', function(){
-        // $('#wrapper').removeClass('available');
-        $('#wrapper').removeClass("button-floating-clicked");
-    });
+	//  // Floating button
+  //   $(".button-floating").click(function() {
+  //       var $wrapper = $("#wrapper");
+	 //
+  //       // if($wrapper.hasClass('available')){
+  //           if (!$wrapper.hasClass("button-floating-clicked"))
+  //           {
+  //               $wrapper.attr("class", "center available");
+  //               // $('.btn-overlay').hide();
+  //               $wrapper.toggleClass("button-floating-clicked-out");
+  //           }
+  //       // }
+	 //
+  //       $wrapper.toggleClass("button-floating-clicked ");
+  //       // $('.btn-overlay').show();
+	 //
+	 //
+	 //
+  //       // $(".button-sub").click(function() {
+  //       //     var color = $(this).data("color");
+	 //
+  //       //     $wrapper.attr("class", "center button-floating-clicked button-floating-clicked-out");
+  //       //     $wrapper.addClass("button-sub-" + color + "-clicked");
+  //       // });
+  //   });
+	 //
+  //   $('.btn-overlay').on('click', function(){
+  //       // $('#wrapper').removeClass('available');
+  //       $('#wrapper').removeClass("button-floating-clicked");
+  //   });
 
 		$("#screen-slider").owlCarousel({
 			navigation : false, // Show next and prev buttons
@@ -202,23 +202,5 @@ $(document).ready(function(){
 		reflectionSize: 70,
 		selectByClick: true
 	});
-
-	// Input range slider
-    $('#budget').ionRangeSlider({
-        min: 3000,
-        max: 20000,
-        from: 6000,
-        step: 3000,
-        grid: false,
-        keyboard: true,
-        grid_snap: false,
-        force_edges: true,
-        prefix: '$',
-        min_prefix: false,
-        max_postfix: false,
-        decorate_both: false,
-        prettify_enabled: true,
-        prettify_separator: ','
-    });
 
 })
