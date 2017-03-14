@@ -46,13 +46,13 @@
     }
   }
   .yellow{
+    @include transform( skewX(-30deg));
+
     // top: 0;
     background-color: #fcc32c;
-    @include transform( skewX(-30deg));
 
     h1{
         // transform: skew(30deg) translate(-168px,294px);
-
         @include transform( skewX(30deg));
       }
   }

@@ -1252,14 +1252,14 @@ $tabs-base-color: #fafafa;
           }
           &.new {
             @include transform(rotate(30deg));
+            @include media(min-width 1441px){
+              height:auto;
+            }
 
             display: block;
             height: inherit;
             height: 650px;
             border: none;
-            @include media(min-width 1441px){
-              height:auto;
-            }
 
             .img-wrap {
               height: inherit;

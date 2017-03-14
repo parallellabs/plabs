@@ -23,5 +23,5 @@ gem "slim"
 
 # Adding bourbon, neat and bitters
 gem 'bitters'
-gem 'bourbon', '~> 4.2', '>= 4.2.7'
-gem 'neat'
+gem 'bourbon', '~> 4.2.7'
+gem 'neat', '~> 1.8.0'

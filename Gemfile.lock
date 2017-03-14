@@ -10,7 +10,7 @@ GEM
       bourbon (>= 4.2)
       sass (>= 3.4)
       thor
-    bourbon (4.3.3)
+    bourbon (4.2.7)
       sass (~> 3.4)
       thor (~> 0.19)
     capybara (2.4.4)
@@ -115,8 +115,8 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.10.1)
     multi_json (1.12.1)
-    neat (2.0.0)
-      sass (~> 3.4)
+    neat (1.8.0)
+      sass (>= 3.3)
       thor (~> 0.19)
     net-sftp (2.1.2)
       net-ssh (>= 2.6.5)
@@ -171,12 +171,12 @@ PLATFORMS
 
 DEPENDENCIES
   bitters
-  bourbon (~> 4.2, >= 4.2.7)
+  bourbon (~> 4.2.7)
   middleman (~> 3.4.0)
   middleman-deploy (~> 1.0)
   middleman-imageoptim
   middleman-livereload (~> 3.1.0)
-  neat
+  neat (~> 1.8.0)
   slim
   tzinfo-data
   wdm (~> 0.1.0)
@@ -185,4 +185,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.13.7
+   1.14.6
