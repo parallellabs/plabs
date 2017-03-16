@@ -59,7 +59,7 @@ html.no-js lang="en"
     .wrapper.new.overflow-XH.team-wrapper
       = partial "layouts/homeHeader.slim"
       == yield
-      
+
     = partial "layouts/main_form.slim"
     = partial "layouts/new_footer.slim"
     / jQuery
@@ -80,14 +80,15 @@ html.no-js lang="en"
       $(document).ready(function() {
 
         $(document).on("click", ".team-member-block .team-member", function(e){
-          $('.team-overlay .team-img-block > img').width($(this).find('img').width());
+          //$(this).find('img').hide();
+          $('.team-overlay .team-img-block > img').width("0");
+
+          //$( '.team-overlay .team-img-block > img' ).animate({ width: $(this).find('img').width() }, 700 );
 
           $(".team-overlay .team-overlay-content .team-content .name").text($(this).find('.name').text());
           $(".team-overlay .team-overlay-content .team-content .designation").text($(this).find('.designation').text());
           $(".team-overlay .team-overlay-content .team-content .description").text($(this).find('.description').text());
           calcTeamImageDimensions($(this));
-
-          $(this).find('img').addClass('hide');
 
           $("body").addClass('disableScroll');
           $(".team-wrapper").addClass('blur');
@@ -139,13 +140,12 @@ html.no-js lang="en"
 
         $('.team-overlay .team-img-block > img').attr('src',memberPhoto);
 
-        console.log($(window).scrollTop() + "|" + imageSelector.find('img').offset().top + "|" + (imageSelector.find('img').offset().top  - $(window).scrollTop()));
+        var leftValue = ($(window).width()-$('.team-overlay .skewed-bg').width())/2-$('.team-overlay .skewed-bg').width()/3;
 
-        $('.team-overlay .team-img-block').css({'bottom':bottomPhotoValue +"px",'left':imageSelector.find('img').offset().left +"px"}).animate({bottom : bottomValue,left: ($(window).width()-$('.team-overlay .skewed-bg').width())/2-$('.team-overlay .skewed-bg').width()/3}, 500 );
+        //console.log(imageSelector.find('img').offset().left + "||" + leftValue);
 
-        setTimeout(function(){
-          $('.team-overlay .team-img-block > img').css({opacity:0});
-        }, 400);
+        $('.team-overlay .team-img-block').css({'bottom':bottomPhotoValue +"px",width: "0",'left':imageSelector.find('img').offset().left +"px"}).animate({bottom : bottomValue,width:"50%",left: leftValue}, 500 );
+
         setTimeout(function(){
           if($(window).width() < 480)
           {

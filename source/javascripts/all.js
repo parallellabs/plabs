@@ -7,7 +7,7 @@ $(document).ready(function(){
     var $li = $(this);
     setTimeout(function() {
       $li.toggleClass('animated fadeIn');
-    }, i*200); // delay 100 ms
+    }, i*75); // delay 100 ms
   });
     e.preventDefault();
   });

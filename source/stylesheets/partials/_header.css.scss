@@ -287,10 +287,10 @@
   // $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
   @include position(fixed, 0px 0px 0px auto);
   @include size(100% 100%);
-
   // @include transform(translateX(-220px));
   // @include transform(translateX(220px));
   @include transition(all 0.25s linear);
+
   z-index: 999999;
   visibility: hidden;
   overflow-y: auto;
@@ -333,6 +333,8 @@
     }
   }
   &.is-visible {
+    @include transition(all 0.25s linear);
+
     // @include transform(translateX(0));
     visibility: visible;
   }
