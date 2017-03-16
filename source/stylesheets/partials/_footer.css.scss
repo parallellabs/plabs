@@ -152,9 +152,9 @@
                         vertical-align: middle;
 
                         p {
-                            @include media(max-width 768px) {
-                                font-size: rem(12);
-                            }
+                            // @include media(max-width 768px) {
+                            //     font-size: rem(12);
+                            // }
 
                             margin-bottom: 0;
                             color: #fff;
@@ -162,9 +162,9 @@
                             font-size: rem(14);
                         }
                         a {
-                            @include media(max-width 768px) {
-                                font-size: rem(12);
-                            }
+                            // @include media(max-width 768px) {
+                            //     font-size: rem(12);
+                            // }
 
                             margin-bottom: 0;
                             color: #fff;

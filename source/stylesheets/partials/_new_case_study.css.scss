@@ -277,6 +277,10 @@
 
     img{
       margin-right: 80px;
+
+      &:last-child{
+        margin-right:0;
+      }
     }
   }
   video{

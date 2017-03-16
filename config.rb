@@ -81,19 +81,19 @@ end
 
 
 # Deployment configuration
-activate :deploy do |deploy|
-  deploy.method   = :ftp
-  deploy.host            = 'ftp.cpll.co'
-  deploy.port            = 21
-  deploy.path            = 'plabs'
-  deploy.user            = 'middleman@cpll.co'
-  deploy.password        = 'plabs234#'
-end
 # activate :deploy do |deploy|
 #   deploy.method   = :ftp
-#   deploy.host            = 'ftp.parallellabs.io'
+#   deploy.host            = 'ftp.cpll.co'
 #   deploy.port            = 21
-#   deploy.path            = ''
-#   deploy.user            = 'PLlive@parallellabs.io'
-#   deploy.password        = 'Zentigrity26#'
-#   end
+#   deploy.path            = 'plabs'
+#   deploy.user            = 'middleman@cpll.co'
+#   deploy.password        = 'plabs234#'
+# end
+activate :deploy do |deploy|
+  deploy.method   = :ftp
+  deploy.host            = 'ftp.parallellabs.io'
+  deploy.port            = 21
+  deploy.path            = ''
+  deploy.user            = 'PLlive@parallellabs.io'
+  deploy.password        = 'Zentigrity26#'
+  end

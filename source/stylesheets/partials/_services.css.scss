@@ -93,8 +93,13 @@
 }
 
 .small-steps{
+  @include media(max-width 768px){
+    padding-top:0;
+  }
+
   p{
     @include media(max-width 768px){
+      margin-bottom: 30px;
       padding: 0 30px;
       width: 100%;
     }
@@ -110,6 +115,11 @@
     line-height: 1.56
   }
   h3{
+    @include media(max-width 768px){
+      padding:0 30px;
+      width:100%;
+    }
+
     margin:0 auto;
     width:60%;
     color: #243f53;
@@ -171,6 +181,12 @@
       //
       // }
       @include span-columns(4);
+      @include media(max-width 768px){
+        display:block;
+        margin-bottom:30px;
+        padding-right:0;
+        width:100%;
+      }
 
       // display: block;
       // float: left;
