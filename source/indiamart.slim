@@ -1,0 +1,102 @@
+---
+layout: parallex_layout
+---
+- @title = "India Mart Web - Case Study | Parallel Labs"
+- @description = "How we transformed Explara to a experience discovery platform"
+- @keyword = "Explara User Experience Design Case Study, Parallel Labs Explara Web, Explara Android App , Explara iOS App, Local Discovery Design"
+- @og_title = "Parallel Labs Blog"
+- @og_description = "How we transformed Explara to a experience discovery platform"
+- @og_url = "http://parallellabs.io/explara.html"
+- @og_image = "http://parallellabs.io/images/workpage_images/Explara_web2.png"
+- @twitter_title = "Parallel Labs Blog"
+- @twitter_description = "Article and Insights from Parallel Labs team on everything design"
+- @twitter_url = "http://parallellabs.io/explara.html"
+- @twitter_image = "http://parallellabs.io/images/workpage_images/Explara_web2.png"
+
+= partial "layouts/header.slim"
+
+/ content
+.section.master-banner.casestudy.indiamart-banner
+  .overlay
+    .banner-content
+      h2.title
+        | Visual Makeover of India’s Largest B2B Marketplace
+      .members.smartceo
+        .member
+          |<img src="images/Robin.jpg" alt="Robin" />
+          |<span class="member-name">Robin</span>
+          |<span class="role">Creative Direction</span>
+
+        .member
+          |<img src="images/chaitanya.jpg" alt="Chaitanya" />
+          |<span class="member-name">Chaitanya</span>
+          |<span class="role">Interface Design</span>
+
+      .stats
+        .stat
+          |<span class="numbers">2</span>
+          |<span class="stat-text">Weeks</span>
+        .slant
+
+        .stat
+          |<span class="numbers">15</span>
+          |<span class="stat-text">Emails</span>
+        .slant
+
+        .stat
+          |<span class="numbers">7</span>
+          |<span class="stat-text">Calls</span>
+
+.section.new-home-content.casestudy-content
+  p
+    |Indiamart is India’s largest B2B marketplace that connects the brick and mortar businesses with over 5 lakh verified businesses on its website. They approached us to redesign the website starting with their crucial listings page.
+  img src="images/indiamart/indiamart-home.jpg" alt="indiamart screen"
+  
+
+.section.new-home-content.casestudy-content
+  h2
+    |Experimenting with Card Styles <span class="border ML0-imp"></span>
+  img src="images/indiamart/indiamart-cards-01.jpg" alt="indiamart screen"
+  img src="images/indiamart/indiamart-cards-02.jpg" alt="indiamart screen"
+
+.section.new-home-content.casestudy-content
+  h2
+    |Reimagining the crucial Navigation, Search and Filters<span class="border ML0-imp"></span>
+    img src="images/indiamart/indiamart-nav-01.jpg" alt="indiamart screen"
+    img src="images/indiamart/indiamart-nav-02.jpg" alt="indiamart screen"
+
+.section.new-home-content.project-nav
+  a href="pinknblu.html"
+    .prev.box-shape
+      .inside
+        |<span class="project-name">PINK N BLU</span>
+        |<span class="project-desc"></span>
+    .box2.FL-l
+      svg
+        use xlink:href="images/svgs/iconset.svg#icon-left-arrow"
+
+  .fancy-line
+    |See more awesome stuff
+
+  a href="javascript:void(0);"
+    .next.box-shape
+      .inside
+        |<span class="project-name">BLEEMS</span>
+        |<span class="project-desc"></span>
+    .box2.FL-r
+      svg
+        use xlink:href="images/svgs/iconset.svg#icon-right-arrow"
+
+.section.new-home-content.tell-us
+	.content
+		h2
+			| We would love to hear about your project.
+		svg
+			use xlink:href="images/svgs/iconset.svg#icon-filled-like"
+		p
+			| Answer few questions to help us get a better context of your project and meaningful conversation.
+		a.btn.new.open-form href="javascript:void(0);"
+			.skewed.topaz
+				span Get in touch
+
+/ = partial "layouts/main_form.slim"

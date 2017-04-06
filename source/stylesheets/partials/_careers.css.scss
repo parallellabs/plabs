@@ -196,13 +196,8 @@
       max-width: 920px;
 
       &.fluid {
+        overflow: hidden;
         max-width: 100%;
-      }
-      .fancy-title {
-        margin-bottom: 20px;
-        color: $blue;
-        text-align: center;
-        font-family: $beyond_m;
       }
       h2{
         .border{
@@ -303,6 +298,10 @@
       .divider {
         @include media(max-width 768px) {
           margin-bottom: 60px;
+
+          &:last-child{
+            margin-bottom:0;
+          }
         }
 
         margin-bottom: 0;
@@ -389,8 +388,11 @@
           @include clearfix;
           @include media(max-width 600px){
             .owl-item{
-              margin-right: 20px;
+              padding-right: 20px;
 
+              &:last-child{
+                padding-right:0;
+              }
               .item {
                 // display: block;
                 width: 100%;
@@ -407,7 +409,6 @@
                   }
                 }
                 .card{
-                  // position: relative;
                   float: left;
                   margin-right: 0;
                   margin-bottom: 0;
@@ -432,34 +433,8 @@
                 &.left{
                   @include clearfix;
 
-                  // padding-right: 230px;
                   max-width: 100%;
 
-                  // &:after {
-                  //   @include transform(skew(-30deg));
-                  //
-                  //   position: absolute;
-                  //   top: 0;
-                  //   right: -60px;
-                  //   bottom: 0;
-                  //   z-index: -1;
-                  //   display: block;
-                  //   width: 200px;
-                  //   background: #fcc32c;
-                  //   content: '';
-                  //
-                  //
-                  // }
-                  // &:before{
-                  //   position: absolute;
-                  //   right: -60px;
-                  //   z-index: 1;
-                  //   // width: 342px;
-                  //   height: 100%;
-                  //   //background-image: url("../images/Sreenath1.png");
-                  //   background-color: #fff;
-                  //   content: '';
-                  // }
                   p{
                     float: left;
                     max-width: 100%;
@@ -487,32 +462,6 @@
                   // padding-left: 230px;
                   max-width: 100%;
 
-                  // &:after {
-                  //   @include transform(skew(-30deg));
-                  //
-                  //   position: absolute;
-                  //   top: 0px;
-                  //   bottom: 0;
-                  //   left: -60px;
-                  //   z-index: -1;
-                  //   display: block;
-                  //   width: 200px;
-                  //   background: #fcc32c;
-                  //   content: '';
-                  //
-                  // }
-                  // &:before{
-                  //   position: absolute;
-                  //   left: 0;
-                  //   z-index: 1;
-                  //   // width: 342px;
-                  //   height: 100%;
-                  //   // //background-image: url("../images/Sreenath1.png");
-                  //   background-color: #fff;
-                  //   content: '';
-                  //   width: 100%;
-                  //
-                  // }
                   p{
                     float: right;
                     max-width: 100%;
@@ -612,101 +561,66 @@
               height:600px;
 
               .card{
-                // position: relative;
+                @include media(max-width 992px){
+                  position: relative;
+                  overflow: hidden;
+                  overflow: hidden;
+                  padding-bottom: 0;
+                  max-width: 100%;
+                }
+
                 float: left;
                 margin-right: 0;
                 margin-bottom: 0;
-                max-width: 100%;
-                width: auto;
-                height: inherit;
-
-                // @media(max-width: 580px){
-                //   max-width: 75%;
-                // }
+                max-width: 92%;
+                width: 100%;
+                height: inherit
 
 
               }
               .item-img{
                 position: absolute;
-                z-index: 2;
+                z-index: 3;
                 width: auto;
                 height: 100%;
               }
               &.left{
                 @include clearfix;
+                @include media(max-width 992px){
+                  max-width: 100%;
+                  height:800px;
+                }
 
-                // padding-right: 230px;
                 max-width: 90%;
 
-                // &:after {
-                //   @include transform(skew(-30deg));
-                //
-                //   position: absolute;
-                //   top: 0;
-                //   right: 15px;
-                //   bottom: 0;
-                //   z-index: 2;
-                //   display: block;
-                //   width: 250px;
-                //   background: #fcc32c;
-                //   content: '';
-                //
-                //   // @media(max-width: 580px){
-                //   //   right: 0 !important;
-                //   //   width: 200px;
-                //   //   height: 50%;
-                //   // }
-                //
-                // }
-                // &:before{
-                //   position: absolute;
-                //   right: -60px;
-                //   z-index: 1;
-                //   // width: 342px;
-                //   height: 100%;
-                //   //background-image: url("../images/Sreenath1.png");
-                //   background-color: #fff;
-                //   content: '';
-                // }
-                // p{
-                //   float: left;
-                // }
                 p{
-                  @include media(max-width 1200px){
-                    transform: translate(-10%, 63%);
+                  @include media(max-width 1024px){
+                    left:30px;
                   }
-                  @include media(max-width 768px){
-                    transform: translate(2%,63%);
+                  @include media(max-width 992px){
+                    @include transform(none);
+
+                    position: static;
+                    float: none;
+                    margin-top: 0;
+                    max-width: 100%;
+                    font-size: 1rem;
                   }
 
-                  top: 100%;
-                  left: 20%;
-                  max-width: 55%;
-                  transform: translate(20%,100%)
-
-
+                  position:absolute;
+                  top: 250px;
+                  left: 60px;
+                  max-width: 45%
                 }
                 .cred{
-                  @include media(max-width 1200px){
-                    float: left;
-                    text-align: left;
-                  }
-                  @include media(max-width 768px){
-                    margin-top: 26%;
-                  }
-
                   display: block;
-                  float: right;
-                  margin-top: 18%;
-                  margin-right: 39%;
+                  margin-top: 20px;
                   text-align: right;
 
-                  p{
-                    float: none;
+                  span{
+                    display: block;
+                    margin-bottom:0;
                     max-width: 100%;
-
-
-
                   }
                   .med{
                     color: #555;
@@ -718,13 +632,30 @@
                   }
                 }
                 .icon-quote{
+                  @include media(max-width 992px){
+                    position: static;
+                    margin-left: 20px;
+                  }
+
                   position: absolute;
                   left: 22px;
                   color: #fafafa;
-                  transform: rotate(180deg);
+                  transform: rotate(180deg)
                 }
                 .yellow-border{
-                  @include transform(skew(-30deg));
+                  @include media(max-width 992px){
+                    position: static;
+                    top: auto;
+                    right: 20px;
+                    bottom: 0;
+                    left: auto;
+                    float: none;
+                    overflow: hidden;
+                    margin: 0 auto;
+                    max-width: 75%;
+                    height: 315px;
+                  }
+                  @include transform(skew(-20deg));
 
                   position: absolute;
                   top: 0;
@@ -735,111 +666,74 @@
                   width: 250px;
                   height: 100%;
                   background: #fcc32c;
-                }
-                // .card {
-                //   padding-right: 200px;
-                //   padding-left: 60px;
-                //
-                //   // @include media(max-width 580px){
-                //   // width: 100%;
-                //   // }
-                //
-                // }
-                img.item-img{
-                  //   @include media(max-width 580px){
-                  //   width: 200px;
-                  // height: 240px;
-                  //     }
-                  @include media(max-width 768px){
-                    right: 18px;
-                    width: 305px;
+
+                  img.item-img{
+                    @include transform(skew(20deg));
+                    @include media(max-width 1024px){
+                      right:80px;
+                      max-width: 350px;
+                    }
+                    @include media(max-width 992px){
+                      top: auto;
+                      right: 60px;
+                      max-width: 100%;
+                      width: auto;
+                    }
+
+                    right: 100px;
+                    bottom: 0;
+                    z-index: 3;
+                    max-width: 450px;
+                    height:auto
                   }
-
-                  right: 70px;
-                  z-index: 3
-
                 }
 
               }
               &.right{
-                float:right;
-                // padding-left: 230px;
-                max-width: 90%;
+                @include media(max-width 992px){
+                  max-width: 100%;
+                  height:800px;
+                }
 
-                // &:after {
-                //   @include transform(skew(-30deg));
-                //
-                //   position: absolute;
-                //   top: 0;
-                //   bottom: 0;
-                //   left: 15px;
-                //   z-index: 2;
-                //   display: block;
-                //   width: 250px;
-                //   background: #fcc32c;
-                //   content: '';
-                //
-                //   // @include media(max-width 580px){
-                //   //   width: 200px;
-                //   //   height: 100%;
-                //   //   display: inline-block;
-                //   // }
-                // }
-                // &:before{
-                //   position: absolute;
-                //   left: 0;
-                //   z-index: 1;
-                //   // width: 342px;
-                //   height: 100%;
-                //   //background-image: url("../images/Sreenath1.png");
-                //   background-color: #fff;
-                //   content: '';
-                //   //
-                //   // @include media(max-width 580px){
-                //   //   width: 200px;
-                //   //   height: 100%;
-                //   //   display: inline-block;
-                //   // }
-                // }
+                float:right;
+                max-width: 90%;
+                width: 100%;
+
+                .card{
+                  @include media(max-width 992px){
+                    max-width:100%;
+                  }
+
+                  float:right;
+                  max-width:90%
+                }
                 p{
                   float: right;
                 }
                 p{
-                  @include media(max-width 1200px){
-                    transform: translate(-10%, 63%);
+                  @include media(max-width 992px){
+                    @include transform(none);
+
+                    position: static;
+                    float: none;
+                    margin-top: 0;
+                    max-width: 100%;
+                    font-size:1rem;
                   }
-                  @include media(max-width 768px){
-                    transform: translate(5%,63%);
-                  }
 
-                  top: 100%;
-                  left: 20%;
-                  max-width: 55%;
-                  transform: translate(-9%,100%)
-
-
+                  position:absolute;
+                  top: 250px;
+                  right: 60px;
+                  max-width: 55%
                 }
                 .cred{
-                  @include media(max-width 1200px){
-                    float: left;
-                    text-align: left;
-                  }
-                  @include media(max-width 768px){
-                    margin-top: 26%;
-                    margin-left: 46%;
-                  }
-
                   display: block;
-                  float: right;
-                  margin-top: 18%;
-                  margin-left: 42%;
+                  margin-top: 20px;
                   text-align: right;
 
-                  p{
-                    float: none;
+                  span{
+                    display:block;
                     max-width: 100%;
-
-
                   }
                   .med{
                     color: #555;
@@ -851,8 +745,9 @@
                   }
                 }
                 .icon-quote{
-                  @include media(max-width 768px){
-                    left: 50%;
+                  @include media(max-width 992px){
+                    position: static;
+                    margin-left: 20px;
                   }
 
                   position: absolute;
@@ -861,7 +756,19 @@
                   transform: rotate(180deg)
                 }
                 .yellow-border{
-                  @include transform(skew(-30deg));
+                  @include media(max-width 992px){
+                    position: static;
+                    top: auto;
+                    right: 20px;
+                    bottom: 0;
+                    left: auto;
+                    float:none;
+                    overflow: hidden;
+                    margin: 0 auto;
+                    max-width: 75%;
+                    height: 315px;
+                  }
+                  @include transform(skew(-20deg));
 
                   position: absolute;
                   top: 0;
@@ -872,26 +779,26 @@
                   width: 250px;
                   height: 100%;
                   background: #fcc32c;
-                }
-                // .card {
-                //   padding-right: 60px;
-                //   padding-left: 200px;
-                //
-                //
-                // }
-                .item-img{
-                  @include media(max-width 768px){
-                    width: 305px;
+
+                  .item-img{
+                    @include transform(skew(20deg));
+                    @include media(max-width 1024px){
+                      max-width: 350px;
+                    }
+                    @include media(max-width 992px){
+                      top: 0;
+                      right: 60px;
+                      bottom: auto;
+                      max-width: 100%;
+                      width: auto;
+                    }
+
+                    bottom: 0;
+                    left: 0;
+                    z-index: 3;
+                    max-width: 450px;
+                    height: auto
                   }
-
-                  left: 40px;
-                  z-index: 3
-
-                  // @include media(max-width 580px){
-                  //   width: 200px;
-                  //   height: 204px;
-                  // }
-
                 }
               }
 

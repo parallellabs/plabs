@@ -171,15 +171,6 @@
     max-width: 100%;
 
     .service-steps{
-      // @include media(max-width 1260px) {
-      //   @include span-columns(12);
-      //   @include omega();
-      //
-      //   margin: 30px auto;
-      //   margin-bottom: 20px;
-      //   height:100%;
-      //
-      // }
       @include span-columns(4);
       @include media(max-width 768px){
         display:block;
@@ -195,13 +186,20 @@
       // max-width: 360px;
       // height:480px;
       .wrap{
-        // @include reset-display;
+        @include media(max-width 768px){
+          padding:20px;
+        }
+
         padding: 30px;
         background-color: #ffffff;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
         text-align: left;
       }
       h3{
+        @include media(max-width 768px){
+          padding:0;
+        }
+
         width:100%;
         color: #243f53;
         text-align: left;
@@ -225,7 +223,7 @@
         text-align: left;
         font-size: 18px;
         font-family: $base-font-family;
-        line-height: 1.56;
+        line-height: 1.56
       }
       ul{
         padding-left: 15px;

@@ -28,9 +28,9 @@ html.no-js lang="en"
     link rel="stylesheet" href="/stylesheets/normalize.css"/
     link rel="stylesheet" href="stylesheets/vendors/default_skin_variation.css"/
     link rel="stylesheet" href="stylesheets/vendors/owl.carousel.css"/
-    link rel="stylesheet" href="stylesheets/vendors/animate.css"/
     / link rel="stylesheet" href="stylesheets/vendors/aos.css"/
     link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"/
+    link rel="stylesheet" href="stylesheets/vendors/animate.css"/
     link rel="stylesheet" href="stylesheets/all.css"/
     javascript:
       var _gaq = _gaq || [];
@@ -52,7 +52,7 @@ html.no-js lang="en"
     
     body
         .wrapper.new.overflow-XH.home 
-          = partial "layouts/homeHeader.slim"
+          / = partial "layouts/homeHeader.slim"
           == yield
           
         = partial "layouts/main_form.slim"
@@ -64,7 +64,6 @@ html.no-js lang="en"
     script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"
     script type="text/javascript" src="javascripts/backbone_custom.js"
     script type="text/javascript" src="javascripts/jquery.sky.carousel-1.0.2.min.js"
-    script type="text/javascript" src="javascripts/ion.rangeSlider.min.js"
     script type="text/javascript" src="javascripts/imagelightbox.min.js"
     script type="text/javascript" src="javascripts/imagelightbox_custom.js"
     script type="text/javascript" src="javascripts/owl.carousel.js"
@@ -72,7 +71,7 @@ html.no-js lang="en"
     script type="text/javascript" src="javascripts/projects.js"
     / script type="text/javascript" src="javascripts/all.js"
     script type="text/javascript" src="javascripts/retina.min.js"
-    script type="text/javascript" src="javascripts/aos.js"
+    / script type="text/javascript" src="javascripts/aos.js"
 
     javascript:
       if($(window).width() > 767)
@@ -86,20 +85,7 @@ html.no-js lang="en"
       }
       
       // animation on scroll
-      AOS.init({
-        // offset: 200,
-        duration: 2000,
-        easing: 'ease-in-sine',
-        // delay: 100,
-      });
       
-      // init controller
-      // var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 100}});
-      // build scenes
-      // new ScrollMagic.Scene({triggerElement: "#trigger_two"})
-			// 	.setClassToggle("#box1", 'slideup') // add class toggle
-			// 	.addIndicators() // add indicators (requires plugin)
-			// 	.addTo(controller);
       
       $(window).scroll(function(e) {
         if ($("#parallex_container").length) {
@@ -108,7 +94,7 @@ html.no-js lang="en"
       });
       
       function parallax(){
-        
+
         if( $("#parallex_container").length > 0 ) {
           var plxBackground = $(".blue");
           var plxWindow = $("#parallex_container");
@@ -121,8 +107,8 @@ html.no-js lang="en"
           var windowInnerHeight = window.innerHeight;
           var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
           var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
-          var plxSpeed = 0.35;
-          var plxSpeedLeft = 0.20;
+          var plxSpeed = 0.15;
+          var plxSpeedLeft = 0.05;
 
           plxBackground.css({'top': + (plxWindowTopToWindowTop * plxSpeed) + 'px', 'left': - (plxWindowTopToWindowTop * plxSpeedLeft) + 'px'});
         }
@@ -139,9 +125,10 @@ html.no-js lang="en"
           var windowInnerHeight = window.innerHeight;
           var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
           var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
-          var plxSpeed = 0.35;
-          var plxSpeedLeft = 0.20;
+          var plxSpeed = 0.15;
+          var plxSpeedLeft = 0.05;
 
+          console.log(plxWindowTopToWindowTop * plxSpeed + 'px');
           plxBackground.css({'top': - (plxWindowTopToWindowTop * plxSpeed) + 'px', 'left': + (plxWindowTopToWindowTop * plxSpeedLeft) + 'px'});
         }
       }  

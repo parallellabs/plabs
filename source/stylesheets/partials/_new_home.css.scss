@@ -1074,6 +1074,8 @@ $tabs-base-color: #fafafa;
             @include omega;
             @include span-columns(12);
 
+            padding:0;
+
             & {
               display: block;
               // float: none;

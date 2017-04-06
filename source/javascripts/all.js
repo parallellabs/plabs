@@ -235,7 +235,7 @@ $(document).ready(function(){
 }); // End ready
 
 $(window).scroll(function(e) {
-  if ($("#js-parallax-window").length || $("#js-parallax-window1").length || $("#js-parallax-window2").length || $("#js-parallax-window3").length || $("#js-parallax-window4").length || $("#js-parallax-window5").length || $("#js-parallax-window6").length) {
+  if ($("#js-parallax-window").length || $("#js-parallax-window1").length || $("#js-parallax-window2").length || $("#js-parallax-window3").length || $("#js-parallax-window4").length || $("#js-parallax-window5").length || $("#js-parallax-window6").length || $("#js-parallax-window7").length) {
     parallax();
   }
 });
@@ -342,6 +342,22 @@ function parallax(){
   if( $("#js-parallax-window6").length > 0 ) {
     var plxBackground = $("#js-parallax-background6");
     var plxWindow = $("#js-parallax-window6");
+
+    var plxWindowTopToPageTop = $(plxWindow).offset().top;
+    var windowTopToPageTop = $(window).scrollTop();
+    var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
+
+    var plxBackgroundTopToPageTop = $(plxBackground).offset().top;
+    var windowInnerHeight = window.innerHeight;
+    var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
+    var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
+    var plxSpeed = 0.35;
+
+    plxBackground.css('top', - (plxWindowTopToWindowTop * plxSpeed) + 'px');
+  }
+  if( $("#js-parallax-window7").length > 0 ) {
+    var plxBackground = $("#js-parallax-background7");
+    var plxWindow = $("#js-parallax-window7");
 
     var plxWindowTopToPageTop = $(plxWindow).offset().top;
     var windowTopToPageTop = $(window).scrollTop();

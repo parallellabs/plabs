@@ -188,6 +188,9 @@
   }
   .team-member-block{
     @include clearfix;
+    @include media(max-width 768px){
+      margin-top:20px;
+    }
 
     margin-top: 120px;
 
@@ -197,6 +200,20 @@
         @include span-columns(8);
 
         margin: 0 auto;
+      }
+      @include media(min-width 768px){
+        &:hover{
+          cursor: pointer;
+
+          .name{
+            @include transform(rotate(90deg) translateX(50px));
+            @include transition(all 0.3s ease-out);
+          }
+          img{
+            @include transform(scale(1.1));
+            @include transition(all 0.3s ease-out);
+          }
+        }
       }
 
       position: relative;
@@ -213,13 +230,13 @@
           margin-right: -210px;
         }
         @include media(max-width 540px){
-          top: 300px;
+          top: 200px;
           margin-right: -202px;
           font-size: 28px;
         }
         @include media(max-width 420px){
-          top: 220px;
-          margin-right: -143px;
+          top: 100px;
+          margin-right: -125px;
         }
 
         position: absolute;
@@ -260,18 +277,6 @@
       }
       .designation{
         display: none;
-      }
-      &:hover{
-        cursor: pointer;
-
-        .name{
-          @include transform(rotate(90deg) translateX(50px));
-          @include transition(all 0.3s ease-out);
-        }
-        img{
-          @include transform(scale(1.1));
-          @include transition(all 0.3s ease-out);
-        }
       }
     }
   }

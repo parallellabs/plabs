@@ -1,0 +1,138 @@
+---
+layout: parallex_layout
+---
+- @title = "Chai Point Web - Case Study | Parallel Labs"
+- @description = "How we transformed Explara to a experience discovery platform"
+- @keyword = "Explara User Experience Design Case Study, Parallel Labs Explara Web, Explara Android App , Explara iOS App, Local Discovery Design"
+- @og_title = "Parallel Labs Blog"
+- @og_description = "How we transformed Explara to a experience discovery platform"
+- @og_url = "http://parallellabs.io/explara.html"
+- @og_image = "http://parallellabs.io/images/workpage_images/Explara_web2.png"
+- @twitter_title = "Parallel Labs Blog"
+- @twitter_description = "Article and Insights from Parallel Labs team on everything design"
+- @twitter_url = "http://parallellabs.io/explara.html"
+- @twitter_image = "http://parallellabs.io/images/workpage_images/Explara_web2.png"
+
+= partial "layouts/header.slim"
+
+/ content
+.section.master-banner.casestudy.chaipoint-banner
+  .overlay
+    .banner-content
+      h2.title
+        | Modern and responsive website for chai point
+      .members.smartceo
+        .member
+          |<img src="images/Robin.jpg" alt="Robin" />
+          |<span class="member-name">Robin</span>
+          |<span class="role">UX and Creative Direction</span>
+
+        .member
+          |<img src="images/Sreenath.jpg" alt="Sreenath" />
+          |<span class="member-name">Sreenath</span>
+          |<span class="role">Interface Design</span>
+
+        .member
+          |<img src="images/Allan.png" alt="Allan" />
+          |<span class="member-name">Allan</span>
+          |<span class="role">Front-end Development</span>
+
+      .stats
+        .stat
+          |<span class="numbers">6</span>
+          |<span class="stat-text">Weeks</span>
+        .slant
+
+        .stat
+          |<span class="numbers">78</span>
+          |<span class="stat-text">cups of Chai</span>
+        .slant
+
+        .stat
+          |<span class="numbers">8</span>
+          |<span class="stat-text">Project Meetings</span>
+
+.section.new-home-content.casestudy-content
+  p
+    |Chai Point is india’s largest of chai cafe’s and as they rightly say in their tagline “India Runs on Chai”. Chai Point is now focussed on bringing their signature Chai to your doorstep by accepting orders on mobile apps and website.
+  p 
+    |The business objective of redesigning Chai Point’s digital experience was as straight forward like their kadak chai.
+  h1.fancy-title.PT-60
+    |Customers should be able to order Chai in seconds
+  p
+    |To start with, we studied the ordering patterns of customers among different channels of phone, website and app for the 60+ products Chai Point had to offer. We analyzed following data points for us to design an experience which not only enhanced the UX but also made a difference to the product sales.
+  ol
+    li Top Selling Beverages and Sizes
+    li Top Selling Food Items & Quantities
+    li Repeat Orders
+    li Products typically ordered together
+    
+.section.new-home-content.casestudy-content
+  h2
+    |Introducing brand Chai Point and offerings <span class="border ML0-imp"></span>
+  p
+    |Although the primary purpose of the website was getting a user to order as fast as possible, it needed a fine balance with establishing brand Chai Point and showcasing various other offerings. Hence, the landing page not only starts with asking user’s location for delivery but also shows various other offerings like BoxC, Store Locator etc.
+
+.section.movie
+  img src="images/chaipoint/chaipoint-home.jpg" alt="chaipoint screen"
+
+.section.new-home-content.casestudy-content
+  h2.PT-120
+    |Card Designs with size selection<span class="border ML0-imp"></span>
+  p
+    |We remove duplication of product listings by bringing a size option for each product up-front.
+
+  img src="images/chaipoint/chaipoint-cards.jpg" alt="chaipont"
+
+  h2.PT-120
+    |Single Page Checkout<span class="border ML0-imp"></span>
+  p
+    |A website like Chai Point will generally have smaller carts but a lot of repeat orders and hence we tried to create a single page checkout where users can get done with the job of ordering their favorite chai in seconds.
+  img src="images/chaipoint/chaipoint-checkout.jpg" alt="chaipoint screen"
+
+  h2.PT-120
+    |Refer your Friends<span class="border ML0-imp"></span>
+  p
+    |Irrespective of new media and social interactions, word of mouth is still the most powerful marketing strategy and we capitalized that on Chai Point with a referral programme.
+  |<img src="images/chaipoint/chaipoint-referal.jpg" alt="chaipoint screen"/>
+
+  h2.PT-120
+    |Map Based store locator<span class="border ML0-imp"></span>
+  p
+    |Although deliveries make us comfortable, there is nothing like walking into a nearby Chai Point store and experience the ambience and the aroma of freshly brewed Chai. Hence, a powerful Store Locator was equally important for the website. Though, we tried to cross link locating a store with online deliveries if there isn’t a store in your area.
+
+.section.new-home-content.project-nav
+  a href="eatfresh.html"
+    .prev.box-shape
+      .inside
+        |<span class="project-name">EATFRESH</span>
+        |<span class="project-desc"></span>
+    .box2.FL-l
+      svg
+        use xlink:href="images/svgs/iconset.svg#icon-left-arrow"
+
+  .fancy-line
+    |See more awesome stuff
+
+  a href="citrus.html"
+    .next.box-shape
+      .inside
+        |<span class="project-name">CITRUS</span>
+        |<span class="project-desc">DIGITAL GIFTING</span>
+    .box2.FL-r
+      svg
+        use xlink:href="images/svgs/iconset.svg#icon-right-arrow"
+
+.section.new-home-content.tell-us
+	.content
+		h2
+			| We would love to hear about your project.
+		svg
+			use xlink:href="images/svgs/iconset.svg#icon-filled-like"
+		p
+			| Answer few questions to help us get a better context of your project and meaningful conversation.
+		a.btn.new.open-form href="javascript:void(0);"
+			.skewed.topaz
+				span Get in touch
+
+/ = partial "layouts/main_form.slim"

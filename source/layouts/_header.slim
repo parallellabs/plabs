@@ -25,20 +25,23 @@ header.top-navbar.home-nav
   svg.js-menu-trigger.sliding-panel-button 
      use xlink:href="images/svgs/iconset.svg#icon-menu1" 
 
-  / nav.js-menu.sliding-panel-content
-  /   ul
-  /     li
-  /       a href="work.html" Work
-  /     li
-  /       a href="about.html" About
-  /     li
-  /        a href="team.html" Team
-  /     li
-  /       a href="services.html" Services
-  /     li 
-  /       a href="careers.html"
-  /         | Careers
-  /     li 
-  /       a href="" Blog
-  / 
-  / .js-menu-screen.sliding-panel-fade-screen
+  nav.js-menu.sliding-panel-content
+    .sliding-panel-close 
+      svg
+        use xlink:href="images/svgs/iconset.svg#icon-delete_sign"
+    ul
+      li
+        a href="work.html" Work
+      li
+        a href="about.html" About
+      li
+         a href="team.html" Team
+      li
+        a href="services.html" Services
+      li 
+        a href="careers.html"
+          | Careers
+      li 
+        a href="" Blog
+  
+  .js-menu-screen.sliding-panel-fade-screen

@@ -1,6 +1,7 @@
 .about_us{
-  @include media(max-width 480px){
-    max-width: 80%;
+  @include media(max-width 768px){
+    padding:0 30px;
+    max-width: 100%;
   }
 
   margin: 0 auto;
@@ -17,6 +18,11 @@
   }
 }
 
+.abt-section{
+  @include media(max-width 1024px){
+    display:none;
+  }
+}
 .about-parallax{
   @include clearfix;
 
@@ -38,32 +44,45 @@
     background-color: #fcc32c;
 
     h1{
+      @include media(max-width 1440px){
+        font-size:20px;
+      }
+      @include media(max-width 1200px){
+        font-size:16px;
+      }
+
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
       color: #ffffff;
+      text-align: center;
       letter-spacing: 1.1px;
       font-weight: 900;
       font-size: 26px;
-      font-family: $heading-font-family;
+      font-family: $heading-font-family
     }
   }
   .yellow{
     @include transform( skewX(-30deg));
 
-    // top: 0;
+    top: -150px;
     background-color: #fcc32c;
 
     h1{
-        // transform: skew(30deg) translate(-168px,294px);
-        @include transform( skewX(30deg));
-      }
+      @include transform( skewX(30deg));
+
+
+    }
   }
   .blue{
-    // top: 0;
+    top: 150px;
     background-color: #16c6c2;
     transform: skewX(-30deg);
 
     h1{
-        transform: skew(30deg) translate(-145px,261px);
-      }
+      transform: skew(30deg);
+    }
   }
 }
 

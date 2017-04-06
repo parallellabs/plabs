@@ -150,6 +150,12 @@ svg {
 .citrus-bg {
     background-color: #019966;
 }
+.pink_n_blue_bg{
+  background-color: #4671B3;
+}
+.cricbet_bg{
+  background-color: #2D83B6;
+}
 
 .indiam{
   color: #785ea0;
@@ -719,6 +725,14 @@ svg {
     &.coming-soon {
         cursor: default;
     }
+}
+
+
+.fancy-title {
+  margin-bottom: 20px;
+  color: $blue;
+  text-align: center;
+  font-family: $beyond_m;
 }
 
 // Input style
