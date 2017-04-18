@@ -7,9 +7,6 @@
 @import "neat";
 
 // Vendors style
-@import "vendors/jqcloud.css.scss";
-@import "vendors/ionRangeSlider";
-@import "vendors/ionSkinHTML5";
 @import "vendors/aos";
 // @import "vendors/animate";
 
@@ -26,14 +23,9 @@
 
 @import "partials/home";
 @import "partials/form";
-//@import "partials/form-old";
 @import "partials/about";
 @import "partials/team";
-// @import "partials/case_study";
-@import "partials/imageLightbox";
 @import "partials/careers";
 @import "partials/services";
 @import "partials/new_case_study";
 @import "partials/new_about";
-
-// @import "partials/rangeslider";

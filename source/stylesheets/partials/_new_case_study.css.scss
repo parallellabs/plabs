@@ -102,8 +102,15 @@
   &.indiamart-banner{
     background-color: #72689D;
 
-    // background-image:url(../images/appjoy/appjoy-b-g.png);
-    // background-size: cover;
+    .overlay{
+      background: transparent;
+      opacity: 0.9;
+
+    }
+  }
+  &.housejoy-banner{
+    background-color: #009688;
+
     .overlay{
       background: transparent;
       opacity: 0.9;
