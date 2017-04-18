@@ -1,0 +1,123 @@
+---
+layout: parallex_layout
+---
+- @title = "Housejoy Website Design | UX Design for Booking Home Services"
+- @description = "Case Study of designing a seamless web experience for booking high quality home services."
+- @keyword = "home services, plumber, Housejoy, Urbanclap"
+- @og_title = "Designing Housejoy Website for Booking Home Services"
+- @og_description = "Case Study of designing a seamless experience for booking high quality home services on desktop."
+- @og_url = "http://parallellabs.io/housejoy-web.html"
+- @og_image = "http://parallellabs.io/images/svgs/logo.png"
+- @twitter_title = "Designing Housejoy Website for Booking Home Services"
+- @twitter_description = "Case Study of designing a seamless experience for booking high quality home services on desktop."
+- @twitter_url = "http://parallellabs.io/housejoy-web.html"
+- @twitter_image = "http://parallellabs.io/images/svgs/logo.png"
+
+= partial "layouts/header.slim"
+
+/ content
+.section.master-banner.casestudy.chaipoint-banner
+  .overlay
+    .banner-content
+      h2.title
+        | Managing Household Tasks made Effortless with Housejoy
+      .members.smartceo
+        .member
+          |<img src="images/Robin.jpg" alt="Robin" />
+          |<span class="member-name">Robin</span>
+          |<span class="role">UX and Creative Direction</span>
+
+        .member
+          |<img src="images/chaitanya.jpg" alt="Chaitanya" />
+          |<span class="member-name">Chaitanya</span>
+          |<span class="role">Interface Design</span>
+
+        .member
+          |<img src="images/rakesh.jpg" alt="Rakesh" />
+          |<span class="member-name">Rakesh</span>
+          |<span class="role">Front-end Development</span>
+
+      .stats
+        .stat
+          |<span class="numbers">9</span>
+          |<span class="stat-text">Weeks</span>
+        .slant
+
+        .stat
+          |<span class="numbers">11</span>
+          |<span class="stat-text">Skype Calls</span>
+        .slant
+
+        .stat
+          |<span class="numbers">14k</span>
+          |<span class="stat-text">Lines of Code</span>
+
+.section.new-home-content.casestudy-content
+  p
+    |Housejoy approached us  to design the experience for their website which is primarily targeted at first time users, with a strategy of getting user to download native apps for subscriptions, easier tracking and other incentives.
+    
+.section.new-home-content.casestudy-content
+  h2
+    |Website focussed on new Users <span class="border ML0-imp"></span>
+  p
+    |Instead of going app only, a seamless booking experience on desktop and mobile web was equally important since home services is a new segment in the indian market and the website experience needed to communicate the value proposition, pricing and let users make their first booking easily, without having to download the app.
+  p
+    |The key challenges included creating design patterns that allow different workflows for each service type while still making the overall experience seamless, and automating workflow for subjective tasks where the cost differs from case to case which would have otherwise resulted in manual intervention by customer care.
+  img src="images/housejoy/housejoy-web-home.jpg" alt="Housejoy screen"
+
+.section.new-home-content.casestudy-content
+  h2
+    |Vertical landing screen with services <span class="border ML0-imp"></span>
+  p
+    |Each vertical has its own landing screen showcasing services, how it works and benefits. Here is the screen we designed for the beauty services.
+  img src="images/housejoy/housejoy-web-002.jpg" alt="Housejoy screen"
+
+
+.section.new-home-content.casestudy-content
+  h2
+    |Seamless Checkout with in-page Cart<span class="border ML0-imp"></span>
+  p
+    |We didn’t want to complicate the workflow for users by a traditional shopping workflow of adding to a cart, then going to a cart and checking out. Hence, we tried to create an alternate checkout workflow where we show added services in a mini-cart in the sidebar and a seamless checkout flow.
+  img src="images/housejoy/housejoy-web-003.jpg" alt="Housejoy screen"
+
+.section.new-home-content.casestudy-content
+  h2
+    |Order Details with Messaging<span class="border ML0-imp"></span>
+  p
+    |Since many of the services required a workflow which needed inspection before sharing a quote, we included messaging for updates on costs and being able to approve the quoted price by technician after inspection.
+
+.section.new-home-content.project-nav
+  a href="eatfresh-app.html"
+    .prev.box-shape
+      .inside
+        |<span class="project-name">EATFRESH</span>
+        |<span class="project-desc"></span>
+    .box2.FL-l
+      svg
+        use xlink:href="images/svgs/iconset.svg#icon-left-arrow"
+
+  .fancy-line
+    |See more awesome stuff
+
+  a href="citrus.html"
+    .next.box-shape
+      .inside
+        |<span class="project-name">CITRUS</span>
+        |<span class="project-desc">DIGITAL GIFTING</span>
+    .box2.FL-r
+      svg
+        use xlink:href="images/svgs/iconset.svg#icon-right-arrow"
+
+.section.new-home-content.tell-us
+	.content
+		h2
+			| We would love to hear about your project.
+		svg
+			use xlink:href="images/svgs/iconset.svg#icon-filled-like"
+		p
+			| Answer few questions to help us get a better context of your project and meaningful conversation.
+		a.btn.new.open-form href="javascript:void(0);"
+			.skewed.topaz
+				span Get in Touch
+
+/ = partial "layouts/main_form.slim"

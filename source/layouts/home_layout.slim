@@ -90,7 +90,7 @@ html.no-js lang="en"
         sync2.owlCarousel({
           items : 5,
           singleItem: true,
-          autoWidth: true,
+          autoWidth: false,
           //itemsDesktop      : [1199,10],
           //itemsDesktopSmall     : [979,10],
           itemsTablet       : [768,2],
@@ -100,6 +100,10 @@ html.no-js lang="en"
           afterInit : function(el){
             el.find(".owl-item").eq(1).addClass("synced");
           }
+        });
+        sync2.data('owlCarousel').reinit({
+            touchDrag  : false,
+            mouseDrag  : false
         });
 
         function syncPosition(el){
@@ -184,6 +188,11 @@ html.no-js lang="en"
             demo.removeClass('owl-carousel');
           } else if (checkWidth < 769) {
             demo.owlCarousel({
+              navigation : true, // Show next and prev buttons
+              navigationText: [
+                '<svg class="icon-arrow-right2"><use xlink:href="images/svgs/iconset.svg#icon-angle-left"></svg>',
+                '<svg class="icon-arrow-right2"><use xlink:href="images/svgs/iconset.svg#icon-angle-right"></svg>'
+              ],
               singleItem:false,
               responsive : {
                 // breakpoint from 0 up

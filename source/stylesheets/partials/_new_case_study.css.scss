@@ -68,9 +68,7 @@
     }
   }
   &.treatr-banner{
-    background-color: #243f53;
-    background-image:url(../images/treatr/treatr-b-g.png);
-    background-size: cover;
+    background-color: #FD4E52;
 
     .overlay{
       background: transparent;
@@ -92,6 +90,12 @@
   &.chaipoint-banner{
     background-color: $blue;
     background-image:url(../images/chaipoint/chai-point-web-b-g-banner.jpg);
+    background-size: cover;
+
+  }
+  &.bleems-banner{
+    background-color: $blue;
+    background-image:url(../images/bleems/bleems-b-g.jpg);
     background-size: cover;
 
   }
@@ -288,7 +292,7 @@
   h2{
     @include media(max-width 768px){
       padding-top: 30px;
-      text-align:center;
+      text-align:left;
     }
 
     color: #243f53;
@@ -297,11 +301,6 @@
     font-family: $heading-font-family;
     line-height: 1.33;
 
-    .border{
-      @include media(max-width 768px){
-        margin-left: auto !important;
-      }
-    }
   }
   p{
     margin-top: 30px;
@@ -347,6 +346,7 @@
   }
   p{
     color: #555 !important;
+    text-align: left !important;
     font-weight: 400 !important;
     font-size: 1.1rem !important;
     line-height: 28px !important;
@@ -362,39 +362,47 @@
   @include media(max-width 768px){
     padding: 20px;
   }
-  @include media(max-width 480px){
-    display: block;
-  }
+  @include outer-container(100%);
 
-  display: inline-block;
   padding: 60px;
+  width:100%;
   background-color: #eeeeee;
 
+  .screen-wrap{
+    margin:0 auto;
+    max-width:960px;
+    text-align: center;
+
+    .screen{
+      @include media(max-width 768px){
+        display:block;
+        margin-bottom: 30px;
+        width: auto;
+        text-align: center;
+      }
+      @include span-columns(4);
+
+      &{
+        display:inline-block;
+      }
+    }
+  }
   .screen{
-    @include media(max-width 480px){
-      margin: 0 auto;
-      max-width: 80%;
+    @include media(max-width 768px){
+      display:block;
+      margin-bottom: 30px;
+      width: auto;
+      text-align: center;
     }
 
-    display:table-cell;
-
     img{
-      @include media(max-width 768px){
-        margin-right: 20px;
-        margin-left: 20px;
-      }
-      @include media(max-width 480px){
-        margin-right: 20px;
-        margin-bottom: 20px;
-        margin-left: 0;
-        width: 300px;
-        height: 400px;
-      }
-
-      margin-right: 60px;
-      margin-left: 60px;
-      width:180px;
-      height:320px
+      // @include media(max-width 480px){
+      //   width: 300px;
+      //   height: 400px;
+      // }
+      //
+      // width:180px;
+      // height:320px
 
 
     }
@@ -653,31 +661,13 @@
       left: 53.1%;
       z-index: 2;
 
-      // width: 720px;
-      // height: 540px;
-      // @media(max-width: 1350px){
-      //   left: 21.3%;
-      // }
-      // @media(max-width: 1250px){
-      //   left: 20.1%;
-      // }
-      // @media(max-width: 1200px){
-      //   left: 18%;
-      // }
-      // @media(max-width: 1130px){
-      //   left: 17%;
-      // }
-      // @media(max-width: 768px){
-      //   display: none;
-      // }
-
     }
 
   }
 }
 
 .half2{
-  @include span-columns(5) ;
+  @include span-columns(5);
   @include media(max-width 768px){
     @include span-columns(12);
 
@@ -835,6 +825,7 @@
 
     top: 97%;
     z-index: 9;
+    z-index: 99999;
     outline: none !important;
     background-color: transparent !important;
 
@@ -1002,20 +993,37 @@
 }
 
 .conversation-container{
+  @include media(max-width 768px){
+    padding-top:20px;
+  }
+
   .conversation{
-    display: inline-flex;
     margin-bottom: 30px;
 
     img{
-      float: left;
+      @include media(max-width 768px){
+        display:block;
+        margin:0 auto;
+        margin-bottom:40px;
+      }
+
+      display:inline-block;
       margin-right: 50px;
       width: 80px;
       height: 80px;
       border-radius: 50%;
       box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
-      vertical-align: top;
+      vertical-align: top
     }
     .message{
+      @include media(max-width 768px){
+        display:block;
+        margin-top:20px;
+        width:100%;
+      }
+      @include calc(width, '100% - 130px');
+
+      display:inline-block;
       margin-top: 9%;
       padding: 20px;
       background: #fff;
@@ -1055,6 +1063,41 @@
   }
 }
 
+#client_carousel{
+  @include clearfix;
+
+  position:relative;
+
+  .owl-buttons{
+    .owl-prev{
+      @include transform(translateY(-50%));
+
+      position:absolute;
+      top:50%;
+      left:-25px;
+
+      svg{
+        width: 60px;
+        height: 30px;
+        color: #000;
+      }
+    }
+    .owl-next{
+      @include transform(translateY(-50%));
+
+      position:absolute;
+      top:50%;
+      right:-25px;
+
+      svg{
+        width: 60px;
+        height: 30px;
+        color: #000;
+      }
+    }
+  }
+}
+
 .movie{
   margin: 0 auto;
   max-width: 90%;
@@ -1081,94 +1124,162 @@ ul.pinknblu{
 
 
 .citrus-o-bg{
-  @include media(max-width 1127px){
-    z-index: 1;
-    margin: 0 11%;
-    margin-top: -23px;
-    width: 78%;
-  }
-  @include media(max-width 943px){
-    margin: 0 36px;
-    margin-top: -23px;
-    width: 90%;
-  }
-  @include media(max-width 768px){
-    height: 461px;
-  }
-  @include media(max-width 699px){
-    height: 709px;
-  }
+  @include calc(height, '100% + 40px');
 
   position: absolute;
-  z-index: 1;
-  margin: 0 19%;
-  margin-top: -23px;
-  width: 62%;
-  height: 415px;
-  background-color: #f37e5d
+  top:-20px;
+  right:0;
+  left:0;
+  z-index: -1;
+  margin: 0 auto;
+  width:90%;
+  background-color: #f37e5d;
+
+  svg{
+    @include media(max-width 992px){
+      display:none;
+    }
+    @include transform(translateY(-50%));
+
+    position:absolute;
+    top:50%;
+    width: 20px;
+
+    &.icon-arrow-left2{
+      left:-75px;
+    }
+    &.icon-arrow-right2{
+      right:-75px;
+    }
+  }
 
 }
 
 
 .citrus-blue-bg{
-  @include media(max-width 1127px){
-    margin: 0px 100px;
-    max-width: 100%
-  }
-  @include media(max-width 943px){
-    margin: 0px 20px
-  }
-
   position: relative;
   z-index: 4;
   display: inline-block;
-  margin: 0px 17%;
+  margin: 0;
   padding: 30px 30px 0 30px;
-  max-width: 90%;
+  max-width: 100%;
+  width:100%;
   background: linear-gradient(113deg, #223148, #1a222f);
 
   .persona-content{
-    @include media(max-width 1227px){
-      width: 55%;
-    }
+    // float: left;
+    @include calc(width, "100% - 300px");
     @include media(max-width 768px){
-      width: 50%;
-    }
-    @include media(max-width 699px){
-      float: none;
+      display:block;
       width: 100%;
     }
 
-    display: table-cell;
-    float: left;
-    width: 60%;
+    display: inline-block;
     color: #fff;
-    font-weight: 200;
+    vertical-align: middle;
+    font-weight: 400;
     font-size: 16px;
     font-family: $base-font-family;
 
     p{
-      color: #fff;
+      @include media(max-width 768px){
+        font-size: 14px !important;
+      }
+
+      margin-top:0;
+      color: #fff !important;
       font-weight: 200;
-      font-size: 16px;
-      font-family: $base-font-family;
+      font-size: 16px !important;
+      font-family: $base-font-family
     }
+
   }
   img{
     @include media(max-width 768px){
-      height: 364px;
-    }
-    @include media(max-width 699px){
-      float: none;
-      margin: 0 auto;
+      display:block;
+      height:auto;
+      vertical-align: bottom;
     }
 
-    display: table-cell;
-    float: right;
-    margin-top: 20px;
-    width: 300px;
-    height: 321px
+    display: inline-block !important;
+    margin-top: 0;
+    width: 300px !important;
+    height: auto;
+    vertical-align: middle;
   }
+}
+
+.parsona-section{
+  padding:0 !important;
+
+  &:after{
+    display:none;
+  }
+  .owl-wrapper{
+    // @include clearfix;
+  }
+  .owl-carousel{
+    &:after{
+      display:none;
+    }
+    .owl-item{
+      padding: 0 20px;
+
+      .wrap{
+        position:relative;
+      }
+      &.p-active{
+        @include transition(all 800ms ease);
+      }
+      &.item-hide{
+        @include transition(all 600ms ease-out);
+
+        visibility: hidden;
+
+        .citrus-o-bg{
+          display:none;
+        }
+      }
+    }
+    .owl-buttons{
+      .owl-prev{
+        @include transform( translateY(-50%) );
+
+        position: absolute;
+        top: 50%;
+        left: -50px;
+        cursor:pointer;
+
+        svg{
+          width: 30px;
+        }
+      }
+      .owl-next{
+        @include transform( translateY(-50%) );
+
+        position: absolute;
+        top: 50%;
+        right: -50px;
+        cursor:pointer;
+
+        svg{
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+
+.owl-centered .owl-wrapper {
+  display: table !important;
+}
+.owl-centered .owl-item {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}
+.owl-centered .owl-item > div {
+  text-align: center;
 }
 
 

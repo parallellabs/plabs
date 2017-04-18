@@ -1,0 +1,109 @@
+---
+layout: parallex_layout
+---
+- @title = "Bleems App Design | UX Design to Recreate Gift Shopping Experience Online"
+- @description = "Case Study of designing an app of a marketplace for flowers, cakes and other gift items."
+- @keyword = "Gifting, UX Design, flowers, cakes, Shopping, e-commerce, marketplace"
+- @og_title = "Designing Bleems App to Recreate Gift Shopping Experience Online"
+- @og_description = "Case Study of designing an app of a marketplace for flowers, cakes and other gift items."
+- @og_url = "http://parallellabs.io/bleems-ios.html"
+- @og_image = "http://parallellabs.io/images/svgs/logo.png"
+- @twitter_title = "Designing Bleems App to Recreate Gift Shopping Experience Online"
+- @twitter_description = "Case Study of designing an app of a marketplace for flowers, cakes and other gift items."
+- @twitter_url = "http://parallellabs.io/bleems-ios.html"
+- @twitter_image = "http://parallellabs.io/images/svgs/logo.png"
+
+= partial "layouts/header.slim"
+
+/ content
+.section.master-banner.casestudy.bleems-banner
+  .banner-content
+    h2.title
+      | Bringing the Local Flower, Bakery and Gift Market to The Doorsteps.
+    .members.smartceo
+      .member
+        |<img src="images/Bharat200x200.jpg" alt="Bharat" />
+        |<span class="member-name">Bharat</span>
+        |<span class="role">UX Design</span>
+
+      .member
+        |<img src="images/juhi200x200.jpg" alt="Juhi" />
+        |<span class="member-name">Juhi</span>
+        |<span class="role">Interface Design and UX</span>
+
+
+    .stats
+      .stat
+        |<span class="numbers">6</span>
+        |<span class="stat-text">Weeks</span>
+      .slant
+
+      .stat
+        |<span class="numbers">30</span>
+        |<span class="stat-text">emails</span>
+      .slant
+
+      .stat
+        |<span class="numbers">18</span>
+        |<span class="stat-text">Skype Calls</span>
+
+.section.new-home-content.casestudy-content
+  p
+    |Bleems is a marketplace for local flowers, cakes and gifts shops. They had a lot of drop offs on their previous app and website, and they left it completely on us to provide their users a seamless experience as to increase their sales. The company is operational in middle east only, so it was very important for us to understand the behavioural pattern of the users there.
+
+.section.new-home-content.casestudy-content
+  h2
+    |Category and Occasions <span class="border ML0-imp"></span>
+  p
+    |There are two kinds of people who come on the app - people who know what they want, and people who don’t know what they are looking for. One thing that they surely know is the occasion. Easy navigation of categories and occasions was indispensable for the app. So, users could either shop by category - cakes, flowers and gifts or shop by occasions.
+    img src="images/bleems/bleems-01.png" alt="Bleems screen"
+
+.section.new-home-content.casestudy-content
+  h2
+    |Sending gifts to multiple people <span class="border ML0-imp"></span>
+  p
+    |E-commerce is not very difficult to build nowadays, but it was very important for us to keep the checkout process as a no brainer for all the users. We realised that a lot of users of this app send gifts to multiple people which was not very efficient in the previous app. It took a lot of ideations and brainstorming sessions to come up with a smooth checkout process when the user wants to send the gifts to multiple people.
+    img src="images/bleems/bleems-02.png" alt="Bleems screen"
+    
+.section.new-home-content.casestudy-content
+  h2
+    |Add Ons <span class="border ML0-imp"></span>
+  p
+    |Before checking out, we put the option of choosing an add on along with the gift which would go well with the gift and make it extra special. In return increasing the sales for the company.
+    img src="images/bleems/bleems-03.jpg" alt="Bleems screen"
+        
+.section.new-home-content.project-nav
+  a href="indiamart.html"
+    .prev.box-shape
+      .inside
+        |<span class="project-name">INDIAMART</span>
+        |<span class="project-desc"></span>
+    .box2.FL-l
+      svg
+        use xlink:href="images/svgs/iconset.svg#icon-left-arrow"
+
+  .fancy-line
+    |See more awesome stuff
+
+  a href="bleems-web.html"
+    .next.box-shape
+      .inside
+        |<span class="project-name">Bleems</span>
+        |<span class="project-desc"></span>
+    .box2.FL-r
+      svg
+        use xlink:href="images/svgs/iconset.svg#icon-right-arrow"
+
+.section.new-home-content.tell-us
+	.content
+		h2
+			| We would love to hear about your project.
+		svg
+			use xlink:href="images/svgs/iconset.svg#icon-filled-like"
+		p
+			| Answer few questions to help us get a better context of your project and meaningful conversation.
+		a.btn.new.open-form href="javascript:void(0);"
+			.skewed.topaz
+				span Get in Touch
+
+/ = partial "layouts/main_form.slim"

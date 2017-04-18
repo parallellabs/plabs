@@ -1,0 +1,119 @@
+---
+layout: parallex_layout
+---
+- @title = "Housejoy App Design | UX Design for on-demand app for home services"
+- @description = "Case Study of designing a seamless mobile experience for booking high quality home services."
+- @keyword = "home services, plumber, Housejoy, Urbanclap"
+- @og_title = "Designing Housejoy App for Booking Home Services"
+- @og_description = "Case Study of designing a seamless mobile experience for booking high quality home services."
+- @og_url = "http://parallellabs.io/housejoy-ios.html"
+- @og_image = "http://parallellabs.io/images/svgs/logo.png"
+- @twitter_title = "Designing Housejoy App for Booking Home Services"
+- @twitter_description = "Case Study of designing a seamless mobile experience for booking high quality home services."
+- @twitter_url = "http://parallellabs.io/housejoy-ios.html"
+- @twitter_image = "http://parallellabs.io/images/svgs/logo.png"
+
+= partial "layouts/header.slim"
+
+/ content
+.section.master-banner.casestudy.chaipoint-banner
+  .overlay
+    .banner-content
+      h2.title
+        | User Experience Design for India’s Number One Home Services Marketplace
+      .members.smartceo
+        .member
+          |<img src="images/Robin.jpg" alt="Robin" />
+          |<span class="member-name">Robin</span>
+          |<span class="role">Creative Direction</span>
+
+        .member
+          |<img src="images/chaitanya.jpg" alt="Chaitanya" />
+          |<span class="member-name">Chaitanya</span>
+          |<span class="role">Interface Design</span>
+
+      .stats
+        .stat
+          |<span class="numbers">3</span>
+          |<span class="stat-text">Members</span>
+        .slant
+        
+        .stat
+          |<span class="numbers">5</span>
+          |<span class="stat-text">Weeks</span>
+        .slant
+
+        .stat
+          |<span class="numbers">04</span>
+          |<span class="stat-text">Brainstroming Sessions</span>
+        .slant
+
+        .stat
+          |<span class="numbers">03</span>
+          |<span class="stat-text">Design Reviews</span>
+
+.section.new-home-content.casestudy-content
+  p
+    |Being an on-demand app for home services, a seamless mobile experience was at the heart of the product strategy. <br> One of the key branding goals was to position Housejoy as a professional and high quality service and not just another marketplace for home services. Hence, we decided to give it a little sophisticated look and feel.
+  p
+    |One of the key branding goals was to position Housejoy as a professional and high quality service and not just another marketplace for home services. Hence, we decided to give it a little sophisticated look and feel.
+    
+.section.new-home-content.casestudy-content
+  h2
+    |Booking a Plumber <span class="border ML0-imp"></span>
+  p
+    |Booking a plumber was a really simple workflow but we wanted to use the workflow to give users a sense of the cost by productising the service and also capture information that will help assigning the right technician. We made sure that they are prepared about the time and materials they need for the job.
+  img src="images/housejoy/housejoy-app-01.jpg" alt="Housejoy screen"
+
+.section.new-home-content.casestudy-content
+  h2
+    |Booking Beauty Service <span class="border ML0-imp"></span>
+  p
+    |Beauty was one of the complicated workflows as we wanted to let the users select multiple services, see details about each, select quantities etc. without complicating it and making it a shopping cart.
+  p
+    |After multiple iterations and explorations, we came to this accordion based multi-select interaction which is fast and fun to use.
+  img src="images/housejoy/iphone_6-template-white-ramotion.gif" alt="Housejoy screen"
+
+
+.section.new-home-content.casestudy-content
+  h2
+    |Feedback flow with skip logic <span class="border ML0-imp"></span>
+  p
+    |We wanted to make feedback collection smart and not a standard 5 star rating with a text box. Hence, we created a flow of skip logic based questions which change based on the answer by the user to capture really meaningful feedback.
+  img src="images/housejoy/housejoy-app-002.png" alt="Housejoy screen"
+
+.section.new-home-content.project-nav
+  a href="eatfresh.html"
+    .prev.box-shape
+      .inside
+        |<span class="project-name">EATFRESH</span>
+        |<span class="project-desc"></span>
+    .box2.FL-l
+      svg
+        use xlink:href="images/svgs/iconset.svg#icon-left-arrow"
+
+  .fancy-line
+    |See more awesome stuff
+
+  a href="citrus.html"
+    .next.box-shape
+      .inside
+        |<span class="project-name">CITRUS</span>
+        |<span class="project-desc">DIGITAL GIFTING</span>
+    .box2.FL-r
+      svg
+        use xlink:href="images/svgs/iconset.svg#icon-right-arrow"
+
+.section.new-home-content.tell-us
+	.content
+		h2
+			| We would love to hear about your project.
+		svg
+			use xlink:href="images/svgs/iconset.svg#icon-filled-like"
+		p
+			| Answer few questions to help us get a better context of your project and meaningful conversation.
+		a.btn.new.open-form href="javascript:void(0);"
+			.skewed.topaz
+				span Get in Touch
+
+/ = partial "layouts/main_form.slim"

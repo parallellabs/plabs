@@ -88,40 +88,6 @@ html.no-js lang="en"
           });
           userFeed.run();
 
-          $("#owl-demo").owlCarousel({
-            navigation : false, // Show next and prev buttons
-            // navigationText: [
-            //    "<i class='icon-chevron-left icon-white'><</i>",
-            //    "<i class='icon-chevron-right icon-white'>></i>"
-            //    ],
-            slideSpeed : 300,
-            paginationSpeed : 400,
-            singleItem:true,
-            afterAction: function(el){
-              //remove class active
-              this
-              .$owlItems
-              .removeClass('active na');
-
-              //add class na
-              this
-              .$owlItems
-              .addClass('na');
-              //add class active
-              this
-              .$owlItems
-              .eq(this.currentItem)
-              .removeClass('na')
-              .addClass('active');
-             }
-            // "singleItem:true" is a shortcut for:
-            // items : 1,
-            // itemsDesktop : false,
-            // itemsDesktopSmall : false,
-            // itemsTablet: false,
-            // itemsMobile : false
-          });
-
         });
         // calculating colm height to make last colm height same
         //$(window).load(function(){
@@ -133,6 +99,55 @@ html.no-js lang="en"
             //var gridColmHeight = $('.grid .colm').height();
             //$('.grid .colm.last').css({'height' : gridColmHeight});
         //});
+        
 
     script type="text/javascript" src="javascripts/all.js"
     script type="text/javascript" src="javascripts/retina.min.js"
+    
+    javascript:
+      // animation on scroll
+      $(window).scroll(function(e) {
+        if ($("#parallex_container").length) {
+          parallax();
+        }
+      });
+      
+      function parallax(){
+
+        if( $("#parallex_container").length > 0 ) {
+          var plxBackground = $(".blue");
+          var plxWindow = $("#parallex_container");
+
+          var plxWindowTopToPageTop = $(plxWindow).offset().top;
+          var windowTopToPageTop = $(window).scrollTop();
+          var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
+
+          var plxBackgroundTopToPageTop = $(plxBackground).offset().top;
+          var windowInnerHeight = window.innerHeight;
+          var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
+          var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
+          var plxSpeed = 0.15;
+          var plxSpeedLeft = 0.05;
+
+          plxBackground.css({'top': + (plxWindowTopToWindowTop * plxSpeed) + 'px', 'left': - (plxWindowTopToWindowTop * plxSpeedLeft) + 'px'});
+        }
+        
+        if( $("#parallex_container").length > 0 ) {
+          var plxBackground = $(".yellow");
+          var plxWindow = $("#parallex_container");
+
+          var plxWindowTopToPageTop = $(plxWindow).offset().top;
+          var windowTopToPageTop = $(window).scrollTop();
+          var plxWindowTopToWindowTop = plxWindowTopToPageTop - windowTopToPageTop;
+
+          var plxBackgroundTopToPageTop = $(plxBackground).offset().top;
+          var windowInnerHeight = window.innerHeight;
+          var plxBackgroundTopToWindowTop = plxBackgroundTopToPageTop - windowTopToPageTop;
+          var plxBackgroundTopToWindowBottom = windowInnerHeight - plxBackgroundTopToWindowTop;
+          var plxSpeed = 0.15;
+          var plxSpeedLeft = 0.05;
+
+          console.log(plxWindowTopToWindowTop * plxSpeed + 'px');
+          plxBackground.css({'top': - (plxWindowTopToWindowTop * plxSpeed) + 'px', 'left': + (plxWindowTopToWindowTop * plxSpeedLeft) + 'px'});
+        }
+      }  

@@ -47,8 +47,8 @@
       @include media(min-width 768px $small-devices) {
         margin-right: 30px;
       }
-      @include media($sm-mobile-devices) {
-        margin-right: 15px;
+      @include media(max-width 992px){
+        margin-right: 0px;
       }
 
       float: left;
@@ -289,13 +289,14 @@
   @include size(100% 100%);
   // @include transform(translateX(-220px));
   // @include transform(translateX(220px));
-  @include transition(all 0.25s linear);
+  @include transition(all 0.75s ease);
 
   z-index: 999999;
   visibility: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   background-image: $sliding-panel-background;
+  opacity:0;
 
   ul {
     margin: 0;
@@ -333,10 +334,11 @@
     }
   }
   &.is-visible {
-    @include transition(all 0.25s linear);
+    @include transition(all 0.55s ease);
 
     // @include transform(translateX(0));
     visibility: visible;
+    opacity:1;
   }
 }
 
@@ -387,4 +389,4 @@
     height: 1.3em;
   }
 }
-// 
+//

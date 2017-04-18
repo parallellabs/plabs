@@ -87,9 +87,13 @@ p {
 }
 a:focus,
 a:hover {
-    outline: none;
+    outline: none !important;
 }
 
+input:focus,
+input:hover{
+    outline: none !important;
+}
 svg {
     fill: currentColor;
 }
@@ -129,10 +133,10 @@ svg {
     color: #ff4c4c;
 }
 .pl-blue{
-  color:$blue;
+    color:$blue;
 }
 .eatf-yellow{
-  color:#ffd564;
+    color:#ffd564;
 }
 // background
 .blue-bg {
@@ -151,14 +155,20 @@ svg {
     background-color: #019966;
 }
 .pink_n_blue_bg{
-  background-color: #4671B3;
+    background-color: #4671B3;
 }
 .cricbet_bg{
-  background-color: #2D83B6;
+    background-color: #2D83B6;
+}
+.bleems_bg{
+    background-color: #f7f7f7;
+}
+.chaipoint_bg{
+    background-color: #0f6b38;
 }
 
 .indiam{
-  color: #785ea0;
+    color: #785ea0;
 }
 
 .M0 {
@@ -185,23 +195,23 @@ svg {
 }
 
 .MB110{
-  margin-bottom: 110px;
+    margin-bottom: 110px;
 }
 .ML0-imp{
     margin-left:0 !important;
 }
 .ML-17{
-  margin-left: -17px;
+    margin-left: -17px;
 }
 .ML-30{
-  margin-left: -30px;
+    margin-left: -30px;
 }
 .ML-20{
-  margin-left: 20px;
+    margin-left: 20px;
 }
 
 .MT-120{
-  margin-top: 120px;
+    margin-top: 120px;
 }
 .PB60 {
     padding-bottom: 60px;
@@ -222,58 +232,62 @@ svg {
 }
 
 .PL-120{
-  @include media(max-width 900px){
-    padding-left: 60px;
-  }
-  @include media(max-width 768px){
-    padding-left: 30px;
-   }
+    @include media(max-width 900px){
+        padding-left: 60px;
+    }
+    @include media(max-width 768px){
+        padding-left: 30px;
+    }
 
-  padding-left: 120px
+    padding-left: 120px
 }
 
 .PR-120{
-  @include media(max-width 768px){
-    padding-right: 30px;
-   }
-   @include media(max-width 900px){
-     padding-right: 60px;
-   }
+    @include media(max-width 768px){
+        padding-right: 30px;
+    }
+    @include media(max-width 900px){
+        padding-right: 60px;
+    }
 
-  padding-right: 120px
+    padding-right: 120px
 }
 
 .PT-120{
-  padding-top: 120px;
+    padding-top: 120px;
 }
 
 .PT-60{
-  padding-top: 60px;
+    padding-top: 60px;
 }
 .PL-60{
-  @include media(max-width 900px){
-    padding-left: 30px;
-   }
+    @include media(max-width 900px){
+        padding-left: 30px;
+    }
 
-  padding-left: 60px
+    padding-left: 60px
 }
 .PR-60{
-  @include media(max-width 900px){
-    padding-right: 30px;
-   }
+    @include media(max-width 900px){
+        padding-right: 30px;
+    }
 
-  padding-right: 60px
+    padding-right: 60px
 }
 
 .PT-30{
-  padding-top: 30px;
+    padding-top: 30px;
 }
 .FL-r{
-  float: right;
+    float: right;
 }
 
 .FL-l{
-  float: left;
+    float: left;
+}
+
+.disp-none{
+    display:none;
 }
 
 .box-shadow-none {
@@ -543,8 +557,8 @@ svg {
     color: $blue;
     text-align: center;
     -webkit-transform: skew(-20deg);
-       -moz-transform: skew(-20deg);
-         -o-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
 }
 
 .btn {
@@ -663,25 +677,95 @@ svg {
                 }
             }
             &.eat-green{
-              background-color: #009e5f;
-
-              span {
-                  color: #fff;
-              }
-            }
-            &.appjoy-pink{
-              background-color: #ec2956;
-
-              span {
-                  color: #fff;
-              }
-            }
-            &.border {
-                border: 1px solid #fff;
-                background-color: transparent;
+                background-color: #009e5f;
 
                 span {
                     color: #fff;
+                }
+            }
+            &.appjoy-pink{
+                background-color: #ec2956;
+
+                span {
+                    color: #fff;
+                }
+            }
+            &.treatr_bg{
+                background-color: #fff;
+
+                span {
+                    color: #ff4c4c;
+                }
+            }
+            &.eatfresh_bg{
+                background-color: #fff;
+
+                span {
+                    color: #3aab81;
+                }
+            }
+            &.chai-bg{
+                background-color: #0f6b38;
+
+                span{
+                    color:#fff;
+                }
+            }
+            &.chai-app-bg{
+                background-color: #fff;
+
+                span{
+                    color:#0f6b38;
+                }
+            }
+            &.citrus-bg{
+                background-color: #fff;
+
+                span{
+                    color:#019966;
+                }
+            }
+            &.cricbet-bg{
+                background-color: #fff;
+
+                span{
+                    color:#2D83B6;
+                }
+            }
+            &.smartceo-bg{
+                background-color: #f37e5d;
+
+                span{
+                    color:#fff;
+                }
+            }
+            &.pink-n-blu-bg{
+                background-color: #fff;
+
+                span{
+                    color:#4671B3;
+                }
+            }
+            &.indiamart-bg{
+                background-color: #785ea0;
+
+                span{
+                    color:#fff;
+                }
+            }
+            &.bleems-bg{
+                background-color: #D0D0D0;
+
+                span{
+                    color:#f7f7f7;
+                }
+            }
+            &.border {
+                border: 1px solid #16c6c2;
+                background-color: transparent;
+
+                span {
+                    color: #16c6c2;
                 }
             }
         }
@@ -723,16 +807,21 @@ svg {
 
     }
     &.coming-soon {
-        cursor: default;
+        @include media(max-width 768px){
+            border-left:none;
+        }
+
+        border-left: 1px solid #16c6c2;
+        cursor: default
     }
 }
 
 
 .fancy-title {
-  margin-bottom: 20px;
-  color: $blue;
-  text-align: center;
-  font-family: $beyond_m;
+    margin-bottom: 20px;
+    color: $blue;
+    text-align: center;
+    font-family: $beyond_m;
 }
 
 // Input style
@@ -779,8 +868,8 @@ textarea:focus {
     font-weight: normal;
     font-size: 14px;
     -webkit-transition: .2s ease all;
-       -moz-transition: .2s ease all;
-            transition: .2s ease all;
+    -moz-transition: .2s ease all;
+    transition: .2s ease all;
     pointer-events: none;
 }
 
@@ -822,8 +911,8 @@ textarea:valid ~ label.active-input {
     background: #16c6c2;
     content: "";
     -webkit-transition: .2s ease all;
-       -moz-transition: .2s ease all;
-            transition: .2s ease all;
+    -moz-transition: .2s ease all;
+    transition: .2s ease all;
 }
 .bar:before {
     left: 50%;
@@ -841,9 +930,9 @@ textarea:valid ~ label.active-input {
     opacity: 0;
 }
 .row .message{
-  margin-top: 10px;
-  text-align: left;
-  opacity: 0;
+    margin-top: 10px;
+    text-align: left;
+    opacity: 0;
 }
 .group #counter {
     // display: none;
@@ -896,8 +985,8 @@ input[type="text"]:focus ~ .highlight,
 input[type="number"]:focus ~ .highlight,
 textarea:focus ~ .highlight {
     -webkit-animation: inputHighlighter .3s ease;
-       -moz-animation: inputHighlighter .3s ease;
-            animation: inputHighlighter .3s ease;
+    -moz-animation: inputHighlighter .3s ease;
+    animation: inputHighlighter .3s ease;
 }
 
 /* ANIMATIONS
@@ -1080,7 +1169,7 @@ stretch
 }
 .button-floating-clicked .water-drop {
     -webkit-animation: waterDrop .8s cubic-bezier(1, 0, .5, 0);
-            animation: waterDrop .8s cubic-bezier(1, 0, .5, 0);
+    animation: waterDrop .8s cubic-bezier(1, 0, .5, 0);
 }
 @-webkit-keyframes waterDrop {
     0% {
@@ -1572,19 +1661,19 @@ $parallax-background-height: $parallax-window-height * 2;
     max-height: 211px;
 }
 @media screen and (max-width: 1200px) and (min-width: 769px) {
-.media-card.small.instagram .left .content {
-    max-height: 87px;
-}
+    .media-card.small.instagram .left .content {
+        max-height: 87px;
+    }
 }
 
 .wrap-flex{
-  display: inline-block;
+    display: inline-block;
 
-  a{
-    display: table-cell;
-  }
+    a{
+        display: table-cell;
+    }
 }
 
 .blur{
-  @include filter(blur(8px));
+    @include filter(blur(8px));
 }
