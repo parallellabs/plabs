@@ -68,6 +68,9 @@
   }
   .team-img-block{
     @include transition(all 0.8s ease-in-out);
+    @include media(min-width 1441px){
+      left: 500px !important;
+    }
 
     position: absolute;
 

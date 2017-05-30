@@ -14,8 +14,7 @@ layout: parallex_layout
 - @twitter_image = "http://parallellabs.io/images/svgs/logo.png"
 
 / content
-
-.section.master-banner.casestudy.pinknblu-banner
+.section.master-banner.casestudy.pinknblu-banner.height-fix
   .overlay
     .banner-content
       h2.title
@@ -54,7 +53,7 @@ layout: parallex_layout
     li Discover - Helps parents find everything from interesting events for kids in their neighbourhood to the best pediatrician in locality.
     li Share - Record precious moments of your kids and share them selectively with family and friends. 
     li Community - Connect with other parents in chat groups, by reading & sharing experiences.
-  |<img src="images/pink/pnb1.gif"/>
+  |<img src="images/pink/pnb1.gif" alt="pinknblu screen"/>
   
   h2.PT-120
     |Research is the key when Bachelors design a parenting app<span class="border ML0-imp"></span>
@@ -68,29 +67,27 @@ layout: parallex_layout
   p 
     |Pink n Blu has a unique onboarding and account structure. Since most children profiles on the app are of minors across different age groups typically from 0-8 years, the profile of a child has to be created by a parent. At the same time, we wanted parents to share reminders, moments and a lot of other information about their kid. Hence, we designed an account creation process where parents sign up for themselves and create profile of their kids and they can invite others to manage their kids’ profile like the spouse, siblings, nanny etc. and jointly share moments and responsibilities.
   .img-flex
-    img src="images/pink/edit-childs-profile.jpg" /
-    img src="images/pink/invite.jpg" /
+    img src="images/pink/edit-childs-profile.jpg"  alt="pinknblu screen"/
+    img src="images/pink/invite.jpg"  alt="pinknblu screen"/
     
   h2.PT-120
     |It has to be a tab bar when everything is important<span class="border ML0-imp"></span>
   p 
     |App had a combination of discovery elements and three key call to actions. The discovery elements were activity, resources, chat and experiences.   Actions were to create a Reminder, Experience or a Moment. Hence after lot of exploration we came up with a hybrid tab bar which uses a combination of tab bar along with a floating action button as per Google’s Material design guidelines.
   .img-flex
-    img src="images/pink/home.jpg" /
-    img src="images/pink/home-f-a-b.jpg" /
+    img src="images/pink/home.jpg"  alt="pinknblu screen"/
+    img src="images/pink/home-f-a-b.jpg"  alt="pinknblu screen"/
   
   h2.PT-120
     |Facilitating discussions about information in chat<span class="border ML0-imp"></span>
   p
     |With the intent of making discussions in chats with friends and groups more meaningful and contextual, we added a discussion workflow which allows sharing a listing on chat and discussion around it easy.
-  img src="images/pink/pnb2.gif" /
+  img src="images/pink/pnb2.gif"  alt="pinknblu screen"/
 
 .section.new-home-content.interfaces
   .content-section
-    h2
-      |Screens at glance<span class="border"></span>
     .sky-carousel#sky-carousel-2
-      img.phone src="images/phone.png"/
+      img.phone src="images/phone.png" alt="pinknblu screen"/
       .sky-carousel-wrapper
         ul.sky-carousel-container
           li
@@ -199,11 +196,11 @@ layout: parallex_layout
 /       | Santosh Panda, Explara
       
 .section.new-home-content.project-nav
-  a href="smartceo.html"
+  a href="indiamart.html"
     .prev.box-shape
       .inside
-        |<span class="project-name">SMART CEO</span>
-        |<span class="project-desc">Digital Magazine</span>
+        |<span class="project-name">Indiamart</span>
+        |<span class="project-desc">B2B Services Marketplace</span>
     .box2.FL-l
       svg
         use xlink:href="images/svgs/iconset.svg#icon-left-arrow"
@@ -211,11 +208,11 @@ layout: parallex_layout
   .fancy-line
     |See more awesome stuff
   
-  a href="indiamart.html"
+  a href="explara.html"
     .next.box-shape
       .inside
-        |<span class="project-name">INDIAMART</span>
-        |<span class="project-desc"></span>
+        |<span class="project-name">Explara</span>
+        |<span class="project-desc">Event Solutions</span>
     .box2.FL-r
       svg
         use xlink:href="images/svgs/iconset.svg#icon-right-arrow"
@@ -231,5 +228,3 @@ layout: parallex_layout
 		a.btn.new.open-form href="javascript:void(0);"
 			.skewed.topaz
 				span Get in Touch
-
-= partial "layouts/main_form.slim"

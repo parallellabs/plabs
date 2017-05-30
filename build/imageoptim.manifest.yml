@@ -1,857 +1,789 @@
 ---
-build/images/01_family.jpg: 2017-03-20 10:47:51.000000000 +05:30
-build/images/02-open.png: 2017-03-20 10:48:04.000000000 +05:30
-build/images/aa.png: 2017-03-20 10:47:51.000000000 +05:30
-build/images/aa@2x.png: 2017-03-20 10:47:52.000000000 +05:30
-build/images/airwoot.png: 2017-03-20 10:47:51.000000000 +05:30
-build/images/airwoot@2x.png: 2017-03-20 10:47:51.000000000 +05:30
-build/images/Allan.png: 2017-03-20 10:48:29.000000000 +05:30
-build/images/Allan1.png: 2017-03-20 10:48:35.000000000 +05:30
-build/images/Allan_Gomes200x200.jpg: 2017-04-16 16:12:15.000000000 +05:30
-build/images/Ameya.png: 2017-03-20 10:48:37.000000000 +05:30
-build/images/Ananya.png: 2017-03-20 10:48:47.000000000 +05:30
-build/images/android-o-s-512.png: 2017-03-20 10:48:29.000000000 +05:30
-build/images/android-o-s-512@2x.png: 2017-03-20 10:48:29.000000000 +05:30
-build/images/android_icon_white.png: 2017-03-20 10:48:29.000000000 +05:30
-build/images/android_icon_white@2x.png: 2017-03-20 10:48:29.000000000 +05:30
-build/images/Anup.png: 2017-03-20 10:48:38.000000000 +05:30
-build/images/Anuprita.png: 2017-03-20 10:49:29.000000000 +05:30
-build/images/appjoy/01.png: 2017-03-20 10:49:02.000000000 +05:30
-build/images/appjoy/02.png: 2017-03-20 10:49:18.000000000 +05:30
-build/images/appjoy/aj-01.png: 2017-03-20 10:48:54.000000000 +05:30
-build/images/appjoy/aj-01@2x.png: 2017-03-20 10:49:17.000000000 +05:30
-build/images/appjoy/aj-01@3x.png: 2017-03-20 10:49:54.000000000 +05:30
-build/images/appjoy/aj-02.png: 2017-03-20 10:49:23.000000000 +05:30
-build/images/appjoy/aj-02@2x.png: 2017-03-20 10:49:35.000000000 +05:30
-build/images/appjoy/aj-02@3x.png: 2017-03-20 10:49:43.000000000 +05:30
-build/images/appjoy/aj-03.png: 2017-03-20 10:49:40.000000000 +05:30
-build/images/appjoy/aj-03@2x.png: 2017-03-20 10:50:00.000000000 +05:30
-build/images/appjoy/aj-03@3x.png: 2017-03-20 10:50:25.000000000 +05:30
-build/images/appjoy/aj-04.png: 2017-03-20 10:49:51.000000000 +05:30
-build/images/appjoy/aj-04@2x.png: 2017-03-20 10:49:57.000000000 +05:30
-build/images/appjoy/aj-04@3x.png: 2017-03-20 10:50:20.000000000 +05:30
-build/images/appjoy/aj-05.png: 2017-03-20 10:50:03.000000000 +05:30
-build/images/appjoy/aj-05@2x.png: 2017-03-20 10:50:16.000000000 +05:30
-build/images/appjoy/aj-05@3x.png: 2017-03-20 10:50:32.000000000 +05:30
-build/images/appjoy/aj-06.png: 2017-03-20 10:50:28.000000000 +05:30
-build/images/appjoy/aj-06@2x.png: 2017-03-20 10:50:59.000000000 +05:30
-build/images/appjoy/aj-06@3x.png: 2017-03-20 10:51:40.000000000 +05:30
-build/images/appjoy/aj-07.png: 2017-03-20 10:51:30.000000000 +05:30
-build/images/appjoy/aj-07@2x.png: 2017-03-20 10:52:48.000000000 +05:30
-build/images/appjoy/aj-07@3x.png: 2017-03-20 10:57:01.000000000 +05:30
-build/images/appjoy/appjoy-b-g.png: 2017-03-20 10:54:02.000000000 +05:30
-build/images/appjoy/appjoy-b-g@2x.png: 2017-03-20 10:59:23.000000000 +05:30
-build/images/appjoy/appjoy-b-g@3x.png: 2017-03-20 11:12:30.000000000 +05:30
-build/images/appjoy/appjoy-collage.png: 2017-04-11 12:15:45.000000000 +05:30
-build/images/appjoy/appjoy-collage@2x.png: 2017-04-11 12:19:02.000000000 +05:30
-build/images/appjoy/appjoy-home.jpg: 2017-04-11 12:14:26.000000000 +05:30
-build/images/appjoy/appjoy-home@2x.jpg: 2017-04-11 12:14:27.000000000 +05:30
-build/images/appjoy/Home.png: 2017-03-20 10:57:42.000000000 +05:30
-build/images/appjoy/SideNav.png: 2017-03-20 10:58:19.000000000 +05:30
-build/images/AppJoy.png: 2017-03-20 10:58:55.000000000 +05:30
-build/images/AppJoy@2x.png: 2017-03-20 11:00:58.000000000 +05:30
-build/images/Appjoy_web.png: 2017-03-20 11:01:10.000000000 +05:30
-build/images/art-of-living-logo.png: 2017-03-20 11:01:18.000000000 +05:30
-build/images/art-of-living-logo@2x.png: 2017-03-20 11:01:18.000000000 +05:30
-build/images/arun.jpg: 2017-01-05 12:17:59.000000000 +05:30
-build/images/arun@2x.jpg: 2017-01-05 12:17:59.000000000 +05:30
-build/images/ashok.jpeg: 2017-03-20 11:01:19.000000000 +05:30
-build/images/background.png: 2016-11-07 17:46:56.000000000 +05:30
-build/images/beauty-inside.png: 2017-03-20 11:01:23.000000000 +05:30
-build/images/beauty-inside@2x.png: 2017-03-20 11:01:40.000000000 +05:30
-build/images/Bhaghya.jpg: 2017-03-20 11:01:28.000000000 +05:30
-build/images/Bhaghya.png: 2017-03-20 11:02:11.000000000 +05:30
-build/images/Bhaghya1.png: 2017-03-20 11:02:27.000000000 +05:30
-build/images/Bharat.png: 2017-03-20 11:02:55.000000000 +05:30
-build/images/Bharat200x200.jpg: 2017-04-11 12:14:26.000000000 +05:30
-build/images/binay-tiwari-appjoy.jpg: 2017-01-05 12:17:59.000000000 +05:30
-build/images/binay-tiwari-appjoy@2x.jpg: 2017-01-05 12:17:59.000000000 +05:30
-build/images/bleems/bleems-01.png: 2017-04-11 12:15:01.000000000 +05:30
-build/images/bleems/bleems-01@2x.png: 2017-04-11 12:16:35.000000000 +05:30
+build/images/01_family.jpg: 2017-04-27 22:35:21.000000000 +05:30
+build/images/02-open.png: 2017-04-27 22:35:35.000000000 +05:30
+build/images/aa.png: 2017-04-27 22:35:20.000000000 +05:30
+build/images/aa@2x.png: 2017-04-27 22:35:21.000000000 +05:30
+build/images/airwoot.png: 2017-04-27 22:35:21.000000000 +05:30
+build/images/airwoot@2x.png: 2017-04-27 22:35:21.000000000 +05:30
+build/images/Allan.png: 2017-04-27 22:35:27.000000000 +05:30
+build/images/Allan1.png: 2017-04-27 22:35:27.000000000 +05:30
+build/images/Allan_Gomes200x200.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/Ameya.png: 2017-04-27 22:35:13.000000000 +05:30
+build/images/Ananya.png: 2017-04-27 22:35:36.000000000 +05:30
+build/images/android-o-s-512.png: 2017-04-27 22:35:31.000000000 +05:30
+build/images/android-o-s-512@2x.png: 2017-04-27 22:35:32.000000000 +05:30
+build/images/android_icon_white.png: 2017-04-27 22:35:13.000000000 +05:30
+build/images/android_icon_white@2x.png: 2017-04-27 22:35:32.000000000 +05:30
+build/images/Anuprita.png: 2017-04-27 22:35:39.000000000 +05:30
+build/images/appjoy/01.png: 2017-04-27 22:35:40.000000000 +05:30
+build/images/appjoy/02.png: 2017-04-27 22:35:46.000000000 +05:30
+build/images/appjoy/aj-01.png: 2017-04-27 22:35:42.000000000 +05:30
+build/images/appjoy/aj-01@2x.png: 2017-04-27 22:35:46.000000000 +05:30
+build/images/appjoy/aj-01@3x.png: 2017-04-27 22:35:48.000000000 +05:30
+build/images/appjoy/aj-02.png: 2017-04-27 22:35:47.000000000 +05:30
+build/images/appjoy/aj-02@2x.png: 2017-04-27 22:35:52.000000000 +05:30
+build/images/appjoy/aj-02@3x.png: 2017-04-27 22:35:54.000000000 +05:30
+build/images/appjoy/aj-03.png: 2017-04-27 22:35:51.000000000 +05:30
+build/images/appjoy/aj-03@2x.png: 2017-04-27 22:36:01.000000000 +05:30
+build/images/appjoy/aj-03@3x.png: 2017-04-27 22:36:10.000000000 +05:30
+build/images/appjoy/aj-04.png: 2017-04-27 22:35:54.000000000 +05:30
+build/images/appjoy/aj-04@2x.png: 2017-04-27 22:35:59.000000000 +05:30
+build/images/appjoy/aj-04@3x.png: 2017-04-27 22:36:04.000000000 +05:30
+build/images/appjoy/aj-05.png: 2017-04-27 22:36:01.000000000 +05:30
+build/images/appjoy/aj-05@2x.png: 2017-04-27 22:36:03.000000000 +05:30
+build/images/appjoy/aj-05@3x.png: 2017-04-27 22:36:07.000000000 +05:30
+build/images/appjoy/aj-06.png: 2017-04-27 22:36:10.000000000 +05:30
+build/images/appjoy/aj-06@2x.png: 2017-04-27 22:36:19.000000000 +05:30
+build/images/appjoy/aj-06@3x.png: 2017-04-27 22:36:30.000000000 +05:30
+build/images/appjoy/aj-07.png: 2017-04-27 22:36:19.000000000 +05:30
+build/images/appjoy/aj-07@2x.png: 2017-04-27 22:36:41.000000000 +05:30
+build/images/appjoy/aj-07@3x.png: 2017-04-27 22:37:21.000000000 +05:30
+build/images/appjoy/appjoy-b-g.png: 2017-04-27 22:36:35.000000000 +05:30
+build/images/appjoy/appjoy-b-g@2x.png: 2017-04-27 22:37:19.000000000 +05:30
+build/images/appjoy/appjoy-b-g@3x.png: 2017-04-27 22:38:01.000000000 +05:30
+build/images/appjoy/appjoy-collage.png: 2017-04-27 22:37:19.000000000 +05:30
+build/images/appjoy/appjoy-collage@2x.png: 2017-04-27 22:38:50.000000000 +05:30
+build/images/appjoy/appjoy-home.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/appjoy/appjoy-home@2x.jpg: 2017-04-27 22:37:36.000000000 +05:30
+build/images/appjoy/Home.png: 2017-04-27 22:37:42.000000000 +05:30
+build/images/appjoy/SideNav.png: 2017-04-27 22:37:51.000000000 +05:30
+build/images/AppJoy.png: 2017-04-27 22:37:57.000000000 +05:30
+build/images/AppJoy@2x.png: 2017-04-27 22:38:25.000000000 +05:30
+build/images/Appjoy_web.png: 2017-04-27 22:38:13.000000000 +05:30
+build/images/art-of-living-logo.png: 2017-04-27 22:38:16.000000000 +05:30
+build/images/art-of-living-logo@2x.png: 2017-04-27 22:38:16.000000000 +05:30
+build/images/arun.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/arun@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/ashok.jpeg: 2017-04-27 22:38:17.000000000 +05:30
+build/images/background.png: 2017-04-27 22:35:13.000000000 +05:30
+build/images/beauty-inside.png: 2017-04-27 22:38:22.000000000 +05:30
+build/images/beauty-inside@2x.png: 2017-04-27 22:38:36.000000000 +05:30
+build/images/Bhaghya.jpg: 2017-04-27 22:38:34.000000000 +05:30
+build/images/Bhaghya.png: 2017-04-27 22:38:40.000000000 +05:30
+build/images/Bhaghya1.png: 2017-04-27 22:38:42.000000000 +05:30
+build/images/Bharat.png: 2017-04-27 22:38:45.000000000 +05:30
+build/images/Bharat200x200.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/binay-tiwari-appjoy.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/binay-tiwari-appjoy@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/bleems/bleems-01.png: 2017-04-27 22:38:53.000000000 +05:30
+build/images/bleems/bleems-01@2x.png: 2017-04-27 22:39:08.000000000 +05:30
 build/images/bleems/bleems-02.png: 2017-04-11 12:15:46.000000000 +05:30
-build/images/bleems/bleems-02@2x.png: 2017-04-11 12:17:47.000000000 +05:30
-build/images/bleems/bleems-03.jpg: 2017-04-11 12:16:18.000000000 +05:30
-build/images/bleems/bleems-03@2x.jpg: 2017-04-11 12:16:20.000000000 +05:30
-build/images/bleems/bleems-b-g.jpg: 2017-04-11 12:16:21.000000000 +05:30
-build/images/bleems/bleems-b-g@2x.jpg: 2017-04-11 12:16:25.000000000 +05:30
-build/images/bleems/bleems-category.jpg: 2017-04-11 12:16:26.000000000 +05:30
-build/images/bleems/bleems-category@2x.jpg: 2017-04-11 12:16:29.000000000 +05:30
-build/images/bleems/bleems-checkout.png: 2017-04-11 12:16:53.000000000 +05:30
-build/images/bleems/bleems-checkout@2x.png: 2017-04-11 12:18:19.000000000 +05:30
-build/images/bleems/bleems-home.png: 2017-04-11 12:17:22.000000000 +05:30
-build/images/bleems/bleems-home@2x.png: 2017-04-11 12:18:41.000000000 +05:30
-build/images/bleems/bleems-location.png: 2017-04-11 12:18:39.000000000 +05:30
-build/images/bleems/bleems-location@2x.png: 2017-04-11 12:20:26.000000000 +05:30
-build/images/blog1.jpeg: 2017-03-20 11:02:24.000000000 +05:30
-build/images/blogger-sans.png: 2017-03-20 11:02:24.000000000 +05:30
-build/images/blogger-sans@2x.png: 2017-03-20 11:02:24.000000000 +05:30
-build/images/bold.png: 2017-03-20 11:02:25.000000000 +05:30
-build/images/bold@2x.png: 2017-03-20 11:02:25.000000000 +05:30
-build/images/bommer_ios.png: 2017-03-20 11:02:30.000000000 +05:30
-build/images/bommer_ios@2x.png: 2017-03-20 11:02:45.000000000 +05:30
-build/images/boomer.png: 2017-03-20 11:02:32.000000000 +05:30
-build/images/boomer@2x.png: 2017-03-20 11:02:32.000000000 +05:30
-build/images/boomer_banner.jpg: 2017-03-20 11:02:46.000000000 +05:30
-build/images/boomer_banner.png: 2016-11-07 17:46:56.000000000 +05:30
-build/images/boomer_banner@2x.png: 2017-03-20 11:03:21.000000000 +05:30
-build/images/boomer_logo.png: 2017-03-20 11:02:55.000000000 +05:30
-build/images/boomer_logo@2x.png: 2017-03-20 11:02:57.000000000 +05:30
-build/images/business-01.png: 2017-03-20 11:02:59.000000000 +05:30
-build/images/business-01@2x.png: 2017-03-20 11:03:04.000000000 +05:30
-build/images/business-02-b.png: 2017-03-20 11:03:08.000000000 +05:30
-build/images/business-02-b@2x.png: 2017-03-20 11:03:15.000000000 +05:30
-build/images/business-03-c.png: 2017-03-20 11:03:11.000000000 +05:30
-build/images/business-03-c@2x.png: 2017-03-20 11:03:17.000000000 +05:30
-build/images/career_banner.jpg: 2017-03-20 11:03:20.000000000 +05:30
-build/images/career_banner1.jpg: 2017-04-05 23:51:40.000000000 +05:30
-build/images/careers_grid/d-s-c-0056.jpg: 2017-04-16 16:12:15.000000000 +05:30
-build/images/careers_grid/d-s-c-0056@2x.jpg: 2017-04-16 16:12:16.000000000 +05:30
-build/images/careers_grid/d-s-c-0132.jpg: 2017-04-16 16:12:15.000000000 +05:30
-build/images/careers_grid/d-s-c-0132@2x.jpg: 2017-04-16 16:12:17.000000000 +05:30
-build/images/careers_grid/d-s-c-0598.jpg: 2017-04-16 16:12:16.000000000 +05:30
-build/images/careers_grid/d-s-c-0598@2x.jpg: 2017-04-16 16:12:16.000000000 +05:30
-build/images/careers_grid/d-s-c-0614.jpg: 2017-04-16 16:12:16.000000000 +05:30
-build/images/careers_grid/d-s-c-0614@2x.jpg: 2017-04-16 16:12:18.000000000 +05:30
-build/images/careers_grid/d-s-c-0679.jpg: 2017-04-16 16:12:17.000000000 +05:30
-build/images/careers_grid/d-s-c-0679@2x.jpg: 2017-04-16 16:12:18.000000000 +05:30
-build/images/careers_grid/d-s-c-6074.jpg: 2017-04-16 16:12:17.000000000 +05:30
-build/images/careers_grid/d-s-c-6074@2x.jpg: 2017-04-16 16:12:19.000000000 +05:30
-build/images/chai_point.png: 2017-03-20 11:03:23.000000000 +05:30
-build/images/chai_point_web.png: 2017-03-20 11:03:55.000000000 +05:30
-build/images/chai_point_web@2x.png: 2017-03-20 11:05:51.000000000 +05:30
-build/images/chaipoint/chai-point-web-b-g-banner.jpg: 2017-04-05 23:51:40.000000000
+build/images/bleems/bleems-02@2x.png: 2017-04-27 22:39:09.000000000 +05:30
+build/images/bleems/bleems-03.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/bleems/bleems-03@2x.jpg: 2017-04-27 22:38:56.000000000 +05:30
+build/images/bleems/bleems-b-g.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/bleems/bleems-b-g@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/bleems/bleems-category.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/bleems/bleems-category@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/bleems/bleems-checkout.png: 2017-04-27 22:39:09.000000000 +05:30
+build/images/bleems/bleems-checkout@2x.png: 2017-04-27 22:39:45.000000000 +05:30
+build/images/bleems/bleems-home.png: 2017-04-27 22:39:17.000000000 +05:30
+build/images/bleems/bleems-home@2x.png: 2017-04-27 22:39:31.000000000 +05:30
+build/images/bleems/bleems-location.png: 2017-04-27 22:39:23.000000000 +05:30
+build/images/bleems/bleems-location@2x.png: 2017-04-27 22:39:40.000000000 +05:30
+build/images/blog1.jpeg: 2017-04-27 22:39:26.000000000 +05:30
+build/images/blogger-sans.png: 2017-04-27 22:39:26.000000000 +05:30
+build/images/blogger-sans@2x.png: 2017-04-27 22:39:26.000000000 +05:30
+build/images/bold.png: 2017-04-27 22:39:27.000000000 +05:30
+build/images/bold@2x.png: 2017-04-27 22:39:27.000000000 +05:30
+build/images/bommer_ios.png: 2017-04-27 22:39:31.000000000 +05:30
+build/images/bommer_ios@2x.png: 2017-04-27 22:39:48.000000000 +05:30
+build/images/boomer.png: 2017-04-27 22:39:41.000000000 +05:30
+build/images/boomer@2x.png: 2017-04-27 22:39:42.000000000 +05:30
+build/images/boomer_banner.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/boomer_banner.png: 2017-04-27 22:39:55.000000000 +05:30
+build/images/boomer_banner@2x.png: 2017-04-27 22:40:26.000000000 +05:30
+build/images/boomer_logo.png: 2017-04-27 22:39:52.000000000 +05:30
+build/images/boomer_logo@2x.png: 2017-04-27 22:39:53.000000000 +05:30
+build/images/business-01.png: 2017-04-27 22:39:54.000000000 +05:30
+build/images/business-01@2x.png: 2017-04-27 22:39:57.000000000 +05:30
+build/images/business-02-b.png: 2017-04-27 22:39:57.000000000 +05:30
+build/images/business-02-b@2x.png: 2017-04-27 22:40:04.000000000 +05:30
+build/images/business-03-c.png: 2017-04-27 22:40:04.000000000 +05:30
+build/images/business-03-c@2x.png: 2017-04-27 22:40:12.000000000 +05:30
+build/images/career_banner.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/career_banner1.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/careers_grid/d-s-c-0056.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/careers_grid/d-s-c-0056@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/careers_grid/d-s-c-0132.jpg: 2017-04-27 22:40:07.000000000 +05:30
+build/images/careers_grid/d-s-c-0132@2x.jpg: 2017-04-27 22:40:07.000000000 +05:30
+build/images/careers_grid/d-s-c-0598.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/careers_grid/d-s-c-0598@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/careers_grid/d-s-c-0614.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/careers_grid/d-s-c-0614@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/careers_grid/d-s-c-0679.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/careers_grid/d-s-c-0679@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/careers_grid/d-s-c-6074.jpg: 2017-04-27 22:40:09.000000000 +05:30
+build/images/careers_grid/d-s-c-6074@2x.jpg: 2017-04-27 22:40:09.000000000 +05:30
+build/images/chai_point.png: 2017-04-27 22:40:09.000000000 +05:30
+build/images/chai_point_web.png: 2017-04-27 22:40:15.000000000 +05:30
+build/images/chai_point_web@2x.png: 2017-04-27 22:40:27.000000000 +05:30
+build/images/chaipoint/chai-point-web-b-g-banner.jpg: 2017-04-27 22:35:13.000000000
   +05:30
-build/images/chaipoint/chai-point-web-b-g-banner@2x.jpg: 2017-04-05 23:51:43.000000000
+build/images/chaipoint/chai-point-web-b-g-banner@2x.jpg: 2017-04-27 22:35:13.000000000
   +05:30
-build/images/chaipoint/chaipoint-cards.jpg: 2017-04-05 23:51:39.000000000 +05:30
-build/images/chaipoint/chaipoint-cards@2x.jpg: 2017-04-05 23:51:41.000000000 +05:30
-build/images/chaipoint/chaipoint-checkout.jpg: 2017-04-05 23:51:41.000000000 +05:30
-build/images/chaipoint/chaipoint-checkout@2x.jpg: 2017-04-05 23:51:42.000000000 +05:30
-build/images/chaipoint/chaipoint-home.jpg: 2017-04-05 23:51:42.000000000 +05:30
-build/images/chaipoint/chaipoint-home@2x.jpg: 2017-04-05 23:51:43.000000000 +05:30
-build/images/chaipoint/chaipoint-referal.jpg: 2017-04-05 23:51:42.000000000 +05:30
-build/images/chaipoint/chaipoint-referal@2x.jpg: 2017-04-05 23:51:44.000000000 +05:30
+build/images/chaipoint/chaipoint-cards.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/chaipoint/chaipoint-cards@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/chaipoint/chaipoint-checkout.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/chaipoint/chaipoint-checkout@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/chaipoint/chaipoint-home.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/chaipoint/chaipoint-home@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/chaipoint/chaipoint-referal.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/chaipoint/chaipoint-referal@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
 build/images/chaipoint/chaipoint_app_001.gif: 2017-04-16 16:12:18.000000000 +05:30
 build/images/chaipoint/chaipoint_app_002.gif: 2017-04-16 16:12:36.000000000 +05:30
-build/images/chaipoint/chaipoint_app_01w.png: 2017-04-16 16:12:39.000000000 +05:30
-build/images/chaipoint/chaipoint_app_01w@2x.png: 2017-04-16 16:13:41.000000000 +05:30
-build/images/chaipoint/chaipoint_app_02w.png: 2017-04-16 16:12:32.000000000 +05:30
-build/images/chaipoint/chaipoint_app_02w@2x.png: 2017-04-16 16:13:41.000000000 +05:30
-build/images/chaitanya.jpg: 2017-03-20 11:03:53.000000000 +05:30
-build/images/Chaitanya.png: 2017-03-20 11:03:59.000000000 +05:30
-build/images/Chaitanya1.png: 2017-03-20 11:04:44.000000000 +05:30
-build/images/checkmark.png: 2016-11-07 17:46:56.000000000 +05:30
-build/images/checkmark@2x.png: 2017-03-20 11:04:04.000000000 +05:30
-build/images/chumbak.png: 2017-03-20 11:04:04.000000000 +05:30
-build/images/chumbak@2x.png: 2017-03-20 11:04:05.000000000 +05:30
-build/images/citrus/b-g.png: 2017-03-20 11:04:05.000000000 +05:30
-build/images/citrus/b-g@2x.png: 2017-03-20 11:04:09.000000000 +05:30
-build/images/citrus/b-g@3x.png: 2017-03-20 11:04:20.000000000 +05:30
-build/images/citrus/Chat_001.png: 2017-03-20 11:05:40.000000000 +05:30
-build/images/citrus/Chat_006.png: 2017-03-20 11:05:58.000000000 +05:30
-build/images/citrus/citrus-exp-001.png: 2017-03-20 11:05:54.000000000 +05:30
-build/images/citrus/citrus-exp-001@2x.png: 2017-03-20 11:06:09.000000000 +05:30
-build/images/citrus/citrus-exp-001@3x.png: 2017-03-20 11:06:35.000000000 +05:30
-build/images/citrus/citrus-exp-002.png: 2017-03-20 11:06:18.000000000 +05:30
-build/images/citrus/citrus-exp-002@2x.png: 2017-03-20 11:06:46.000000000 +05:30
-build/images/citrus/citrus-exp-002@3x.png: 2017-03-20 11:07:27.000000000 +05:30
-build/images/citrus/citrus-exp-003.png: 2017-03-20 11:06:50.000000000 +05:30
-build/images/citrus/citrus-exp-003@2x.png: 2017-03-20 11:07:06.000000000 +05:30
-build/images/citrus/citrus-exp-003@3x.png: 2017-03-20 11:07:24.000000000 +05:30
-build/images/citrus/citrus-exp-004.png: 2017-03-20 11:07:14.000000000 +05:30
-build/images/citrus/citrus-exp-004@2x.png: 2017-03-20 11:07:25.000000000 +05:30
-build/images/citrus/citrus-exp-004@3x.png: 2017-03-20 11:07:49.000000000 +05:30
-build/images/citrus/citrus-exp-005.png: 2017-03-20 11:07:36.000000000 +05:30
-build/images/citrus/citrus-exp-005@2x.png: 2017-03-20 11:07:46.000000000 +05:30
-build/images/citrus/citrus-exp-005@3x.png: 2017-03-20 11:08:08.000000000 +05:30
-build/images/citrus/citrus-exp-006.png: 2017-03-20 11:08:07.000000000 +05:30
-build/images/citrus/citrus-exp-006@2x.png: 2017-03-20 11:08:20.000000000 +05:30
-build/images/citrus/citrus-exp-006@3x.png: 2017-03-20 11:08:44.000000000 +05:30
-build/images/citrus/devshree.png: 2017-03-20 11:08:31.000000000 +05:30
-build/images/citrus/devshree@2x.png: 2017-03-20 11:09:36.000000000 +05:30
-build/images/citrus/devshree@3x.png: 2017-03-20 11:10:50.000000000 +05:30
-build/images/citrus/FriendsInvited.png: 2017-03-20 11:09:50.000000000 +05:30
-build/images/citrus/Group_Chat_001.png: 2017-03-20 11:10:57.000000000 +05:30
-build/images/citrus/Home.png: 2017-03-20 11:10:54.000000000 +05:30
-build/images/citrus/Home_Empty.png: 2017-03-20 11:11:31.000000000 +05:30
-build/images/citrus/Home_FAB.png: 2017-03-20 11:13:05.000000000 +05:30
-build/images/citrus/Home_Nav.png: 2017-03-20 11:12:17.000000000 +05:30
-build/images/citrus/OB.png: 2017-03-20 11:15:17.000000000 +05:30
+build/images/chaipoint/chaipoint_app_01w.png: 2017-04-27 22:40:23.000000000 +05:30
+build/images/chaipoint/chaipoint_app_01w@2x.png: 2017-04-27 22:40:34.000000000 +05:30
+build/images/chaipoint/chaipoint_app_02w.png: 2017-04-27 22:40:28.000000000 +05:30
+build/images/chaipoint/chaipoint_app_02w@2x.png: 2017-04-27 22:40:39.000000000 +05:30
+build/images/chaitanya.jpg: 2017-04-27 22:40:44.000000000 +05:30
+build/images/Chaitanya.png: 2017-04-27 22:40:51.000000000 +05:30
+build/images/Chaitanya1.png: 2017-04-27 22:40:51.000000000 +05:30
+build/images/checkmark.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/checkmark@2x.png: 2017-04-27 22:40:45.000000000 +05:30
+build/images/chumbak.png: 2017-04-27 22:40:45.000000000 +05:30
+build/images/chumbak@2x.png: 2017-04-27 22:40:46.000000000 +05:30
+build/images/citrus/b-g.png: 2017-04-27 22:40:46.000000000 +05:30
+build/images/citrus/b-g@2x.png: 2017-04-27 22:40:50.000000000 +05:30
+build/images/citrus/Chat_001.png: 2017-04-27 22:41:06.000000000 +05:30
+build/images/citrus/Chat_006.png: 2017-04-27 22:41:06.000000000 +05:30
+build/images/citrus/citrus-exp-001.png: 2017-04-27 22:40:58.000000000 +05:30
+build/images/citrus/citrus-exp-001@2x.png: 2017-04-27 22:41:01.000000000 +05:30
+build/images/citrus/citrus-exp-002.png: 2017-04-27 22:41:00.000000000 +05:30
+build/images/citrus/citrus-exp-002@2x.png: 2017-04-27 22:41:04.000000000 +05:30
+build/images/citrus/citrus-exp-003.png: 2017-04-27 22:41:04.000000000 +05:30
+build/images/citrus/citrus-exp-003@2x.png: 2017-04-27 22:41:07.000000000 +05:30
+build/images/citrus/citrus-exp-004.png: 2017-04-27 22:41:07.000000000 +05:30
+build/images/citrus/citrus-exp-004@2x.png: 2017-04-27 22:41:10.000000000 +05:30
+build/images/citrus/citrus-exp-005.png: 2017-04-27 22:41:10.000000000 +05:30
+build/images/citrus/citrus-exp-005@2x.png: 2017-04-27 22:41:15.000000000 +05:30
+build/images/citrus/citrus-exp-006.png: 2017-04-27 22:41:13.000000000 +05:30
+build/images/citrus/citrus-exp-006@2x.png: 2017-04-27 22:41:16.000000000 +05:30
+build/images/citrus/Citrus_Flow_Board.png: 2017-05-30 17:32:28.000000000 +05:30
+build/images/citrus/devshree.png: 2017-04-27 22:41:14.000000000 +05:30
+build/images/citrus/devshree@2x.png: 2017-04-27 22:41:18.000000000 +05:30
+build/images/citrus/FriendsInvited.png: 2017-04-27 22:41:29.000000000 +05:30
+build/images/citrus/Group_Chat_001.png: 2017-04-27 22:41:26.000000000 +05:30
+build/images/citrus/Home.png: 2017-04-27 22:41:27.000000000 +05:30
+build/images/citrus/Home_Empty.png: 2017-04-27 22:41:38.000000000 +05:30
+build/images/citrus/Home_FAB.png: 2017-04-27 22:41:45.000000000 +05:30
+build/images/citrus/Home_Nav.png: 2017-04-27 22:41:51.000000000 +05:30
+build/images/citrus/OB.png: 2017-04-27 22:35:12.000000000 +05:30
 build/images/citrus/pay.gif: 2017-04-11 12:18:46.000000000 +05:30
-build/images/citrus/PayBhaghya_001.png: 2017-03-20 11:13:08.000000000 +05:30
+build/images/citrus/PayBhaghya_001.png: 2017-04-27 22:41:53.000000000 +05:30
 build/images/citrus/pool.gif: 2017-04-11 12:18:52.000000000 +05:30
-build/images/citrus/Profile.png: 2017-03-20 11:13:26.000000000 +05:30
+build/images/citrus/Profile.png: 2017-04-28 16:17:01.000000000 +05:30
 build/images/citrus/split.gif: 2017-04-11 12:19:00.000000000 +05:30
-build/images/citrus/Split_004.png: 2017-03-20 11:14:32.000000000 +05:30
-build/images/citrus/Wallet.png: 2017-03-20 11:14:31.000000000 +05:30
-build/images/citrus/Wallet_Withdraw_002.png: 2017-03-20 11:16:35.000000000 +05:30
-build/images/citrus.png: 2017-03-20 11:14:32.000000000 +05:30
-build/images/clients_logo/appjoy.png: 2017-03-20 11:14:32.000000000 +05:30
-build/images/clients_logo/appjoy@2x.png: 2017-03-20 11:14:35.000000000 +05:30
-build/images/clients_logo/art-of-living.png: 2017-03-20 11:14:36.000000000 +05:30
-build/images/clients_logo/art-of-living@2x.png: 2017-03-20 11:14:40.000000000 +05:30
-build/images/clients_logo/boomer.png: 2017-03-20 11:14:41.000000000 +05:30
-build/images/clients_logo/boomer@2x.png: 2017-03-20 11:14:43.000000000 +05:30
-build/images/clients_logo/chai-point.png: 2017-03-20 11:14:43.000000000 +05:30
-build/images/clients_logo/chai-point@2x.png: 2017-03-20 11:14:46.000000000 +05:30
-build/images/clients_logo/chumbak.png: 2017-03-20 11:14:44.000000000 +05:30
-build/images/clients_logo/chumbak@2x.png: 2017-03-20 11:14:48.000000000 +05:30
-build/images/clients_logo/citrus.png: 2017-03-20 11:14:47.000000000 +05:30
-build/images/clients_logo/citrus@2x.png: 2017-03-20 11:14:51.000000000 +05:30
-build/images/clients_logo/eatfresh.png: 2017-03-20 11:14:49.000000000 +05:30
-build/images/clients_logo/eatfresh@2x.png: 2017-03-20 11:14:54.000000000 +05:30
-build/images/clients_logo/explara.png: 2017-03-20 11:14:52.000000000 +05:30
-build/images/clients_logo/explara@2x.png: 2017-03-20 11:14:56.000000000 +05:30
-build/images/clients_logo/housejoy.png: 2017-03-20 11:14:55.000000000 +05:30
-build/images/clients_logo/housejoy@2x.png: 2017-03-20 11:14:59.000000000 +05:30
-build/images/clients_logo/indiamart.png: 2017-03-20 11:14:57.000000000 +05:30
-build/images/clients_logo/indiamart@2x.png: 2017-03-20 11:15:01.000000000 +05:30
-build/images/clients_logo/pay-u-money.png: 2017-03-20 11:15:00.000000000 +05:30
-build/images/clients_logo/pay-u-money@2x.png: 2017-03-20 11:15:02.000000000 +05:30
-build/images/clients_logo/treatr.png: 2017-03-20 11:15:02.000000000 +05:30
-build/images/clients_logo/treatr@2x.png: 2017-03-20 11:15:05.000000000 +05:30
-build/images/Coupons_02.jpg: 2017-03-20 11:15:05.000000000 +05:30
-build/images/cricbet/002-v-2.jpg: 2017-03-20 11:15:06.000000000 +05:30
-build/images/cricbet/002-v-2.png: 2017-03-20 11:15:13.000000000 +05:30
-build/images/cricbet/002-v-2@2x.jpg: 2017-03-20 11:15:07.000000000 +05:30
-build/images/cricbet/002-v-2@2x.png: 2017-03-20 11:15:35.000000000 +05:30
-build/images/cricbet/002-v-2@3x.jpg: 2017-03-20 11:15:16.000000000 +05:30
-build/images/cricbet/002-v-2@3x.png: 2017-03-20 11:16:20.000000000 +05:30
-build/images/cricbet/002-v-5.jpg: 2017-03-20 11:15:17.000000000 +05:30
-build/images/cricbet/002-v-5.png: 2017-03-20 11:15:22.000000000 +05:30
-build/images/cricbet/002-v-5@2x.jpg: 2017-03-20 11:15:27.000000000 +05:30
-build/images/cricbet/002-v-5@2x.png: 2017-03-20 11:16:01.000000000 +05:30
-build/images/cricbet/002-v-5@3x.jpg: 2017-03-20 11:15:46.000000000 +05:30
-build/images/cricbet/002-v-5@3x.png: 2017-03-20 11:16:57.000000000 +05:30
-build/images/cricbet/002-v-6.jpg: 2017-03-20 11:16:12.000000000 +05:30
-build/images/cricbet/002-v-6.png: 2017-03-20 11:16:17.000000000 +05:30
-build/images/cricbet/002-v-6@2x.jpg: 2017-03-20 11:16:21.000000000 +05:30
-build/images/cricbet/002-v-6@2x.png: 2017-03-20 11:16:46.000000000 +05:30
-build/images/cricbet/002-v-6@3x.jpg: 2017-03-20 11:16:36.000000000 +05:30
-build/images/cricbet/002-v-6@3x.png: 2017-03-20 11:17:43.000000000 +05:30
-build/images/cricbet/002-v-8.jpg: 2017-03-20 11:16:38.000000000 +05:30
-build/images/cricbet/002-v-8.png: 2017-03-20 11:16:43.000000000 +05:30
-build/images/cricbet/002-v-8@2x.jpg: 2017-03-20 11:16:47.000000000 +05:30
-build/images/cricbet/002-v-8@2x.png: 2017-03-20 11:17:15.000000000 +05:30
-build/images/cricbet/002-v-8@3x.jpg: 2017-03-20 11:16:59.000000000 +05:30
-build/images/cricbet/002-v-8@3x.png: 2017-03-20 11:18:00.000000000 +05:30
-build/images/cricbet/002.jpg: 2017-03-20 11:17:28.000000000 +05:30
-build/images/cricbet/002.png: 2017-03-20 11:17:34.000000000 +05:30
-build/images/cricbet/002@2x.jpg: 2017-03-20 11:17:31.000000000 +05:30
-build/images/cricbet/002@2x.png: 2017-03-20 11:17:58.000000000 +05:30
-build/images/cricbet/002@3x.jpg: 2017-03-20 11:17:38.000000000 +05:30
-build/images/cricbet/002@3x.png: 2017-03-20 11:18:43.000000000 +05:30
-build/images/cricbet/Activity-Feed.png: 2017-03-20 11:22:38.000000000 +05:30
-build/images/cricbet/b-g.png: 2017-03-20 11:20:10.000000000 +05:30
-build/images/cricbet/b-g@2x.png: 2017-03-20 11:25:12.000000000 +05:30
-build/images/cricbet/b-g@3x.png: 2017-03-20 11:33:15.000000000 +05:30
-build/images/cricbet/Daily_Bonus_Collected.png: 2017-03-20 11:25:21.000000000 +05:30
-build/images/cricbet/echo@2x.jpg: 2017-03-20 11:24:10.000000000 +05:30
-build/images/cricbet/Friends.png: 2017-03-20 11:30:15.000000000 +05:30
-build/images/cricbet/Friends_Decline.png: 2017-03-20 11:31:14.000000000 +05:30
-build/images/cricbet/Friends_Search.png: 2017-03-20 11:29:46.000000000 +05:30
-build/images/cricbet/Groups.png: 2017-03-20 11:35:45.000000000 +05:30
-build/images/cricbet/Home.png: 2017-03-20 11:38:52.000000000 +05:30
-build/images/cricbet/Leaderboards.png: 2017-03-20 11:39:51.000000000 +05:30
-build/images/cricbet/match-question.jpg: 2017-03-20 11:33:15.000000000 +05:30
-build/images/cricbet/match-question@2x.jpg: 2017-03-20 11:33:17.000000000 +05:30
-build/images/cricbet/match-question@3x.jpg: 2017-03-20 11:33:20.000000000 +05:30
-build/images/cricbet/match-questions-all.jpg: 2017-03-20 11:33:21.000000000 +05:30
-build/images/cricbet/match-questions-all@2x.jpg: 2017-03-20 11:33:23.000000000 +05:30
-build/images/cricbet/match-questions-all@3x.jpg: 2017-03-20 11:33:26.000000000 +05:30
-build/images/cricbet/Match_Main.png: 2017-03-20 11:36:54.000000000 +05:30
-build/images/cricbet/Match_Question_Batsman.png: 2017-03-20 11:40:20.000000000 +05:30
-build/images/cricbet/Match_Question_Boundry.png: 2017-03-20 11:43:20.000000000 +05:30
-build/images/cricbet/Match_Questions_All.png: 2017-03-20 11:43:35.000000000 +05:30
-build/images/cricbet/ok.jpg: 2017-03-20 11:39:53.000000000 +05:30
-build/images/cricbet/ok@2x.jpg: 2017-03-20 11:39:53.000000000 +05:30
-build/images/cricbet/ok@3x.jpg: 2017-03-20 11:39:54.000000000 +05:30
-build/images/cricbet/old.jpg: 2017-03-20 11:39:54.000000000 +05:30
-build/images/cricbet/old1.png: 2017-03-20 11:42:24.000000000 +05:30
-build/images/cricbet/old@2x.jpg: 2017-03-20 11:40:22.000000000 +05:30
-build/images/cricbet/old@3x.jpg: 2017-03-20 11:40:24.000000000 +05:30
-build/images/cricbet/poster1.png: 2017-03-20 11:41:09.000000000 +05:30
-build/images/cricbet/poster2.png: 2017-03-20 11:41:56.000000000 +05:30
-build/images/cricbet/sketch.jpg: 2017-03-20 11:41:57.000000000 +05:30
-build/images/cricbet/sketch@2x.jpg: 2017-03-20 11:42:01.000000000 +05:30
-build/images/cricbet/sketch@3x.jpg: 2017-03-20 11:42:07.000000000 +05:30
-build/images/curvy-arrow.png: 2017-03-20 11:42:07.000000000 +05:30
-build/images/curvy-arrow@2x.png: 2017-03-20 11:42:08.000000000 +05:30
-build/images/curvy-up-arrow.png: 2017-03-20 11:42:08.000000000 +05:30
-build/images/curvy-up-arrow@2x.png: 2017-03-20 11:42:08.000000000 +05:30
-build/images/Devshree.png: 2017-03-20 11:42:46.000000000 +05:30
-build/images/Dinesh.png: 2017-03-20 11:43:20.000000000 +05:30
-build/images/dribbble_icon.png: 2017-03-20 11:42:46.000000000 +05:30
-build/images/dribbble_icon@2x.png: 2017-03-20 11:42:47.000000000 +05:30
-build/images/eatfresh/Address.png: 2017-03-20 11:45:26.000000000 +05:30
-build/images/eatfresh/aplha.jpg: 2017-03-20 11:43:20.000000000 +05:30
-build/images/eatfresh/aplha.png: 2017-03-20 11:43:21.000000000 +05:30
-build/images/eatfresh/aplha@2x.jpg: 2017-03-20 11:43:21.000000000 +05:30
-build/images/eatfresh/aplha@2x.png: 2017-03-20 11:43:49.000000000 +05:30
-build/images/eatfresh/aplha@3x.jpg: 2017-03-20 11:43:29.000000000 +05:30
-build/images/eatfresh/aplha@3x.png: 2017-03-20 11:44:31.000000000 +05:30
-build/images/eatfresh/bravo.jpg: 2017-03-20 11:43:50.000000000 +05:30
-build/images/eatfresh/bravo.png: 2017-03-20 11:43:50.000000000 +05:30
-build/images/eatfresh/bravo@2x.jpg: 2017-03-20 11:43:58.000000000 +05:30
-build/images/eatfresh/bravo@2x.png: 2017-03-20 11:44:27.000000000 +05:30
-build/images/eatfresh/bravo@3x.jpg: 2017-03-20 11:44:28.000000000 +05:30
-build/images/eatfresh/bravo@3x.png: 2017-03-20 11:45:35.000000000 +05:30
-build/images/eatfresh/Cart.png: 2017-03-20 11:48:11.000000000 +05:30
-build/images/eatfresh/charlie.jpg: 2017-03-20 11:45:18.000000000 +05:30
-build/images/eatfresh/charlie.png: 2017-03-20 11:45:19.000000000 +05:30
-build/images/eatfresh/charlie@2x.jpg: 2017-03-20 11:45:27.000000000 +05:30
-build/images/eatfresh/charlie@2x.png: 2017-03-20 11:45:58.000000000 +05:30
-build/images/eatfresh/charlie@3x.jpg: 2017-03-20 11:45:36.000000000 +05:30
-build/images/eatfresh/charlie@3x.png: 2017-03-20 11:46:51.000000000 +05:30
-build/images/eatfresh/delta.jpg: 2017-03-20 11:45:38.000000000 +05:30
-build/images/eatfresh/delta.png: 2017-03-20 11:45:39.000000000 +05:30
-build/images/eatfresh/delta@2x.jpg: 2017-03-20 11:45:47.000000000 +05:30
-build/images/eatfresh/delta@2x.png: 2017-03-20 11:46:22.000000000 +05:30
-build/images/eatfresh/delta@3x.jpg: 2017-03-20 11:46:00.000000000 +05:30
-build/images/eatfresh/delta@3x.png: 2017-03-20 11:47:18.000000000 +05:30
-build/images/eatfresh/Dish-Info.png: 2017-03-20 11:48:59.000000000 +05:30
-build/images/eatfresh/Dish-Reviews.png: 2017-03-20 11:49:35.000000000 +05:30
-build/images/eatfresh/Dish.png: 2017-03-20 11:52:17.000000000 +05:30
-build/images/eatfresh/eatfresh-activity-bar.png: 2017-03-20 11:48:41.000000000 +05:30
-build/images/eatfresh/eatfresh-activity-bar@2x.png: 2017-03-20 11:50:45.000000000
-  +05:30
-build/images/eatfresh/eatfresh-activity-bar@3x.png: 2017-03-20 11:53:39.000000000
+build/images/citrus/Split_004.png: 2017-04-27 22:42:06.000000000 +05:30
+build/images/citrus/Wallet.png: 2017-04-27 22:42:13.000000000 +05:30
+build/images/citrus/Wallet_Withdraw_002.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/citrus.png: 2017-04-27 22:42:11.000000000 +05:30
+build/images/citrus_poster.png: 2017-05-23 12:00:08.000000000 +05:30
+build/images/clients_logo/appjoy.png: 2017-04-27 22:42:11.000000000 +05:30
+build/images/clients_logo/appjoy@2x.png: 2017-04-27 22:42:12.000000000 +05:30
+build/images/clients_logo/art-of-living.png: 2017-04-27 22:42:12.000000000 +05:30
+build/images/clients_logo/art-of-living@2x.png: 2017-04-27 22:42:12.000000000 +05:30
+build/images/clients_logo/art_of_living.png: 2017-05-17 12:00:51.000000000 +05:30
+build/images/clients_logo/art_of_living@2x.png: 2017-05-17 12:00:52.000000000 +05:30
+build/images/clients_logo/boomer.png: 2017-04-27 22:42:13.000000000 +05:30
+build/images/clients_logo/boomer@2x.png: 2017-04-27 22:42:13.000000000 +05:30
+build/images/clients_logo/chai-point.png: 2017-05-17 12:00:52.000000000 +05:30
+build/images/clients_logo/chai-point@2x.png: 2017-05-17 12:00:57.000000000 +05:30
+build/images/clients_logo/chumbak.png: 2017-05-17 12:00:53.000000000 +05:30
+build/images/clients_logo/chumbak@2x.png: 2017-05-17 12:00:57.000000000 +05:30
+build/images/clients_logo/citrus.png: 2017-05-17 12:00:54.000000000 +05:30
+build/images/clients_logo/citrus@2x.png: 2017-05-17 12:00:56.000000000 +05:30
+build/images/clients_logo/eatfresh.png: 2017-05-17 12:00:55.000000000 +05:30
+build/images/clients_logo/eatfresh@2x.png: 2017-05-17 12:00:58.000000000 +05:30
+build/images/clients_logo/explara.png: 2017-05-17 12:00:59.000000000 +05:30
+build/images/clients_logo/explara@2x.png: 2017-05-17 12:01:08.000000000 +05:30
+build/images/clients_logo/housejoy.png: 2017-05-17 12:01:00.000000000 +05:30
+build/images/clients_logo/housejoy@2x.png: 2017-05-17 12:01:04.000000000 +05:30
+build/images/clients_logo/indiamart.png: 2017-05-17 12:01:02.000000000 +05:30
+build/images/clients_logo/indiamart@2x.png: 2017-05-17 12:01:05.000000000 +05:30
+build/images/clients_logo/pay-u-money.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/clients_logo/pay-u-money@2x.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/clients_logo/treatr.png: 2017-04-27 22:42:16.000000000 +05:30
+build/images/clients_logo/treatr@2x.png: 2017-04-27 22:42:17.000000000 +05:30
+build/images/clients_logo/zippr.png: 2017-05-17 12:01:03.000000000 +05:30
+build/images/clients_logo/zippr@2x.png: 2017-05-17 12:01:06.000000000 +05:30
+build/images/Coupons_02.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/cricbet/002-v-2.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/cricbet/002-v-2.png: 2017-04-27 22:42:20.000000000 +05:30
+build/images/cricbet/002-v-2@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/cricbet/002-v-2@2x.png: 2017-04-27 22:42:23.000000000 +05:30
+build/images/cricbet/002-v-5.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/cricbet/002-v-5.png: 2017-04-27 22:42:21.000000000 +05:30
+build/images/cricbet/002-v-5@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/cricbet/002-v-5@2x.png: 2017-04-27 22:42:24.000000000 +05:30
+build/images/cricbet/002-v-6.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/cricbet/002-v-6.png: 2017-04-27 22:42:22.000000000 +05:30
+build/images/cricbet/002-v-6@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/cricbet/002-v-6@2x.png: 2017-04-27 22:42:26.000000000 +05:30
+build/images/cricbet/002-v-8.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/cricbet/002-v-8.png: 2017-04-27 22:42:25.000000000 +05:30
+build/images/cricbet/002-v-8@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/cricbet/002-v-8@2x.png: 2017-04-27 22:42:29.000000000 +05:30
+build/images/cricbet/002.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/cricbet/002.png: 2017-04-27 22:42:28.000000000 +05:30
+build/images/cricbet/002@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/cricbet/002@2x.png: 2017-04-27 22:42:32.000000000 +05:30
+build/images/cricbet/Activity-Feed.png: 2017-04-27 22:44:17.000000000 +05:30
+build/images/cricbet/b-g.png: 2017-04-27 22:42:47.000000000 +05:30
+build/images/cricbet/b-g@2x.png: 2017-04-27 22:44:08.000000000 +05:30
+build/images/cricbet/Daily_Bonus_Collected.png: 2017-04-27 22:43:16.000000000 +05:30
+build/images/cricbet/echo@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/cricbet/Friends.png: 2017-04-27 22:44:33.000000000 +05:30
+build/images/cricbet/Friends_Decline.png: 2017-04-27 22:45:38.000000000 +05:30
+build/images/cricbet/Friends_Search.png: 2017-04-27 22:45:22.000000000 +05:30
+build/images/cricbet/Groups.png: 2017-04-27 22:47:12.000000000 +05:30
+build/images/cricbet/Home.png: 2017-04-27 22:46:15.000000000 +05:30
+build/images/cricbet/Leaderboards.png: 2017-04-27 22:47:14.000000000 +05:30
+build/images/cricbet/match-question.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/cricbet/match-question@2x.jpg: 2017-04-27 22:46:37.000000000 +05:30
+build/images/cricbet/match-questions-all.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/cricbet/match-questions-all@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/cricbet/Match_Main.png: 2017-04-27 22:47:44.000000000 +05:30
+build/images/cricbet/Match_Question_Batsman.png: 2017-04-27 22:47:47.000000000 +05:30
+build/images/cricbet/Match_Question_Boundry.png: 2017-04-27 22:48:46.000000000 +05:30
+build/images/cricbet/Match_Questions_All.png: 2017-04-27 22:49:52.000000000 +05:30
+build/images/cricbet/ok.jpg: 2017-04-27 22:48:13.000000000 +05:30
+build/images/cricbet/ok@2x.jpg: 2017-04-27 22:48:13.000000000 +05:30
+build/images/cricbet/old.jpg: 2017-04-27 22:48:13.000000000 +05:30
+build/images/cricbet/old1.png: 2017-04-27 22:48:47.000000000 +05:30
+build/images/cricbet/old@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/cricbet/poster1.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/cricbet/poster2.png: 2017-04-27 22:48:32.000000000 +05:30
+build/images/cricbet/sketch.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/cricbet/sketch@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/cricbet_poster.png: 2017-05-23 12:00:05.000000000 +05:30
+build/images/curvy-arrow.png: 2017-04-27 22:48:40.000000000 +05:30
+build/images/curvy-arrow@2x.png: 2017-04-27 22:48:40.000000000 +05:30
+build/images/curvy-up-arrow.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/curvy-up-arrow@2x.png: 2017-04-27 22:48:40.000000000 +05:30
+build/images/Devshree.png: 2017-04-27 22:48:46.000000000 +05:30
+build/images/Dinesh.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/dribbble_icon.png: 2017-04-27 22:48:55.000000000 +05:30
+build/images/dribbble_icon@2x.png: 2017-04-27 22:48:55.000000000 +05:30
+build/images/eatfresh/Address.png: 2017-04-27 22:49:13.000000000 +05:30
+build/images/eatfresh/aplha.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/eatfresh/aplha.png: 2017-04-27 22:49:05.000000000 +05:30
+build/images/eatfresh/aplha@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/eatfresh/aplha@2x.png: 2017-04-27 22:49:10.000000000 +05:30
+build/images/eatfresh/bravo.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/eatfresh/bravo.png: 2017-04-27 22:49:15.000000000 +05:30
+build/images/eatfresh/bravo@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/eatfresh/bravo@2x.png: 2017-04-27 22:49:20.000000000 +05:30
+build/images/eatfresh/Cart.png: 2017-04-27 22:49:49.000000000 +05:30
+build/images/eatfresh/charlie.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/eatfresh/charlie.png: 2017-04-27 22:49:23.000000000 +05:30
+build/images/eatfresh/charlie@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/eatfresh/charlie@2x.png: 2017-04-27 22:49:28.000000000 +05:30
+build/images/eatfresh/delta.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/eatfresh/delta.png: 2017-04-27 22:49:27.000000000 +05:30
+build/images/eatfresh/delta@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/eatfresh/delta@2x.png: 2017-04-27 22:49:32.000000000 +05:30
+build/images/eatfresh/Dish-Info.png: 2017-04-27 22:49:50.000000000 +05:30
+build/images/eatfresh/Dish-Reviews.png: 2017-04-27 22:49:55.000000000 +05:30
+build/images/eatfresh/Dish.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/eatfresh/eatfresh-activity-bar.png: 2017-04-27 22:50:10.000000000 +05:30
+build/images/eatfresh/eatfresh-activity-bar@2x.png: 2017-04-27 22:50:25.000000000
   +05:30
 build/images/eatfresh/eatfresh-checkout-2.gif: 2017-03-20 11:50:17.000000000 +05:30
+build/images/eatfresh/eatfresh-checkout.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/eatfresh/eatfresh-checkout@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/eatfresh/eatfresh-home.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/eatfresh/eatfresh-home@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/eatfresh/eatfresh-location.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/eatfresh/eatfresh-location@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/eatfresh/eatfresh-login.png: 2017-04-27 22:50:22.000000000 +05:30
+build/images/eatfresh/eatfresh-login@2x.png: 2017-04-27 22:50:42.000000000 +05:30
+build/images/eatfresh/eatfresh-product.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/eatfresh/eatfresh-product@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/eatfresh/eatfresh-web-empty-states.png: 2017-04-27 22:50:34.000000000
+  +05:30
+build/images/eatfresh/eatfresh-web-empty-states@2x.png: 2017-04-18 17:52:48.000000000
+  +05:30
+build/images/eatfresh/eatfresh-web-illus.png: 2017-04-24 16:56:58.000000000 +05:30
+build/images/eatfresh/eatfresh-web-illus@2x.png: 2017-04-24 16:57:18.000000000 +05:30
+build/images/eatfresh/eatfresh-web-mobile-01.jpg: 2017-04-24 16:56:44.000000000 +05:30
+build/images/eatfresh/eatfresh-web-mobile-01@2x.jpg: 2017-04-24 16:56:45.000000000
+  +05:30
+build/images/eatfresh/eatfresh-web-mobile-02.jpg: 2017-04-24 16:56:45.000000000 +05:30
+build/images/eatfresh/eatfresh-web-mobile-02@2x.jpg: 2017-04-24 16:56:45.000000000
+  +05:30
+build/images/eatfresh/eatfresh-web-mobile-03.jpg: 2017-04-24 16:56:45.000000000 +05:30
+build/images/eatfresh/eatfresh-web-mobile-03@2x.jpg: 2017-04-24 16:56:46.000000000
+  +05:30
+build/images/eatfresh/eatfresh-web-mobile-04.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/eatfresh/eatfresh-web-mobile-04@2x.jpg: 2017-04-27 22:35:13.000000000
+  +05:30
+build/images/eatfresh/eatfresh.gif: 2017-04-24 16:57:12.000000000 +05:30
 build/images/eatfresh/eatfresh_product_animation.gif: 2017-03-20 11:50:26.000000000
   +05:30
-build/images/eatfresh/echo.jpg: 2017-03-20 11:50:27.000000000 +05:30
-build/images/eatfresh/echo.png: 2017-03-20 11:50:27.000000000 +05:30
-build/images/eatfresh/echo@2x.jpg: 2017-03-20 11:50:37.000000000 +05:30
-build/images/eatfresh/echo@3x.jpg: 2017-03-20 11:50:39.000000000 +05:30
-build/images/eatfresh/echo@3x.png: 2017-03-20 11:51:56.000000000 +05:30
-build/images/eatfresh/Feedback.png: 2017-03-20 11:53:06.000000000 +05:30
-build/images/eatfresh/Home-Discount Code.png: 2017-03-20 11:54:55.000000000 +05:30
-build/images/eatfresh/Home-No Network.png: 2017-03-20 11:55:03.000000000 +05:30
-build/images/eatfresh/Home.png: 2017-03-20 11:54:51.000000000 +05:30
-build/images/eatfresh/Location.png: 2017-03-20 11:56:10.000000000 +05:30
-build/images/eatfresh/Navigation Drawer.png: 2017-03-20 11:57:43.000000000 +05:30
-build/images/eatfresh/Notifications-No Notifs.png: 2017-03-20 11:57:41.000000000 +05:30
-build/images/eatfresh/Order Confirmation-1.png: 2017-03-20 11:58:10.000000000 +05:30
-build/images/eatfresh/Order Confirmation-2.png: 2017-03-20 11:59:27.000000000 +05:30
-build/images/eatfresh/Payment Method.png: 2017-03-20 12:00:24.000000000 +05:30
-build/images/eatfresh/Splash.png: 2017-03-20 12:03:12.000000000 +05:30
+build/images/eatfresh/echo.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/eatfresh/echo.png: 2017-04-27 22:50:39.000000000 +05:30
+build/images/eatfresh/echo@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/eatfresh/Feedback.png: 2017-04-27 22:51:07.000000000 +05:30
+build/images/eatfresh/Home-Discount-Code.png: 2017-04-27 22:50:59.000000000 +05:30
+build/images/eatfresh/Home-No-Network.png: 2017-04-27 22:51:04.000000000 +05:30
+build/images/eatfresh/Home.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/eatfresh/Location.png: 2017-04-27 22:51:31.000000000 +05:30
+build/images/eatfresh/Navigation-Drawer.png: 2017-04-27 22:51:49.000000000 +05:30
+build/images/eatfresh/Notifications-No-Notifs.png: 2017-04-27 22:51:35.000000000 +05:30
+build/images/eatfresh/Order-Confirmation-1.png: 2017-04-28 16:17:33.000000000 +05:30
+build/images/eatfresh/Order-Confirmation-2.png: 2017-04-28 16:17:25.000000000 +05:30
+build/images/eatfresh/Payment-Method.png: 2017-04-27 22:52:14.000000000 +05:30
+build/images/eatfresh/smartceo-channel.png: 2017-04-27 22:52:13.000000000 +05:30
+build/images/eatfresh/smartceo-channel@2x.png: 2017-04-27 22:52:35.000000000 +05:30
+build/images/eatfresh/Splash.png: 2017-04-27 22:53:17.000000000 +05:30
+build/images/eatfresh/work_eatfresh_web.png: 2017-04-27 22:52:30.000000000 +05:30
+build/images/eatfresh/work_eatfresh_web@2x.png: 2017-04-27 22:52:43.000000000 +05:30
 build/images/Eatfresh-checkout-2.gif: 2017-03-20 11:58:40.000000000 +05:30
-build/images/Eatfresh.png: 2017-03-20 11:58:40.000000000 +05:30
-build/images/Eatfresh01.png: 2017-03-20 11:58:43.000000000 +05:30
-build/images/Eatfresh_grayscale.png: 2017-03-20 11:58:45.000000000 +05:30
-build/images/Event01.jpg: 2016-11-07 17:46:56.000000000 +05:30
-build/images/Event02.jpg: 2017-03-20 11:58:51.000000000 +05:30
-build/images/Event03.jpg: 2016-11-07 17:46:56.000000000 +05:30
-build/images/events-food.jpg: 2017-03-20 11:58:54.000000000 +05:30
-build/images/events-food@2x.jpg: 2017-03-20 11:59:00.000000000 +05:30
+build/images/Eatfresh.png: 2017-04-27 22:52:40.000000000 +05:30
+build/images/Eatfresh01.png: 2017-04-27 22:52:42.000000000 +05:30
+build/images/Eatfresh_grayscale.png: 2017-04-27 22:52:45.000000000 +05:30
+build/images/eatfresh_poster.png: 2017-05-23 12:00:07.000000000 +05:30
+build/images/Event01.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/Event02.jpg: 2017-04-27 22:52:49.000000000 +05:30
+build/images/Event03.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/events-food.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/events-food@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
 build/images/events-food@3x.jpg: 2017-03-20 11:59:11.000000000 +05:30
-build/images/explara/Category.png: 2017-03-20 11:59:46.000000000 +05:30
-build/images/explara/explara-b-g.jpg: 2017-03-20 11:59:48.000000000 +05:30
-build/images/explara/explara-b-g@2x.jpg: 2017-03-20 11:59:53.000000000 +05:30
-build/images/explara/explara-b-g@3x.jpg: 2017-03-20 12:00:03.000000000 +05:30
-build/images/explara/explara-movies.jpg: 2017-03-20 11:59:55.000000000 +05:30
-build/images/explara/explara-movies@2x.jpg: 2017-03-20 12:00:00.000000000 +05:30
-build/images/explara/explara-movies@3x.jpg: 2017-03-20 12:00:11.000000000 +05:30
-build/images/explara/explara-nav.jpg: 2017-03-20 12:00:04.000000000 +05:30
-build/images/explara/explara-nav@2x.jpg: 2017-03-20 12:00:07.000000000 +05:30
-build/images/explara/explara-nav@3x.jpg: 2017-03-20 12:00:11.000000000 +05:30
-build/images/explara/explara-personalise.jpg: 2017-03-20 12:00:13.000000000 +05:30
-build/images/explara/explara-personalise@2x.jpg: 2017-03-20 12:00:17.000000000 +05:30
-build/images/explara/explara-personalise@3x.jpg: 2017-03-20 12:00:25.000000000 +05:30
-build/images/explara/explara-search.jpg: 2017-03-20 12:00:18.000000000 +05:30
-build/images/explara/explara-search@2x.jpg: 2017-03-20 12:00:21.000000000 +05:30
-build/images/explara/explara-search@3x.jpg: 2017-03-20 12:00:25.000000000 +05:30
-build/images/explara/explara-topic.jpg: 2017-03-20 12:00:26.000000000 +05:30
-build/images/explara/explara-topic@2x.jpg: 2017-03-20 12:00:28.000000000 +05:30
-build/images/explara/explara-topic@3x.jpg: 2017-03-20 12:00:32.000000000 +05:30
-build/images/explara/explara-widget.jpg: 2017-03-20 12:00:29.000000000 +05:30
-build/images/explara/explara-widget@2x.jpg: 2017-03-20 12:00:31.000000000 +05:30
-build/images/explara/explara-widget@3x.jpg: 2017-03-20 12:00:36.000000000 +05:30
-build/images/explara/Home.png: 2017-03-20 12:01:15.000000000 +05:30
-build/images/explara/mock.png: 2017-03-24 13:53:39.000000000 +05:30
-build/images/explara/mock@2x.png: 2017-03-24 13:54:02.000000000 +05:30
-build/images/explara/Search-Results.png: 2017-03-20 12:01:09.000000000 +05:30
-build/images/explara/Search.png: 2017-03-20 12:01:55.000000000 +05:30
-build/images/explara/Segment.png: 2017-03-20 12:02:35.000000000 +05:30
-build/images/explara/Select-City.png: 2017-03-20 12:02:44.000000000 +05:30
-build/images/explara/Topic.png: 2017-03-20 12:03:18.000000000 +05:30
-build/images/explara.png: 2017-03-20 12:02:44.000000000 +05:30
-build/images/explara@2x.png: 2017-03-20 12:02:44.000000000 +05:30
-build/images/explara_androidBg.png: 2017-03-20 12:02:49.000000000 +05:30
-build/images/explara_androidBg@2x.png: 2017-03-20 12:03:10.000000000 +05:30
-build/images/Explara_croped.png: 2017-03-20 12:03:18.000000000 +05:30
-build/images/explara_logo.png: 2017-03-20 12:03:19.000000000 +05:30
-build/images/Explara_Old.png: 2017-03-20 12:03:25.000000000 +05:30
-build/images/explara_scroll.jpg: 2017-03-20 12:03:34.000000000 +05:30
+build/images/explara/Category.png: 2017-04-27 22:52:54.000000000 +05:30
+build/images/explara/explara-b-g.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/explara/explara-b-g@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/explara/explara-movies.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/explara/explara-movies@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/explara/explara-nav.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/explara/explara-nav@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/explara/explara-personalise.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/explara/explara-personalise@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/explara/explara-search.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/explara/explara-search@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/explara/explara-topic.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/explara/explara-topic@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/explara/explara-widget.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/explara/explara-widget@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/explara/Home.png: 2017-04-27 22:53:08.000000000 +05:30
+build/images/explara/home_files/footer-android--app.svg: 2017-05-30 17:30:24.000000000
+  +05:30
+build/images/explara/home_files/footer-ios--app.svg: 2017-05-30 17:30:24.000000000
+  +05:30
+build/images/explara/home_files/logo.png: 2017-05-08 11:45:36.000000000 +05:30
+build/images/explara/mock.png: 2017-04-27 22:53:18.000000000 +05:30
+build/images/explara/mock@2x.png: 2017-04-27 22:53:41.000000000 +05:30
+build/images/explara/my-profile_files/logo.png: 2017-05-17 12:01:09.000000000 +05:30
+? build/images/explara/Parallel Labs _ UX Design Agency in Bangalore, India_files/18299102_117566482146733_8451177697748451328_n.jpg
+: 2017-05-17 12:01:08.000000000 +05:30
+build/images/explara/Parallel Labs _ UX Design Agency in Bangalore, India_files/art-of-living@2x.png: 2017-05-17
+  12:01:08.000000000 +05:30
+build/images/explara/Parallel Labs _ UX Design Agency in Bangalore, India_files/attachment.png: 2017-05-17
+  12:01:55.000000000 +05:30
+build/images/explara/Parallel Labs _ UX Design Agency in Bangalore, India_files/binay-tiwari-appjoy@2x.jpg: 2017-05-17
+  12:00:31.000000000 +05:30
+build/images/explara/Parallel Labs _ UX Design Agency in Bangalore, India_files/career_banner1.jpg: 2017-05-17
+  12:00:31.000000000 +05:30
+build/images/explara/Parallel Labs _ UX Design Agency in Bangalore, India_files/chai-point@2x.png: 2017-05-17
+  12:01:17.000000000 +05:30
+build/images/explara/Parallel Labs _ UX Design Agency in Bangalore, India_files/chumbak@2x.png: 2017-05-17
+  12:01:16.000000000 +05:30
+build/images/explara/Parallel Labs _ UX Design Agency in Bangalore, India_files/citrus@2x.png: 2017-05-17
+  12:01:15.000000000 +05:30
+build/images/explara/Parallel Labs _ UX Design Agency in Bangalore, India_files/eatfresh@2x.png: 2017-05-17
+  12:01:19.000000000 +05:30
+build/images/explara/Parallel Labs _ UX Design Agency in Bangalore, India_files/explara@2x.png: 2017-05-17
+  12:01:25.000000000 +05:30
+build/images/explara/Parallel Labs _ UX Design Agency in Bangalore, India_files/housejoy@2x.png: 2017-05-17
+  12:01:22.000000000 +05:30
+build/images/explara/Parallel Labs _ UX Design Agency in Bangalore, India_files/indiamart@2x.png: 2017-05-17
+  12:01:24.000000000 +05:30
+build/images/explara/Parallel Labs _ UX Design Agency in Bangalore, India_files/mobi-mock.svg: 2017-05-30
+  17:30:25.000000000 +05:30
+build/images/explara/Parallel Labs _ UX Design Agency in Bangalore, India_files/santosh@2x.jpg: 2017-05-17
+  12:01:25.000000000 +05:30
+build/images/explara/Parallel Labs _ UX Design Agency in Bangalore, India_files/srinivas-mothey-treatr@2x.jpg: 2017-05-17
+  12:00:31.000000000 +05:30
+build/images/explara/Parallel Labs _ UX Design Agency in Bangalore, India_files/zippr@2x.png: 2017-05-17
+  12:01:28.000000000 +05:30
+build/images/explara/Search-Results.png: 2017-04-28 16:16:48.000000000 +05:30
+build/images/explara/Search.png: 2017-04-28 16:16:58.000000000 +05:30
+build/images/explara/Segment.png: 2017-04-28 16:17:12.000000000 +05:30
+build/images/explara/Select-City.png: 2017-04-28 16:17:15.000000000 +05:30
+build/images/explara/Topic.png: 2017-04-28 16:17:28.000000000 +05:30
+build/images/explara.png: 2017-04-27 22:53:30.000000000 +05:30
+build/images/explara@2x.png: 2017-04-27 22:53:30.000000000 +05:30
+build/images/explara_androidBg.png: 2017-04-27 22:53:34.000000000 +05:30
+build/images/explara_androidBg@2x.png: 2017-04-27 22:53:49.000000000 +05:30
+build/images/Explara_croped.png: 2017-04-27 22:53:41.000000000 +05:30
+build/images/explara_logo.png: 2017-04-27 22:53:39.000000000 +05:30
+build/images/Explara_Old.png: 2017-04-27 22:53:46.000000000 +05:30
+build/images/explara_scroll.jpg: 2017-04-27 22:53:54.000000000 +05:30
 build/images/explara_scroll.png: 2017-03-20 12:16:53.000000000 +05:30
-build/images/explara_web.png: 2017-03-20 12:03:41.000000000 +05:30
-build/images/Explara_web2.png: 2017-03-20 12:04:40.000000000 +05:30
-build/images/explara_web@2x.png: 2017-03-20 12:04:51.000000000 +05:30
-build/images/ExplaraBlured.jpg: 2017-03-20 12:04:44.000000000 +05:30
-build/images/ExplaraBlured.png: 2017-03-20 12:19:48.000000000 +05:30
-build/images/HJ_03-Laundry.jpg: 2016-11-07 17:46:56.000000000 +05:30
-build/images/hj_tab.png: 2017-03-20 12:04:58.000000000 +05:30
-build/images/hj_tab@2x.png: 2017-03-20 12:05:27.000000000 +05:30
-build/images/home-02-copy.png: 2017-03-20 12:06:04.000000000 +05:30
-build/images/home-02-copy@2x (1).png: 2017-03-20 12:06:28.000000000 +05:30
-build/images/home-02-copy@2x.png: 2017-03-20 12:07:10.000000000 +05:30
+build/images/explara_web.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/Explara_web2.png: 2017-04-27 22:54:02.000000000 +05:30
+build/images/explara_web@2x.png: 2017-04-27 22:54:23.000000000 +05:30
+build/images/ExplaraBlured.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/ExplaraBlured.png: 2017-04-27 23:07:51.000000000 +05:30
+build/images/HJ_03-Laundry.jpg: 2017-04-27 22:54:09.000000000 +05:30
+build/images/hj_tab.png: 2017-04-27 22:54:13.000000000 +05:30
+build/images/hj_tab@2x.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/home-02-copy.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/home-02-copy@2x (1).png: 2017-04-27 22:54:43.000000000 +05:30
+build/images/home-02-copy@2x.png: 2017-04-27 22:55:04.000000000 +05:30
 build/images/Home.gif: 2017-03-20 12:06:59.000000000 +05:30
-build/images/Home_Eatfresh_poster.png: 2017-01-05 12:17:59.000000000 +05:30
-build/images/Home_Treatr_poster.png: 2017-03-20 12:07:44.000000000 +05:30
-build/images/homebanner_svg/1-03.svg: 2017-04-17 10:32:03.000000000 +05:30
-build/images/homebanner_svg/10-03.svg: 2017-04-17 10:32:03.000000000 +05:30
-build/images/homebanner_svg/11-03.svg: 2017-04-17 10:32:03.000000000 +05:30
-build/images/homebanner_svg/12-03.svg: 2017-04-17 10:32:03.000000000 +05:30
-build/images/homebanner_svg/13-03.svg: 2017-04-17 10:32:04.000000000 +05:30
-build/images/homebanner_svg/14-03.svg: 2017-04-17 10:32:04.000000000 +05:30
-build/images/homebanner_svg/15-03.svg: 2017-04-17 10:32:04.000000000 +05:30
-build/images/homebanner_svg/16-03.svg: 2017-04-17 10:32:04.000000000 +05:30
-build/images/homebanner_svg/17-03.svg: 2017-04-17 10:32:05.000000000 +05:30
-build/images/homebanner_svg/18-03.svg: 2017-04-17 10:32:05.000000000 +05:30
-build/images/homebanner_svg/19-03.svg: 2017-04-17 10:32:05.000000000 +05:30
-build/images/homebanner_svg/2-03.svg: 2017-04-17 10:32:05.000000000 +05:30
-build/images/homebanner_svg/20-03.svg: 2017-04-17 10:32:05.000000000 +05:30
-build/images/homebanner_svg/21-03.svg: 2017-04-17 10:32:05.000000000 +05:30
-build/images/homebanner_svg/22-03.svg: 2017-04-17 10:32:05.000000000 +05:30
-build/images/homebanner_svg/23-03.svg: 2017-04-17 10:32:05.000000000 +05:30
-build/images/homebanner_svg/24-03.svg: 2017-04-17 10:32:06.000000000 +05:30
-build/images/homebanner_svg/25-03.svg: 2017-04-17 10:32:06.000000000 +05:30
-build/images/homebanner_svg/26-03.svg: 2017-04-17 10:32:06.000000000 +05:30
-build/images/homebanner_svg/3-03.svg: 2017-04-17 10:32:06.000000000 +05:30
-build/images/homebanner_svg/4-03.svg: 2017-04-17 10:32:06.000000000 +05:30
-build/images/homebanner_svg/5-03.svg: 2017-04-17 10:32:06.000000000 +05:30
-build/images/homebanner_svg/6-03.svg: 2017-04-17 10:32:06.000000000 +05:30
-build/images/homebanner_svg/7-03.svg: 2017-04-17 10:32:06.000000000 +05:30
-build/images/homebanner_svg/8-03.svg: 2017-04-17 10:32:07.000000000 +05:30
-build/images/homebanner_svg/9-03.svg: 2017-04-17 10:32:07.000000000 +05:30
-build/images/homebanner_svg/androidbot_a-03.svg: 2017-04-17 10:32:07.000000000 +05:30
-build/images/homebanner_svg/androidbot_b-03-03.svg: 2017-04-17 10:32:07.000000000
-  +05:30
-build/images/homebanner_svg/headphone_a-03.svg: 2017-04-17 10:32:07.000000000 +05:30
-build/images/homebanner_svg/headphone_b-03-03.svg: 2017-04-17 10:32:07.000000000 +05:30
-build/images/homebanner_svg/notepad_b-03-03.svg: 2017-04-17 10:32:07.000000000 +05:30
-build/images/homebanner_svg/notepad_c-03-03-03.svg: 2017-04-17 10:32:08.000000000
-  +05:30
-build/images/homebanner_svg/notepad_d-03-03.svg: 2017-04-17 10:32:08.000000000 +05:30
-build/images/homebanner_svg/notepad_e-03.svg: 2017-04-17 10:32:08.000000000 +05:30
-build/images/homebanner_svg/notepada-03-03.svg: 2017-04-17 10:32:08.000000000 +05:30
-build/images/HomeChangeBusiness_01.jpg: 2016-11-07 17:46:56.000000000 +05:30
-build/images/HomeChangeManager.jpg: 2016-11-07 17:46:56.000000000 +05:30
-build/images/HomeCoachmark.jpg: 2016-11-07 17:46:56.000000000 +05:30
-build/images/housejoy/housejoy-app-002.png: 2017-04-16 16:12:57.000000000 +05:30
-build/images/housejoy/housejoy-app-002@2x.png: 2017-04-16 16:13:33.000000000 +05:30
-build/images/housejoy/housejoy-app-01.jpg: 2017-04-16 16:13:01.000000000 +05:30
-build/images/housejoy/housejoy-app-01@2x.jpg: 2017-04-16 16:13:02.000000000 +05:30
-build/images/housejoy/housejoy-web-002.jpg: 2017-04-16 16:13:03.000000000 +05:30
-build/images/housejoy/housejoy-web-002@2x.jpg: 2017-04-16 16:13:05.000000000 +05:30
-build/images/housejoy/housejoy-web-003.jpg: 2017-04-16 16:13:06.000000000 +05:30
-build/images/housejoy/housejoy-web-003@2x.jpg: 2017-04-16 16:13:08.000000000 +05:30
-build/images/housejoy/housejoy-web-home.jpg: 2017-04-16 16:13:09.000000000 +05:30
-build/images/housejoy/housejoy-web-home@2x.jpg: 2017-04-16 16:13:12.000000000 +05:30
+build/images/Home_Eatfresh_poster.png: 2017-04-27 22:55:11.000000000 +05:30
+build/images/Home_Treatr_poster.png: 2017-04-27 22:55:22.000000000 +05:30
+build/images/HomeChangeBusiness_01.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/HomeChangeManager.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/HomeCoachmark.jpg: 2017-04-27 22:55:25.000000000 +05:30
+build/images/housejoy/housejoy-app-002.png: 2017-04-27 22:55:27.000000000 +05:30
+build/images/housejoy/housejoy-app-002@2x.png: 2017-04-27 22:55:41.000000000 +05:30
+build/images/housejoy/housejoy-app-01.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/housejoy/housejoy-app-01@2x.jpg: 2017-04-27 22:55:31.000000000 +05:30
+build/images/housejoy/housejoy-web-002.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/housejoy/housejoy-web-002@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/housejoy/housejoy-web-003.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/housejoy/housejoy-web-003@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/housejoy/housejoy-web-home.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/housejoy/housejoy-web-home@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/housejoy/housejoy_ios_01.png: 2017-04-27 22:55:35.000000000 +05:30
+build/images/housejoy/housejoy_ios_01@2x.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/housejoy/housejoy_ios_02.png: 2017-04-27 22:55:39.000000000 +05:30
+build/images/housejoy/housejoy_ios_02@2x.png: 2017-04-27 22:35:12.000000000 +05:30
 build/images/housejoy/iphone_6-template-white-ramotion.gif: 2017-04-16 16:12:05.000000000
   +05:30
-build/images/housejoy-icons-empty-states.png: 2017-03-20 12:08:13.000000000 +05:30
-build/images/housejoy-icons-empty-states@2x.png: 2017-03-20 12:08:48.000000000 +05:30
-build/images/housejoy-icons-empty-states_ios.png: 2017-03-20 12:08:18.000000000 +05:30
-build/images/housejoy-icons-empty-states_ios@2x.png: 2016-11-07 17:46:56.000000000
+build/images/housejoy-icons-empty-states.png: 2017-04-27 22:55:58.000000000 +05:30
+build/images/housejoy-icons-empty-states@2x.png: 2017-04-27 22:56:38.000000000 +05:30
+build/images/housejoy-icons-empty-states_ios.png: 2017-04-27 22:55:59.000000000 +05:30
+build/images/housejoy-icons-empty-states_ios@2x.png: 2017-04-27 22:56:04.000000000
   +05:30
-build/images/housejoy.png: 2017-03-20 12:08:23.000000000 +05:30
-build/images/housejoy@2x.png: 2017-03-20 12:08:23.000000000 +05:30
+build/images/housejoy.png: 2017-04-27 22:56:02.000000000 +05:30
+build/images/housejoy@2x.png: 2017-04-27 22:56:03.000000000 +05:30
 build/images/Housejoy_Home.png: 2017-03-20 12:34:05.000000000 +05:30
-build/images/housejoy_poster.png: 2017-03-20 12:09:07.000000000 +05:30
-build/images/housejoy_web.png: 2017-03-20 12:09:27.000000000 +05:30
-build/images/Housejoy_web2.png: 2017-03-20 12:10:53.000000000 +05:30
-build/images/housejoy_web@2x.png: 2016-11-07 17:46:56.000000000 +05:30
-build/images/ill_explain.jpg: 2017-03-20 12:11:35.000000000 +05:30
-build/images/india-mart.png: 2017-03-20 12:11:35.000000000 +05:30
-build/images/indiamart/indiamart-cards-01.jpg: 2017-04-05 23:51:49.000000000 +05:30
-build/images/indiamart/indiamart-cards-01@2x.jpg: 2017-04-05 23:51:52.000000000 +05:30
-build/images/indiamart/indiamart-cards-02.jpg: 2017-04-05 23:51:49.000000000 +05:30
-build/images/indiamart/indiamart-cards-02@2x.jpg: 2017-04-05 23:51:52.000000000 +05:30
-build/images/indiamart/indiamart-home.jpg: 2017-04-05 23:51:50.000000000 +05:30
-build/images/indiamart/indiamart-home@2x.jpg: 2017-04-05 23:51:52.000000000 +05:30
-build/images/indiamart/indiamart-nav-01.jpg: 2017-04-05 23:51:50.000000000 +05:30
-build/images/indiamart/indiamart-nav-01@2x.jpg: 2017-04-05 23:51:52.000000000 +05:30
-build/images/indiamart/indiamart-nav-02.jpg: 2017-04-05 23:51:52.000000000 +05:30
-build/images/indiamart/indiamart-nav-02@2x.jpg: 2017-04-05 23:51:54.000000000 +05:30
-build/images/indiamart.png: 2017-03-20 12:12:21.000000000 +05:30
-build/images/insta_logo.jpg: 2017-03-20 12:12:30.000000000 +05:30
-build/images/iphone-6-plus-flat-2-rectangle-89-play.png: 2017-03-20 12:12:32.000000000
+build/images/housejoy_poster.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/housejoy_web.png: 2017-04-27 22:56:09.000000000 +05:30
+build/images/Housejoy_web2.png: 2017-04-27 22:56:30.000000000 +05:30
+build/images/housejoy_web@2x.png: 2017-04-27 22:56:38.000000000 +05:30
+build/images/ill_explain.jpg: 2017-04-27 22:56:39.000000000 +05:30
+build/images/india-mart.png: 2017-04-27 22:56:39.000000000 +05:30
+build/images/indiamart/indiamart-cards-01.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/indiamart/indiamart-cards-01@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/indiamart/indiamart-cards-02.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/indiamart/indiamart-cards-02@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/indiamart/indiamart-home.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/indiamart/indiamart-home@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/indiamart/indiamart-nav-01.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/indiamart/indiamart-nav-01@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/indiamart/indiamart-nav-02.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/indiamart/indiamart-nav-02@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/indiamart.png: 2017-04-27 22:57:02.000000000 +05:30
+build/images/insta_logo.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/iphone-6-plus-flat-2-rectangle-89-play.png: 2017-04-27 22:56:53.000000000
   +05:30
-build/images/iphone-6-plus-flat-2-rectangle-89-play@2x.png: 2017-03-20 12:12:43.000000000
+build/images/iphone-6-plus-flat-2-rectangle-89-play@2x.png: 2017-04-27 22:57:03.000000000
   +05:30
 build/images/iphone-6-plus-flat-2-rectangle-89-play@3x.png: 2016-11-07 17:46:56.000000000
   +05:30
-build/images/iphone-6-plus-flat-2.png: 2017-03-20 12:13:45.000000000 +05:30
-build/images/iphone-6-plus-flat-2@2x.png: 2017-03-20 12:14:05.000000000 +05:30
-build/images/iphone6-plus-flat2.png: 2017-03-20 12:14:15.000000000 +05:30
-build/images/iphone6-plus-flat2@2x.png: 2017-03-20 12:14:35.000000000 +05:30
-build/images/iphone6-plus-flat3.png: 2017-03-20 12:14:43.000000000 +05:30
-build/images/iphone6-plus-flat3@2x.png: 2017-03-20 12:15:00.000000000 +05:30
+build/images/iphone-6-plus-flat-2.png: 2017-04-27 22:57:08.000000000 +05:30
+build/images/iphone-6-plus-flat-2@2x.png: 2017-04-27 22:57:23.000000000 +05:30
+build/images/iphone6-plus-flat2.png: 2017-04-27 22:57:15.000000000 +05:30
+build/images/iphone6-plus-flat2@2x.png: 2017-04-27 22:57:29.000000000 +05:30
+build/images/iphone6-plus-flat3.png: 2017-04-27 22:57:21.000000000 +05:30
+build/images/iphone6-plus-flat3@2x.png: 2017-04-27 22:57:41.000000000 +05:30
 build/images/iphone_6-template-white-ramotion.gif: 2017-03-20 12:15:07.000000000 +05:30
-build/images/Juhi.png: 2017-03-20 12:15:44.000000000 +05:30
-build/images/juhi200x200.jpg: 2017-04-11 12:19:06.000000000 +05:30
-build/images/lets_discuss.jpg: 2017-03-20 12:15:45.000000000 +05:30
-build/images/light.png: 2017-03-20 12:15:45.000000000 +05:30
-build/images/light@2x.png: 2017-03-20 12:15:46.000000000 +05:30
-build/images/little_experiences.jpg: 2017-03-20 12:15:47.000000000 +05:30
-build/images/logo-dribbble.svg: 2017-04-17 10:32:08.000000000 +05:30
-build/images/logo-instagram.png: 2017-03-20 12:16:04.000000000 +05:30
-build/images/lunch_time.jpg: 2017-01-05 12:17:59.000000000 +05:30
-build/images/mask-bitmap.png: 2017-03-20 12:16:09.000000000 +05:30
-build/images/mask-bitmap@2x.png: 2017-03-20 12:16:13.000000000 +05:30
-build/images/medium.png: 2017-03-20 12:16:37.000000000 +05:30
-build/images/medium@2x.png: 2017-03-20 12:16:38.000000000 +05:30
-build/images/middleman.png: 2016-11-07 17:46:57.000000000 +05:30
-build/images/My_Orders-Details.jpg: 2016-11-07 17:46:56.000000000 +05:30
-build/images/Nav_Bar_search.png: 2017-03-20 12:16:52.000000000 +05:30
-build/images/new_images/Bitmap.png: 2017-03-20 12:18:30.000000000 +05:30
+build/images/Juhi.png: 2017-04-27 22:57:32.000000000 +05:30
+build/images/juhi200x200.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/lets_discuss.jpg: 2017-04-27 22:57:35.000000000 +05:30
+build/images/light.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/light@2x.png: 2017-04-27 22:57:35.000000000 +05:30
+build/images/little_experiences.jpg: 2017-04-27 22:57:36.000000000 +05:30
+build/images/logo-dribbble.svg: 2017-05-30 17:30:25.000000000 +05:30
+build/images/logo-instagram.png: 2017-04-27 22:57:39.000000000 +05:30
+build/images/lunch_time.jpg: 2017-04-27 22:57:38.000000000 +05:30
+build/images/mask-bitmap.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/mask-bitmap@2x.png: 2017-04-27 22:57:43.000000000 +05:30
+build/images/medium.png: 2017-04-27 22:57:41.000000000 +05:30
+build/images/medium@2x.png: 2017-04-27 22:57:41.000000000 +05:30
+build/images/middleman.png: 2017-04-27 22:57:42.000000000 +05:30
+build/images/mobi-mock.svg: 2017-05-30 17:30:25.000000000 +05:30
+build/images/My_Orders-Details.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/Nav_Bar_search.png: 2017-04-27 22:57:57.000000000 +05:30
+build/images/new_images/Bitmap.png: 2017-04-27 22:57:59.000000000 +05:30
 build/images/nexus-5-mockup_s.gif: 2017-03-20 12:17:00.000000000 +05:30
-build/images/nexus-5-x-wireframe.svg: 2017-04-17 10:32:09.000000000 +05:30
-build/images/nirmal.jpg: 2017-01-05 12:17:59.000000000 +05:30
-build/images/nirmal@2x.jpg: 2017-01-05 12:17:59.000000000 +05:30
-build/images/offers-02.jpg: 2017-03-20 12:17:03.000000000 +05:30
-build/images/office_trip.jpg: 2017-01-05 12:17:59.000000000 +05:30
-build/images/ok.png: 2017-03-20 12:17:05.000000000 +05:30
-build/images/ok@2x.png: 2017-03-20 12:17:05.000000000 +05:30
+build/images/nexus-5-x-wireframe.svg: 2017-05-30 17:30:25.000000000 +05:30
+build/images/nirmal.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/nirmal@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/offers-02.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/office_trip.jpg: 2017-04-27 22:57:50.000000000 +05:30
+build/images/ok.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/ok@2x.png: 2017-04-27 22:57:50.000000000 +05:30
 build/images/ok@3x.png: 2017-03-20 12:17:06.000000000 +05:30
-build/images/onboarding-home.png: 2017-03-20 12:17:10.000000000 +05:30
-build/images/onboarding-home@2x.png: 2017-03-20 12:17:17.000000000 +05:30
-build/images/oneplus-one.png: 2017-03-20 12:17:21.000000000 +05:30
-build/images/oneplus-one@2x.png: 2017-03-20 12:17:34.000000000 +05:30
-build/images/oval-18-resize-horizontal.png: 2017-03-20 12:17:47.000000000 +05:30
-build/images/oval-18-resize-horizontal@2x.png: 2017-03-20 12:17:48.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/12144047_1031288050226863_61868477_n.jpg: 2017-03-20
-  12:17:49.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/art-of-living-logo.png: 2017-03-20
-  12:17:49.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/arun.jpg: 2017-03-20
-  12:17:49.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/bommer_ios.png: 2017-03-20
-  12:17:53.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/boomer.png: 2017-03-20
-  12:17:55.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/chumbak.png: 2017-03-20
-  12:17:55.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/curvy-arrow.png: 2017-03-20
-  12:17:55.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/dribbble_icon.png: 2017-03-20
-  12:17:56.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/explara.png: 2017-03-20
-  12:17:56.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/explara_web.png: 2017-03-20
-  12:18:02.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/facebook.svg: 2017-04-17
-  10:32:09.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/housejoy.png: 2017-03-20
-  12:18:12.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/housejoy_web.png: 2017-03-20
-  12:18:19.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/insta_logo.jpg: 2017-03-20
-  12:18:31.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/instagram.svg: 2017-04-17
-  10:32:09.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/iphone-6-plus-flat-2.png: 2017-03-20
-  12:18:35.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/iphone_6-template-white-ramotion.gif: 2017-03-20
-  12:18:40.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/oneplus-one.png: 2017-03-20
-  12:18:43.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/pay-u-money.png: 2017-03-20
-  12:18:47.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/roadmojo.png: 2017-03-20
-  12:18:48.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/santosh.jpg: 2016-11-07
-  17:46:56.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/twitter.svg: 2017-04-17
-  10:32:09.000000000 +05:30
-build/images/Parallel Labs _ UI_UX Design Lab based in Bangalore,India.home_files/vserv.png: 2017-03-20
-  12:18:49.000000000 +05:30
-build/images/Paresh_Machhi.jpg: 2017-04-16 16:13:17.000000000 +05:30
-build/images/pay-u-money.png: 2017-03-20 12:18:49.000000000 +05:30
-build/images/pay-u-money@2x.png: 2017-03-20 12:18:49.000000000 +05:30
-build/images/Payment_Confirmation.jpg: 2016-11-07 17:46:56.000000000 +05:30
-build/images/Personalise.jpg: 2017-03-20 12:18:52.000000000 +05:30
-build/images/phone.png: 2017-03-20 12:18:53.000000000 +05:30
-build/images/phone@2x.png: 2017-03-20 12:19:41.000000000 +05:30
-build/images/photos-03.png: 2017-03-20 12:20:06.000000000 +05:30
-build/images/photos-03@2x.png: 2017-03-20 12:21:01.000000000 +05:30
-build/images/pink/Activity-Inside.jpg: 2017-03-20 12:21:02.000000000 +05:30
-build/images/pink/b-g.png: 2017-03-20 12:21:03.000000000 +05:30
-build/images/pink/b-g@2x.png: 2017-03-20 12:21:05.000000000 +05:30
-build/images/pink/b-g@3x.png: 2017-03-20 12:21:09.000000000 +05:30
-build/images/pink/Chat-Inside.jpg: 2017-03-20 12:21:16.000000000 +05:30
-build/images/pink/Comments.jpg: 2017-03-20 12:21:16.000000000 +05:30
-build/images/pink/Create-Reminder.jpg: 2017-03-20 12:21:17.000000000 +05:30
-build/images/pink/edit-childs-profile.jpg: 2017-03-20 12:21:18.000000000 +05:30
-build/images/pink/edit-childs-profile@2x.jpg: 2017-03-20 12:21:19.000000000 +05:30
-build/images/pink/edit-childs-profile@3x.jpg: 2017-03-20 12:21:24.000000000 +05:30
-build/images/pink/Home 2.jpg: 2017-03-20 12:21:24.000000000 +05:30
-build/images/pink/home-f-a-b.jpg: 2017-03-20 12:21:25.000000000 +05:30
-build/images/pink/home-f-a-b@2x.jpg: 2017-03-20 12:21:26.000000000 +05:30
-build/images/pink/home-f-a-b@3x.jpg: 2017-03-20 12:21:28.000000000 +05:30
-build/images/pink/Home-FAB.jpg: 2017-03-20 12:21:29.000000000 +05:30
-build/images/pink/Home-With-an-Article.jpg: 2017-03-20 12:21:29.000000000 +05:30
-build/images/pink/home.jpg: 2017-03-20 12:21:30.000000000 +05:30
-build/images/pink/home@2x.jpg: 2017-03-20 12:21:31.000000000 +05:30
-build/images/pink/home@3x.jpg: 2017-03-20 12:21:33.000000000 +05:30
-build/images/pink/invite.jpg: 2017-03-20 12:21:34.000000000 +05:30
-build/images/pink/invite@2x.jpg: 2017-03-20 12:21:35.000000000 +05:30
-build/images/pink/invite@3x.jpg: 2017-03-20 12:21:38.000000000 +05:30
-build/images/pink/Moments-Share.jpg: 2017-03-20 12:21:38.000000000 +05:30
-build/images/pink/Moments.jpg: 2017-03-20 12:21:39.000000000 +05:30
-build/images/pink/Navigation-Drawer.jpg: 2017-03-20 12:21:39.000000000 +05:30
-build/images/pink/No-Favorites.jpg: 2017-03-20 12:21:39.000000000 +05:30
+build/images/onboarding-home.png: 2017-04-27 22:57:53.000000000 +05:30
+build/images/onboarding-home@2x.png: 2017-04-27 22:58:00.000000000 +05:30
+build/images/oneplus-one.png: 2017-04-27 22:58:04.000000000 +05:30
+build/images/oneplus-one@2x.png: 2017-04-27 22:58:13.000000000 +05:30
+build/images/oval-18-resize-horizontal.png: 2017-04-27 22:58:07.000000000 +05:30
+build/images/oval-18-resize-horizontal@2x.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/Paresh_Machhi.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pay-u-money.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/pay-u-money@2x.png: 2017-04-27 22:58:09.000000000 +05:30
+build/images/Payment_Confirmation.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/Personalise.jpg: 2017-04-27 22:58:11.000000000 +05:30
+build/images/phone.png: 2017-04-27 22:58:17.000000000 +05:30
+build/images/phone@2x.png: 2017-04-27 22:58:44.000000000 +05:30
+build/images/photos-03.png: 2017-04-27 22:58:22.000000000 +05:30
+build/images/photos-03@2x.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/pink/Activity-Inside.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/b-g.png: 2017-04-27 22:58:25.000000000 +05:30
+build/images/pink/b-g@2x.png: 2017-04-27 22:58:29.000000000 +05:30
+build/images/pink/b-g@3x.png: 2017-04-27 22:58:41.000000000 +05:30
+build/images/pink/Chat-Inside.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/Comments.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/Create-Reminder.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/edit-childs-profile.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/edit-childs-profile@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/edit-childs-profile@3x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/Home 2.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/home-f-a-b.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/home-f-a-b@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/home-f-a-b@3x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/Home-FAB.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/Home-With-an-Article.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/home.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/home@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/home@3x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/invite.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/invite@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/invite@3x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/Moments-Share.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/Moments.jpg: 2017-04-27 22:58:51.000000000 +05:30
+build/images/pink/Navigation-Drawer.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/No-Favorites.jpg: 2017-04-27 22:35:13.000000000 +05:30
 build/images/pink/pnb1.gif: 2017-03-20 12:21:49.000000000 +05:30
 build/images/pink/pnb2.gif: 2017-03-20 12:21:46.000000000 +05:30
-build/images/pink/Profile-Details.jpg: 2017-03-20 12:21:47.000000000 +05:30
-build/images/pink/Reminders.jpg: 2017-03-20 12:21:48.000000000 +05:30
-build/images/pink/Resources.jpg: 2017-03-20 12:21:48.000000000 +05:30
-build/images/pink/Schools.jpg: 2017-03-20 12:21:49.000000000 +05:30
-build/images/pink/Search-Results.jpg: 2017-03-20 12:21:50.000000000 +05:30
-build/images/pink/Splash.jpg: 2017-03-20 12:21:50.000000000 +05:30
-build/images/pink/Walkthrough-1.jpg: 2017-03-20 12:21:51.000000000 +05:30
-build/images/pink/Walkthrough-2.jpg: 2017-03-20 12:21:51.000000000 +05:30
-build/images/pink/Walkthrough-3.jpg: 2017-03-20 12:21:52.000000000 +05:30
-build/images/Pratik-Shah.jpg: 2017-03-24 13:53:34.000000000 +05:30
-build/images/Praveen.png: 2017-03-20 12:22:38.000000000 +05:30
-build/images/project.png: 2017-03-20 12:22:29.000000000 +05:30
-build/images/Rahul_Lalwani.jpg: 2017-04-16 16:13:17.000000000 +05:30
-build/images/rakesh.jpg: 2017-03-20 12:22:39.000000000 +05:30
-build/images/Rectangle1.jpg: 2017-03-20 12:22:40.000000000 +05:30
-build/images/Rectangle2.jpg: 2017-03-20 12:22:41.000000000 +05:30
-build/images/Rectangle3.jpg: 2017-03-20 12:22:42.000000000 +05:30
-build/images/Rectangle4.jpg: 2017-03-20 12:22:43.000000000 +05:30
-build/images/Rectangle5.jpg: 2017-03-20 12:22:44.000000000 +05:30
-build/images/Rectangle6.jpg: 2017-03-20 12:22:44.000000000 +05:30
-build/images/Rectangle7.jpg: 2017-03-20 12:22:45.000000000 +05:30
-build/images/Rectangle8.jpg: 2017-03-20 12:22:45.000000000 +05:30
-build/images/Rectangle9.jpg: 2017-03-20 12:22:46.000000000 +05:30
-build/images/regular.png: 2017-03-20 12:22:45.000000000 +05:30
-build/images/regular@2x.png: 2017-03-20 12:22:46.000000000 +05:30
-build/images/relax.jpg: 2017-03-20 12:22:47.000000000 +05:30
-build/images/roadmojo.png: 2017-03-20 12:22:46.000000000 +05:30
-build/images/roadmojo@2x.png: 2017-03-20 12:22:47.000000000 +05:30
-build/images/robin.jpeg: 2017-03-20 12:22:47.000000000 +05:30
-build/images/Robin.jpg: 2017-03-20 12:22:48.000000000 +05:30
-build/images/Robin.png: 2017-03-20 12:22:56.000000000 +05:30
-build/images/Robin1.png: 2017-03-20 12:23:41.000000000 +05:30
-build/images/santosh.jpg: 2017-01-05 12:17:59.000000000 +05:30
-build/images/santosh@2x.jpg: 2017-03-20 12:23:05.000000000 +05:30
-build/images/screen_shot.png: 2017-03-20 12:27:01.000000000 +05:30
-build/images/screencapture-cpll-co-housejoy-website-categories-beauty_home-html-1443697097993.jpg: 2017-03-20
-  12:23:53.000000000 +05:30
+build/images/pink/Profile-Details.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/Reminders.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/Resources.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/Schools.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/Search-Results.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/Splash.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/Walkthrough-1.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/pink/Walkthrough-2.jpg: 2017-04-27 22:58:53.000000000 +05:30
+build/images/pink/Walkthrough-3.jpg: 2017-04-27 22:58:54.000000000 +05:30
+build/images/Pratik-Shah.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/Praveen.png: 2017-04-27 22:35:12.000000000 +05:30
+build/images/project.png: 2017-04-27 22:59:28.000000000 +05:30
+build/images/Rahul_Lalwani.jpg: 2017-04-27 22:59:00.000000000 +05:30
+build/images/rakesh.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/Rectangle1.jpg: 2017-04-27 22:59:02.000000000 +05:30
+build/images/Rectangle2.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/Rectangle3.jpg: 2017-04-27 22:59:03.000000000 +05:30
+build/images/Rectangle4.jpg: 2017-04-27 22:59:04.000000000 +05:30
+build/images/Rectangle5.jpg: 2017-04-27 22:59:04.000000000 +05:30
+build/images/Rectangle6.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/Rectangle7.jpg: 2017-04-27 22:59:05.000000000 +05:30
+build/images/Rectangle8.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/Rectangle9.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/regular.png: 2017-04-27 22:59:05.000000000 +05:30
+build/images/regular@2x.png: 2017-04-27 22:59:06.000000000 +05:30
+build/images/relax.jpg: 2017-04-27 22:59:07.000000000 +05:30
+build/images/roadmojo.png: 2017-04-27 22:59:06.000000000 +05:30
+build/images/roadmojo@2x.png: 2017-04-27 22:59:06.000000000 +05:30
+build/images/robin.jpeg: 2017-04-27 22:59:06.000000000 +05:30
+build/images/Robin.jpg: 2017-04-27 22:59:07.000000000 +05:30
+build/images/Robin.png: 2017-04-27 22:59:14.000000000 +05:30
+build/images/Robin1.png: 2017-04-27 22:59:14.000000000 +05:30
+build/images/santosh.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/santosh@2x.jpg: 2017-04-27 22:59:19.000000000 +05:30
+build/images/screen_shot.png: 2017-04-27 23:02:36.000000000 +05:30
+build/images/screencapture-cpll-co-housejoy-website-categories-beauty_home-html-1443697097993.jpg: 2017-04-27
+  22:59:29.000000000 +05:30
 build/images/screencapture-cpll-co-housejoy-website-categories-beauty_home-html-1443697097993.png: 2017-03-20
   12:52:11.000000000 +05:30
-build/images/screencapture-cpll-co-housejoy-website-categories-fitness_inside-html-1443697130331.png: 2017-03-20
-  12:25:02.000000000 +05:30
-build/images/screenshot-eatfresh.png: 2017-03-20 12:25:47.000000000 +05:30
-build/images/screenshot-eatfresh@2x.png: 2017-03-20 12:27:12.000000000 +05:30
-build/images/services.png: 2017-03-20 12:30:26.000000000 +05:30
-build/images/services@2x.png: 2017-03-20 12:29:06.000000000 +05:30
-build/images/shadow_man.png: 2017-03-20 12:31:15.000000000 +05:30
-build/images/Shubh_Mehra.jpg: 2017-04-16 16:13:17.000000000 +05:30
-build/images/smart_ceo.png: 2017-03-20 12:32:10.000000000 +05:30
-build/images/smart_ceo@2x.png: 2017-03-20 12:35:14.000000000 +05:30
-build/images/smartceo/smartceo-archives.png: 2017-03-20 12:33:09.000000000 +05:30
-build/images/smartceo/smartceo-archives@2x.png: 2017-03-20 12:37:23.000000000 +05:30
-build/images/smartceo/smartceo-archives@3x.png: 2017-03-20 12:43:34.000000000 +05:30
-build/images/smartceo/smartceo-article.png: 2017-03-20 12:35:50.000000000 +05:30
-build/images/smartceo/smartceo-article@2x.png: 2017-03-20 12:37:59.000000000 +05:30
-build/images/smartceo/smartceo-article@3x.png: 2017-03-20 12:41:44.000000000 +05:30
-build/images/smartceo/smartceo-b-g.jpg: 2017-03-20 12:38:01.000000000 +05:30
-build/images/smartceo/smartceo-b-g@2x.jpg: 2017-03-20 12:38:03.000000000 +05:30
-build/images/smartceo/smartceo-b-g@3x.jpg: 2017-03-20 12:38:09.000000000 +05:30
-build/images/smartceo/smartceo-channel.png: 2017-03-20 12:39:02.000000000 +05:30
-build/images/smartceo/smartceo-channel@2x.png: 2017-03-20 12:42:38.000000000 +05:30
-build/images/smartceo/smartceo-channel@3x.png: 2017-03-20 12:48:00.000000000 +05:30
-build/images/smartceo/smartceo-form.png: 2017-03-20 12:43:16.000000000 +05:30
-build/images/smartceo/smartceo-form@2x.png: 2017-03-20 12:45:51.000000000 +05:30
-build/images/smartceo/smartceo-form@3x.png: 2017-03-20 12:48:43.000000000 +05:30
-build/images/smartceo/smartceo-home.jpg: 2017-03-20 12:45:53.000000000 +05:30
-build/images/smartceo/smartceo-home@2x.jpg: 2017-03-20 12:45:55.000000000 +05:30
-build/images/smartceo/smartceo-home@3x.jpg: 2017-03-20 12:46:02.000000000 +05:30
-build/images/SmartCEO_web.png: 2017-03-20 12:47:31.000000000 +05:30
-build/images/Sreenath.jpg: 2017-03-20 12:47:31.000000000 +05:30
-build/images/Sreenath.png: 2017-03-20 12:47:38.000000000 +05:30
-build/images/Sreenath1.png: 2017-03-20 12:48:45.000000000 +05:30
-build/images/srinivas-mothey-treatr.jpg: 2017-01-05 12:17:59.000000000 +05:30
-build/images/srinivas-mothey-treatr@2x.jpg: 2017-01-05 12:17:59.000000000 +05:30
-build/images/sulekha.png: 2017-03-20 12:48:00.000000000 +05:30
-build/images/sulekha@2x.png: 2017-03-20 12:48:00.000000000 +05:30
-build/images/svgs/angle-left.svg: 2017-04-17 10:32:09.000000000 +05:30
-build/images/svgs/angle-right.svg: 2017-04-17 10:32:09.000000000 +05:30
-build/images/svgs/banner_icons.svg: 2017-04-17 10:32:10.000000000 +05:30
-build/images/svgs/curvy-arrowDown.svg: 2017-04-17 10:32:10.000000000 +05:30
-build/images/svgs/facebook.svg: 2017-04-17 10:32:10.000000000 +05:30
-build/images/svgs/home_banner/ChangeUser.svg: 2017-04-17 10:32:10.000000000 +05:30
-build/images/svgs/home_banner/Design.svg: 2017-04-17 10:32:11.000000000 +05:30
-build/images/svgs/home_banner/Error.svg: 2017-04-17 10:32:11.000000000 +05:30
-build/images/svgs/home_banner/NavigationToolbarTop.svg: 2017-04-17 10:32:11.000000000
-  +05:30
-build/images/svgs/home_banner/svgdefs.svg: 2017-04-17 10:32:11.000000000 +05:30
-build/images/svgs/home_banner/UserMenu.svg: 2017-04-17 10:32:13.000000000 +05:30
-build/images/svgs/icons/apple.svg: 2017-04-17 10:32:13.000000000 +05:30
-build/images/svgs/icons/appliances_black.svg: 2017-04-17 10:32:13.000000000 +05:30
-build/images/svgs/icons/beauty_black.svg: 2017-04-17 10:32:13.000000000 +05:30
-build/images/svgs/icons/broom_black.svg: 2017-04-17 10:32:13.000000000 +05:30
-build/images/svgs/icons/carpentry_black.svg: 2017-04-17 10:32:13.000000000 +05:30
-build/images/svgs/icons/electrical_black.svg: 2017-04-17 10:32:14.000000000 +05:30
-build/images/svgs/icons/fitness_black.svg: 2017-04-17 10:32:14.000000000 +05:30
-build/images/svgs/icons/laptop_black.svg: 2017-04-17 10:32:14.000000000 +05:30
-build/images/svgs/icons/laundry_black.svg: 2017-04-17 10:32:14.000000000 +05:30
-build/images/svgs/icons/mobile_black.svg: 2017-04-17 10:32:14.000000000 +05:30
-build/images/svgs/icons/painting_black.svg: 2017-04-17 10:32:14.000000000 +05:30
-build/images/svgs/icons/pest_control_black.svg: 2017-04-17 10:32:15.000000000 +05:30
-build/images/svgs/icons/plumbing_black.svg: 2017-04-17 10:32:15.000000000 +05:30
-build/images/svgs/iconset.svg: 2017-04-17 10:32:15.000000000 +05:30
-build/images/svgs/instagram.svg: 2017-04-17 10:32:15.000000000 +05:30
-build/images/svgs/left-arrow.svg: 2017-04-17 10:32:15.000000000 +05:30
-build/images/svgs/Left_Arrow_White.svg: 2017-04-17 10:32:15.000000000 +05:30
+build/images/screencapture-cpll-co-housejoy-website-categories-fitness_inside-html-1443697130331.png: 2017-04-27
+  23:00:33.000000000 +05:30
+build/images/screenshot-eatfresh.png: 2017-04-27 22:59:44.000000000 +05:30
+build/images/screenshot-eatfresh@2x.png: 2017-04-27 22:59:57.000000000 +05:30
+build/images/services.png: 2017-04-27 23:00:55.000000000 +05:30
+build/images/services@2x.png: 2017-04-27 23:01:23.000000000 +05:30
+build/images/shadow_man.png: 2017-04-27 23:01:24.000000000 +05:30
+build/images/Shubh_Mehra.jpg: 2017-04-27 23:01:27.000000000 +05:30
+build/images/smart_ceo.png: 2017-04-27 23:01:33.000000000 +05:30
+build/images/smart_ceo@2x.png: 2017-04-27 23:01:58.000000000 +05:30
+build/images/smartceo/smartceo-archives.png: 2017-04-27 23:01:47.000000000 +05:30
+build/images/smartceo/smartceo-archives@2x.png: 2017-04-27 23:02:16.000000000 +05:30
+build/images/smartceo/smartceo-article.png: 2017-04-27 23:02:31.000000000 +05:30
+build/images/smartceo/smartceo-article@2x.png: 2017-04-27 23:03:05.000000000 +05:30
+build/images/smartceo/smartceo-b-g.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/smartceo/smartceo-b-g@2x.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/smartceo/smartceo-channel.png: 2017-04-27 23:02:49.000000000 +05:30
+build/images/smartceo/smartceo-channel@2x.png: 2017-04-27 23:03:17.000000000 +05:30
+build/images/smartceo/smartceo-form.png: 2017-04-27 23:03:29.000000000 +05:30
+build/images/smartceo/smartceo-form@2x.png: 2017-04-27 23:04:11.000000000 +05:30
+build/images/smartceo/smartceo-home.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/smartceo/smartceo-home@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/SmartCEO_web.png: 2017-04-27 23:03:49.000000000 +05:30
+build/images/Sreenath.jpg: 2017-04-27 23:03:41.000000000 +05:30
+build/images/Sreenath.png: 2017-04-27 23:03:48.000000000 +05:30
+build/images/Sreenath1.png: 2017-04-27 23:04:00.000000000 +05:30
+build/images/srinivas-mothey-treatr.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/srinivas-mothey-treatr@2x.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/sulekha.png: 2017-04-27 23:03:56.000000000 +05:30
+build/images/sulekha@2x.png: 2017-04-27 23:03:56.000000000 +05:30
+build/images/svgs/angle-left.svg: 2017-05-30 17:30:26.000000000 +05:30
+build/images/svgs/angle-right.svg: 2017-05-30 17:30:26.000000000 +05:30
+build/images/svgs/curvy-arrowDown.svg: 2017-05-30 17:30:26.000000000 +05:30
+build/images/svgs/facebook.svg: 2017-05-30 17:30:26.000000000 +05:30
+build/images/svgs/icons/apple.svg: 2017-05-30 17:30:26.000000000 +05:30
+build/images/svgs/icons/appliances_black.svg: 2017-05-30 17:30:27.000000000 +05:30
+build/images/svgs/icons/beauty_black.svg: 2017-05-30 17:30:27.000000000 +05:30
+build/images/svgs/icons/broom_black.svg: 2017-05-30 17:30:27.000000000 +05:30
+build/images/svgs/icons/carpentry_black.svg: 2017-05-30 17:30:27.000000000 +05:30
+build/images/svgs/icons/electrical_black.svg: 2017-05-30 17:30:28.000000000 +05:30
+build/images/svgs/icons/fitness_black.svg: 2017-05-30 17:30:28.000000000 +05:30
+build/images/svgs/icons/laptop_black.svg: 2017-05-30 17:30:28.000000000 +05:30
+build/images/svgs/icons/laundry_black.svg: 2017-05-30 17:30:28.000000000 +05:30
+build/images/svgs/icons/mobile_black.svg: 2017-05-30 17:30:28.000000000 +05:30
+build/images/svgs/icons/painting_black.svg: 2017-05-30 17:30:29.000000000 +05:30
+build/images/svgs/icons/pest_control_black.svg: 2017-05-30 17:30:29.000000000 +05:30
+build/images/svgs/icons/plumbing_black.svg: 2017-05-30 17:30:29.000000000 +05:30
+build/images/svgs/iconset.svg: 2017-05-30 17:30:30.000000000 +05:30
+build/images/svgs/instagram.svg: 2017-05-30 17:30:30.000000000 +05:30
+build/images/svgs/left-arrow.svg: 2017-05-30 17:30:30.000000000 +05:30
+build/images/svgs/Left_Arrow_White.svg: 2017-05-30 17:30:30.000000000 +05:30
 build/images/svgs/logo.png: 2017-03-20 12:48:25.000000000 +05:30
-build/images/svgs/logo.svg: 2017-04-17 10:32:16.000000000 +05:30
-build/images/svgs/Logo_Color.svg: 2017-04-17 10:32:16.000000000 +05:30
-build/images/svgs/Logo_White.svg: 2017-04-17 10:32:16.000000000 +05:30
-build/images/svgs/medium_logo.svg: 2017-04-17 10:32:16.000000000 +05:30
-build/images/svgs/menu.svg: 2017-04-17 10:32:16.000000000 +05:30
-build/images/svgs/next.svg: 2017-04-17 10:32:16.000000000 +05:30
-build/images/svgs/next_white.svg: 2017-04-17 10:32:17.000000000 +05:30
-build/images/svgs/pl logo 1200x1200.svg: 2017-04-17 10:32:17.000000000 +05:30
-build/images/svgs/previous.svg: 2017-04-17 10:32:17.000000000 +05:30
-build/images/svgs/previous_white.svg: 2017-04-17 10:32:17.000000000 +05:30
-build/images/svgs/quote.svg: 2017-04-17 10:32:17.000000000 +05:30
-build/images/svgs/right-arrow.svg: 2017-04-17 10:32:17.000000000 +05:30
-build/images/svgs/Right_Arrow_White.svg: 2017-04-17 10:32:18.000000000 +05:30
-build/images/svgs/twitter.svg: 2017-04-17 10:32:17.000000000 +05:30
-build/images/TopicPage.png: 2016-11-07 17:46:56.000000000 +05:30
-build/images/treatr/Category.png: 2017-03-20 12:49:17.000000000 +05:30
-build/images/treatr/ES-Favorites-Treats.png: 2017-03-20 12:49:22.000000000 +05:30
-build/images/treatr/ES-My-Treats-Mine.png: 2017-03-20 12:49:23.000000000 +05:30
-build/images/treatr/Gift-Brought.png: 2017-03-20 12:50:37.000000000 +05:30
-build/images/treatr/Gift-Sent.png: 2017-03-20 12:50:40.000000000 +05:30
-build/images/treatr/Home.png: 2017-03-20 12:51:02.000000000 +05:30
-build/images/treatr/Nav-Drawer.png: 2017-03-20 12:52:08.000000000 +05:30
-build/images/treatr/Order-Summary.png: 2017-03-20 12:51:39.000000000 +05:30
-build/images/treatr/Payment.png: 2017-03-20 12:51:35.000000000 +05:30
-build/images/treatr/Personalise.png: 2017-03-20 12:52:20.000000000 +05:30
-build/images/treatr/Say-Thank-You.png: 2017-03-20 12:52:22.000000000 +05:30
-build/images/treatr/Select-City.png: 2017-03-20 12:52:42.000000000 +05:30
-build/images/treatr/Select-Friend.png: 2017-03-20 12:52:58.000000000 +05:30
-build/images/treatr/Splash.png: 2017-03-20 12:52:31.000000000 +05:30
-build/images/treatr/Treat-Code.png: 2017-03-20 12:53:17.000000000 +05:30
-build/images/treatr/Treat-for-Friend.png: 2017-03-20 12:53:25.000000000 +05:30
-build/images/treatr/Treat-View-Code.png: 2017-03-20 12:53:43.000000000 +05:30
-build/images/treatr/treatr-b-g.png: 2017-03-20 12:53:07.000000000 +05:30
+build/images/svgs/logo.svg: 2017-05-30 17:30:30.000000000 +05:30
+build/images/svgs/Logo_Color.svg: 2017-05-30 17:30:31.000000000 +05:30
+build/images/svgs/Logo_White.svg: 2017-05-30 17:30:31.000000000 +05:30
+build/images/svgs/medium_logo.svg: 2017-05-30 17:30:31.000000000 +05:30
+build/images/svgs/menu.svg: 2017-05-30 17:30:31.000000000 +05:30
+build/images/svgs/next.svg: 2017-05-30 17:30:32.000000000 +05:30
+build/images/svgs/next_white.svg: 2017-05-30 17:30:32.000000000 +05:30
+build/images/svgs/pl logo 1200x1200.svg: 2017-05-30 17:30:32.000000000 +05:30
+build/images/svgs/previous.svg: 2017-05-30 17:30:33.000000000 +05:30
+build/images/svgs/previous_white.svg: 2017-05-30 17:30:33.000000000 +05:30
+build/images/svgs/quote.svg: 2017-05-30 17:30:33.000000000 +05:30
+build/images/svgs/right-arrow.svg: 2017-05-30 17:30:33.000000000 +05:30
+build/images/svgs/Right_Arrow_White.svg: 2017-05-30 17:30:34.000000000 +05:30
+build/images/svgs/twitter.svg: 2017-05-30 17:30:33.000000000 +05:30
+build/images/TopicPage.png: 2017-04-27 23:04:13.000000000 +05:30
+build/images/treatr/Category.png: 2017-04-27 23:04:20.000000000 +05:30
+build/images/treatr/ES-Favorites-Treats.png: 2017-04-27 23:04:26.000000000 +05:30
+build/images/treatr/ES-My-Treats-Mine.png: 2017-04-27 23:04:27.000000000 +05:30
+build/images/treatr/Gift-Brought.png: 2017-04-27 23:04:35.000000000 +05:30
+build/images/treatr/Gift-Sent.png: 2017-04-27 23:04:42.000000000 +05:30
+build/images/treatr/Home.png: 2017-04-27 23:04:42.000000000 +05:30
+build/images/treatr/Nav-Drawer.png: 2017-04-27 23:04:54.000000000 +05:30
+build/images/treatr/Order-Summary.png: 2017-04-27 23:05:00.000000000 +05:30
+build/images/treatr/Payment.png: 2017-04-27 23:04:57.000000000 +05:30
+build/images/treatr/Personalise.png: 2017-04-27 23:05:10.000000000 +05:30
+build/images/treatr/Say-Thank-You.png: 2017-04-27 23:05:10.000000000 +05:30
+build/images/treatr/Select-City.png: 2017-04-27 23:05:10.000000000 +05:30
+build/images/treatr/Select-Friend.png: 2017-04-27 23:05:29.000000000 +05:30
+build/images/treatr/Splash.png: 2017-04-27 23:05:17.000000000 +05:30
+build/images/treatr/Treat-Code.png: 2017-04-27 23:05:23.000000000 +05:30
+build/images/treatr/Treat-for-Friend.png: 2017-04-27 23:05:34.000000000 +05:30
+build/images/treatr/Treat-View-Code.png: 2017-04-27 23:05:42.000000000 +05:30
+build/images/treatr/treatr-b-g.png: 2017-04-27 23:05:34.000000000 +05:30
 build/images/treatr/treatr-b-g@2x.png: 2017-03-20 12:53:11.000000000 +05:30
-build/images/treatr/treatr-b-g@3x.png: 2017-03-20 12:53:25.000000000 +05:30
 build/images/treatr/treatr-ob-01.png: 2017-03-20 12:53:52.000000000 +05:30
 build/images/treatr/treatr-ob-01@2x.png: 2017-03-20 12:54:54.000000000 +05:30
-build/images/treatr/treatr-ob-01@3x.png: 2017-03-20 12:56:28.000000000 +05:30
 build/images/treatr/treatr-ob-02.png: 2017-03-20 12:54:15.000000000 +05:30
 build/images/treatr/treatr-ob-02@2x.png: 2017-03-20 12:55:12.000000000 +05:30
-build/images/treatr/treatr-ob-02@3x.png: 2017-03-20 12:56:58.000000000 +05:30
 build/images/treatr/treatr-personalise.png: 2017-03-20 12:55:44.000000000 +05:30
-build/images/treatr/treatr-personalise@2x.png: 2017-03-20 12:57:37.000000000 +05:30
-build/images/treatr/treatr-personalise@3x.png: 2017-03-20 13:00:31.000000000 +05:30
+build/images/treatr/treatr-personalise@2x.png: 2017-04-27 23:06:09.000000000 +05:30
 build/images/treatr/treatr-w-01.png: 2017-03-20 12:56:45.000000000 +05:30
-build/images/treatr/treatr-w-01@2x.png: 2017-03-20 12:56:57.000000000 +05:30
-build/images/treatr/treatr-w-01@3x.png: 2017-03-20 12:57:24.000000000 +05:30
+build/images/treatr/treatr-w-01@2x.png: 2017-04-27 23:05:41.000000000 +05:30
 build/images/treatr/treatr-w-02.png: 2017-03-20 12:57:07.000000000 +05:30
 build/images/treatr/treatr-w-02@2x.png: 2017-03-20 12:57:31.000000000 +05:30
-build/images/treatr/treatr-w-02@3x.png: 2017-03-20 12:58:20.000000000 +05:30
 build/images/treatr/treatr-w-03.png: 2017-03-20 12:57:39.000000000 +05:30
 build/images/treatr/treatr-w-03@2x.png: 2017-03-20 12:57:58.000000000 +05:30
-build/images/treatr/treatr-w-03@3x.png: 2017-03-20 12:58:23.000000000 +05:30
-build/images/treatr/treatr-w-04.png: 2017-03-20 12:58:07.000000000 +05:30
-build/images/treatr/treatr-w-04@2x.png: 2017-03-20 12:58:28.000000000 +05:30
-build/images/treatr/treatr-w-04@3x.png: 2017-03-20 12:58:55.000000000 +05:30
-build/images/treatr/treatrr-01.png: 2017-03-20 12:58:37.000000000 +05:30
-build/images/treatr/treatrr-01@2x.png: 2017-03-20 12:58:53.000000000 +05:30
-build/images/treatr/treatrr-01@3x.png: 2017-03-20 12:59:17.000000000 +05:30
-build/images/treatr/treatrr-02.png: 2017-03-20 12:59:00.000000000 +05:30
-build/images/treatr/treatrr-02@2x.png: 2017-03-20 12:59:02.000000000 +05:30
-build/images/treatr/treatrr-02@3x.png: 2017-03-20 12:59:48.000000000 +05:30
-build/images/treatr/treatrr-03.png: 2017-03-20 12:59:23.000000000 +05:30
-build/images/treatr/treatrr-03@2x.png: 2017-03-20 12:59:39.000000000 +05:30
-build/images/treatr/treatrr-03@3x.png: 2017-03-20 12:59:57.000000000 +05:30
-build/images/treatr.png: 2017-03-20 13:00:28.000000000 +05:30
-build/images/treatr@2x.png: 2017-03-20 13:02:34.000000000 +05:30
-build/images/Vish.png: 2017-03-20 13:00:42.000000000 +05:30
-build/images/vserv.png: 2017-03-20 13:00:28.000000000 +05:30
-build/images/vserv@2x.png: 2017-03-20 13:00:28.000000000 +05:30
-build/images/walkthrough-screen-1.jpg: 2017-03-20 13:00:30.000000000 +05:30
-build/images/walkthrough-screen-1.png: 2017-03-20 13:00:33.000000000 +05:30
-build/images/walkthrough-screen-1@2x.png: 2017-03-20 13:00:41.000000000 +05:30
-build/images/walkthrough-screen-2.jpg: 2017-03-20 13:00:36.000000000 +05:30
-build/images/walkthrough-screen-2.png: 2017-03-20 13:00:39.000000000 +05:30
-build/images/walkthrough-screen-2@2x.png: 2017-03-20 13:01:00.000000000 +05:30
-build/images/walkthrough-screen-3-v-2.png: 2017-03-20 13:00:45.000000000 +05:30
-build/images/walkthrough-screen-3-v-2@2x.png: 2017-03-20 13:01:01.000000000 +05:30
-build/images/walkthrough-screen-3.jpg: 2017-03-20 13:00:48.000000000 +05:30
-build/images/walkthrough-screen-4.jpg: 2017-03-20 13:00:49.000000000 +05:30
-build/images/walkthrough-screen-5.jpg: 2017-03-20 13:00:51.000000000 +05:30
-build/images/walkthrough-screen-6.jpg: 2017-03-20 13:00:53.000000000 +05:30
-build/images/walkthrough-screen-7.jpg: 2017-03-20 13:00:55.000000000 +05:30
-build/images/workpage_images/Appjoy_web.png: 2017-03-20 13:00:59.000000000 +05:30
-build/images/workpage_images/Appjoy_web@2x.png: 2017-03-20 13:01:12.000000000 +05:30
-build/images/workpage_images/bleems_01.png: 2017-04-11 12:19:35.000000000 +05:30
-build/images/workpage_images/bleems_01@2x.png: 2017-04-11 12:20:09.000000000 +05:30
-build/images/workpage_images/bleems_02.png: 2017-04-11 12:19:53.000000000 +05:30
-build/images/workpage_images/bleems_02@2x.png: 2017-04-11 12:20:38.000000000 +05:30
-build/images/workpage_images/bleems_web.png: 2017-04-11 12:20:41.000000000 +05:30
-build/images/workpage_images/bleems_web@2x.png: 2017-04-11 12:21:00.000000000 +05:30
-build/images/workpage_images/boomer_001.png: 2017-03-20 13:01:09.000000000 +05:30
-build/images/workpage_images/boomer_001@2x.png: 2017-03-20 13:01:18.000000000 +05:30
-build/images/workpage_images/boomer_002.png: 2017-03-20 13:01:13.000000000 +05:30
-build/images/workpage_images/boomer_002@2x.png: 2017-03-20 13:01:31.000000000 +05:30
-build/images/workpage_images/chai_point_web.png: 2017-03-20 13:01:19.000000000 +05:30
-build/images/workpage_images/chai_point_web@2x.png: 2017-03-20 13:01:31.000000000
+build/images/treatr/treatr-w-04.png: 2017-04-27 23:05:45.000000000 +05:30
+build/images/treatr/treatr-w-04@2x.png: 2017-04-27 23:05:48.000000000 +05:30
+build/images/treatr/treatrr-01.png: 2017-04-27 23:05:49.000000000 +05:30
+build/images/treatr/treatrr-01@2x.png: 2017-04-27 23:05:56.000000000 +05:30
+build/images/treatr/treatrr-02.png: 2017-04-27 23:05:52.000000000 +05:30
+build/images/treatr/treatrr-02@2x.png: 2017-04-27 23:05:57.000000000 +05:30
+build/images/treatr/treatrr-03.png: 2017-04-27 23:05:59.000000000 +05:30
+build/images/treatr/treatrr-03@2x.png: 2017-04-27 23:06:05.000000000 +05:30
+build/images/treatr.png: 2017-04-27 23:06:09.000000000 +05:30
+build/images/treatr@2x.png: 2017-04-27 23:06:40.000000000 +05:30
+build/images/Vish.png: 2017-04-27 23:06:19.000000000 +05:30
+build/images/vserv.png: 2017-04-27 23:06:23.000000000 +05:30
+build/images/vserv@2x.png: 2017-04-27 23:06:24.000000000 +05:30
+build/images/walkthrough-screen-1.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/walkthrough-screen-1.png: 2017-04-27 23:06:28.000000000 +05:30
+build/images/walkthrough-screen-1@2x.png: 2017-04-27 23:06:40.000000000 +05:30
+build/images/walkthrough-screen-2.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/walkthrough-screen-2.png: 2017-04-27 23:06:36.000000000 +05:30
+build/images/walkthrough-screen-2@2x.png: 2017-04-27 23:06:58.000000000 +05:30
+build/images/walkthrough-screen-3-v-2.png: 2017-04-27 23:06:46.000000000 +05:30
+build/images/walkthrough-screen-3-v-2@2x.png: 2017-04-27 23:07:06.000000000 +05:30
+build/images/walkthrough-screen-3.jpg: 2017-04-27 22:35:13.000000000 +05:30
+build/images/walkthrough-screen-4.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/walkthrough-screen-5.jpg: 2017-04-27 23:06:56.000000000 +05:30
+build/images/walkthrough-screen-6.jpg: 2017-04-27 23:06:57.000000000 +05:30
+build/images/walkthrough-screen-7.jpg: 2017-04-27 22:35:14.000000000 +05:30
+build/images/workpage_images/Appjoy_web.png: 2017-04-27 23:07:01.000000000 +05:30
+build/images/workpage_images/Appjoy_web@2x.png: 2017-04-27 23:07:15.000000000 +05:30
+build/images/workpage_images/bleems_01.png: 2017-04-27 23:07:07.000000000 +05:30
+build/images/workpage_images/bleems_01@2x.png: 2017-04-27 23:07:21.000000000 +05:30
+build/images/workpage_images/bleems_02.png: 2017-04-27 23:07:14.000000000 +05:30
+build/images/workpage_images/bleems_02@2x.png: 2017-04-27 23:07:26.000000000 +05:30
+build/images/workpage_images/bleems_web.png: 2017-04-27 23:07:22.000000000 +05:30
+build/images/workpage_images/bleems_web@2x.png: 2017-04-27 23:07:35.000000000 +05:30
+build/images/workpage_images/boomer_001.png: 2017-04-27 23:07:30.000000000 +05:30
+build/images/workpage_images/boomer_001@2x.png: 2017-04-27 23:07:44.000000000 +05:30
+build/images/workpage_images/boomer_002.png: 2017-04-27 23:07:35.000000000 +05:30
+build/images/workpage_images/boomer_002@2x.png: 2017-04-27 23:07:54.000000000 +05:30
+build/images/workpage_images/chai_point_web.png: 2017-04-27 23:07:43.000000000 +05:30
+build/images/workpage_images/chai_point_web@2x.png: 2017-04-27 23:07:56.000000000
   +05:30
-build/images/workpage_images/citrus_home.png: 2017-03-20 13:01:26.000000000 +05:30
-build/images/workpage_images/citrus_home@2x.png: 2017-03-20 13:01:37.000000000 +05:30
-build/images/workpage_images/citrus_wallet.png: 2017-03-20 13:01:39.000000000 +05:30
-build/images/workpage_images/citrus_wallet@2x.png: 2017-03-20 13:01:47.000000000 +05:30
-build/images/workpage_images/cricbet_001.png: 2017-03-24 13:54:13.000000000 +05:30
-build/images/workpage_images/cricbet_001@2x.png: 2017-03-24 13:55:57.000000000 +05:30
-build/images/workpage_images/cricbet_002.png: 2017-03-24 13:54:11.000000000 +05:30
-build/images/workpage_images/cricbet_002@2x.png: 2017-03-24 13:56:00.000000000 +05:30
-build/images/workpage_images/Eatfresh01.png: 2017-03-20 13:01:43.000000000 +05:30
-build/images/workpage_images/Eatfresh01@2x.png: 2017-03-20 13:01:53.000000000 +05:30
-build/images/workpage_images/Eatfresh02.png: 2017-03-20 13:01:46.000000000 +05:30
-build/images/workpage_images/Eatfresh02@2x.png: 2017-03-20 13:01:56.000000000 +05:30
-build/images/workpage_images/eatfresh_web.png: 2017-03-20 13:01:57.000000000 +05:30
-build/images/workpage_images/eatfresh_web@2x.png: 2017-03-20 13:02:11.000000000 +05:30
-build/images/workpage_images/explara_fab.png: 2017-03-20 13:02:03.000000000 +05:30
-build/images/workpage_images/explara_fab@2x.png: 2017-03-20 13:02:14.000000000 +05:30
-build/images/workpage_images/explara_home.png: 2017-03-20 13:02:09.000000000 +05:30
-build/images/workpage_images/explara_home@2x.png: 2017-03-20 13:02:19.000000000 +05:30
-build/images/workpage_images/Explara_web2.png: 2017-03-20 13:02:20.000000000 +05:30
-build/images/workpage_images/Explara_web2@2x.png: 2017-03-20 13:02:32.000000000 +05:30
-build/images/workpage_images/housejoy_beauty.png: 2017-03-20 13:02:24.000000000 +05:30
-build/images/workpage_images/housejoy_beauty@2x.png: 2017-03-20 13:02:36.000000000
+build/images/workpage_images/citrus_home.png: 2017-04-27 23:07:54.000000000 +05:30
+build/images/workpage_images/citrus_home@2x.png: 2017-04-27 23:08:04.000000000 +05:30
+build/images/workpage_images/citrus_wallet.png: 2017-04-27 23:07:59.000000000 +05:30
+build/images/workpage_images/citrus_wallet@2x.png: 2017-04-27 23:08:11.000000000 +05:30
+build/images/workpage_images/cricbet_001.png: 2017-04-27 23:08:04.000000000 +05:30
+build/images/workpage_images/cricbet_001@2x.png: 2017-04-27 22:35:13.000000000 +05:30
+build/images/workpage_images/cricbet_002.png: 2017-04-27 23:08:10.000000000 +05:30
+build/images/workpage_images/cricbet_002@2x.png: 2017-04-27 23:08:24.000000000 +05:30
+build/images/workpage_images/Eatfresh01.png: 2017-04-27 23:08:15.000000000 +05:30
+build/images/workpage_images/Eatfresh01@2x.png: 2017-04-27 23:08:27.000000000 +05:30
+build/images/workpage_images/Eatfresh02.png: 2017-04-27 23:08:19.000000000 +05:30
+build/images/workpage_images/Eatfresh02@2x.png: 2017-04-27 23:08:29.000000000 +05:30
+build/images/workpage_images/eatfresh_web.png: 2017-04-27 23:08:25.000000000 +05:30
+build/images/workpage_images/eatfresh_web@2x.png: 2017-04-27 23:08:43.000000000 +05:30
+build/images/workpage_images/explara_fab.png: 2017-04-27 23:08:39.000000000 +05:30
+build/images/workpage_images/explara_fab@2x.png: 2017-04-27 23:08:47.000000000 +05:30
+build/images/workpage_images/explara_home.png: 2017-04-27 23:08:42.000000000 +05:30
+build/images/workpage_images/explara_home@2x.png: 2017-04-27 23:08:50.000000000 +05:30
+build/images/workpage_images/Explara_web2.png: 2017-04-27 23:08:48.000000000 +05:30
+build/images/workpage_images/Explara_web2@2x.png: 2017-04-27 23:09:00.000000000 +05:30
+build/images/workpage_images/housejoy_beauty.png: 2017-04-27 23:08:53.000000000 +05:30
+build/images/workpage_images/housejoy_beauty@2x.png: 2017-04-27 23:09:03.000000000
   +05:30
-build/images/workpage_images/housejoy_home.png: 2017-03-20 13:02:31.000000000 +05:30
-build/images/workpage_images/housejoy_home@2x.png: 2017-03-20 13:02:41.000000000 +05:30
-build/images/workpage_images/Housejoy_web2.png: 2017-03-20 13:02:36.000000000 +05:30
-build/images/workpage_images/Housejoy_web2@2x.png: 2017-03-20 13:02:50.000000000 +05:30
-build/images/workpage_images/indiamart.png: 2017-03-20 13:03:20.000000000 +05:30
-build/images/workpage_images/Indiamart_web.png: 2017-04-05 23:52:07.000000000 +05:30
-build/images/workpage_images/Indiamart_web@2x.png: 2017-04-05 23:52:27.000000000 +05:30
-build/images/workpage_images/pinknblu_001.png: 2017-03-24 13:54:33.000000000 +05:30
-build/images/workpage_images/pinknblu_001@2x.png: 2017-03-24 13:55:46.000000000 +05:30
-build/images/workpage_images/pinknblu_002.png: 2017-03-24 13:54:54.000000000 +05:30
-build/images/workpage_images/pinknblu_002@2x.png: 2017-03-24 13:56:13.000000000 +05:30
-build/images/workpage_images/SmartCEO_web.png: 2017-03-20 13:02:46.000000000 +05:30
-build/images/workpage_images/SmartCEO_web@2x.png: 2017-03-20 13:02:56.000000000 +05:30
-build/images/workpage_images/Treatr01.png: 2017-03-20 13:02:53.000000000 +05:30
-build/images/workpage_images/Treatr01@2x.png: 2017-03-20 13:03:03.000000000 +05:30
-build/images/workpage_images/Treatr02.png: 2017-03-20 13:03:00.000000000 +05:30
-build/images/workpage_images/Treatr02@2x.png: 2017-03-20 13:03:12.000000000 +05:30
-build/images/workpage_images/treatr_biz_web.png: 2017-03-20 13:03:06.000000000 +05:30
-build/images/workpage_images/treatr_biz_web@2x.png: 2017-03-20 13:03:17.000000000
+build/images/workpage_images/housejoy_home.png: 2017-04-27 23:08:58.000000000 +05:30
+build/images/workpage_images/housejoy_home@2x.png: 2017-04-27 22:35:13.000000000 +05:30
+build/images/workpage_images/Housejoy_web2.png: 2017-04-27 23:09:03.000000000 +05:30
+build/images/workpage_images/Housejoy_web2@2x.png: 2017-04-27 23:09:18.000000000 +05:30
+build/images/workpage_images/indiamart.png: 2017-04-27 23:09:19.000000000 +05:30
+build/images/workpage_images/Indiamart_web.png: 2017-04-27 23:09:16.000000000 +05:30
+build/images/workpage_images/Indiamart_web@2x.png: 2017-04-27 23:09:30.000000000 +05:30
+build/images/workpage_images/pinknblu_001.png: 2017-04-27 23:09:23.000000000 +05:30
+build/images/workpage_images/pinknblu_001@2x.png: 2017-04-27 22:35:13.000000000 +05:30
+build/images/workpage_images/pinknblu_002.png: 2017-04-27 23:09:27.000000000 +05:30
+build/images/workpage_images/pinknblu_002@2x.png: 2017-04-27 23:09:34.000000000 +05:30
+build/images/workpage_images/SmartCEO_web.png: 2017-04-27 23:09:32.000000000 +05:30
+build/images/workpage_images/SmartCEO_web@2x.png: 2017-04-27 23:09:42.000000000 +05:30
+build/images/workpage_images/Treatr01.png: 2017-04-27 23:09:36.000000000 +05:30
+build/images/workpage_images/Treatr01@2x.png: 2017-04-27 23:09:47.000000000 +05:30
+build/images/workpage_images/Treatr02.png: 2017-04-27 23:09:46.000000000 +05:30
+build/images/workpage_images/Treatr02@2x.png: 2017-04-27 23:09:55.000000000 +05:30
+build/images/workpage_images/treatr_biz_web.png: 2017-04-27 23:09:52.000000000 +05:30
+build/images/workpage_images/treatr_biz_web@2x.png: 2017-04-27 23:09:58.000000000
   +05:30
-build/stylesheets/fonts/bebasneue_bold-webfont.svg: 2017-04-17 10:32:18.000000000
+build/stylesheets/fonts/bebasneue_bold-webfont.svg: 2017-05-30 17:30:34.000000000
   +05:30
-build/stylesheets/fonts/bebasneue_regular-webfont.svg: 2017-04-17 10:32:18.000000000
+build/stylesheets/fonts/bebasneue_regular-webfont.svg: 2017-05-30 17:30:34.000000000
   +05:30

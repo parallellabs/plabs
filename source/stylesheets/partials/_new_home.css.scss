@@ -1,26 +1,36 @@
 .bg-skewed {
   @include transform(rotate(30deg));
-  @include transform-origin(top right);
+  // @include transform-origin(top right);
   @include media(max-width 768px) {
-    top:550px;
-    right: -360px;
-    margin-top: 100vh;
-    margin-top: 65vh;
     min-width: 400px;
-    height: 1100px;
+    height: 1050px;
+  }
+  @include media(max-width 1440px) {
+    top: -60px;
+  }
+  @include media(min-width 1441px) {
+    top: -60px;
+    right: -400px;
+    width: 45vw;
+  }
+  @include media(min-width 1921px){
+    top: -620px;
+    right: -480px;
+    width: 900px;
   }
 
   position: absolute;
-  top: 0;
-  right: -594px;
-  // right: -570px;
+  top:-100px;
+  right: -200px;
   overflow:hidden;
-  min-width: 800px;
-  max-width: 40vw;
-  width: auto;
-  // height: 801vh;
-  height: 1500px;
+  width: 65vw;
+  height: 160vh;
   background-color: #fcc32c;
+
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+    top: 50px;
+    right: -250px;
+  }
 
   img{
     @include media(max-width 768px){
@@ -48,14 +58,24 @@
       padding: 20px;
       text-align:left;
     }
+    @include media(min-width 1441px){
+      margin-right:auto;
+      margin-left:auto;
+      max-width:1440px;
+    }
 
     position: relative;
     padding: 60px;
 
+    &#first-section{
+      @include media(min-width 1920px){
+        max-height:1000px;
+      }
+    }
     h2 {
       @include media(max-width 769px){
         // text-align: center;
-        font-size:rem(20);
+        font-size:rem(28);
       }
       @include media(min-width 768px){
         text-align: left;
@@ -229,6 +249,10 @@
       margin-right:0;
       margin-left:0;
     }
+    @include media(min-width 1441px){
+      margin-right:auto;
+      margin-left:auto;
+    }
 
     margin-right: 60px;
     margin-left: 60px;
@@ -284,13 +308,16 @@
         @include media(max-width 768px){
           margin:0 auto;
           margin-bottom:20px;
+
+          // max-width:none;
         }
 
         // margin:0 auto;
         margin-bottom: 20px;
-        max-width: 200px;
         height:50px;
 
+        // max-width: 200px;
+        // height:50px;
         img {
           @include media(max-width 768px){
             margin: 0 auto;
@@ -299,7 +326,7 @@
             // margin-bottom: 20px;
           }
 
-          max-height: 50px;
+          // max-height: 50px;
           vertical-align: middle
         }
       }
@@ -309,6 +336,10 @@
     }
   }
   &.testimonial{
+    @include media(min-width 1441px){
+      max-width:100%;
+    }
+
     margin-right: 0;
     margin-left: 0;
 
@@ -328,24 +359,38 @@
       margin-bottom: 80px;
     }
     .media-card {
-      @include media(max-width 1441px min-width 769px){
-        // height:460px;
-      }
       @include media(max-width 768px){
         float: left;
         height:auto;
 
         // margin-bottom:60px;
       }
+      @include transition(all 400ms ease-in-out);
+      @include media(min-width 769px){
+        &:hover{
+          box-shadow: 0 0 50px 0 rgba(0,0,0,0.2);
+
+          .right{
+            img{
+              margin-top: 0px;
+              margin-bottom: 0;
+              margin-left: 16px;
+              box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+              vertical-align: middle;
+            }
+          }
+        }
+      }
 
       // min-height: 330px;
       position: relative;
       float: left;
       background-color: #fff;
-      box-shadow: 0 0 50px 0 rgba(0, 0, 0, .1);
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 
       .left {
         @include span-columns(6);
+        @include omega();
         @include media(max-width 768px){
           @include span-columns(12);
           @include omega;
@@ -367,11 +412,10 @@
         a {
           @include media(max-width 768px){
             position:static !important;
-            float:none	;
             margin-bottom:20px;
           }
 
-          float: left;
+          display: block;
           color: #16c6c2;
           text-align: left;
           font-weight: 400;
@@ -456,6 +500,7 @@
           display: inline-block;
           float: none;
           vertical-align: middle
+
         }
         &.mobile{
           @include media(max-width 768px){
@@ -487,21 +532,15 @@
             margin-left: 10px;
             height: auto;
           }
+          @include transition(all 400ms cubic-bezier(1, 0, 0, 1));
 
-          // position: absolute;
-          // top: -20px;
-          // right: -20px;
-          // bottom: 0;
-          // left: 0;
-          // z-index: 16;
-          display: block;
           margin: 0 auto;
           margin-top: -20px;
           margin-bottom: 20px;
-          margin-left: 20px;
-          // height: 360px;
+          margin-left: 40px;
           height: auto;
-          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2)
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+          vertical-align: middle
         }
       }
       &.small {
@@ -518,6 +557,17 @@
 
           &:last-child{
             margin-bottom:0;
+          }
+        }
+        @include media(min-width 769px){
+          &:hover{
+            .right{
+              img{
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+              }
+            }
           }
         }
 
@@ -600,6 +650,15 @@
         }
 
 
+      }
+      &.instagram{
+        .left{
+          .content{
+            h2{
+              line-height:1.4;
+            }
+          }
+        }
       }
       &.dribbble {
         // @include outer-container(calc((50%)));
@@ -755,13 +814,23 @@
         margin: 0 auto;
 
         img{
+          @include media(max-width 359px){
+            @include transform(translateX(-10%));
+          }
+
           max-width: none;
-          width: 258px;
+          width: 358px;
+          height: 515px
         }
         video {
+          @include media(max-width 360px){
+            left:43px;
+          }
+
           position: absolute;
-          top: 50px;
-          left: 12px;
+          top: 46px;
+          left:80px;
+          height: 355px
         }
       }
     }
@@ -775,9 +844,9 @@
 
           text-align: center;
 
-
         }
 
+        float:right;
         padding-left:0;
         text-align: right;
 
@@ -827,9 +896,11 @@
       .right{
         @include span-columns(5);
         @include media(max-width 768px){
-          display:none;
+          padding:0;
+          width:100%;
         }
 
+        float:left;
         padding-left:10.8%;
 
         &.mobile{
@@ -854,7 +925,6 @@
 
         &{
           display: inline-block;
-          float:none;
           padding-left:0;
           vertical-align: middle;
         }
@@ -872,7 +942,6 @@
 
         &{
           display: inline-block;
-          float:none;
           vertical-align: middle;
         }
       }
@@ -1093,14 +1162,13 @@ $tabs-base-color: #fafafa;
           @include media(max-width 768px){
             float:left;
             text-align: center;
-            font-size:rem(26);
+            font-size:rem(20);
           }
 
           color: #243f53;
           text-transform: uppercase;
-          font-weight: 800;
-          font-size: rem(32);
-          font-family: $heading-font-family;
+          font-weight: 400;
+          font-size: rem(30);
 
           &.white {
             color: #fff;
@@ -1129,15 +1197,21 @@ $tabs-base-color: #fafafa;
           .skewed {
             @include media(max-width 768px){
               margin-left:auto;
+              width:70%;
             }
 
             margin-left: -15px;
             width:90%;
 
             span {
+              @include media(max-width 768px){
+                padding-right: 15px;
+                font-size: rem(16);
+              }
+
               display: block;
               margin: 0 auto;
-              width:100%;
+              width:100%
             }
           }
           &.smartceo {
@@ -1303,6 +1377,11 @@ $tabs-base-color: #fafafa;
               }
               a {
                 img {
+                  @include media(min-width 1441px){
+                    margin-top: 60px;
+                    max-width: 270px;
+                  }
+
                   margin-top: 0;
                   margin-right: 20px;
                   max-width: calc((50%) - 20px);
@@ -1355,7 +1434,7 @@ $tabs-base-color: #fafafa;
             .title {
               @include media(max-width 768px){
                 text-align: center;
-                font-size:rem(26);
+                font-size:rem(22);
               }
 
               text-align: right
@@ -1383,8 +1462,12 @@ $tabs-base-color: #fafafa;
                 margin-left: auto;
 
                 span {
+                  @include media(max-width 768px){
+                    padding-right:0;
+                  }
+
                   display: block;
-                  margin: 0 auto;
+                  margin: 0 auto
                 }
               }
               &.smartceo {
@@ -1444,6 +1527,9 @@ $tabs-base-color: #fafafa;
           .img-container {
             @include media(min-width 1600px){
               right: 100px;
+            }
+            @include media(min-width 1921px){
+              right: 200px;
             }
 
             right: auto

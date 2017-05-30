@@ -79,6 +79,9 @@ configure :build do
   # set :http_prefix, "/git/plabs/images/"
 end
 
+# require 'slim'
+# # Avoid HTML minification for people who don't know slim
+# Slim::Engine.default_options[:pretty] = true
 
 # Deployment configuration
 # activate :deploy do |deploy|

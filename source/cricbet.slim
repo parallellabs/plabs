@@ -15,7 +15,7 @@ layout: parallex_layout
 
 / content
 
-.section.master-banner.casestudy.cricbet-banner
+.section.master-banner.casestudy.cricbet-banner.height-fix
   .overlay
     .banner-content
       h2.title
@@ -34,7 +34,7 @@ layout: parallex_layout
         .member
           |<img src="images/chaitanya.jpg" alt="Chaitanya" />
           |<span class="member-name">Chaitanya</span>
-          |<span class="role">UX Research &amp; </br> UI Design</span>
+          |<span class="role">UX Research &amp; <br> UI Design</span>
       
       .stats
         .stat
@@ -63,9 +63,19 @@ layout: parallex_layout
     |Design a game is a completely different ball game. Unlike designing experiences for apps or websites where the focus is to make it simple and no-brainer, game design needs a completely opposite approach where you need to reveal information in learners and not be the obvious. Predictability and standards kill a app experience and hence being used to designing UX for apps, we had a lot to unlearn which made it even more fun.
   h2.PT-120
     |It all started with an Audit of the current app to identity problems with experience<span class="border ML0-imp"></span>
-  .img-flex
-    img.size src="images/cricbet/old.jpg" alt="cricbet screen"
-    img.size src="images/cricbet/old1.png" alt="cricbet screen"
+  .img-observation
+    .col
+      img.size src="images/cricbet/old.jpg" alt="cricbet screen"
+    ul.col
+      li 
+        |It doesn’t have the cheerful personality a game needs to have and has a rather serious and corporate look and feel.
+      li 
+        |It has a very linear flow where a user needs to pick a category every time to play a quiz. A game needs to be interactive and facilitate discovery.
+      li 
+        |Home screen is too cluttered without any grouping of relevant items and hierarchy. It fails to provide a sense of direction to the user.
+      li 
+        |Icons are doing a bare minimum to represent the context and lack character of their own. 
+      
       
   
   h2.PT-120
@@ -185,7 +195,7 @@ layout: parallex_layout
     |Designing a interactive flow and not just screens<span class="border ML0-imp"></span>
   p
     |Designing a game is all about interactions and it needs a completely different approach. Instead of designing screens independently, we crafted interactions and screens that flow from one to the other with seamless transitions.
-  video loop="loop" autoplay="autoplay" poster="images/cricbet/poster1.png" height="500" width="600" src="images/cricbet/Comp.mov"
+  video loop="loop" autoplay="autoplay" poster="images/cricbet/poster1.png" height="500" width="600" src="images/cricbet/Comp.mp4"
 
     
   h2.PT-120
@@ -193,8 +203,8 @@ layout: parallex_layout
   p
     |Standard navigation patterns didn’t work for Sportsie because the requirements were complex. Here are some navigation patterns we designed for Sportsie.
   .img-flex
-    img src="images/cricbet/match-question.jpg" /
-    img src="images/cricbet/match-questions-all.jpg" /
+    img src="images/cricbet/match-question.jpg" alt="Cricbet screen"/
+    img src="images/cricbet/match-questions-all.jpg" alt="Cricbet screen"/
   
   h2.PT-120
     |Realtime experience to bet on every ball<span class="border ML0-imp"></span>
@@ -205,10 +215,8 @@ layout: parallex_layout
 
 .section.new-home-content.interfaces
   .content-section
-    h2
-      |Screens at glance<span class="border"></span>
     .sky-carousel#sky-carousel-2
-      img.phone src="images/phone.png"/
+      img.phone src="images/phone.png" alt="Mock image"/
       .sky-carousel-wrapper
         ul.sky-carousel-container
           li
@@ -288,11 +296,11 @@ layout: parallex_layout
       |Pratik Shah, Founder
       
 .section.new-home-content.project-nav
-  a href="appjoy.html"
+  a href="smartceo.html"
     .prev.box-shape
       .inside
-        |<span class="project-name">APPJOY</span>
-        |<span class="project-desc">Resource Library</span>
+        |<span class="project-name">SMART CEO</span>
+        |<span class="project-desc">Digital Magazine</span>
     .box2.FL-l
       svg
         use xlink:href="images/svgs/iconset.svg#icon-left-arrow"
@@ -300,11 +308,11 @@ layout: parallex_layout
   .fancy-line
     |See more awesome stuff
   
-  a href="smartceo.html"
+  a href="indiamart.html"
     .next.box-shape
       .inside
-        |<span class="project-name">SMART CEO</span>
-        |<span class="project-desc">Digital Magazine</span>
+        |<span class="project-name">Indiamart</span>
+        |<span class="project-desc">B2B Services Marketplace</span>
     .box2.FL-r
       svg
         use xlink:href="images/svgs/iconset.svg#icon-right-arrow"

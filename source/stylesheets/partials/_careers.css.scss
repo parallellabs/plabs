@@ -260,6 +260,35 @@
 
         .colm {
           @include calc(width, "100%/3");
+          @include media(min-width 769px){
+            &:hover{
+              img{
+                @include transform(scale(1.1));
+                @include transition(all 500ms ease-in-out);
+              }
+              .hover-text{
+                @include transition(all 900ms ease);
+
+                background-color: rgba(0,0,0,0.2);
+
+                .content{
+                  @include transition(all 900ms ease);
+
+                  p{
+                    @include transition(all 900ms ease, max-height 0.95s ease-in);
+
+                    &:last-child{
+                      visibility: visible;
+                      max-height:300px;
+                      opacity:1;
+                    }
+                  }
+
+
+                }
+              }
+            }
+          }
 
           position: relative;
           float: left;
@@ -275,10 +304,10 @@
                 @include omega();
               }
             }
-              @include media(max-width 480px) {
-                @include span-columns(12);
+            @include media(max-width 480px) {
+              @include span-columns(12);
 
-              }
+            }
           }
           img {
             @include transition(all 500ms ease-in-out);
@@ -296,56 +325,47 @@
             right: 0;
             bottom: 0;
             left: 0;
-            visibility: visible;
+            // visibility: visible;
             background-color: rgba(0,0,0,0.4);
             color:#fff;
             text-align:center;
-            opacity:1;
 
+            // opacity:1;
             .content{
-              @include transition(all 900ms ease-in-out, opacity 500ms ease-in-out);
+              @include transition(all 900ms ease);
 
               position: absolute;
               bottom:20px;
               left: 0;
-              visibility: visible;
+              // visibility: visible;
               padding:0 30px;
-              opacity:1;
 
+              // opacity:1;
               p{
+                @include transition(all 900ms ease, max-height 0.75s ease-out);
+
                 margin-bottom:10px;
                 color:#fff;
                 font-weight:800;
                 font-size:rem(30);
                 font-family: $heading-font-family;
+                line-height:normal;
 
                 &:last-child{
-                  margin-bottom:0;
+                  @include media(max-width 768px){
+                    visibility: visible;
+                    max-height:none;
+                    opacity: 1;
+                  }
+
+                  visibility: hidden;
+                  max-height:0;
                   color:rgba(255,255,255,0.8);
                   font-weight:400;
                   font-size:rem(18);
                   line-height:rem(28);
+                  opacity:0;
                 }
-              }
-            }
-          }
-          &:hover{
-            img{
-              @include transform(scale(1.1));
-              @include transition(all 500ms ease-in-out);
-            }
-            .hover-text{
-              @include transition(all 900ms ease);
-
-              visibility: hidden;
-              opacity:0;
-
-              .content{
-                @include transition(all 900ms ease-in-out, opacity 500ms ease-in-out);
-
-                bottom: -500px;
-                visibility: hidden;
-                opacity:0;
               }
             }
           }
@@ -430,7 +450,7 @@
           }
           p {
             @include media(max-width 768px){
-                text-align: center;
+              text-align: center;
             }
 
             color: #777;
@@ -443,6 +463,11 @@
       }
       .team-views {
         @include clearfix;
+        @include media(min-width 1441px){
+          margin-right: auto;
+          margin-left: auto;
+          max-width:1440px;
+        }
 
         .owl-wrapper {
           @include clearfix;
@@ -628,6 +653,9 @@
                   padding-bottom: 0;
                   max-width: 100%;
                 }
+                @include media(min-width 1441px){
+                  max-width:100%;
+                }
 
                 float: left;
                 margin-right: 0;
@@ -666,14 +694,13 @@
                     max-width: 100%;
                     font-size: 1rem;
                   }
+                  @include media(min-width 1441px){
+                    max-width:800px;
+                  }
 
-                  // position:absolute;
-                  // top: 250px;
-                  // left: 60px;
-                  // max-width: 45%
                   margin-top: 158px;
                   margin-left: 0;
-                  max-width: 65%;
+                  max-width: 65%
                 }
                 .cred{
                   display: block;
@@ -766,6 +793,9 @@
                   @include media(max-width 992px){
                     max-width:100%;
                   }
+                  @include media(min-width 1441px){
+                    max-width:100%;
+                  }
 
                   float:right;
                   max-width:90%
@@ -783,11 +813,10 @@
                     max-width: 100%;
                     font-size:1rem;
                   }
+                  @include media(min-width 1441px){
+                    max-width:800px;
+                  }
 
-                  // position:absolute;
-                  // top: 250px;
-                  // right: 60px;
-                  // max-width: 55%
                   margin-top: 158px;
                   margin-right: 0;
                   max-width: 65%;

@@ -1,7 +1,7 @@
 ---
 layout: parallex_layout
 ---
-- @title = "Explara Website Design | UX Design for making discovery of local experiences simpler"
+- @title = "Explara Website | UX to simplify discovery of local experiences"
 - @description = "Case Study of designing website for making discovery of local experiences on the go simpler."
 - @keyword = "Booking, event management, Bookmyshow, event survey, travel booking"
 - @og_title = "Designing Explara Website"
@@ -14,7 +14,7 @@ layout: parallex_layout
 - @twitter_image = "http://parallellabs.io/images/workpage_images/Explara_web2.png"
 
 / content
-.section.master-banner.casestudy.explar-banner
+.section.master-banner.casestudy.explar-banner.height-fix
   .overlay
     .banner-content
       h2.title
@@ -98,10 +98,8 @@ layout: parallex_layout
 
 .section.new-home-content.interfaces
   .content-section
-    h2
-      |Screens at glance<span class="border"></span>
     .sky-carousel#sky-carousel-3
-      img.laptop src="images/explara/mock.png"/
+      img.laptop src="images/explara/mock.png" alt="Mock image"/
       .sky-carousel-wrapper
         ul.sky-carousel-container
           li
@@ -109,16 +107,6 @@ layout: parallex_layout
             .sc-content
               p
                 |topic
-          li
-            img alt="Slider images" src="images/explara/Home.png" /
-            .sc-content
-              p
-                |home
-          li
-            img alt="Slider images" src="images/explara/Category.png" /
-            .sc-content
-              p
-                |category
           li
             img alt="Slider images" src="images/explara/Search-Results.png" /
             .sc-content
@@ -153,11 +141,11 @@ layout: parallex_layout
       |Santosh Panda, Founder
       
 .section.new-home-content.project-nav
-  a href="chai-point.html"
+  a href="pinknblu.html"
     .prev.box-shape
       .inside
-        |<span class="project-name">CHAI POINT</span>
-        |<span class="project-desc">INDIA RUNS ON CHAI</span>
+        |<span class="project-name">Pink N Blu</span>
+        |<span class="project-desc">Parents App</span>
     .box2.FL-l
       svg
         use xlink:href="images/svgs/iconset.svg#icon-left-arrow"
@@ -185,5 +173,3 @@ layout: parallex_layout
 		a.btn.new.open-form href="javascript:void(0);"
 			.skewed.topaz
 				span Get in Touch
-
-/ = partial "layouts/main_form.slim"

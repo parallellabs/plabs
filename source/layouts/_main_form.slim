@@ -1,5 +1,5 @@
 form.section.main-form method="post"	 
-  .inner-box
+  .inner-box#firstBox
     svg.close-form
       use xlink:href="images/svgs/iconset.svg#icon-delete_sign"
     .wrap#firstForm
@@ -7,70 +7,70 @@ form.section.main-form method="post"
         | Please Select your What you want us to do. 
       h4
         | Tell us about your project
-      span.note
-        | Project start at $10,000 onwards
+      / span.note
+      /   | Project start at $10,000 onwards
         
       .group.disp-none
-        input.input#optionNone type="text"
+        input.input#optionNone type="text"/
       
       .group.disp-none
-        input.input#subOptionNone type="text"
+        input.input#subOptionNone type="text"/
         
       .checkgroup#projectType
-        / .group
-        input type="checkbox" id="op1" 
+        .wrap
+          input type="checkbox" id="op1"/
           label for="op1"
-            span class="box"
-              |<svg><use xlink:href="images/svgs/iconset.svg#icon-checkmark"></use></svg>
+            span.box
+              | <svg><use xlink:href="images/svgs/iconset.svg#icon-checkmark"></use></svg>
             span class="name" 
               |Product Strategy
-                
-        / .group      
-        input type="checkbox" class="more-options" id="op2" 
+                  
+        .wrap      
+          input type="checkbox" class="more-options" id="op2"/ 
           label for="op2" 
-            span class="box"
+            span.box
               |<svg><use xlink:href="images/svgs/iconset.svg#icon-checkmark"></use></svg>
-            span class="name"
+            span.name
               |Interface Design
               
-            .options#SubOption
-              input type="checkbox" id="op21"
-                label for="op21"
-                  span class="box2"
-                    |<svg><use xlink:href="images/svgs/iconset.svg#icon-android"></use></svg>
-                    |<svg class="icon icon-checkmark"><use xlink:href="images/svgs/iconset.svg#icon-checkmark"></use></svg>
-                    span class="small-name ML-30" 
-                      |Android
-                      
-              input type="checkbox" id="op22"
-                label for="op22"
-                  span class="box2"
-                    |<svg><use xlink:href="images/svgs/iconset.svg#icon-ios-logo"></use></svg>
-                    |<svg class="icon icon-checkmark"><use xlink:href="images/svgs/iconset.svg#icon-checkmark"></use></svg>
-                    span class="small-name ML-17" 
-                      |iOS
+          span.options#SubOption
+            input type="checkbox" id="op21"/
+            label for="op21"
+              span.box2
+                |<svg><use xlink:href="images/svgs/iconset.svg#icon-android"></use></svg>
+                |<svg class="icon icon-checkmark"><use xlink:href="images/svgs/iconset.svg#icon-checkmark"></use></svg>
+                span.small-name.ML-30 
+                  |Android
                     
-              input type="checkbox" id="op23"
-                label for="op23"
-                  span class="box2"
-                    |<svg><use xlink:href="images/svgs/iconset.svg#icon-web"></use></svg>
-                    |<svg class="icon icon-checkmark"><use xlink:href="images/svgs/iconset.svg#icon-checkmark"></use></svg>
-                    span class="small-name ML-17" 
-                      |Web                
-        / .group
-        input type="checkbox" id="op3" 
+            input type="checkbox" id="op22"/
+            label for="op22"
+              span.box2
+                |<svg><use xlink:href="images/svgs/iconset.svg#icon-ios-logo"></use></svg>
+                |<svg class="icon icon-checkmark"><use xlink:href="images/svgs/iconset.svg#icon-checkmark"></use></svg>
+                span.small-name.ML-17 
+                  |iOS
+                  
+            input type="checkbox" id="op23"/
+            label for="op23"
+              span.box2
+                |<svg><use xlink:href="images/svgs/iconset.svg#icon-web"></use></svg>
+                |<svg class="icon icon-checkmark"><use xlink:href="images/svgs/iconset.svg#icon-checkmark"></use></svg>
+                span.small-name.ML-17 
+                  |Web                
+        .wrap
+          input type="checkbox" id="op3"/ 
           label for="op3" 
-            span class="box"
+            span.box
               |<svg><use xlink:href="images/svgs/iconset.svg#icon-checkmark"></use></svg>
-            span class="name"
+            span.name
               |Front-End Dev 
     
       .group
-        label Floating Label
+        / label Floating Label
         / p.message Required 
         svg.cross-icon
-        use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
-        textarea#objective type="text" placeholder="Objective, Target Audience, Competitors, Deadlines etc."
+          use xlink:href="images/svgs/iconset.svg#icon-delete_sign" 
+        textarea#objective placeholder="Objective, Target Audience, Competitors, Deadlines etc."
         span.highlight
         / span.bar
       
@@ -79,16 +79,18 @@ form.section.main-form method="post"
         
       .group.attachments
         | <svg class="icon icon-add-link"><use xlink:href="images/svgs/iconset.svg#icon-add-link"></use></svg>
-        input.input#attachLink type="text" placeholder="Attach Google Drive / Dropbox Links"
+        input.input#attachLink type="text" placeholder="Google Drive / Dropbox Links" /
         
 
       .action.FL-r
         button.btn.next.new.FL-r type="button" 
-          .skewed-inverse
-            span Next
-            |<svg><use xlink:href="images/svgs/iconset.svg#icon-arrows-long-right"></use></svg>
+          span.skewed-inverse
+            span 
+              |Next 
+            svg
+              use xlink:href="images/svgs/iconset.svg#icon-arrows-long-right"
             
-  .inner-box
+  .inner-box#secondBox
     svg.close-form
       use xlink:href="images/svgs/iconset.svg#icon-delete_sign"
     .wrap#secondForm
@@ -101,25 +103,25 @@ form.section.main-form method="post"
         .row
           .input-group
             / p.message Required 
-            input#clientName type="text" placeholder="Name"
+            input#clientName type="text" placeholder="Name"/
             
       .group.second-form-grp    
         .row  
           .input-group 
             / p.message Required 
-            input#company type="text" placeholder="Company"
+            input#company type="text" placeholder="Company"/
       
       .group.second-form-grp    
         .row
           .input-group
             / p.message Required 
-            input#email type="text" placeholder="Email"
+            input#email type="text" placeholder="Email"/
             
       .group.second-form-grp    
         .row  
           .input-group
             / p.message Required 
-            input#mobileNumber type="number" placeholder="Mobile"
+            input#mobileNumber type="number" placeholder="Mobile"/
 
 
       / .group
@@ -133,10 +135,10 @@ form.section.main-form method="post"
           
       .action
         button.btn.next.new.send type="button"
-          .skewed
+          span.skewed
             span Send 
           
-  .inner-box
+  .inner-box#thiredBox
     svg.close-form
       use xlink:href="images/svgs/iconset.svg#icon-delete_sign"
     .wrap.thankyou#thirdForm
@@ -146,5 +148,5 @@ form.section.main-form method="post"
         | Someone from the team will get in touch with you shortly.
       .action
         button.btn.new.close-form type="button"
-          .skewed
+          span.skewed
             span Close 

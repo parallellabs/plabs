@@ -46,21 +46,27 @@
             // transform: translate(-12%, -21%);
         }
         .inner-box {
-            @include media(max-width 768px){
+            @include media(max-width 992px){
+                // @include transform(none);
                 position:fixed;
                 top: 0;
+                right:0;
                 bottom: 0;
                 left: 0;
                 overflow-y: scroll;
-                width: 100%;
+                max-width: 100%;
             }
+            // right:auto;
+            // bottom:auto;
+            @include calc(left, "(100% - 860px) / 2");
 
+            // @include transform( translate(-50%, -50%) );
             position: absolute;
             top: 10%;
-            left: 20%;
             display: block;
             padding: 30px;
-            width: 60%;
+            max-width: 860px;
+            width: 100%;
             height: auto;
             background-color: #fff;
             box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
@@ -105,89 +111,118 @@
                     }
                 }
                 .checkgroup {
-                    // .group{
-                    @include clearfix;
+                    @include outer-container(100%);
 
-                    label {
-                        @include media(max-width 768px){
+                    .wrap{
+                        @include span-columns(4);
+                        @include media(max-width 992px){
+                            @include span-columns(12);
+
                             display:block;
+                            margin-right:0;
+                            margin-bottom:15px;
+                            text-align:left;
                         }
 
-                        position:static;
                         display:inline-block;
-                        margin-right: 60px;
-                        cursor: pointer;
-                        pointer-events: auto;
+                        // margin-right: 60px;
+                        vertical-align: top;
+                        text-align: center;
 
-                        .box {
-                            display: inline-block;
-                            width: 20px;
-                            height: 20px;
-                            border: solid 1px #979797;
-                            background-color: #fafafa;
-                            text-align: center;
-
-                            svg {
-                                visibility: hidden;
-                                margin-top: 2px;
-                                width: 19.6px;
-                                height: 12.5px;
-
+                        &:first-child{
+                            @include media(min-width 993px){
+                                text-align:left;
                             }
                         }
-                    }
-                    input[type="checkbox"] {
-                        display: none;
-                    }
-                    input[type="checkbox"]:checked + label {
-                        .box {
-                            svg {
-                                visibility: visible;
+                        &:last-child{
+                            margin-right:0
+                        }
+                        label {
+                            position:static;
+                            cursor: pointer;
+                            pointer-events: auto;
+
+                            .box {
+                                display: inline-block;
+                                width: 20px;
+                                height: 20px;
+                                border: solid 1px #979797;
+                                background-color: #fafafa;
+                                text-align: center;
+
+                                svg {
+                                    visibility: hidden;
+                                    margin-top: 2px;
+                                    width: 19.6px;
+                                    height: 12.5px;
+
+                                }
                             }
                         }
+                        input[type="checkbox"] {
+                            display: none;
+                        }
+                        input[type="checkbox"]:checked + label {
+                            .box {
+                                svg {
+                                    visibility: visible;
+                                }
+                            }
 
+
+                        }
+                        .name{
+                            margin-left: 12px;
+                            color: #777777;
+                            font-weight: 300;
+                            font-size: 16px;
+                            font-family: $base-font-family;
+                        }
 
                     }
-                    .name{
-                        margin-left: 12px;
-                        color: #777777;
-                        font-weight: 300;
-                        font-size: 16px;
-                        font-family: $base-font-family;
-                    }
-
-                    // }
                 }
                 .options{
                     @include media(max-width 1024px){
                         margin-top: 7px;
 
-                        // margin-left: 248px;
                     }
                     @include media(max-width 768px){
                         @include clearfix;
 
                         position: relative;
 
-                        // margin-left: 32px;
+                    }
+                    @include media(min-width 993px){
+                        position: relative;
+                        border-top:1px solid #e3e3e3;
+
+                        &:before{
+                            @include transform(translateX(-50%));
+
+                            position: absolute;
+                            top: -10px;
+                            left: 50%;
+                            width: 0;
+                            height: 0;
+                            border-right: 8px solid transparent;
+                            border-bottom: 10px solid #e3e3e3;
+                            border-left: 8px solid transparent;
+                            content: "";
+                        }
                     }
 
-                    position: absolute;
-                    // visibility: hidden;
                     display: none;
-                    // border-top: 1px solid #ccc;
                     margin-top:10px;
+                    padding-top:20px;
 
-                    // margin-left: 192px;
                     label{
                         @include media(max-width 768px){
                             position: relative;
-                            // @include clearfix;
                             display:inline-block;
                             margin-right: 15px;
                         }
 
-                        margin-right: 40px;
+                        margin-right: 20px;
                         text-align: left;
 
                         .box2{
@@ -214,8 +249,6 @@
                                 height: 36px;
                             }
                             .small-name{
-                                position: absolute;
-                                top: 60px;
                                 color: #999999;
                                 font-weight: 200;
                                 font-size: 12px;
@@ -356,7 +389,7 @@
                     cursor: pointer;
 
                     svg {
-                        margin-left: 42px;
+                        margin-left: 15px;
                         width: 43px;
                         height: 12px;
                         color: rgba(255,255,255,.8);
@@ -391,7 +424,7 @@
                         color: #fff;
 
                         .skewed{
-                            margin-left: 5px;
+                            margin-left: -8px;
 
                             span{
                                 display: block;

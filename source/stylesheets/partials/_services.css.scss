@@ -3,13 +3,16 @@
 }
 .what-we-do{
   @include clearfix;
+  @include media(min-width 1441px){
+    margin-right: auto;
+    margin-left: auto;
+    max-width:1440px;
+  }
 
   h2{
     @include media(max-width 768px){
       padding:0 20px;
-    }
-    @include media(max-width 460px){
-      font-size: 50px;
+      font-size: rem(32);
     }
 
     color: #243f53;
@@ -17,7 +20,7 @@
     font-weight: 900;
     font-style: normal;
     font-stretch: normal;
-    font-size: 60px;
+    font-size: rem(60);
     font-family: $heading-font-family;
     line-height: 1.17;
 
@@ -96,12 +99,22 @@
   @include media(max-width 768px){
     padding-top:0;
   }
+  @include media(min-width 1441px){
+    margin-right: auto;
+    margin-left: auto;
+    max-width:1440px;
+  }
 
   p{
     @include media(max-width 768px){
       margin-bottom: 30px;
       padding: 0 30px;
       width: 100%;
+    }
+    @include media(min-width 1441px){
+      padding: 0 118px;
+      max-width:1440px;
+      width:100%;
     }
 
     margin: 0 auto;
@@ -117,6 +130,11 @@
   h3{
     @include media(max-width 768px){
       padding:0 30px;
+      width:100%;
+    }
+    @include media(min-width 1441px){
+      padding: 0 118px;
+      max-width:1440px;
       width:100%;
     }
 
@@ -194,6 +212,15 @@
         background-color: #ffffff;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
         text-align: left;
+
+        h3{
+          padding-right:0;
+          padding-left:0;
+        }
+        p{
+          padding-right:0;
+          padding-left:0;
+        }
       }
       h3{
         @include media(max-width 768px){

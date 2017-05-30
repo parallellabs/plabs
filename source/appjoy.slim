@@ -1,7 +1,7 @@
 ---
 layout: parallex_layout
 ---
-- @title = "Appjoy Website Design | UX Design for finding mobile apps resources made fun"
+- @title = "Appjoy | UX Design for finding mobile apps resources made fun"
 - @description = "Case Study of designing a website to make finding resources for mobile apps fun."
 - @keyword = "mobile apps, mobile resources, mobile developers, event survey, travel booking"
 - @og_title = "Designing Appjoy Website for Mobile Apps Resources"
@@ -15,7 +15,7 @@ layout: parallex_layout
 
 / content
 
-.section.master-banner.casestudy.appjoy-banner
+.section.master-banner.casestudy.appjoy-banner.height-fix
   .overlay
     .banner-content
       h2.title
@@ -67,7 +67,7 @@ layout: parallex_layout
     |Material design is primarily associated with Android apps but the principles of Material design are very robust and can be applied to other platforms as well. Since the platform was all about apps and material design was new, we decided to give it a spin and use material design for the visual style of the website.
 
 .section.appjoy-cards
-  img src="images/appjoy/appjoy-collage.png" /
+  img src="images/appjoy/appjoy-collage.png" alt="Collage image"/
   / img.smartceo-center src="images/appjoy/aj-01.png" /
   / img.smartceo-center.PT-60 src="images/appjoy/aj-05.png" /
   / 
@@ -82,10 +82,10 @@ layout: parallex_layout
   
 .section.new-home-content.interfaces
   .content-section
-    h2
-      |Screens at glance<span class="border"></span>
+    / h2
+    /   |Screens at a glance<span class="border"></span>
     .sky-carousel#sky-carousel-3
-      img.laptop src="images/explara/mock.png"/
+      img.laptop src="images/explara/mock.png" alt="Mock image"/
       .sky-carousel-wrapper
         ul.sky-carousel-container
           li
@@ -122,11 +122,11 @@ layout: parallex_layout
       |Binay Tiwari, Founder
       
 .section.new-home-content.project-nav
-  a href="citrus.html"
+  a href="chai-point-app.html"
     .prev.box-shape
       .inside
-        |<span class="project-name">CITRUS</span>
-        |<span class="project-desc">Consumer Payments</span>
+        |<span class="project-name">Chai Point</span>
+        |<span class="project-desc">Food Tech</span>
     .box2.FL-l
       svg
         use xlink:href="images/svgs/iconset.svg#icon-left-arrow"
@@ -134,11 +134,11 @@ layout: parallex_layout
   .fancy-line
     |See more awesome stuff
   
-  a href="cricbet.html"
+  a href="citrus.html"
     .next.box-shape
       .inside
-        |<span class="project-name">SPORTSIE</span>
-        |<span class="project-desc">Live Cricket Prediction Game</span>
+        |<span class="project-name">Citrus</span>
+        |<span class="project-desc">Consumer Payments</span>
     .box2.FL-r
       svg
         use xlink:href="images/svgs/iconset.svg#icon-right-arrow"
@@ -154,5 +154,3 @@ layout: parallex_layout
 		a.btn.new.open-form href="javascript:void(0);"
 			.skewed.topaz
 				span Get in Touch
-
-= partial "layouts/main_form.slim"

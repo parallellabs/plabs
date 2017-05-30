@@ -85,19 +85,19 @@ $(document).ready(function(){
 		$('.height-fix').height(h);
 	}
 
-	// Form modal open
+	// modal open
 	$('.open-form').on('click', function(){
-		// $('.main-form').removeClass('back');
-		$('.main-form').addClass('openForm-model');
-		$(this).parents('html').addClass('overflow-H');
-		$(this).parents('body').addClass('overflow-H');
+    $(this).parents('body').addClass('overflow-H');
+    if($(this).parents('body').hasClass('overflow-H')){
+      $('.home').addClass('blur');
+  		$('.main-form').addClass('openForm-model');
+    }
 	});
 	// modal close
 	$('.close-form').on('click', function(){
+    $(this).parents('body').removeClass('overflow-H');
+    $('.home').removeClass('blur');
 		$('.main-form').removeClass('openForm-model');
-		$(this).parents('html').removeClass('overflow-H');
-		$(this).parents('body').removeClass('overflow-H');
-		// $('.main-form').addClass('back');
 	});
 
 	//  // Floating button
@@ -159,13 +159,13 @@ $(document).ready(function(){
 		reflectionAlpha: 0.35,
 		reflectionVisible: false,
 		reflectionSize: 70,
-		selectByClick: true
+		selectByClick: false
 	});
 
 	$('#sky-carousel-2').carousel({
 		itemWidth: 300,
 		itemHeight: 280,
-		distance: 30,
+		distance: 60,
 		slideSpeed: 0.75,
 		loop: true,
 		enableMouseWheel: false,
@@ -183,12 +183,14 @@ $(document).ready(function(){
 		reflectionAlpha: 0.35,
 		reflectionVisible: false,
 		reflectionSize: 70,
-		selectByClick: true
+		selectByClick: false
 	});
 
+var width = $(window).width();
+if(width > 769){
 	$('#sky-carousel-3').carousel({
-		itemWidth: 600,
-		itemHeight: 550,
+		itemWidth: 718,
+		itemHeight: 514,
 		distance: 250,
 		slideSpeed: 0.75,
 		loop: true,
@@ -207,7 +209,14 @@ $(document).ready(function(){
 		reflectionAlpha: 0.35,
 		reflectionVisible: false,
 		reflectionSize: 70,
-		selectByClick: true
+		selectByClick: false
 	});
+}else{
+		$('#sky-carousel-3').carousel({
+			itemWidth: 318,
+			itemHeight: 200,
+			distance: 50
+		});
+}
 
 })
