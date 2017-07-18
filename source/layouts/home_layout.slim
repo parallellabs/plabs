@@ -31,19 +31,18 @@ html.no-js lang="en"
     / link rel="stylesheet" href="stylesheets/vendors/animate.css"/
     link rel="stylesheet" href="stylesheets/all.css"/
     javascript:
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-47999745-2']);
-      _gaq.push(['_gat._forceSSL']);
-      _gaq.push(['_trackPageview']);
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-47999745-2', 'auto');
+      ga('send', 'pageview');
 
-      (function () {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-      })();
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'project popup',
+        eventAction: 'open',
+        eventLabel: window.location.href
+      });
+
+    script async="true" src='https://www.google-analytics.com/analytics.js' 
 
     javascript:
       (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
@@ -52,7 +51,7 @@ html.no-js lang="en"
     .wrapper.new.overflow-XH.home
       = partial "layouts/homeHeader.slim"
       == yield
-      
+
     = partial "layouts/main_form.slim"
     = partial "layouts/new_footer.slim"
     / jQuery
@@ -152,7 +151,7 @@ html.no-js lang="en"
           }
 
         }
-        
+
         // Instafeed call api to fetch latest image
         var userFeed = new Instafeed({
             // target: 'instagram',
@@ -210,7 +209,7 @@ html.no-js lang="en"
               //     nav:false
               //     }
               //   }
-              //   
+              //
               });
             }
           }
@@ -219,7 +218,7 @@ html.no-js lang="en"
         $(window).resize(mobile);
 
       });
-      
+
       // On load
       $(window).load(function(){
         $('.section.new-home-content.media .media-card .right #instafeed a').find('img').each(function(n, img) {
@@ -234,7 +233,7 @@ html.no-js lang="en"
           $(this).parents('.right').find('.img-box').css({'background': 'url(' + imgUrl1 + ') center center no-repeat'})
         });
       });
-      
+
       //Full story
     	window['_fs_debug'] = false;
     	window['_fs_host'] = 'www.fullstory.com';
@@ -251,4 +250,3 @@ html.no-js lang="en"
     	    d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
     	    ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
     	})(window,document,window['_fs_namespace'],'script','user');
-    	

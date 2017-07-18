@@ -1,1 +1,23 @@
-<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><title>6E3C0508-B405-404B-88C9-63F435B9267E</title><g fill="none" fill-rule="evenodd"><path fill-opacity=".01" fill="#009E5F" d="M0 0h40v40H0z"/><g stroke-width="3" stroke="#FFF"><path d="M11.5 19.363H35M5 9.167h30M5 29.559h30"/></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>6E3C0508-B405-404B-88C9-63F435B9267E</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Trash" transform="translate(-1008.000000, -3039.000000)">
+            <g id="Activity-Bar" transform="translate(360.000000, 2957.000000)">
+                <g id="Menu" transform="translate(648.000000, 82.000000)">
+                    <rect id="Bound" fill-opacity="0.01" fill="#009E5F" x="0" y="0" width="40" height="40"></rect>
+                    <g id="menu" transform="translate(5.000000, 9.166667)" stroke-width="3" stroke="#FFFFFF">
+                        <g id="Layer_1">
+                            <path d="M6.5,10.1960784 L30,10.1960784" id="Shape"></path>
+                            <path d="M0,0 L30,0" id="Shape"></path>
+                            <path d="M0,20.3921569 L30,20.3921569" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
