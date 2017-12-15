@@ -1,5 +1,26 @@
 // @import url(https://fonts.googleapis.com/css?family=Signika:400,600,700,300);
-@import url(https://cloud.typography.com/7064914/6579352/css/fonts.css);
+//@import url(https://cloud.typography.com/7064914/6579352/css/fonts.css);
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "beyond_the_mountains";
+    src: url("fonts/beyond_the_mountains.ttf");
+}
+
+@font-face{
+  font-weight: normal;
+  font-style: normal;
+  font-family: "ImogenAgnes";
+  src: url("fonts/ImogenAgnes.otf");
+}
+
+@include font-face("pfdindisplaypro-med", "./fonts/pfdindisplaypro-med");
+
+@import url(https://fonts.googleapis.com/css?family=Hind:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
+
+$pfdindisplaypro_med: "pfdindisplaypro-med";
 
 // html,
 // body {
@@ -11,9 +32,12 @@
 
 // Typography
 // $base-font-family: "Signika", sans-serif;
-$base-font-family: "Gotham Rounded SSm A", "Gotham Rounded SSm B";
-$heading-font-family: "Gotham SSm A", "Gotham SSm B";
+//$base-font-family: "Gotham Rounded SSm A", "Gotham Rounded SSm B";
+//$heading-font-family: "Gotham SSm A", "Gotham SSm B";
+$heading-font-family: "pfdindisplaypro-med", sans-serif;
 
+$secondary-font-family: "Hind", sans-serif;
+$base-font-family: "Oxygen", sans-serif;
 // Font Sizes
 $base-font-size: 1em;
 
@@ -21,6 +45,7 @@ $base-font-size: 1em;
 // Line height
 $base-line-height: 1.5;
 $heading-line-height: 1.2;
+$secondary-line-height: 1.5;
 
 // Other Sizes
 $base-border-radius: 3px;

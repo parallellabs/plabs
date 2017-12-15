@@ -54,7 +54,7 @@ html.no-js lang="en"
     = partial "layouts/homeHeader.slim"
 
     == yield
-    
+
     = partial "layouts/main_form.slim"
     = partial "layouts/new_footer.slim"
 
@@ -63,47 +63,13 @@ html.no-js lang="en"
     script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
     script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"
     script type="text/javascript" src="/javascripts/backbone_custom.js"
-    script type="text/javascript" src="javascripts/instafeed.min.js"
     script type="text/javascript" src="javascripts/owl.carousel.js"
     script type="text/javascript" src="javascripts/imagelightbox.min.js"
     script type="text/javascript" src="javascripts/imagelightbox_custom.js"
     script type="text/javascript" src="javascripts/career_form.js"
-    / script type="text/javascript" src="javascripts/all.js"
-    / script type="text/javascript" src="javascripts/retina.min.js"
-
-    javascript:
-        $(document).ready(function(){
-          // Instafeed call api to fetch latest image
-          var userFeed = new Instafeed({
-              // target: 'instagram',
-              get: 'user',
-              userId: 2056875725,
-              accessToken: '2056875725.544c1eb.6de846b2f804457fb3ecaef7c1fb1fe7',
-              clientId: '544c1ebae831472097a2eb3f266e6155',
-              limit: 6,
-              link: false,
-              resolution: 'standard_resolution',
-              sortBy: 'most-recent',
-              template: '<div class="colm"><img src="{{image}}"/></div>'
-          });
-          userFeed.run();
-
-        });
-        // calculating colm height to make last colm height same
-        //$(window).load(function(){
-            //var gridColmHeight = $('.grid .colm').height();
-            //console.log(gridColmHeight);
-            //$('.grid .colm:last-child').after('<div class="colm last"><div class="content"><span class="h2">Want to join our Team?</span><span></span></div></div>');
-            //$('.grid .colm.last').css({'height' : gridColmHeight});
-        //}).resize(function(){
-            //var gridColmHeight = $('.grid .colm').height();
-            //$('.grid .colm.last').css({'height' : gridColmHeight});
-        //});
-        
-
     script type="text/javascript" src="javascripts/all.js"
     script type="text/javascript" src="javascripts/retina.min.js"
-    
+
     javascript:
       // animation on scroll
       $(window).scroll(function(e) {
@@ -111,7 +77,7 @@ html.no-js lang="en"
           parallax();
         }
       });
-      
+
       function parallax(){
 
         if( $("#parallex_container").length > 0 ) {
@@ -131,7 +97,7 @@ html.no-js lang="en"
 
           plxBackground.css({'top': + (plxWindowTopToWindowTop * plxSpeed) + 'px', 'left': - (plxWindowTopToWindowTop * plxSpeedLeft) + 'px'});
         }
-        
+
         if( $("#parallex_container").length > 0 ) {
           var plxBackground = $(".yellow");
           var plxWindow = $("#parallex_container");
@@ -150,8 +116,8 @@ html.no-js lang="en"
           console.log(plxWindowTopToWindowTop * plxSpeed + 'px');
           plxBackground.css({'top': - (plxWindowTopToWindowTop * plxSpeed) + 'px', 'left': + (plxWindowTopToWindowTop * plxSpeedLeft) + 'px'});
         }
-      }  
-      
+      }
+
       //Fullstory
     	window['_fs_debug'] = false;
     	window['_fs_host'] = 'www.fullstory.com';
@@ -168,4 +134,3 @@ html.no-js lang="en"
     	    d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
     	    ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
     	})(window,document,window['_fs_namespace'],'script','user');
-    	

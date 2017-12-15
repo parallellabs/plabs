@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-weight: normal;
     font-style: normal;
     font-family: "bebas_neue_regularregular";
@@ -20,21 +20,7 @@
     url("fonts/bebasneue_bold-webfont.woff") format("woff"),
     url("fonts/bebasneue_bold-webfont.ttf") format("truetype"),
     url("fonts/bebasneue_bold-webfont.svg#bebas_neuebold") format("svg");
-}
-
-@font-face {
-    font-weight: normal;
-    font-style: normal;
-    font-family: "beyond_the_mountains";
-    src: url("fonts/beyond_the_mountains.ttf");
-}
-
-@font-face{
-  font-weight: normal;
-  font-style: normal;
-  font-family: "ImogenAgnes";
-  src: url("fonts/ImogenAgnes.otf");
-}
+} */
 
 $bebasN_B: "bebas_neuebold";
 $bebasN_R: "bebas_neue_regularregular";
@@ -46,7 +32,8 @@ body {
     font-size: $base-font-size;
     font-family: $base-font-family;
     line-height: $base-line-height;
-
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     // font-feature-settings: "kern", "liga", "pnum";
 }
 
@@ -59,8 +46,9 @@ h6 {
     margin: 0 0 $small-spacing;
     font-weight: 800;
     font-size: $base-font-size;
-    font-family: $heading-font-family;
+    font-family: $secondary-font-family;
     line-height: $heading-line-height;
+    font-weight: 600;
 }
 
 p {

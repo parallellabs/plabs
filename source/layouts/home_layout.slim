@@ -42,13 +42,13 @@ html.no-js lang="en"
         eventLabel: window.location.href
       });
 
-    script async="true" src='https://www.google-analytics.com/analytics.js' 
+    script async="true" src='https://www.google-analytics.com/analytics.js'
 
     javascript:
       (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
 
   body
-    .wrapper.new.overflow-XH.home
+    .wrapper.home
       = partial "layouts/homeHeader.slim"
       == yield
 
@@ -59,119 +59,170 @@ html.no-js lang="en"
     script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
     script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"
     script type="text/javascript" src="javascripts/backbone_custom.js"
-    script type="text/javascript" src="javascripts/instafeed.min.js"
-    script type="text/javascript" src="javascripts/jribbble.min.js"
+    / script type="text/javascript" src="javascripts/instafeed.min.js"
+    / script type="text/javascript" src="javascripts/jribbble.min.js"
     script type="text/javascript" src="javascripts/owl.carousel.js"
     / script type="text/javascript" src="javascripts/jquery.parallax.min.js"
-    script type="text/javascript" src="javascripts/jquery.dotdotdot.min.js"
+    / script type="text/javascript" src="javascripts/jquery.dotdotdot.min.js"
     / script type="text/javascript" src="javascripts/blazy.min.js"
     / script type="text/javascript" src="javascripts/jquery.lazyloadxt.extra.min.js"
+    script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.7/TweenMax.min.js"
+    script type="text/javascript" src="javascripts/imagesloaded.js"
+    script type="text/javascript" src="javascripts/masonry-3.1.4.js"
+    script type="text/javascript" src="javascripts/masonry.filter.js"
     script type="text/javascript" src="javascripts/all.js"
     script type="text/javascript" src="javascripts/retina.min.js"
     javascript:
       $(document).ready(function() {
 
-        var sync1 = $("#sync1");
-        var sync2 = $("#sync2");
+      var $layer_0 = $('.shape-red,.shape-9'),
+          $layer_1 = $('.shape-blue,.shape-6'),
+          $layer_2 = $('.shape-3,.shape-10'),
+          $x_axis  = $('.shape-4,.shape-8'),
+          $y_axis  = $('.shape-5,.shape-7'),
+          $container = $('.banner-section'),
+          container_w = $container.width(),
+          container_h = $container.height();
 
-        sync1.owlCarousel({
-          singleItem : true,
-          slideSpeed : 1000,
-          navigation: false,
-          pagination:false,
-          afterAction : syncPosition,
-          responsiveRefreshRate : 200,
-          afterInit : function(elm){
-            var activeElm = elm.find(".owl-item").eq(1);
-            activeElm.trigger("owl.jumpTo", 1).addClass("synced-show");
+      $('.banner-section').on('mousemove.parallax', function(event) {
+        var pos_x = event.pageX,
+            pos_y = event.pageY,
+            left  = 0,
+            top   = 0;
+
+        left = container_w / 2 - pos_x;
+        top  = container_h / 2 - pos_y;
+
+        TweenMax.to(
+          $x_axis,
+          1,
+          {
+            css: {
+              transform: 'translateX(' + (left * -0.3) + 'px)'
+            },
+            ease:Expo.easeOut,
+            overwrite: 'all'
+          });
+
+        TweenMax.to(
+          $y_axis,
+          1,
+          {
+            css: {
+              transform: 'translateY(' + (top * -0.3) + 'px)'
+            },
+            ease:Expo.easeOut,
+            overwrite: 'all'
+          });
+
+        TweenMax.to(
+          $layer_2,
+          1,
+          {
+            css: {
+              transform: 'translateX(' + left / 12 + 'px) translateY(' + top / 6 + 'px)'
+            },
+            ease:Expo.easeOut,
+            overwrite: 'all'
+          });
+
+        TweenMax.to(
+          $layer_1,
+          1,
+          {
+            css: {
+              transform: 'translateX(' + left / 8 + 'px) translateY(' + top / 4 + 'px)'
+            },
+            ease:Expo.easeOut,
+            overwrite: 'all'
+          });
+
+        TweenMax.to(
+          $layer_0,
+          1,
+          {
+            css: {
+              transform: 'translateY(' + (top * -0.2) + 'px)'
+            },
+            ease: Expo.easeOut,
+            overwrite: 'all'
           }
-        });
+        )
+      });
 
-        sync2.owlCarousel({
-          items : 5,
-          singleItem: true,
-          autoWidth: false,
-          //itemsDesktop      : [1199,10],
-          //itemsDesktopSmall     : [979,10],
-          itemsTablet       : [768,2],
-          itemsMobile       : [479,1],
-          pagination:false,
-          responsiveRefreshRate : 100,
-          afterInit : function(el){
-            el.find(".owl-item").eq(1).addClass("synced");
-          }
-        });
-        sync2.data('owlCarousel').reinit({
-            touchDrag  : false,
-            mouseDrag  : false
-        });
+      var self = $("#masonry");
 
-        function syncPosition(el){
-          var current = this.currentItem;
-          $("#sync1").find(".owl-item").removeClass("synced-show").eq(current).addClass("synced-show");
-          $("#sync2")
-            .find(".owl-item")
-            .removeClass("synced")
-            .eq(current)
-            .addClass("synced")
-          //if($("#sync2").data("owlCarousel") !== undefined){
-          //  center(current)
-        //  }
-        }
-
-        $("#sync2").on("click", ".owl-item", function(e){
-          // e.preventDefault();
-          var number = $(this).data("owlItem");
-          sync1.trigger("owl.jumpTo",number);
-        });
-
-        function center(number){
-          var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
-          var num = number;
-          var found = false;
-          for(var i in sync2visible){
-            if(num === sync2visible[i]){
-              var found = true;
-            }
-          }
-
-          if(found===false){
-            if(num>sync2visible[sync2visible.length-1]){
-              sync2.trigger("owl.goTo", num - sync2visible.length+2)
-            }else{
-              if(num - 1 === -1){
-                num = 0;
+      self.imagesLoaded(function () {
+          self.masonry({
+              gutterWidth: 0,
+              isAnimated: true,
+              itemSelector: ".item",
+              columnWidth: '.item-sizer',
+              transitionDuration: '0.8s',
+              hiddenStyle: {
+                opacity: 0,
+              },
+              visibleStyle: {
+                opacity: 1,
               }
-              sync2.trigger("owl.goTo", num);
-            }
-          } else if(num === sync2visible[sync2visible.length-1]){
-            sync2.trigger("owl.goTo", sync2visible[1])
-          } else if(num === sync2visible[0]){
-            sync2.trigger("owl.goTo", num-1)
+          });
+      });
+
+      $(".filters .btn-link").click(function(e) {
+          e.preventDefault();
+
+          $(".filters .btn-link").removeClass('active');
+          $(this).addClass('active');
+
+          var filter = $(this).attr("data-filter");
+
+          self.masonryFilter({
+              filter: function () {
+                  if (!filter) return true;
+                  $('#masonry').removeClass('hide');
+                  $('.filters').removeClass('open');
+                  return filter;
+              }
+          });
+      });
+
+      $(".filter-links a").click(function(e) {
+          e.preventDefault();
+
+          $('.filter-links a').removeClass('active');
+          var filter = $(this).attr("data-filter");
+
+          if(filter == "all-works")
+          {
+            $('.filters').removeClass('open');
+            $('#masonry').removeClass('hide');
+            self.masonryFilter({
+                filter: function () {
+                    if (!filter) return true;
+                    return '*';
+                }
+            });
           }
+          else{
+            $('.filters').addClass('open');
+            $('#masonry').addClass('hide');
+          }
+          $(this).addClass('active');
+      });
 
-        }
+        $(window).scroll(function() {
+          var scrollTop = $(this).scrollTop();
+          $(".shape").each(function(){
+            shapeTop = $(this).position().top + scrollTop;
+            shapeLeft = $(this).position().left;
+            $(this).css({"top": shapeTop});
+          });
 
-        // Instafeed call api to fetch latest image
-        var userFeed = new Instafeed({
-            // target: 'instagram',
-            get: 'user',
-            userId: 2056875725,
-            accessToken: '2056875725.544c1eb.6de846b2f804457fb3ecaef7c1fb1fe7',
-            clientId: '544c1ebae831472097a2eb3f266e6155',
-            limit: 1,
-            link: false,
-            resolution: 'standard_resolution',
-            sortBy: 'most-recent',
-            template: '<div class="right mobile"> <div class="img-box"></div><div id="instafeed"> <a target="_blank" href="{{link}}"><img src="{{image}}"/></a> </div></div><div class="left"><div class="logo-img"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svgs/iconset.svg#icon-Instagram_simple_icon"></use></svg></div> <div class="content"> <h2>{{caption}}</h2></div><a href="https://instagram.com/parallellabs/" target="_blank">Follow us on Instagram</a></div><div class="right"> <div class="img-box"></div><div id="instafeed"> <a target="_blank" href="{{link}}"><img src="{{image}}"/></a> </div></div>'
+      	});
 
-        });
-        userFeed.run();
-
-        $('.section.new-home-content.media .media-card .right a').find('img').each(function(n, img) {
-          var imgUrl = $(this).attr('src');
-          // console.log(imgUrl);
-          $(this).parents('.right').find('.img-box').css({'background': 'url(' + imgUrl + ') center center no-repeat'})
+        var vids = $("video");
+        $.each(vids, function(){
+               this.controls = false;
         });
 
         //carousel inisitialized
@@ -217,21 +268,6 @@ html.no-js lang="en"
         $(document).ready(mobile);
         $(window).resize(mobile);
 
-      });
-
-      // On load
-      $(window).load(function(){
-        $('.section.new-home-content.media .media-card .right #instafeed a').find('img').each(function(n, img) {
-          var imgUrl = $(this).attr('src');
-
-          $(this).parents('.right').find('.img-box').css({'background': 'url(' + imgUrl + ') center center no-repeat'})
-        });
-        // from dribble
-        $('.section.new-home-content.media .media-card .right #shots a').find('img').each(function(n1, img1) {
-          var imgUrl1 = $(this).attr('src');
-          // console.log(imgUrl1);
-          $(this).parents('.right').find('.img-box').css({'background': 'url(' + imgUrl1 + ') center center no-repeat'})
-        });
       });
 
       //Full story

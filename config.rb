@@ -33,9 +33,9 @@ page "/about.html", :layout => :new_layout
 ###
 
 # Automatic image dimensions on image_tag helper
-activate :automatic_image_sizes
+#activate :automatic_image_sizes
 
-activate :imageoptim
+#activate :imageoptim
 
 # Reload the browser automatically whenever files change
 configure :development do

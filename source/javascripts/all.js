@@ -12,6 +12,17 @@ $(document).ready(function(){
     e.preventDefault();
   });
 
+  $(window).scroll(function() {
+
+    var headerHeight = $('.top-navbar').outerHeight();
+
+    if ($(this).scrollTop() > 86){
+        $('.top-navbar').addClass("sticky");
+      }
+      else{
+        $('.top-navbar').removeClass("sticky");
+      }
+  });
 
 	// modal open
 	$('.open-form').on('click', function(){
@@ -109,54 +120,6 @@ $(document).ready(function(){
   }
   // image jump fix end
 
-    // // Floating button
-    // $(".button-floating").click(function() {
-    //     var $wrapper = $("#wrapper");
-    //
-    //     // if($wrapper.hasClass('available')){
-    //         if (!$wrapper.hasClass("button-floating-clicked"))
-    //         {
-    //             $wrapper.attr("class", "center available");
-    //             // $('.btn-overlay').hide();
-    //             $wrapper.toggleClass("button-floating-clicked-out");
-    //         }
-    //     // }
-    //
-    //     $wrapper.toggleClass("button-floating-clicked ");
-    //     // $('.btn-overlay').show();
-    //
-    //
-    //
-    //     // $(".button-sub").click(function() {
-    //     //     var color = $(this).data("color");
-    //
-    //     //     $wrapper.attr("class", "center button-floating-clicked button-floating-clicked-out");
-    //     //     $wrapper.addClass("button-sub-" + color + "-clicked");
-    //     // });
-    // });
-    //
-    // $('.btn-overlay').on('click', function(){
-    //     $('#wrapper').removeClass('available');
-    //     $('#wrapper').removeClass("button-floating-clicked");
-    // });
-
-
-    // parallex background effect
-    // $('#scene').parallax({
-    //   calibrateX: false,
-    //   calibrateY: true,
-    //   invertX: true,
-    //   invertY: true,
-    //   limitX: false,
-    //   limitY: false,
-    //   scalarX: 40,
-    //   scalarY: 40,
-    //   frictionX: 0.01,
-    //   frictionY: 0.015,
-    //   originX: 0.2,
-    //   originY: 0.2
-    // });
-
     // File input text append to button
     $( '.inputfile' ).each( function(){
 
@@ -184,38 +147,6 @@ $(document).ready(function(){
         .on( 'focus', function(){ $input.addClass( 'has-focus' ); })
         .on( 'blur', function(){ $input.removeClass( 'has-focus' ); });
     });
-
-    // Dribbble shots
-    $.jribbble.setToken('957e5172d18eca8e1fc96256a7c1d69a7a0e40e1c8c42babeb8f19d51eeab95c');
-
-    /*
-      Jribbble methods make ajax requests to the Dribbble API. When
-      the requests complete, a Promise is returned. Use `then` to take an action
-      on the response from the server.
-      */
-      $.jribbble.teams('parallellabs').shots({
-        'per_page': 1,
-        'sort': 'recent'
-      }).then(function(shots) {
-        var html = [];
-
-        shots.forEach(function(shot) {
-        // See the Dribbble docs for all available shot properties.
-        html.push('<a target="_blank" href="' + shot.html_url + '">');
-        html.push('<img src="' + shot.images.hidpi + '">');
-        html.push('</a>');
-        $('.dribbble .left .content h2').html(shot.title);
-        $('.dribbble .discription').html(shot.description);
-    });
-        $('.shots').html(html.join(''));
-     }); // end
-
- // ellipsis on trunkate line
-  // $(".media-card.small .discription").dotdotdot({
-  //   //  configuration goes here
-  //   ellipsis  : '... ',
-  //   wrap    : 'word'
-  // });
 
 
 }); // End ready
@@ -348,30 +279,6 @@ function parallax(){
   }
 }
 
-
-// ellipsis on trunkate line
-$(window).on("resize", function (){
-  $(".media-card.small .discription").dotdotdot({
-    //  configuration goes here
-    ellipsis  : '... ',
-    wrap    : 'word'
-  });
-}).resize();
-
-
-// floating button script on scroll displays
-// $(window).scroll(function() {
-// 	var target2 = $(".section").offset().top;
-// 	if ($(window).scrollTop() >= target2) {
-// 		$('#wrapper').addClass('available');
-//         // $('.btn-overlay').show();
-//
-//     }else{
-//       $('#wrapper').removeClass('available');
-//         // $('.btn-overlay').hide();
-//     }
-// });
-
 // Check whether view port visible or not
 (function(e){e.fn.visible=function(t,n,r){var i=e(this).eq(0),s=i.get(0),o=e(window),u=o.scrollTop(),a=u+o.height(),f=o.scrollLeft(),l=f+o.width(),c=i.offset().top,h=c+i.height(),p=i.offset().left,d=p+i.width(),v=t===true?h:c,m=t===true?c:h,g=t===true?d:p,y=t===true?p:d,b=n===true?s.offsetWidth*s.offsetHeight:true,r=r?r:"both";if(r==="both")return!!b&&m<=a&&v>=u&&y<=l&&g>=f;else if(r==="vertical")return!!b&&m<=a&&v>=u;else if(r==="horizontal")return!!b&&y<=l&&g>=f}})(jQuery)
 
@@ -387,11 +294,12 @@ $(window).on("resize", function (){
       }else{
         $("video").each(function(i, el) {
           // $(this)[0].load();
-          if ( $(this).visible(true) ) {
-            $(this)[0].play();
+          if ( $(el).visible(true) ) {
+            $(el)[0].play();
             // $(this).lazyLoadXT({show: true});
           } else {
-             $(this)[0].pause();
+            //console.log($(this).attr('id'));
+             $(el)[0].pause();
 
           }
         });

@@ -9,7 +9,6 @@
     padding-left: 40px;
     max-width: none;
   }
-
   position: absolute;
   top: 0;
   right: 0;
@@ -18,9 +17,84 @@
   padding: 16px 30px;
   max-width: none;
 
+  &.sticky.home-nav{
+    @include transition(all 0.9s ease);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.10);
+    padding: 6px 30px;
+
+    .logo{
+      top: 3px;
+
+      svg{
+
+        &.white{
+          .path1,.path3,.path7,.path8{
+            color: #243f53;
+          }
+          .path2,.path4,.path5,.path6{
+            color: #16c6c2;
+          }
+        }
+
+      }
+    }
+
+    .nav-right{
+      li{
+        a{
+          &.get-in-touch{
+            height: 40px;
+            line-height: 37px;
+          }
+        }
+      }
+      &.white li{
+        a{
+          color: #243f53;
+
+          &:hover,
+          &:active,
+          &:focus{
+            color:#16c6c2;
+            font-weight: 500;
+          }
+
+          &.get-in-touch{
+            border-color: #16c6c2;
+
+            &:hover{
+              background-color: #16c6c2;
+              color: #fff;
+
+              span{
+                color: #fff;
+              }
+            }
+
+          }
+        }
+      }
+    }
+    .nav-right{
+      &.white{
+        & ~ .sliding-panel-button{
+          color: #243f53;
+        }        
+      }
+    }
+  }
+
   .logo {
     float: left;
     max-width: 80px;
+    position: relative;
+    top: 5px;
 
     a {
       img,
@@ -31,6 +105,22 @@
         // max-width: 100%;
         width: 180px;
         height: 38px;
+
+        .path1,.path3,.path7,.path8{
+          color: #243f53;
+        }
+        .path2,.path4,.path5,.path6{
+          color: #16c6c2;
+        }
+
+        &.white{
+          .path1,.path3,.path7,.path8{
+            color: #fff;
+          }
+          .path2,.path4,.path5,.path6{
+            color: #fff;
+          }
+        }
       }
       &.white {
         svg {
@@ -48,24 +138,58 @@
         margin-right: 30px;
       }
       @include media(max-width 992px){
-        margin-right: 0px;
+        margin-right: 20px;
       }
 
       float: left;
       margin-right: 50px;
-      height: 38px;
-      line-height: 38px;
+      height: 48px;
+      line-height: 48px;
 
       &:last-child {
         margin-right: 10px;
       }
       a {
+
+        @include media(max-width 1440px){
+          font-size: 1.2rem;
+        }
         padding-bottom: 3px;
         color: #fff;
-        font-weight: 400;
-        font-size: $base-font-size;
-        font-size: rem(16);
-        font-family: $base-font-family;
+        font-size: 24px;
+        font-size: rem(24);
+        font-family: $secondary-font-family;
+        line-height: $secondary-line-height;
+
+        &.get-in-touch{
+          @include transition(all .3s ease-in-out);
+
+          @include media(max-width 1440px){
+            width: 170px;
+            font-size: 1.1rem;
+          }
+          position: relative;
+          top: 0;
+          width: 178px;
+          height: 48px;
+          border: solid 1px #16c6c2;
+          border-radius: 4px;
+          text-align: center;
+          font-size: 20px;
+          font-size: rem(20px);
+          font-family: $base-font-family;
+          line-height: 45px;
+
+          &:hover{
+            background-color: #16c6c2;
+            color: #fff;
+
+            span{
+              color: #fff;
+            }
+          }
+        }
+
 
         &.hiring {
           @include media($sm-mobile-devices) {
@@ -87,20 +211,10 @@
             line-height: normal;
           }
         }
-      }
-      span{
-        visibility: hidden;
 
-      }
-      &:hover,
-      &:active,
-      &:focus,
-      &.active{
-        span{
-          visibility: visible;
+        &:hover{
+          color: #16c6c2;
         }
-
-        // color:#243f53;
       }
     }
   }
@@ -198,7 +312,7 @@
           // width: 94px;
           // height: 35px;
           width: 180px;
-          height: 38px
+          height: 38px;
         }
       }
     }
@@ -208,20 +322,14 @@
       }
 
       li {
-        overflow: hidden;
 
-        // &:last-child {
-        //     width: 180px;
-        // }
         a {
           color: #243f53;
-          // font-family: GothamNarrow-Medium;
-          font-size: rem(16);
 
           &:hover,
           &:active,
           &:focus{
-            color:#243f53;
+            color:#16c6c2;
             font-weight: 500;
           }
           &.hiring {
@@ -259,9 +367,22 @@
             &:hover,
             &:active,
             &:focus{
-              color:#fff;
+              color:$blue;
               font-weight: 500;
               transition: 0.2s all ease-in;
+            }
+
+            &.get-in-touch{
+              border-color: #fff;
+
+              &:hover{
+                background-color: #fff;
+                color: $blue;
+
+                span{
+                  color: $blue;
+                }
+              }
             }
           }
         }
@@ -385,6 +506,7 @@
   outline: none;
   color: #243f53;
   cursor: pointer;
+  top: 5px;
 
   img {
     height: 1.3em;

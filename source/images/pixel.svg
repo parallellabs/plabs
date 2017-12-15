@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1258px" height="2492px" viewBox="0 0 1258 2492" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Pixel</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1178" height="2412" rx="134"></rect>
+        <filter x="-5.2%" y="-2.4%" width="110.4%" height="105.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="381" y="110" width="413" height="22" rx="11"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pixel" transform="translate(40.000000, 38.000000)">
+            <g id="Base_Outline">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <rect id="Base" fill="#222222" x="10" y="10" width="1158" height="2392" rx="128"></rect>
+            <rect id="Power_Button" fill="#FFFFFF" x="1174" y="796" width="14" height="150"></rect>
+            <rect id="Volume_Buttons" fill="#FFFFFF" x="1174" y="1041" width="14" height="300"></rect>
+            <circle id="Camera" fill="#444444" cx="238" cy="121" r="21"></circle>
+            <g id="Speaker">
+                <use fill="#383838" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <rect stroke="#262626" stroke-width="3" x="379.5" y="108.5" width="416" height="25" rx="12.5"></rect>
+            </g>
+            <rect id="Screen" fill="#000000" x="51" y="247" width="1080" height="1920"></rect>
+        </g>
+    </g>
+</svg>
