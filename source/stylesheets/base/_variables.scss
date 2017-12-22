@@ -7,6 +7,12 @@
     font-family: "beyond_the_mountains";
     src: url("fonts/beyond_the_mountains.ttf");
 }
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "PFDinDisplayPro-Thin";
+    src: url("fonts/PFDinDisplayPro-Thin.ttf");
+}
 
 @font-face{
   font-weight: normal;
@@ -38,6 +44,7 @@ $heading-font-family: "pfdindisplaypro-med", sans-serif;
 
 $secondary-font-family: "Hind", sans-serif;
 $base-font-family: "Oxygen", sans-serif;
+$din-thin: "PFDinDisplayPro-Thin", sans-serif;
 // Font Sizes
 $base-font-size: 1em;
 

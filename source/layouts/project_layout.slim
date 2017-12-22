@@ -1,0 +1,205 @@
+doctype 5
+html.no-js lang="en"
+  head
+    meta charset="utf-8"
+    meta content="IE=edge" http-equiv="X-UA-Compatible"
+    meta name="viewport" content="width=device-width, initial-scale=1" /
+    title
+      = "#{@title}"
+    meta content="#{@description}" name="description" /
+    meta content="#{@keyword}" name="keywords" /
+    / Open graph protocol
+    meta content="en_US" property="og:locale" /
+    meta content=" website" property="og:type" /
+    meta content="#{@og_title}" property="og:title" /
+    meta content="#{@og_description}" property="og:description" /
+    meta content="#{@og_url}" property="og:url" /
+    meta content="Parallel Labs" property="og:site_name" /
+    meta content="#{@og_image}" property="og:image" /
+    / Twitter Card
+    meta content="summary" name="twitter:card" /
+    meta content="#{@twitter_url}" name="twitter:url" /
+    meta content="#{@twitter_title}" name="twitter:title" /
+    meta content="#{@twitter_description}" name="twitter:description" /
+    meta content="#{@twitter_image}" name="twitter:image" /
+
+    link href="http://parallellabs.io/" rel="canonical" /
+    link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" /
+    link rel="stylesheet" href="/stylesheets/normalize.css"/
+    link href="https://fonts.googleapis.com/css?family=PT+Serif:400i" rel="stylesheet" /
+    link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/css/uikit.min.css"
+    link rel="stylesheet" href="vendor/lightbox-dist/css/lightbox.min.css"/
+    link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" /
+    link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" /
+    link rel="stylesheet" href="stylesheets/vendors/default_skin_variation.css"/
+    / link rel="stylesheet" href="stylesheets/vendors/aos.css"/
+    / link rel="stylesheet" href="stylesheets/vendors/animate.css"/
+    link rel="stylesheet" href="stylesheets/all.css"/
+    javascript:
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-47999745-2']);
+      _gaq.push(['_gat._forceSSL']);
+      _gaq.push(['_trackPageview']);
+
+      (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+
+    javascript:
+      (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
+
+  body
+    .wrapper.overflow-XH.main-layout
+      = partial "layouts/header.slim"
+      == yield
+
+    = partial "layouts/main_form.slim"
+    = partial "layouts/new_footer.slim"
+
+    / jQuery
+    script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"
+    script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
+    script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"
+    script type="text/javascript" src="javascripts/backbone_custom.js"
+    script type="text/javascript" src="javascripts/jquery.sky.carousel-1.0.2.min.js"
+    script type="text/javascript" src="vendor/lightbox-dist/js/lightbox.min.js"
+    / script type="text/javascript" src="javascripts/imagelightbox_custom.js"
+    / script type="text/javascript" src="javascripts/owl.carousel.js"
+    script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.7/TweenMax.min.js"
+    script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"
+    / script type="text/javascript" src="javascripts/jquery.parallax.min.js"
+    script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit.min.js"
+    script type="text/javascript" src="javascripts/projects.js"
+    script type="text/javascript" src="javascripts/all.js"
+    script type="text/javascript" src="javascripts/retina.min.js"
+    / script type="text/javascript" src="javascripts/aos.js"
+
+
+    javascript:
+      // if($(window).width() > 767)
+      //  {
+        //  $("#screen-slider").removeClass('owl-centered');
+         $("#screen-slider").owlCarousel({
+          navigation : true, // Show next and prev buttons
+          navigationText: [
+            '<svg class="icon-arrow-right2"><use xlink:href="images/svgs/iconset.svg#icon-angle-left"></svg>',
+            '<svg class="icon-arrow-right2"><use xlink:href="images/svgs/iconset.svg#icon-angle-right"></svg>'
+          ],
+          //  singleItem:true,
+           slideSpeed : 300,
+           paginationSpeed : 400,
+          //  autoPlay: 4000,
+         });
+       //}
+
+        $("#center-slider").owlCarousel({
+          nav: true, // Show next and prev buttons
+          navText: [
+          "<img src='images/svgs/owl-left-arrow.svg'/>","<img src='images/svgs/owl-right-arrow.svg'/>"
+          ],
+          items: 1,
+          center: true,
+           singleItem:true,
+           slideSpeed : 300,
+           dots: true,
+           pagination: true,
+           paginationSpeed : 400,
+           autoPlay: 4000,
+           loop: true
+           
+         });
+
+      $("#parsona-slider").owlCarousel({
+        navigation : true, // Show next and prev buttons
+        navigationText: [
+          '<svg class="icon-arrow-left2"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svgs/iconset.svg#icon-arrow-left2"></use></svg>',
+          '<svg class="icon-arrow-right2"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/svgs/iconset.svg#icon-arrow-right2"></use></svg>'
+        ],
+        slideSpeed : 800,
+        paginationSpeed : 400,
+        rewindNav:true,
+        singleItem:true,
+        autoHeight: true,
+        afterAction: function(el){
+          //remove class active
+          this
+          .$owlItems
+          .removeClass('p-active item-hide');
+
+          //add class hide
+          this
+          .$owlItems
+          .addClass('item-hide');
+
+          //add class active
+          this
+          .$owlItems
+          .eq(this.currentItem)
+          .removeClass('item-hide')
+          .addClass('p-active');
+         }
+      });
+
+
+      $("#owl-demo").owlCarousel({
+        navigation : true, // Show next and prev buttons
+        navigationText: [
+          '<svg class="icon-arrow-right2"><use xlink:href="images/svgs/iconset.svg#icon-angle-right"></svg>',
+          '<svg class="icon-arrow-right2"><use xlink:href="images/svgs/iconset.svg#icon-angle-left"></svg>'
+        ],
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem:true,
+        afterAction: function(el){
+          //remove class active
+          this
+          .$owlItems
+          .removeClass('active na');
+
+          //add class na
+          this
+          .$owlItems
+          .addClass('na');
+          //add class active
+          this
+          .$owlItems
+          .eq(this.currentItem)
+          .removeClass('na')
+          .addClass('active');
+         }
+        // "singleItem:true" is a shortcut for:
+        // items : 1,
+        // itemsDesktop : false,
+        // itemsDesktopSmall : false,
+        // itemsTablet: false,
+        // itemsMobile : false
+      });
+
+      lightbox.option({
+        'alwaysShowNavOnTouchDevices': true,
+        'fadeDuration': 400,
+        'fitImagesInViewport': true,
+        'resizeDuration': 400
+      });
+
+      //FullStory
+    	window['_fs_debug'] = false;
+    	window['_fs_host'] = 'www.fullstory.com';
+    	window['_fs_org'] = '43EWM';
+    	window['_fs_namespace'] = 'FS';
+    	(function(m,n,e,t,l,o,g,y){
+    	    if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return;}
+    	    g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+    	    o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+    	    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+    	    g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+    	    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+    	    g.clearUserCookie=function(c,d,i){if(!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')){
+    	    d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
+    	    ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
+    	})(window,document,window['_fs_namespace'],'script','user');
