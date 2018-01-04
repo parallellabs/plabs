@@ -42,21 +42,21 @@ $(document).ready(function(){
 	// 	e.preventDefault();
 	// });
 	// horizontal slide image script
-	$('#changeMe').on('mousedown', function(e){
-		var $dragable = $(this).parent(),
-		startWidth = $dragable.width(),
-		pX = e.pageX;
-		$(document).on('mouseup', function(e){
-			$(document).off('mouseup').off('mousemove');
-		});
-		$(document).on('mousemove', function(me){
-			var mx = (me.pageX - pX);
-                //var my = (me.pageY - pY);
-                $dragable.css({right: mx / 2,width: startWidth + mx,
-                //top: my
-            });
-        });
-	}); //end
+	// $('#changeMe').on('mousedown', function(e){
+	// 	var $dragable = $(this).parent(),
+	// 	startWidth = $dragable.width(),
+	// 	pX = e.pageX;
+	// 	$(document).on('mouseup', function(e){
+	// 		$(document).off('mouseup').off('mousemove');
+	// 	});
+	// 	$(document).on('mousemove', function(me){
+	// 		var mx = (me.pageX - pX);
+ //                //var my = (me.pageY - pY);
+ //                $dragable.css({right: mx / 2,width: startWidth + mx,
+ //                //top: my
+ //            });
+ //        });
+	// }); //end
 
 	// // input counter initialised
 	// var input = $("#projectBrief");
@@ -80,10 +80,10 @@ $(document).ready(function(){
 	// });
 
  	// resize banner for mobile
-	if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		var h = $('.height-fix').height();
-		$('.height-fix').height(h);
-	}
+	// if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	// 	var h = $('.height-fix').height();
+	// 	$('.height-fix').height(h);
+	// }
 
 	// modal open
 	$('.open-form').on('click', function(){
@@ -130,14 +130,63 @@ $(document).ready(function(){
   //       // $('#wrapper').removeClass('available');
   //       $('#wrapper').removeClass("button-floating-clicked");
   //   });
-
 		$("#screen-slider").owlCarousel({
 			navigation : false, // Show next and prev buttons
 			slideSpeed : 300,
 			paginationSpeed : 400,
-			singleItem:true,
+			responsive : {
+			    // breakpoint from 0 up
+			    0 : {
+			    	items: 1
+			    },
+
+			    768 : {
+					items: 3
+			    },
+
+			    1024 : {
+			    	items: 5
+			    }
+			}
 		});
 
+		$("#citrus-slider").owlCarousel({
+			navigation : false, // Show next and prev buttons
+			slideSpeed : 300,
+			paginationSpeed : 400,
+			responsive : {
+			    // breakpoint from 0 up
+			    0 : {
+			    	items: 1
+			    },
+
+			    768 : {
+					items: 3
+			    },
+
+			    1024 : {
+			    	items: 4
+			    }
+			}
+		});
+	
+
+		$("#boomer-sprint-slider").owlCarousel({
+			navigation : false, // Show next and prev buttons
+			slideSpeed : 300,
+			paginationSpeed : 400,
+			responsive : {
+			    // breakpoint from 0 up
+			    0 : {
+			    	items: 1,
+			    	autoPlay: true
+			    },
+
+			    768 : {
+					items: 3
+			    }
+			}
+		});
 
 		$("#center-slider").owlCarousel({
 			navigation : true, // Show next and prev buttons
@@ -149,11 +198,11 @@ $(document).ready(function(){
 		});
   
       $("#parallax-slider").owlCarousel({
-          nav : true, // Show next and prev buttons
+          nav : false, // Show next and prev buttons
           items: 1,
           slideSpeed : 300,
           paginationSpeed : 400,
-          autoPlay: 2000
+          autoPlay: true
        });
         
 

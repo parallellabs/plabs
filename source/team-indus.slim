@@ -17,8 +17,10 @@ layout: project_layout
 .section.master-banner.casestudy.team-indus-web-banner.height-fix
   .overlay
     .banner-content
-      h2.title
-        | The story of India’s first private space mission
+      span.project-name
+        |Team Indus
+      h2.title.team-indus-title
+        | Team Indus - The story of India’s first private space mission
       .members.team-indus
         .member
           |<img src="images/Robin.jpg" alt="Robin" />
@@ -28,17 +30,40 @@ layout: project_layout
         .member
           |<img src="images/Dinesh.jpg" alt="Dinesh" />
           |<span class="member-name">Dinesh</span>
-          |<span class="role">UI Design</span>
+          |<span class="role">UX/UI Design</span>
 
         .member
-          |<img src="images/Sreenath.jpg" alt="Chaitanya" />
+          |<img src="images/Juhi.jpg" alt="Juhi" />
+          |<span class="member-name">Juhi</span>
+          |<span class="role">UX Design</span>
+
+        .member
+          |<img src="images/Sreenath.jpg" alt="Sreenath" />
           |<span class="member-name">Sreenath</span>
           |<span class="role">UI Design</span>
 
         .member
+          |<img src="images/Sandhya.jpg" alt="Sandhya" />
+          |<span class="member-name">Sandhya</span>
+          |<span class="role">Content</span>
+
+        .member
           |<img src="images/rakesh.jpg" alt="Rakesh" />
           |<span class="member-name">Rakesh</span>
-          |<span class="role">Front-end Dev</span>
+          |<span class="role">Frontend Dev</span>
+
+
+.section.deliverables
+  .deliverables-wrap
+    div.deliverables-section
+      span.name Web
+      span Platforms
+    div.deliverables-section
+      span.name Strategy, UI, UX
+      span Deliverables
+    div.deliverables-section
+      |<a href="https://www.teamindus.in/?source=parallellabs" target="_blank"> View Product <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" version="1.1" fill="#21b4cb"><g id="surface1" fill="#21b4cb"><path style=" " d="M 12.21875 2.28125 L 10.78125 3.71875 L 18.0625 11 L 2 11 L 2 13 L 18.0625 13 L 10.78125 20.28125 L 12.21875 21.71875 L 21.21875 12.71875 L 21.90625 12 L 21.21875 11.28125 Z " fill="#21b4cb"/></g></svg></a>
+
 
 .section.new-home-content.casestudy-content
   p
@@ -59,7 +84,7 @@ layout: project_layout
   p
     |We worked closely with Team Indus, with the founder Rahul Narayan and Sheelika Ravishankar, holding workshops and sprints to enlighten the path forward. Through interviews and analyses, we were able to identify four key demographics to focus our effort on.
 
-    .img-wrap
+    .img-wrap.MB-60
       .img-badge
         img src="images/team-indus/patriot-guy@2x.png" alt="patriot"
         span
@@ -79,7 +104,7 @@ layout: project_layout
         span
           |Influencers
 
-  p.MB-60
+  p.MB-80
     |Every bit of the design process that would come after, would be with these four pillars in mind. We would need a strategy that would appeal to one and not put off another. Our content writer Sandhya Shankar had her hands full with stitching together a message that would interfere constructively with the audiences.
 
   p.quote
@@ -88,7 +113,7 @@ layout: project_layout
   p
     |Regarding the composition of the website, we took a content-first approach, never sacrificing what was said for visual extravagance. The Home page would layout in generalities the aspects of the mission, bequeathing the education for the inner pages.
 
-.section.fullwidth.MB-0
+.section.fullwidth.ti-collage
   img src="images/team-indus/group-20.jpg" alt="teamindus web"
 
 .section.fullwidth.team-indus-web-icons
@@ -132,9 +157,10 @@ layout: project_layout
 
 .section.new-home-content.casestudy-content
   p.MB-60
-    |If we were to educate the audience about the mission, we had to educate ourselves first. We conducted interviews with some of the leading scientists in the field such as. Despite the “whoosh” sounds in the beginning as they went over our heads, we managed to get a firm grasp of the concepts we were dealing with. In school, textbooks are best read when there are accompanying diagrams, so we followed suit. 
+    |Team Indus had a unique story to tell, one that could easily be dismissed as fictitious. A computer science guy stands up out of nowhere to lead a space mission? If that were true, the story could surely be used as inspiration fodder to lead the masses to aspire to something bigger. But it is true and it was not a story we could skimp on. 
 
-  img.MB-60 src="images/team-indus/group-5.jpg" alt="teamindus collage"
+  div.MB-60
+    |<video id="ti-video" class="b-lazy" autoplay="autoplay"  data-src="https://player.vimeo.com/external/249506440.hd.mp4?s=74ea9d1693e8704d41b9ab7c79e5301f8a191667&profile_id=174" src="https://player.vimeo.com/external/249506440.hd.mp4?s=74ea9d1693e8704d41b9ab7c79e5301f8a191667&profile_id=174" width="200"></video>
 
   p
     |There is a question which emerges from all of this—why do this in the first place? Executing the mission is going to cost much much more than the $20 million grand prize that is up for grabs. So, why? What Rahul Narayan is trying to achieve is to lay down the foundation for an entirely new industry the likes of which India has never seen. This is about inspiring a new generation to take up the mantle and usher in a new space age. 
@@ -144,25 +170,25 @@ layout: project_layout
   img src="images/team-indus/ika.png" alt="rover"
 
 
-.section.new-home-content.project-nav
-  a href="pinknblu.html"
-    .prev.box-shape
-      .inside
-        |<span class="project-name">Pink N Blu</span>
-        |<span class="project-desc">Parents App</span>
-    .box2.FL-l
-      svg
-        use xlink:href="images/svgs/iconset.svg#icon-left-arrow"
+/ .section.new-home-content.project-nav
+/   a href="pinknblu.html"
+/     .prev.box-shape
+/       .inside
+/         |<span class="project-name">Pink N Blu</span>
+/         |<span class="project-desc">Parents App</span>
+/     .box2.FL-l
+/       svg
+/         use xlink:href="images/svgs/iconset.svg#icon-left-arrow"
 
-  .fancy-line
-    |See more awesome stuff
+/   .fancy-line
+/     |See more awesome stuff
 
-  a href="treatr.html"
-    .next.box-shape
-      .inside
-        |<span class="project-name">TREATR</span>
-        |<span class="project-desc">DIGITAL GIFTING</span>
-    .box2.FL-r
-      svg
-        use xlink:href="images/svgs/iconset.svg#icon-right-arrow"
+/   a href="treatr.html"
+/     .next.box-shape
+/       .inside
+/         |<span class="project-name">TREATR</span>
+/         |<span class="project-desc">DIGITAL GIFTING</span>
+/     .box2.FL-r
+/       svg
+/         use xlink:href="images/svgs/iconset.svg#icon-right-arrow"
       

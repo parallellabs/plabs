@@ -54,7 +54,7 @@ html.no-js lang="en"
       (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
 
   body
-    .wrapper.overflow-XH.main-layout
+    .wrapper.main-layout
       = partial "layouts/header.slim"
       == yield
 
@@ -81,21 +81,21 @@ html.no-js lang="en"
 
 
     javascript:
-      // if($(window).width() > 767)
-      //  {
-        //  $("#screen-slider").removeClass('owl-centered');
-         $("#screen-slider").owlCarousel({
-          navigation : true, // Show next and prev buttons
-          navigationText: [
-            '<svg class="icon-arrow-right2"><use xlink:href="images/svgs/iconset.svg#icon-angle-left"></svg>',
-            '<svg class="icon-arrow-right2"><use xlink:href="images/svgs/iconset.svg#icon-angle-right"></svg>'
-          ],
-          //  singleItem:true,
-           slideSpeed : 300,
-           paginationSpeed : 400,
-          //  autoPlay: 4000,
-         });
-       //}
+      // if($(window).width() < 767)
+      // //  {
+      //   //  $("#screen-slider").removeClass('owl-centered');
+      //    $("#screen-slider").owlCarousel({
+      //     navigation : true, // Show next and prev buttons
+      //     navigationText: [
+      //       '<svg class="icon-arrow-right2"><use xlink:href="images/svgs/iconset.svg#icon-angle-left"></svg>',
+      //       '<svg class="icon-arrow-right2"><use xlink:href="images/svgs/iconset.svg#icon-angle-right"></svg>'
+      //     ],
+      //     //  singleItem:true,
+      //      slideSpeed : 300,
+      //      paginationSpeed : 400,
+      //     //  autoPlay: 4000,
+      //    });
+      //  }
 
         $("#center-slider").owlCarousel({
           nav: true, // Show next and prev buttons

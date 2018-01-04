@@ -12,17 +12,17 @@ $(document).ready(function(){
     e.preventDefault();
   });
 
-  $(window).scroll(function() {
+  // $(window).scroll(function() {
 
-    var headerHeight = $('.top-navbar').outerHeight();
+  //   var headerHeight = $('.top-navbar').outerHeight();
 
-    if ($(this).scrollTop() > 86){
-        $('.top-navbar').addClass("sticky");
-      }
-      else{
-        $('.top-navbar').removeClass("sticky");
-      }
-  });
+  //   if ($(this).scrollTop() > 86){
+  //       $('.top-navbar').addClass("sticky");
+  //     }
+  //     else{
+  //       $('.top-navbar').removeClass("sticky");
+  //     }
+  // });
 
 	// modal open
 	$('.open-form').on('click', function(){
@@ -89,24 +89,24 @@ $(document).ready(function(){
 	// }
 
   // background jump fix for mobile
-   var $w = $(window),
-    $background = $('.height-fix');
+   // var $w = $(window),
+   //  $background = $('.height-fix');
 
   // Fix background image jump on mobile
-  if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
-    $background.css({'top': 'auto', 'bottom': 0});
+  // if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+  //   $background.css({'top': 'auto', 'bottom': 0});
 
-    $w.resize(sizeBackground);
-    sizeBackground();
-  }
+  //   $w.resize(sizeBackground);
+  //   sizeBackground();
+  // }
 
-  if ((/iPad/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
-    //calculating height of section
-    var secheight = $('#first-section').height();
-    var newheight = secheight * 1.45;
-    // console.log(newheight);
-    $('#first-section').find('.bg-skewed').css({"height": newheight});
-  }
+  // if ((/iPad/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+  //   //calculating height of section
+  //   var secheight = $('#first-section').height();
+  //   var newheight = secheight * 1.45;
+  //   // console.log(newheight);
+  //   $('#first-section').find('.bg-skewed').css({"height": newheight});
+  // }
 
   // $w.resize(function(){
   //   var secheight = $('#first-section').height();
@@ -115,9 +115,9 @@ $(document).ready(function(){
   //   $('#first-section').find('.bg-skewed').css({"height": newheight});
   // })
 
-  function sizeBackground() {
-     $background.height(screen.height);
-  }
+  // function sizeBackground() {
+  //    $background.height(screen.height);
+  // }
   // image jump fix end
 
     // File input text append to button
@@ -280,7 +280,7 @@ function parallax(){
 }
 
 // Check whether view port visible or not
-(function(e){e.fn.visible=function(t,n,r){var i=e(this).eq(0),s=i.get(0),o=e(window),u=o.scrollTop(),a=u+o.height(),f=o.scrollLeft(),l=f+o.width(),c=i.offset().top,h=c+i.height(),p=i.offset().left,d=p+i.width(),v=t===true?h:c,m=t===true?c:h,g=t===true?d:p,y=t===true?p:d,b=n===true?s.offsetWidth*s.offsetHeight:true,r=r?r:"both";if(r==="both")return!!b&&m<=a&&v>=u&&y<=l&&g>=f;else if(r==="vertical")return!!b&&m<=a&&v>=u;else if(r==="horizontal")return!!b&&y<=l&&g>=f}})(jQuery)
+// (function(e){e.fn.visible=function(t,n,r){var i=e(this).eq(0),s=i.get(0),o=e(window),u=o.scrollTop(),a=u+o.height(),f=o.scrollLeft(),l=f+o.width(),c=i.offset().top,h=c+i.height(),p=i.offset().left,d=p+i.width(),v=t===true?h:c,m=t===true?c:h,g=t===true?d:p,y=t===true?p:d,b=n===true?s.offsetWidth*s.offsetHeight:true,r=r?r:"both";if(r==="both")return!!b&&m<=a&&v>=u&&y<=l&&g>=f;else if(r==="vertical")return!!b&&m<=a&&v>=u;else if(r==="horizontal")return!!b&&y<=l&&g>=f}})(jQuery)
 
 
  // var bLazy = new Blazy({

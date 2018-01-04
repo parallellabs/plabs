@@ -360,12 +360,13 @@
 
   &.new-home-content{
 
-    @include media(max-width 768px){
+    position: relative;
+    padding: 60px 0;
+    text-align: left;
+
+    @include media(max-width 800px){
       padding: 20px;
     }
-    position: relative;
-    padding: 60px;
-    text-align: left;
 
     .card {
       background-color: #fff;
