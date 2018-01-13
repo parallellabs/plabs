@@ -1,0 +1,266 @@
+.intro-section {
+	margin-left: 185px;
+	h1 {
+		font-family: $heading-font-family;
+		font-size: 72px;
+  	font-weight: 600;
+	  line-height: 1.08;
+	  letter-spacing: 2.1px;
+	  text-align: left;
+	  color: #2c4453;
+	  max-width: 725px;
+	  width: 100%;
+	  margin-bottom: 100px;
+	  margin-top: 150px;
+	}
+
+	p{
+	  font-family: $base-font-family;
+	  font-size: 22px;
+	  line-height: 1.64;
+	  letter-spacing: normal;
+	  text-align: left;
+	  font-weight: normal;
+	  color: #3f3f3f;
+	  max-width: 725px;
+	  width: 100%;
+	  margin-bottom: 64px;
+	}
+	ul {
+		display: inline-block;
+		width: 100%;
+		li{
+			float: left;
+			margin-right: 90px;
+
+			span{
+				display: block;
+				min-height: 96px;
+				max-width: 96px;
+			}
+			span.name{
+			  font-family: $base-font-family;
+			  font-size: 16px;
+			  font-weight: bold;
+			  line-height: normal;
+			  text-align: left;
+			  color: #243f53;
+			  max-width: 100%;
+			}
+		}
+	}
+}
+
+.project-section {
+	.borderline-box{
+		max-width: 1280px;
+		margin: 0 auto;
+		height: 90%;
+		// border: 2px solid transparent;
+		position: absolute;
+		top:50%;
+		transform: translateY(-50%);
+		right: 0;
+		left: 0;
+		bottom: 0;
+		z-index: -1;
+
+	&::before,
+  &::after {
+  	content: '';
+  	position: absolute;
+    // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+  }
+
+  // This covers the top & right borders (expands right, then down)
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  // And this the bottom & left borders (expands left, then up)
+  &::after {
+    top: 0;
+    left: 0;
+  }
+
+
+
+	&.draw {
+    transition: color 0.25s;
+
+		  // Hover styles
+		  &:before,
+		  &:after {
+		    width: 100%;
+		    height: 100%;
+		  }
+
+		  &:before {
+		    transition:
+		      width 0.5s ease-out, // Width expands first
+		      height 0.5s ease-out 0.5s; // And then height
+		  }
+
+		  // &:after {
+		  //   border-bottom-color: #66c5ec; // Make borders visible
+		  //   border-left-color: #66c5ec;
+		  //   transition:
+		  //     border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
+		  //     width 0.25s ease-out 0.5s, // And then exanding width
+		  //     height 0.25s ease-out 0.75s; // And finally height
+		  // }
+
+
+		  // Change colors
+		  // &:before {
+		  //   border-top-color: #66c5ec;
+		  //   border-right-color: #66c5ec;
+		  // }
+
+		  &:after {
+		    transition: // Animate height first, then width
+		      height 0.5s ease-out,
+		      width 0.5s ease-out 0.5s;
+		  }
+
+		  &.teamindus {
+			  &:before {
+			    border-top-color: #66c5ec; // Make borders visible
+			    border-right-color: #66c5ec;
+			    opacity: 0.15;
+			  }
+
+			  &:after {
+			    border-bottom-color: #66c5ec;
+			    border-left-color: #66c5ec;
+			    opacity: 0.15;
+			  	}
+		  }
+
+		  &.timoc {
+			  &:before {
+			    border-top-color: #56a3a0; // Make borders visible
+			    border-right-color: #56a3a0;
+			    opacity: 0.15;
+			  }
+
+			  &:after {
+			    border-bottom-color: #56a3a0;
+			    border-left-color: #56a3a0;
+			    opacity: 0.15;
+			  	}
+		  }
+
+		  &.boomer {
+			  &:before {
+			    border-top-color: #0019df; // Make borders visible
+			    border-right-color: #0019df;
+			    opacity: 0.15;
+			  }
+
+			  &:after {
+			    border-bottom-color: #0019df;
+			    border-left-color: #0019df;
+			    opacity: 0.15;
+			  	}
+		  }
+
+		  &.verloop {
+			  &:before {
+			    border-top-color: #df6600; // Make borders visible
+			    border-right-color: #df6600;
+			    opacity: 0.15;
+			  }
+
+			  &:after {
+			    border-bottom-color: #df6600;
+			    border-left-color: #df6600;
+			    opacity: 0.15;
+			  	}
+		  }
+
+		}
+	}
+	.left-mock{
+		display: table-cell;
+		width: 50%;
+		position: relative;
+		.colour-block{
+			  width: 669px;
+			  height: 100vh;
+			  opacity: 0.15;
+			  top:0;
+			  right: 0;
+			  left: 0;
+			  bottom: 0;
+			  z-index: -1;
+
+			  &.teamindus{
+			  background-color: #00aeff;
+			  }
+			  &.timoc{
+			  	background-color: #0d7170;
+			  }
+			  &.boomer {
+			  	background-color: #0642eb;
+			  }
+			  &.verloop{
+			  	background-color: #eb8706;
+			  }
+		}
+
+		img.bg {
+			position: absolute;
+			top: 180px;
+			left: 60px;
+		}
+
+		img.mock {
+			position: absolute;
+			z-index: 1;
+			left: 180px;
+			bottom: 70px;
+		}
+	}
+
+	.right-content {
+		display: table-cell;
+		width: 33%;
+		vertical-align: middle;
+		text-align: left;
+
+		h2{
+			max-width: 440px;
+			font-family: $heading-font-family;
+		  font-size: 36px;
+		  font-weight: normal;
+		  line-height: 1.22;
+		  text-align: left;
+		  color: #2f4454;
+		  margin-right: auto;
+		  margin-left: auto;
+		}
+
+		h2.name{
+			font-size: 28px;
+		  font-weight: 300;
+		  line-height: 1.57;
+		  color: #6f7d87;
+		}
+		p{
+		  font-size: 18px;
+		  font-weight: normal;
+		  line-height: 1.56;
+		  text-align: left;
+		  color: #3f3f3f;
+		  max-width: 440px;
+		  margin-right: auto;
+		  margin-left: auto;
+		}
+	}
+}
+

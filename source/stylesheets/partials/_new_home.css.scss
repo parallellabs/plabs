@@ -1193,6 +1193,18 @@
               line-height: 1;
             }
           }
+
+          .link {
+            font-size: 18px;
+            margin-top: 10px;
+            svg{
+              width: 18px;
+              height: 18px;
+              margin-left: 10px;
+              position: relative;
+              top: 5px;
+            }
+          }
         }
         &.mock-item{
 

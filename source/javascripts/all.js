@@ -284,28 +284,28 @@ function parallax(){
 
 
  // var bLazy = new Blazy({
- //  selector: 'video',
- //  success: function(ele){
+  // selector: 'video',
+  // success: function(ele){
       // Image has loaded
       // Do your business here
-    $(window).on("scroll touchmove", function(event) {
-      if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){
-          // nothing
-      }else{
-        $("video").each(function(i, el) {
-          // $(this)[0].load();
-          if ( $(el).visible(true) ) {
-            $(el)[0].play();
-            // $(this).lazyLoadXT({show: true});
-          } else {
-            //console.log($(this).attr('id'));
-             $(el)[0].pause();
+    // $(window).on("scroll touchmove", function(event) {
+    //   if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){
+    //       // nothing
+    //   }else{
+    //     $("video").each(function(i, el) {
+    //       // $(this)[0].load();
+    //       if ( $(el).visible(true) ) {
+    //         $(el)[0].play();
+    //         // $(this).lazyLoadXT({show: true});
+    //       } else {
+    //         //console.log($(this).attr('id'));
+    //          $(el)[0].pause();
 
-          }
-        });
-      }
-     });
- //    }
+    //       }
+    //     });
+    //   }
+    //  });
+    // }
  // });
 
 
@@ -338,3 +338,16 @@ function parallax(){
  jQuery(function(){
    jQuery.mark.jump();
  });
+
+//  var promise = document.querySelector('video').play();
+// console.log(promise);
+// if (promise !== undefined) {
+//   promise.then(_ => {
+//     // Autoplay started!
+//     console.log("started!");
+//   }).catch(error => {
+//     // Autoplay was prevented.
+//     // Show a "Play" button so that user can start playback.
+//     console.log("not playing");
+//   });
+// }

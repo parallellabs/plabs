@@ -34,6 +34,7 @@ html.no-js lang="en"
     link rel="stylesheet" href="stylesheets/vendors/default_skin_variation.css"/
     / link rel="stylesheet" href="stylesheets/vendors/aos.css"/
     / link rel="stylesheet" href="stylesheets/vendors/animate.css"/
+    link rel="stylesheet" href="stylesheets/lazyframe.css"/
     link rel="stylesheet" href="stylesheets/all.css"/
     javascript:
       var _gaq = _gaq || [];
@@ -77,6 +78,9 @@ html.no-js lang="en"
     script type="text/javascript" src="javascripts/projects.js"
     script type="text/javascript" src="javascripts/all.js"
     script type="text/javascript" src="javascripts/retina.min.js"
+    script type="text/javascript" src="javascripts/lazyframe.min.js"
+    / script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.7/jquery.lazy.min.js"
+    / script type="text/javascript" src="javascripts/scroll.js"
     / script type="text/javascript" src="javascripts/aos.js"
 
 
@@ -96,6 +100,12 @@ html.no-js lang="en"
       //     //  autoPlay: 4000,
       //    });
       //  }
+      // lazyframe('.lazyframe');
+      lazyframe('.lazyframe', {
+         apikey: undefined,
+         debounce: 250,
+         lazyload: true,
+      });
 
         $("#center-slider").owlCarousel({
           nav: true, // Show next and prev buttons

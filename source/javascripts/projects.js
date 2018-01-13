@@ -137,7 +137,8 @@ $(document).ready(function(){
 			responsive : {
 			    // breakpoint from 0 up
 			    0 : {
-			    	items: 1
+			    	items: 1,
+			    	autoplay: true
 			    },
 
 			    768 : {
@@ -157,7 +158,8 @@ $(document).ready(function(){
 			responsive : {
 			    // breakpoint from 0 up
 			    0 : {
-			    	items: 1
+			    	items: 1,
+			    	autoplay: true
 			    },
 
 			    768 : {
@@ -179,7 +181,7 @@ $(document).ready(function(){
 			    // breakpoint from 0 up
 			    0 : {
 			    	items: 1,
-			    	autoPlay: true
+			    	autoplay: true
 			    },
 
 			    768 : {
@@ -200,9 +202,9 @@ $(document).ready(function(){
       $("#parallax-slider").owlCarousel({
           nav : false, // Show next and prev buttons
           items: 1,
-          slideSpeed : 300,
-          paginationSpeed : 400,
-          autoPlay: true
+          slideSpeed : 200,
+          paginationSpeed : 200,
+          autoplay: true
        });
         
 

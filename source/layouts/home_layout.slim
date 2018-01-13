@@ -29,6 +29,7 @@ html.no-js lang="en"
     link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" /
     / link rel="stylesheet" href="stylesheets/vendors/owl.carousel.css"/
     / link rel="stylesheet" href="stylesheets/vendors/animate.css"/
+    link rel="stylesheet" href="stylesheets/jquery.fullpage.min.css"/
     link rel="stylesheet" href="stylesheets/all.css"/
     javascript:
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -48,7 +49,7 @@ html.no-js lang="en"
       (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
 
   body
-    .wrapper.home
+    .wrapper.home#fullpage
       = partial "layouts/homeHeader.slim"
       == yield
 
@@ -70,10 +71,79 @@ html.no-js lang="en"
     script type="text/javascript" src="javascripts/imagesloaded.js"
     script type="text/javascript" src="javascripts/masonry-3.1.4.js"
     script type="text/javascript" src="javascripts/masonry.filter.js"
+    script type="text/javascript" src="javascripts/jquery.fullpage.min.js"
     script type="text/javascript" src="javascripts/all.js"
     script type="text/javascript" src="javascripts/retina.min.js"
     javascript:
+
       $(document).ready(function() {
+
+        var colour_block = $('.colour-block');
+        var tl = new TimelineMax({delay:2});
+
+          $('#fullpage').fullpage({
+
+              //Scrolling
+              // css3: true,
+              scrollingSpeed: 700,
+              lockAnchors: false,
+              // fitToSectionDelay: 1000,
+              scrollBar: false,
+              easing: 'easeInOutCubic',
+              // easingcss3: 'ease',
+              // scrollOverflowReset: false,
+              // scrollOverflowOptions: null,
+              // touchSensitivity: 15,
+              // normalScrollElementTouchThreshold: 5,
+
+              //Accessibility
+              verticalCentered: true,
+              keyboardScrolling: true,
+              // animateAnchor: true,
+
+              //Design
+              // verticalCentered: true,
+              responsiveWidth: 992,
+              parallax: true,
+              parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+
+              //events
+              onLeave: function(index, nextIndex, direction){
+                TweenMax.to(colour_block, 0.5, {scale:1, x:0, ease:Power4.easeOut});
+                TweenMax.set('.borderline-box', {className:"-=draw"}, 5);
+              },
+              afterLoad: function(anchorLink, index){
+                // $(this).addClass('show-project');
+                    // TweenMax.to(
+                    //   $y_axis,
+                    //   1,
+                    //   {
+                    //     css: {
+                    //       transform: 'translateY(' + (top * -0.3) + 'px)'
+                    //     },
+                    //     ease:Expo.easeOut,
+                    //   });
+                    animateOnSectionLoad();
+              },
+              // afterRender: function(){},
+              // afterResize: function(){},
+              afterResponsive: function(isResponsive){}
+              // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+              // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+          });
+        
+        function animateOnSectionLoad(){
+            var activeSection = $('.section.active');
+                $( ".animation-element",activeSection).each(function(){
+                    var animationTarget = $(this);
+                    //run your gsap animation on  animationTarget variable
+                    // assumes of course you have class animation-element on tag being animated
+                    TweenMax.to(colour_block, 1, {scale:0.75, x:80, ease:Power4.easeOut});
+                    TweenMax.set('.borderline-box', {className:"+=draw"}, 1.5);
+                });
+      };
+         
 
       var $layer_0 = $('.shape-red,.shape-9'),
           $layer_1 = $('.shape-blue,.shape-6'),
@@ -268,6 +338,11 @@ html.no-js lang="en"
         $(document).ready(mobile);
         $(window).resize(mobile);
 
+
+
+        // if(section.hasClass('intro-section'){
+        //   $('.top-navbar.home-nav').show();
+        // }
       });
 
       //Full story

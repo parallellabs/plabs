@@ -1,3 +1,9 @@
+.team {
+  .title-block{
+    padding-top: 0;
+  }
+}
+
 .blur{
   @include filter(blur(10px));
 }

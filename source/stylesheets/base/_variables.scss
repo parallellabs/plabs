@@ -21,10 +21,10 @@
   src: url("fonts/ImogenAgnes.otf");
 }
 
-@include font-face("pfdindisplaypro-med", "./fonts/pfdindisplaypro-med");
-
-@import url(https://fonts.googleapis.com/css?family=Hind:300,400,600,700);
-@import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
+// @include font-face("pfdindisplaypro-med", "./fonts/pfdindisplaypro-med");
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,600,700');
+// @import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
 
 $pfdindisplaypro_med: "pfdindisplaypro-med";
 
@@ -40,10 +40,11 @@ $pfdindisplaypro_med: "pfdindisplaypro-med";
 // $base-font-family: "Signika", sans-serif;
 //$base-font-family: "Gotham Rounded SSm A", "Gotham Rounded SSm B";
 //$heading-font-family: "Gotham SSm A", "Gotham SSm B";
-$heading-font-family: "pfdindisplaypro-med", sans-serif;
+// $heading-font-family: "pfdindisplaypro-med", sans-serif;
+$heading-font-family: "Hind", sans-serif;
 
 $secondary-font-family: "Hind", sans-serif;
-$base-font-family: "Oxygen", sans-serif;
+$base-font-family: "Lato", sans-serif;
 $din-thin: "PFDinDisplayPro-Thin", sans-serif;
 // Font Sizes
 $base-font-size: 1em;

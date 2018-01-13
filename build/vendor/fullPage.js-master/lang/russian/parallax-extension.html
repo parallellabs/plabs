@@ -1,0 +1,129 @@
+<h1 id="section">Расширение параллакс</h1>
+
+<p><img alt="" src="https://cloud.githubusercontent.com/assets/1706326/23580315/f28edab4-00f6-11e7-90f9-81ffafd77b0e.gif" /></p>
+
+<p>Прочтите раздел <a href="https://github.com/alvarotrigo/fullPage.js#use-extensions">Использование расширений</a> перед использованием опции параллакс.
+- <a href="http://alvarotrigo.com/fullPage/extensions/parallax.html">Живое демо</a>
+- <a href="#Необходимая-html-структура">Необходимая HTML-структура</a>
+- <a href="#Добавление-фона">Добавление фона</a>
+- <a href="#Опции">Опции</a>
+  - <a href="#Эффекты-параллакс">Эффекты параллакс</a>
+- <a href="#Функции">Функции</a></p>
+
+<h2 id="html-">Необходимая HTML-структура</h2>
+<p>Чтобы использовать эффект параллакс в разделах и слайдах, необходимо добавить новый элемент с классом <code>fp-bg</code>. Это должен быть пустой <code>div</code>, который следует разместить как первый дочерний элемент раздела или слайда. Например:
+```html</p>
+<div class="fp-bg"></div>
+<p>```</p>
+
+<p>Это будет элемент, к которому вы должны будете добавить фон, вместо добавления его к разделу или слайдам, где он должен отобразиться.</p>
+
+<p>Например:
+```html</p>
+<div id="fullpage">
+    <div class="section" id="section1">
+        <div class="fp-bg"></div>
+        Слайд 1.1
+    </div>
+    <div class="section" id="section2">
+        <div class="slide" id="slide2-1">
+            <div class="fp-bg"></div>
+            Слайд 2.1
+        </div>
+        <div class="slide" id="slide2-2">
+            <div class="fp-bg"></div>
+            Слайд 2.2
+        </div>
+    </div>
+</div>
+<p>```</p>
+
+<p>Данную структуру можно увидеть в исходном коде <a href="http://alvarotrigo.com/fullPage/extensions/parallax.html">демо-страницы параллакс</a>.</p>
+
+<blockquote>
+  <p>Если по какой-либо причине вы не желаете добавлять новый элемент в вашу разметку, вы можете установить опцию <code>property</code> в <code>parallaxOptions</code> для <code>background</code>, чтобы применить эффект к фону текущего раздела или слайда.
+Как объясняется в параграфе Эффекты параллакс, я рекомендую делать это только в случае крайней необходимости, так как воспроизведение будет не таким, как при использовании элементов <code>fp-bg</code>.</p>
+</blockquote>
+
+<p><br /></p>
+
+<h2 id="section-1">Добавление фона</h2>
+<p>Фон должен добавляться к элементу <code>fp-bg</code> точно так же, как вы добавляли бы его к разделу или слайду.
+Вы можете использовать CSS или встроенные стили.</p>
+
+<p>Например:</p>
+
+<p><code>css
+#section1 .fp-bg{
+    background-image: url('imgs/alvaro-genious.jpg');
+    background-size: cover;
+    background-position: center 80%;
+}
+</code>
+## Опции</p>
+
+<p>| Опция  | Описание |
+| ————- | ————- |
+| <strong>parallax</strong>  | (по умолчанию: <code>false</code>). <a href="http://alvarotrigo.com/fullPage/extensions/">Расширение fullPage.js</a>. Определяет, будут ли использоваться эффекты параллакс для фона разделов / слайдов. |
+| <strong>parallaxOptions:</strong>   | (по умолчанию: <code>{ type: 'reveal', percentage: 62, property: 'translate'}</code>). Позволяет изменять параметры эффекта параллакс для фона при использовании опции  <code>parallax:true</code>.  |
+<br /></p>
+
+<h3 id="section-2">Эффекты параллакс</h3>
+<p>Вы можете увидеть их в действии <a href="http://alvarotrigo.com/fullPage/extensions/parallax.html">на демо-странице</a></p>
+
+<p>Описание изменяемых опций, доступных в <code>parallaxOptions</code>:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>parallaxOptions</th>
+      <th>Описание</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>type</strong></td>
+      <td>(по умолчанию: <code>reveal</code>) Возможные значения <code>cover</code> и <code>reveal</code>. Обеспечивает возможность выбрать, будет ли текущий раздел/слайд отображаться выше или ниже заданного. При использовании <code>cover</code> следующий раздел или слайд появится, закрывая часть текущего. Использование <code>reveal</code> произведёт обратный эффект и закроет часть заданного при его отображении.</td>
+    </tr>
+    <tr>
+      <td><strong>percentage</strong></td>
+      <td>(по умолчанию: 62 ) обеспечивает возможность определить процентное соотношение эффекта параллакс к окну просмотра. Меньшее значение даст меньший эффект параллакс, а значение 100, являющееся максимальным, даст полностью статичные фоны.</td>
+    </tr>
+    <tr>
+      <td><strong>property</strong></td>
+      <td>Определяет, применять ли эффект параллакс к элементу <code>fp-bg</code> или непосредственно к свойству фона раздела или слайда. Для этой опции рекомендуется использовать значение по умолчанию.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Обратите внимание, что использование элемента <code>fp-bg</code> обеспечивает лучшее воспроизведение, так как в этом случае используется аппаратное ускорение translate3d. Опция пригодится тем, кто по тем или иным причинам не желает добавлять элемент <code>fp-bg</code> в каждом разделе или слайде или просто не может изменить HTML-разметку.</p>
+
+<h2 id="section-3">Функции</h2>
+<p>Вы можете увидеть их в действии <a href="http://alvarotrigo.com/fullPage/extensions/parallax.html">на демо-странице</a></p>
+
+<h3 id="setoptionoptionname-">setOption(optionName, значение)</h3>
+<p>Устанавливает значение для данной опции. <code>optionName</code> может быть любой из опций, доступных в <code>parallaxOptions</code>. (<code>type</code>, <code>percentage</code> или <code>property</code>).
+```javascript
+//изменение значения для свойства <code>type</code>
+$.fn.fullpage.parallax.setOption('type', 'cover');</p>
+
+<p>//изменение значения для свойства <code>percentage</code>
+$.fn.fullpage.parallax.setOption('percentage', '30');
+```
+—</p>
+
+<h3 id="init">init()</h3>
+<p>Активирует эффект параллакс. Функция полезна, если вам необходимо активировать эффект в динамическом режиме в определённый момент.
+<code>javascript
+$.fn.fullpage.parallax.init();
+</code>
+—
+### destroy()
+Отключает эффект параллакс.
+<code>javascript
+$.fn.fullpage.parallax.destroy();
+</code></p>
