@@ -843,7 +843,7 @@ svg {
     /*max-width: 300px;*/
     margin: 0 auto;
     margin-bottom: 0;
-    padding-top: 20px;
+    margin-top: 20px;
     width: 100%;
 }
 input[type="text"],
@@ -852,23 +852,36 @@ textarea {
     display: block;
     margin: 0;
     padding: 10px 10px 10px 5px;
-    min-height: 120px;
+    min-height: 50px;
     width: 100%;
     border: none;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     // border: solid 1px #cccccc;
-    border-radius: 3px;
+    border-radius: 0;
     background-color: #fff;
     box-shadow: none;
     color: #5c5c5c;
-    font-size: 15px;
+    font-size: 28px;
+    box-shadow: none;
+    font-family: $heading-font-family;
+}
+textarea{
+  font-size: 22px;
+
+  &.autogrow-text{
+    overflow-y: hidden;
+
+    &.scroll{
+      overflow-y: auto;
+    }
+  }
 }
 input[type="text"]:focus,
 input[type="number"]:focus,
 textarea:focus {
     outline: none;
-    border:1px solid #16c6c2;
     box-shadow: none;
+
 }
 
 /* LABEL
@@ -879,7 +892,7 @@ textarea:focus {
     left: 5px;
     color: #999;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 18px;
     -webkit-transition: .2s ease all;
     -moz-transition: .2s ease all;
     transition: .2s ease all;
@@ -889,12 +902,8 @@ textarea:focus {
 /* ACTIVE STATE */
 input[type="text"]:focus ~ label,
 input[type="number"]:focus ~ label,
-input[type="text"]:valid ~ label,
-input[type="number"]:valid ~ label,
 textarea:focus ~ label {
-    top: 10px;
-    color: #16c6c2;
-    font-size: 12px;
+    top: -20px;
 }
 input[type="text"]:focus ~ label.active-input,
 input[type="number"]:focus ~ label.active-input,
@@ -905,8 +914,7 @@ textarea:valid ~ label.active-input {
     font-size: 18px;
 }
 .group .active-input {
-    top: 10px;
-    color: #ffc107;
+    top: -20px;
 }
 /* BOTTOM BARS
 ================================= */

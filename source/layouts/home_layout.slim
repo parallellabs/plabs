@@ -72,6 +72,7 @@ html.no-js lang="en"
     script type="text/javascript" src="javascripts/masonry-3.1.4.js"
     script type="text/javascript" src="javascripts/masonry.filter.js"
     script type="text/javascript" src="javascripts/jquery.fullpage.min.js"
+    script type="text/javascript" src="javascripts/autosize.min.js"
     script type="text/javascript" src="javascripts/all.js"
     script type="text/javascript" src="javascripts/retina.min.js"
     javascript:
@@ -132,7 +133,7 @@ html.no-js lang="en"
               // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
               // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
           });
-        
+
         function animateOnSectionLoad(){
             var activeSection = $('.section.active');
                 $( ".animation-element",activeSection).each(function(){
@@ -143,7 +144,7 @@ html.no-js lang="en"
                     TweenMax.set('.borderline-box', {className:"+=draw"}, 1.5);
                 });
       };
-         
+
 
       var $layer_0 = $('.shape-red,.shape-9'),
           $layer_1 = $('.shape-blue,.shape-6'),

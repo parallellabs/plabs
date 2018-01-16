@@ -28,15 +28,17 @@ $(document).ready(function(){
 	$('.open-form').on('click', function(){
     $(this).parents('body').addClass('overflow-H');
     if($(this).parents('body').hasClass('overflow-H')){
-      $('.home').addClass('blur');
+      //$('.home').addClass('blur');
   		$('.main-form').addClass('openForm-model');
+      $('.main-form .overlay').addClass('open');
     }
 	});
 	// modal close
 	$('.close-form').on('click', function(){
     $(this).parents('body').removeClass('overflow-H');
-    $('.home').removeClass('blur');
+    //$('.home').removeClass('blur');
 		$('.main-form').removeClass('openForm-model');
+    $('.main-form .overlay').removeClass('open');
 	});
 
   // if($(window).width() > 601){
@@ -148,6 +150,46 @@ $(document).ready(function(){
         .on( 'blur', function(){ $input.removeClass( 'has-focus' ); });
     });
 
+    // $('.autogrow-text').each(function(){
+    //   autosize(this);
+    // }).on('autosize:resized', function(){
+    //
+    //   // var formHeight = $(this).parents('.inner-box').height();
+    //   // var windowHeight = $(window).height();
+    //   // if( formHeight > windowHeight){
+    //   //   autosize(this);
+    //   //   $(this).css("height", "250px");
+    //   // }
+    //   // console.log($(this).parents('.inner-box').height());
+    //   // console.log('textarea height updated');
+    // });
+
+    var textarea = document.querySelector('.autogrow-text');
+
+    textarea.addEventListener('keydown', autosize);
+
+    function autosize(){
+      var el = this;
+      var formHeight = $(el).parents('.inner-box').outerHeight();
+      var windowHeight = $(window).height();
+      setTimeout(function(){
+        el.style.cssText = 'height:auto; padding:0';
+        el.style.cssText = 'height:' + el.scrollHeight + 'px';
+        // console.log(formHeight + ":" + windowHeight);
+        // if( formHeight <= windowHeight - 100){
+        //   el.style.cssText = 'height:auto; padding:0';
+        //   el.style.cssText = 'height:' + el.scrollHeight + 'px';
+        //   $(el).removeClass('scroll');
+        // }
+        // else {
+        //   el.style.cssText = 'height:' + el.scrollHeight + 'px';
+        //   $(el).addClass('scroll');
+        // }
+        // for box-sizing other than "content-box" use:
+        // el.style.cssText = '-moz-box-sizing:content-box';
+
+      },0);
+    }
 
 }); // End ready
 
@@ -351,3 +393,10 @@ function parallax(){
 //     console.log("not playing");
 //   });
 // }
+
+// var ta = document.querySelector('.autogrow-text');
+//
+// ta.addEventListener('autosize:resized', function(){
+//
+//   console.log('textarea height updated');
+// });

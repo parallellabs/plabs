@@ -12,22 +12,26 @@ var Workspace = Backbone.Router.extend({
 
   fnOne: function() {
     enquiries.set('currentPage', 1);
-    $('#thirdForm').parent().css({'z-index':'2', 'opacity':'0'});
+    $('#thirdForm').parent().css({'z-index':'2', 'opacity':'0'}).removeClass('animated fade-in');
     form.setElement('#firstForm');
-    $('#firstForm').parent().css({'z-index':'3', 'opacity':'1'}).addClass('animated zoomIn');
+    //$('#firstForm').parent().css({'z-index':'3', 'opacity':'1'});
+    setTimeout(800);
+    $('#firstForm').parent().css({'z-index':'3'}).addClass('animated fade-in');
   },
 
   fnTwo: function() {
       enquiries.set('currentPage', 2);
-      $('#firstForm').parent().css({'z-index':'2', 'opacity':'0'});
+      $('#firstForm').parent().css({'z-index':'2'}).removeClass('animated fade-in');
       form.setElement('#secondForm');
-      $('#secondForm').parent().css({'z-index':'3', 'opacity':'1'}).addClass('animated zoomIn');
+      setTimeout(800);
+      $('#secondForm').parent().css({'z-index':'3'}).addClass('animated fade-in');
   },
   fnThree: function() {
       enquiries.set('currentPage', 3);
-      $('#secondForm').parent().css({'z-index':'2', 'opacity':'0'});
+      $('#secondForm').parent().css({'z-index':'2'}).removeClass('animated fade-in');
+      //$('#secondForm').parent().css({'z-index':'2', 'opacity':'0'});
       form.setElement('#thirdForm');
-      $('#thirdForm').parent().css({'z-index':'3', 'opacity':'1'}).addClass('animated zoomIn');
+      $('#thirdForm').parent().css({'z-index':'3'}).addClass('animated fade-in');
   }
 
 });

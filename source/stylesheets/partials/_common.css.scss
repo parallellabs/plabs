@@ -148,3 +148,40 @@ video::-webkit-media-controls {
     }
   }
 }
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+  transition-delay: 0.9s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/* Effects */
+.overlay-up {
+	visibility: hidden;
+  -webkit-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
+	transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
+}
+
+.overlay-up.open {
+	visibility: visible;
+  -webkit-transform: translateY(0);
+	transform: translateY(0);
+	-webkit-transition: -webkit-transform 0.4s ease-in-out;
+	transition: transform 0.4s ease-in-out;
+  z-index: 1;
+}
