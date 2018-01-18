@@ -398,8 +398,8 @@
 
                 display: block;
                 max-width: 250px;
-                position: absolute;
-                bottom: -50px;
+                position: relative;
+                margin-top: 30px;
                 right: 0;
 
                 @include media(max-width 768px){
