@@ -886,6 +886,11 @@ textarea {
       -webkit-animation-iteration-count: 1;
       animation-iteration-count: 1;
     }
+
+    @include media(max-width 768px){
+      font-size: 18px;
+    }
+
 }
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px white inset!important;
@@ -899,6 +904,10 @@ textarea{
     &.scroll{
       overflow-y: auto;
     }
+  }
+
+  @include media(max-width 768px){
+    font-size: 18px;
   }
 }
 input[type="text"]:focus,
@@ -915,6 +924,10 @@ input[type="number"]:focus ~ label,
 textarea:focus ~ label {
     top: -20px;
     font-size: 18px;
+
+    @include media(max-width 768px){
+      font-size: 16px;
+    }
 }
 input[type="text"]:focus ~ label.active-input,
 input[type="number"]:focus ~ label.active-input,
@@ -924,6 +937,10 @@ input[type="number"]:valid ~ label.active-input,
 textarea:valid ~ label.active-input {
     font-size: 18px;
     top: -20px;
+
+    @include media(max-width 768px){
+      font-size: 16px;
+    }
 }
 
 /* LABEL
@@ -944,6 +961,10 @@ textarea:valid ~ label.active-input {
       pointer-events: none;
       opacity: 0.3;
       margin-bottom: 0;
+
+      @include media(max-width 768px){
+        font-size: 18px;
+      }
   }
   &.error{
     input[type="text"],

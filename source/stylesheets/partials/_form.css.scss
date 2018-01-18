@@ -113,6 +113,13 @@
                     font-family: $secondary-font-family;
                     line-height: 1.95;
                     letter-spacing: 1.2px;
+
+                    @include media(max-width 768px){
+                      font-size: 32px;
+                    }
+                    @include media(max-width 540px){
+                      font-size: 22px;
+                    }
                 }
                 h6 {
                     margin-bottom: 10px;
@@ -123,6 +130,10 @@
                     line-height: 1.42;
                     letter-spacing: 0.7px;
                     opacity: 0.6;
+
+                    @include media(max-width 540px){
+                      font-size: 20px;
+                    }
                 }
                 p {
                     color: $medium-gray;
@@ -147,6 +158,9 @@
                     @include outer-container(100%);
                     padding-bottom: 40px;
 
+                    @include media(max-width 768px){
+                      padding-bottom: 20px;
+                    }
                     .wrap{
                         @include span-columns(6);
                         @include omega(2n);
@@ -370,9 +384,10 @@
             .checkgroup{
                 @include media(max-width 768px){
                     height:auto !important;
+                    margin-top: 20px;
                 }
 
-                margin-top: 45px
+                margin-top: 45px;
             }
             .input{
                 margin-top: 30px;
@@ -560,8 +575,11 @@
 
                 @include media(max-width 768px){
                   font-size: 40px;
+                  text-align: center;
                 }
-
+                @include media(max-width 540px){
+                  font-size: 28px;
+                }
               }
               .action{
                 max-width: 100%;
