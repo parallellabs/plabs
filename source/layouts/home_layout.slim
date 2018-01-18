@@ -43,7 +43,7 @@ html.no-js lang="en"
         eventLabel: window.location.href
       });
 
-    script async="true" src='https://www.google-analytics.com/analytics.js'
+    script async="async" src='https://www.google-analytics.com/analytics.js'
 
     javascript:
       (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
@@ -56,24 +56,24 @@ html.no-js lang="en"
     = partial "layouts/main_form.slim"
 
     / jQuery
-    script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"
-    script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
-    script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"
-    script type="text/javascript" src="javascripts/backbone_custom.js"
+    script src="https://code.jquery.com/jquery-2.1.4.min.js"
+    script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
+    script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"
+    script src="javascripts/backbone_custom.js"
     / script type="text/javascript" src="javascripts/instafeed.min.js"
     / script type="text/javascript" src="javascripts/jribbble.min.js"
-    script type="text/javascript" src="javascripts/owl.carousel.js"
+    script src="javascripts/owl.carousel.js"
     / script type="text/javascript" src="javascripts/jquery.parallax.min.js"
     / script type="text/javascript" src="javascripts/jquery.dotdotdot.min.js"
     / script type="text/javascript" src="javascripts/blazy.min.js"
     / script type="text/javascript" src="javascripts/jquery.lazyloadxt.extra.min.js"
-    script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.7/TweenMax.min.js"
-    script type="text/javascript" src="javascripts/imagesloaded.js"
-    script type="text/javascript" src="javascripts/masonry-3.1.4.js"
-    script type="text/javascript" src="javascripts/masonry.filter.js"
-    script type="text/javascript" src="javascripts/jquery.fullpage.min.js"
-    script type="text/javascript" src="javascripts/all.js"
-    script type="text/javascript" src="javascripts/retina.min.js"
+    script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.7/TweenMax.min.js"
+    script src="javascripts/imagesloaded.js"
+    script src="javascripts/masonry-3.1.4.js"
+    script src="javascripts/masonry.filter.js"
+    script src="javascripts/jquery.fullpage.min.js"
+    script src="javascripts/all.js"
+    script src="javascripts/retina.min.js"
     / script type="text/javascript" src="javascripts/three.min.js"
     javascript:
 
@@ -147,7 +147,7 @@ html.no-js lang="en"
                     // assumes of course you have class animation-element on tag being animated
                     TweenMax.to(colour_block, 1, {scale:0.75, x:80, ease:Power4.easeOut});
                     TweenMax.to(center_box, 1, {scaleX:0.33, scaleY:0.12, x:176, opacity:0, ease:Power4.easeOut});
-                    TweenMax.to(('.cta a'), 1.2, { css:{'background': 'rgba(69,210,207,0.2)'}, ease:Power4.easeOut});
+                    TweenMax.to(('.cta a'), 1.2, { css:{'background': 'rgba(69,210,207,1)'}, ease:Power4.easeOut});
                     TweenMax.set('.project-section.active .borderline-box', {className:"+=draw"}, 1.5);
                     if($(window).width() <= 600){
                       TweenMax.to(colour_block, 1, {scale:0.9, x:-20, ease:Power4.easeOut});

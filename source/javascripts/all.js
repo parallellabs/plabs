@@ -12,6 +12,9 @@ $(document).ready(function(){
     e.preventDefault();
   });
 
+  if((navigator.userAgent.match(/iPad|iPhone/i)) && (navigator.userAgent.match(/iPad|iPhone/i)!= null)){
+          $('video').prop("controls",true);
+  }
   // $(window).scroll(function() {
 
   //   var headerHeight = $('.top-navbar').outerHeight();

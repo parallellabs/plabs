@@ -52,9 +52,9 @@ ga('send', {
           TweenMax.to(center_box, 1, {scale:1, x:-176, ease:Power4.easeOut});
           TweenMax.to(center_box, 1.2, {scale:1, x:-176, opacity:0.2, ease:Power4.easeOut});
           TweenMax.to(('.cta a'), 1, { css:{'background': 'transparent'}, ease:Power4.easeOut});
-          if($(window).width() >= 601){
+          //if($(window).width() >= 601){
           TweenMax.set('.project-section.active .borderline-box', {className:"-=draw"}, 5);
-          }
+
         },
         afterLoad: function(anchorLink, index){
           // $(this).addClass('show-project');
@@ -102,6 +102,12 @@ var $layer_0 = $('#threejs'),
     $container = $('.intro-section'),
     container_w = $container.width(),
     container_h = $container.height();
+    $container2 = $('.works'),
+    container2_w = $container.width(),
+    container2_h = $container.height();
+    $red = $('.red');
+    $blue = $('.blue');
+    $yellow = $('.yellow');
 
 $('.intro-section').on('mousemove.parallax', function(event) {
   var pos_x = event.pageX,
@@ -162,6 +168,49 @@ $('.intro-section').on('mousemove.parallax', function(event) {
     {
       css: {
         transform: 'translateY(' + (top * -0.2) + 'px)'
+      },
+      ease: Expo.easeOut,
+      overwrite: 'all'
+    }
+  )
+});
+$('.works').on('mousemove.parallax', function(event) {
+  var pos_x = event.pageX,
+      pos_y = event.pageY,
+      left  = 0,
+      top   = 0;
+
+  left = container2_w / 2 - pos_x;
+  top  = container2_h / 2 - pos_y;
+
+  TweenMax.to(
+    $red,
+    1,
+    {
+      css: {
+        transform: 'translateX(' + left / 24 + 'px) translateY(' + top / 28 + 'px) rotate(40deg)'
+      },
+      ease:Expo.easeOut,
+      overwrite: 'all'
+    });
+
+  TweenMax.to(
+    $blue,
+    1,
+    {
+      css: {
+        transform: 'translateX(' + left / -30 + 'px) translateY(' + top / 36 + 'px) rotate(60deg)',
+      },
+      ease:Expo.easeOut,
+      overwrite: 'all'
+    });
+
+  TweenMax.to(
+    $yellow,
+    1,
+    {
+      css: {
+        transform: 'translateY(' + (top / 40) + 'px) translateX('+ left / 40 + 'px)rotate(100deg)'
       },
       ease: Expo.easeOut,
       overwrite: 'all'
