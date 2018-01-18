@@ -9,25 +9,28 @@ var Workspace = Backbone.Router.extend({
     // "6":  "fnSixth"
 
   },
-
   fnOne: function() {
+    console.log('route changed');
     enquiries.set('currentPage', 1);
-    $('#thirdForm').parent().css({'z-index':'2', 'opacity':'0'});
+    $('.inner-box').css({'z-index':'2'}).removeClass('animated fade-in');
     form.setElement('#firstForm');
-    $('#firstForm').parent().css({'z-index':'3', 'opacity':'1'}).addClass('animated zoomIn');
+    //$('#firstForm').parent().css({'z-index':'3', 'opacity':'1'});
+    $('#firstForm').parent().css({'z-index':'3'}).addClass('animated fade-in');
   },
 
   fnTwo: function() {
+      console.log('route changed');
       enquiries.set('currentPage', 2);
-      $('#firstForm').parent().css({'z-index':'2', 'opacity':'0'});
+      $('.inner-box').css({'z-index':'2'}).removeClass('animated fade-in');
       form.setElement('#secondForm');
-      $('#secondForm').parent().css({'z-index':'3', 'opacity':'1'}).addClass('animated zoomIn');
+      $('#secondForm').parent().css({'z-index':'3'}).addClass('animated fade-in');
   },
   fnThree: function() {
       enquiries.set('currentPage', 3);
-      $('#secondForm').parent().css({'z-index':'2', 'opacity':'0'});
+      $('.inner-box').css({'z-index':'2'}).removeClass('animated fade-in');
+      //$('#secondForm').parent().css({'z-index':'2', 'opacity':'0'});
       form.setElement('#thirdForm');
-      $('#thirdForm').parent().css({'z-index':'3', 'opacity':'1'}).addClass('animated zoomIn');
+      $('#thirdForm').parent().css({'z-index':'3'}).addClass('animated fade-in');
   }
 
 });
@@ -62,7 +65,7 @@ var FormView = Backbone.View.extend({
     "click .send" :  "sendPage",
     "click .checkgroup": "clicked",
     "change input#files" :  "fileUpload",
-    "keyup .textField": "enterHandler"
+    "keyup .textField": "enterHandler",
   },
 
   model : enquiries,
@@ -84,12 +87,23 @@ var FormView = Backbone.View.extend({
        return check;
    },
 
-  // prevPage: function() {
-  //   var currentPage = this.model.get('currentPage');
-  //   console.log(currentPage - 1);
-  //   workspace.navigate('' + (currentPage - 1), {trigger : true});
-  //   $('.group .message').animate({"opacity": "+0"});
-  // },
+  prevPage: function() {
+    console.log('test');
+    this.modelUpdate();
+    var currentPage = this.model.get('currentPage');
+
+    if(currentPage == 2)
+    {
+      workspace.navigate('about-project',{trigger:true, replace: true});
+    }
+    else if(currentPage == 3)
+    {
+      workspace.navigate('personal-details',{trigger:true, replace: true});
+    }
+    else {
+
+    }
+  },
 
   nextPage: function(event) {
 
@@ -116,7 +130,7 @@ var FormView = Backbone.View.extend({
 
     if (this.shouldProceed()) {
       currentPage = currentPage + 1;
-      // workspace.navigate('' + (currentPage), {trigger : true});
+      workspace.navigate('' + (currentPage), {trigger : true});
 
       console.log(currentPage);
 
@@ -143,17 +157,20 @@ var FormView = Backbone.View.extend({
           // $('.group .message').animate({"opacity": "+0"});
           // $('#objective').css('border', '1px solid #757575');
           // return !!enquiries.get('objective');
+          $('#objective').parent().removeClass('error');
         }else{
           // $('.group .message').animate({"opacity": "+1"});
           // $('#objective').css('border', '1px solid #db4344');
+          $('#objective').addClass('animate');
+          $('#objective').parent().addClass('error');
         }
 
         if(!!enquiries.get('optionNone')){
-          $('#firstForm .message').animate({"opacity": "+0"});
+          //$('#firstForm .message').animate({"opacity": "+0"});
           $('#optionNone').css('border', '1px solid #757575');
           return !!enquiries.get('optionNone');
         }else{
-          $('#firstForm .message').animate({"opacity": "+1"});
+          //$('#firstForm .message').animate({"opacity": "+1"});
           $('#optionNone').css('border', '1px solid #db4344');
         }
 
@@ -167,44 +184,32 @@ var FormView = Backbone.View.extend({
         // }
 
         if(!!enquiries.get('attachLink')){
-          // $('.group .message').animate({"opacity":"+0"});
-          // $('#attachLink').css('border', '1px solid #757575');
-          // return !!enquiries.get('company');
+          //$('#attachLink').parent().removeClass('error');
         }else{
-          // $('.group .message').animate({"opacity":"+1"});
-          // $('#attachLink').css('border', '1px solid #db4344');
+          //$('#attachLink').parent().addClass('error');
         }
 
       },
       2: function() {
+        $('#secondForm input').removeClass('animate');
 
         if(!!enquiries.get('clientName')){
-          console.log(enquiries.get('clientName'));
-          $('#secondForm .message').animate({"opacity":"+0"});
-          $('#clientName').css('border', '1px solid #757575');
-          //return !!enquiries.get('name');
+          //$('#clientName').removeClass('animate');
+          $('#clientName').parent().removeClass('error');
         }else{
-          $('#secondForm .message').animate({"opacity":"+1"});
-          $('#clientName').css('border', '1px solid #db4344');
+          //$('#clientName').removeClass('animate');
+          $('#clientName').addClass('animate');
+          $('#clientName').parent().addClass('error');//.css('border', '1px solid #db4344');
+          return false;
         }
 
         if(!!enquiries.get('company')){
-          // console.log(enquiries.get('company'));
-          // $('#secondForm .message').animate({"opacity":"+0"});
-          // $('#company').css('border', '1px solid #757575');
-          // return !!enquiries.get('company');
+          $('#company').removeClass('animate');
+          $('#company').parent().removeClass('error');
         }else{
-          // $('#secondForm .message').animate({"opacity":"+1"});
-          // $('#company').css('border', '1px solid #db4344');
-        }
-
-        if(!!enquiries.get('mobileNumber')){
-          // $('.group .message').animate({"opacity":"+0"});
-          // $('#mobileNumber').css('border', '1px solid #757575');
-          // return !!enquiries.get('mobile');
-        }else{
-          // $('.group .message').animate({"opacity":"+1"});
-          // $('#mobileNumber').css('border', '1px solid #db4344');
+          $('#company').addClass('animate');
+          $('#company').parent().addClass('error');
+          return false;
         }
 
         var emailReg = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
@@ -214,44 +219,31 @@ var FormView = Backbone.View.extend({
 
 
         //mobile validation
-        var mobiReg = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
+        var mobiReg = /^(\+\d{1,3}[- ]?)?\d{10}$/;
         var mobile = enquiries.get('mobileNumber');
         // console.log(enquiries.get('mobile'));
 
-         // Check for mobile and email validation both should be true
-        // if(!!emailReg.test(mail) && !!mobiReg.test(mobile)) {
-        //   $('.group .message').animate({"opacity":"+1"});
-        //   $('#email').css('border', '1px solid #757575');
-        //   $('#mobileNumber').css('border', '1px solid #757575');
-        //   return !!enquiries.get('email');
-        //   return !!enquiries.get('mobile');
-        // }else{
-        //   $('.group .message').animate({"opacity":"+1"});
-        //   $('#email').css('border', '1px solid #db4344');
-        //   $('#mobileNumber').css('border', '1px solid #db4344');
-        // }
-
         // Check for email validation
         if(!!emailReg.test(mail) ){
-          // console.log(mail.value);
-          $('#secondForm .message').animate({"opacity": "+0"});
-          $('#email').css('border', '1px solid #757575');
-          validationFlag = true;
-          return !!enquiries.get('email');
+          $('#email').removeClass('animate');
+          $('#email').parent().removeClass('error');//.css('border', '1px solid #757575');
         }else{
-          $('#secondForm .message').animate({"opacity":"+1"});
-          $('#email').css('border', '1px solid #db4344');
-          // return false;
+          $('#email').addClass('animate');
+          $('#email').parent().addClass('error');//.css('border', '1px solid #db4344');
+          return false;
         }
-        // Check for mobile validation
-        // if(!!mobiReg.test(mobile)){
-        //   $('#mobileNumber').parents('.group').find('.message').animate({"opacity": "+0"});
-        //   $('#mobileNumber').css('border', '1px solid #757575');
-        //   // return !!enquiries.get('mobile');
-        // }else{
-        //   $('#mobileNumber').parents('.group').find('.message').animate({"opacity":"+1"});
-        //   $('#mobileNumber').css('border', '1px solid #db4344');
-        // }
+        //Check for mobile validation
+        //console.log(mobiReg.test(mobile));
+        if(!!mobile){
+          $('#mobileNumber').removeClass('animate');
+          $('#mobileNumber').parent().removeClass('error');
+        }else{
+          $('#mobileNumber').addClass('animate');
+          $('#mobileNumber').parent().addClass('error');
+          return false;
+        }
+
+        return true;
 
       },
       3: function() {
@@ -270,14 +262,14 @@ var FormView = Backbone.View.extend({
 
     if(validationFlag)
     {
+      $('.send').addClass('active');
       this.modelUpdate();
-      console.log(enquiries.attributes);
-    $.post( "http://205.186.143.136:5000/sendmail", enquiries.attributes )
-      // $.post( "http://localhost:5100/sendmail", enquiries.attributes )
-        .done(function( data ) {
-          console.log('Response: ', data );
-          // alert( "Message sent succesfully:" + data );
-        });
+      //console.log(enquiries.attributes);
+       $.post( "http://205.186.143.136:5000/sendmail", enquiries.attributes )
+      // // $.post( "http://localhost:5100/sendmail", enquiries.attributes )
+         .done(function( data ) {
+      //     console.log('Response: ', data );
+         });
     }
 
   },
@@ -319,6 +311,12 @@ var FormView = Backbone.View.extend({
         reader.readAsDataURL(file);
     });
     setTimeout(1000,enquiries.set('attachments', files));
+  },
+
+  openForm: function(event) {
+    console.log('clicked open form');
+    this.modelUpdate();
+    workspace.navigate('about-project',{trigger:true, replace: true});
   }
 
 });
@@ -328,9 +326,29 @@ $('.open-form').click(function(){
     var currentPage = enquiries.get('currentPage');
     currentPage = currentPage;
     console.log("on form open: " + currentPage);
-    if(currentPage == 1){
-      workspace.navigate('about-project',{trigger:true});
-    }
+    workspace.navigate('about-project',{trigger:true});
+    // if(currentPage == 1){
+    //   workspace.navigate('about-project',{trigger:true});
+    // }
+    // else if(currentPage == 2)
+    // {
+    //   workspace.navigate('personal-details',{trigger:true, replace: true});
+    //   // workspace.navigate('',{trigger:true, replace:true});
+    // }
+    // else
+    // {
+    //   workspace.navigate('thank-you',{trigger:true, replace: true});
+    //   // workspace.navigate('',{trigger:true, replace:true});
+    // }
+
+});
+
+$('.close-form').click(function(){
+    console.log('clicked open form');
+    var currentPage = enquiries.get('currentPage');
+    currentPage = currentPage;
+    console.log("on form open: " + currentPage);
+    workspace.navigate('',{trigger:true});
 });
 
 

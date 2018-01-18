@@ -301,7 +301,7 @@ svg {
 
 .overflow-H {
     position: relative;
-    overflow: hidden;
+    overflow: hidden!important;
     -webkit-overflow-scrolling: touch;
 }
 .overflow-XH {
@@ -838,63 +838,96 @@ svg {
 
 // Input style
 // -------------------------
-.group {
-    position: relative;
-    /*max-width: 300px;*/
-    margin: 0 auto;
-    margin-bottom: 0;
-    padding-top: 20px;
-    width: 100%;
+
+.group-wrapper{
+  .group {
+      position: relative;
+      /*max-width: 300px;*/
+      margin: 0 auto;
+      margin-bottom: 40px;
+      width: 100%;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+  }
 }
 input[type="text"],
 input[type="number"],
 textarea {
     display: block;
     margin: 0;
-    padding: 10px 10px 10px 5px;
-    min-height: 120px;
+    padding: 0;
+    min-height: 50px;
     width: 100%;
     border: none;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     // border: solid 1px #cccccc;
-    border-radius: 3px;
+    border-radius: 0;
     background-color: #fff;
     box-shadow: none;
     color: #5c5c5c;
-    font-size: 15px;
+    font-size: 28px;
+    box-shadow: none;
+    font-family: $heading-font-family;
+    text-indent: 8px;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+
+    &.animate{
+      -webkit-animation-name: wobble;
+      animation-name: wobble;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+
+    @include media(max-width 768px){
+      font-size: 18px;
+    }
+
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset!important;
+}
+textarea{
+  font-size: 22px;
+
+  &.autogrow-text{
+    overflow-y: hidden;
+
+    &.scroll{
+      overflow-y: auto;
+    }
+  }
+
+  @include media(max-width 768px){
+    font-size: 18px;
+  }
 }
 input[type="text"]:focus,
 input[type="number"]:focus,
 textarea:focus {
     outline: none;
-    border:1px solid #16c6c2;
     box-shadow: none;
-}
 
-/* LABEL
-======================================= */
-.group label {
-    position: absolute;
-    top: 10px;
-    left: 5px;
-    color: #999;
-    font-weight: normal;
-    font-size: 14px;
-    -webkit-transition: .2s ease all;
-    -moz-transition: .2s ease all;
-    transition: .2s ease all;
-    pointer-events: none;
 }
 
 /* ACTIVE STATE */
 input[type="text"]:focus ~ label,
 input[type="number"]:focus ~ label,
-input[type="text"]:valid ~ label,
-input[type="number"]:valid ~ label,
 textarea:focus ~ label {
-    top: 10px;
-    color: #16c6c2;
-    font-size: 12px;
+    top: -20px;
+    font-size: 18px;
+
+    @include media(max-width 768px){
+      font-size: 16px;
+    }
 }
 input[type="text"]:focus ~ label.active-input,
 input[type="number"]:focus ~ label.active-input,
@@ -903,11 +936,61 @@ input[type="text"]:valid ~ label.active-input,
 input[type="number"]:valid ~ label.active-input,
 textarea:valid ~ label.active-input {
     font-size: 18px;
+    top: -20px;
+
+    @include media(max-width 768px){
+      font-size: 16px;
+    }
 }
+
+/* LABEL
+======================================= */
+.group{
+  position: relative;
+
+  label {
+      position: absolute;
+      top: 10px;
+      left: 8px;
+      color: #2c4453;
+      font-weight: 300;
+      font-size: 24px;
+      -webkit-transition: .2s ease all;
+      -moz-transition: .2s ease all;
+      transition: .2s ease all;
+      pointer-events: none;
+      opacity: 0.3;
+      margin-bottom: 0;
+
+      @include media(max-width 768px){
+        font-size: 18px;
+      }
+  }
+  &.error{
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      border-color: #ff0000;
+    }
+
+    label{
+      color: #ff0000;
+      opacity: 0.3;
+    }
+
+    .bar:before,
+    .bar:after {
+      background-color: #ff0000;
+    }
+
+  }
+}
+
 .group .active-input {
-    top: 10px;
-    color: #ffc107;
+    top: -20px;
 }
+
+
 /* BOTTOM BARS
 ================================= */
 .bar {

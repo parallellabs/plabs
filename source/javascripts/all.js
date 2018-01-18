@@ -31,16 +31,101 @@ $(document).ready(function(){
 	$('.open-form').on('click', function(){
     $(this).parents('body').addClass('overflow-H');
     if($(this).parents('body').hasClass('overflow-H')){
-      $('.home').addClass('blur');
+      //$('.home').addClass('blur');
   		$('.main-form').addClass('openForm-model');
+      $('.main-form .overlay').addClass('open');
+      $('#firstBox').addClass('animated fade-in');
+
+      var objHeight = $(window).height() * 0.2;
+      $('#objective').css("max-height", objHeight + 'px');
+      // $('.inner-box').removeAttr('style');
+      // $('#firstBox').css({'z-index':'3'});
     }
 	});
 	// modal close
 	$('.close-form').on('click', function(){
     $(this).parents('body').removeClass('overflow-H');
-    $('.home').removeClass('blur');
+    $('.main-form .overlay').removeClass('open');
 		$('.main-form').removeClass('openForm-model');
+    $('.main-form .inner-box').removeClass('animated fade-in');
 	});
+
+  var detailsFlag = false;
+
+  if( $('#clientName').val().length > 0 && $('#email').val().length > 0)
+  {
+    detailsFlag = true;
+  }
+  else {
+    detailsFlag = false;
+  }
+
+  if(detailsFlag == true)
+  {
+    $('.send').addClass('active');
+  }
+  else {
+    $('.send').removeClass('active');
+  }
+
+  $('#secondForm input').on('blur keydown', function(){
+    var emailReg = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+    var mobiReg = /^(\+\d{1,3}[- ]?)?\d{10}$/;
+    var mail = $('#email').val();
+    var mobile = $('#mobileNumber').val();
+    if( $('#clientName').val().length > 0 && emailReg.test(mail) && mobile.length > 0 && $('#company').val().length > 0)
+    {
+      detailsFlag = true;
+    }
+    else {
+      detailsFlag = false;
+    }
+    if(detailsFlag == true)
+    {
+      $('.send').addClass('active');
+    }
+    else {
+      $('.send').removeClass('active');
+    }
+	});
+
+  var detailsFlagFirst = false;
+
+  if( $('#objective').val().length > 0 )
+  {
+    detailsFlagFirst = true;
+  }
+  else {
+    detailsFlagFirst = false;
+  }
+  var prjtCheckbox = $( "input[name='prjt_type']:checked" ).length;
+  $('#firstForm input,#firstForm textarea').on('change blur keyup', function(){
+    var prjtCheckbox = $( "input[name='prjt_type']:checked" ).length;
+    if( $('textarea#objective').val() != '' && prjtCheckbox > 0)
+    {
+      detailsFlagFirst = true;
+    }
+    else {
+      detailsFlagFirst = false;
+    }
+    if(detailsFlagFirst == true)
+    {
+      $('#firstForm .btn').addClass('active');
+    }
+    else {
+      $('#firstForm .btn').removeClass('active');
+    }
+});
+
+$('#firstForm input').on('focus', function(){
+  if( $('textarea#objective').val() != '')
+  {
+    $('#objective').parent().removeClass('error');
+  }
+  else {
+    $('#objective').parent().addClass('error');
+  }
+});
 
   // if($(window).width() > 601){
 
@@ -56,26 +141,18 @@ $(document).ready(function(){
 	});
 // }
 
-	// // input counter initialised
-	// var input = $("#projectBrief");
-	// // var label = $("#thirdForm .group span");
-	// var maxVal = 120;
-  //
-	// input.keyup(function() {
-  //   var inputLength = input.val().length;
-  //   var counter = $("#counter");
-  //
-  //   $("#counter").html("");
-  //   $("#counter").html(inputLength);
-  //
-  // 	// if ( inputLength >= maxVal ) {
-  // 	//   label.css("background-color", "#F3493D");
-  // 	//   label.css("color", "#F3493D");
-  // 	// } else {
-  // 	//   label.css("background-color", "#2A9AF2");
-  // 	//   label.css("color", "#999");
-  // 	// }
-  // });
+  $(".group input,.group textarea").on('keyup blur',function(){
+
+    var inputLength = $(this).val().length;
+    if(inputLength > 0)
+    {
+
+      $(this).parent().find('label').addClass('active-input');
+    }
+    else {
+      $(this).parent().find('label').removeClass('active-input');
+    }
+  });
 
   // Keep floating labels active when form inputs and textareas are not empty
   $('#apply_Form .group input, #apply_Form .group textarea').on('change', function() {
@@ -85,43 +162,6 @@ $(document).ready(function(){
         $(this).removeClass('not-empty');
     }
   });
-	// resize banner for mobile
-	// if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-	// 	var h = $('.height-fix').height();
-	// 	$('.height-fix').height(h);
-	// }
-
-  // background jump fix for mobile
-   // var $w = $(window),
-   //  $background = $('.height-fix');
-
-  // Fix background image jump on mobile
-  // if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
-  //   $background.css({'top': 'auto', 'bottom': 0});
-
-  //   $w.resize(sizeBackground);
-  //   sizeBackground();
-  // }
-
-  // if ((/iPad/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
-  //   //calculating height of section
-  //   var secheight = $('#first-section').height();
-  //   var newheight = secheight * 1.45;
-  //   // console.log(newheight);
-  //   $('#first-section').find('.bg-skewed').css({"height": newheight});
-  // }
-
-  // $w.resize(function(){
-  //   var secheight = $('#first-section').height();
-  //   var newheight = secheight * 1.4;
-  //   console.log(newheight);
-  //   $('#first-section').find('.bg-skewed').css({"height": newheight});
-  // })
-
-  // function sizeBackground() {
-  //    $background.height(screen.height);
-  // }
-  // image jump fix end
 
     // File input text append to button
     $( '.inputfile' ).each( function(){
@@ -149,6 +189,25 @@ $(document).ready(function(){
         $input
         .on( 'focus', function(){ $input.addClass( 'has-focus' ); })
         .on( 'blur', function(){ $input.removeClass( 'has-focus' ); });
+    });
+
+    $('textarea.autogrow-text').each(function () {
+      this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:auto;');
+    }).on('input', function () {
+
+      var formHeight = $(this).parents('.inner-box').outerHeight();
+      var windowHeight = $(window).height();
+      var scrollHeight = this.scrollHeight;
+      if(this.scrollHeight < 70)
+      {
+        this.style.height = 'auto';
+        this.style.height = '49px';
+      }
+      else {
+        this.style.height = 'auto';
+        this.style.height = (this.scrollHeight) + 'px';
+      }
+
     });
 
 
@@ -354,3 +413,10 @@ function parallax(){
 //     console.log("not playing");
 //   });
 // }
+
+// var ta = document.querySelector('.autogrow-text');
+//
+// ta.addEventListener('autosize:resized', function(){
+//
+//   console.log('textarea height updated');
+// });
