@@ -264,12 +264,12 @@ var FormView = Backbone.View.extend({
     {
       $('.send').addClass('active');
       this.modelUpdate();
-      console.log(enquiries.attributes);
-      // $.post( "http://205.186.143.136:5000/sendmail", enquiries.attributes )
+      //console.log(enquiries.attributes);
+       $.post( "http://205.186.143.136:5000/sendmail", enquiries.attributes )
       // // $.post( "http://localhost:5100/sendmail", enquiries.attributes )
-      //   .done(function( data ) {
+         .done(function( data ) {
       //     console.log('Response: ', data );
-      //   });
+         });
     }
 
   },
