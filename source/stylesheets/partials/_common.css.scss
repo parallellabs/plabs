@@ -39,18 +39,16 @@ video::-webkit-media-controls {
     padding-right: 22px;
     text-transform: uppercase;
     letter-spacing: 1.8px;
-    font-weight: 500;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 56px;
     font-size: rem(56px);
-    font-family: $pfdindisplaypro_med;
+    font-family: $heading-font-family;
     line-height: 1.29;
 
     span.bg-color{
       position: relative;
       display: inline-block;
       padding: 0 15px;
-      color: #fff;
 
       & > span{
         position: relative;
@@ -59,10 +57,10 @@ video::-webkit-media-controls {
 
       &.bg-color:before{
         position: absolute;
-        top: -4px;
+        top: 40px;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 48px;
         background-color: #16c6c2;
         content: '';
 
@@ -92,6 +90,7 @@ video::-webkit-media-controls {
     font-size: 24px;
     font-size: rem(24px);
     line-height: 1.5;
+    font-weight: normal;
   }
 
   .filter-links{
@@ -100,7 +99,7 @@ video::-webkit-media-controls {
       padding-top: 80px;
     }
     display: inline-block;
-    padding-top: 235px;
+    padding-top: 160px;
     padding-bottom: 24px;
     color: #16c6c2;
     font-size: 20px;

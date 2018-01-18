@@ -48,13 +48,13 @@ html.no-js lang="en"
     javascript:
       (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
 
-  body
-    .wrapper.home#fullpage
+  body.home
+    .wrapper.home
       = partial "layouts/homeHeader.slim"
       == yield
 
     = partial "layouts/main_form.slim"
-    = partial "layouts/new_footer.slim"
+
     / jQuery
     script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"
     script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
@@ -74,21 +74,24 @@ html.no-js lang="en"
     script type="text/javascript" src="javascripts/jquery.fullpage.min.js"
     script type="text/javascript" src="javascripts/all.js"
     script type="text/javascript" src="javascripts/retina.min.js"
+    / script type="text/javascript" src="javascripts/three.min.js"
     javascript:
 
       $(document).ready(function() {
 
         var colour_block = $('.colour-block');
         var tl = new TimelineMax({delay:2});
+        var center_box = $('.center-box');
 
-          $('#fullpage').fullpage({
+
+        $('#fullpage').fullpage({
 
               //Scrolling
               // css3: true,
               scrollingSpeed: 700,
               lockAnchors: false,
               // fitToSectionDelay: 1000,
-              scrollBar: false,
+              scrollBar: true,
               easing: 'easeInOutCubic',
               // easingcss3: 'ease',
               // scrollOverflowReset: false,
@@ -103,15 +106,18 @@ html.no-js lang="en"
 
               //Design
               // verticalCentered: true,
-              responsiveWidth: 992,
-              parallax: true,
-              parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
-
+              responsiveWidth: 1024,
+              responsiveHeight: 700,
 
               //events
               onLeave: function(index, nextIndex, direction){
                 TweenMax.to(colour_block, 0.5, {scale:1, x:0, ease:Power4.easeOut});
-                TweenMax.set('.borderline-box', {className:"-=draw"}, 5);
+                TweenMax.to(center_box, 1, {scale:1, x:-176, ease:Power4.easeOut});
+                TweenMax.to(center_box, 1.2, {scale:1, x:-176, opacity:0.2, ease:Power4.easeOut});
+                TweenMax.to(('.cta a'), 1, { css:{'background': 'transparent'}, ease:Power4.easeOut});
+                //if($(window).width() >= 601){
+                TweenMax.set('.project-section.active .borderline-box', {className:"-=draw"}, 5);
+
               },
               afterLoad: function(anchorLink, index){
                 // $(this).addClass('show-project');
@@ -140,21 +146,33 @@ html.no-js lang="en"
                     //run your gsap animation on  animationTarget variable
                     // assumes of course you have class animation-element on tag being animated
                     TweenMax.to(colour_block, 1, {scale:0.75, x:80, ease:Power4.easeOut});
-                    TweenMax.set('.borderline-box', {className:"+=draw"}, 1.5);
+                    TweenMax.to(center_box, 1, {scaleX:0.33, scaleY:0.12, x:176, opacity:0, ease:Power4.easeOut});
+                    TweenMax.to(('.cta a'), 1.2, { css:{'background': 'rgba(69,210,207,0.2)'}, ease:Power4.easeOut});
+                    TweenMax.set('.project-section.active .borderline-box', {className:"+=draw"}, 1.5);
+                    if($(window).width() <= 600){
+                      TweenMax.to(colour_block, 1, {scale:0.9, x:-20, ease:Power4.easeOut});
+                    }
+                    TweenMax.to(center_box, 1, {scaleX:0.33, scaleY:0.12, x:176, ease:Power4.easeOut});
                 });
       };
 
 
-      var $layer_0 = $('.shape-red,.shape-9'),
-          $layer_1 = $('.shape-blue,.shape-6'),
-          $layer_2 = $('.shape-3,.shape-10'),
-          $x_axis  = $('.shape-4,.shape-8'),
-          $y_axis  = $('.shape-5,.shape-7'),
-          $container = $('.banner-section'),
+      var $layer_0 = $('#threejs'),
+          $layer_1 = $('.parallaxbox-1'),
+          $layer_2 = $('.parallaxbox-2'),
+          $x_axis  = $('#x-axis'),
+          $y_axis  = $('#y-axis'),
+          $container = $('.intro-section'),
           container_w = $container.width(),
           container_h = $container.height();
+          $container2 = $('.works'),
+          container2_w = $container.width(),
+          container2_h = $container.height();
+          $red = $('.red');
+          $blue = $('.blue');
+          $yellow = $('.yellow');
 
-      $('.banner-section').on('mousemove.parallax', function(event) {
+      $('.intro-section').on('mousemove.parallax', function(event) {
         var pos_x = event.pageX,
             pos_y = event.pageY,
             left  = 0,
@@ -190,7 +208,7 @@ html.no-js lang="en"
           1,
           {
             css: {
-              transform: 'translateX(' + left / 12 + 'px) translateY(' + top / 6 + 'px)'
+              transform: 'translateX(' + left / 12 + 'px) translateY(' + top / 6 + 'px) rotate(40deg)'
             },
             ease:Expo.easeOut,
             overwrite: 'all'
@@ -201,7 +219,7 @@ html.no-js lang="en"
           1,
           {
             css: {
-              transform: 'translateX(' + left / 8 + 'px) translateY(' + top / 4 + 'px)'
+              transform: 'translateX(' + left / 8 + 'px) translateY(' + top / 4 + 'px) rotate(60deg)',
             },
             ease:Expo.easeOut,
             overwrite: 'all'
@@ -219,6 +237,57 @@ html.no-js lang="en"
           }
         )
       });
+      $('.works').on('mousemove.parallax', function(event) {
+        var pos_x = event.pageX,
+            pos_y = event.pageY,
+            left  = 0,
+            top   = 0;
+
+        left = container2_w / 2 - pos_x;
+        top  = container2_h / 2 - pos_y;
+
+        TweenMax.to(
+          $red,
+          1,
+          {
+            css: {
+              transform: 'translateX(' + left / 24 + 'px) translateY(' + top / 28 + 'px) rotate(40deg)'
+            },
+            ease:Expo.easeOut,
+            overwrite: 'all'
+          });
+
+        TweenMax.to(
+          $blue,
+          1,
+          {
+            css: {
+              transform: 'translateX(' + left / -30 + 'px) translateY(' + top / 36 + 'px) rotate(60deg)',
+            },
+            ease:Expo.easeOut,
+            overwrite: 'all'
+          });
+
+        TweenMax.to(
+          $yellow,
+          1,
+          {
+            css: {
+              transform: 'translateY(' + (top / 40) + 'px) translateX('+ left / 40 + 'px)rotate(100deg)'
+            },
+            ease: Expo.easeOut,
+            overwrite: 'all'
+          }
+        )
+      });
+
+       /*$( "#cta-wrap" ).mouseenter(function() {
+        TweenMax.to(center_box, 1.2, {scaleX:0.33, scaleY:0.12, x:176, opacity:0, ease:Power4.easeOut});
+
+      });
+      $( "#cta-wrap" ).mouseleave(function() {
+        TweenMax.to(center_box, 1, {scale:1, x:-176, opacity:0.2, ease:Power4.easeOut});
+      }); */
 
       var self = $("#masonry");
 
@@ -344,6 +413,7 @@ html.no-js lang="en"
         //   $('.top-navbar.home-nav').show();
         // }
       });
+
 
       //Full story
     	window['_fs_debug'] = false;

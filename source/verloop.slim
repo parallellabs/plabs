@@ -2,16 +2,16 @@
 layout: project_layout
 ---
 - @title = "Verloop | AI based Live Chat Platform for a Y-Combinator Startup"
-- @description = "Case Study of designing website for making discovery of local experiences on the go simpler."
-- @keyword = "Booking, event management, Bookmyshow, event survey, travel booking"
-- @og_title = "Designing Explara Website"
-- @og_description = "Case Study of designing website for making discovery of local experiences on the go simpler."
-- @og_url = "http://parallellabs.io/zippr.html"
-- @og_image = "http://parallellabs.io/images/workpage_images/Explara_web2.png"
-- @twitter_title = "Designing Team Indus"
-- @twitter_description = "Case Study of designing website for making discovery of local experiences on the go simpler."
-- @twitter_url = "http://parallellabs.io/zippr.html"
-- @twitter_image = "http://parallellabs.io/images/workpage_images/Explara_web2.png"
+- @description = "Case Study of designing user interface for AI based live chat platform."
+- @keyword = "UX Design for Live chat, chat bot design, AI chat bot design"
+- @og_title = "Designs for AI based Chat Bot"
+- @og_description = "Case Study of designing user interface for AI based live chat platform."
+- @og_url = "http://parallellabs.io/verloop.html"
+- @og_image = "http://parallellabs.io/images/verloop/03.png"
+- @twitter_title = "Designs for AI based Chat Bot"
+- @twitter_description = "Case Study of designing user interface for AI based live chat platform."
+- @twitter_url = "http://parallellabs.io/verloop.html"
+- @twitter_image = "http://parallellabs.io/images/verloop/03.png"
 
 / content
 .section.casestudy.verloop-banner
@@ -50,7 +50,6 @@ layout: project_layout
     div.deliverables-section
       span.name Strategy, UI, UX
       span Deliverables
-    div.deliverables-section
 
 .section.new-home-content.casestudy-content
   p.MB-60
@@ -58,8 +57,9 @@ layout: project_layout
 
 
 .section.fullwidth
-  |<iframe class="lazyframe bigvideo" data-vendor="vimeo" src="https://player.vimeo.com/video/250259399?autoplay=1&loop=1" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
+  .verloop-video
+  |<video id="zippr-video" class="b-lazy" autoplay="autoplay" loop="loop" data-poster="images/verloop/03.png" data-src="https://player.vimeo.com/external/247755052.hd.mp4?s=1407bede4311e775d6b354d3590505910b60944a&profile_id=174" poster="images/verloop/03.png" src="https://player.vimeo.com/external/247755052.hd.mp4?s=1407bede4311e775d6b354d3590505910b60944a&profile_id=174" width="640" height="540"></video>
+  / |<iframe class="lazyframe bigvideo" data-vendor="vimeo" src="https://player.vimeo.com/video/247755052?autoplay=1&loop=1" width="440" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 .section.new-home-content.casestudy-content
   p.quote.verloop
     |Chatbots interact with more customers faster than humans will ever be able to.
@@ -70,14 +70,32 @@ layout: project_layout
   p.quote.verloop
     |The logo was designed to reflect a modern yet approachable personality.
 
-  .sprint-boomer
-    div#boomer-sprint-slider.owl-carousel
-      .screen
-        |<img src="images/verloop/1.jpg" alt="zippr sprint"/>
-      .screen
-        |<img src="images/verloop/2.jpg" alt="zippr sprint"/>
+  .verloop-sketch
+    .screen
+      |<img src="images/verloop/1.jpg" alt="zippr sprint"/>
+    .screen
+      |<img src="images/verloop/2.jpg" alt="zippr sprint"/>
 
-  div.verloop-logo.MB-80
+  div.img-caption.MB-80.MT-120
+    .verloop-fab.logo
+      div
+        img src="images/verloop/screen-shot-2018-01-09-at-6-36-08-pm.png"
+      div
+        img src="images/verloop/group-5.png"
+      div
+        img src="images/verloop/screen-shot-2018-01-09-at-6-36-26-pm.png"
+      div
+        img src="images/verloop/screen-shot-2018-01-09-at-6-36-53-pm.png"
+      div
+        img src="images/verloop/group-3.png"
+      div
+        img src="images/verloop/screen-shot-2018-01-09-at-6-36-36-pm.png"
+      div
+        img src="images/verloop/screen-shot-2018-01-09-at-6-37-00-pm.png"
+      div
+        img src="images/verloop/group-4.png"
+      div
+        img src="images/verloop/screen-shot-2018-01-09-at-6-36-43-pm.png"
     span.caption
       |These were ideas which were transformed from sketches into digital mocks. This was shortly before taking a complete U-turn on logo concepts.
   p
@@ -87,13 +105,17 @@ layout: project_layout
       img src="images/verloop/final-logos.png"
       span The final version of the logo.
 
-  .img-flex
+  .img-flex.MT-120.verloop
     p
       |This approachable personality was achieved through a modified ellipsis. With the logo extended to an FAB, the ellipsis would give the impression of ‘eyes’ and even blink occasionally. This would also increase brand recall on the thousands of websites into which the widget would be embedded.
     img src="images/verloop/group.png"
 
-  div.img-caption
-    img src="images/verloop/final-logos.png"
+  div.img-caption.MT-120
+    .verloop-fab
+      img src="images/verloop/01-v-3.png"
+      img src="images/verloop/01-v-31.png"
+      img src="images/verloop/01.png"
+      img src="images/verloop/01-v-2.png"
     span The lone logo form was only one of the possiblities which the FAB would take depending on its role in the website.
 
   p.quote.verloop
@@ -102,23 +124,23 @@ layout: project_layout
   p.MB-60
     |Just as a website design can be judged based on certain usability heuristics, many of the same can be adapted for use in a bot. Below are instances where these criteria came into play.
 
-  .img-flex.verloop
+  .img-flex.verloop.MB-60
     p.caption
       |<span class="bold">System status communication -</span> The system’s status should be clear to the user, whether further input is expected or the bot is processing provided input. The above interaction was designed to communicate to the user that the bot was “thinking”.
     img src="images/verloop/12.png"
 
-    p.caption
-      |<span class="bold">Minimalist design and consistency across websites -</span>The visual system had to be adaptable to the visual language of each website while the brand of Verloop had to be preserved.
+  p.caption
+    |<span class="bold">Minimalist design and consistency across websites -</span>The visual system had to be adaptable to the visual language of each website while the brand of Verloop had to be preserved.
 
-.section.fullwidth
-  .sprint-boomer
+  .verloop-slider
     div#boomer-sprint-slider.owl-carousel
       .screen
-        |<img src="images/verloop/1.jpg" alt="zippr sprint"/>
+        |<img src="images/verloop/group-11.png" alt="verloop sprint"/>
       .screen
-        |<img src="images/verloop/2.jpg" alt="zippr sprint"/>
+        |<img src="images/verloop/group-11-copy.png" alt="verloop sprint"/>
       .screen
-        |<img src="images/verloop/2.jpg" alt="zippr sprint"/>
+        |<img src="images/verloop/group-11-copy-2.png" alt="verloop sprint"/>
+
 
 .section.new-home-content.casestudy-content
   p.caption
@@ -127,39 +149,39 @@ layout: project_layout
 .section.new-home-content.screens.citrus-screens
   div#citrus-slider.owl-carousel
     .screen
-      |<img src="images/zippr/c-13.png" alt="cricbet screen"/>
+      |<img src="images/verloop/04.png" alt="verloop screen"/>
     .screen
-      |<img src="images/zippr/c-14.png" alt="cricbet screen"/>
+      |<img src="images/verloop/06.png" alt="verloop screen"/>
     .screen
-      |<img src="images/zippr/c-15.png" alt="cricbet screen"/>
+      |<img src="images/verloop/07.png" alt="verloop screen"/>
     .screen
-      |<img src="images/zippr/c-16.png" alt="cricbet screen"/>
+      |<img src="images/verloop/09.png" alt="verloop screen"/>
 
 
 .section.new-home-content.casestudy-content
   .img-flex.verloop
     p.caption
-      |<span class="bold">System status communication -</span> The system’s status should be clear to the user, whether further input is expected or the bot is processing provided input. The above interaction was designed to communicate to the user that the bot was “thinking”.
-    img src="images/verloop/12.png"
+      |<span class="bold">Error assistance- </span> Where the bot was limited in its capability it also needed to be equipped to handle the user’s request in a suitable manner.
+    img src="images/verloop/11-2-copy.png"
 
-  p
+  p.MT-120
     |It was a challenging task to work within the constraints of the current bot technology while adapting it to the user’s needs. Keeping certain usability principles as the scaffolding for building our design guaranteed that the user’s needs would be met.
 
 
 .section.new-home-content.project-nav
-  a.a-prev.wowclub href="wowclub.html"
+  a.a-prev.boomer href="boomer.html"
     .prev
       |<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" version="1.1"><g id="surface1"><path d="M 14.78125 2.28125 L 5.78125 11.28125 L 5.09375 12 L 5.78125 12.71875 L 14.78125 21.71875 L 16.21875 20.28125 L 7.9375 12 L 16.21875 3.71875 Z "/></g></svg>
-      span Crafting the perfect women-only travel experience
+      span Building the world’s simplest website builder
     .box2.FL-l
       svg
         use xlink:href="images/svgs/iconset.svg#icon-left-arrow"
 
 
-  a.a-next.enchanting href="enchantingtravels.html"
+  a.a-next.talentify href="talentify.html"
     .next
-      span Powerful travel planning and booking tool
-      |<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" version="1.1"><g id="surface1"><path d="M 8.707031 2.292969 L 7.292969 3.707031 L 15.585938 12 L 7.292969 20.292969 L 8.707031 21.707031 L 18.414063 12 Z "/></g></svg>  
+      span Making young India skilled and employable
+      |<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" version="1.1"><g id="surface1"><path d="M 8.707031 2.292969 L 7.292969 3.707031 L 15.585938 12 L 7.292969 20.292969 L 8.707031 21.707031 L 18.414063 12 Z "/></g></svg>
     .box2.FL-r
       svg
-        use xlink:href="images/svgs/iconset.svg#icon-right-arrow" 
+        use xlink:href="images/svgs/iconset.svg#icon-right-arrow"
