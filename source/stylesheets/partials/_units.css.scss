@@ -301,7 +301,7 @@ svg {
 
 .overflow-H {
     position: relative;
-    overflow: hidden;
+    overflow: hidden!important;
     -webkit-overflow-scrolling: touch;
 }
 .overflow-XH {
