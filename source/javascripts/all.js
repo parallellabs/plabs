@@ -42,10 +42,9 @@ $(document).ready(function(){
 	// modal close
 	$('.close-form').on('click', function(){
     $(this).parents('body').removeClass('overflow-H');
-    //$('.home').removeClass('blur');
+    $('.main-form .overlay').removeClass('open');
 		$('.main-form').removeClass('openForm-model');
     $('.main-form .inner-box').removeClass('animated fade-in');
-    $('.main-form .overlay').removeClass('open');
 	});
 
   var detailsFlag = false;
