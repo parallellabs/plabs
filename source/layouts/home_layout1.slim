@@ -51,9 +51,9 @@ html.no-js lang="en"
       (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
 
   body.home
-    = partial "layouts/homeHeader.slim"
-    == yield
     .wrapper.home
+      = partial "layouts/homeHeader.slim"
+      == yield
 
     = partial "layouts/main_form.slim"
 
@@ -85,13 +85,14 @@ html.no-js lang="en"
         var tl = new TimelineMax({delay:2});
         var center_box = $('.center-box');
 
+
         $('#fullpage').fullpage({
 
               //Scrolling
               //css3: false,
               navigation: false,
               scrollingSpeed: 700,
-              autoScrolling: false,
+              autoScrolling: true,
               fitToSection: false,
               lockAnchors: false,
               // fitToSectionDelay: 1000,
@@ -116,12 +117,10 @@ html.no-js lang="en"
               //events
               //onLeave: function(index, nextIndex, direction){
               afterRender: function(index, nextIndex, direction){
-              //  TweenMax.to(colour_block, 0.5, {scale:1, x:0, ease:Power4.easeOut});
-                if($(window).width() > 767){
-                  TweenMax.to(center_box, 1, {scale:1, x:-176, ease:Power4.easeOut});
-                  TweenMax.to(center_box, 1.2, {scale:1, x:-176, opacity:0.2, ease:Power4.easeOut});
-                  TweenMax.to(('.cta a'), 1, { css:{'background': 'transparent'}, ease:Power4.easeOut});
-                }
+                TweenMax.to(colour_block, 0.5, {scale:1, x:0, ease:Power4.easeOut});
+                TweenMax.to(center_box, 1, {scale:1, x:-176, ease:Power4.easeOut});
+                TweenMax.to(center_box, 1.2, {scale:1, x:-176, opacity:0.2, ease:Power4.easeOut});
+                TweenMax.to(('.cta a'), 1, { css:{'background': 'transparent'}, ease:Power4.easeOut});
                 //if($(window).width() >= 601){
                 //TweenMax.set('.project-section.active .borderline-box', {className:"-=draw"}, 5);
 
@@ -137,21 +136,7 @@ html.no-js lang="en"
                     //     },
                     //     ease:Expo.easeOut,
                     //   });
-                    if(index == 7)
-                    {
-                      if($(window).width() > 767){
-                        TweenMax.to(center_box, 1, {scaleX:0.33, scaleY:0.12, x:176, opacity:0, ease:Power4.easeOut});
-                        TweenMax.to(('.cta a'), 1.2, { css:{'background': 'rgba(69,210,207,1)'}, ease:Power4.easeOut});
-                      }  
-                    }
-                    else
-                    {
-                      //console.log(index);
-                      //animateOnSectionLoad();
-                      TweenMax.set('.project-section.active .borderline-box', {className:"+=draw"}, 1.5);
-                      TweenMax.set('.project-section.active .colour-block', {className:"+=draw"}, 1.5);
-                    }
-                    //animateOnSectionLoad();
+                    animateOnSectionLoad();
               },
               // afterRender: function(){},
               // afterResize: function(){},
@@ -167,13 +152,13 @@ html.no-js lang="en"
                     //run your gsap animation on  animationTarget variable
                     // assumes of course you have class animation-element on tag being animated
                     TweenMax.to(colour_block, 1, {scale:0.75, x:80, ease:Power4.easeOut});
-                    //TweenMax.to(center_box, 1, {delay:.25, scaleX:0.33, scaleY:0.12, x:176, opacity:0, ease:Power4.easeOut});
-                    //TweenMax.to(('.cta a'), 1.2, { css:{'background': 'rgba(69,210,207,1)'}, ease:Power4.easeOut});
+                    TweenMax.to(center_box, 1, {scaleX:0.33, scaleY:0.12, x:176, opacity:0, ease:Power4.easeOut});
+                    TweenMax.to(('.cta a'), 1.2, { css:{'background': 'rgba(69,210,207,1)'}, ease:Power4.easeOut});
                     TweenMax.set('.project-section.active .borderline-box', {className:"+=draw"}, 1.5);
                     if($(window).width() <= 600){
                       TweenMax.to(colour_block, 1, {scale:0.9, x:-20, ease:Power4.easeOut});
                     }
-                    //TweenMax.to(center_box, 1, {scaleX:0.33, scaleY:0.12, x:176, ease:Power4.easeOut});
+                    TweenMax.to(center_box, 1, {scaleX:0.33, scaleY:0.12, x:176, ease:Power4.easeOut});
                 });
 
       };
@@ -426,8 +411,8 @@ html.no-js lang="en"
             }
           }
 
-        //$(document).ready(mobile);
-        //$(window).resize(mobile);
+        $(document).ready(mobile);
+        $(window).resize(mobile);
 
 
 
