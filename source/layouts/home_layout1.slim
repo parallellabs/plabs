@@ -1,0 +1,440 @@
+doctype 5
+html.no-js lang="en"
+  head
+    meta charset="utf-8"
+    meta content="IE=edge" http-equiv="X-UA-Compatible"
+    / meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" /
+    meta name="viewport" content="width=device-width, initial-scale=1" /
+    title
+      = "#{@title}"
+    meta content="#{@description}" name="description" /
+    meta content="#{@keyword}" name="keywords" /
+    / Open graph protocol
+    meta content="en_US" property="og:locale" /
+    meta content=" website" property="og:type" /
+    meta content="#{@og_title}" property="og:title" /
+    meta content="#{@og_description}" property="og:description" /
+    meta content="#{@og_url}" property="og:url" /
+    meta content="Parallel Labs" property="og:site_name" /
+    meta content="#{@og_image}" property="og:image" /
+    / Twitter Card
+    meta content="summary" name="twitter:card" /
+    meta content="#{@twitter_url}" name="twitter:url" /
+    meta content="#{@twitter_title}" name="twitter:title" /
+    meta content="#{@twitter_description}" name="twitter:description" /
+    meta content="#{@twitter_image}" name="twitter:image" /
+    meta name="google-site-verification" content="ZOxMEOTYRfVmH_bAiRaHYb9tMth8zjJlXwtR537nkco" /
+
+    link href="http://parallellabs.io/" rel="canonical" /
+    link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" /
+    / link rel="stylesheet" href="stylesheets/vendors/owl.carousel.css"/
+    / link rel="stylesheet" href="stylesheets/vendors/animate.css"/
+    /link rel="preload" href="https://fonts.googleapis.com/css?family=Lato:400,700"/
+    link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Hind:300,400,600,700"/
+    link rel="stylesheet" href="stylesheets/jquery.fullpage.min.css"/
+    link rel="stylesheet" href="stylesheets/all.css"/
+    javascript:
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-47999745-2', 'auto');
+      ga('send', 'pageview');
+
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'project popup',
+        eventAction: 'open',
+        eventLabel: window.location.href
+      });
+
+    script async="async" src='https://www.google-analytics.com/analytics.js'
+
+    javascript:
+      (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
+
+  body.home
+    .wrapper.home
+      = partial "layouts/homeHeader.slim"
+      == yield
+
+    = partial "layouts/main_form.slim"
+
+    / jQuery
+    script src="https://code.jquery.com/jquery-2.1.4.min.js"
+    script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
+    script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"
+    script src="javascripts/backbone_custom.js"
+    / script type="text/javascript" src="javascripts/instafeed.min.js"
+    / script type="text/javascript" src="javascripts/jribbble.min.js"
+    script src="javascripts/owl.carousel.js"
+    / script type="text/javascript" src="javascripts/jquery.parallax.min.js"
+    / script type="text/javascript" src="javascripts/jquery.dotdotdot.min.js"
+    / script type="text/javascript" src="javascripts/blazy.min.js"
+    / script type="text/javascript" src="javascripts/jquery.lazyloadxt.extra.min.js"
+    script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.7/TweenMax.min.js"
+    script src="javascripts/imagesloaded.js"
+    script src="javascripts/masonry-3.1.4.js"
+    script src="javascripts/masonry.filter.js"
+    script src="javascripts/jquery.fullpage.min.js"
+    script src="javascripts/all.js"
+    script src="javascripts/retina.min.js"
+    / script type="text/javascript" src="javascripts/three.min.js"
+    javascript:
+
+      $(document).ready(function() {
+
+        var colour_block = $('.colour-block');
+        var tl = new TimelineMax({delay:2});
+        var center_box = $('.center-box');
+
+
+        $('#fullpage').fullpage({
+
+              //Scrolling
+              //css3: false,
+              navigation: false,
+              scrollingSpeed: 700,
+              autoScrolling: true,
+              fitToSection: false,
+              lockAnchors: false,
+              // fitToSectionDelay: 1000,
+              scrollBar: true,
+              easing: 'easeInOutCubic',
+              // easingcss3: 'ease',
+              // scrollOverflowReset: false,
+              // scrollOverflowOptions: null,
+              // touchSensitivity: 15,
+              // normalScrollElementTouchThreshold: 5,
+
+              //Accessibility
+              verticalCentered: true,
+              keyboardScrolling: true,
+              // animateAnchor: true,
+
+              //Design
+              // verticalCentered: true,
+              responsiveWidth: 1024,
+              responsiveHeight: 700,
+
+              //events
+              //onLeave: function(index, nextIndex, direction){
+              afterRender: function(index, nextIndex, direction){
+                TweenMax.to(colour_block, 0.5, {scale:1, x:0, ease:Power4.easeOut});
+                TweenMax.to(center_box, 1, {scale:1, x:-176, ease:Power4.easeOut});
+                TweenMax.to(center_box, 1.2, {scale:1, x:-176, opacity:0.2, ease:Power4.easeOut});
+                TweenMax.to(('.cta a'), 1, { css:{'background': 'transparent'}, ease:Power4.easeOut});
+                //if($(window).width() >= 601){
+                //TweenMax.set('.project-section.active .borderline-box', {className:"-=draw"}, 5);
+
+              },
+              afterLoad: function(anchorLink, index){
+                // $(this).addClass('show-project');
+                    // TweenMax.to(
+                    //   $y_axis,
+                    //   1,
+                    //   {
+                    //     css: {
+                    //       transform: 'translateY(' + (top * -0.3) + 'px)'
+                    //     },
+                    //     ease:Expo.easeOut,
+                    //   });
+                    animateOnSectionLoad();
+              },
+              // afterRender: function(){},
+              // afterResize: function(){},
+              afterResponsive: function(isResponsive){}
+              // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+              // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+          });
+
+        function animateOnSectionLoad(){
+            var activeSection = $('.section.active');
+                $( ".animation-element",activeSection).each(function(){
+                    var animationTarget = $(this);
+                    //run your gsap animation on  animationTarget variable
+                    // assumes of course you have class animation-element on tag being animated
+                    TweenMax.to(colour_block, 1, {scale:0.75, x:80, ease:Power4.easeOut});
+                    TweenMax.to(center_box, 1, {scaleX:0.33, scaleY:0.12, x:176, opacity:0, ease:Power4.easeOut});
+                    TweenMax.to(('.cta a'), 1.2, { css:{'background': 'rgba(69,210,207,1)'}, ease:Power4.easeOut});
+                    TweenMax.set('.project-section.active .borderline-box', {className:"+=draw"}, 1.5);
+                    if($(window).width() <= 600){
+                      TweenMax.to(colour_block, 1, {scale:0.9, x:-20, ease:Power4.easeOut});
+                    }
+                    TweenMax.to(center_box, 1, {scaleX:0.33, scaleY:0.12, x:176, ease:Power4.easeOut});
+                });
+
+      };
+
+
+      var $layer_0 = $('#threejs'),
+          $layer_1 = $('.parallaxbox-1'),
+          $layer_2 = $('.parallaxbox-2'),
+          $x_axis  = $('#x-axis'),
+          $y_axis  = $('#y-axis'),
+          $container = $('.intro-section'),
+          container_w = $container.width(),
+          container_h = $container.height();
+          $container2 = $('.works'),
+          container2_w = $container.width(),
+          container2_h = $container.height();
+          $red = $('.red');
+          $blue = $('.blue');
+          $yellow = $('.yellow');
+
+      $('.intro-section').on('mousemove.parallax', function(event) {
+        var pos_x = event.pageX,
+            pos_y = event.pageY,
+            left  = 0,
+            top   = 0;
+
+        left = container_w / 2 - pos_x;
+        top  = container_h / 2 - pos_y;
+
+        TweenMax.to(
+          $x_axis,
+          1,
+          {
+            css: {
+              transform: 'translateX(' + (left * -0.3) + 'px)'
+            },
+            ease:Expo.easeOut,
+            overwrite: 'all'
+          });
+
+        TweenMax.to(
+          $y_axis,
+          1,
+          {
+            css: {
+              transform: 'translateY(' + (top * -0.3) + 'px)'
+            },
+            ease:Expo.easeOut,
+            overwrite: 'all'
+          });
+
+        TweenMax.to(
+          $layer_2,
+          1,
+          {
+            css: {
+              transform: 'translateX(' + left / 12 + 'px) translateY(' + top / 6 + 'px) rotate(40deg)'
+            },
+            ease:Expo.easeOut,
+            overwrite: 'all'
+          });
+
+        TweenMax.to(
+          $layer_1,
+          1,
+          {
+            css: {
+              transform: 'translateX(' + left / 8 + 'px) translateY(' + top / 4 + 'px) rotate(60deg)',
+            },
+            ease:Expo.easeOut,
+            overwrite: 'all'
+          });
+
+        TweenMax.to(
+          $layer_0,
+          1,
+          {
+            css: {
+              transform: 'translateY(' + (top * -0.2) + 'px)'
+            },
+            ease: Expo.easeOut,
+            overwrite: 'all'
+          }
+        )
+      });
+      $('.works').on('mousemove.parallax', function(event) {
+        var pos_x = event.pageX,
+            pos_y = event.pageY,
+            left  = 0,
+            top   = 0;
+
+        left = container2_w / 2 - pos_x;
+        top  = container2_h / 2 - pos_y;
+
+        TweenMax.to(
+          $red,
+          1,
+          {
+            css: {
+              transform: 'translateX(' + left / 24 + 'px) translateY(' + top / 28 + 'px) rotate(40deg)'
+            },
+            ease:Expo.easeOut,
+            overwrite: 'all'
+          });
+
+        TweenMax.to(
+          $blue,
+          1,
+          {
+            css: {
+              transform: 'translateX(' + left / -30 + 'px) translateY(' + top / 36 + 'px) rotate(60deg)',
+            },
+            ease:Expo.easeOut,
+            overwrite: 'all'
+          });
+
+        TweenMax.to(
+          $yellow,
+          1,
+          {
+            css: {
+              transform: 'translateY(' + (top / 40) + 'px) translateX('+ left / 40 + 'px)rotate(100deg)'
+            },
+            ease: Expo.easeOut,
+            overwrite: 'all'
+          }
+        )
+      });
+
+       /*$( "#cta-wrap" ).mouseenter(function() {
+        TweenMax.to(center_box, 1.2, {scaleX:0.33, scaleY:0.12, x:176, opacity:0, ease:Power4.easeOut});
+
+      });
+      $( "#cta-wrap" ).mouseleave(function() {
+        TweenMax.to(center_box, 1, {scale:1, x:-176, opacity:0.2, ease:Power4.easeOut});
+      }); */
+
+      var self = $("#masonry");
+
+      self.imagesLoaded(function () {
+          self.masonry({
+              gutterWidth: 0,
+              isAnimated: true,
+              itemSelector: ".item",
+              columnWidth: '.item-sizer',
+              transitionDuration: '0.8s',
+              hiddenStyle: {
+                opacity: 0,
+              },
+              visibleStyle: {
+                opacity: 1,
+              }
+          });
+      });
+
+      $(".filters .btn-link").click(function(e) {
+          e.preventDefault();
+
+          $(".filters .btn-link").removeClass('active');
+          $(this).addClass('active');
+
+          var filter = $(this).attr("data-filter");
+
+          self.masonryFilter({
+              filter: function () {
+                  if (!filter) return true;
+                  $('#masonry').removeClass('hide');
+                  $('.filters').removeClass('open');
+                  return filter;
+              }
+          });
+      });
+
+      $(".filter-links a").click(function(e) {
+          e.preventDefault();
+
+          $('.filter-links a').removeClass('active');
+          var filter = $(this).attr("data-filter");
+
+          if(filter == "all-works")
+          {
+            $('.filters').removeClass('open');
+            $('#masonry').removeClass('hide');
+            self.masonryFilter({
+                filter: function () {
+                    if (!filter) return true;
+                    return '*';
+                }
+            });
+          }
+          else{
+            $('.filters').addClass('open');
+            $('#masonry').addClass('hide');
+          }
+          $(this).addClass('active');
+      });
+
+        $(window).scroll(function() {
+          var scrollTop = $(this).scrollTop();
+          $(".shape").each(function(){
+            shapeTop = $(this).position().top + scrollTop;
+            shapeLeft = $(this).position().left;
+            $(this).css({"top": shapeTop});
+          });
+
+      	});
+
+        var vids = $("video");
+        $.each(vids, function(){
+               this.controls = false;
+        });
+
+        //carousel inisitialized
+        function mobile() {
+          var checkWidth = $(window).width();
+          var client_slider = $("#client_carousel");
+          // console.log('dslider');
+          if (checkWidth > 768) {
+            if(typeof client_slider.data('owlCarousel') != 'undefined') {
+              client_slider.data('owlCarousel').destroy();
+              client_slider.removeClass('owl-carousel');
+              }
+          } else { //if (checkWidth < 769)
+            client_slider.owlCarousel({
+              navigation : true, // Show next and prev buttons
+              navigationText: [
+                '<svg class="icon-arrow-right2"><use xlink:href="images/svgs/iconset.svg#icon-angle-left"></svg>',
+                '<svg class="icon-arrow-right2"><use xlink:href="images/svgs/iconset.svg#icon-angle-right"></svg>'
+              ],
+              singleItem:true,
+              // responsive : {
+              //   // breakpoint from 0 up
+              //   0 : {
+              //     items : 1,
+              //     nav:false
+              //   },
+              //     // breakpoint from 480 up
+              //   480 : {
+              //     items : 2,
+              //     nav:false
+              //   },
+              //   // breakpoint from 768 up
+              //   768 : {
+              //     items : 3,
+              //     nav:false
+              //     }
+              //   }
+              //
+              });
+            }
+          }
+
+        $(document).ready(mobile);
+        $(window).resize(mobile);
+
+
+
+        // if(section.hasClass('intro-section'){
+        //   $('.top-navbar.home-nav').show();
+        // }
+      });
+
+
+      //Full story
+    	window['_fs_debug'] = false;
+    	window['_fs_host'] = 'www.fullstory.com';
+    	window['_fs_org'] = '43EWM';
+    	window['_fs_namespace'] = 'FS';
+    	(function(m,n,e,t,l,o,g,y){
+    	    if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return;}
+    	    g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+    	    o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+    	    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+    	    g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+    	    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+    	    g.clearUserCookie=function(c,d,i){if(!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')){
+    	    d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
+    	    ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
+    	})(window,document,window['_fs_namespace'],'script','user');

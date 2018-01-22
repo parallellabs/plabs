@@ -253,6 +253,7 @@ var FormView = Backbone.View.extend({
 
     var flag = validateModel[enquiries.get('currentPage').toString()]();
     console.log('returning ', flag);
+    validationFlag = flag;
     return flag;
 
   },
@@ -265,10 +266,10 @@ var FormView = Backbone.View.extend({
       $('.send').addClass('active');
       this.modelUpdate();
       //console.log(enquiries.attributes);
-       $.post( "http://205.186.143.136:5000/sendmail", enquiries.attributes )
-      // // $.post( "http://localhost:5100/sendmail", enquiries.attributes )
+       //$.post( "http://205.186.143.136:5000/sendmail", enquiries.attributes )
+      $.post( "https://parallellabs.io/api/sendmail.php", enquiries.attributes )
          .done(function( data ) {
-      //     console.log('Response: ', data );
+           console.log('Response: ', data );
          });
     }
 

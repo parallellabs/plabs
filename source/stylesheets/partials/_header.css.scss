@@ -85,7 +85,7 @@
       &.white{
         & ~ .sliding-panel-button{
           color: #243f53;
-        }        
+        }
       }
     }
   }
@@ -119,6 +119,9 @@
           }
           .path2,.path4,.path5,.path6{
             color: #fff;
+          }
+          #labs{
+            opacity: 0.7;
           }
         }
       }
@@ -179,6 +182,13 @@
           font-size: rem(20px);
           font-family: $base-font-family;
           line-height: 45px;
+          background-color: #16c6c2;
+          color: #fff;
+          cursor: pointer;
+
+          span{
+            color: #fff;
+          }
 
           &:hover{
             background-color: #16c6c2;
@@ -497,7 +507,7 @@
     display: inline-block;
   }
 
-  position: relative;
+  position: absolute;
   display: none;
   float: right;
   // padding: 10px 16px;
@@ -506,7 +516,8 @@
   outline: none;
   color: #243f53;
   cursor: pointer;
-  top: 5px;
+  top: 20px;
+  right: 20px;
 
   img {
     height: 1.3em;
