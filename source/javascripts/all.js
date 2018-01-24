@@ -34,7 +34,15 @@ $(document).ready(function(){
       //$('.home').addClass('blur');
   		$('.main-form').addClass('openForm-model');
       $('.main-form .overlay').addClass('open');
-      $('#firstBox').addClass('animated fade-in');
+
+      $('.inner-box').css({'z-index':'2'}).removeClass('animated fade-in');
+      if($(window).width() <= 480 )
+      {
+        $('#secondBox').addClass('animated fade-in');
+      }
+      else {
+        $('#firstBox').addClass('animated fade-in');
+      }
 
       var objHeight = $(window).height() * 0.2;
       $('#objective').css("max-height", objHeight + 'px');
