@@ -338,13 +338,14 @@ $('.open-form').click(function(){
     currentPage = currentPage;
     console.log("on form open: " + currentPage);
 
-    if($(window).width() <= 480 )
-    {
-      workspace.navigate('about-project',{trigger:true});
-    }
-    else {
-      workspace.navigate('personal-details',{trigger:true});
-    }
+    workspace.navigate('about-project',{trigger:true});
+    // if($(window).width() <= 480 )
+    // {
+    //   workspace.navigate('about-project',{trigger:true});
+    // }
+    // else {
+    //   workspace.navigate('personal-details',{trigger:true});
+    // }
 
     // if(currentPage == 1){
     //   workspace.navigate('about-project',{trigger:true});
