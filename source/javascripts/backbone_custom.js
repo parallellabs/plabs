@@ -3,11 +3,21 @@ var Workspace = Backbone.Router.extend({
   routes: {
     "about-project":  "fnOne",
     "personal-details":  "fnTwo",
-    "thank-you": "fnThree"
+    "thank-you": "fnThree",
+    "2":  "fnOne",
+    "3":  "fnTwo",
+    "": "initial"
     // "4":  "fnFourth",
     // "5":  "fnFifth",
     // "6":  "fnSixth"
 
+  },
+  initial: function() {
+    console.log('route changed123');
+    $('.inner-box').css({'z-index':'2'}).removeClass('animated fade-in');
+    $('.overlay-up').removeClass('open');
+    $('body').removeClass('overflow-H');
+    $('.main-form').removeClass('openForm-model');
   },
   fnOne: function() {
     console.log('route changed');
@@ -327,7 +337,16 @@ $('.open-form').click(function(){
     var currentPage = enquiries.get('currentPage');
     currentPage = currentPage;
     console.log("on form open: " + currentPage);
+
     workspace.navigate('about-project',{trigger:true});
+    // if($(window).width() <= 480 )
+    // {
+    //   workspace.navigate('about-project',{trigger:true});
+    // }
+    // else {
+    //   workspace.navigate('personal-details',{trigger:true});
+    // }
+
     // if(currentPage == 1){
     //   workspace.navigate('about-project',{trigger:true});
     // }
