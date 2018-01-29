@@ -1,0 +1,174 @@
+doctype 5
+html.no-js lang="en"
+  head
+    meta charset="utf-8"
+    meta content="IE=edge" http-equiv="X-UA-Compatible"
+    meta name="viewport" content="width=device-width, initial-scale=1" /
+    title
+      = "#{@title}"
+    meta content="#{@description}" name="description" /
+    meta content="#{@keyword}" name="keywords" /
+    / Open graph protocol
+    meta content="en_US" property="og:locale" /
+    meta content=" website" property="og:type" /
+    meta content="#{@og_title}" property="og:title" /
+    meta content="#{@og_description}" property="og:description" /
+    meta content="#{@og_url}" property="og:url" /
+    meta content="Parallel Labs" property="og:site_name" /
+    meta content="#{@og_image}" property="og:image" /
+    / Twitter Card
+    meta content="summary" name="twitter:card" /
+    meta content="#{@twitter_url}" name="twitter:url" /
+    meta content="#{@twitter_title}" name="twitter:title" /
+    meta content="#{@twitter_description}" name="twitter:description" /
+    meta content="#{@twitter_image}" name="twitter:image" /
+
+    link href="http://parallellabs.io/" rel="canonical" /
+    link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" /
+    link rel="stylesheet" href="/stylesheets/normalize.css"/
+    link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/css/uikit.min.css"
+    link rel="stylesheet" href="vendor/lightbox-dist/css/lightbox.min.css"/
+    link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Hind:400,500,600"/
+    link rel="stylesheet" href="stylesheets/all.css"/
+    javascript:
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-47999745-2']);
+      _gaq.push(['_gat._forceSSL']);
+      _gaq.push(['_trackPageview']);
+
+      (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+
+    javascript:
+      (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
+
+  body
+    .wrapper.main-layout
+      = partial "layouts/homeHeader.slim"
+      .footer-overlay
+      == yield
+
+    = partial "layouts/main_form.slim"
+    = partial "layouts/new_footer.slim"
+
+    / jQuery
+    script src="https://code.jquery.com/jquery-2.1.4.min.js"
+    script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
+    script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"
+    script src="javascripts/backbone_custom.js"
+    script src="vendor/lightbox-dist/js/lightbox.min.js"
+    script src="javascripts/masonry-3.1.4.js"
+    script src="javascripts/masonry.filter.js"
+    script src="javascripts/imagesloaded.js"
+    script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.7/TweenMax.min.js"
+    script src="javascripts/all.js"
+    script src="javascripts/retina.min.js"
+    script src="javascripts/jquery.inview.min.js"
+    / script type="text/javascript" src="javascripts/aos.js"
+
+
+    javascript:
+      $(document).ready(function() {
+        $('.footer-overlay').removeClass('show');
+      });
+        $('.footer').on('inview', function(event, isInView) {
+          if (isInView) {
+            // element is now visible in the viewport
+            $('#cta').addClass('active');
+            $('.footer-overlay').addClass('show');
+          } else {
+            // element has gone out of viewport
+            $('#cta').removeClass('active');
+            $('.footer-overlay').removeClass('show');
+          }
+        });
+
+      lightbox.option({
+        'alwaysShowNavOnTouchDevices': true,
+        'fadeDuration': 400,
+        'fitImagesInViewport': true,
+        'resizeDuration': 400
+      });
+
+      var self = $("#masonry");
+
+      self.imagesLoaded(function () {
+          self.masonry({
+              gutterWidth: 0,
+              isAnimated: true,
+              itemSelector: ".item",
+              columnWidth: '.item-sizer',
+              transitionDuration: '0.8s',
+              hiddenStyle: {
+                opacity: 0,
+              },
+              visibleStyle: {
+                opacity: 1,
+              }
+          });
+      });
+
+      $(".filters .btn-link").click(function(e) {
+          e.preventDefault();
+
+          $(".filters .btn-link").removeClass('active');
+          $(this).addClass('active');
+
+          var filter = $(this).attr("data-filter");
+
+          self.masonryFilter({
+              filter: function () {
+                  if (!filter) return true;
+                  $('#masonry').removeClass('hide');
+                  $('.filters').removeClass('open');
+                  return filter;
+              }
+          });
+      });
+
+      $(".filter-links a").click(function(e) {
+          e.preventDefault();
+
+          $('.filter-links a').removeClass('active');
+          var filter = $(this).attr("data-filter");
+
+          if(filter == "all-works")
+          {
+            $('.filters').removeClass('open');
+            $('#masonry').removeClass('hide');
+            self.masonryFilter({
+                filter: function () {
+                    if (!filter) return true;
+                    return '*';
+                }
+            });
+          }
+          else{
+            $('.filters').addClass('open');
+            $('#masonry').addClass('hide');
+          }
+          $(this).addClass('active');
+      });
+
+      //FullStory
+    	window['_fs_debug'] = false;
+    	window['_fs_host'] = 'www.fullstory.com';
+    	window['_fs_org'] = '43EWM';
+    	window['_fs_namespace'] = 'FS';
+    	(function(m,n,e,t,l,o,g,y){
+    	    if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return;}
+    	    g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+    	    o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+    	    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+    	    g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+    	    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+    	    g.clearUserCookie=function(c,d,i){if(!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')){
+    	    d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
+    	    ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
+    	})(window,document,window['_fs_namespace'],'script','user');

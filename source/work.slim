@@ -1,5 +1,5 @@
 ---
-layout: home_layout
+layout: added_layout
 ---
 - @title = "Portfolio and Case Studies of our UI, UX Design work | Design Agency in Bangalore, India | Parallel Labs"
 - @description = "Parallel Labs: Portfolio and Case Studies of how Parallel Labs designed experiences for clients including Housejoy, Eatfresh, Citrus Payments and more."
@@ -75,15 +75,15 @@ layout: home_layout
 										span.name Team Indus
 										|<svg width="44" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M35.024 0a1.013 1.013 0 0 0-.942.605 1 1 0 0 0 .207 1.097l5.977 6.304H1.013a.995.995 0 0 0-.875.496.99.99 0 0 0 0 1.007c.18.312.515.5.875.495h39.253l-5.977 6.304a.999.999 0 0 0 .032 1.413.997.997 0 0 0 1.414-.031L44 9.005 35.735.32a1.006 1.006 0 0 0-.711-.32z" fill="#45d2cf" fill-rule="nonzero"/></svg>
 									span.type web
-						.item.item-half  data-filter="technology"
-							a href="timoc.html"
-								.img-wrapper.timoc
-									img src="images/work/timoc.jpg" alt="Verloop"/
-								.meta-wrapper
-									.link-type
-										span.name Team Indus Mission Control
-										|<svg width="44" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M35.024 0a1.013 1.013 0 0 0-.942.605 1 1 0 0 0 .207 1.097l5.977 6.304H1.013a.995.995 0 0 0-.875.496.99.99 0 0 0 0 1.007c.18.312.515.5.875.495h39.253l-5.977 6.304a.999.999 0 0 0 .032 1.413.997.997 0 0 0 1.414-.031L44 9.005 35.735.32a1.006 1.006 0 0 0-.711-.32z" fill="#45d2cf" fill-rule="nonzero"/></svg>
-									span.type display, projection
+						/ .item.item-half  data-filter="technology"
+						/ 	a href="timoc.html"
+						/ 		.img-wrapper.timoc
+						/ 			img src="images/work/timoc.jpg" alt="Verloop"/
+						/ 		.meta-wrapper
+						/ 			.link-type
+						/ 				span.name Team Indus Mission Control
+						/ 				|<svg width="44" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M35.024 0a1.013 1.013 0 0 0-.942.605 1 1 0 0 0 .207 1.097l5.977 6.304H1.013a.995.995 0 0 0-.875.496.99.99 0 0 0 0 1.007c.18.312.515.5.875.495h39.253l-5.977 6.304a.999.999 0 0 0 .032 1.413.997.997 0 0 0 1.414-.031L44 9.005 35.735.32a1.006 1.006 0 0 0-.711-.32z" fill="#45d2cf" fill-rule="nonzero"/></svg>
+						/ 			span.type display, projection
 
 					.grid-column
 						.item.item-half data-filter="utilities saas"
@@ -238,4 +238,18 @@ layout: home_layout
 										span.type android, iOS, web
 
 
-	= partial "layouts/new_footer.slim"
+	.section.new-home-content1.get-in-touch-section#cta
+		/ div#threefooterjs
+		/ 	|<div id="x-axis" class="axis"></div>
+		/ 	|<div id="y-axis" class="axis"></div>
+		/ 	div.parallaxbox.parallaxbox-1
+		/ 	div.parallaxbox.parallaxbox-2
+		.content-wrapper#cta-wrap.animation-element
+			.get-in-touch-block
+				.text
+					h3 Cooking up something interesting?
+					h2 We’d love to hear about it.
+				/ .center-box
+				.cta
+					a href="javascript:void(0);" class="open-form" id="cta"target="_blank"
+	      						|GET IN TOUCH

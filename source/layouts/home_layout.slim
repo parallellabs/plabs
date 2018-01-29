@@ -30,7 +30,7 @@ html.no-js lang="en"
     / link rel="stylesheet" href="stylesheets/vendors/owl.carousel.css"/
     / link rel="stylesheet" href="stylesheets/vendors/animate.css"/
     /link rel="preload" href="https://fonts.googleapis.com/css?family=Lato:400,700"/
-    link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Hind:300,400,600,700"/
+    link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Hind:400,500,600"/
     link rel="stylesheet" href="stylesheets/jquery.fullpage.min.css"/
     link rel="stylesheet" href="stylesheets/all.css"/
     javascript:
@@ -70,9 +70,6 @@ html.no-js lang="en"
     / script type="text/javascript" src="javascripts/blazy.min.js"
     / script type="text/javascript" src="javascripts/jquery.lazyloadxt.extra.min.js"
     script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.7/TweenMax.min.js"
-    script src="javascripts/imagesloaded.js"
-    script src="javascripts/masonry-3.1.4.js"
-    script src="javascripts/masonry.filter.js"
     script src="javascripts/jquery.fullpage.min.js"
     script src="javascripts/all.js"
     script src="javascripts/retina.min.js"
@@ -120,7 +117,6 @@ html.no-js lang="en"
                 if($(window).width() > 767){
                   TweenMax.to(center_box, 1, {scale:1, x:-176, ease:Power4.easeOut});
                   TweenMax.to(center_box, 1.2, {scale:1, x:-176, opacity:0.2, ease:Power4.easeOut});
-                  TweenMax.to(('.cta a'), 1, { css:{'background': 'transparent'}, ease:Power4.easeOut});
                 }
                 //if($(window).width() >= 601){
                 //TweenMax.set('.project-section.active .borderline-box', {className:"-=draw"}, 5);
@@ -137,12 +133,9 @@ html.no-js lang="en"
                     //     },
                     //     ease:Expo.easeOut,
                     //   });
-                    if(index == 7)
+                    if(index == 6)
                     {
-                      if($(window).width() > 767){
-                        TweenMax.to(center_box, 1, {scaleX:0.33, scaleY:0.12, x:176, opacity:0, ease:Power4.easeOut});
-                        TweenMax.to(('.cta a'), 1.2, { css:{'background': 'rgba(69,210,207,1)'}, ease:Power4.easeOut});
-                      }  
+
                     }
                     else
                     {
@@ -311,66 +304,6 @@ html.no-js lang="en"
         TweenMax.to(center_box, 1, {scale:1, x:-176, opacity:0.2, ease:Power4.easeOut});
       }); */
 
-      var self = $("#masonry");
-
-      self.imagesLoaded(function () {
-          self.masonry({
-              gutterWidth: 0,
-              isAnimated: true,
-              itemSelector: ".item",
-              columnWidth: '.item-sizer',
-              transitionDuration: '0.8s',
-              hiddenStyle: {
-                opacity: 0,
-              },
-              visibleStyle: {
-                opacity: 1,
-              }
-          });
-      });
-
-      $(".filters .btn-link").click(function(e) {
-          e.preventDefault();
-
-          $(".filters .btn-link").removeClass('active');
-          $(this).addClass('active');
-
-          var filter = $(this).attr("data-filter");
-
-          self.masonryFilter({
-              filter: function () {
-                  if (!filter) return true;
-                  $('#masonry').removeClass('hide');
-                  $('.filters').removeClass('open');
-                  return filter;
-              }
-          });
-      });
-
-      $(".filter-links a").click(function(e) {
-          e.preventDefault();
-
-          $('.filter-links a').removeClass('active');
-          var filter = $(this).attr("data-filter");
-
-          if(filter == "all-works")
-          {
-            $('.filters').removeClass('open');
-            $('#masonry').removeClass('hide');
-            self.masonryFilter({
-                filter: function () {
-                    if (!filter) return true;
-                    return '*';
-                }
-            });
-          }
-          else{
-            $('.filters').addClass('open');
-            $('#masonry').addClass('hide');
-          }
-          $(this).addClass('active');
-      });
-
         $(window).scroll(function() {
           var scrollTop = $(this).scrollTop();
           $(".shape").each(function(){
@@ -434,6 +367,14 @@ html.no-js lang="en"
         // if(section.hasClass('intro-section'){
         //   $('.top-navbar.home-nav').show();
         // }
+      });
+      $(document).on( 'scroll', function(){
+          if($('.get-in-touch-section').hasClass('active')) {
+            $('.footer-overlay').addClass('show');
+          }
+          else {
+            $('.footer-overlay').removeClass('show');
+          }
       });
 
 

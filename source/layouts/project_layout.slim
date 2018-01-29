@@ -34,7 +34,7 @@ html.no-js lang="en"
     link rel="stylesheet" href="stylesheets/vendors/default_skin_variation.css"/
     / link rel="stylesheet" href="stylesheets/vendors/aos.css"/
     / link rel="stylesheet" href="stylesheets/vendors/animate.css"/
-    link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Hind:300,400,600,700"/
+    link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Hind:400,500,600"/
     link rel="stylesheet" href="stylesheets/lazyframe.css"/
     link rel="stylesheet" href="stylesheets/all.css"/
     javascript:
@@ -58,30 +58,30 @@ html.no-js lang="en"
   body
     .wrapper.main-layout
       = partial "layouts/header.slim"
+      .footer-overlay
       == yield
 
     = partial "layouts/main_form.slim"
     = partial "layouts/new_footer.slim"
 
     / jQuery
-    script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"
-    script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
-    script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"
-    script type="text/javascript" src="javascripts/backbone_custom.js"
-    script type="text/javascript" src="javascripts/jquery.sky.carousel-1.0.2.min.js"
-    script type="text/javascript" src="vendor/lightbox-dist/js/lightbox.min.js"
+    script src="https://code.jquery.com/jquery-2.1.4.min.js"
+    script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
+    script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"
+    script src="javascripts/backbone_custom.js"
+    script src="javascripts/jquery.sky.carousel-1.0.2.min.js"
+    script src="vendor/lightbox-dist/js/lightbox.min.js"
     / script type="text/javascript" src="javascripts/imagelightbox_custom.js"
     / script type="text/javascript" src="javascripts/owl.carousel.js"
     script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.7/TweenMax.min.js"
     script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"
     / script type="text/javascript" src="javascripts/jquery.parallax.min.js"
     script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit.min.js"
-    script type="text/javascript" src="javascripts/projects.js"
-    script type="text/javascript" src="javascripts/all.js"
-    script type="text/javascript" src="javascripts/retina.min.js"
-    script type="text/javascript" src="javascripts/lazyframe.min.js"
-    / script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.7/jquery.lazy.min.js"
-    / script type="text/javascript" src="javascripts/scroll.js"
+    script src="javascripts/projects.js"
+    script src="javascripts/all.js"
+    script src="javascripts/retina.min.js"
+    script src="javascripts/lazyframe.min.js"
+    script src="javascripts/jquery.inview.min.js"
     / script type="text/javascript" src="javascripts/aos.js"
 
 
@@ -101,11 +101,29 @@ html.no-js lang="en"
       //     //  autoPlay: 4000,
       //    });
       //  }
-      // lazyframe('.lazyframe');
+
+      // var elem = document.querySelector( '#cta' );
+      //   if ( isInViewport( elem ) ) {
+      //       console.log( 'In the viewport!' );
+      //   }
+      $(document).ready(function() {
+        $('.footer-overlay').removeClass('show');
+      });
+
       lazyframe('.lazyframe', {
          lazyload: true
       });
-
+        $('.footer').on('inview', function(event, isInView) {
+          if (isInView) {
+            // element is now visible in the viewport
+            $('#cta').addClass('active');
+            $('.footer-overlay').addClass('show');
+          } else {
+            // element has gone out of viewport
+            $('#cta').removeClass('active');
+            $('.footer-overlay').removeClass('show');
+          }
+        });
         $("#center-slider").owlCarousel({
           nav: true, // Show next and prev buttons
           navText: [

@@ -25,7 +25,8 @@
     left: 0;
     width: 100%;
     background-color: #fff;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.10);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.10);
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.10);
     padding: 6px 30px;
 
     .logo{
@@ -103,8 +104,8 @@
         // width: 78px;
         // height: 30px;
         // max-width: 100%;
-        width: 180px;
-        height: 38px;
+        width: 164px;
+        height: 34px;
 
         .path1,.path3,.path7,.path8{
           color: #243f53;
@@ -321,8 +322,8 @@
           max-width:none;
           // width: 94px;
           // height: 35px;
-          width: 180px;
-          height: 38px;
+          width: 164px;
+          height: 34px;
         }
       }
     }
@@ -372,6 +373,7 @@
         li{
           a{
             color:#fff;
+            -webkit-transition: 0.2s all ease-in;
             transition: 0.2s all ease-in;
 
             &:hover,
@@ -379,11 +381,11 @@
             &:focus{
               color:$blue;
               font-weight: 500;
+              -webkit-transition: 0.2s all ease-in;
               transition: 0.2s all ease-in;
             }
 
             &.get-in-touch{
-              border-color: #fff;
 
               &:hover{
                 background-color: #fff;

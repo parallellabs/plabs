@@ -349,7 +349,7 @@ $('.close-form').click(function(){
     var currentPage = enquiries.get('currentPage');
     currentPage = currentPage;
     console.log("on form open: " + currentPage);
-    workspace.navigate('',{trigger:true});
+    workspace.navigate('about-project',{trigger:true});
 });
 
 
