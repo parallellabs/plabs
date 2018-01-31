@@ -171,7 +171,7 @@ $(document).ready(function(){
 			    }
 			}
 		});
-	
+
 
 		$("#boomer-sprint-slider").owlCarousel({
 			navigation : false, // Show next and prev buttons
@@ -190,6 +190,20 @@ $(document).ready(function(){
 			}
 		});
 
+
+		$("#enchanting-testimonial-slider").owlCarousel({
+			nav : true, // Show next and prev buttons
+			navText: ["<img class='owl-nav-prev' src='images/icons8-left_4.svg'>","<img class='owl-nav-next' src='images/icons8-right_4.svg'>"],
+			slideSpeed : 300,
+			paginationSpeed : 400,
+			responsive:{
+				0:{
+						items:1
+				}
+			}
+
+		});
+
 		$("#center-slider").owlCarousel({
 			navigation : true, // Show next and prev buttons
 			slideSpeed : 300,
@@ -198,7 +212,7 @@ $(document).ready(function(){
 			// autoPlay: true,
 			dots: true
 		});
-  
+
       $("#parallax-slider").owlCarousel({
           nav : false, // Show next and prev buttons
           items: 1,
@@ -206,7 +220,7 @@ $(document).ready(function(){
           paginationSpeed : 200,
           autoplay: true
        });
-        
+
 
 	// slider initialisation
 	$('#sky-carousel').carousel({

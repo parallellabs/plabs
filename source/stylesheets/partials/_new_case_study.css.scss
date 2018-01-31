@@ -4070,3 +4070,67 @@ iframe.bigvideo {
 .lazyframe{
   background-color: transparent;
 }
+
+#enchanting-testimonial-slider {
+  margin-top: 100px;
+  position: relative;
+  .item {
+    text-align: center;
+    padding: 0 40px;
+
+    p.quote{
+      color: #243f53;
+      margin-bottom: 40px;
+    }
+    p.name {
+      font-family: $base-font-family;
+      font-size: 22px;
+      font-weight: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #3f3f3f;
+      margin-bottom: 6px;
+    }
+    p.position {
+      font-family: $base-font-family;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #777777;
+      margin-bottom: 0;
+    }
+  }
+  .owl-nav {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .owl-nav-prev, .owl-nav-next {
+    width: 40px;
+    height: 40px;
+    color: #243f53;
+    margin-top: 0;
+  }
+  .owl-prev {
+    float: left;
+    position: relative;
+    left: -100px;
+
+    @media (max-width: 1024px) {
+      left: 0px;
+    }
+  }
+  .owl-next {
+    float: right;
+    position: relative;
+    right: -100px;
+
+    @media (max-width: 1024px) {
+      right: 0px;
+    }
+  }
+}
