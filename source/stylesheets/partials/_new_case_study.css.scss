@@ -522,6 +522,11 @@ a{
       padding: 0px;
       margin-bottom: 86px;
 
+      &.medium{
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
       &:after {
         content: '';
         position: absolute;
@@ -657,7 +662,7 @@ a{
         width:auto;
       }
       @include media(min-width 1441px){
-        @include calc(max-width, "50% - 40px");
+        //@include calc(max-width, "50% - 40px");
 
         width:auto;
       }
@@ -669,6 +674,9 @@ a{
       &:last-child{
         margin-right:0;
       }
+    }
+    .caption{
+      font-size: 20px;
     }
   }
   video{
@@ -952,6 +960,7 @@ a{
     }
   }
   &.vimaana-content {
+    padding-top: 30px;
     .vimaana-content-wrapper{
       display: inline-block;
       width: 100%;
@@ -971,6 +980,7 @@ a{
 
         img {
           width: 100%;
+          margin-top: 0;
         }
       }
 
@@ -991,10 +1001,10 @@ a{
         padding-left: 0;
 
         p{
-            font-size: 18px;
-            font-style: normal;
+            font-size: 20px;
+            font-style: italic;
             font-stretch: normal;
-            line-height: 1.33;
+            line-height: 1.4;
             letter-spacing: normal;
             text-align: left;
             color: #777777;
@@ -1088,7 +1098,7 @@ a{
 
   padding: 60px;
   width:100%;
-  background-color: #eeeeee;
+  background-color: rgba(216, 216, 216, 0.2);
 
   &.citrus-screens {
     background-color: #fff;
@@ -2782,6 +2792,7 @@ a{
             position: absolute;
             content: '-';
             left: -25px;
+            top: 5px;
             line-height: 17px;
             font-family: $base-font-family;
             font-size: 22px;
@@ -2849,25 +2860,38 @@ a{
 
       .name {
         font-size: 22px;
-        font-style: italic;
         text-align: center;
         color: #3f3f3f;
-        font-family: $heading-font-family;
         margin-bottom: 20px;
         display: block
       }
 
       ul {
         list-style: none;
+
         li{
+            position: relative;
             font-size: 17px;
             text-align: left;
             color: #777777;
             margin-bottom: 10px;
+            padding-left: 20px;
 
             &:last-child{
               margin-bottom: 0px;
             }
+
+          &:before{
+            position: absolute;
+            content: '-';
+            left: 0px;
+            top: 4px;
+            line-height: 17px;
+            font-family: "Lato", sans-serif;
+            font-size: 22px;
+            color: #3f3f3f;
+          }
+
         }
       }
       @media (max-width: 800px) {

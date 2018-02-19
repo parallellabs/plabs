@@ -80,11 +80,11 @@ html.no-js lang="en"
         $('.footer').on('inview', function(event, isInView) {
           if (isInView) {
             // element is now visible in the viewport
-            $('#cta').addClass('active');
+            $('#cta,.sprint').addClass('active');
             $('.footer-overlay').addClass('show');
           } else {
             // element has gone out of viewport
-            $('#cta').removeClass('active');
+            $('#cta,.sprint').removeClass('active');
             $('.footer-overlay').removeClass('show');
           }
         });

@@ -19,6 +19,8 @@ gem 'middleman-deploy', '~> 1.0'
 
 gem 'middleman-imageoptim'
 
+# gem "middleman-aria_current"
+
 gem "slim"
 
 # Adding bourbon, neat and bitters

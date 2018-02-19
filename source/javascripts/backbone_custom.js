@@ -26,6 +26,10 @@ var Workspace = Backbone.Router.extend({
     form.setElement('#firstForm');
     //$('#firstForm').parent().css({'z-index':'3', 'opacity':'1'});
     $('#firstForm').parent().css({'z-index':'3'}).addClass('animated fade-in');
+    console.log('route changed');
+    $('.overlay-up').addClass('open');
+    $('body').addClass('overflow-H');
+    $('.main-form').addClass('openForm-model');    
   },
 
   fnTwo: function() {

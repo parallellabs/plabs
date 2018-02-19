@@ -337,6 +337,11 @@
         a {
           color: #243f53;
 
+          &.active{
+            color:#16c6c2;
+            font-weight: 500;
+          }
+
           &:hover,
           &:active,
           &:focus{

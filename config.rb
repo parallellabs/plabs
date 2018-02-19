@@ -78,6 +78,14 @@ end
 #   end
 # end
 
+ignore 'index1.slim'
+ignore 'index2.slim'
+ignore 'services-old.slim'
+ignore 'about-bk.slim'
+ignore 'work-bkup.slim'
+ignore 'citrus-bk.slim'
+ignore 'smartceo-old.slim'
+# ignore 'source/api/'
 
 set :css_dir, 'stylesheets'
 
@@ -110,7 +118,7 @@ end
 
 # require 'slim'
 # # Avoid HTML minification for people who don't know slim
-# Slim::Engine.default_options[:pretty] = true
+Slim::Engine.default_options[:pretty] = true
 
 # Deployment configuration
 # activate :deploy do |deploy|
@@ -128,4 +136,11 @@ activate :deploy do |deploy|
   deploy.path            = ''
   deploy.user            = 'PLlive@parallellabs.io'
   deploy.password        = 'Zentigrity26#'
+  end
+
+  helpers do
+    def nav_active(path)
+      current_page.path == path ? {:class => "active"} : {}
+    end
+
   end

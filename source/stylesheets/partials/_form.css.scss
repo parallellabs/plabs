@@ -195,6 +195,10 @@
                                 width: 40px;
                                 height: auto;
                                 fill: #d3d3d3;
+
+                              &.icon-frontend{
+                                height: 40px;
+                              }
                             }
                         }
                         .name{
