@@ -1591,6 +1591,10 @@
       .grid-column {
         display: table;
 
+        &.grid-column-block{
+          display: block;
+        }
+
        .item {
           display: table-cell;
           width: 50%;

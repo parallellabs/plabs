@@ -13,27 +13,27 @@ var Workspace = Backbone.Router.extend({
 
   },
   initial: function() {
-    console.log('route changed123');
+    //console.log('route changed123');
     $('.inner-box').css({'z-index':'2'}).removeClass('animated fade-in');
     $('.overlay-up').removeClass('open');
     $('body').removeClass('overflow-H');
     $('.main-form').removeClass('openForm-model');
   },
   fnOne: function() {
-    console.log('route changed');
+    //console.log('route changed');
     enquiries.set('currentPage', 1);
     $('.inner-box').css({'z-index':'2'}).removeClass('animated fade-in');
     form.setElement('#firstForm');
     //$('#firstForm').parent().css({'z-index':'3', 'opacity':'1'});
     $('#firstForm').parent().css({'z-index':'3'}).addClass('animated fade-in');
-    console.log('route changed');
+    //console.log('route changed');
     $('.overlay-up').addClass('open');
     $('body').addClass('overflow-H');
-    $('.main-form').addClass('openForm-model');    
+    $('.main-form').addClass('openForm-model');
   },
 
   fnTwo: function() {
-      console.log('route changed');
+      //console.log('route changed');
       enquiries.set('currentPage', 2);
       $('.inner-box').css({'z-index':'2'}).removeClass('animated fade-in');
       form.setElement('#secondForm');
@@ -102,7 +102,7 @@ var FormView = Backbone.View.extend({
    },
 
   prevPage: function() {
-    console.log('test');
+    //console.log('test');
     this.modelUpdate();
     var currentPage = this.model.get('currentPage');
 
@@ -137,7 +137,7 @@ var FormView = Backbone.View.extend({
     $('#subOptionNone').val(subInputText);
     // end
 
-    console.log('test');
+    //console.log('test');
     this.modelUpdate();
 
     var currentPage = this.model.get('currentPage');
@@ -146,7 +146,7 @@ var FormView = Backbone.View.extend({
       currentPage = currentPage + 1;
       workspace.navigate('' + (currentPage), {trigger : true});
 
-      console.log(currentPage);
+      //console.log(currentPage);
 
 
       if(currentPage == 2)
@@ -266,14 +266,14 @@ var FormView = Backbone.View.extend({
     };
 
     var flag = validateModel[enquiries.get('currentPage').toString()]();
-    console.log('returning ', flag);
+    //console.log('returning ', flag);
     validationFlag = flag;
     return flag;
 
   },
 
   sendPage: function() {
-    console.log('returning-flag ', validationFlag);
+    //console.log('returning-flag ', validationFlag);
 
     if(validationFlag)
     {
@@ -291,13 +291,13 @@ var FormView = Backbone.View.extend({
 
   // Updating the model
   modelUpdate: function() {
-    console.info('updating...');
+    //console.info('updating...');
     var groups = this.$el.find('.group'), newGroups =[];
     var i = 0;
     while (groups[i]) {
       newGroups[i] = groups[i++];
     }
-    console.info('New Groups', newGroups);
+    //console.info('New Groups', newGroups);
 
     newGroups.forEach(function(group) {
       enquiries.set(
@@ -313,7 +313,7 @@ var FormView = Backbone.View.extend({
   },
 
   fileUpload: function(event) {
-    console.log(event);
+    //console.log(event);
     var files = [];
     $.each(event.target.files, function(index, file) {
         var reader = new FileReader();
@@ -329,7 +329,7 @@ var FormView = Backbone.View.extend({
   },
 
   openForm: function(event) {
-    console.log('clicked open form');
+    //console.log('clicked open form');
     this.modelUpdate();
     workspace.navigate('about-project',{trigger:true, replace: true});
   }
@@ -337,10 +337,10 @@ var FormView = Backbone.View.extend({
 });
 
 $('.open-form').click(function(){
-    console.log('clicked open form');
+    //console.log('clicked open form');
     var currentPage = enquiries.get('currentPage');
     currentPage = currentPage;
-    console.log("on form open: " + currentPage);
+    //console.log("on form open: " + currentPage);
 
     workspace.navigate('about-project',{trigger:true});
     // if($(window).width() <= 480 )
@@ -368,10 +368,10 @@ $('.open-form').click(function(){
 });
 
 $('.close-form').click(function(){
-    console.log('clicked open form');
+    //console.log('clicked open form');
     var currentPage = enquiries.get('currentPage');
     currentPage = currentPage;
-    console.log("on form open: " + currentPage);
+    //console.log("on form open: " + currentPage);
     workspace.navigate('about-project',{trigger:true});
 });
 

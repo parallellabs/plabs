@@ -147,7 +147,7 @@
                  </div>
               <div id="masonry">
                 <div class="item-sizer"></div>
-                <div class="grid-column">
+                <div class="grid-column grid-column-block">
                   <div class="item item-half" data-filter="technology">
                     <a href="team-indus.html">
                       <div class="img-wrapper teamindus">
@@ -162,7 +162,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="grid-column">
+                <div class="grid-column grid-column-block">
                   <div class="item item-half" data-filter="utilities saas">
                     <a href="boomer.html">
                       <div class="img-wrapper boomer">
@@ -190,7 +190,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="grid-column">
+                <div class="grid-column grid-column-block">
                   <div class="item item-half" data-filter="education">
                     <a href="talentify.html">
                       <div class="img-wrapper talentify">
@@ -218,7 +218,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="grid-column">
+                <div class="grid-column grid-column-block">
                   <div class="item item-half" data-filter="fin-tech">
                     <a href="citrus.html">
                       <div class="img-wrapper citrus">
@@ -246,7 +246,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="grid-column">
+                <div class="grid-column grid-column-block">
                   <div class="item item-half" data-filter="entertainment">
                     <a href="sportsie.html">
                       <div class="img-wrapper sportsie">
@@ -274,7 +274,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="grid-column">
+                <div class="grid-column grid-column-block">
                   <div class="item item-half" data-filter="technology">
                     <a href="vimaana.html">
                       <div class="img-wrapper vimaana">
@@ -301,7 +301,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="grid-column">
+                  <div class="grid-column grid-column-block">
                     <div class="item item-half" data-filter="saas">
                       <a href="explara.html">
                         <div class="img-wrapper explara">
@@ -329,7 +329,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid-column">
+                  <div class="grid-column grid-column-block">
                     <div class="item item-half" data-filter="publishing entertainment">
                       <a href="dune.html">
                         <div class="img-wrapper dune">
@@ -357,7 +357,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="grid-column">
+                  <div class="grid-column grid-column-block">
                     <div class="item item-half" data-filter="publishing">
                       <a href="smartceo.html">
                         <div class="img-wrapper smartceo">
@@ -518,6 +518,67 @@
     <script>
       $(document).ready(function() {
         $('.footer-overlay').removeClass('show');
+      
+        var self = $("#masonry");
+      
+        self.imagesLoaded(function () {
+            self.masonry({
+                gutterWidth: 0,
+                isAnimated: true,
+                itemSelector: ".item",
+                columnWidth: '.item-sizer',
+                transitionDuration: '0.8s',
+                hiddenStyle: {
+                  opacity: 0,
+                },
+                visibleStyle: {
+                  opacity: 1,
+                }
+            });
+        });
+      
+        $(".filters .btn-link").click(function(e) {
+            e.preventDefault();
+      
+            $(".filters .btn-link").removeClass('active');
+            $(this).addClass('active');
+      
+            var filter = $(this).attr("data-filter");
+      
+            self.masonryFilter({
+                filter: function () {
+                    if (!filter) return true;
+                    $('#masonry').removeClass('hide');
+                    $('.filters').removeClass('open');
+                    return filter;
+                }
+            });
+        });
+      
+        $(".filter-links a").click(function(e) {
+            e.preventDefault();
+      
+            $('.filter-links a').removeClass('active');
+            var filter = $(this).attr("data-filter");
+      
+            if(filter == "all-works")
+            {
+              $('.filters').removeClass('open');
+              $('#masonry').removeClass('hide');
+              self.masonryFilter({
+                  filter: function () {
+                      if (!filter) return true;
+                      return '*';
+                  }
+              });
+            }
+            else{
+              $('.filters').addClass('open');
+              $('#masonry').addClass('hide');
+            }
+            $(this).addClass('active');
+        });
+      
       });
         $('.footer').on('inview', function(event, isInView) {
           if (isInView) {
@@ -538,65 +599,6 @@
         'resizeDuration': 400
       });
       
-      var self = $("#masonry");
-      
-      self.imagesLoaded(function () {
-          self.masonry({
-              gutterWidth: 0,
-              isAnimated: true,
-              itemSelector: ".item",
-              columnWidth: '.item-sizer',
-              transitionDuration: '0.8s',
-              hiddenStyle: {
-                opacity: 0,
-              },
-              visibleStyle: {
-                opacity: 1,
-              }
-          });
-      });
-      
-      $(".filters .btn-link").click(function(e) {
-          e.preventDefault();
-      
-          $(".filters .btn-link").removeClass('active');
-          $(this).addClass('active');
-      
-          var filter = $(this).attr("data-filter");
-      
-          self.masonryFilter({
-              filter: function () {
-                  if (!filter) return true;
-                  $('#masonry').removeClass('hide');
-                  $('.filters').removeClass('open');
-                  return filter;
-              }
-          });
-      });
-      
-      $(".filter-links a").click(function(e) {
-          e.preventDefault();
-      
-          $('.filter-links a').removeClass('active');
-          var filter = $(this).attr("data-filter");
-      
-          if(filter == "all-works")
-          {
-            $('.filters').removeClass('open');
-            $('#masonry').removeClass('hide');
-            self.masonryFilter({
-                filter: function () {
-                    if (!filter) return true;
-                    return '*';
-                }
-            });
-          }
-          else{
-            $('.filters').addClass('open');
-            $('#masonry').addClass('hide');
-          }
-          $(this).addClass('active');
-      });
       
       //FullStory
         window['_fs_debug'] = false;

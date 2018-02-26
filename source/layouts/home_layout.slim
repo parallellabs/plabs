@@ -369,8 +369,29 @@ html.no-js lang="en"
         //   $('.top-navbar.home-nav').show();
         // }
 
+        /*
+        var base = 'https://parallellabs.io';
 
-
+        jQuery.address.change(function(event) {
+          console.log(event.value);
+            if (event.value) {
+                // remove active class on all nav links
+                $(".nav-right li a").removeClass("active");
+                // get current link and add active class to it
+                $(".nav-right li a").each(function() {
+                  var dataPathChk = jQuery(this).attr("href");
+                    //console.log(dataPathChk);
+                    if(dataPathChk)
+                    {
+                      var dataPath = jQuery(this).attr("href").replace(base, '');
+                      $(this).attr("data-path", dataPath);
+                      if (dataPath == (event.value)) {
+                          $(this).addClass("active");
+                      }
+                    }
+                });
+            }
+        });*/
 
       });
       $(document).on( 'scroll', function(){
