@@ -45,8 +45,8 @@ $(document).ready(function(){
       // }
       $('#firstBox').addClass('animated fade-in');
 
-      var objHeight = $(window).height() * 0.2;
-      $('#objective').css("max-height", objHeight + 'px');
+      // var objHeight = $(window).height() * 0.2;
+      // $('#objective').css("max-height", objHeight + 'px');
       // $('.inner-box').removeAttr('style');
       // $('#firstBox').css({'z-index':'3'});
     }
@@ -57,85 +57,8 @@ $(document).ready(function(){
     $('.main-form .overlay').removeClass('open');
 		$('.main-form').removeClass('openForm-model');
     $('.main-form .inner-box').removeClass('animated fade-in');
-	});
-
-  var detailsFlag = false;
-
-  if( $('#clientName').val().length > 0 && $('#email').val().length > 0)
-  {
-    detailsFlag = true;
-  }
-  else {
-    detailsFlag = false;
-  }
-
-  if(detailsFlag == true)
-  {
-    $('.send').addClass('active');
-  }
-  else {
-    $('.send').removeClass('active');
-  }
-
-  $('#secondForm input').on('blur keydown', function(){
-    var emailReg = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-    var mobiReg = /^(\+\d{1,3}[- ]?)?\d{10}$/;
-    var mail = $('#email').val();
-    var mobile = $('#mobileNumber').val();
-    if( $('#clientName').val().length > 0 && emailReg.test(mail) && mobile.length > 0 && $('#company').val().length > 0)
-    {
-      detailsFlag = true;
-    }
-    else {
-      detailsFlag = false;
-    }
-    if(detailsFlag == true)
-    {
-      $('.send').addClass('active');
-    }
-    else {
-      $('.send').removeClass('active');
-    }
-	});
-
-  var detailsFlagFirst = false;
-
-  if( $('#objective').val().length > 0 )
-  {
-    detailsFlagFirst = true;
-  }
-  else {
-    detailsFlagFirst = false;
-  }
-  var prjtCheckbox = $( "input[name='prjt_type']:checked" ).length;
-  $('#firstForm input,#firstForm textarea').on('change blur keyup', function(){
-    var prjtCheckbox = $( "input[name='prjt_type']:checked" ).length;
-    if( $('textarea#objective').val() != '' && prjtCheckbox > 0)
-    {
-      detailsFlagFirst = true;
-    }
-    else {
-      detailsFlagFirst = false;
-    }
-    if(detailsFlagFirst == true)
-    {
-      $('#firstForm .btn').addClass('active');
-    }
-    else {
-      $('#firstForm .btn').removeClass('active');
-    }
-});
-
-$('#firstForm input').on('focus', function(){
-  if( $('textarea#objective').val() != '')
-  {
-    $('#objective').parent().removeClass('error');
-  }
-  else {
-    $('#objective').parent().addClass('error');
-  }
-});
-
+  });
+  
   // if($(window).width() > 601){
 
   $('.more-options').on('click', function(){

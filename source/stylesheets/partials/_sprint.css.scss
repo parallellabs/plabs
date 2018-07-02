@@ -57,9 +57,21 @@
     }
   }
 
+  .banner-img{
+    margin-top: 72px;
+  }
+
+  .img-wrapper{
+    text-align: center;
+  }
+
   .title-block{
-    .banner-img{
-      margin-top: 72px;
+    max-width: 760px;
+
+    .title{
+      font-weight: 900;
+      color: #333333;
+      letter-spacing: 0.7px;
     }
 
     @media screen and (max-width: 992px)
@@ -72,14 +84,15 @@
 
   .desc{
     p{
-      font-family: $base-font-family;
-      font-size: 22px;
+      font-family: $heading-font-family;
+      font-size: 24px;
       font-weight: normal;
-      line-height: 1.45;
       letter-spacing: normal;
       text-align: left;
-      color: #3f3f3f;
-      max-width: 720px;
+      line-height: 1.58;
+      letter-spacing: 0.4px;
+      color: #333333;
+      max-width: 760px;
 
       &:first-child{
         margin-top: 32px;

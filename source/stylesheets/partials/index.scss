@@ -1,15 +1,15 @@
 .intro-section {
+	text-align: center;
+
 	h1 {
 		font-family: $heading-font-family;
-		font-size: 72px;
-  	font-weight: 600;
-	  line-height: 1.08;
-	  letter-spacing: 2.1px;
-	  text-align: left;
-	  color: #2c4453;
-	  max-width: 725px;
+		font-size: 80px;
+  		font-weight: 900;
+	  line-height: 1.25;
+	  letter-spacing: 1.3px;
+	  color: #333333;
 	  width: 100%;
-	  margin-bottom: 100px;
+	  margin-bottom: 18px;
 	  margin-top: 150px;
 
 		@media (max-width: 768px) {
@@ -17,17 +17,25 @@
 		}
 	}
 
+	.yellow{
+		color: #fed000;
+	}
+
+	.topaz{
+		color: #16c6c2;
+		font-style: italic;
+	}
+
 	p{
 	  font-family: $base-font-family;
-	  font-size: 22px;
-	  line-height: 1.64;
+	  font-size: 24px;
+	  line-height: 1.58;
 	  letter-spacing: normal;
-	  text-align: left;
 	  font-weight: normal;
-	  color: #3f3f3f;
-	  max-width: 725px;
-	  width: 100%;
-	  margin-bottom: 64px;
+	  color: #333333;
+	  width: 760px;
+	  margin: 0 auto;
+	  margin-bottom: 0;
 
 		@media (max-width: 768px) {
 			font-size: 18px;
@@ -257,6 +265,103 @@
 							transform: rotate3d(0, 0, 1, 40deg);
 		}
 	}
+}
+
+.banner-section{
+	background-color: #fed000;
+	padding: 0 60px;
+	margin-bottom: 0!important;
+
+	.title-block{
+		margin: 0 auto;
+		text-align: center;
+		padding: 60px 80px;
+		max-width: 920px;
+		position: relative;
+		margin-top: -120px;
+		background-color: #fed000;
+
+		.title{
+			font-size: 48px;
+			font-weight: 900;
+			color: #333333;
+			margin-bottom: 30px;
+		}
+
+		.desc{
+			font-size: 24px;
+			color: #333333;
+			line-height: 1.65;
+			letter-spacing: 0.4px;			
+		}
+
+		.cta{
+			width: 183px;
+			height: 52px;
+			border-radius: 5px;
+			background-color: #16c6c2;
+			color: #fff;	
+			line-height: 52px;
+			font-family: $heading-font-family;
+			font-size: 20px;		
+			font-weight: 900;
+			text-transform: uppercase;
+			margin-top: 30px;
+		}
+	}
+}
+
+
+.progress-section{
+	background-color: rgba(216, 216, 216, 0.2);
+	padding: 0 60px;
+	margin-bottom: 0!important;
+
+	.title-block{
+		margin: 0 auto;
+		text-align: left;
+		padding: 60px 0;
+		max-width: 760px;
+		position: relative;
+
+		.title{
+			font-size: 48px;
+			font-weight: 900;
+			color: #333333;
+			margin-bottom: 30px;
+		}
+
+		.desc{
+			font-size: 30px;
+			font-weight: bold;
+			font-style: italic;
+			color: #243f53;
+			line-height: 1.65;
+			letter-spacing: 0.4px;	
+			font-family: 'PT Serif', serif;		
+		}
+	}
+}
+
+.ripdesign-section{
+	background-color: #cb1a1a;
+	padding-bottom: 122px;
+	margin-bottom: 0!important;
+
+	.title-block{
+		max-width: 760px;
+		color: #fff;
+		text-align: center;
+
+		.desc{
+			font-size: 24px;
+			font-weight: normal;
+			color: #fff;
+			line-height: 1.58;
+			letter-spacing: 0.4px;	
+		}		
+	}
+
 }
 
 .project-section {
@@ -670,7 +775,7 @@
 
 #fullpage {
 	.intro-section {
-			max-width: 1000px;
+		max-width: 1160px;
 
 		@media (max-width: 1100px) {
 			max-width: 80%;
