@@ -83,8 +83,8 @@
 
     @media screen and (max-width: 992px)
     {
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 25px;
+      padding-right: 25px;
     }
 
   }
@@ -513,7 +513,7 @@
         height: 100%;
 
         .card-top-content {
-          height: 33%;
+          height: 21%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -546,7 +546,7 @@
 
         p {
           margin: 0;
-          height: 33%;
+          height: 39%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -586,34 +586,199 @@
       }
     }
 
-    .card:nth-child(3) {
-      .card-top-content {
-        height: 21%;
-      }
-
-      p {
-        height: 39%;
-      }
-    }
-
     .card:last-child {
       margin-right: 0;
-
-      .card-top-content {
-        height: 21%;
-      }
-
-      p {
-        height: 39%;
-      }
     }
   }
 }
 
 .section.new-home-content1.about.sprint .title-block h1.title,
-.section.new-home-content1.about.sprint .title-block .title {
+.section.new-home-content1.about.sprint .title-block .title,
+.find-out-section .title {
   font-family: 'Franchise-Bold';
   font-size: 80px;
   line-height: 68px;
   text-transform: lowercase;
+
+  @media (max-width: 666px) {
+    font-size: 65px;
+    line-height: 52px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 50px;
+    line-height: 37px;
+  }
+}
+
+.images-container {
+  width: 80%;
+  margin: 0 auto;
+
+  .image-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 77px;
+    position: relative;
+
+    .image {
+      z-index: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      background-color: #000;
+    }
+
+    .text-container {
+      z-index: 2;
+      width: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      font-family: Lato;
+      font-size: 30px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 0.6px;
+
+      @media (max-width: 1024px) {
+        font-size: 25px;
+      }
+
+      @media (max-width: 888px) {
+        font-size: 21px;
+      }
+
+      @media (max-width: 666px) {
+        position: relative;
+        text-align: center;
+        margin: auto;
+        width: 80%;
+      }
+
+      .green-text {
+        color: #16c6c2;
+      }
+    }
+  }
+
+  .image-container:nth-child(1) {
+    .text-container {
+      padding: 60px 40px 60px 0;
+
+      @media (max-width: 888px) {
+        padding: 45px 30px 45px 0;
+      }
+
+      @media (max-width: 666px) {
+        padding: 25px 0;
+      }
+    }
+  }
+
+  .image-container:nth-child(2) {
+    .text-container {
+      top: auto;
+      right: 0;
+      bottom: 0;
+      left: auto;
+      padding: 60px 0 60px 40px;
+
+      @media (max-width: 888px) {
+        padding: 45px 0 45px 30px;
+      }
+
+      @media (max-width: 666px) {
+        padding: 25px 0;
+      }
+    }
+  }
+
+  .image-container:nth-child(3) {
+    .image {
+      width: 70%;
+      height: auto;
+      position: relative;
+      left: 30%;
+
+      @media (max-width: 666px) {
+        width: 100%;
+        left: 0;
+      }
+    }
+
+    .text-container {
+      top: 50%;
+      @include transform(translateY(-50%));
+      margin: 0 auto;
+      padding: 60px 40px 60px 0;
+
+      @media (max-width: 888px) {
+        padding: 45px 30px 45px 0;
+      }
+
+      @media (max-width: 666px) {
+        padding: 25px 0;
+        @include transform(translateY(0));
+      }
+    }
+  }
+
+  .image-container:nth-child(4) {
+    .text-container {
+      top: auto;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: 0 auto;
+      padding: 60px 40px 0 40px;
+
+      @media (max-width: 888px) {
+        padding: 45px 30px 0 30px;
+      }
+
+      @media (max-width: 666px) {
+        padding: 25px 0;
+      }
+    }
+  }
+}
+
+.why-sprint ol {
+  list-style-type: decimal !important;
+  list-style-position: inside;
+}
+
+.find-out-section {
+  padding: 100px 0 100px 10%;
+  margin: 50px 0;
+  background-color: #f5f8f9;
+
+  .title {
+    margin-bottom: 37px;
+    width: 70%;
+  }
+
+  .test-button {
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #16c6c2;
+    width: 180px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    opacity: 0.5;
+    border-radius: 2px;
+
+    &:before {
+      position: relative;
+      right: 10px;
+      width: 300px;
+      height: 52px;
+      background-color: #000;
+    }
+  }
 }
