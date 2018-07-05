@@ -1,5 +1,11 @@
+@font-face {
+    font-family: 'Franchise-Bold';
+    src: url('./fonts/Franchise-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
 .intro-section {
-	text-align: center;
 
 	h1 {
 		font-family: $heading-font-family;
@@ -269,7 +275,7 @@
 
 .banner-section{
 	background-color: #fed000;
-	padding: 0 60px;
+	padding: 0 0 0 10%;
 	margin-bottom: 0!important;
 
 	.title-block{
@@ -292,7 +298,7 @@
 			font-size: 24px;
 			color: #333333;
 			line-height: 1.65;
-			letter-spacing: 0.4px;			
+			letter-spacing: 0.4px;
 		}
 
 		.cta{
@@ -300,10 +306,10 @@
 			height: 52px;
 			border-radius: 5px;
 			background-color: #16c6c2;
-			color: #fff;	
+			color: #fff;
 			line-height: 52px;
 			font-family: $heading-font-family;
-			font-size: 20px;		
+			font-size: 20px;
 			font-weight: 900;
 			text-transform: uppercase;
 			margin-top: 30px;
@@ -337,8 +343,8 @@
 			font-style: italic;
 			color: #243f53;
 			line-height: 1.65;
-			letter-spacing: 0.4px;	
-			font-family: 'PT Serif', serif;		
+			letter-spacing: 0.4px;
+			font-family: 'PT Serif', serif;
 		}
 	}
 }
@@ -358,8 +364,8 @@
 			font-weight: normal;
 			color: #fff;
 			line-height: 1.58;
-			letter-spacing: 0.4px;	
-		}		
+			letter-spacing: 0.4px;
+		}
 	}
 
 }
@@ -775,10 +781,36 @@
 
 #fullpage {
 	.intro-section {
-		max-width: 1160px;
+		width: 80%;
+		text-align: left;
+		padding-right: 100px;
 
-		@media (max-width: 1100px) {
-			max-width: 80%;
+		@media (max-width: 888px) {
+			width: 100%;
+			padding: 0 25px 0 25px;
+		}
+
+		h1 {
+			font-family: 'Franchise-Bold';
+			font-weight: 700;
+			font-style: normal;
+			text-transform: lowercase;
+			font-size: 80px;
+			line-height: 68px;
+
+			@media (max-width: 666px) {
+			  font-size: 65px;
+			  line-height: 52px;
+			}
+
+			@media (max-width: 500px) {
+			  font-size: 50px;
+			  line-height: 37px;
+			}
+		}
+
+		p {
+			width: 100%;
 		}
 	}
 	.project-section {
