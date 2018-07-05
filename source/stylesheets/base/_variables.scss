@@ -21,6 +21,13 @@
   src: url("fonts/ImogenAgnes.otf");
 }
 
+@font-face {
+    font-family: 'Franchise-Bold';
+    src: url('fonts/Franchise-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
 // @include font-face("pfdindisplaypro-med", "./fonts/pfdindisplaypro-med");
 //@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 //@import url('https://fonts.googleapis.com/css?family=Hind:300,400,600,700');
