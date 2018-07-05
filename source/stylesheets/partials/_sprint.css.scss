@@ -589,7 +589,8 @@
 
 .section.new-home-content1.about.sprint .title-block h1.title,
 .section.new-home-content1.about.sprint .title-block .title,
-.find-out-section .title {
+.find-out-section .title,
+.text-before-form .title {
   font-family: 'Franchise-Bold';
   font-size: 80px;
   line-height: 68px;
@@ -604,6 +605,10 @@
     font-size: 50px;
     line-height: 37px;
   }
+}
+
+.text-before-form .title {
+  padding-bottom: 25px;
 }
 
 .images-container {
@@ -824,12 +829,12 @@
   iframe{
     width: 100%!important;
   }
- 
+
   @media (max-width: 800px) {
     max-width: 100%;
     padding-left: 25px;
     padding-right: 25px;
-  }    
+  }
 
   // .section-block{
   //   max-width: 760px;
