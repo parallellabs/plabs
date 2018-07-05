@@ -84,7 +84,7 @@
 
   .desc{
     letter-spacing: 0.4px;
-    
+
     p{
       font-family: $heading-font-family;
       font-size: 24px;
@@ -820,6 +820,10 @@
 .hubspot-section {
   padding: 0 0 0 10%;
   margin: 50px 0;
+
+  iframe{
+    width: 100%!important;
+  }
  
   @media (max-width: 800px) {
     max-width: 100%;
@@ -827,9 +831,9 @@
     padding-right: 25px;
   }    
 
-  .section-block{
-    max-width: 760px;
-  }
+  // .section-block{
+  //   max-width: 760px;
+  // }
 
   .title {
     margin-bottom: 37px;
