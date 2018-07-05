@@ -750,6 +750,13 @@
 .why-sprint ol {
   list-style-type: decimal !important;
   list-style-position: inside;
+  font-size: 24px;
+  line-height: 1.58;
+  letter-spacing: 0.4px;
+
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
 }
 
 .find-out-section {
@@ -757,9 +764,17 @@
   margin: 50px 0;
   background-color: #f5f8f9;
 
+  @media (max-width: 888px) {
+    padding: 50px 0 50px 25px
+  }
+
   .title {
     margin-bottom: 37px;
     width: 70%;
+
+    @media (max-width: 1000px) {
+      width: 90%;
+    }
   }
 
   .test-button {
@@ -774,6 +789,11 @@
     border-radius: 0 2px 2px 0;
     transition: all 0.4s ease-in-out;
 
+    @media (max-width: 768px) {
+      border-radius: 2px;
+      opacity: 1;
+    }
+
     &:before {
       z-index: -1;
       content: "";
@@ -783,6 +803,10 @@
       height: 52px;
       background-color: #16c6c2;
       transition: all 0.4s ease-in-out;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
 
@@ -795,5 +819,13 @@
       left: 10%;
       border-radius: 2px 0 0 2px;
     }
+  }
+}
+
+.text-before-form {
+  padding-left: 10%;
+
+  @media (max-width: 888px) {
+    padding-left: 25px
   }
 }
