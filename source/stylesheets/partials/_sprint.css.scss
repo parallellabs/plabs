@@ -822,6 +822,54 @@
   }
 }
 
+.hubspot-section {
+  padding: 0 0 0 10%;
+  margin: 50px 0;
+
+  .section-block{
+    max-width: 760px;
+  }
+
+  .title {
+    margin-bottom: 37px;
+    width: 70%;
+  }
+
+  .test-button {
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #16c6c2;
+    width: 180px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    opacity: 0.5;
+    border-radius: 0 2px 2px 0;
+    transition: all 0.4s ease-in-out;
+
+    &:before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 10%;
+      height: 52px;
+      background-color: #16c6c2;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  .test-button:hover {
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 2px;
+
+    &:before {
+      left: 10%;
+      border-radius: 2px 0 0 2px;
+    }
+  }
+}
 .text-before-form {
   padding-left: 10%;
 
