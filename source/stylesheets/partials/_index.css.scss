@@ -1,4 +1,3 @@
-
 .intro-section {
 
 	h1 {
@@ -272,14 +271,14 @@
 		text-align: left;
 		color: #fff;
 		margin-bottom: 0;
-	
+
 		.content-section{
 			// margin-top: -40%;
 			background-color: #16c6c2;
 			z-index: 2;
 			position: relative;
 			padding-bottom: 80px;
-	
+
 			&:before{
 				position: absolute;
 				top: 0;
@@ -289,14 +288,14 @@
 				background-color: #fff;
 				height: 30%;
 				z-index: -1;
-			}			
+			}
 		}
 		.img-wrapper{
 			padding: 0 0 0 10%;
-		}	
+		}
 		.title-section
 		{
-	
+
 			.title{
 				font-size: 100px;
 				font-family: "Franchise-Bold";
@@ -305,7 +304,7 @@
 				margin-top: 30px;
 				padding: 0 0 0 10%;
 			}
-		
+
 			.desc{
 				color: #fff;
 				font-family: $heading-font-family;
@@ -314,20 +313,20 @@
 				line-height: 1.31;
 				letter-spacing: 0.2px;
 				margin-bottom: 0;
-				padding: 0 0 0 10%;	
+				padding: 0 0 0 10%;
 			}
-	
+
 			.max-container
 			{
 				max-width: 760px;
 			}
-	
+
 			.cta{
 				padding: 16px 24px 16px 10%;
 				background-color: rgba(255,255,255, 0.5);
 				letter-spacing: 0.5px;
 				color: #16c6c2;
-				line-height: 1;	
+				line-height: 1;
 				font-family: $heading-font-family;
 				font-size: 20px;
 				font-weight: 900;
@@ -350,12 +349,12 @@
 					// 	width: 100%;
 					// 	height: 100%;
 					// 	transition: all 0.4s ease-in-out;
-					// 	background-color: #16c6c2;	
-					// }					
+					// 	background-color: #16c6c2;
+					// }
 				}
 			}
 		}
-	}	
+	}
 
 }
 
