@@ -8,6 +8,19 @@
     background-color: rgba(216,216,216,.1);
     text-align: center;
 
+    .footer-row{
+        @include clearfix;
+
+        .footer-logo-block{
+            @include span-columns(6);
+
+            @include media(max-width 768px) {
+                @include flex(none);
+            }                
+
+        }
+    }
+
     p {
         @include media($mobile-devices) {
             font-size: rem(16);
@@ -20,13 +33,22 @@
         font-family: $base-font-family;
     }
     .socials {
+        @include span-columns(6);
+        text-align: right;
         a {
             display: inline-block;
             margin-right: 10px;
 
             // color: #fff;
             // background-color: $blue;
-        }
+        }  
+        
+        @include media(max-width 768px) {
+            @include span-columns(12);
+            text-align: left;
+            margin-top: 40px;
+        }      
+        
     }
     &.new {
         padding-bottom: 20px;
@@ -214,9 +236,15 @@
     }
     .socials {
 
-        text-align: center;
-
         a{
+           
+           svg{
+               color: rgba(255, 255, 255, 0.4);
+               fill: currentColor;
+               width: 40px;
+               height: 40px;
+           } 
+
           &:hover{
             svg{
               color: #fff;
