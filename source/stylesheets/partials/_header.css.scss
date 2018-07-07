@@ -63,7 +63,7 @@
           &:active,
           &:focus{
             color:#16c6c2;
-            font-weight: 500;
+            // font-weight: 500;
           }
 
           &.get-in-touch{
@@ -374,7 +374,7 @@
           &:active,
           &:focus{
             color:#16c6c2;
-            font-weight: 500;
+            // font-weight: 500;
           }
           &.hiring {
             @include transform(skewX(-30deg));
@@ -413,7 +413,7 @@
             &:active,
             &:focus{
               color:$blue;
-              font-weight: 500;
+              // font-weight: 500;
               -webkit-transition: 0.2s all ease-in;
               transition: 0.2s all ease-in;
             }
