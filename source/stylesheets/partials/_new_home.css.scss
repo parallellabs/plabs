@@ -1748,6 +1748,8 @@
         -webkit-transform: translate(-50%,-50%);
                 transform: translate(-50%,-50%);
         opacity: 1;
+        transition: none;
+
 
         @media (max-width: 768px) {
           position: relative;
@@ -1770,6 +1772,11 @@
           -webkit-transform: translate(-50%,-50%);
                   transform: translate(-50%,-50%);
           opacity: 0;
+          transition: all 0.4s ease;
+
+          &:hover {
+            transition: none;
+          }
 
           @media (max-width: 768px) {
             position: relative;
