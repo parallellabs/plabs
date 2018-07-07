@@ -1707,8 +1707,22 @@
         }
       }
 
+      .company-card:nth-child(6),
+      .company-card:nth-child(10) {
+        @media (max-width: 768px) {
+          padding: 13%;
+        }
+      }
+
       .company-card{
         position: relative;
+
+        @media (max-width: 768px) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 130px;
+        }
 
         .img-box, .clients.start-project .company-card .img-box{
          margin-bottom: 0;
