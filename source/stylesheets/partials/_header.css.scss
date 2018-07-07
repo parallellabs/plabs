@@ -183,7 +183,7 @@
           font-family: $base-font-family;
           line-height: 48px;
           background-color: #16c6c2;
-          opacity: 0.5;
+          opacity: 0.75;
           color: #fff;
           cursor: pointer;
           transition: all 0.4s ease-in-out;
@@ -212,6 +212,8 @@
 
           span{
             color: #fff;
+            position: relative;
+            top: 1px;
           }
 
           &:hover{

@@ -1750,6 +1750,10 @@
         opacity: 1;
         transition: none;
 
+        &:hover {
+          transition: all 0.4s ease;
+        }
+
 
         @media (max-width: 768px) {
           position: relative;

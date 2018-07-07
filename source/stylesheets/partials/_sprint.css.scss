@@ -632,7 +632,7 @@
 
     .text-container {
       z-index: 2;
-      width: 50%;
+      max-width: 50%;
       position: absolute;
       top: 0;
       left: 0;
@@ -728,6 +728,8 @@
   }
 
   .image-container:nth-child(4) {
+    margin-bottom: 0;
+
     .text-container {
       top: auto;
       right: 0;
@@ -761,7 +763,7 @@
 
 .find-out-section {
   padding: 100px 0 100px 10%;
-  margin: 50px 0;
+  margin: 80px 0;
   background-color: #f5f8f9;
 
   @media (max-width: 888px) {
@@ -785,7 +787,7 @@
     height: 52px;
     line-height: 52px;
     text-align: center;
-    opacity: 0.5;
+    opacity: 0.75;
     border-radius: 0 2px 2px 0;
     transition: all 0.4s ease-in-out;
 
@@ -885,5 +887,17 @@
 
   @media (max-width: 888px) {
     padding-left: 25px
+  }
+}
+
+.section.new-home-content1.about.sprint.main-sprints-title {
+  .title-block {
+    padding-top: 176px;
+  }
+}
+
+.section.new-home-content1.about.sprint {
+  .title-block {
+    padding-top: 120px;
   }
 }
