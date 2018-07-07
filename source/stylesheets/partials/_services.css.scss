@@ -1,6 +1,13 @@
 .parallax-window{
   z-index: 1;
 }
+.services{
+  .title-block{
+    .title{
+      max-width: 760px;
+    }
+  }
+}
 .what-we-do{
   @include clearfix;
   @include media(min-width 1441px){
@@ -303,9 +310,9 @@
   .services-block{
     @include clearfix;
     width: 100%;
-    padding-top: 32px;
-    padding-bottom: 158px;
-    padding-left: 43px;
+    padding-top: 40px;
+    padding-bottom: 120px;
+    padding-left: 20px;
 
     @include media(max-width 768px){
       padding-left: 0;
@@ -320,6 +327,10 @@
       @include span-columns(4);
       text-align: left;
 
+      @media (max-width: 1100px) {
+        width: auto;
+      }         
+
       @include media(max-width 768px){
         @include span-columns(12);
         @include omega(1n);
@@ -333,10 +344,10 @@
       }
 
       li{
-        margin: 32px 0;
+        margin: 0 0 20px 0;
         padding-left: 26px;
         position: relative;
-        font-size: 18px;
+        font-size: 22px;
         color: #878787;
 
         @media (max-width: 500px) {
@@ -351,8 +362,18 @@
           background-color: #16c6c2;
           left: 0;
           border-radius: 50%;
-          top: 12px;
+          top: 14px;
         }
+      }
+
+      &:last-child{
+        padding-left: 40px;
+
+        @include media(max-width 860px){
+          padding-left: 0;
+          margin-top: 20px;
+        }       
+
       }
     }
   }
@@ -360,7 +381,7 @@
   .services-list{
     .item{
       @include clearfix;
-      margin-bottom: 200px;
+      margin-bottom: 160px;
 
       @include media(max-width 500px){
         margin-bottom: 100px;
@@ -389,12 +410,15 @@
         }
 
         h2{
-          letter-spacing: 1.4px;
-          color: #2c4453;
-          font-size: 48px;
+          letter-spacing: normal;
+          line-height: 0.8;
+          color: #333333;
+          font-size: 80px;
           display: table-cell;
           vertical-align: middle;
           padding-left: 24px;
+          font-family: 'Franchise-Bold';
+          text-transform: lowercase;
 
           @include media(max-width 500px){
             font-size: 32px;
@@ -404,8 +428,8 @@
       }
 
       .left{
-        @include span-columns(9);
-        padding-right: 22%;
+        @include span-columns(6);
+        padding-right: 14%;
 
         @include media(max-width 768px){
           @include span-columns(12);
@@ -415,11 +439,12 @@
 
         h4{
           font-size: 32px;
-          line-height: 1.44;
-          letter-spacing: 0.9px;
-          color: #2c4453;
-          font-weight: 500;
-          margin: 100px 0 17px;
+          font-style: italic;
+          line-height: 1.28;
+          letter-spacing: 0.6px;
+          color: #555555;
+          font-weight: 700;
+          margin: 40px 0 17px;
 
           @include media(max-width 500px){
             font-size: 26px;
@@ -429,13 +454,13 @@
 
         .desc{
           font-family: $base-font-family;
-          font-size: 22px;
+          font-size: 24px;
           font-weight: normal;
-          line-height: 1.45;
+          line-height: 1.52;
           letter-spacing: normal;
           text-align: left;
-          color: #3f3f3f;
-          max-width: 720px;
+          color: #555555;
+          max-width: 760px;
 
           &:first-child{
             margin-top: 32px;
@@ -461,7 +486,7 @@
             margin: 20px 0;
             padding-left: 26px;
             position: relative;
-            font-size: 18px;
+            font-size: 22px;
             color: #878787;
 
             &:before{
@@ -472,7 +497,7 @@
               background-color: #16c6c2;
               left: 0;
               border-radius: 50%;
-              top: 12px;
+              top: 14px;
             }
           }
       }
@@ -481,7 +506,7 @@
 
   .picture-wrap{
     position: relative;
-    margin-bottom: 260px;
+    margin-bottom: 200px;
 
     @include media(max-width 1199px){
       img{
@@ -489,26 +514,32 @@
       }
     }
 
-    @include media(max-width 500px){
-      margin-bottom: 100px;
+    @include media(max-width 767px){
+      margin-bottom: 0;
 
       img{
         width: 100%;
       }
     }
 
+    img{
+      height: 560px;
+      object-fit: cover;
+    }
+
     .picture-content{
       background-color: #fff;
       position: absolute;
-      top: 0;
+      top: 50%;
+      @include transform(translateY(-50%));
       left: 200px;
       @include calc( width, '100% - 200px');
-      padding: 70px 40px;
+      padding: 80px 40px;
 
       @include media(min-width 1200px){
         width: 800px;
         left: 30%;
-        padding: 70px 0 70px 70px;
+        padding: 60px 0 60px 80px;
       }
 
       @include media(max-width 768px){
@@ -516,16 +547,25 @@
         padding: 0;
         left: 0;
         padding-top: 40px;
+        padding-bottom: 40px;
         width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        top: 0;
+        @include transform(translateY(0));
+        margin-top: -50%;
       }
 
       h6{
-        letter-spacing: 1.4px;
+        letter-spacing: normal;
         text-align: left;
-        color: #2c4453;
-        font-size: 48px;
+        color: #333333;
+        font-size: 80px;
         font-weight: 500;
-        margin-bottom: 35px;
+        margin-bottom: 40px;
+        font-family: "Franchise-Bold";
+        text-transform: lowercase;
+        line-height: 0.8;
 
         @include media(max-width 500px){
           font-size: 32px;
@@ -536,12 +576,12 @@
       .desc{
         p{
           font-family: $base-font-family;
-          font-size: 22px;
+          font-size: 24px;
           font-weight: normal;
-          line-height: 1.45;
+          line-height: 1.52;
           letter-spacing: normal;
           text-align: left;
-          color: #3f3f3f;
+          color: #555555;
           max-width: 720px;
 
           @include media(max-width 500px){
@@ -549,12 +589,7 @@
           }
 
           &:first-child{
-            margin-top: 32px;
-
-            @include media(max-width 500px){
-              margin-top: 20px;
-            }
-
+            margin-top: 0;
           }
 
           &:last-child{

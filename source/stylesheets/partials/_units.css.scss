@@ -222,6 +222,15 @@ svg {
       margin-top: 80px;
     }
 }
+
+.MT-160{
+    margin-top: 160px;
+
+    @media (max-width: 500px) {
+      margin-top: 80px;
+    }
+}
+
 .PB60 {
     padding-bottom: 60px;
 }

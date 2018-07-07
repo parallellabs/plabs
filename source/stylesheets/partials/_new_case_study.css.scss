@@ -263,11 +263,12 @@ a{
     }
   }
     .project-name {
-    font-family: $heading-font-family;
-    font-weight: 400;
-    font-size: 42px;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: uppercase;
     line-height: 1;
-    letter-spacing: 1.3px;
+    letter-spacing: 6px;
     text-align: center;
     color: #ffffff;
     margin-bottom: 20px;
@@ -296,26 +297,19 @@ a{
 
     margin-right: auto;
     margin-left: auto;
-    max-width: 70%;
+    max-width: 760px;
     width: 100%;
     width: 100%;
     color:#fff;
     text-align: center;
     font-weight: 600;
-    font-size: 60px;
-    font-family: $heading-font-family;
-    line-height: 1.2;
+    font-size: 80px;
+    font-family: "Franchise-Bold";
+    text-transform: lowercase;
+    line-height: 1;
     letter-spacing: 0.4px;
     opacity: 1;
     margin-bottom: 40px;
-
-    &.vimaana-title {
-      max-width: 77%;
-    }
-
-    &.team-indus-title{
-      max-width: 85%;
-    }
   }
   .members{
     @include media (max-width 1199px) {

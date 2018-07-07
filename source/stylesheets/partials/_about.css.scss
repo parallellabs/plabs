@@ -74,6 +74,12 @@
 
   .title-block {
     max-width: 1080px;
+    padding-top: 200px;
+
+    &.medium{
+      padding-top: 160px;
+    }
+
     @media (max-width: 1100px) {
       max-width: 80%;
     }
@@ -84,18 +90,43 @@
     }
   }
   .title {
-    font-family: $heading-font-family;
-    font-size: 48px;
+    font-family: "Franchise-Bold";
+    font-size: 100px;
     font-weight: 500;
-    line-height: 1.25;
-    letter-spacing: 1.4px;
+    line-height: 0.8;
+    letter-spacing: normal;
     text-align: left;
-    color: #2c4453;
-    max-width: 850px;
+    text-transform: lowercase;
+    color: #333333;
+    margin-bottom: 40px;
 
-    @media (max-width: 500px) {
-      font-size: 32px;
-      letter-spacing: 1px;
+    @include media(max-width 768px){
+      br{
+        display: none;
+      }
+    }   
+
+    &.medium{
+      font-size: 80px;
+
+      @media (max-width: 1024px) {
+        font-size: 80px;
+      }    
+  
+      @media (max-width: 767px) {
+        font-size: 65px;
+        line-height: 0.9;
+      }
+
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 80px;
+    }    
+
+    @media (max-width: 767px) {
+      font-size: 65px;
+      line-height: 0.9;
     }
 
     .bg-color {
@@ -118,15 +149,15 @@
   }
   .desc {
     font-family: $base-font-family;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: normal;
-    line-height: 1.45;
+    line-height: 1.52;
     letter-spacing: normal;
     text-align: left;
-    color: #3f3f3f;
-    max-width: 720px;
+    color: #555555;
+    max-width: 760px;
 
-    @media (max-width: 500px) {
+    @media (max-width: 767px) {
       font-size: 20px;
     }
   }
@@ -134,7 +165,7 @@
   .column-wrap {
     max-width: 1080px;
     margin: 0 auto;
-    margin-top: 190px;
+    margin-top: 160px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -164,19 +195,20 @@
 
       h3 {
         font-family: $heading-font-family;
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 600;
         line-height: 1.33;
         letter-spacing: normal;
         text-align: left;
         color: #3f3f3f;
+        margin-bottom: 20px;
       }
 
       p {
         font-family: $base-font-family;
-        font-size: 22px;
+        font-size: 24px;
         font-weight: normal;
-        line-height: 1.45;
+        line-height: 1.52;
         letter-spacing: normal;
         text-align: left;
         color: #3f3f3f;
@@ -218,7 +250,7 @@
     .picture-gallery-quote {
       max-width: 720px;
       width: 100%;
-      padding: 145px 110px 145px 185px;
+      padding: 145px 60px 145px 185px;
       background-color: #16c6c2;
       position: absolute;
       top: 0;
@@ -226,15 +258,19 @@
       z-index: -1;
 
       span {
-        font-family: $heading-font-family;
-        font-size: 48px;
+        font-family: "Franchise-Bold";
+        font-size: 80px;
         font-weight: 500;
         font-style: normal;
         font-stretch: normal;
-        line-height: 1.33;
-        letter-spacing: 1.4px;
+        line-height: 0.8;
+        letter-spacing: normal;
+        text-transform: lowercase;
         text-align: left;
         color: #ffffff;
+        margin-bottom: 40px;
+        position: relative;
+        top: -20px;
       }
 
       @media (max-width: 800px) {
