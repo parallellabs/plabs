@@ -1823,6 +1823,10 @@
            &.wow-club{
              border: 1px solid #ff2fa9;
            }
+
+           @media (max-width: 768px) {
+              border: 0 !important;
+           }
          }
          p{
            opacity: 1;

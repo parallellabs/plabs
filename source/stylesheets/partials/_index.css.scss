@@ -292,6 +292,10 @@
 		}
 		.img-wrapper{
 			padding: 0 0 0 10%;
+
+			@media (max-width: 666px) {
+				padding: 0;
+			}
 		}
 		.title-section
 		{
@@ -301,7 +305,7 @@
 				font-family: "Franchise-Bold";
 				text-transform: lowercase;
 				line-height: normal;
-				margin-top: 30px;
+				margin: 20px 0;
 				padding: 0 0 0 10%;
 
 				@media (max-width: 1024px) {
@@ -338,6 +342,7 @@
 			.max-container
 			{
 				max-width: 760px;
+				padding-right: 25px;
 			}
 
 			.cta{
@@ -1204,7 +1209,6 @@
 					img {
 						@media (max-width: 600px) {
 							display: block;
-							margin: 0 auto;
 						}
 					}
 				}
@@ -1342,8 +1346,6 @@
 				bottom: 34px;
 
 				@media (max-width: 600px) {
-			  	bottom: 0;
-			  	padding-bottom: 34px;
 			  }
 			}
 
@@ -1494,6 +1496,11 @@
 			@media (max-width: 693px) {
 				display: none;
 			}
+		}
+
+		.image {
+			border: 1px solid #ddd;
+			box-sizing: border-box;
 		}
 	}
 
