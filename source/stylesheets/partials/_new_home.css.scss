@@ -448,8 +448,6 @@
       }
       position: relative;
       z-index: 2;
-      margin-right: 60px;
-      margin-left: 60px;
       padding: 60px;
       background-color: #fff;
 
@@ -469,8 +467,6 @@
         }
         position: relative;
         z-index: 2;
-        margin-right: 60px;
-        margin-left: 60px;
         padding: 60px;
         background-color: #fff;
         -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
@@ -1948,9 +1944,16 @@
         p{
           margin-top: 14px;
           color: #555;
-          font-size: 16px;
-          font-size: rem(16px);
+          font-size: 19px;
           line-height: 1.38;
+
+          @media (max-width: 1222px) {
+            font-size: 17px;
+          }
+
+          @media (max-width: 1024px) {
+            font-size: 16px;
+          }
 
           @include media(max-width 768px){
             display: none;
