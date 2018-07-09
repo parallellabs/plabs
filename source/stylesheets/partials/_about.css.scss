@@ -219,6 +219,11 @@
         text-align: left;
         color: #3f3f3f;
         margin-bottom: 20px;
+
+        @media (max-width: 767px) {
+          font-size: 22px;
+        }        
+
       }
 
       p {
@@ -231,7 +236,7 @@
         color: #3f3f3f;
         margin-top: 10px;
 
-        @media (max-width: 500px) {
+        @media (max-width: 767px) {
           font-size: 20px;
         }
       }
@@ -260,8 +265,8 @@
     position: relative;
     margin-bottom: 160px;
 
-    @media (max-width: 600px) {
-      margin-bottom: 80px;
+    @media (max-width: 767px) {
+      margin-bottom: 100px;
     }
 
     .picture-gallery-quote {
@@ -291,6 +296,7 @@
     
         @media (max-width: 767px) {
           font-size: 65px;
+          top: 0;
         }
     
         @media (max-width: 500px) {
@@ -305,6 +311,12 @@
       @media (max-width: 800px) {
         padding: 105px 80px 105px 145px;
       }
+
+      @media (max-width: 767px) {
+        position: relative;
+        padding: 60px 60px;
+      }      
+
       @media (max-width: 480px) {
         padding: 40px;
       }
@@ -322,6 +334,11 @@
       @media (max-width: 800px) {
         max-width: 90%;
       }
+
+      @media (max-width: 768px) {
+        padding-top: 100px;
+      }      
+
       .row {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -330,7 +347,7 @@
         margin-bottom: 20px;
         height: 360px;
 
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
           width: 100%;
           display: inline-block;
           height: 100%;
@@ -343,7 +360,7 @@
              object-fit: cover;
           // float: left;
 
-          @media (max-width: 600px) {
+          @media (max-width: 768px) {
             margin-bottom: 20px;
           }
         }

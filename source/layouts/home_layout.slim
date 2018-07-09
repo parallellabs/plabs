@@ -57,8 +57,6 @@ html.no-js lang="en"
     == yield
     .wrapper.home
 
-    = partial "layouts/main_form.slim"
-
     / jQuery
     script src="https://code.jquery.com/jquery-2.1.4.min.js"
     script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
@@ -101,6 +99,16 @@ html.no-js lang="en"
             $('.footer-overlay').removeClass('show');
           }
       });
+
+      $(window).on("scroll", function() {
+      var scrollHeight = $(document).height();
+      var scrollPosition = $(window).height() + $(window).scrollTop();
+      if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+        $('.rip-design-section').addClass('active');
+      }
+      else{
+      }
+      });     
 
 
       //Full story
