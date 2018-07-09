@@ -635,7 +635,6 @@
       width: 50%;
       position: absolute;
       top: 0;
-      left: 0;
       background-color: #fff;
       font-family: Lato;
       font-size: 30px;
@@ -667,10 +666,11 @@
 
   .image-container:nth-child(1) {
     .text-container {
-      padding: 60px 40px 60px 0;
+      right: 0;
+      padding: 60px 0 60px 40px;
 
       @media (max-width: 888px) {
-        padding: 45px 30px 45px 0;
+        padding: 45px 0 45px 30px;
       }
 
       @media (max-width: 666px) {
@@ -885,6 +885,7 @@
 }
 .text-before-form {
   padding-left: 10%;
+  padding-top: 100px;
 
   @media (max-width: 888px) {
     padding-left: 25px
