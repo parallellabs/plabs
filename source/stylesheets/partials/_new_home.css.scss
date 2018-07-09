@@ -1724,6 +1724,14 @@
           height: 130px;
         }
 
+        @media (max-width: 666px) {
+          height: 100px;
+        }
+
+        @media (max-width: 555px) {
+          height: 90px;
+        }
+
         .img-box, .clients.start-project .company-card .img-box{
          margin-bottom: 0;
          height: auto;
@@ -1903,16 +1911,28 @@
       @include omega(4n);
 
       & {
-        @include media(max-width 767px){
+        @include media(max-width 768px){
           @include span-columns(6);
           @include omega(2n);
           margin-bottom: 30px;
-          padding:0 20px;
+          padding: 50px;
           text-align:center;
 
           &:nth-last-child(-n+2){
             margin-bottom: 0;
           }
+        }
+
+        @include media(max-width 666px){
+          padding: 40px;
+        }
+
+        @include media(max-width 555px){
+          padding: 30px;
+        }
+
+        @include media(max-width 444px){
+          padding: 20px;
         }
 
         margin:0;
@@ -3495,13 +3515,13 @@ $link_hover_color:#aaa;
 
   .content-wrapper{
     position: static;
-  
+
     @include media(max-width 768px) {
       max-width: 100%!important;
       padding-left: 25px!important;
       padding-right: 25px!important;
-    }    
-    
+    }
+
   }
 
   .get-in-touch-block{
@@ -3534,7 +3554,7 @@ $link_hover_color:#aaa;
         @include media(max-width 500px) {
           font-size: 50px;
           display: block;
-        }        
+        }
       }
       p{
         margin-bottom: 30px;
@@ -3551,7 +3571,7 @@ $link_hover_color:#aaa;
         }
       }
     }
-   
+
     .test-button {
       color: #fff;
       text-transform: uppercase;
@@ -3567,12 +3587,12 @@ $link_hover_color:#aaa;
       border-radius: 0 2px 2px 0;
       transition: all 0.4s ease-in-out;
       text-align: left;
-  
+
       @media (max-width: 768px) {
         border-radius: 2px;
         opacity: 1;
       }
-  
+
       .dummy {
         z-index: -1;
         content: "";
@@ -3582,7 +3602,7 @@ $link_hover_color:#aaa;
         height: 52px;
         background-color: #16c6c2;
         transition: all 0.4s ease-in-out;
-  
+
         @media (max-width: 768px) {
           display: none;
         }
@@ -3593,22 +3613,22 @@ $link_hover_color:#aaa;
 
         @include media(max-width 768px) {
           padding-left: 24px;
-        }          
+        }
 
       }
-    }  
+    }
 
     .test-button.active {
       opacity: 1;
       cursor: pointer;
       border-radius: 2px;
       padding-left: 24px;
-  
+
       .dummy {
         left: 10%;
         border-radius: 2px 0 0 2px;
       }
-    }   
+    }
 
     .center-box {
       width: 530px;
