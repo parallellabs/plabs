@@ -895,7 +895,12 @@
 
 .section.new-home-content1.about.sprint.main-sprints-title {
   .title-block {
-    padding-top: 176px;
+    padding-top: 200px;
+
+    .title {
+      line-height: 0.8;
+      margin-bottom: 40px;
+    }
   }
 }
 
