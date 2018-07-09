@@ -313,6 +313,10 @@
 				  line-height: 77px;
 				}
 
+				@media (max-width: 768px) {
+				  padding: 0 0 0 25px;
+				}
+
 				@media (max-width: 666px) {
 				  font-size: 65px;
 				  line-height: 52px;
@@ -336,6 +340,10 @@
 
 				@media (max-width: 777px) {
 				  font-size: 18px;
+				}
+
+				@media (max-width: 768px) {
+				  padding: 0 0 0 25px;
 				}
 			}
 
@@ -366,7 +374,7 @@
 					padding: 16px 0;
 					border-top-left-radius: 2px;
 					border-bottom-right-radius: 2px;
-					margin-left: -4px;
+					// margin-left: -4px;
 				}
 
 				&:before{
@@ -378,19 +386,27 @@
 					width: 100%;
 					height: 100%;
 					transition: all 0.4s ease-in-out;
-					width: 140px;
+					width: 10vw;
 				}
 
 				@media (max-width: 768px) {
 					background-color: #fff;
-					padding: 16px 0;
-					margin-left: 10%;
+					padding: 0 24px;
+					margin-left: 25px;
+
+					&:before {
+						display: none;
+					}
 				}
 
 				&:hover{
 					background-color: #fff;
 					transition: all 0.4s ease-in-out;
 					padding-right: 0;
+
+					@media (max-width: 768px) {
+						padding: 0;
+					}
 
 					span{
 						transition: all 0.4s ease-in-out;
@@ -1465,15 +1481,6 @@
 			width: 100%;
 			padding-bottom: 100px;
 		}
-	}
-
-	.third-story {
-		width: 47.5%;
-
-		@media (max-width: 600px) {
-			width: 100%;
-			padding-bottom: 50px;
-		}
 
 		br {
 			@media (max-width: 1440px) {
@@ -1522,6 +1529,15 @@
 		}
 	}
 
+	.third-story {
+		width: 47.5%;
+
+		@media (max-width: 600px) {
+			width: 100%;
+			padding-bottom: 50px;
+		}
+	}
+
 	.fifth-story {
 		width: 47.5%;
 		margin-right: 5%;
@@ -1530,6 +1546,40 @@
 			width: 100%;
 			padding-bottom: 100px;
 		}
+
+		br {
+			@media (max-width: 1440px) {
+				display: none;
+			}
+
+			@media (max-width: 1367px) {
+				display: block;
+			}
+
+			@media (max-width: 1265px) {
+				display: none;
+			}
+
+			@media (max-width: 1027px) {
+				display: block;
+			}
+
+			@media (max-width: 1000px) {
+				display: none;
+			}
+
+			@media (max-width: 865px) {
+				display: block;
+			}
+
+			@media (max-width: 800px) {
+				display: none;
+			}
+
+			@media (max-width: 649px) {
+				display: block;
+			}
+		}
 	}
 
 	.sixth-story {
@@ -1537,36 +1587,6 @@
 
 		@media (max-width: 600px) {
 			width: 100%;
-		}
-
-		br {
-			@media (max-width: 1440px) {
-				display: none;
-			}
-
-			@media (max-width: 1169px) {
-				display: block;
-			}
-
-			@media (max-width: 1096px) {
-				display: none;
-			}
-
-			@media (max-width: 1000px) {
-				display: block;
-			}
-
-			@media (max-width: 974px) {
-				display: none;
-			}
-
-			@media (max-width: 800px) {
-				display: block;
-			}
-
-			@media (max-width: 693px) {
-				display: none;
-			}
 		}
 
 		.image {
