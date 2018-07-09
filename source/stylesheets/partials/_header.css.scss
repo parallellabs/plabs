@@ -36,7 +36,7 @@
 
         &.white{
           .path1,.path3,.path7,.path8{
-            color: #243f53;
+            color: #555555;
           }
           .path2,.path4,.path5,.path6{
             color: #16c6c2;
@@ -57,7 +57,7 @@
       }
       &.white li{
         a{
-          color: #243f53;
+          color: #555555;
 
           &:hover,
           &:active,
@@ -85,7 +85,7 @@
     .nav-right{
       &.white{
         & ~ .sliding-panel-button{
-          color: #243f53;
+          color: #555555;
         }
       }
     }
@@ -108,7 +108,7 @@
         height: 34px;
 
         .path1,.path3,.path7,.path8{
-          color: #243f53;
+          color: #555555;
         }
         .path2,.path4,.path5,.path6{
           color: #16c6c2;
@@ -194,12 +194,13 @@
             opacity: 1;
           }
 
-          &:after {
+          .dummy {
             z-index: -1;
             content: "";
             position: absolute;
             width: 40px;
             right: -40px;
+            top: 0;
             height: 48px;
             background-color: #16c6c2;
             transition: all 0.4s ease-in-out;
@@ -214,13 +215,14 @@
             color: #fff;
             position: relative;
             top: 1px;
+            display: inline-block;
           }
 
-          &:hover{
+          &.active{
             opacity: 1;
             border-radius: 0 2px 2px 0;
 
-            &:after {
+            .dummy {
               right: 0;
               border-radius: 0 2px 2px 0;
             }
@@ -365,7 +367,7 @@
       li {
 
         a {
-          color: #243f53;
+          color: #555555;
 
           &.active{
             color:#16c6c2;
@@ -551,7 +553,7 @@
   width: 24px;
   height: 24px;
   outline: none;
-  color: #243f53;
+  color: #555555;
   cursor: pointer;
   top: 20px;
   right: 20px;

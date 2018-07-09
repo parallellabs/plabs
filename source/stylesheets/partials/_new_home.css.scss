@@ -3493,6 +3493,17 @@ $link_hover_color:#aaa;
   z-index: 10;
   background: #fff;
 
+  .content-wrapper{
+    position: static;
+  
+    @include media(max-width 768px) {
+      max-width: 100%!important;
+      padding-left: 25px!important;
+      padding-right: 25px!important;
+    }    
+    
+  }
+
   .get-in-touch-block{
     @include row(table);
     font-family: $secondary-font-family;
@@ -3505,36 +3516,100 @@ $link_hover_color:#aaa;
 
     .text{
 
-      h3{
-        font-family: $heading-font-family;
-        font-size: 24px;
-        font-weight: normal;
-        line-height: 1;
-        letter-spacing: 1.1px;
+      .title{
+        margin-bottom: 30px;
+        width: 70%;
+        font-family: 'Franchise-Bold';
+        font-size: 100px;
+        line-height: 0.8;
+        text-transform: lowercase;
+        max-width: 660px;
         text-align: left;
-        color: #7c8f9b;
-        margin-bottom: 15px;
 
         @include media(max-width 768px) {
-          font-size: 30px;
+          font-size: 65px;
           display: block;
+          width: 100%;
         }
+        @include media(max-width 500px) {
+          font-size: 50px;
+          display: block;
+        }        
       }
-      h2{
-        font-family: $heading-font-family;
-        font-size: 36px;
-        font-weight: 300;
-        line-height: 1.1;
-        letter-spacing: 1.1px;
+      p{
+        margin-bottom: 30px;
+        font-weight: 700;
+        max-width: 660px;
+        font-size: 26px;
+        line-height: 1.31;
+        color: #555;
         text-align: left;
-        color: #2c4453;
 
         @include media(max-width 768px) {
-          font-size: 38px;
+          font-size: 20px;
           display: block;
         }
       }
     }
+   
+    .test-button {
+      color: #fff;
+      text-transform: uppercase;
+      background-color: #16c6c2;
+      height: 52px;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+      text-align: center;
+    opacity: 0.75;
+    font-family: $heading-font-family;
+    font-weight: 900;
+    font-size: 20px;
+      border-radius: 0 2px 2px 0;
+      transition: all 0.4s ease-in-out;
+      text-align: left;
+  
+      @media (max-width: 768px) {
+        border-radius: 2px;
+        opacity: 1;
+      }
+  
+      .dummy {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 10%;
+        height: 52px;
+        background-color: #16c6c2;
+        transition: all 0.4s ease-in-out;
+  
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+      .text{
+        display: inline-block;
+        padding-right: 24px;
+
+        @include media(max-width 768px) {
+          padding-left: 24px;
+        }          
+
+      }
+    }  
+
+    .test-button.active {
+      opacity: 1;
+      cursor: pointer;
+      border-radius: 2px;
+      padding-left: 24px;
+  
+      .dummy {
+        left: 10%;
+        border-radius: 2px 0 0 2px;
+      }
+    }   
+
     .center-box {
       width: 530px;
       height: 400px;
@@ -3577,13 +3652,13 @@ $link_hover_color:#aaa;
       margin-bottom: 0px;
       margin-left: auto;
       margin-right: auto;
-      padding: 140px 0;
+      padding: 80px 0;
 
       @media (max-width: 767px) {
         padding: 40px 0;
       }
       .get-in-touch-block{
-        text-align: center;
+        text-align: left;
 
         .text{
           @media (max-width: 767px) {
@@ -3706,8 +3781,8 @@ $link_hover_color:#aaa;
         -webkit-transition-delay: 1s;
                 transition-delay: 1s;
 
-        @media (max-width: 480px) {
-          width: 60%;
+        @media (max-width: 768px) {
+          width: 0;
         }
       }
     }

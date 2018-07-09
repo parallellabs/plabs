@@ -796,7 +796,7 @@
       opacity: 1;
     }
 
-    &:before {
+    span.dummy {
       z-index: -1;
       content: "";
       position: absolute;
@@ -812,12 +812,13 @@
     }
   }
 
-  .test-button:hover {
+  .test-button.active {
     opacity: 1;
     cursor: pointer;
     border-radius: 2px;
+    text-align: center;
 
-    &:before {
+    span.dummy {
       left: 10%;
       border-radius: 2px 0 0 2px;
     }

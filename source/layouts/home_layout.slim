@@ -75,10 +75,23 @@ html.no-js lang="en"
     / script src="javascripts/jquery.fullpage.min.js"
     script src="javascripts/all.js"
     script src="javascripts/retina.min.js"
+    script src="javascripts/jquery.inview.min.js"
 
     / script src="javascripts/jquery.address-1.5.min.js"
     / script type="text/javascript" src="javascripts/three.min.js"
     javascript:
+
+      $('.footer').on('inview', function(event, isInView) {
+        if (isInView) {
+          // element is now visible in the viewport
+          $('#cta,.sprint').addClass('active');
+          $('.footer-overlay').addClass('show');
+        } else {
+          // element has gone out of viewport
+          $('#cta,.sprint').removeClass('active');
+          $('.footer-overlay').removeClass('show');
+        }
+      });
 
       $(document).on( 'scroll', function(){
           if($('.get-in-touch-section').hasClass('active')) {

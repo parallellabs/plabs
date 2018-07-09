@@ -316,10 +316,10 @@
 
     @include media(max-width 768px){
       padding-left: 0;
+      padding-top: 20px;
     }
 
     @media (max-width: 500px) {
-      padding-top: 20px;
       padding-bottom: 100px;
     }
 
@@ -350,9 +350,9 @@
         font-size: 22px;
         color: #878787;
 
-        @media (max-width: 500px) {
-          margin: 20px 0;
-        }
+        @include media(max-width 768px){
+          font-size: 18px;
+        }         
 
         &:before{
           content: '';
@@ -363,16 +363,25 @@
           left: 0;
           border-radius: 50%;
           top: 14px;
+
+          @include media(max-width 768px){
+            top: 12px;
+          }                 
+
         }
       }
 
       &:last-child{
-        padding-left: 40px;
+        padding-left: 40px;       
 
         @include media(max-width 860px){
           padding-left: 0;
+        }    
+
+        @include media(max-width 768px){
+          padding-left: 0;
           margin-top: 20px;
-        }       
+        }        
 
       }
     }
@@ -383,7 +392,7 @@
       @include clearfix;
       margin-bottom: 160px;
 
-      @include media(max-width 500px){
+      @include media(max-width 768px){
         margin-bottom: 100px;
       }
 
@@ -420,9 +429,17 @@
           font-family: 'Franchise-Bold';
           text-transform: lowercase;
 
-          @include media(max-width 500px){
-            font-size: 32px;
+          @media (max-width: 1024px) {
+            font-size: 80px;
+          }    
+      
+          @media (max-width: 768px) {
+            font-size: 65px;
           }
+    
+          @media (max-width: 500px) {
+            font-size: 50px;
+          }  
 
         }
       }
@@ -446,9 +463,8 @@
           font-weight: 700;
           margin: 40px 0 17px;
 
-          @include media(max-width 500px){
-            font-size: 26px;
-            margin-top: 40px;
+          @include media(max-width 768px){
+            font-size: 24px;
           }
         }
 
@@ -463,10 +479,10 @@
           max-width: 760px;
 
           &:first-child{
-            margin-top: 32px;
+            margin-top: 40px;
           }
 
-          @media (max-width: 500px) {
+          @media (max-width: 768px) {
             font-size: 20px;
           }
         }
@@ -489,6 +505,10 @@
             font-size: 22px;
             color: #878787;
 
+            @media (max-width: 768px) {
+              font-size: 18px;
+            }
+
             &:before{
               content: '';
               position: absolute;
@@ -498,6 +518,11 @@
               left: 0;
               border-radius: 50%;
               top: 14px;
+
+              @media (max-width: 768px) {
+                top: 12px;
+              }
+
             }
           }
       }
@@ -514,8 +539,8 @@
       }
     }
 
-    @include media(max-width 767px){
-      margin-bottom: 0;
+    @include media(max-width 768px){
+      margin-bottom: 60px;
 
       img{
         width: 100%;
@@ -567,10 +592,17 @@
         text-transform: lowercase;
         line-height: 0.8;
 
-        @include media(max-width 500px){
-          font-size: 32px;
-          margin-bottom: 20px;
+        @media (max-width: 1024px) {
+          font-size: 80px;
+        }    
+    
+        @media (max-width: 768px) {
+          font-size: 65px;
         }
+  
+        @media (max-width: 500px) {
+          font-size: 50px;
+        }  
       }
 
       .desc{
@@ -584,7 +616,7 @@
           color: #555555;
           max-width: 720px;
 
-          @include media(max-width 500px){
+          @include media(max-width 768px){
             font-size: 20px;
           }
 
@@ -596,18 +628,15 @@
             margin-bottom: 0;
           }
 
-          @media (max-width: 500px) {
-            font-size: 20px;
-          }
         }
       }
 
     }
   }
 
-  &.get-in-touch-section .content-wrapper{
-    @media (min-width: 1100px) {
-      max-width: 1080px;
-    }
-  }
+  // &.get-in-touch-section .content-wrapper{
+  //   @media (min-width: 1100px) {
+  //     max-width: 1080px;
+  //   }
+  // }
 }

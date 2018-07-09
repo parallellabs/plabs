@@ -58,6 +58,18 @@ $(document).ready(function(){
 		$('.main-form').removeClass('openForm-model');
     $('.main-form .inner-box').removeClass('animated fade-in');
   });
+ 
+  $(".test-button .text").hover(function(){
+    $(".test-button").addClass('active');
+    }, function(){
+    $(".test-button").removeClass('active');
+  }); 
+  
+  $(".get-in-touch .text").hover(function(){
+    $(".get-in-touch").addClass('active');
+    }, function(){
+    $(".get-in-touch").removeClass('active');
+  });    
   
   // if($(window).width() > 601){
 
