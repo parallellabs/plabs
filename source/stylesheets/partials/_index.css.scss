@@ -400,7 +400,6 @@
 
 				&:hover{
 					background-color: #fff;
-					transition: all 0.4s ease-in-out;
 					padding-right: 0;
 
 					@media (max-width: 768px) {
@@ -903,7 +902,6 @@
 	.intro-section {
 		width: 80%;
 		text-align: left;
-		padding-top: 120px;
 		padding-bottom: 120px;
 
 		@media (max-width: 888px) {
@@ -1636,6 +1634,15 @@
 .third-story,
 .fifth-story,
 .sixth-story {
+	@media (max-width: 600px) {
+		display: flex;
+		flex-direction: column-reverse;
+
+		.story-text {
+			padding-top: 25px;
+		}
+	}
+
 	.image {
 		position: relative;
 
