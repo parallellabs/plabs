@@ -104,12 +104,12 @@ html.no-js lang="en"
       var scrollHeight = $(document).height();
       var scrollPosition = $(window).height() + $(window).scrollTop();
       if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
-        $('.rip-design-section').addClass('active');
+        $('.rip-design-section').slideDown();
       }
       else{
+        $('.rip-design-section').slideUp();
       }
       });
-
 
       //Full story
     	window['_fs_debug'] = false;
