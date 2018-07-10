@@ -421,6 +421,17 @@
             }
 
             &.get-in-touch{
+              background-color: #fff;
+              color: #16c6c2;
+              opacity: 1;
+
+              span{
+                color: #16c6c2;
+              }
+
+              .dummy{
+                background-color: #fff;
+              }              
 
               &:hover{
                 background-color: #fff;
