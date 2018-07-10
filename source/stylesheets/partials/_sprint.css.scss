@@ -59,6 +59,42 @@
 
   .banner-img{
     margin-top: 72px;
+
+    img.banner-img-desktop {
+      display: block;
+
+      @media (max-width: 1024px) {
+        display: none;
+      }
+
+      @media (max-width: 650px) {
+        display: none;
+      }
+    }
+
+    img.banner-img-tablet {
+      display: none;
+
+      @media (max-width: 1024px) {
+        display: block;
+      }
+
+      @media (max-width: 650px) {
+        display: none;
+      }
+    }
+
+    img.banner-img-phone {
+      display: none;
+
+      @media (max-width: 1024px) {
+        display: none;
+      }
+
+      @media (max-width: 650px) {
+        display: block;
+      }
+    }
   }
 
   .img-wrapper{
