@@ -3590,6 +3590,7 @@ $link_hover_color:#aaa;
       border-radius: 0 2px 2px 0;
       transition: all 0.4s ease-in-out;
       text-align: left;
+      position: relative;
 
       @media (max-width: 768px) {
         border-radius: 2px;
@@ -3600,13 +3601,17 @@ $link_hover_color:#aaa;
         z-index: -1;
         content: "";
         position: absolute;
-        left: 0;
-        width: 10%;
+        left: -700px;
+        width: 700px;
         height: 52px;
         background-color: #16c6c2;
         transition: all 0.4s ease-in-out;
 
         @media (max-width: 768px) {
+          display: none;
+        }
+
+        @media (min-width: 1921px) {
           display: none;
         }
       }
@@ -3618,6 +3623,10 @@ $link_hover_color:#aaa;
           padding-left: 24px;
         }
 
+        @media (min-width: 1921px) {
+          position: relative;
+          left: 12px;
+        }
       }
     }
 
@@ -3627,8 +3636,13 @@ $link_hover_color:#aaa;
       border-radius: 2px;
       padding-left: 24px;
 
+      @media (min-width: 1921px) {
+        padding-left: 0;
+      }
+
       .dummy {
-        left: 10%;
+        width: 0;
+        left: 0;
         border-radius: 2px 0 0 2px;
       }
     }

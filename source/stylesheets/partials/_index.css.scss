@@ -291,18 +291,34 @@
 			}
 		}
 		.img-wrapper{
-			padding: 0 0 0 5%;
 			margin: 0 auto;
+			width: 80%;
 			max-width: 1200px;
 
-			@media (max-width: 666px) {
-				padding: 0;
+			@media (max-width: 1200px) {
+				width: 90%;
+				float: right;
+			}
+
+			@media (max-width: 888px) {
+				width: 100%;
+				padding: 0 0 0 25px;
+			}
+
+			img {
+				width: 100%;
 			}
 		}
 		.title-section
 		{
 			max-width: 1200px;
+			width: 80%;
 			margin: 0 auto;
+
+			@media (max-width: 888px) {
+				width: 100%;
+				padding: 0 25px;
+			}
 
 			.title{
 				font-size: 100px;
@@ -310,7 +326,7 @@
 				text-transform: lowercase;
 				line-height: normal;
 				margin: 20px 0;
-				padding: 0 0 0 5%;
+				// padding: 0 0 0 5%;
 
 				@media (max-width: 1024px) {
 				  font-size: 90px;
@@ -318,7 +334,7 @@
 				}
 
 				@media (max-width: 768px) {
-				  padding: 0 0 0 25px;
+				  // padding: 0 0 0 25px;
 				}
 
 				@media (max-width: 666px) {
@@ -340,14 +356,14 @@
 				line-height: 1.31;
 				letter-spacing: 0.2px;
 				margin-bottom: 0;
-				padding: 0 0 0 5%;
+				// padding: 0 0 0 5%;
 
 				@media (max-width: 777px) {
 				  font-size: 18px;
 				}
 
 				@media (max-width: 768px) {
-				  padding: 0 0 0 25px;
+				  // padding: 0 0 0 25px;
 				}
 			}
 
@@ -383,13 +399,13 @@
 				&:before{
 					content: '';
 					position: absolute;
-					left: -100vw;
+					left: -100%;
 					top: 0;
 					background-color: rgba(255,255,255, 0.5);
 					width: 100%;
 					height: 100%;
 					transition: all 0.4s ease-in-out;
-					width: 100vw;
+					width: 10vw;
 				}
 
 				@media (max-width: 768px) {
@@ -1487,9 +1503,7 @@
 		}
 
 		br {
-			@media (max-width: 1440px) {
-				display: none;
-			}
+			display: none;
 
 			@media (max-width: 1308px) {
 				display: block;
@@ -1552,9 +1566,7 @@
 		}
 
 		br {
-			@media (max-width: 1440px) {
-				display: none;
-			}
+			display: none;
 
 			@media (max-width: 1367px) {
 				display: block;
@@ -1588,6 +1600,12 @@
 
 	.sixth-story {
 		width: 47.5%;
+
+		&:hover {
+			.image {
+				border: none;
+			}
+		}
 
 		@media (max-width: 600px) {
 			width: 100%;
