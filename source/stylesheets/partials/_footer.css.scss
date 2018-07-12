@@ -297,8 +297,14 @@
     margin: 0 auto;
     text-align: left;
 
+    @media (max-width: 1000px) {
+        width: 100%;
+        padding: 0 25px;
+    }
+
     @media (max-width: 767px) {
       max-width: 100%;
+      padding: 0;
     }
 
     .footer-logo {
