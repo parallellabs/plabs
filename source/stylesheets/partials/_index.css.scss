@@ -1269,6 +1269,12 @@
 			box-shadow: 0 50px #fff inset;
 		}
 
+		.image{
+			img {
+				width: 100%;
+			}
+		}
+
 		.first-story,
 		.fourth-story {
 			display: flex;
@@ -1614,9 +1620,9 @@
 	.sixth-story {
 		width: 47.5%;
 
-		&:hover {
-			.image {
-				border: none;
+		 .image {
+			&:hover {
+				box-shadow: none;
 			}
 		}
 
@@ -1625,8 +1631,7 @@
 		}
 
 		.image {
-			border: 1px solid #ddd;
-			box-sizing: border-box;
+			box-shadow: 1px 1px #ddd, 1px -1px #ddd, -1px 1px #ddd, -1px -1px #ddd;
 		}
 	}
 
