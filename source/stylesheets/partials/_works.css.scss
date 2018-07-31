@@ -17,7 +17,7 @@
       max-width: 100%;
       padding-left: 25px;
       padding-right: 25px;
-    }    
+    }
 
     .title{
       margin-bottom: 0;
@@ -30,8 +30,8 @@
 
       @media (max-width: 1024px) {
         font-size: 80px;
-      }    
-  
+      }
+
       @media (max-width: 768px) {
         font-size: 65px;
       }
@@ -43,12 +43,12 @@
       font-weight: normal;
       line-height: 1.52;
       color: #333333;
-      padding-top: 40px;
+      padding-top: 15px;
       max-width: 760px;
 
       @media (max-width: 768px) {
         font-size: 20px;
-      }      
+      }
 
     }
   }
