@@ -30,6 +30,7 @@ html.no-js lang="en"
     link rel="stylesheet" href="vendor/lightbox-dist/css/lightbox.min.css"/
     link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Hind:400,500,600"/
     link rel="stylesheet" href="stylesheets/all.css"/
+    link rel="stylesheet" href="stylesheets/vendors/animsition.css"/
     script src="//js.hsforms.net/forms/shell.js"/
 
     javascript:
@@ -71,6 +72,7 @@ html.no-js lang="en"
     script src="javascripts/all.js"
     script src="javascripts/retina.min.js"
     script src="javascripts/jquery.inview.min.js"
+    script src="vendor/animsition.min.js"
     script src="//js.hs-scripts.com/1730467.js" id="hs-script-loader" async="true" defer="true"
 
     / script src="javascripts/jquery.address-1.5.min.js"
@@ -79,6 +81,9 @@ html.no-js lang="en"
 
     javascript:
       $(document).ready(function() {
+
+        $('.animsition').animsition();
+
         $('.footer-overlay').removeClass('show');
 
         var self = $("#masonry");
