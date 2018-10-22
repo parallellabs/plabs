@@ -23,14 +23,15 @@ html.no-js lang="en"
     meta content="#{@twitter_description}" name="twitter:description" /
     meta content="#{@twitter_image}" name="twitter:image" /
 
+    link rel="dns-prefetch" href="//fonts.googleapis.com"/
     link href="http://parallellabs.io/" rel="canonical" /
     link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" /
-    link rel="stylesheet" href="/stylesheets/normalize.css"/
+    / link rel="stylesheet" href="/stylesheets/normalize.css"/
     link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/css/uikit.min.css"
     link rel="stylesheet" href="vendor/lightbox-dist/css/lightbox.min.css"/
-    link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Hind:400,500,600"/
+    link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700"/
     link rel="stylesheet" href="stylesheets/all.css"/
-    link rel="stylesheet" href="stylesheets/vendors/animsition.css"/
+    / link rel="stylesheet" href="stylesheets/vendors/animsition.css"/
     script src="//js.hsforms.net/forms/shell.js"/
 
     javascript:
@@ -72,7 +73,8 @@ html.no-js lang="en"
     script src="javascripts/all.js"
     script src="javascripts/retina.min.js"
     script src="javascripts/jquery.inview.min.js"
-    script src="vendor/animsition.min.js"
+    / script src="vendor/animsition.min.js"
+    / script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"
     script src="//js.hs-scripts.com/1730467.js" id="hs-script-loader" async="true" defer="true"
 
     / script src="javascripts/jquery.address-1.5.min.js"
@@ -81,8 +83,29 @@ html.no-js lang="en"
 
     javascript:
       $(document).ready(function() {
-
-        $('.animsition').animsition();
+      /*  
+        $(".animsition").animsition({
+          inClass: 'fade-in',
+          outClass: 'fade-out',
+          inDuration: 400,
+          outDuration: 100,
+          linkElement: '.animsition-link',
+          // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+          loading: false,
+          loadingParentElement: 'body', //animsition wrapper element
+          loadingClass: 'animsition-loading',
+          loadingInner: '', // e.g '<img src="loading.svg" />'
+          timeout: false,
+          timeoutCountdown: 5000,
+          onLoadEvent: true,
+          browser: [ 'animation-duration', '-webkit-animation-duration'],
+          // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+          // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+          overlay : false,
+          overlayClass : 'animsition-overlay-slide',
+          overlayParentElement : 'body',
+          transition: function(url){ window.location.href = url; }
+        });*/
 
         $('.footer-overlay').removeClass('show');
 

@@ -1,7 +1,6 @@
 .contact{
 
   .contact-section {
-    padding-top: 200px;
 
     .get-in-touch-wrapper{
       width: 80%;
@@ -48,7 +47,7 @@
           }
 
 
-        }
+        }       
 
         ul{
           text-align: left;
@@ -142,7 +141,7 @@
       font-family: 'Franchise-Bold';
       font-size: 80px;
       color: #333333;
-      padding-top: 120px;
+      padding-top: 200px;
       text-transform: lowercase;
       margin-bottom: 20px;
       line-height: 0.85;
@@ -151,10 +150,23 @@
 
       @media (max-width: 800px) {
         font-size: 60px;
-        padding-top: 60px;
+        padding-top: 150px;
       }
 
     }
+
+    p {
+      font-size: rem(20);
+      font-weight: 400;
+      text-align: left;
+      line-height: 1.5;
+
+      color: $medium-gray;
+
+      @include media($mobile-devices) {
+          font-size: rem(18);
+      }
+    } 
 
     @media (max-width: 800px) {
       max-width: 100%;

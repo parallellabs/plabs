@@ -355,6 +355,10 @@
             text-align: left;
             color: rgba(255, 255, 255, 1);
 
+            &.active{
+               color: #16c6c2; 
+            }
+
             @media (max-width: 767px) {
               font-size: 18px;
             }

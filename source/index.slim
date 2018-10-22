@@ -13,10 +13,9 @@ layout: home_layout
 - @twitter_url = "http://parallellabs.io/"
 - @twitter_image = "http://parallellabs.io/images/svgs/logo.png"
 
-.footer-overlay
 .mai-content#fullpage.animsition
 	.section.intro-section.fp-auto-height
-		h1.title
+		h2.title
 			| We help digital products move fast and become better
 		p
 			| We are a UX design and innovation consultancy that helps companies build great products. We work as your extended team and bring in a mix of strategy, design & technology.
@@ -25,12 +24,12 @@ layout: home_layout
 			.img-wrapper
 				img src="images/new/home-image.jpg" alt="design sprints in india"
 			.title-section
-				h1.title
+				h2.title
 					| Design Sprints
 				.desc
 					.max-container
 						| Progress in a week more than you would in months with design sprints. Whether you are trying to design a new product, improve an existing one or solve a difficult problem, design sprints can help.
-				a.cta href="sprints.html"
+				a.cta href="design-sprints.html"
 					span KNOW MORE
 	.section.new-home-content1.clients.clients-list.PB0-imp.fp-auto-height
 		.content-wrapper.content-wrapper-white
@@ -110,7 +109,7 @@ layout: home_layout
 			.text
 				.title
 					| Boomer
-				h2.main
+				h3.main
 					| Drastically increasing conversions by a rejig of on-boarding workflow
 				a.link href="https://parallellabs.io/sprint/boomer"
 					| Read Story <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" version="1.1" fill="#16c6c2"><g id="surface3" fill="#16c6c2"><path style=" " d="M 12.21875 2.28125 L 10.78125 3.71875 L 18.0625 11 L 2 11 L 2 13 L 18.0625 13 L 10.78125 20.28125 L 12.21875 21.71875 L 21.21875 12.71875 L 21.90625 12 L 21.21875 11.28125 Z " fill="#16c6c2"></path></g></svg>
@@ -119,18 +118,18 @@ layout: home_layout
 				.story-text
 					.title
 						| Urban Piper
-					h2.main
+					h3.main
 						| Re-designing a complex product for restaurants ground-up<br><br>
 				.image
 					| <img src="images/new/urban-piper.png">
 			.third-story
 				.story-text
 					.title
-						| Harappa
+						| VIMAANA
 					h2.main
-						| Helping an online education startup design and validate MVP in 2 weeks
+						| Revampimg product for a Drone Analytics App
 				.image
-					| <img src="images/new/harappa.png">
+					| <img src="images/new/vimaana.png">
 		.fourth-story
 			.text
 				.title
@@ -160,9 +159,23 @@ layout: home_layout
 					.title
 						| Mayadata
 					h3.main
-						| Designing MVP of a DevOps - storage management product in 2 weeks
+						| Product Design and Validation for a DevOps - Storage Platform
 				.image
 					| <img src="images/new/cloudbyte.png">
+		//.seventh-story
+		//	.images
+		//		.image.image-1
+		//			| <img src="images/new/collective-01.png">
+		//		.image.image-2
+		//			| <img src="images/new/collective-02.png">
+		//		.image.image-3
+		//			| <img src="images/new/collective-03.png">
+		//	.text
+		//		.title
+		//			| COLLECTIVE
+		//		h3.main
+		//			| Designing a platform to connect influencers with business owners in 2 weeks
+		//		span.coming-soon Coming soon					
 .progress-perfection-section
 	h4.title
 		| Progress Over Perfection
@@ -186,20 +199,17 @@ layout: home_layout
 				| We’re lean, we’re fast and by the time we’re done testing with the users, we’re practically their children’s godparents. We specialise in delivering results that would normally take months, in a matter of weeks. We are an organisation that doesn’t skip leg day at the gym, so we can keep two paces ahead of your competitors every time.<br><br>
 			.p-link
 				| <a href="about.html" class="p-link">About Us <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" version="1.1" fill="#16c6c2"><g id="surface3" fill="#16c6c2"><path style=" " d="M 12.21875 2.28125 L 10.78125 3.71875 L 18.0625 11 L 2 11 L 2 13 L 18.0625 13 L 10.78125 20.28125 L 12.21875 21.71875 L 21.21875 12.71875 L 21.90625 12 L 21.21875 11.28125 Z " fill="#16c6c2"></path></g></svg></a>
-.section.new-home-content1.get-in-touch-section#cta
-	/ div#threefooterjs
-	/ 	|<div id="x-axis" class="axis"></div>
-	/ 	|<div id="y-axis" class="axis"></div>
-	/ 	div.parallaxbox.parallaxbox-1
-	/ 	div.parallaxbox.parallaxbox-2
-	.content-wrapper#cta-wrap.animation-element
-		.get-in-touch-block
-			.text
-				h4.title Ready to make your products better?
-				p We would love to know more about your product challenges & how sprints could help.
-			/ .center-box
-			a.test-button href="contact-us.html"
-				span.dummy
-				span.text GET IN TOUCH
+.get-in-touch-form-section
+	.text
+		h4.title Get In Touch
+		p
+        	| Fill up this form or drop us a line on <a href="mailto:hello@parallellabs.io">hello@parallellabs.io</a>  		
+	.contact-form		
+		| 	<script>
+			hbspt.forms.create({
+				portalId: "1730467",
+				formId: "8d19560d-28c7-4a45-aa73-9573f912f841"
+			});
+			</script>		
 
 = partial "layouts/new_footer.slim"

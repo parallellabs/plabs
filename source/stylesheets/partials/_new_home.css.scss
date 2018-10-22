@@ -774,7 +774,7 @@
       #masonry {
         max-width: 1000px;
         margin: 0 auto;
-        margin-top: 120px;
+        margin-top: 55px;
       }
 
       .item{
@@ -1594,7 +1594,7 @@
        .item {
           display: table-cell;
           width: 50%;
-          padding-left: 30px;
+          //padding-left: 30px;
           padding-right: 30px;
 
           .img-wrapper{
@@ -1615,7 +1615,31 @@
             padding-left: 0;
           }
         }
+
+        // &:nth-child(even){
+        //   .item{
+        //      padding-right: 30px;
+        //      padding-left: 0;
+        //   }
+        // }
+
+        // &:nth-child(odd){
+        //   .item{
+        //      padding-left: 30px;
+        //      padding-right: 0;
+        //   }
+        // }
       }
+
+      // .item:nth-child(even) {
+      //   padding-right: 30px;
+      //   padding-left: 0;
+      // }
+
+      // .item:nth-child(odd) {
+      //   padding-right: 0;
+      //   padding-left: 30px;
+      // }
     }
   }
   &.clients {
@@ -3824,6 +3848,45 @@ $link_hover_color:#aaa;
       }
     }
   }
+
+.get-in-touch-form-section{
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 80px 0;
+
+  @media (max-width: 1000px)
+  {
+    width: 90%;
+  }
+
+  @media (max-width: 666px){
+    padding: 20px 0 40px 0;
+  }    
+
+  .text{
+    h4{
+      font-size: 100px;
+      font-family: 'Franchise-Bold';
+      font-weight: 700;
+      text-transform: lowercase;
+      line-height: 0.8;
+      margin-bottom: 20px;
+      padding-bottom: 25px;  
+      
+      @media (max-width: 666px){
+        font-size: 65px;
+      }
+    }
+    p{
+      font-weight: 400;   
+      
+    }
+  }
+
+  .contact-form{
+    margin: 60px 0;
+  }
+}
 
 .card-container-sizer{
   width: 33.3%;

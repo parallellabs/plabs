@@ -23,13 +23,15 @@ html.no-js lang="en"
     meta content="#{@twitter_description}" name="twitter:description" /
     meta content="#{@twitter_image}" name="twitter:image" /
 
+    link rel="dns-prefetch" href="//fonts.googleapis.com"/
     link href="http://parallellabs.io/" rel="canonical" /
     link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" /
-    link rel="stylesheet" href="/stylesheets/normalize.css"/
+    / link rel="stylesheet" href="/stylesheets/normalize.css"/
     link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/css/uikit.min.css"
     link rel="stylesheet" href="vendor/lightbox-dist/css/lightbox.min.css"/
-    link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Hind:400,500,600"/
+    link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700"/
     link rel="stylesheet" href="stylesheets/all.css"/
+    /link rel="stylesheet" href="stylesheets/vendors/animsition.css"/
     script src="//js.hsforms.net/forms/shell.js"/
 
     javascript:
@@ -71,6 +73,8 @@ html.no-js lang="en"
     script src="javascripts/all.js"
     script src="javascripts/retina.min.js"
     script src="javascripts/jquery.inview.min.js"
+    /script src="vendor/animsition.min.js"
+    / script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"
     script src="//js.hs-scripts.com/1730467.js" id="hs-script-loader" async="true" defer="true"
 
     / script src="javascripts/jquery.address-1.5.min.js"
@@ -79,6 +83,7 @@ html.no-js lang="en"
 
     javascript:
       $(document).ready(function() {
+
         $('.footer-overlay').removeClass('show');
 
         var self = $("#masonry");

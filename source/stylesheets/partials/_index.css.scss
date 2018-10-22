@@ -935,7 +935,6 @@
 		width: 80%;
 		max-width: 1200px;
 		text-align: left;
-		padding-bottom: 120px;
 
 		@media (max-width: 888px) {
 			width: 100%;
@@ -951,6 +950,7 @@
 			line-height: 0.75;
 			color: #333333;
 			max-width: 1060px;
+			margin-bottom: 0;
 
 			@media (max-width: 1280px) {
 			  font-size: 110px;
@@ -1094,7 +1094,7 @@
 .mai-content{
 
 	.section{
-		margin-bottom: 140px;
+		margin-bottom: 150px;
 
 		@media(max-width: 800px) {
 			height: 100% !important;
@@ -1269,6 +1269,16 @@
 			box-shadow: 0 50px #fff inset;
 		}
 
+		.coming-soon{
+			opacity: 0.6;
+			font-family: Lato;
+			font-size: 18px;
+			font-weight: bold;
+			color: #fff;
+			letter-spacing: 4px;
+			text-transform: uppercase;			
+		}
+
 		.image{
 			img {
 				width: 100%;
@@ -1276,7 +1286,7 @@
 		}
 
 		.first-story,
-		.fourth-story {
+		.fourth-story, .seventh-story {
 			display: flex;
 			flex-direction: row;
 			margin: auto;
@@ -1492,6 +1502,67 @@
 			  }
 			}
 		}
+
+		.seventh-story {
+			padding-top: 250px;
+			padding-bottom: 0;
+
+			@media (max-width: 600px) {
+			  flex-direction: column-reverse;
+			  padding-top: 0;
+			 }
+
+			.text {
+				padding-right: 0;
+				padding-top: 30px;
+
+				.main{
+					padding-bottom: 40px;
+					margin-bottom: 0;
+				}
+
+				@media (max-width: 600px) {
+					padding-right: 0;
+				}
+			}
+
+			.image {
+				width: 30%;
+				height: auto;
+			}
+
+			.images{
+
+				.image:nth-child(1) {
+					position: relative;
+					bottom: 24px;
+
+					@media (max-width: 600px) {
+						margin-top: 24px;
+					}
+				}
+
+				.image:nth-child(2) {
+					position: relative;
+					bottom: 134px;
+
+					@media (max-width: 600px) {
+						display: none;
+					}
+				}
+
+				.image:nth-child(3) {
+					position: relative;
+					bottom: -24px;
+
+					@media (max-width: 600px) {
+						display: none;
+					}
+				}
+
+			}
+		}		
+
 	}
 }
 
@@ -1746,7 +1817,8 @@
 		line-height: normal;
 		color: #333333;
 		text-align: center;
-		padding-bottom: 100px;
+		padding-bottom: 80px;
+		margin-bottom: 0;
 
 		@media (max-width: 666px) {
 		  font-size: 65px;
