@@ -21,28 +21,22 @@
 
     .title{
       margin-bottom: 0;
-      font-family: "Franchise-Bold";
-      font-size: 100px;
-      line-height: 0.8;
-      text-transform: lowercase;
-      color: #333333;
+      font-family: $heading-font-family;
+      font-size: 58px;
+      color: #4a4a4a;
       font-weight: 500;
 
-      @media (max-width: 1024px) {
-        font-size: 80px;
-      }
-
       @media (max-width: 768px) {
-        font-size: 65px;
+        font-size: 30px;
       }
 
     }
     .desc {
       font-family: $base-font-family;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: normal;
       line-height: 1.52;
-      color: #333333;
+      color: #555555;
       padding-top: 15px;
       max-width: 760px;
 
@@ -78,8 +72,8 @@
       }
       display: inline-block;
       margin-right: 20px;
-      font-size: 60px;
-      font-size: rem(60);
+      font-size: 40px;
+      font-size: rem(40);
       cursor: pointer;
       font-family: $heading-font-family;
       font-weight: 300;

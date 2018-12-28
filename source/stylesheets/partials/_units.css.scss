@@ -83,7 +83,7 @@ h2 {
 
 p {
     @include media($mobile-devices) {
-        font-size: rem(18);
+        font-size: rem(16);
     }
 
     color: $medium-gray;
@@ -390,22 +390,23 @@ svg {
 }
 
 .container {
-    @include outer-container(620px);
-    @include media($large-devices) {
-        @include outer-container(920px);
-    }
+    // @include media($large-devices) {
+    //     @include outer-container(920px);
+    // }
+    @media (min-width: 1260px) {
+        @include outer-container(1160px);
+    }    
+    @media (max-width: 1259px) {
+        padding: 0 30px;
+    }        
     @include media($mobile-devices) {
         @include outer-container(100%);
 
-        padding: 0 15px;
+        padding: 0 30px;
     }
 
     margin-right: auto;
     margin-left: auto;
-
-    @media (min-width: 1400px) {
-        @include outer-container(960px);
-    }
 
     &:before,
     &:after {
@@ -414,6 +415,18 @@ svg {
     }
     &:after {
         clear: both;
+    }
+}
+
+.new-home-content1.services{
+    .container{
+
+        @media (max-width: 1100px) {
+            max-width: 100%;
+            padding-left: 30px;
+            padding-right: 30px;
+        }        
+             
     }
 }
 

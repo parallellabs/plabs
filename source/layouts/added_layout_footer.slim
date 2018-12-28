@@ -30,6 +30,7 @@ html.no-js lang="en"
     link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/css/uikit.min.css"
     link rel="stylesheet" href="vendor/lightbox-dist/css/lightbox.min.css"/
     link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700"/
+    link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,500"/
     link rel="stylesheet" href="stylesheets/all.css"/
     /link rel="stylesheet" href="stylesheets/vendors/animsition.css"/
     script src="//js.hsforms.net/forms/shell.js"/
@@ -147,17 +148,6 @@ html.no-js lang="en"
         });
 
       });
-        $('.footer').on('inview', function(event, isInView) {
-          if (isInView) {
-            // element is now visible in the viewport
-            $('#cta,.sprint').addClass('active');
-            $('.footer-overlay').addClass('show');
-          } else {
-            // element has gone out of viewport
-            $('#cta,.sprint').removeClass('active');
-            $('.footer-overlay').removeClass('show');
-          }
-        });
 
       lightbox.option({
         'alwaysShowNavOnTouchDevices': true,

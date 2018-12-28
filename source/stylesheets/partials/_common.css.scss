@@ -15,6 +15,19 @@ video::-webkit-media-controls {
   display: none!important;
 }
 
+.text-outline{
+  --color: 1;
+  --stroke-width: 2px;
+  color: rgb(255,255,255); 
+  // -webkit-text-stroke: var(--stroke-width) #4a4a4a;       
+  text-shadow:
+  0 0 1px #4a4a4a,
+  -1px -1px 0 #4a4a4a,  
+  1px -1px 0 #4a4a4a,
+  -1px 1px 0 #4a4a4a,
+  1px 1px 0 #4a4a4a;  
+}
+
 .title-block{
 
   @include media(max-width 992px){
@@ -45,7 +58,6 @@ video::-webkit-media-controls {
       font-size: 1.5rem;
     }
     padding-right: 22px;
-    letter-spacing: 0.4px;
     font-weight: 600;
     font-size: 56px;
     font-size: rem(56px);

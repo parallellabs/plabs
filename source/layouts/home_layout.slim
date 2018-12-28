@@ -30,8 +30,8 @@ html.no-js lang="en"
     link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" /
     / link rel="stylesheet" href="stylesheets/vendors/owl.carousel.css"/
     / link rel="stylesheet" href="stylesheets/vendors/animate.css"/
-    /link rel="preload" href="https://fonts.googleapis.com/css?family=Lato:400,700"/
     link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700"/
+    link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,500"/
     / link rel="stylesheet" href="stylesheets/jquery.fullpage.min.css"/
     link rel="stylesheet" href="stylesheets/all.css"/
     /link rel="stylesheet" href="stylesheets/vendors/animsition.css"/
@@ -84,15 +84,6 @@ html.no-js lang="en"
           $('#cta,.sprint').removeClass('active');
           $('.footer-overlay').removeClass('show');
         }
-      });
-
-      $(document).on( 'scroll', function(){
-          if($('.get-in-touch-section').hasClass('active')) {
-            $('.footer-overlay').addClass('show');
-          }
-          else {
-            $('.footer-overlay').removeClass('show');
-          }
       });
 
       $(window).on("scroll", function() {

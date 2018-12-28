@@ -28,22 +28,13 @@
 
         .title{
           font-family: 'Franchise-Bold';
-          font-size: 80px;
-          color: #333333;
-          text-transform: lowercase;
+          font-size: 58px;
+          color: #4a4a4a;
           margin-bottom: 20px;
-          line-height: 0.85;
 
-          @media (max-width: 1024px) {
-            font-size: 80px;
-          }
 
           @media (max-width: 768px) {
-            font-size: 65px;
-          }
-
-          @media (max-width: 500px) {
-            font-size: 50px;
+            font-size: 30px;
           }
 
 
@@ -75,6 +66,7 @@
 
             li{
               list-style: disc;
+              font-size: 20px;
             }
           }
         }

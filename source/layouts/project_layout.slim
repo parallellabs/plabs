@@ -35,6 +35,7 @@ html.no-js lang="en"
     / link rel="stylesheet" href="stylesheets/vendors/aos.css"/
     / link rel="stylesheet" href="stylesheets/vendors/animate.css"/
     link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Hind:400,500,600"/
+    link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,500"/
     link rel="stylesheet" href="stylesheets/lazyframe.css"/
     link rel="stylesheet" href="stylesheets/all.css"/
     script src="//js.hsforms.net/forms/shell.js"/
@@ -59,7 +60,7 @@ html.no-js lang="en"
 
   body
     .wrapper.main-layout
-      = partial "layouts/header.slim"
+      = partial "layouts/header_project.slim"
       .footer-overlay
       == yield
 
@@ -107,24 +108,11 @@ html.no-js lang="en"
       //   if ( isInViewport( elem ) ) {
       //       console.log( 'In the viewport!' );
       //   }
-      $(document).ready(function() {
-        $('.footer-overlay').removeClass('show');
-      });
 
       lazyframe('.lazyframe', {
          lazyload: true
       });
-        $('.footer').on('inview', function(event, isInView) {
-          if (isInView) {
-            // element is now visible in the viewport
-            $('#cta').addClass('active');
-            $('.footer-overlay').addClass('show');
-          } else {
-            // element has gone out of viewport
-            $('#cta').removeClass('active');
-            $('.footer-overlay').removeClass('show');
-          }
-        });
+
         $("#center-slider").owlCarousel({
           nav: true, // Show next and prev buttons
           navText: [

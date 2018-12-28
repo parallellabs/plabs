@@ -95,7 +95,11 @@
     float: left;
     max-width: 80px;
     position: relative;
-    top: 5px;
+    top: 14px;
+
+    @include media(max-width 768px){
+      top: -8px;
+    }
 
     a {
       img,
@@ -104,8 +108,15 @@
         // width: 78px;
         // height: 30px;
         // max-width: 100%;
+        @include media(max-width 768px){
+          max-width: none;
+          width: 100px;
+          height: 48px;
+        }
+
+        max-width:none;
         width: 164px;
-        height: 34px;
+        height: 61px;
 
         .path1,.path3,.path7,.path8{
           color: #555555;
@@ -135,11 +146,45 @@
   }
   .nav-right {
     float: right;
-
+    position: relative;
+    top: 55px;
     // margin: 6px 0;
     li {
       @include media(min-width 768px $small-devices) {
-        margin-right: 30px;
+        margin-right: 0;
+
+        a{
+          padding-left: 22px;  
+          padding-right: 22px;
+        }
+
+        &:after{
+          content: '/';
+          font-size: 20px;
+          font-family: 'Rubik', sans-serif;
+          font-weight: 500;
+          color: rgb(255,255,255); 
+          text-shadow:
+          0 0 1px #4a4a4a,
+          -1px -1px 0 #4a4a4a,  
+          1px -1px 0 #4a4a4a,
+          -1px 1px 0 #4a4a4a,
+          1px 1px 0 #4a4a4a;                      
+        }
+        
+        &:first-child{
+          a{
+            padding-left: 0;
+          }
+        }
+        &:last-child{
+          &:after{
+            content: '';
+          }
+          a{
+            padding-right: 0;
+          }
+        }
       }
       @include media(max-width 992px){
         margin-right: 20px;
@@ -155,15 +200,27 @@
       }
       a {
 
-        @include media(max-width 1440px){
-          font-size: 1.2rem;
-        }
+        // @include media(max-width 1440px){
+        //   font-size: 1.2rem;
+        // }
         padding-bottom: 3px;
         color: #fff;
-        font-size: 21px;
-        font-size: rem(21);
-        font-family: $base-font-family;
+        font-size: 20px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
         line-height: $secondary-line-height;
+        letter-spacing: 2px;
+        --color: 1;
+        --stroke-width: 2px;
+        color: rgb(255,255,255); 
+        // -webkit-text-stroke: var(--stroke-width) #4a4a4a;       
+        text-shadow:
+        0 0 1px #4a4a4a,
+        -1px -1px 0 #4a4a4a,  
+        1px -1px 0 #4a4a4a,
+        -1px 1px 0 #4a4a4a,
+        1px 1px 0 #4a4a4a;
+        text-transform: uppercase;
 
         &.get-in-touch{
           @include transition(all .3s ease-in-out);
@@ -254,7 +311,7 @@
         }
 
         &:hover{
-          color: #16c6c2;
+          color: #4a4a4a;
         }
       }
     }
@@ -311,7 +368,7 @@
       }
 
       .logo {
-        margin: 8px 0;
+        margin: 8px 0;      
       }
       .nav-right {
         margin: 0;
@@ -336,24 +393,34 @@
     }
   }
   &.home-nav {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 0;
+    padding-left: 0;
     max-width: 100%;
+    position: relative;
+
+    &:after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 60px;
+      background-color: #68e8c3;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
 
     .logo {
       a {
         svg {
           @include media(max-width 768px){
             max-width: none;
-            width: 140px;
-            height: 30px;
+            width: 100px;
+            height: 48px;
           }
 
           max-width:none;
-          // width: 94px;
-          // height: 35px;
           width: 164px;
-          height: 34px;
+          height: 61px;
         }
       }
     }
@@ -365,19 +432,7 @@
       li {
 
         a {
-          color: #555555;
 
-          &.active{
-            color:#16c6c2;
-            font-weight: 500;
-          }
-
-          &:hover,
-          &:active,
-          &:focus{
-            color:#16c6c2;
-            // font-weight: 500;
-          }
           &.hiring {
             @include transform(skewX(-30deg));
 
@@ -446,6 +501,22 @@
         }
         & ~ .sliding-panel-button{
           color:#fff;
+        }
+      }
+    }
+  }
+
+  &.prjt-nav{
+    .nav-right{
+      top: 20px;
+
+      @include media(max-width 768px){
+        display:none;
+      }      
+
+      a{
+        &:hover{
+          color: #50e3c2;
         }
       }
     }
@@ -524,7 +595,7 @@
 
 .sliding-panel-close{
   position:absolute;
-  top:20px;
+  top:17px;
   right:20px;
   width: 20px;
   height: 20px;
@@ -564,7 +635,7 @@
   outline: none;
   color: #555555;
   cursor: pointer;
-  top: 20px;
+  top: 17px;
   right: 20px;
 
   img {
@@ -572,3 +643,9 @@
   }
 }
 //
+
+.prjt-nav{
+  .sliding-panel-button {
+    color: #fff;
+  }
+}
