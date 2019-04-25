@@ -3,8 +3,8 @@
 }
 
 .about-us {
-    margin-bottom: 40px;
-
+    margin: 177px auto 40px;
+    
     @extend .container;
     @include media($mobile-devices) {
         text-align: center;
@@ -74,7 +74,14 @@
 }
 
 .about {
-
+  position: relative;
+  margin: -45px 0 100px;
+  @media (max-width: 980px) {
+    margin: -45px 0 0;
+  }
+  @media (max-width: 768px) {
+    margin: 0 0 40px;
+  }
   .title-block {
     max-width: 1080px;
     padding-top: 200px;
@@ -82,7 +89,7 @@
     &.medium{
       padding-top: 160px;
 
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         padding-top: 100px;
       }
 
@@ -97,25 +104,47 @@
       padding-right: 0;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       padding-top: 160px;
     }
-
-
   }
-  .title {
-    font-family: $heading-font-family;
-    font-size: 58px;
+  .container {
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  h2.title {
+    // @include span-columns(6);
+    width: 48.82117%;
+    font-family: $rubik;
+    font-size: 45px;
     font-weight: 500;
-    letter-spacing: normal;
-    text-align: left;
     color: #4a4a4a;
-    margin-bottom: 40px;
+    text-align: left;
+    padding: 170px 20px 170px 0;
 
+    
+    @include media(max-width 1160px) {
+      font-size: 40px;
+    }
+    @media (max-width: 980px) {
+      font-size: 35px;
+      padding-top: 135px;
+    }	
+    @media (max-width: 850px) {
+      font-size: 31px;
+      padding-top: 123px;
+    }	
     @include media(max-width 768px){
       br{
         display: none;
       }
+      margin: 0;
+      padding: 20px 0 0;
+      text-align: center;
+      width: 100%;
+      font-size: 26px;
     }
 
     &.medium{
@@ -152,21 +181,154 @@
       }
     }
   }
-  .desc {
-    font-family: $base-font-family;
-    font-size: 20px;
-    font-weight: normal;
-    line-height: 1.52;
-    letter-spacing: normal;
-    text-align: left;
-    color: #555555;
-    max-width: 760px;
-
-    @media (max-width: 767px) {
-      font-size: 18px;
+  .images{
+    .image{
+      position: absolute;
+      height: 635px;
+      width: auto;
+      top: 0;
+      right: 0;
+      text-align: right;
+      z-index: -1;
+      	
+      @media (max-width: 1160px) {
+        height: 570px;
+        width: 70%;
+      }
+      @media (max-width: 980px) {
+        height: 500px;
+      }
+      @media (max-width: 850px) {
+        height: 435px;
+      }			
+      @media (max-width: 768px) {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }		
+      img{
+        width: 100%;
+        height: 100%;
+      }
     }
   }
-
+  &.about-collaboration {
+    position: relative;
+    margin:0 0 120px;
+    .container {
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .images{
+      .image{
+        position: absolute;
+        height: 513px;
+        width: 50%;
+        top: 0;
+        left: 0;
+        text-align: right;
+        @media (max-width: 1160px) {
+          height: 480px;
+        }
+        @media (max-width: 980px) {
+          height: 440px;
+        }
+        @media (max-width: 768px) {
+          position: relative;
+          width: 100%;
+          height: auto;
+        }						
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .content-wrap {
+      padding-left: 55.17%;
+      h3.title {
+        width: 100%;
+        font-size: 36px;
+        padding: 80px 0 30px;
+        margin-bottom: 0;
+        @media (max-width: 1160px) {
+          font-size: 31px;
+        }	
+        @media (max-width: 980px) {
+          font-size: 27px;
+          padding-top: 50px;
+        }	
+      }
+      p.desc {
+        font-family: $base-font-family;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1.44;
+        letter-spacing: normal;
+        text-align: left;
+        color: #555555;
+        padding-bottom:25px;
+        margin: 0;
+        &:last-child {
+          padding: 0;
+        }
+        @media (max-width: 1160px) {
+          font-size: 15px;
+        }
+        @media (max-width: 768px) {
+          font-size: 18px;
+        }
+      }
+      @media (max-width: 768px) {
+        padding: 0;
+      }	
+    }
+    @media (max-width: 980px) {
+      margin:0 0 50px;
+    }
+  }
+  &.team-section {
+    margin: 0 0 100px;
+    h2.title {
+      padding: 0 0 70px;
+      @media (max-width: 980px) {
+        padding: 0 0 40px;
+      }
+    }
+    .images {
+      img {
+        width: 100%;
+      }
+    }
+    @media (max-width: 768px) {
+      margin: 0 0 50px;
+    }
+  }
+  &.get-in-touch-form-section {
+    .sub-heading {
+      font-family: $rubik;
+      text-transform: uppercase;
+      font-size: 20px;
+      height:24px;
+      line-height: 24px;
+      letter-spacing: 2px;
+      color: #4a4a4a;
+      span {
+         svg {
+          width: 32px;
+          height: 22px;
+        }
+      }
+      @media (max-width: 980px) {
+        font-size: 18px;
+      }
+      @media (max-width: 768px) {
+        text-align: center
+      }
+    }
+  }
   .column-wrap {
     max-width: 1080px;
     margin: 0 auto;
@@ -208,7 +370,7 @@
         color: #4a4a4a;
         margin-bottom: 20px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           font-size: 22px;
         }
 
@@ -224,7 +386,7 @@
         color: #555555;
         margin-top: 10px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           font-size: 20px;
         }
       }
@@ -256,7 +418,7 @@
     margin: 0 auto;
     padding-bottom: 77px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       margin-bottom: 100px;
     }
 
@@ -285,7 +447,7 @@
         position: relative;
         top: -20px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           font-size: 65px;
           top: 0;
         }
@@ -303,7 +465,7 @@
         padding: 105px 80px 105px 145px;
       }
 
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         position: relative;
         padding: 60px 60px;
       }

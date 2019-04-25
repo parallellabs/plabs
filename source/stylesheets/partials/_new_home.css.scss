@@ -454,7 +454,7 @@
     }
     h2 {
 
-      color: #243f53;
+      color: #4a4a4a;
       font-weight: 400;
       font-size: rem(20);
       font-family: $base-font-family;
@@ -470,6 +470,9 @@
         height: 1px;
         background-color: #ccc;
       }
+    }
+    .desc {
+      color: #555;
     }
     p {
       @include media(max-width 768px){
@@ -1571,7 +1574,7 @@
             position: relative;
             width: 100%;
           }
-          @media (max-width: 767px) {
+          @media (max-width: 768px) {
             display: block;
             width: 100%;
             margin-bottom: 60px;
@@ -1714,7 +1717,7 @@
        }
 
        .img-box {
-        height: 130px;
+        height: 107px;
         position: relative;
 
         @include media(max-width 768px){
@@ -1829,8 +1832,8 @@
         @include media(max-width 768px){
           @include span-columns(6);
           @include omega(2n);
-          margin-bottom: 30px;
-          padding: 50px;
+          // margin-bottom: 30px;
+          // padding: 50px;
           text-align:center;
 
           &:nth-last-child(-n+2){
@@ -2601,7 +2604,7 @@
       .title{
         font-size: 48px;
 
-        @include media(max-width 500px){
+        @include media(max-width 768px){
           font-size: 32px;
         }
 
@@ -3604,16 +3607,16 @@ $link_hover_color:#aaa;
       margin-bottom: 0px;
       margin-left: auto;
       margin-right: auto;
-      padding: 80px 0;
+      padding: 0 0 80px 0;
 
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         padding: 40px 0;
       }
       .get-in-touch-block{
         text-align: left;
 
         .text{
-          @media (max-width: 767px) {
+          @media (max-width: 768px) {
             text-align: center;
             h3{
               font-size: 16px;
@@ -3638,7 +3641,7 @@ $link_hover_color:#aaa;
       @media (max-width: 992px) {
         right: 0;
       }
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         display: block;
       }
       @media (max-width: 600px) {
@@ -3743,47 +3746,116 @@ $link_hover_color:#aaa;
 .get-in-touch-form-section{
   margin: 0 auto;
   margin-bottom: 100px;
-
+  position: relative;
+  color: #4a4a4a;
   .sub-heading{
-    font-family: 'Inter-UI-Bold';
+    display: flex;
+    align-items: center;
+    font-family: "Rubik";
+    text-transform: uppercase;
     font-size: 20px;
+    letter-spacing: 2px;
+    span {
+      padding-right: 10px;
+    }
+    @media (max-width: 768px){
+      text-align: center;
+      justify-content: center;
+    } 
   }
 
   @media (max-width: 768px){
     margin-bottom: 40px;
   }  
-  
-  .row-wrapper{
+  .get-in-wrapper {
     display: flex;
-
+    @media (max-width: 768px){
+      flex-direction: column;
+    }  
+  }
+  .row-wrapper{
+    width: 50%;
+    margin-right: 94px;
+    @media (max-width: 768px){
+      width: 100%;
+      margin: 0;
+    }  
     .text-section{
-      width: 50%;
-
-      @include media(max-width 768px){
+      @include media(max-width 767px){
         width: 100%;
       }      
-
-
-    }
-  }
-
-  .text{
-    h4{
-      font-size: 58px;
-      font-family: 'Rubik';
-      font-weight: 500;
-      margin-bottom: 20px;
-      
-      @media (max-width: 768px){
-        font-size: 30px;
+      .text{
+        h4{
+          font-size: 58px;
+          font-family: 'Rubik';
+          font-weight: 500;
+          margin-bottom: 20px;
+          @media (max-width: 1024px) {
+            font-size: 42px;
+          }
+          @media (max-width: 980px){
+            font-size: 38px;
+          }
+          @media (max-width: 768px){
+            font-size: 30px;
+            text-align: center;
+          }
+          br {
+            @media (max-width: 768px){
+              display: none;
+            }
+          }
+        }
+        p{
+          font-weight: 400;   
+          margin-bottom: 45px;
+          @media (max-width: 980px){
+            font-size: 16px;
+          }
+          @media (max-width: 768px) {
+            text-align: center
+          }
+        }
       }
     }
-    p{
-      font-weight: 400;   
-      margin-bottom: 25px;
+    .image-section {
+      height: 305px;
+      @media (max-width: 768px){
+        height: auto;
+      }
+      .contact-image {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        height: 305px;
+        img {
+          float:right;
+          margin-right: 85px;
+          @media (max-width: 1160px){
+            margin-right: 0;
+          }
+          @media (max-width: 768px){
+            float: none;
+            display: block;
+            margin: 0 auto;
+          }
+        }
+        @media (max-width: 768px){
+          position: relative;
+          width: 100%;
+          margin-bottom: 40px;
+          height: auto;
+        } 
+      }
     }
   }
-
+  .contact-form {
+    width: 50%;
+    @media (max-width: 768px){
+      width: 100%;
+    } 
+  }
 }
 
 .card-container-sizer{
@@ -3820,24 +3892,24 @@ $link_hover_color:#aaa;
       display: block;
     }  
 
-    .sep{
-      position: absolute;
-      width: 1px;
-      height: 90%;
-      opacity: 0.35;
-      background-color: #4a4a4a;
-      left: 50%;
-      top: 0;   
+    // .sep{
+    //   position: absolute;
+    //   width: 1px;
+    //   height: 90%;
+    //   opacity: 0.35;
+    //   background-color: #4a4a4a;
+    //   left: 50%;
+    //   top: 0;   
       
-      @media (max-width: 768px){
-        position: relative;
-        height: 1px;
-        width: 100%;
-        left: 0;
-        margin: 40px 0;
-      }        
+    //   @media (max-width: 768px){
+    //     position: relative;
+    //     height: 1px;
+    //     width: 100%;
+    //     left: 0;
+    //     margin: 40px 0;
+    //   }        
       
-    }
+    // }
 
     .services-item-block{
       max-width: 400px;
@@ -3846,7 +3918,12 @@ $link_hover_color:#aaa;
 
     .services-item{
       flex: 1;
-
+      @media (max-width: 768px) {
+				margin-bottom: 50px;
+      }	
+      &:last-child {
+        margin: 0;
+      }
       .icon{
         width: 100px;
         height: auto;
@@ -3858,15 +3935,21 @@ $link_hover_color:#aaa;
         font-weight: 500;
         margin-top: 40px;
         margin-bottom: 20px;
-
+ 
+        @media (max-width: 850px){
+          font-size: 32px;
+        }      
         @media (max-width: 768px){
-          font-size: 28px;
+          font-size: 21px;
           margin-top: 20px;
-        }          
+        }     
       }
 
       .desc{
         font-family: "Inter-Ui-Regular";
+        @media (max-width: 980px){
+          padding-right: 10px;
+        }  
       }
     }
   }

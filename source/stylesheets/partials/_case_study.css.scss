@@ -762,6 +762,7 @@
 .explara-content {
     .content-section {
         text-align: center;
+        margin-top: 50px;
 
         @extend .container;
         h2 {
@@ -788,10 +789,13 @@
             margin-bottom: 60px;
 
             @include span-columns(6);
+            display: table;
+            width: 100%;
             @include media($mobile-devices) {
                 @include span-columns(12 of 12);
             }
             h4 {
+                display: table-caption;
                 font-size: rem(16);
                 font-weight: 400;
 
@@ -914,8 +918,9 @@
             }
             &.shade {
                 margin-bottom: 0;
-
+                
                 @include span-columns(12);
+                display: table;
                 .color-box {
                     max-height: 75px;
 
@@ -997,9 +1002,14 @@
         }
         .walkthrough {
             @include span-columns(12);
+            display: table;
+            margin: 0 auto;
             a {
                 @include span-columns(4 of 12);
             }
+        }
+        &.testimonials {
+            max-width: 640px;
         }
     }
     &.boomer-content {
@@ -1425,8 +1435,7 @@
         }
     }
     &#sky-carousel-2 {
-        height: 550px;
-        margin: 0;
+        margin: 0 0 50px;
         .sky-carousel-container {
             li {
                 img {
@@ -1449,33 +1458,3 @@
     -ms-touch-action: none;
         touch-action: none;
 }
-
-// .parallax {
-//     position: relative;
-//     // z-index: 3;
-
-//     height: 100vh;
-//     overflow-x: hidden;
-//     overflow-y: auto;
-
-//     @include transform-style(preserve-3d);
-//     @include perspective(1px);
-// }
-// .parallax__layer {
-//     // position: absolute;
-//     // top: 0;
-//     // right: 0;
-//     // bottom: 0;
-//     // left: 0;
-// }
-
-// .parallax__layer--base {
-//     background-color: #fff;
-//     // z-index: 4;
-
-//     @include transform(translateZ(0));
-// }
-// .parallax__layer--back {
-//     // z-index: 3;
-//     @include transform(translateZ(-1px) scale(2));
-// }
