@@ -9,10 +9,10 @@
     padding-left: 40px;
     max-width: none;
   }
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
+  position: relative;
+  // top: 0;
+  // right: 0;
+  // left: 0;
   z-index: 20;
   padding: 16px 30px;
   max-width: none;
@@ -147,7 +147,7 @@
   .nav-right {
     float: right;
     position: relative;
-    top: 55px;
+    top: -7px;
     // margin: 6px 0;
     li {
       @include media(min-width 768px $small-devices) {
@@ -161,15 +161,11 @@
         &:after{
           content: '/';
           font-size: 20px;
-          font-family: 'Rubik', sans-serif;
+          font-family: $rubik;
+          letter-spacing: 1.5px;
           font-weight: 500;
-          color: rgb(255,255,255); 
-          text-shadow:
-          0 0 1px #4a4a4a,
-          -1px -1px 0 #4a4a4a,  
-          1px -1px 0 #4a4a4a,
-          -1px 1px 0 #4a4a4a,
-          1px 1px 0 #4a4a4a;                      
+          color: #4a4a4a;
+          -webkit-font-smoothing: antialiased;
         }
         
         &:first-child{
@@ -200,28 +196,16 @@
       }
       a {
 
-        // @include media(max-width 1440px){
-        //   font-size: 1.2rem;
-        // }
         padding-bottom: 3px;
         color: #fff;
         font-size: 20px;
-        font-family: 'Rubik', sans-serif;
+        font-family: $rubik;
         font-weight: 500;
         line-height: $secondary-line-height;
-        letter-spacing: 2px;
-        --color: 1;
-        --stroke-width: 2px;
-        color: rgb(255,255,255); 
-        // -webkit-text-stroke: var(--stroke-width) #4a4a4a;       
-        text-shadow:
-        0 0 1px #4a4a4a,
-        -1px -1px 0 #4a4a4a,  
-        1px -1px 0 #4a4a4a,
-        -1px 1px 0 #4a4a4a,
-        1px 1px 0 #4a4a4a;
+        letter-spacing: 1.5px;
+        color: #4a4a4a;
         text-transform: uppercase;
-
+        -webkit-font-smoothing: antialiased;
         &.get-in-touch{
           @include transition(all .3s ease-in-out);
 
@@ -504,22 +488,6 @@
       }
     }
   }
-
-  &.prjt-nav{
-    .nav-right{
-      top: 20px;
-
-      @include media(max-width 768px){
-        display:none;
-      }      
-
-      a{
-        &:hover{
-          color: #50e3c2;
-        }
-      }
-    }
-  }
   &:after {
     content: '';
     position: absolute;
@@ -529,6 +497,23 @@
     top: 0;
     left: 0;
     z-index: -1;
+  }
+  &.prjt-nav{
+    .nav-right{
+
+      @include media(max-width 768px){
+        display:none;
+      }      
+
+      a{
+        &:hover{
+          color: #4a4a4a;
+        }
+      }
+    }
+    &::after {
+      background: transparent;
+    }
   }
 }
 

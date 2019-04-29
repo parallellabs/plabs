@@ -188,6 +188,22 @@ a{
     background-color:transparent;
     background:url(../images/vimaana/vimaana-bg-image.png);
     background-size: cover;
+    .project-name {
+      color: #4a4a4a;
+    }
+    .vimaana-title {
+      color: #4a4a4a;
+    }
+    .members {
+      .member {
+        .member-name {
+          color: #4a4a4a;
+        }
+        .role {
+          color: #4a4a4a;
+        }
+      }
+    }
 
     .overlay{
       background: transparent;
@@ -1690,7 +1706,7 @@ a{
       padding: 50px 50px 50px 20px;
     }
     @media (max-width: 480px) {
-      padding: 20px;
+      padding: 10px;
     }
 
     .prev-proj {
@@ -1699,6 +1715,7 @@ a{
     }
 
     svg {
+      margin: 0 20px 0 80px;
       left: 0;
       -webkit-transition: 0.4s all ease;
       transition: 0.4s all ease;
@@ -1726,7 +1743,7 @@ a{
       padding: 50px 20px 50px 50px; ;
     }
     @media (max-width: 480px) {
-      padding: 20px;
+      padding: 10px;
     }
     .next-proj {
       display: flex;
@@ -1763,15 +1780,14 @@ a{
       position: relative;
       width: 36px;
       height: 36px;
-      margin: 0 20px 0 80px;
 
       @media (max-width: 768px) {
         margin: 0 10px 0;
       }
 
       @media (max-width: 480px) {
-        width: 40px;
-        height: 20px;
+        width: 30px;
+        height: 10px;
       }
     }
     span {
@@ -1800,8 +1816,9 @@ a{
         margin-bottom: 5px;
 
         @media (max-width: 768px) {
-          font-size: 22px;
+          font-size: 20px;
           text-align: left;
+          margin: 0;
         }
       }
     }
@@ -2987,14 +3004,14 @@ a{
   .image {
     max-width: 640px;
     padding: 0 11px 10px 0;
-    &:nth-child(even) {
-      padding: 0 0 10px 0;
-    }
-    &:nth-child(5), &:nth-child(6) {
-      padding: 0 11px 0 0;
-    }
     img {
       width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    margin: 20px; 
+    .image {
+      padding: 0 0 10px;
     }
   }
 }
@@ -3216,6 +3233,8 @@ ul.pinknblu{
 
 .master-banner {
   margin-bottom: 0px;
+  margin-top: -93px;
+
   &.sub-banner {
     @include media(min-width 1440px) {
       max-height: 550px;
