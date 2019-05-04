@@ -1789,3 +1789,16 @@ $parallax-background-height: $parallax-window-height * 2;
 .blur{
     @include filter(blur(8px));
 }
+.executive-container {
+    .container {
+        padding: 0;
+        &.careers-title {
+            max-width: 700px;
+            text-align: left;
+        }
+        @media (max-width: 768px) {
+            padding: 0 30px;
+        }
+    }
+
+}

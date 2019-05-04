@@ -15,16 +15,40 @@ a{
     background-color: #2BA577;
     background-image:url(../images/eatfresh/eatfresh-bg.jpg);
     background-size: cover;
-
+    margin-top: -102px;
     .overlay{
       background: transparent;
+    }
+    .banner-content {
+      .stats {
+        @media (max-width: 768px) {
+          top: 5px;
+        }
+      }
+    }
+  }
+  &.eatfresh-app-banner {
+    @media (max-width: 768px) {
+      height: 800px;
+      .banner-content {
+        top: 42%;
+      }
+    }
+    .banner-content {
+      .members {
+        .member {
+          @media (max-width: 1025px) {
+            margin-bottom: 20px;
+          }
+        }
+      }
     }
   }
   &.cricbet-banner{
     background-color: #2785BC;
     background-image:url(../images/cricbet/b-g.png);
     background-size: cover;
-
+    margin-top: -102px;
     .overlay{
       background: transparent;
       opacity: 0.9;
@@ -53,23 +77,34 @@ a{
       opacity: 0.9;
 
     }
+    @media (max-width: 400px) {
+      height: 700px;
+      .banner-content {
+        top: 45%;
+      }
+    }
   }
 
   &.verloop-banner{
     background-color: #DB4445;
     background-image:url(../images/verloop/verloop-bg.jpg);
     background-size: cover;
-
+    margin-top:-102px;
     .overlay{
       background: transparent;
       opacity: 0.9;
 
     }
+    @media (max-width: 400px) {
+      .banner-content {
+        top: 55%;
+      }
+    }
   }
 
   &.pinknblu-banner{
     background-color: #4671B3;
-
+    margin-top: -102px;
     .overlay{
       background: transparent;
       opacity: 0.9;
@@ -81,7 +116,7 @@ a{
     background-color: #FFB300;
     background-image: url(../images/citrus/citrus-bg.png);
     background-size: cover;
-
+    margin-top: -102px;
     .overlay{
       background: transparent;
     }
@@ -103,7 +138,7 @@ a{
   }
   &.treatr-banner{
     background-color: #FD4E52;
-
+    margin-top: -102px; 
     .overlay{
       background: transparent;
       opacity: 0.9;
@@ -114,34 +149,62 @@ a{
     background-color: #243f53;
     background-image:url(../images/appjoy/appjoy-b-g.png);
     background-size: cover;
-
+    margin-top: -102px;
     .overlay{
       background: transparent;
       opacity: 0.9;
 
+    }
+    @media (max-width: 400px){
+      height: 770px;
+      .banner-content {
+        top: 45%;
+      }
     }
   }
   &.chaipoint-banner{
     background-color: $blue;
     background-image:url(../images/chaipoint/chaipoint-bg.png);
     background-size: cover;
-
+    margin-top: -102px;
     .overlay{
       background: transparent;
       opacity: 0.9;
 
     }
+  }
+  &.chaipoint-app-banner{
+    background-color: $blue;
+    background-image:url(../images/chaipoint/chaipoint-bg.png);
+    background-size: cover;
+    margin-top: -102px;
+    .overlay{
+      background: transparent;
+      opacity: 0.9;
 
+    }
+    @media (max-width: 430px) {
+      height: 800px;
+      .banner-content {
+        top: 45%;
+      }
+    }
   }
   &.bleems-banner{
     background-color: $blue;
     background-image:url(../images/bleems/bleems-b-g.jpg);
     background-size: cover;
-
+    margin-top: -102px;
+    @media (max-width: 400px){
+      height: 770px;
+      .banner-content {
+        top: 45%;
+      }
+    }
   }
   &.indiamart-banner{
     background-color: #72689D;
-
+    margin-top: -102px;
     .overlay{
       background: transparent;
       opacity: 0.9;
@@ -150,11 +213,19 @@ a{
   }
   &.housejoy-banner{
     background-color: #009688;
-
+    margin-top: -102px;
     .overlay{
       background: transparent;
       opacity: 0.9;
 
+    }
+    &.height-fix {
+      @media (max-width: 400px){
+        height: 700px;
+        .banner-content {
+          top: 45%;
+        }
+      }
     }
   }
   &.team-indus-banner {
@@ -165,6 +236,20 @@ a{
     .overlay{
       background: transparent;
     }
+    &.timoc-banner {
+      @media (max-width: 400px){
+        height: 900px;
+        .banner-content {
+          top: 32%;
+        }
+      }
+      @media only screen and (min-width: 401px) and (max-width: 768px) {
+        height: 700px;
+        .banner-content {
+          top: 45%;
+        }
+      }
+    }
   }
   &.team-indus-web-banner {
     background-color: #043967;
@@ -174,11 +259,42 @@ a{
     .overlay{
       background: transparent;
     }
+    @media (max-width: 400px){
+      height: 700px;
+      .banner-content {
+        top: 45%;
+      }
+    }
   }
   &.boomer-banner {
     background-color: #23C2C7;
     background-image:url(../images/boomer/boomer-bg.jpg);
     background-size: cover;
+    margin-top: -102px;
+    .overlay{
+      background: transparent;
+    }
+  }
+  &.urban-banner {
+    background-color:transparent;
+    background:url(../images/urban/urban-bg.png);
+    background-size: cover;
+    .project-name {
+      color: #4a4a4a;
+    }
+    .vimaana-title {
+      color: #4a4a4a;
+    }
+    .members {
+      .member {
+        .member-name {
+          color: #4a4a4a;
+        }
+        .role {
+          color: #4a4a4a;
+        }
+      }
+    }
 
     .overlay{
       background: transparent;
@@ -209,11 +325,12 @@ a{
       background: transparent;
     }
   }
+  
   &.talentify-banner {
     background-color: #EB384F;
     background-image:url(../images/talentify/talentify-bg.png);
     background-size: cover;
-
+    margin-top: -102px;
     .overlay{
       background: transparent;
     }
@@ -226,6 +343,12 @@ a{
     .overlay{
       background: transparent;
     }
+    @media (max-width: 400px){
+      height: 680px;
+      .banner-content {
+        top: 45%;
+      }
+    }
   }
   &.enchanting-banner {
     background-color: #E86154;
@@ -235,12 +358,18 @@ a{
     .overlay{
       background: transparent;
     }
+    @media (max-width: 450px) {
+      height: 920px;
+      .banner-content {
+        top: 32%;
+      }
+    }
   }
   &.dune-banner {
     background-color: #7F5AE1;
     background-image:url(../images/dune/dune-bg.jpg);
     background-size: cover;
-
+    margin-top: -102px;
     .overlay{
       background: transparent;
     }
@@ -258,7 +387,7 @@ a{
     background-color: #9db0c5;
     background-image:url(../images/zippr/zippr-bg.jpg);
     background-size: cover;
-
+    margin-top: -102px;
     .overlay{
       background: transparent;
     }
@@ -356,20 +485,15 @@ a{
             justify-content: center;
 
     .member{
-      /* @include calc(width, "(100% / 3) - 4px");*/
-      /* display: table-cell;*/
       padding-right: 46px;
       vertical-align: top;
+      margin-bottom: 20px;
       &:last-child{
         padding-right: 0px;
       }
       @include media(max-width 580px){
-        padding-right:20px;
+        padding:0 10px;
         margin-bottom: 20px;
-
-        &:last-child{
-            padding-right: 0px;
-          }
       }
 
       img{
@@ -506,7 +630,7 @@ a{
       text-align:left;
     }
 
-    color: #243f53;
+    color: #4a4a4a;
     font-weight: normal;
     font-size: 30px;
     font-family: $heading-font-family;
@@ -554,8 +678,8 @@ a{
       }
        @include media(max-width 768px) {
         font-size: 22px;
-        padding:0;
-        margin-bottom: 60px;
+        padding:0 0 30px;
+        margin-bottom: 30px;
       }
 
       &.citrus {
@@ -618,6 +742,9 @@ a{
   }
   .MB-80 {
     margin-bottom: 80px;
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
   }
   .MB-20 {
     margin-bottom: 20px;
@@ -630,7 +757,7 @@ a{
       font-size: 22px;
       line-height: 1.64;
       text-align: left;
-      color: #3f3f3f;
+      color: #555;
       margin-bottom: 12px;
 
       &:before {
@@ -695,12 +822,18 @@ a{
   }
   video{
     width: 100%;
+    @media (max-width: 768px) {
+      height: auto;
+    }
   }
 
   ol{
     padding-left: 20px;
     list-style-type: decimal;
     text-align: left;
+    li {
+      color: #555;
+    }
   }
   &.team-indus-web-content{
     .img-wrap {
@@ -1095,6 +1228,21 @@ a{
       }
     }
   }
+  &.cricbet-content {
+    .img-observation {
+      div.col {
+        margin: 0 0 60px;
+      }
+      ul.col {
+        li {
+          color: #555;
+        }
+      }
+    }
+    .PT-120 {
+      padding-top: 60px;
+    }
+  }
 }
 
 .section.new-home-content.screens{
@@ -1345,13 +1493,13 @@ a{
     }
     svg{
       @include media(max-width 768px){
-        right: -25px;
+        right: 15px;
         height: 100px;
       }
       @include media(max-width 440px){
-        margin-top: 46px;
-        height: 70px;
-
+        margin-top: 36px;
+        height: 60px;
+        right: -45px;
       }
 
       position: absolute;
@@ -1719,6 +1867,7 @@ a{
       left: 0;
       -webkit-transition: 0.4s all ease;
       transition: 0.4s all ease;
+      fill: #50e3c2;
     }
 
     &:hover {
@@ -1756,6 +1905,7 @@ a{
       left: 0;
       -webkit-transition: 0.4s all ease;
       transition: 0.4s all ease;
+      fill: #50e3c2;
     }
 
     &:hover {
@@ -1819,6 +1969,9 @@ a{
           font-size: 20px;
           text-align: left;
           margin: 0;
+        }
+        @media (max-width: 400px) {
+          font-size: 16px;
         }
       }
     }
@@ -2350,11 +2503,32 @@ a{
   margin: 0 auto;
   max-width: 90%;
 }
-
 .fullwidth {
   max-width: 100%;
   position: relative;
-
+  
+  &.vimaana-img {
+    max-width: 1077px;
+    padding: 0 70px;
+    img {
+      -webkit-filter: drop-shadow(1px 5px 5px #222);
+      filter: drop-shadow(1px 5px 5px #222);
+    }
+    @media (max-width: 768px) {
+      padding: 0 20px;
+    }
+  }
+  &.urban-imgs {
+    max-width: 1077px;
+    padding: 0 70px;
+    img {
+      -webkit-filter: drop-shadow(1px 5px 5px #222);
+      filter: drop-shadow(1px 5px 5px #222);
+    }
+    @media (max-width: 768px) {
+      padding: 0 20px;
+    }
+  }
   &.MB-20 {
     margin-bottom: 20px;
   }
@@ -2691,8 +2865,11 @@ a{
       }
 
       &.web-parallax {
-        padding: 0;
+        padding: 0 10px;
         margin: 0;
+        @media (max-width: 769px){
+          margin: 100px 0;
+        }
       }
       @include media(max-width 640px) {
         display: none;
@@ -2803,7 +2980,7 @@ a{
           font-size: 20px;
           font-style: italic;
           line-height: 1.4;
-          color: #777777;
+          color: #555;
           font-family:$base-font-family;
           font-weight: 400;
           text-align: left;
@@ -2885,7 +3062,7 @@ a{
       .name {
         font-size: 22px;
         text-align: center;
-        color: #3f3f3f;
+        color: #555;
         margin-bottom: 20px;
         display: block
       }
@@ -2897,7 +3074,7 @@ a{
             position: relative;
             font-size: 17px;
             text-align: left;
-            color: #777777;
+            color: #555;
             margin-bottom: 10px;
             padding-left: 20px;
 
@@ -2913,7 +3090,7 @@ a{
             line-height: 17px;
             font-family: "Lato", sans-serif;
             font-size: 22px;
-            color: #3f3f3f;
+            color: #555;
           }
 
         }
@@ -2934,6 +3111,7 @@ a{
     span{
       display: block;
       margin-top: 30px;
+      color: #555;
     }
     img{
       margin-top: 60px;
@@ -3008,6 +3186,20 @@ a{
       width: 100%;
     }
   }
+  &.vimaana-imgs {
+    .image {
+      width: 47.58%;
+      &:nth-child(even) {
+        padding-right: 0;
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+        &:nth-child(even) {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
   @media (max-width: 768px) {
     margin: 20px; 
     .image {
@@ -3025,6 +3217,7 @@ a{
     .image1 {
       max-width: 717px;
       padding: 0 24px 0 0;
+
     }
     .image2 {
       max-width: 553px;
@@ -3032,6 +3225,12 @@ a{
     }
     img {
       width: 100%;
+    }
+    @media (max-width: 768px) {
+      margin: 20px auto;
+      .image1, .image2 {
+        padding: 0 20px 20px;
+      }
     }
   }
   &.casestudy-images1 {
@@ -3048,6 +3247,12 @@ a{
     }
     img {
       width: 100%;
+    }
+    @media (max-width: 768px) {
+      margin: 20px auto;
+      .image1, .image2 {
+        padding: 0 20px 20px;
+      }
     }
   }
 }

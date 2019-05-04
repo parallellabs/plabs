@@ -435,7 +435,7 @@
           display: table-cell;
           vertical-align: middle;
           padding-left: 24px;
-          font-family: 'Franchise-Bold';
+          font-family: $rubik;
           text-transform: lowercase;
 
           @media (max-width: 1024px) {
@@ -564,7 +564,9 @@
     .picture-content{
       background-color: #fff;
       position: absolute;
-      top: 50%;
+      top: 0;
+      margin-top: 50%;
+      z-index: 0;
       @include transform(translateY(-50%));
       left: 200px;
       @include calc( width, '100% - 200px');
@@ -594,23 +596,19 @@
         letter-spacing: normal;
         text-align: left;
         color: #333333;
-        font-size: 80px;
+        font-size: 36px;
         font-weight: 500;
         margin-bottom: 40px;
-        font-family: "Franchise-Bold";
+        font-family: $rubik;
         text-transform: lowercase;
         line-height: 0.8;
 
-        @media (max-width: 1024px) {
-          font-size: 80px;
-        }
-
         @media (max-width: 768px) {
-          font-size: 65px;
+          font-size: 22px;
         }
 
         @media (max-width: 500px) {
-          font-size: 50px;
+          font-size: 20px;
         }
       }
 
@@ -642,10 +640,7 @@
 
     }
   }
-
-  // &.get-in-touch-section .content-wrapper{
-  //   @media (min-width: 1100px) {
-  //     max-width: 1080px;
-  //   }
-  // }
+}
+.section-new-home-content1 {
+  position: relative;
 }

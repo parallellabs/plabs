@@ -223,7 +223,7 @@
     max-height: 365px;
     margin-bottom: 60px;
     overflow: visible;
-
+    margin-top: -102px;
     background: #fff url(../images/explara_androidBg.png) no-repeat center -25px;
     background-size: cover;
 
@@ -785,6 +785,11 @@
 
             text-align: center;
         }
+        &.testimonials {
+            p {
+                width: 100%;
+            }
+        }
         .color-wrap {
             margin-bottom: 60px;
 
@@ -792,7 +797,7 @@
             display: table;
             width: 100%;
             @include media($mobile-devices) {
-                @include span-columns(12 of 12);
+                // @include span-columns(12 of 12);
             }
             h4 {
                 display: table-caption;
@@ -896,9 +901,11 @@
                         color: #fff;
 
                         @include media($sm-mobile-devices) {
+                            font-size: 0.55rem;
+                        }
+                        @media (min-width: 400px) and (max-width:768px) {
                             font-size: rem(12);
                         }
-
                         @media (min-width: 769px) and (max-width:1199px) {
                             font-size: rem(12);
                         }
@@ -1006,6 +1013,10 @@
             margin: 0 auto;
             a {
                 @include span-columns(4 of 12);
+                padding: 0 20px;
+                @media (max-width: 768px) {
+                    padding: 0 10px;
+                }
             }
         }
         &.testimonials {
@@ -1444,6 +1455,10 @@
 
                     @include media($mobile-devices) {
                         // width: 300px;
+                    }
+
+                    @media (max-width: 350px) {
+                        width: 280px;
                     }
                 }
             }

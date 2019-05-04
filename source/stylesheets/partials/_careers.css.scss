@@ -21,11 +21,13 @@
     position: relative;
     margin-top: 140px;
     margin-bottom: 30px;
-    color: #243f53;
+    color: #4a4a4a;
     font-weight: 800;
     font-size: rem(60);
     font-family: $heading-font-family;
-
+    @media (max-width: 768px) {
+      margin-top: 20px;
+    }
     .helper {
       display: block;
       margin-top: 10px;
@@ -68,7 +70,7 @@
   }
   h2 {
     margin-bottom: 30px;
-    color: #243f53;
+    color: #4a4a4a;
     font-weight: 400;
     font-size: rem(30);
 
@@ -217,7 +219,7 @@
         margin-right: auto;
         margin-left: auto;
         max-width:920px;
-
+        color: #4a4a4a;
         .border{
           @include media(max-width 768px){
             margin-left:auto;
@@ -422,7 +424,7 @@
 
             display: block;
             margin-bottom: 20px;
-            color: #243f53;
+            color: #4a4a4a;
             text-align:left;
             font-weight: 800;
             font-size: rem(28);
@@ -431,7 +433,7 @@
             .designation {
               @include transition(500ms ease);
 
-              color: #243f53;
+              color: #4a4a4a;
 
               &:focus,
               &:hover {

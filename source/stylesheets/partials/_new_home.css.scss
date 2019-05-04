@@ -1907,9 +1907,11 @@
           width: 70%;
           @include media(max-width 768px){
             margin: 0 auto;
-            width: auto;
 
             // margin-bottom: 20px;
+          }
+          @media (max-width: 400px) {
+            width: 100%;
           }
 
           // max-height: 50px;
@@ -2548,7 +2550,7 @@
 
       h2 {
         margin-bottom: 20px;
-        color: #243f53;
+        color: #555;
         text-align: center;
         font-weight: 400;
         font-size: rem(20);
@@ -3816,7 +3818,10 @@ $link_hover_color:#aaa;
         }
         p{
           font-weight: 400;   
-          margin-bottom: 45px;
+          margin-bottom: 20px;
+          line-height: 1.44;
+          letter-spacing: 0.1px;
+          font-size: 18px;
           @media (max-width: 980px){
             font-size: 16px;
           }
@@ -3825,6 +3830,44 @@ $link_hover_color:#aaa;
             margin-bottom: 20px;
           }
         }
+        .link {
+          font-family: "Inter-Ui-Regular";
+          font-size: 25px;
+          font-weight: 500;
+          line-height: normal;
+          color: #50e3c2;
+          padding-bottom: 40px;
+    
+          &:hover {
+            svg {
+              right: -11px !important;
+    
+              @media (max-width: 888px) {
+                right: -7px !important;
+              }
+            }
+          }
+    
+          svg {
+            width: 21px;
+            height: 21px;
+            position: relative;
+            right: -4px;
+            top: 4px;
+            transition: all 0.4s ease;
+    
+            @media (max-width: 888px) {
+              width: 16px;
+              height: 16px;
+              right: -2px;
+              top: 2px;
+            }
+          }
+    
+          @media (max-width: 888px) {
+            font-size: 15px;
+          }
+        }	
       }
     }
     .image-section {

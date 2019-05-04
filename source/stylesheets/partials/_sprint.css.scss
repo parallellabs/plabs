@@ -60,7 +60,9 @@
   .banner-img{
     margin-top: 72px;
     text-align: center;
-
+    @media (max-width: 768px) {
+      margin-top: 50px;
+    }
     img.banner-img-desktop,
     img.banner-img-tablet,
     img.banner-img-phone {
@@ -131,14 +133,14 @@
     letter-spacing: 0.4px;
 
     p{
-      font-family: $heading-font-family;
+      font-family: 'Inter-Ui-Regular';
       font-size: 24px;
       font-weight: normal;
       letter-spacing: normal;
       text-align: left;
       line-height: 1.58;
       letter-spacing: 0.4px;
-      color: #333333;
+      color: #555555;
       max-width: 760px;
 
       &:first-child{
@@ -637,10 +639,10 @@
 .section.new-home-content1.about.sprint .title-block .title,
 .find-out-section .title,
 .text-before-form .title {
-  font-family: 'Franchise-Bold';
+  font-family: $rubik;
   font-size: 80px;
   line-height: 68px;
-  text-transform: lowercase;
+  text-transform: capitalize;
   margin-bottom: 20px;
 
   @media (max-width: 666px) {
@@ -800,13 +802,13 @@
 .why-sprint ol {
   list-style-type: decimal !important;
   list-style-position: inside;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.58;
   letter-spacing: 0.4px;
-  color: #333;
+  color: #555;
 
-  @media (max-width: 500px) {
-    font-size: 20px;
+  @media (max-width: 768px) {
+    font-size: 17px;
   }
 }
 
@@ -944,7 +946,7 @@
   }
 }
 .text-before-form {
-  padding-top: 100px;
+  padding-top: 4px;
   max-width: 760px;
   margin: 0 auto;
 
@@ -960,7 +962,9 @@
 .section.new-home-content1.about.sprint.main-sprints-title {
   .title-block {
     padding-top: 200px;
-
+    @media (max-width: 768px) {
+      padding-top: 30px;
+    }
     .title {
       line-height: 0.8;
       margin-bottom: 40px;
@@ -970,6 +974,51 @@
 
 .section.new-home-content1.about.sprint {
   .title-block {
+    .title {
+      width: 100%;
+      padding: 0;
+      font-size: 36px;
+      @media (max-width: 768px) {
+        font-size: 22px;
+      }
+    }
+    h1.title {
+      font-size: 36px;
+      @media (max-width: 768px) {
+        font-size: 22px;
+      }
+    }
+    .desc {
+      p {
+        font-size: 18px;
+        @media (max-width: 768px) {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+.text-before-form {
+  h3.title {
+    font-size: 36px;
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
+  }
+}
+.sprint-images {
+  .image-container {
+    margin-bottom: 40px;
+  }
+}
+.hubspot {
+  margin: 0;
+}
+.section.new-home-content1.about.sprint {
+  .title-block {
     padding-top: 120px;
+    @media (max-width: 768px) {
+      padding-top: 50px;
+    }
   }
 }
