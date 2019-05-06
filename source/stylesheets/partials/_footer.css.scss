@@ -7,6 +7,7 @@
     @include media(max-width 768px) {
         background-color: #68e8c3;
         padding: 20px 0;
+        position: relative;
     }  
     .footer-row{
         @include clearfix;
@@ -16,6 +17,10 @@
 
             @include media(max-width 768px) {
                 // @include span-columns(12);
+                position: absolute;
+                width: 100%;
+                top: -54px;
+                left: 0;
             }
 
             .footer-logo{
@@ -37,6 +42,7 @@
                     }
                     @media (max-width: 768px) {
                         width: 100%;
+                        padding: 0 30px;
                     }
                 }        
             }
@@ -57,11 +63,11 @@
             // @include span-columns(8);
             float: right;
 
-            @include media(max-width 768px) {
-                @include span-columns(12);
-                text-align: left;
-                bottom: 0;
-            }            
+            // @include media(max-width 768px) {
+            //     @include span-columns(12);
+            //     text-align: left;
+            //     bottom: 0;
+            // }            
 
             li{
                 display: inline-block;
@@ -83,9 +89,11 @@
                     font-weight: 500;
                     padding-left: 20px;
                     padding-right: 20px; 
+                    letter-spacing: 1.5px;
+                    line-height: 1.5;
                     -webkit-font-smoothing: antialiased;
                     @include media(max-width 768px) {
-                        font-size: 16px;
+                        font-size: 12px;
                     }
                 }
 
@@ -110,13 +118,10 @@
                 }   
                 
                 @include media(max-width 768px) {
-                    display: block;
                     margin-top: 6px;
-
                     &:after{
-                        content: '';
+                        font-size: 12px;
                     }
-
                     a{
                         padding-left: 0;
                         padding-right: 0;
@@ -470,11 +475,11 @@
             }
 
             @media (max-width: 767px) {
-              font-size: 18px;
+              font-size: 14px;
             }
 
             @media (max-width: 400px) {
-              font-size: 16px;
+              font-size: 12px;
             }
           }
 
