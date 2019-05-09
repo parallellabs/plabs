@@ -97,17 +97,14 @@
     position: relative;
     top: 14px;
 
-    @include media(max-width 768px){
-      top: -8px;
+    @include media(max-width 1024px){
+      top: 20px;
     }
 
     a {
       img,
       svg {
         max-width: none;
-        // width: 78px;
-        // height: 30px;
-        // max-width: 100%;
         @include media(max-width 768px){
           max-width: none;
           width: 100px;
@@ -296,6 +293,16 @@
 
         &:hover{
           color: #4a4a4a;
+        }
+      }
+    }
+    &.color-diff {
+      li {
+        a {
+          color: #fff;
+        }
+        &:after {
+          color: #fff;
         }
       }
     }
@@ -540,41 +547,37 @@
   visibility: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-image: $sliding-panel-background;
+  background-color: #fff;
   opacity:0;
 
   ul {
     margin: 0;
     padding: 0;
-    padding-top: 75px;
   }
   li {
     list-style: none;
     line-height: normal;
+    @media (max-width: 768px) {
+      border-bottom: 1px solid #4a4a4a;
+    }
   }
   li {
     opacity:0;
 
     a {
-      // @include transition(all 0.25s linear);
       display: block;
-      padding: 1em;
-      // height:50px;
-      color: $sliding-panel-color;
-      // border-bottom: $sliding-panel-border;
-      text-align:center;
+      color: #4a4a4a;
+      text-align:left;
       text-decoration: none;
       font-weight: bold;
+      padding: 50px 0 50px 50px;
+      background-color: #f4f7f9;
 
       &:focus {
-        // background-color: $sliding-panel-background-focus;
+        color: #4a4a4a;
       }
       &:hover {
-        color: $sliding-panel-color-hover;
-
-        // background-color: $sliding-panel-background-hover;
-        // font-size:2rem;
-        // line-height:normal;
+        color: #4a4a4a;
       }
     }
   }
@@ -585,19 +588,27 @@
     visibility: visible;
     opacity:1;
   }
+  .sliding-panel-header {
+    background: #68e8c3;
+    padding: 13px 0 13px 50px;
+    .logo {
+      float: none;
+      position: static;
+    }
+  }
 }
 
 .sliding-panel-close{
   position:absolute;
-  top:17px;
+  top:25px;
   right:20px;
   width: 20px;
   height: 20px;
-
+  cursor: pointer;
   svg{
     width: 20px;
     height: 20px;
-    color:#fff;
+    color:#4a4a4a;
   }
 }
 
@@ -642,4 +653,7 @@
   .sliding-panel-button {
     color: #fff;
   }
+}
+.is-scrollhidden {
+  overflow: hidden;
 }

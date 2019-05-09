@@ -19,7 +19,6 @@ video::-webkit-media-controls {
   --color: 1;
   --stroke-width: 2px;
   color: rgb(255,255,255); 
-  // -webkit-text-stroke: var(--stroke-width) #4a4a4a;       
   text-shadow:
   0 0 1px #4a4a4a,
   -1px -1px 0 #4a4a4a,  
@@ -28,6 +27,7 @@ video::-webkit-media-controls {
   1px 1px 0 #4a4a4a; 
   -webkit-font-smoothing: antialiased; 
 }
+
 
 .title-block{
 
@@ -482,4 +482,7 @@ video::-webkit-media-controls {
 @keyframes nprogress-spinner {
   0%   { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+.is-scrollhidden {
+  overflow: hidden;
 }

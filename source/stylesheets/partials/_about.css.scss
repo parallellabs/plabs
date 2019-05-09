@@ -326,29 +326,29 @@
       margin: 0 0 50px;
     }
   }
-  &.get-in-touch-form-section {
-    .sub-heading {
-      font-family: $rubik;
-      text-transform: uppercase;
-      font-size: 20px;
-      height:24px;
-      line-height: 24px;
-      letter-spacing: 2px;
-      color: #4a4a4a;
-      span {
-         svg {
-          width: 32px;
-          height: 22px;
-        }
-      }
-      @media (max-width: 980px) {
-        font-size: 18px;
-      }
-      @media (max-width: 768px) {
-        text-align: center
-      }
-    }
-  }
+  // &.get-in-touch-form-section {
+  //   .sub-heading {
+  //     font-family: $rubik;
+  //     text-transform: uppercase;
+  //     font-size: 20px;
+  //     height:24px;
+  //     line-height: 24px;
+  //     letter-spacing: 2px;
+  //     color: #4a4a4a;
+  //     span {
+  //        svg {
+  //         width: 32px;
+  //         height: 22px;
+  //       }
+  //     }
+  //     @media (max-width: 980px) {
+  //       font-size: 18px;
+  //     }
+  //     @media (max-width: 768px) {
+  //       text-align: center
+  //     }
+  //   }
+  // }
   .column-wrap {
     max-width: 1080px;
     margin: 0 auto;

@@ -640,18 +640,15 @@
 .find-out-section .title,
 .text-before-form .title {
   font-family: $rubik;
-  font-size: 80px;
   line-height: 68px;
   text-transform: capitalize;
   margin-bottom: 20px;
 
   @media (max-width: 666px) {
-    font-size: 65px;
     line-height: 52px;
   }
 
   @media (max-width: 500px) {
-    font-size: 50px;
     line-height: 37px;
   }
 }
@@ -686,7 +683,7 @@
       position: absolute;
       top: 0;
       background-color: #fff;
-      font-family: Lato;
+      font-family: 'Inter-Ui-Regular';
       font-size: 30px;
       font-weight: bold;
       font-style: normal;
@@ -877,7 +874,7 @@
 }
 
 .hubspot-section {
-  margin: 0 auto;
+  margin: 0 0 0 130px;
   padding-bottom: 100px;
   width: 80%;
   max-width: 760px;
@@ -948,7 +945,7 @@
 .text-before-form {
   padding-top: 4px;
   max-width: 760px;
-  margin: 0 auto;
+  margin: 0 0 0 130px;
 
   p {
     font-weight: 400;
@@ -961,7 +958,8 @@
 
 .section.new-home-content1.about.sprint.main-sprints-title {
   .title-block {
-    padding-top: 200px;
+    padding-top: 130px;
+    margin: 0 0 0 130px;
     @media (max-width: 768px) {
       padding-top: 30px;
     }
@@ -977,12 +975,14 @@
     .title {
       width: 100%;
       padding: 0;
-      font-size: 36px;
+      font-size: 45px;
+      font-weight: 500;
+      color: #4a4a4a;
       @media (max-width: 768px) {
-        font-size: 22px;
+        font-size: 24px;
       }
     }
-    h1.title {
+    h2.title {
       font-size: 36px;
       @media (max-width: 768px) {
         font-size: 22px;
@@ -1001,6 +1001,7 @@
 .text-before-form {
   h3.title {
     font-size: 36px;
+    color: #4a4a4a;
     @media (max-width: 768px) {
       font-size: 22px;
     }
@@ -1017,6 +1018,7 @@
 .section.new-home-content1.about.sprint {
   .title-block {
     padding-top: 120px;
+    margin: 0 0 0 130px;
     @media (max-width: 768px) {
       padding-top: 50px;
     }

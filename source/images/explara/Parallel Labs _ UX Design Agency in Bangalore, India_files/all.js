@@ -3,6 +3,7 @@ $(document).ready(function(){
   // sidebar slide
   $('.sliding-panel-button,.sliding-panel-fade-screen,.sliding-panel-close').on('click touchstart',function (e) {
     $('.sliding-panel-content,.sliding-panel-fade-screen').toggleClass('is-visible');
+    $('body').toggleClass('is-scrollhidden');
     $('.sliding-panel-content ul li').each(function(i) {
     var $li = $(this);
     setTimeout(function() {

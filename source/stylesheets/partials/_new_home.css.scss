@@ -839,7 +839,7 @@
             position: relative;
 
             &.verloop {
-              background-color: rgba(235,135,6,0.15);
+              background-color: #EFF2F4;
               height: 470px;
 
               img {
@@ -851,7 +851,7 @@
               }
             }
             &.teamindus {
-              background-color: rgba(0,174,235,0.3);
+              background-color: #EFF2F4;
               height: 320px;
 
               img {
@@ -875,7 +875,7 @@
               }
             }
             &.boomer {
-              background-color: rgba(6, 66, 235,0.15);
+              background-color: #DDE3E9;
               height: 544px;
 
               img {
@@ -886,7 +886,7 @@
               }
             }
             &.talentify {
-              background-color: rgba(235, 6, 59,0.15);
+              background-color: #DDE3E9;
               height: 510px;
 
               img {
@@ -897,7 +897,7 @@
               }
             }
             &.zippr {
-              background-color: rgba(241, 178, 0,0.15);
+              background-color: #EFF2F4;
               height: 510px;
 
               img {
@@ -908,7 +908,7 @@
               }
             }
             &.citrus {
-              background-color: rgba(112, 199, 16,0.15);
+              background-color: #DDE3E9;
               height: 544px;
 
               img {
@@ -919,7 +919,7 @@
               }
             }
             &.smartceo {
-              background-color: rgba(39, 185, 112,0.15);
+              background-color: #EFF2F4;
               height: 320px;
 
               img {
@@ -931,7 +931,7 @@
               }
             }
             &.enchanting {
-              background-color: rgba(255, 146, 28,0.15);
+              background-color: #EFF2F4;
               height: 544px;
 
               img {
@@ -943,7 +943,7 @@
               }
             }
             &.sportsie {
-              background-color: rgba(39, 185, 112,0.15);
+              background-color: #DDE3E9;
               height: 500px;
 
               img {
@@ -954,7 +954,7 @@
               }
             }
             &.chaipoint {
-              background-color: rgba(154, 62, 33, 0.15);
+              background-color: #EFF2F4;
               height: 470px;
 
               img {
@@ -965,7 +965,7 @@
               }
             }
             &.vimaana {
-              background-color: rgba(13, 113, 112, 0.15);
+              background-color: #DDE3E9;
               height: 446px;
 
               img {
@@ -977,7 +977,7 @@
               }
             }
             &.wowclub {
-              background-color: rgba(212, 0, 63, 0.2);
+              background-color: #DDE3E9;
               height: 320px;
 
               img {
@@ -989,7 +989,7 @@
               }
             }
             &.explara {
-              background-color: rgba(11, 182, 146, 0.25);
+              background-color: #EFF2F4;
               height: 390px;
 
               img {
@@ -1001,7 +1001,7 @@
               }
             }
             &.explara-d {
-              background-color: rgba(246, 38, 38, 0.2);
+              background-color: #DDE3E9;
               height: 390px;
 
               img {
@@ -1013,7 +1013,7 @@
               }
             }
             &.dune {
-              background-color: rgba(0, 25, 255, 0.2);
+              background-color: #EFF2F4;
               height: 544px;
 
               img {
@@ -1024,7 +1024,7 @@
               }
             }
             &.eatfresh {
-              background-color: rgba(0, 182, 50, 0.35);
+              background-color: #EFF2F4;
               height: 320px;
 
               img {
@@ -3631,6 +3631,44 @@ $link_hover_color:#aaa;
             }
           }
         }
+        .link {
+          font-family: "Inter-Ui-Regular";
+          font-size: 25px;
+          font-weight: 500;
+          line-height: normal;
+          color: #50e3c2;
+          padding-bottom: 40px;
+    
+          &:hover {
+            svg {
+              right: -11px !important;
+    
+              @media (max-width: 888px) {
+                right: -7px !important;
+              }
+            }
+          }
+    
+          svg {
+            width: 21px;
+            height: 21px;
+            position: relative;
+            right: -4px;
+            top: -1px;
+            transition: all 0.4s ease;
+    
+            @media (max-width: 888px) {
+              width: 16px;
+              height: 16px;
+              right: -2px;
+              top: 2px;
+            }
+          }
+    
+          @media (max-width: 888px) {
+            font-size: 15px;
+          }
+        }	
       }
     }
     #threefooterjs {

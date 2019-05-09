@@ -934,8 +934,7 @@
 
 	margin-top: 50px;
 	@media (max-width: 768px) {
-		padding-top: 30px;
-		margin: 0;
+		margin: 30px;
 	}	
 
 	.intro-section {
@@ -972,7 +971,7 @@
 			font-style: normal;
 			font-size: 68px;
 			line-height: 1;
-			color: #333333;
+			color: #4a4a4a;
 			max-width: 1060px;
 			margin-bottom: 0;
 
@@ -984,17 +983,18 @@
 			}			
 
 			@media (max-width: 768px) {
+				max-width: 220px;
 				font-size: 30px;
 				line-height: 1.44;
 				letter-spacing: 0.5px;
 				text-align: left;
 				.text-outline {
 					br {
-						display: none;
+						// display: none;
 					}
 				}
 				br {
-					display: none;
+					// display: none;
 				}
 			}
 		}
@@ -2358,3 +2358,35 @@
 }
 
 //typing animation
+.text-outline {
+	visibility: hidden;
+}
+
+.text-outline1{
+	display: none;
+	transition: all 0.3s ease-in-out;
+  --color: 1;
+  --stroke-width: 2px;
+  color: rgb(255,255,255); 
+  text-shadow:
+  0 0 1px #4a4a4a,
+  -1px -1px 0 #4a4a4a,  
+  1px -1px 0 #4a4a4a,
+  -1px 1px 0 #4a4a4a,
+  1px 1px 0 #4a4a4a; 
+  -webkit-font-smoothing: antialiased; 
+}
+.text-outline2{
+	display: none;
+	transition: all 0.3s ease-in-out;
+  --color: 1;
+  --stroke-width: 2px;
+  color: rgb(255,255,255); 
+  text-shadow:
+  0 0 1px #4a4a4a,
+  -1px -1px 0 #4a4a4a,  
+  1px -1px 0 #4a4a4a,
+  -1px 1px 0 #4a4a4a,
+  1px 1px 0 #4a4a4a; 
+  -webkit-font-smoothing: antialiased; 
+}

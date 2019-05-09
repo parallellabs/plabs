@@ -171,3 +171,124 @@
   }
 
 }
+.get-in-touch-form-section1 {
+  .get-in-wrapper {
+    display: flex;
+    margin: 147px 0 133px;
+
+    .row-wrapper {
+      width: 50%;
+      margin-right: 100px;
+      .text-section {
+        .text {
+          h4.title {
+            text-align: left;
+            font-family: $rubik;
+            font-size: 45px;
+            font-weight: 500;
+            color: #4a4a4a;
+            margin: 0 0 28px;
+          }
+          p {
+            margin: 0 0 50px;
+            font-weight: 400;
+            line-height: 1.44;
+            letter-spacing: 0.1px;
+            font-size: 18px;
+            color: #555;
+            &:last-child {
+              margin: 0 0 30px;
+            }
+          }
+        }
+      }
+      .footer-menu{
+        display: flex;
+        margin-bottom: 40px;
+        .footer-social-media-links {
+          display: flex;
+          margin: -3px 0 0;
+          li {
+              &:after {
+                  display: none;
+              }
+              &:last-child {
+                  a {
+                      padding: 0;
+                  }
+              }
+              a {
+                  padding-right: 20px; 
+                  padding-left: 0;
+                  svg {
+                      width: 25px;
+                      height: 25px;
+                  }
+              
+              }
+          }
+          @media (max-width: 768px) {
+              margin: 0 auto;
+          }
+        }
+      }
+      .image-section {
+        @media (max-width: 768px){
+        }
+        .contact-image {
+          height: 305px;
+          img {
+            float:right;
+            margin-right: 85px;
+            width: 100%;
+            @media (max-width: 1160px){
+              margin-right: 0;
+            }
+            @media (max-width: 768px){
+              float: none;
+              display: block;
+              margin: 0 auto;
+              width: auto;
+            }
+          }
+          @media (max-width: 768px){
+            position: relative;
+            width: 100%;
+            margin-bottom: 40px;
+            height: auto;
+          } 
+        }
+      }
+    } 
+    .contact-form {
+      width: 50%;
+    }
+    @media (max-width: 768px) {
+      display: block;
+      .row-wrapper {
+        width: 100%;
+        .text-section {
+          .text {
+            text-align: center;
+            h4.title {
+              font-size: 27px;
+              text-align: center;
+            }
+            p {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+      .contact-form {
+        width: 100%;
+      }
+    }
+    @media (max-width: 768px) {
+      margin: 50px 0;
+    }
+    @media (max-width: 1024px) and (orientation:portrait) {
+      margin-bottom: 313px;
+    }
+  }
+}
