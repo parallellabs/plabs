@@ -2358,8 +2358,19 @@
 }
 
 //typing animation
-.text-outline {
+.text-outline3 {
 	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+  --color: 1;
+  --stroke-width: 2px;
+  color: rgb(255,255,255); 
+  text-shadow:
+  0 0 1px #4a4a4a,
+  -1px -1px 0 #4a4a4a,  
+  1px -1px 0 #4a4a4a,
+  -1px 1px 0 #4a4a4a,
+  1px 1px 0 #4a4a4a; 
+  -webkit-font-smoothing: antialiased; 
 }
 
 .text-outline1{

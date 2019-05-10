@@ -4,6 +4,7 @@
 
   .title-block{
     position: relative;
+    display: flex;
     max-width: 1000px;
     padding-top: 200px;
 
@@ -23,7 +24,7 @@
     .title{
       margin-bottom: 0;
       font-family: $heading-font-family;
-      font-size: 58px;
+      font-size: 45px;
       color: #4a4a4a;
       font-weight: 500;
 

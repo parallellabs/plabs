@@ -22,7 +22,7 @@ script src="javascripts/splitText.js"
 					h3.subtext
 						|	A UX design studio
 					h1.title
-						|  We <span class="text-outline .text-anime" id="text-outline">design experiences</span><span class="text-outline1" id="text-outline1">visualise ideas</span><span class="text-outline2" id="text-outline2">validate assumptions</span><span class="dashed-line"></span><br> in 15 days
+						|  We <span class="text-outline3" id="text-outline3">design experiences</span><span class="text-outline1" id="text-outline1">visualise ideas</span><span class="text-outline2" id="text-outline2">validate assumptions</span><br> in 15 days
 					a.link href="design-sprints.html"
 						| See how <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" version="1.1" fill="#50e3c2"><g id="surface3" fill="#50e3c2"><path style=" " d="M 12.21875 2.28125 L 10.78125 3.71875 L 18.0625 11 L 2 11 L 2 13 L 18.0625 13 L 10.78125 20.28125 L 12.21875 21.71875 L 21.21875 12.71875 L 21.90625 12 L 21.21875 11.28125 Z " fill="#50e3c2"></path></g></svg>						
 				.image-section
@@ -226,11 +226,11 @@ script src="javascripts/splitText.js"
 javascript:
 
 	//setInterval(function(){
-		var text = document.getElementById("text-outline");
+		var text = document.getElementById("text-outline3");
 		mySplitText = acAnimated.Plugins.SplitText(text, {words: 1, chars: 1, spacing: 10});
 		t1 = new TimelineLite;
 		t1.staggerFromTo(mySplitText.chars, 0.05, {opacity:0, visibility: "visible"}, { opacity:1}, 0.09, 0.1);
-		t1.staggerFromTo(".text-outline", 0.5, {opacity:1}, { opacity:0, display: "none"}, 5, 2);
+		t1.staggerFromTo(".text-outline3", 0.5, {opacity:1}, { opacity:0, display: "none"}, 5, 2);
 		
 		setTimeout(function(){ 
 			var text1 = document.getElementById("text-outline1");

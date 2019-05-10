@@ -262,6 +262,22 @@
     } 
     .contact-form {
       width: 50%;
+      .join {
+        float: right;
+        color: #50e3c2;
+        font-weight: 500;
+        position: relative;
+        top: -48px;
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 1px;
+          left: 0;
+          background: #50e3c2;
+          width: 100%;
+          height: 2px;
+        }
+      }
     }
     @media (max-width: 768px) {
       display: block;
