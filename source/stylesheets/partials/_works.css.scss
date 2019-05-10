@@ -5,8 +5,9 @@
   .title-block{
     position: relative;
     display: flex;
-    max-width: 1000px;
-    padding-top: 200px;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding-top: 50px;
 
     @media(max-width: 1024px) {
       max-width: 90%;
@@ -15,6 +16,7 @@
     }
 
     @media(max-width: 768px) {
+      display: block;
       padding-top: 70px;
       max-width: 100%;
       padding-left: 25px;
@@ -22,28 +24,31 @@
     }
 
     .title{
+      max-width: 600px;
       margin-bottom: 0;
+      padding: 0;
       font-family: $heading-font-family;
       font-size: 45px;
       color: #4a4a4a;
       font-weight: 500;
 
       @media (max-width: 768px) {
-        font-size: 30px;
+        font-size: 24px;
+        width: 100%;
       }
 
     }
     .desc {
+      max-width: 600px;
       font-family: $base-font-family;
       font-size: 20px;
       font-weight: normal;
       line-height: 1.52;
       color: #555555;
       padding-top: 15px;
-      max-width: 760px;
 
       @media (max-width: 768px) {
-        font-size: 20px;
+        font-size: 17px;
       }
 
     }

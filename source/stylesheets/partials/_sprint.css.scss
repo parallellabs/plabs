@@ -59,7 +59,9 @@
 
   .banner-img{
     margin-top: 72px;
-    text-align: center;
+    img {
+      width: 100%;
+    }
     @media (max-width: 768px) {
       margin-top: 50px;
     }
@@ -957,17 +959,25 @@
 }
 
 .section.new-home-content1.about.sprint.main-sprints-title {
-  .title-block {
-    padding-top: 130px;
-    margin: 0 0 0 130px;
-    @media (max-width: 768px) {
-      padding-top: 30px;
+    .title-block {
+      padding-top: 130px;
+      margin: 0;
+      @media (max-width: 768px) {
+        padding-top: 30px;
+      }
+      .title {
+        line-height: 0.8;
+        margin-bottom: 0;
+      }
     }
-    .title {
-      line-height: 0.8;
-      margin-bottom: 40px;
+    .desc {
+      display: flex;
+      align-items: baseline;
+      p {
+        font-family: 'Inter-Ui-Regular';
+        font-size: 18px;
+      }
     }
-  }
 }
 
 .section.new-home-content1.about.sprint {
@@ -1018,9 +1028,18 @@
 .section.new-home-content1.about.sprint {
   .title-block {
     padding-top: 120px;
-    margin: 0 0 0 130px;
     @media (max-width: 768px) {
       padding-top: 50px;
+    }
+  }
+}
+
+.twocolumn-sprint {
+  display: flex;
+  .sprint-align {
+    .title-block {
+      margin: 0;
+      max-width: 1160px;
     }
   }
 }

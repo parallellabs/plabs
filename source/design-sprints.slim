@@ -15,37 +15,41 @@ layout: added_layout_footer
 / Portfolio
 .animsition
 	.section.new-home-content1.about.sprint.main-sprints-title
-		.title-block
-			h1.title
-				| Design Sprint
+		.container
+			.title-block
+				h1.title
+					| Design Sprint
 			.desc
 				p
 					| A design sprint is a step by step system that helps answer critical business questions through rapid prototyping and user testing.
 				p
 					| At Parallel Labs, we design new products or improve existing ones by working closely with our clients using design sprints. With sprints, projects progress more in a week more than one would typically in months.
 	.section.new-home-content1.about.sprint
+		/ .container
 		.banner-img
 			img src="images/new/web-collage.png" alt="design sprint"
-	.section.new-home-content1.about.sprint
-		.title-block
-			h2.title
-				| Why use a Design Sprint?
-			.desc
-				p
-					| Building a quality product takes lot of labor and money. After months of hard work, a product hits the market and gets first hand feedback from users. Until then we have no clue if we are building the right product?
-						Do users really need that feature we spent so much time on? Or is the positioning and value proposition really striking a chord with users?
-				p
-					| This is where design sprints help. Before you invest months of time in building a product, invest a week and fast forward to the future and see customers actually using your product.
-				.img-wrapper
-					img src="images/new/design-sprint.jpg"
-				p	We have used Design Sprints to significantly improve conversions, redesign a product from scratch, craft an MVP for a new idea and even create a crowdfunding strategy. Our clients love Design Sprints because they replace guesswork and busy making with real, tangible progress.
-	.section.new-home-content1.about.sprint
-		.title-block
-			h2.title
-				| What happens in a Design Sprint?
-			.desc
-				p
-					| The Design Sprint is what happens when you put together a bunch of smart people together in a room with clear calendars in an intense 4 day hackathon.
+	.twocolumn-sprint
+		.section.new-home-content1.about.sprint.sprint-align
+			.title-block
+				h2.title
+					| Why use a Design Sprint?
+				.desc
+					p
+						| Building a quality product takes lot of labor and money. After months of hard work, a product hits the market and gets first hand feedback from users. Until then we have no clue if we are building the right product?
+							Do users really need that feature we spent so much time on? Or is the positioning and value proposition really striking a chord with users?
+					p
+						| This is where design sprints help. Before you invest months of time in building a product, invest a week and fast forward to the future and see customers actually using your product.
+
+					p	We have used Design Sprints to significantly improve conversions, redesign a product from scratch, craft an MVP for a new idea and even create a crowdfunding strategy. Our clients love Design Sprints because they replace guesswork and busy making with real, tangible progress.
+		.section.new-home-content1.about.sprint
+			.img-wrapper
+				img src="images/new/design-sprint.jpg"
+			.title-block
+				h2.title
+					| What happens in a Design Sprint?
+				.desc
+					p
+						| The Design Sprint is what happens when you put together a bunch of smart people together in a room with clear calendars in an intense 4 day hackathon.
 	.cards-section
 		.color-background
 		.cards-container
@@ -144,18 +148,30 @@ layout: added_layout_footer
 			.desc
 				p
 					| Design Sprints remove all the uncertainty from the design process and helps make better decisions. Once you have a clickable prototype and feedback from users, you can use it to improvise the prototype further and hit production.
-	.text-before-form
-		h3.title
-			| Get In Touch
-		p
-			| Fill up this form or drop us a line on <a href="mailto:hello@parallellabs.io">hello@parallellabs.io</a>
-	.section.new-home-content1.about.sprint.hubspot
-		.hubspot-section
-			.section-block
-				| <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-				    <script>
-					hbspt.forms.create({
-						portalId: "1730467",
-						formId: "8d19560d-28c7-4a45-aa73-9573f912f841"
-					});
-					</script>
+	.get-in-touch-form-section
+		.container
+			.get-in-wrapper
+				.row-wrapper
+					.text-section
+						.text
+							.sub-heading <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 192 192" width="32px" height="32px"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,192v-192h192v192z" fill="none"/><g fill="#555555"><g id="surface1"><path d="M96,29.25l-2.8125,1.5l-65.0625,35.25h-28.125v96h192v-96h-28.125l-65.0625,-35.25zM96,42.75l42.75,23.25h-85.5zM12,78h168v72h-168zM45,90c-8.20312,0 -15,6.79688 -15,15v18c0,8.20313 6.79688,15 15,15c8.20313,0 15,-6.79687 15,-15v-18c0,-8.20312 -6.79687,-15 -15,-15zM66,90v48h12v-12c9.86719,0 18,-8.13281 18,-18c0,-9.86719 -8.13281,-18 -18,-18zM102,90v48h24v-12h-12v-6h12v-12h-12v-6h12v-12zM132,90v48h12v-18l6,8.0625v9.9375h12v-48h-12v18l-6,-8.0625v-9.9375zM45,102c1.71094,0 3,1.28906 3,3v18c0,1.71094 -1.28906,3 -3,3c-1.71094,0 -3,-1.28906 -3,-3v-18c0,-1.71094 1.28906,-3 3,-3zM78,102c3.39844,0 6,2.60156 6,6c0,3.39844 -2.60156,6 -6,6z"/></g></g></g></svg></span> we’re open!
+							h4.title Enough said,<br><span class="text-outline"> Let’s sprint.</span>
+							p
+								| We work best with companies looking to create high business impact through product innovation.
+							p
+								| We do this by working in parallel with stakeholders to solve problems using design sprints and other collaborative workshops.
+							a.link href="design-sprints.html"
+								| Know more <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" version="1.1" fill="#50e3c2"><g id="surface3" fill="#50e3c2"><path style=" " d="M 12.21875 2.28125 L 10.78125 3.71875 L 18.0625 11 L 2 11 L 2 13 L 18.0625 13 L 10.78125 20.28125 L 12.21875 21.71875 L 21.21875 12.71875 L 21.90625 12 L 21.21875 11.28125 Z " fill="#50e3c2"></path></g></svg>
+					.image-section
+						.contact-image
+							| <img src="images/new1/contact.png" alt="contact-img">			  		
+				.contact-form		
+					| 	<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+						<script>
+						hbspt.forms.create({
+							portalId: "1730467",
+							formId: "8d19560d-28c7-4a45-aa73-9573f912f841"
+						});
+						</script>
+					a class="join" href="mailto:careers@parallellabs.io"
+					| Join Parallel
