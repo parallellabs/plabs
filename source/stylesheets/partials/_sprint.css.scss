@@ -58,12 +58,12 @@
   }
 
   .banner-img{
-    margin-top: 72px;
+    margin: 72px 0 72px;
     img {
       width: 100%;
     }
     @media (max-width: 768px) {
-      margin-top: 50px;
+      margin: 50px 0 50px;
     }
     img.banner-img-desktop,
     img.banner-img-tablet,
@@ -125,10 +125,9 @@
 
     @media screen and (max-width: 992px)
     {
-      padding-left: 25px;
-      padding-right: 25px;
+      padding-left: 0;
+      padding-right: 0;
     }
-
   }
 
   .desc{
@@ -146,7 +145,7 @@
       max-width: 760px;
 
       &:first-child{
-        margin-top: 32px;
+        margin-top: 27px;
       }
 
       @media (max-width: 500px) {
@@ -463,7 +462,6 @@
   width: 100%;
   height: 410px;
   position: relative;
-  margin: 100px 0;
 
   @media (max-width: 1024px) {
     height: 720px;
@@ -717,7 +715,6 @@
     .text-container {
       right: 0;
       padding: 60px 0 60px 40px;
-
       @media (max-width: 888px) {
         padding: 45px 0 45px 30px;
       }
@@ -743,6 +740,7 @@
       @media (max-width: 666px) {
         padding: 25px 0;
       }
+
     }
   }
 
@@ -794,6 +792,7 @@
       @media (max-width: 666px) {
         padding: 25px 0;
       }
+
     }
   }
 }
@@ -959,11 +958,13 @@
 }
 
 .section.new-home-content1.about.sprint.main-sprints-title {
+  .container {
     .title-block {
       padding-top: 130px;
       margin: 0;
       @media (max-width: 768px) {
-        padding-top: 30px;
+        padding: 30px 0 0;
+        margin: 0;
       }
       .title {
         line-height: 0.8;
@@ -976,8 +977,23 @@
       p {
         font-family: 'Inter-Ui-Regular';
         font-size: 18px;
+        &:first-child {
+          margin-right:40px;
+        }
+        @media (max-width: 768px) {
+          &:first-child {
+            margin-right:0;
+          }
+        }
+      }
+      @media (max-width: 768px) {
+        display: block;
       }
     }
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
 }
 
 .section.new-home-content1.about.sprint {
@@ -988,6 +1004,7 @@
       font-size: 45px;
       font-weight: 500;
       color: #4a4a4a;
+      line-height: 1;
       @media (max-width: 768px) {
         font-size: 24px;
       }
@@ -1035,11 +1052,125 @@
 }
 
 .twocolumn-sprint {
+  max-width:1160px;
   display: flex;
-  .sprint-align {
-    .title-block {
-      margin: 0;
-      max-width: 1160px;
+  margin: 0 auto;
+  padding: 100px 0;
+  align-items: flex-start;
+  .why-sprint-wrap {
+    display: flex;
+    @media (max-width: 1024px) {
+      padding-bottom: 50px;
     }
+    @media (max-width: 768px) {
+      display: block;
+    }
+    .about {
+      margin: 0;
+      &.sprint {
+        &.sprint-align {
+          padding: 0 118px 0 0;
+          &:last-child {
+            padding: 0;
+          }
+          .title-block {
+            margin: 0;
+            padding: 0;
+            .title {
+              text-align: left;
+            }
+          }
+          @media (max-width: 768px) {
+            padding: 50px 0 0;
+            &:last-child {
+              padding-bottom: 50px;
+            }
+          }
+        }
+        .title-wrap {
+          padding: 0;
+        }
+        &.sprint-wrap {
+          .img-wrapper {
+            width: 500px;
+            img {
+              width: 100%;
+              @media (max-width: 768px) {
+                width: 50%;
+              }
+            }
+            @media (max-width: 768px) {
+              padding-bottom: 50px;
+            }
+          }
+          .title-block {
+            padding: 0;
+          }
+        }
+        &.why-sprint {
+          padding: 0 118px 0 0;
+          &:last-child {
+            padding: 0;
+          }
+          .title-block {
+            padding: 0;
+            .title {
+              text-align: left;
+            }
+            ul {
+              list-style-type: disc;
+              padding-left: 20px;
+            }
+          }
+          @media (max-width: 1024px) {
+            margin: 50px 0 0 0;
+            padding: 0 25px 0 0;
+          }
+          @media (max-width: 768px) {
+            padding: 50px 25px 0 0;
+            &:last-child {
+              padding-bottom: 50px;
+            }
+            .title-block {
+              .title {
+                font-size: 30px;
+              }
+              .desc {
+                p {
+                  font-size: 17px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    padding: 0 30px;
+    .about {
+      &.sprint {
+        &.sprint-align {
+          padding: 50px 25px 0 0;
+          .title-block {
+            .title {
+              font-size: 30px;
+            }
+            .desc {
+              p {
+                font-size: 17px;
+              }
+            }
+          }
+          &:last-child {
+            // padding: 0 0 50px 0;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    display: block;
+    padding: 0 30px;
   }
 }
