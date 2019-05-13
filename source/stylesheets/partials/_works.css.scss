@@ -19,13 +19,14 @@
       display: block;
       padding-top: 70px;
       max-width: 100%;
-      padding-left: 25px;
-      padding-right: 25px;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     .title{
-      max-width: 600px;
+      max-width: 450px;
       margin-bottom: 0;
+      margin-right:40px;
       padding: 0;
       font-family: $heading-font-family;
       font-size: 45px;
@@ -39,7 +40,7 @@
 
     }
     .desc {
-      max-width: 600px;
+      max-width: 450px;
       font-family: $base-font-family;
       font-size: 20px;
       font-weight: normal;

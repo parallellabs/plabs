@@ -760,6 +760,9 @@
           @include span-columns(6);
           @include omega(2n);
           margin-right: 0;
+          &:last-child {
+            padding: 0;
+          }
 
         a{
           color: inherit;
@@ -776,6 +779,7 @@
             position: relative;
             background: #f4f7f9;
             border-radius: 20px;
+            padding: 0 20px;
 
             &.verloop {
               height: 470px;
@@ -797,7 +801,10 @@
               height: 544px;
               img {
                 width: 318px;
-                @media (max-width: 768px) {
+              }
+              @media (max-width: 768px) {
+                height: 374px;
+                img {
                   width: 200px;
                 }
               }
@@ -807,12 +814,18 @@
               img {
                 width: 360px;
               }
+              @media (max-width: 768px) {
+                height: 460px;
+              }
             }
             &.zippr {
               height: 510px;
               img {
                 width: 328px;
-                @media (max-width: 768px) {
+              }
+              @media (max-width: 768px) {
+                height: 370px;
+                img {
                   width: 220px;
                 }
               }
@@ -821,15 +834,21 @@
               height: 544px;
               img {
                 width: 328px;
-                @media (max-width: 768px) {
+              }
+              @media (max-width: 768px) {
+                height: 424px;
+                img {
                   width: 220px;
                 }
               }
             }
             &.enchanting {
-              height: 550px;
+              height: 350px;
               img {
                 width: 545px;
+              }
+              @media (max-width: 768px) {
+                height: 300px;
               }
             }
             &.chaipoint {
@@ -842,6 +861,9 @@
               height: 446px;
               img {
                 width: 534px;
+              }
+              @media (max-width: 768px) {
+                height: 280px;
               }
             }
             &.eatfresh {
@@ -893,12 +915,13 @@
                 svg {
                   position: relative;
                   left: 5px;
-                  top: -2px;
+                  top: -6px;
                   -webkit-transition: 500ms all linear;
                   transition: 500ms all linear;
 
                   @media(max-width: 1024px) {
                     left: 10px;
+                    top: -2px;
                   }
                 }
               }
@@ -2985,6 +3008,9 @@ $link_hover_color:#aaa;
       &.get-in-touch-block-wrap {
         display: flex;
         align-items: center;
+        @media (max-width: 768px) {
+          display: block;
+        }
       }
         .get-in-touch-block{
           text-align: left;

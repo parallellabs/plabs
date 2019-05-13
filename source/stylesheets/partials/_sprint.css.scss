@@ -1064,6 +1064,7 @@
     }
     @media (max-width: 768px) {
       display: block;
+      padding-bottom: 0;
     }
     .about {
       margin: 0;
@@ -1081,7 +1082,7 @@
             }
           }
           @media (max-width: 768px) {
-            padding: 50px 0 0;
+            padding: 0;
             &:last-child {
               padding-bottom: 50px;
             }
@@ -1127,7 +1128,7 @@
             padding: 0 25px 0 0;
           }
           @media (max-width: 768px) {
-            padding: 50px 25px 0 0;
+            padding: 0;
             &:last-child {
               padding-bottom: 50px;
             }
