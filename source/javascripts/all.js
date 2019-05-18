@@ -487,6 +487,7 @@ $(document).ready(function(){
   //NProgress.start();
   // sidebar slide
   $('.sliding-panel-button,.sliding-panel-fade-screen,.sliding-panel-close').on('click touchstart',function (e) {
+    $('body').toggleClass('noscroll');
     $('.sliding-panel-content,.sliding-panel-fade-screen').toggleClass('is-visible');
     $('.sliding-panel-content ul li').each(function(i) {
     var $li = $(this);

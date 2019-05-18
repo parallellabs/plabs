@@ -443,11 +443,12 @@
           }
 
           @media (max-width: 768px) {
-            font-size: 65px;
+            font-size: 50px;
+            padding-left: 15px;
           }
 
           @media (max-width: 500px) {
-            font-size: 50px;
+            font-size: 35px;
           }
 
         }
@@ -473,7 +474,7 @@
           margin: 40px 0 17px;
 
           @include media(max-width 768px){
-            font-size: 24px;
+            font-size: 20px;
           }
         }
 

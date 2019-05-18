@@ -14,6 +14,8 @@
         position: relative;
     }  
     .footer-row{
+        display: flex;
+        align-items: center;
         @include clearfix;
         .footer-logo-block{
             margin: 0 40px 0 0;
@@ -61,6 +63,7 @@
         .footer-menu{
             display: flex;
             justify-content: flex-end;
+            margin-left: auto;
             @media (max-width: 1024px) {
                 display: block;
             }
@@ -138,23 +141,23 @@
             }
             .footer-social-media-links {
                 display: flex;
-                // margin: -3px 0 0;
+                align-items: center;
                 padding: 0 0 0 30px;
                 li {
+                    width: 21px;
+                    height: 17px;
+                    margin: 0 20px 0 0;
                     &:after {
                         display: none;
                     }
                     &:last-child {
-                        a {
-                            padding: 0;
-                        }
+                        margin: 0;
                     }
                     a {
-                        padding-right: 20px; 
-                        padding-left: 0;
+                        padding: 0;
                         svg {
-                            width: 18px;
-                            height: 18px;
+                            width: 21px;
+                            height: 17px;
                         }
                     
                     }

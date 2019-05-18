@@ -74,6 +74,9 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
 }
+.noscroll {
+    overflow: hidden;
+}
 
 /* ==========================================================================
    Links
