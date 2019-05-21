@@ -22,7 +22,7 @@ script src="javascripts/splitText.js"
 					h3.subtext
 						|	A Design Sprint Studio
 					h1.title.title-animate
-						|  We <span class="text-outline1" id="text-outline1">design experiences</span><span class="text-outline2" id="text-outline2">visualise ideas</span><span class="text-outline3" id="text-outline3">validate assumptions</span>
+						|  We <span class="text-outline1" id="text-outline1">design experiences</span><span class="text-outline4" id="text-outline4">design experiences</span><span class="text-outline2" id="text-outline2">visualise ideas</span><span class="text-outline3" id="text-outline3">validate assumptions</span>
 					.title
 						|  in a week
 					a.link href="design-sprints.html"
@@ -228,43 +228,9 @@ script src="javascripts/splitText.js"
 
 = partial "layouts/new_footer.slim"
 javascript:
-	/*t1 = new TimelineLite;
-    t1.staggerTo(".text-outline1", 0.5, {display: "none"}, 5, 2);
-    textAnimtion();
-    function textAnimtion() {
-        setTimeout(function(){
-            var text1 = document.getElementById("text-outline2");
-            mySplitText1 = acAnimated.Plugins.SplitText(text1, {words: 1, chars: 1, spacing: 10});
-            t2 = new TimelineLite;
-            t1.staggerFromTo(".text-outline2", 0.5, {display: "none"}, { display: "inline"}, 5, 2);
-            t2.staggerFromTo(mySplitText1.chars, 0.05, {opacity:0,}, { opacity:1}, 0.09, 0.1);
-            t2.staggerFromTo(".text-outline2", 0.5, {opacity:1}, { opacity:0, display: "none"}, 5, 2);
-        }, 2490);
-        setTimeout(function(){
-            var text2 = document.getElementById("text-outline3");
-            mySplitText2 = acAnimated.Plugins.SplitText(text2, {words: 1, chars: 1, spacing: 10});
-            t3 = new TimelineLite;
-            t2.staggerFromTo(".text-outline3", 0.5, {display: "none"}, { display: "inline"}, 5, 2);
-            t3.staggerFromTo(mySplitText2.chars, 0.05, {opacity:0,}, { opacity:1}, 0.09, 0.1);
-            t3.staggerFromTo(".text-outline3", 0.5, {opacity:1}, { opacity:0, display: "none"}, 5, 2);
-        }, 4980);
-        setTimeout(function(){
-            var text = document.getElementById("text-outline1");
-            mySplitText = acAnimated.Plugins.SplitText(text, {words: 1, chars: 1, spacing: 10});
-            t4 = new TimelineLite;
-            t4.staggerFromTo(".text-outline1", 0.5, {display: "none"}, { display: "inline"}, 0.09, 0.1);
-            t4.staggerFromTo(mySplitText.chars, 0.05, {opacity:0}, { opacity:1}, 0.09, 0.1);
-            t4.staggerFromTo(".text-outline1", 0.5, {opacity:1}, { opacity:0, display: "none"}, 5, 2);
-        }, 7365);
-    };*/
-	/*function part1() {
-		var tl = new TimelineMax();
-		//tl.to(".text-outline1", 0.5, {display: "none"}, 1);
-		tl.staggerFromTo(".text-outline1", 0.5, {opacity:1}, { opacity:0, display: "none"}, 0.5);
-		return tl;
-	}*/
+
 	tl = new TimelineLite;
-    tl.staggerTo(".text-outline1", 0.5, {display: "none"}, 5, 2);
+	tl.staggerTo(".text-outline1", 0.05, {delay: 1, display: "none"}, 0.2, 0.1);
 	function part2() {
 		var tl = new TimelineMax();
 		var text1 = document.getElementById("text-outline2");
@@ -285,15 +251,15 @@ javascript:
 	}
 	function part4() {
 		var tl = new TimelineMax();
-		var text = document.getElementById("text-outline1");
+		var text = document.getElementById("text-outline4");
 		mySplitText = acAnimated.Plugins.SplitText(text, {words: 1, chars: 1, spacing: 10});
-		tl.staggerFromTo(".text-outline1", 0.5, {display: "none"}, { display: "inline"}, 0.09, 0.1);
+		tl.staggerFromTo(".text-outline4", 0.5, {display: "none"}, { display: "inline"}, 0.09, 0.1);
 		tl.staggerFromTo(mySplitText.chars, 0.05, {opacity:0}, { opacity:1}, 0.09, 0.1);
-		tl.staggerFromTo(".text-outline1", 0.5, {opacity:1}, { display: "none"}, 0.5);
+		tl.staggerFromTo(".text-outline4", 0.5, {opacity:1}, { display: "none"}, 0.5);
 		return tl;
 	}
-	//part1();
 	var masterTimeline = new TimelineMax({ repeat: -1});
+	masterTimeline.delay(1.1);
 	masterTimeline
 		.add(part2())
 		.add(part3())
