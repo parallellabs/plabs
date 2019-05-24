@@ -103,7 +103,7 @@
     padding-top: 200px;
 
     &.medium{
-      padding-top: 160px;
+      padding-top: 100px;
 
       @media (max-width: 768px) {
         padding-top: 40px;
@@ -271,7 +271,7 @@
       h3.title {
         width: 100%;
         font-size: 36px;
-        padding: 80px 0 30px;
+        padding: 60px 0 30px;
         margin-bottom: 0;
         @media (max-width: 1160px) {
           font-size: 31px;
@@ -299,6 +299,51 @@
         }
         @media (max-width: 768px) {
           font-size: 18px;
+        }
+      }
+      .link {
+        font-family: "Inter-Ui-Regular";
+        font-size: 25px;
+        font-weight: 500;
+        line-height: normal;
+        color: #50e3c2;
+        padding-bottom: 40px;
+  
+        &:hover {
+          svg {
+            right: -11px !important;
+  
+            @media (max-width: 888px) {
+              right: -7px !important;
+            }
+          }
+        }
+  
+        svg {
+          width: 21px;
+          height: 21px;
+          position: relative;
+          right: -4px;
+          top: 0px;
+          transition: all 0.4s ease;
+  
+          @media (max-width: 1024px) {
+            width: 16px;
+            height: 16px;
+            right: -2px;
+            top: -1px;
+          }
+          @media (max-width: 768px) {
+            width: 16px;
+            height: 16px;
+            right: -2px;
+            top: 0px;
+          }
+
+        }
+  
+        @media (max-width: 1024px) {
+          font-size: 20px;
         }
       }
       @media (max-width: 768px) {

@@ -605,11 +605,10 @@
         line-height: 0.8;
 
         @media (max-width: 768px) {
-          font-size: 22px;
+          font-size: 30px;
         }
-
         @media (max-width: 500px) {
-          font-size: 20px;
+          font-size: 25px;
         }
       }
 
@@ -644,4 +643,40 @@
 }
 .section-new-home-content1 {
   position: relative;
+}
+.service-wrap {
+  .about {
+    .medium {
+      @media (max-width: 768px) {
+        padding-top: 0;
+      }
+    }
+  }
+  .section .title-block{
+    .desc {
+      font-size: 22px;
+      p {
+        font-size: 22px;
+        @media (max-width: 768px) {
+          font-size: 20px;
+        }
+      }
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
+  }
+  .services .services-list .item .left .desc {
+    font-size: 22px;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+  .services .picture-wrap .picture-content .desc p {
+    font-size: 22px;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
 }
