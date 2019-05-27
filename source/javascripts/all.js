@@ -496,8 +496,9 @@ $(document).ready(function(){
     }, i*75); // delay 100 ms
   });
     e.preventDefault();
+    return false;
   });
-
+  
   if((navigator.userAgent.match(/iPad|iPhone/i)) && (navigator.userAgent.match(/iPad|iPhone/i)!= null)){
           $('video').prop("controls",true);
   }

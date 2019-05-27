@@ -1012,6 +1012,7 @@
 			text-transform: uppercase;
 			@media (max-width: 768px) {
 				text-align: left;
+				font-size: 14px;
 				br {
 				display: none;
 			}
@@ -1639,7 +1640,7 @@
 				  		width: 16px;
 				  		height: 16px;
 				  		right: -2px;
-				  		top: 2px;
+				  		top: 4px;
 				  	}
 				  }
 
