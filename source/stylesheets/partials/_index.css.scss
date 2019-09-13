@@ -931,12 +931,7 @@
 }
 
 #fullpage {
-
 	margin-top: 50px;
-	@media (max-width: 768px) {
-		margin: 30px;
-	}	
-
 	.intro-section {
 		width: 100%;
 		max-width: 1160px;
@@ -953,16 +948,16 @@
 			@media (max-width: 768px) {
 				margin: 0 auto;
 				width: 100%;
-			}	
+			}
 		}
 
 		.image-section{
 			width: 65%;
-			
+
 			@media (max-width: 768px) {
 				margin-top: 80px;
 				width: 100%;
-			}					
+			}
 		}
 
 		.title {
@@ -982,13 +977,13 @@
 				&.title-animate {
 					height: 116px;
 				}
-			}	
+			}
 			@media (max-width: 850px) {
 				font-size: 48px;
 				&.title-animate {
 					height: 96px;
 				}
-			}			
+			}
 
 			@media (max-width: 768px) {
 				max-width: 220px;
@@ -1067,7 +1062,7 @@
 		  @media (max-width: 888px) {
 			  font-size: 15px;
 			}
-		}		
+		}
 	}
 	.project-section {
 		padding-right: 30px;
@@ -1358,7 +1353,7 @@
 			}
 		}
 	}
-	
+
 	.stories {
 		color: #444444;
 		margin-top: 92px;
@@ -1367,7 +1362,7 @@
 
 			@media (max-width: 768px) {
 				margin-bottom: 40px;
-			}			
+			}
 
 			&:last-child{
 				margin-bottom: 0;
@@ -1380,17 +1375,17 @@
 
 			@media (max-width: 1440px) {
 				margin-bottom: 100px;
-			}	
+			}
 			@media (max-width: 768px) {
 				margin-bottom: 40px;
-			}				
+			}
 			.fourth-story{
 				@media (min-width: 768px) {
 					padding-bottom: 100px;
 				}
 				@media (max-width: 1160px) {
 					padding-bottom: 0;
-				}	
+				}
 				.images{
 
 					.image{
@@ -1402,13 +1397,13 @@
 
 						@media (max-width: 768px) {
 							display: none;
-						}	
+						}
 						@media (max-width: 1160px) {
 							height: 400px;
-						}						
+						}
 						@media (max-width: 980px) {
 							height: 360px;
-						}	
+						}
 						img{
 							width: 100%;
 							height: 100%;
@@ -1440,7 +1435,7 @@
 			font-weight: bold;
 			color: #fff;
 			letter-spacing: 4px;
-			text-transform: uppercase;			
+			text-transform: uppercase;
 		}
 		.first-story-wrapper {
 			position: relative;
@@ -1453,7 +1448,7 @@
 			}
 			@media (max-width: 768px) {
 				margin-bottom: 40px;
-			}	
+			}
 			.images{
 				.image{
 					position: absolute;
@@ -1462,13 +1457,13 @@
 					left: -10%;
 					@media (max-width: 768px) {
 						display: none;
-					}						
+					}
 					@media (max-width: 1160px) {
 						height: 400px;
 					}
 					@media (max-width: 980px) {
 						height: 360px;
-					}	
+					}
 					img{
 						width: 100%;
 						height: 100%;
@@ -1495,25 +1490,25 @@
 				padding-right: 160px;
 				@media (max-width: 768px) {
 					padding: 0;
-				}	
+				}
 				.image{
 					height: 664px;
 					width: 100%;
 					padding-bottom: 17px;
 					@media (max-width: 1160px) {
 						height: 480px;
-					}	
+					}
 					@media (max-width: 768px) {
-						margin: 0 0 20px;	
+						margin: 0 0 20px;
 						height: auto;
-					}		
+					}
 					img{
 						width: 100%;
 						height: 100%;
 						-webkit-filter: drop-shadow(5px 5px 5px #222 );
   					filter: drop-shadow(5px 5px 5px #222);
 					}
-				}	
+				}
 			}
 		}
 		.first-story,
@@ -1548,9 +1543,9 @@
 
 							@media (max-width: 500px) {
 								@include transform(rotate(0deg));
-							}								
+							}
 						}
-					}					
+					}
 				}
 
 				.image:nth-child(2) {
@@ -1682,7 +1677,7 @@
 				padding-left: 20px;
 				@media (max-width: 768px) {
 					padding-left: 0;
-				}	
+				}
 			}
 			.image:nth-child(3) {
 				@media (max-width: 600px) {
@@ -1693,7 +1688,7 @@
 		}
 
 		.fourth-story {
-			
+
 			@media (max-width: 768px) {
 			  flex-direction: column-reverse;
 			  padding-top: 0;
@@ -1706,7 +1701,7 @@
 					width: 100%;
 					flex-direction: column-reverse;
 					padding-right: 0;
-				}				
+				}
 			}
 		}
 
@@ -1768,7 +1763,7 @@
 				}
 
 			}
-		}		
+		}
 		@media (max-width:768px) {
 			margin-top: 0;
 		}
@@ -2018,7 +2013,7 @@
 		margin: 40px 0;
 		padding-top: 0;
 	}
-	
+
 .container {
 	.title {
 		font-family: $rubik;
@@ -2038,7 +2033,7 @@
 			@media (max-width: 768px) {
 				font-size: 30px;
 				padding-top: 20px;
-			}			
+			}
 		}
 
 		@media (max-width: 768px) {
@@ -2077,7 +2072,7 @@
 		}
 		@media (max-width: 768px) {
 			padding-bottom: 0;
-		}	
+		}
 		@media (max-width: 450px) {
 			margin-top: 100px;
 		}
@@ -2174,8 +2169,8 @@
 			  }
 				@media (max-width: 980px) {
 					font-size: 16px;
-				}	
-						  
+				}
+
 			}
 
 			.p-link {
@@ -2218,7 +2213,7 @@
 			}
 			@media (max-width: 768px) {
 				margin-bottom: 20px;
-			}	
+			}
 			@media (max-width: 768px) {
 				margin: 50px 0 0;
 			}
@@ -2243,7 +2238,7 @@
 	}
 
 	.container {
-		
+
 		@media (max-width: 768px) {
 			flex-direction: column-reverse;
 		}
@@ -2275,7 +2270,7 @@
 				@media (max-width: 768px) {
 					width: 100%;
 					height: auto;
-				} 
+				}
 
 				img {
 					width: 100%;
@@ -2371,53 +2366,53 @@
 .text-outline1{
   --color: 1;
   --stroke-width: 2px;
-  color: rgb(255,255,255); 
+  color: rgb(255,255,255);
   text-shadow:
   0 0 1px #4a4a4a,
-  -1px -1px 0 #4a4a4a,  
+  -1px -1px 0 #4a4a4a,
   1px -1px 0 #4a4a4a,
   -1px 1px 0 #4a4a4a,
-  1px 1px 0 #4a4a4a; 
-  -webkit-font-smoothing: antialiased; 
+  1px 1px 0 #4a4a4a;
+  -webkit-font-smoothing: antialiased;
 }
 .text-outline2{
 	display: none;
 	transition: all 0.3s ease-in-out;
   --color: 1;
   --stroke-width: 2px;
-  color: rgb(255,255,255); 
+  color: rgb(255,255,255);
   text-shadow:
   0 0 1px #4a4a4a,
-  -1px -1px 0 #4a4a4a,  
+  -1px -1px 0 #4a4a4a,
   1px -1px 0 #4a4a4a,
   -1px 1px 0 #4a4a4a,
-  1px 1px 0 #4a4a4a; 
-  -webkit-font-smoothing: antialiased; 
+  1px 1px 0 #4a4a4a;
+  -webkit-font-smoothing: antialiased;
 }
 .text-outline3 {
 	display: none;
 	transition: all 0.3s ease-in-out;
   --color: 1;
   --stroke-width: 2px;
-  color: rgb(255,255,255); 
+  color: rgb(255,255,255);
   text-shadow:
   0 0 1px #4a4a4a,
-  -1px -1px 0 #4a4a4a,  
+  -1px -1px 0 #4a4a4a,
   1px -1px 0 #4a4a4a,
   -1px 1px 0 #4a4a4a,
-  1px 1px 0 #4a4a4a; 
-  -webkit-font-smoothing: antialiased; 
+  1px 1px 0 #4a4a4a;
+  -webkit-font-smoothing: antialiased;
 }
 .text-outline4{
 	display: none;
   --color: 1;
   --stroke-width: 2px;
-  color: rgb(255,255,255); 
+  color: rgb(255,255,255);
   text-shadow:
   0 0 1px #4a4a4a,
-  -1px -1px 0 #4a4a4a,  
+  -1px -1px 0 #4a4a4a,
   1px -1px 0 #4a4a4a,
   -1px 1px 0 #4a4a4a,
-  1px 1px 0 #4a4a4a; 
-  -webkit-font-smoothing: antialiased; 
+  1px 1px 0 #4a4a4a;
+  -webkit-font-smoothing: antialiased;
 }
