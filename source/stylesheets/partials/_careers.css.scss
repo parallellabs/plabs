@@ -7,10 +7,13 @@
   text-align: left;
 
   p {
-    margin-bottom: 60px;
-    color: #555;
+    margin-bottom: 48px;
     font-weight: 400;
-    font-size: rem(18);
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    color: #4a4a4a;
   }
   .career-p {
     margin-bottom: 20px;
@@ -21,21 +24,41 @@
     }
 
     position: relative;
-    margin-top: 140px;
-    margin-bottom: 30px;
-    color: #4a4a4a;
-    font-weight: 800;
-    font-size: rem(60);
+    margin-top: 75px;
+    margin-bottom: 24px;
     font-family: $heading-font-family;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4a4a4a;
+    &::before {
+      content: "🤟";
+      position: absolute;
+      top: 30px;
+      left: -55px;
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
     @media (max-width: 768px) {
       margin-top: 20px;
     }
     .helper {
       display: block;
-      margin-top: 10px;
-      color: #999;
-      font-weight: 300;
-      font-size: rem(13);
+      position: relative;
+      margin-bottom: 15px;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #4a4a4a;
+      span {
+        position: absolute;
+        bottom: 5px;
+        left: 91px;
+      }
     }
     .btn {
       @include media($mobile-devices) {
@@ -53,7 +76,6 @@
       float: none;
       margin: 20px 0;
     }
-
     display: inline;
     float: right;
     padding-top: 0;
@@ -71,10 +93,14 @@
     }
   }
   h2 {
-    margin-bottom: 30px;
+    position: relative;
+    margin-bottom: 24px;
     color: #4a4a4a;
-    font-weight: 400;
-    font-size: rem(30);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4a4a4a;
 
     .border {
       display: block;
@@ -85,16 +111,84 @@
       background-color: #ccc;
     }
   }
+  .character {
+    &::before {
+      content: "😎";
+      position: absolute;
+      top: 0px;
+      left: -47px;
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
+  }
+  .resp {
+    &::before {
+      content: "👩‍💻";
+      position: absolute;
+      top: 0px;
+      left: -47px;
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
+  }
+  .insterested {
+    &::before {
+      content: "🎉";
+      position: absolute;
+      top: 0px;
+      left: -47px;
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
+  }
+  .apply-btn {
+    position: relative;
+    display: block;
+    background-color: #50e3c2;
+    max-width: 200px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin: 25px 0;
+    svg {
+      position: absolute;
+      right: 20px;
+      top: 13px;
+      width: 26px;
+      height: 26px;
+    }
+    @media (max-width: 768px) {
+      max-width: 150px;
+      font-size: 18px;
+      svg {
+        right: 10px;
+        top: 12px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
   .list {
     margin-bottom: 60px;
-    padding-left: 22px;
-    list-style-type: disc;
 
     li {
+      position: relative;
       margin-bottom: 8px;
       color: #555;
       font-weight: 400;
       font-size: rem(18);
+      &::before {
+        content: "•";
+        position: absolute;
+        top: 0px;
+        left: -20px;
+      }
     }
   }
   .apply-form {
