@@ -20,6 +20,12 @@ header.top-navbar.prjt-nav
       -else
         li
           |<a href="about.html" class="animsition-link">STUDIO</a>
+      -if(current_page.path == "careers.html")
+        li
+          |<a href="about.html" class="animsition-link active">CAREERS</a>
+      -else
+        li
+          |<a href="careers.html" class="animsition-link">CAREERS</a>
       -if(current_page.path == "contact-u.html")
         li
           |<a href="contact-us.html" class="animsition-link active">CONTACT</a>
@@ -45,6 +51,8 @@ header.top-navbar.prjt-nav
         a class="animsition-link" href="work.html" Work
       li
         a class="animsition-link" href="about.html" Studio
+      li
+        a href="careers.html" class="animsition-link" Careers
       li
         a class="animsition-link" href="contact-us.html"
           | Contact
