@@ -1627,8 +1627,8 @@
 				}
 
 				.link {
-					display: block;
-					font-family: "Inter-Ui-Regular";
+				  display: block;
+				  font-family: "Inter-Ui-Regular";
 				  font-size: 25px;
 				  font-weight: 500;
 				  line-height: normal;
@@ -2503,4 +2503,97 @@
 		}
 	}
 
+}
+.blog-section {
+	.blog-wrap {
+		display: flex;
+		font-family: "Rubik";
+		align-items: center;
+		@media (max-width: 768px) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		.blog-img {
+			max-width: 53.45%;
+			@media (max-width: 768px) {
+				max-width: 100%;
+			}
+		}
+		.blog-content {
+			max-width: 46.55%;
+			padding-left: 52px;
+			@media (max-width: 768px) {
+				max-width: 100%;
+				padding-left: 0;
+			}
+			.blog-date {
+				font-size: 18px;
+				font-weight: normal;
+				line-height: normal;
+				letter-spacing: 2px;
+				color: #4a4a4a;
+				@media (max-width: 768px) {
+					font-size: 16px;
+					margin-top: 25px;
+				}
+			}
+			.blog-head {
+				font-size: 36px;
+				text-transform: capitalize;
+				font-weight: 500;
+				line-height: normal;
+				letter-spacing: normal;
+				color: #4a4a4a;
+				margin: 13px 0;
+				@media (max-width: 768px) {
+					font-size: 30px;
+				}
+				@media (max-width: 980px) {
+					font-size: 25px;
+					margin: 10px 0;
+				}
+			}
+			.blog-para {
+				font-size: 18px;
+				font-weight: normal;
+				line-height: 1.5;
+				letter-spacing: normal;
+				color: #4a4a4a;
+				@media (max-width: 768px) {
+					font-size: 16px;
+				}
+				@media (max-width: 980px) {
+					font-size: 17px;
+				}
+			}
+			a.link {
+				display: block;
+				font-size: 20px;
+				font-weight: normal;
+				line-height: normal;
+				color: #50e3c2;
+				margin-top:20px;
+				@media (max-width: 768px) {
+					font-size: 16px;
+				}
+				@media (max-width: 980px) {
+					margin-top:10px;
+				}
+				svg {
+					width: 21px;
+					height: 21px;
+					position: relative;
+					right: -4px;
+					top: 4px;
+					transition: all 0.4s ease;
+					@media (max-width: 768px) {
+						width: 16px;
+						height: 16px;
+						right: -2px;
+    					top: 4px;
+					}
+				}
+			}
+		}
+	}
 }
