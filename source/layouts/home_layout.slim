@@ -36,26 +36,32 @@ html.no-js lang="en"
     link rel="stylesheet" href="stylesheets/all.css"/
     /link rel="stylesheet" href="stylesheets/vendors/animsition.css"/
     script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"/
-    script src="//js.hsforms.net/forms/shell.js"/
-    
+    script type="text/javascript" src="//js.hsforms.net/forms/shell.js"/
 
     javascript:
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-47999745-2', 'auto');
-      ga('send', 'pageview');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-47999745-2');
 
-      ga('send', {
-        hitType: 'event',
-        eventCategory: 'project popup',
-        eventAction: 'open',
-        eventLabel: window.location.href
-      });
-
-    script async="async" src='https://www.google-analytics.com/analytics.js'
+    script type="text/javascript" async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-47999745-2"/
 
     javascript:
       (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
-
+    javascript:
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '149485772377389');
+      fbq('track', 'PageView');
+    <noscript>
+      <img height="1" width="1" src="https://www.facebook.com/tr?id=149485772377389&ev=PageView&noscript=1"/>
+    </noscript>
   body.home
     = partial "layouts/homeHeader.slim"
     == yield

@@ -37,23 +37,29 @@ html.no-js lang="en"
     script src="//js.hsforms.net/forms/shell.js"/
 
     javascript:
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-47999745-2']);
-      _gaq.push(['_gat._forceSSL']);
-      _gaq.push(['_trackPageview']);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-47999745-2');
 
-      (function () {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-      })();
+    script type="text/javascript" async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-47999745-2"/
 
     javascript:
       (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
-
+    javascript:
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '149485772377389');
+      fbq('track', 'PageView');
+    <noscript>
+      <img height="1" width="1" src="https://www.facebook.com/tr?id=149485772377389&ev=PageView&noscript=1"/>
+    </noscript>
   body
     .wrapper.main-layout
       = partial "layouts/homeHeader.slim"
