@@ -12,6 +12,7 @@ layout: home_layout
 - @twitter_description = "Parallel Labs is a lean team of thinkers, designers and geeks who help companies design experiences for Web and Mobile"
 - @twitter_url = "http://parallellabs.io/"
 - @twitter_image = "http://parallellabs.io/images/svgs/logo.png"
+script src="https://code.jquery.com/jquery-2.1.4.min.js"
 script src="javascripts/splitText.js"
 
 .mai-content#fullpage.animsition
@@ -20,12 +21,11 @@ script src="javascripts/splitText.js"
 			.intro-section
 				.text-section
 					h1.title.title-animate
-						|  Product design<br /> driven by <span class="text-outline1" id="text-outline1">Strategy</span><span class="text-outline2" id="text-outline2">Strategy</span><span class="text-outline3" id="text-outline3">Users</span><span class="text-outline4" id="text-outline4">Speed</span><span class="text-outline5" id="text-outline5">OKRS</span><span class="text-outline6" id="text-outline6">Purpose</span><span class="text-outline7" id="text-outline7">Metrics</span><span class="text-outline8" id="text-outline8">Data</span><span class="text-outline9" id="text-outline9">Business</span>
-
+						|  Product design<br /> driven by <span class="text-outline1" id="text-outline1" >Speed</span><span class="text-outline2" id="text-outline2" >Speed</span><span class="text-outline3" id="text-outline3">Strategy</span><span class="text-outline4" id="text-outline4">Objectives</span><span class="text-outline5" id="text-outline5">Metrics</span>
 					.new-sub-content
 						|	We help teams create better products and<br /> innovate, better and faster.
-					a.link href="design-sprints.html"
-						| See how <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" version="1.1" fill="#50e3c2"><g id="surface3" fill="#50e3c2"><path style=" " d="M 12.21875 2.28125 L 10.78125 3.71875 L 18.0625 11 L 2 11 L 2 13 L 18.0625 13 L 10.78125 20.28125 L 12.21875 21.71875 L 21.21875 12.71875 L 21.90625 12 L 21.21875 11.28125 Z " fill="#50e3c2"></path></g></svg>
+					a.link.link-button href="#contact-form"
+						| Request A Call <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" version="1.1" fill="#fff"><g id="surface3" fill="#fff"><path style=" " d="M 12.21875 2.28125 L 10.78125 3.71875 L 18.0625 11 L 2 11 L 2 13 L 18.0625 13 L 10.78125 20.28125 L 12.21875 21.71875 L 21.21875 12.71875 L 21.90625 12 L 21.21875 11.28125 Z " fill="#fff"></path></g></svg>
 
 	.section.new-home-content1.clients.clients-list.PB0-imp.fp-auto-height
 		.content-wrapper.content-wrapper-white
@@ -151,10 +151,56 @@ script src="javascripts/splitText.js"
 						.name
 							| —  Arun Gadiraju, CEO @ Boomer
 
+.testimonials-section
+	.container
+		h3.testimonials-heading
+			| What our <span class="text-outline">clients</span> say
+		.slideshow-container
+			.mySlide.fade
+				.slide
+					p.testimonials-para
+						<img src="https://uploads-ssl.webflow.com/5de749c5154e7e7af3635eb2/5de786dc6329f4c393b64c1f_Quotes.png" alt="" class="image-12">
+						|	Having worked with designers and UX specialists all over the world, I can safely say that Parallel has an international quality eye for design and workflows for a superior user experience. They are able to understand complex business use cases and come up with intuitive design solutions. Their openness, attitude and collaborative style, which are unusual for a designer make it a pleasure to work with them. They are fun, likable and creative.
+					.testimonials-img
+						.image
+							| <img src="https://uploads-ssl.webflow.com/5de749c5154e7e7af3635eb2/5df9b4d53a70bf1a7d89550d_Parik-ET.png" alt="Arun Gadiraju">
+						h3.name
+							|	Parik
+						h4.position
+							|	CEO at Enchanting Travels
+			.mySlide.fade
+				.slide
+					p.testimonials-para
+						<img src="https://uploads-ssl.webflow.com/5de749c5154e7e7af3635eb2/5de786dc6329f4c393b64c1f_Quotes.png" alt="" class="image-12">
+						|	Working with Parallel was a refreshing experience, really bringing the Credit Insights platform to life. Their methodology, the involvement to understand nuances on what we wanted our customers to take away and adhering to a tight timeline made the collaboration easy and productive. The team was very responsive, addressing queries and helping to further improve the product right up to go live and beyond.
+					.testimonials-img
+						.image
+							| <img src="https://uploads-ssl.webflow.com/5de749c5154e7e7af3635eb2/5df9b4d50201034b65583ec5_Divya-Equifax.png" alt="Arun Gadiraju">
+						h3.name
+							|	Divya Mirchandani
+						h4.position
+							|	VP, Product Development at Equifax
+			.mySlide.fade
+				.slide
+					p.testimonials-para
+						<img src="https://uploads-ssl.webflow.com/5de749c5154e7e7af3635eb2/5de786dc6329f4c393b64c1f_Quotes.png" alt="" class="image-12">
+						|	Parallel has been a partner in helping Boomer evolve as a product for a long time now. We love their approach of using design sprints approach to solve problems and it has had a big impact on improving our product experience. They take a larger picture view of the problem being tackled, brainstorm to find all alternate solutions, asks tough questions that force clarity, and gets the team focused on the right things.
+					.testimonials-img
+						.image
+							| <img src="https://uploads-ssl.webflow.com/5de749c5154e7e7af3635eb2/5df9b4d59bcdff5250a0c7cd_Arun-Boomer.png" alt="Arun Gadiraju">
+						h3.name
+							|	Arun Gadiraju
+						h4.position
+							|	CEO & Founder at Boomer
+
+			<a class="prev" onclick="plusSlides(-1)"><img src="https://uploads-ssl.webflow.com/5de749c5154e7e7af3635eb2/5de8b30b133808c27070a92f_icons8-left.png" alt="left-arrow"/></a>
+			<a class="next" onclick="plusSlides(1)"><img src="https://uploads-ssl.webflow.com/5de749c5154e7e7af3635eb2/5de8b30e0e7016b6abb43593_icons8-right.png" alt="right-arrow"/></a>
+
+
 .progress-perfection-section.blog-section
 	.container
 		h3.title.title-outline
-			| <span class="text-outline">our</span> blog
+			| <span class="text-outline">Our</span> blog
 	.progress-wrapper
 		.container.blog-wrap
 			a.blog-img target= "_blank" href="https://medium.com/parallel-labs/design-jam-with-ttc-labs-by-facebook-42ebae842734"
@@ -170,38 +216,28 @@ script src="javascripts/splitText.js"
 					| Read what we've been upto <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" version="1.1" fill="#50e3c2"><g id="surface3" fill="#50e3c2"><path style=" " d="M 12.21875 2.28125 L 10.78125 3.71875 L 18.0625 11 L 2 11 L 2 13 L 18.0625 13 L 10.78125 20.28125 L 12.21875 21.71875 L 21.21875 12.71875 L 21.90625 12 L 21.21875 11.28125 Z " fill="#50e3c2"></path></g></svg>
 
 .progress-perfection-section
+	.progress-wrapper
+		.container.bg-container-color
+			.other-text
+				h3.right-thing-heading
+					| We do the <span class="text-outline">right thing</span>
+				p
+					|	We believe in solving the right problems and delivering value faster.<br />We are your ally, not just a note-taker.
+				p
+					|	The old school design agency model is broken.
+				p
+					|	Does over promising pitches, hefty retainers, months of research, endless calls to arrive on consensus sound familiar? All this in a vain quest for that elusive “perfect product”.
+				p
+					|	The world no longer works like that. And you shouldn't have to pay the price for outdated processes.
+				p
+					|	At Parallel, we make better, not perfect. We specialise in delivering results that would typically take months, in a matter of weeks. With only 10 members, our team is lean, agile and pragmatic just like our designs. We help you validate assumptions and launch product & services while your competition is running circles around the drawing board to decide “Is this the right colour for our brand?”
+
+.get-in-touch-form-section.progress-perfection-section
 	.container
 		h3.title.title-outline
-			| <span class="text-outline">We do the</span> right thing
-	.progress-wrapper
-		.container
-			.other-text
-				p.disclaimer-text
-					|	Disclaimer: Not an election slogan or an invitation to start an existential conversation on “what is the right thing, anyway”
-				p
-					|	Now that we have made that bold claim nothing is stopping us from laying all our cards on the table.
-				p
-					|	Parallel is not in the business of client servicing. We will rather ask you “Why do you need this?” then say “What do you need?”
-				p
-					|	We know not everyone will like this belief but we strongly believe in a business first over a client first, approach. We’re lean, we’re fast and by the time we’re done testing with the users and handing-off three different products to three different clients a traditional agency would be questioning whether your brand identity resonates more with a teal or turquoise. Meantime, the no.of zeros on their monthly invoices keep increasing.
-				p
-					|	As a team of pragmatic designers, engineers with empathy towards design, researchers, marketers and entrepreneurs we promise an objective driven approach, agility, validated solutions, condensed budgets and timelines. There is no such thing as a “perfect” product but we do build the best digital products and services, faster.
-
-.get-in-touch-form-section
-	.container
+			| <span class="text-outline">Let’s</span> talk
 		.get-in-wrapper
-			.row-wrapper
-				.text-section
-					.text
-						.sub-heading <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 192 192" width="32px" height="32px"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,192v-192h192v192z" fill="none"/><g fill="#555555"><g id="surface1"><path d="M96,29.25l-2.8125,1.5l-65.0625,35.25h-28.125v96h192v-96h-28.125l-65.0625,-35.25zM96,42.75l42.75,23.25h-85.5zM12,78h168v72h-168zM45,90c-8.20312,0 -15,6.79688 -15,15v18c0,8.20313 6.79688,15 15,15c8.20313,0 15,-6.79687 15,-15v-18c0,-8.20312 -6.79687,-15 -15,-15zM66,90v48h12v-12c9.86719,0 18,-8.13281 18,-18c0,-9.86719 -8.13281,-18 -18,-18zM102,90v48h24v-12h-12v-6h12v-12h-12v-6h12v-12zM132,90v48h12v-18l6,8.0625v9.9375h12v-48h-12v18l-6,-8.0625v-9.9375zM45,102c1.71094,0 3,1.28906 3,3v18c0,1.71094 -1.28906,3 -3,3c-1.71094,0 -3,-1.28906 -3,-3v-18c0,-1.71094 1.28906,-3 3,-3zM78,102c3.39844,0 6,2.60156 6,6c0,3.39844 -2.60156,6 -6,6z"/></g></g></g></svg></span> we’re open!
-						h4.title Enough said,<br><span class="text-outline"> Let’s sprint.</span>
-						p
-							| We work best with companies looking to create high business impact through product innovation.
-						p
-							| We do this by working in parallel with stakeholders to solve problems using design sprints and other collaborative workshops.
-						a.link href="design-sprints.html"
-							| Know more <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" version="1.1" fill="#50e3c2"><g id="surface3" fill="#50e3c2"><path style=" " d="M 12.21875 2.28125 L 10.78125 3.71875 L 18.0625 11 L 2 11 L 2 13 L 18.0625 13 L 10.78125 20.28125 L 12.21875 21.71875 L 21.21875 12.71875 L 21.90625 12 L 21.21875 11.28125 Z " fill="#50e3c2"></path></g></svg>
-			.contact-form
+			.contact-form#contact-form
 				| 	<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
 					<script>
 					hbspt.forms.create({
@@ -213,6 +249,31 @@ script src="javascripts/splitText.js"
 = partial "layouts/new_footer.slim"
 
 javascript:
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+		showSlides((slideIndex += n));
+	}
+
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlide");
+
+		if (n > slides.length) {
+		slideIndex = 1;
+		}
+		if (n < 1) {
+		slideIndex = slides.length;
+		}
+		for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+		}
+
+		slides[slideIndex - 1].style.display = "block";
+	}
+
+javascript:
 
 	tl = new TimelineLite;
 	tl.staggerTo(".text-outline1", 0.05, {delay: 1, display: "none"}, 0.2, 0.1);
@@ -222,7 +283,7 @@ javascript:
 		mySplitText1 = acAnimated.Plugins.SplitText(text1, {words: 1, chars: 1, spacing: 10});
 		tl.staggerFromTo(".text-outline2", 0.5, {display: "none"}, { display: "inline"}, 0.09, 0.1);
 		tl.staggerFromTo(mySplitText1.chars, 0.05, {opacity:0,}, { opacity:1}, 0.09, 0.1);
-		tl.staggerFromTo(".text-outline2", 0.5, {opacity:1}, { opacity:0, display: "none"}, 0.5);
+		tl.staggerFromTo(".text-outline2", 2, {opacity:1}, { opacity:0, display: "none"}, 2);
 		return tl;
 	}
 	function part3() {
@@ -231,7 +292,7 @@ javascript:
 		mySplitText2 = acAnimated.Plugins.SplitText(text2, {words: 1, chars: 1, spacing: 10});
 		tl.staggerFromTo(".text-outline3", 0.5, {display: "none"}, { display: "inline"}, 0.09, 0.1);
 		tl.staggerFromTo(mySplitText2.chars, 0.05, {opacity:0,}, { opacity:1}, 0.09, 0.1);
-		tl.staggerFromTo(".text-outline3", 0.5, {opacity:1}, { opacity:0, display: "none"}, 0.5);
+		tl.staggerFromTo(".text-outline3", 2, {opacity:1}, { opacity:0, display: "none"}, 2);
 		return tl;
 	}
 	function part4() {
@@ -240,7 +301,7 @@ javascript:
 		mySplitText = acAnimated.Plugins.SplitText(text, {words: 1, chars: 1, spacing: 10});
 		tl.staggerFromTo(".text-outline4", 0.5, {display: "none"}, { display: "inline"}, 0.09, 0.1);
 		tl.staggerFromTo(mySplitText.chars, 0.05, {opacity:0}, { opacity:1}, 0.09, 0.1);
-		tl.staggerFromTo(".text-outline4", 0.5, {opacity:1}, { display: "none"}, 0.5);
+		tl.staggerFromTo(".text-outline4", 2, {opacity:1}, { display: "none"}, 2);
 		return tl;
 	}
 	function part5() {
@@ -249,43 +310,7 @@ javascript:
 		mySplitText = acAnimated.Plugins.SplitText(text, {words: 1, chars: 1, spacing: 10});
 		tl.staggerFromTo(".text-outline5", 0.5, {display: "none"}, { display: "inline"}, 0.09, 0.1);
 		tl.staggerFromTo(mySplitText.chars, 0.05, {opacity:0}, { opacity:1}, 0.09, 0.1);
-		tl.staggerFromTo(".text-outline5", 0.5, {opacity:1}, { display: "none"}, 0.5);
-		return tl;
-	}
-	function part6() {
-		var tl = new TimelineMax();
-		var text = document.getElementById("text-outline6");
-		mySplitText = acAnimated.Plugins.SplitText(text, {words: 1, chars: 1, spacing: 10});
-		tl.staggerFromTo(".text-outline6", 0.5, {display: "none"}, { display: "inline"}, 0.09, 0.1);
-		tl.staggerFromTo(mySplitText.chars, 0.05, {opacity:0}, { opacity:1}, 0.09, 0.1);
-		tl.staggerFromTo(".text-outline6", 0.5, {opacity:1}, { display: "none"}, 0.5);
-		return tl;
-	}
-	function part7() {
-		var tl = new TimelineMax();
-		var text = document.getElementById("text-outline7");
-		mySplitText = acAnimated.Plugins.SplitText(text, {words: 1, chars: 1, spacing: 10});
-		tl.staggerFromTo(".text-outline7", 0.5, {display: "none"}, { display: "inline"}, 0.09, 0.1);
-		tl.staggerFromTo(mySplitText.chars, 0.05, {opacity:0}, { opacity:1}, 0.09, 0.1);
-		tl.staggerFromTo(".text-outline7", 0.5, {opacity:1}, { display: "none"}, 0.5);
-		return tl;
-	}
-	function part8() {
-		var tl = new TimelineMax();
-		var text = document.getElementById("text-outline8");
-		mySplitText = acAnimated.Plugins.SplitText(text, {words: 1, chars: 1, spacing: 10});
-		tl.staggerFromTo(".text-outline8", 0.5, {display: "none"}, { display: "inline"}, 0.09, 0.1);
-		tl.staggerFromTo(mySplitText.chars, 0.05, {opacity:0}, { opacity:1}, 0.09, 0.1);
-		tl.staggerFromTo(".text-outline8", 0.5, {opacity:1}, { display: "none"}, 0.5);
-		return tl;
-	}
-	function part9() {
-		var tl = new TimelineMax();
-		var text = document.getElementById("text-outline9");
-		mySplitText = acAnimated.Plugins.SplitText(text, {words: 1, chars: 1, spacing: 10});
-		tl.staggerFromTo(".text-outline9", 0.5, {display: "none"}, { display: "inline"}, 0.09, 0.1);
-		tl.staggerFromTo(mySplitText.chars, 0.05, {opacity:0}, { opacity:1}, 0.09, 0.1);
-		tl.staggerFromTo(".text-outline9", 0.5, {opacity:1}, { display: "none"}, 0.5);
+		tl.staggerFromTo(".text-outline5", 2, {opacity:1}, { display: "none"}, 2);
 		return tl;
 	}
 	var masterTimeline = new TimelineMax({ repeat: -1});
@@ -294,8 +319,4 @@ javascript:
 		.add(part3())
 		.add(part4())
 		.add(part5())
-		.add(part6())
-		.add(part7())
-		.add(part8())
-		.add(part9())
 		.add(part2());
