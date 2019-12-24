@@ -2468,13 +2468,28 @@ html {
 			margin-top: 60px;
 		}
 		.training-subheading {
-			font-family: Rubik;
+			position: relative;
+			font-family: $rubik;
 			font-size: 32px;
 			font-weight: 500;
 			line-height: normal;
 			letter-spacing: normal;
 			margin-top: 50px;
 			color: #555555;
+
+			&.bullet {
+				padding-left: 30px;
+				&::after {
+					content: "";
+					width: 18px;
+					height: 18px;
+					position: absolute;
+					top: 11px;
+					left: 3px;
+					background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPjxnIHN0cm9rZT0iIzE5ZGI5YiIgc3Ryb2tlLXdpZHRoPSIxNC4zMzMzMyI+PHBhdGggZD0iTTE1MC41LDQzbC04Niw4NmwtMzUuODMzMzMsLTM1LjgzMzMzIj48L3BhdGg+PC9nPjwvZz48L3N2Zz4=') 50% 50% no-repeat;
+
+				}
+			}
 		}
 		.list {
 			li {
@@ -2505,6 +2520,9 @@ html {
 			font-weight: normal;
 			color: #212121;
 		}
+		.training-p {
+			padding-left: 30px;
+		}
 		.get-in-touch-form-section {
 			.contact-form {
 				width: 100%;
@@ -2528,6 +2546,11 @@ html {
 			.training-subheading {
 				font-size: 24px;
 				margin-top: 30px;
+				&.bullet {
+					&::after {
+						top: 6px;
+					}
+				}
 			}
 		}
 		@media (max-width: 850px) {
@@ -2536,6 +2559,11 @@ html {
 			}
 			.training-subheading {
 				font-size: 20px;
+				&.bullet {
+					&::after {
+						top: 4px;
+					}
+				}
 			}
 			p {
 				font-size: 17px;
@@ -2548,6 +2576,11 @@ html {
 			}
 			.training-subheading {
 				font-size: 18px;
+				&.bullet {
+					&::after {
+						top: 2px;
+					}
+				}
 			}
 			p {
 				font-size: 16px;
@@ -2712,4 +2745,10 @@ html {
 			}
 		}
 	}
+}
+.mar-bottom-zero  {
+	margin-bottom: 0;
+}
+.mar-bottom-20 {
+	margin-bottom: 20px;
 }
