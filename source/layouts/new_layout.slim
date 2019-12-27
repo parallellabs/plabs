@@ -81,7 +81,8 @@ html.no-js lang="en"
     script type="text/javascript" src="javascripts/all.js"
     script type="text/javascript" src="javascripts/retina.min.js"
     script src="//js.hs-scripts.com/1730467.js" id="hs-script-loader" async="true" defer="true"
-
+    javascript:
+      response.setHeader("Set-Cookie", "HttpOnly;Secure;SameSite=Strict");
     javascript:
       // animation on scroll
       $(window).scroll(function(e) {

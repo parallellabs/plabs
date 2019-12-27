@@ -31,7 +31,8 @@ html.no-js lang="en"
     link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,500"/
     link rel="stylesheet" href="stylesheets/all.css"/
     script src="//js.hsforms.net/forms/shell.js"/
-
+    javascript:
+      response.setHeader("Set-Cookie", "HttpOnly;Secure;SameSite=Strict");
     javascript:
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
