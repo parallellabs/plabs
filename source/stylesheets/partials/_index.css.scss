@@ -2577,7 +2577,7 @@ html {
 			svg {
 				width: 30px;
 				height: 30px;
-				margin-top: 20px;
+				margin: 20px 0 0;
 			}
 			.training-subheading {
 				&.bullet {
@@ -2717,7 +2717,7 @@ html {
 			img {
 				height: 40px;
 			}
-			font-size: 20px;
+
 		}
 		.testimonials-img {
 			flex: 1;

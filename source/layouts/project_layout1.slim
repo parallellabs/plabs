@@ -40,7 +40,8 @@ html.no-js lang="en"
     link rel="stylesheet" href="stylesheets/lazyframe.css"/
     link rel="stylesheet" href="stylesheets/all.css"/
     script src="//js.hsforms.net/forms/shell.js"/
-
+    javascript:
+      response.setHeader("Set-Cookie", "HttpOnly;Secure;SameSite=Strict");
     javascript:
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -93,8 +94,7 @@ html.no-js lang="en"
     script src="javascripts/jquery.inview.min.js"
     / script type="text/javascript" src="javascripts/aos.js"
     script src="//js.hs-scripts.com/1730467.js" id="hs-script-loader" async="true" defer="true"
-    javascript:
-      response.setHeader("Set-Cookie", "HttpOnly;Secure;SameSite=Strict");
+
     javascript:
       // if($(window).width() < 767)
       // //  {
