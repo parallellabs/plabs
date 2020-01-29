@@ -33,39 +33,23 @@ html.no-js lang="en"
     link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" /
     link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" /
     link rel="stylesheet" href="stylesheets/vendors/default_skin_variation.css"/
-    / link rel="stylesheet" href="stylesheets/vendors/aos.css"/
-    / link rel="stylesheet" href="stylesheets/vendors/animate.css"/
     link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Hind:400,500,600"/
     link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,500"/
     link rel="stylesheet" href="stylesheets/lazyframe.css"/
     link rel="stylesheet" href="stylesheets/all.css"/
+    <!-- Google Tag Manager -->
+    javascript:
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-W6VT7Q7');
+    <!-- End Google Tag Manager -->
     script src="//js.hsforms.net/forms/shell.js"/
-    javascript:
-      response.setHeader("Set-Cookie", "HttpOnly;Secure;SameSite=Strict");
-    javascript:
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-47999745-2');
-
-    script type="text/javascript" async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-47999745-2"/
 
     javascript:
       (function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
-    javascript:
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window,document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '149485772377389');
-      fbq('track', 'PageView');
-    <noscript>
-      <img height="1" width="1" src="https://www.facebook.com/tr?id=149485772377389&ev=PageView&noscript=1"/>
-    </noscript>
+    
   body
     .wrapper.main-layout
       = partial "layouts/header_project.slim"
@@ -73,7 +57,11 @@ html.no-js lang="en"
       == yield
 
     = partial "layouts/new_footer.slim"
-
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6VT7Q7" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     / jQuery
     script src="https://code.jquery.com/jquery-2.1.4.min.js"
     script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
@@ -81,41 +69,18 @@ html.no-js lang="en"
     script src="javascripts/backbone_custom.js"
     script src="javascripts/jquery.sky.carousel-1.0.2.min.js"
     script src="vendor/lightbox-dist/js/lightbox.min.js"
-    / script type="text/javascript" src="javascripts/imagelightbox_custom.js"
-    / script type="text/javascript" src="javascripts/owl.carousel.js"
     script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.7/TweenMax.min.js"
     script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"
-    / script type="text/javascript" src="javascripts/jquery.parallax.min.js"
     script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit.min.js"
     script src="javascripts/projects.js"
     script src="javascripts/all.js"
     script src="javascripts/retina.min.js"
     script src="javascripts/lazyframe.min.js"
     script src="javascripts/jquery.inview.min.js"
-    / script type="text/javascript" src="javascripts/aos.js"
     script src="//js.hs-scripts.com/1730467.js" id="hs-script-loader" async="true" defer="true"
 
     javascript:
-      // if($(window).width() < 767)
-      // //  {
-      //   //  $("#screen-slider").removeClass('owl-centered');
-      //    $("#screen-slider").owlCarousel({
-      //     navigation : true, // Show next and prev buttons
-      //     navigationText: [
-      //       '<svg class="icon-arrow-right2"><use xlink:href="images/svgs/iconset.svg#icon-angle-left"></svg>',
-      //       '<svg class="icon-arrow-right2"><use xlink:href="images/svgs/iconset.svg#icon-angle-right"></svg>'
-      //     ],
-      //     //  singleItem:true,
-      //      slideSpeed : 300,
-      //      paginationSpeed : 400,
-      //     //  autoPlay: 4000,
-      //    });
-      //  }
-
-      // var elem = document.querySelector( '#cta' );
-      //   if ( isInViewport( elem ) ) {
-      //       console.log( 'In the viewport!' );
-      //   }
+      
       $(document).ready(function() {
         window.intercomSettings = {
           app_id: "o5suzri9"
@@ -201,12 +166,7 @@ html.no-js lang="en"
           .removeClass('na')
           .addClass('active');
          }
-        // "singleItem:true" is a shortcut for:
-        // items : 1,
-        // itemsDesktop : false,
-        // itemsDesktopSmall : false,
-        // itemsTablet: false,
-        // itemsMobile : false
+        
       });
 
       lightbox.option({
@@ -217,20 +177,5 @@ html.no-js lang="en"
       });
 
       //FullStory
-    	window['_fs_debug'] = false;
-    	window['_fs_host'] = 'www.fullstory.com';
-    	window['_fs_org'] = '43EWM';
-    	window['_fs_namespace'] = 'FS';
-    	(function(m,n,e,t,l,o,g,y){
-    	    if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return;}
-    	    g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
-    	    o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
-    	    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-    	    g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
-    	    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-    	    g.clearUserCookie=function(c,d,i){if(!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')){
-    	    d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
-    	    ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
-    	})(window,document,window['_fs_namespace'],'script','user');
-
+    	
 
